@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    container_name: hundred-acre-realm
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+    volumes:
+      - ./uploads:/app/uploads
+      - ./public:/app/public
+      - ./prisma/dev.db:/app/prisma/dev.db 

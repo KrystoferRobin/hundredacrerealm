@@ -1,0 +1,651 @@
+<game file_version="1.0" name="Created by Realm Character Builder" description="RealmCharacterBuilderModel_v1.4" _rseed="70148345139666" _rcount="67" _rgtype="System" _rndSetup="true">
+  <objects>
+    <GameObject id="0" name="Amazon">
+      <AttributeBlock blockName="this">
+        <attribute icon_type="amazon" />
+        <attribute character="" />
+        <attribute vulnerability="M" />
+        <attribute start="Inn" />
+        <attribute original_game="" />
+        <attribute facing="dark" />
+        <attribute pronoun="she" />
+        <attribute alt_monsters1_game="" />
+        <attribute fighter="" />
+        <attribute icon_folder="custom/characters" />
+        <attribute meaning="Sword and Shield" />
+        <attribute creator="Richard Hamblen" />
+        <attribute artcredit="Ralph King" />
+        <attribute rw_expansion_1="" />
+        <attribute custom_character="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="level_1">
+        <attribute name="Scout" />
+        <attribute weapon="Light Bow" />
+      </AttributeBlock>
+      <AttributeBlock blockName="level_2">
+        <attribute name="Warrior" />
+        <attribute weapon="Spear" />
+        <attribute armor="Helmet,Breastplate,Shield" />
+        <attributeList keyName="diemod">
+          <attributeVal N0="-1:missile,thrown:all" />
+        </attributeList>
+        <attributeList keyName="advantages">
+          <attributeVal N0="AIM:  Subtract 1 from all Missile Table die rolls." />
+        </attributeList>
+      </AttributeBlock>
+      <AttributeBlock blockName="level_3">
+        <attribute name="Champion" />
+        <attribute weapon="Spear" />
+        <attribute armor="Helmet,Breastplate,Shield" />
+      </AttributeBlock>
+      <AttributeBlock blockName="level_4">
+        <attribute name="Amazon" />
+        <attribute weapon="Short Sword" />
+        <attribute armor="Helmet,Breastplate,Shield" />
+        <attributeList keyName="extra_actions">
+          <attributeVal N0="M" />
+        </attributeList>
+        <attributeList keyName="advantages">
+          <attributeVal N0="STAMINA:  Get one extra MOVE phase every day." />
+        </attributeList>
+      </AttributeBlock>
+      <AttributeBlock blockName="relationship">
+        <attribute lancers="1" />
+        <attribute patrol="1" />
+        <attribute shaman="1" />
+        <attribute company="-1" />
+        <attribute bashkars="-1" />
+      </AttributeBlock>
+      <AttributeBlock blockName="gamerel">
+        <attribute lancers="1" />
+        <attribute patrol="1" />
+        <attribute shaman="1" />
+        <attribute company="-1" />
+        <attribute bashkars="-1" />
+      </AttributeBlock>
+      <AttributeBlock blockName="_RCB_">
+        <attribute owner_id="0" />
+      </AttributeBlock>
+      <contains id="1" />
+      <contains id="2" />
+      <contains id="3" />
+      <contains id="4" />
+      <contains id="5" />
+      <contains id="6" />
+      <contains id="7" />
+      <contains id="8" />
+      <contains id="9" />
+      <contains id="10" />
+      <contains id="11" />
+      <contains id="12" />
+    </GameObject>
+    <GameObject id="1" name="Amazon Move M4">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute strength="M" />
+        <attribute speed="4" />
+        <attribute character_level="1" />
+        <attribute original_game="" />
+        <attribute alt_monsters1_game="" />
+        <attribute stage="1" />
+        <attribute level="1" />
+        <attribute icon_folder="custom/characters" />
+        <attribute icon_type="amazon" />
+        <attribute rw_expansion_1="" />
+        <attribute facing="dark" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2" name="Amazon Move M3*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute strength="M" />
+        <attribute speed="3" />
+        <attribute character_level="1" />
+        <attribute effort="1" />
+        <attribute original_game="" />
+        <attribute alt_monsters1_game="" />
+        <attribute stage="2" />
+        <attribute level="1" />
+        <attribute icon_folder="custom/characters" />
+        <attribute icon_type="amazon" />
+        <attribute rw_expansion_1="" />
+        <attribute facing="dark" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="3" name="Amazon Fight L4">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute strength="L" />
+        <attribute speed="4" />
+        <attribute character_level="1" />
+        <attribute original_game="" />
+        <attribute alt_monsters1_game="" />
+        <attribute stage="3" />
+        <attribute level="1" />
+        <attribute icon_folder="custom/characters" />
+        <attribute icon_type="amazon" />
+        <attribute rw_expansion_1="" />
+        <attribute facing="dark" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="4" name="Amazon Move M4">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute strength="M" />
+        <attribute speed="4" />
+        <attribute character_level="2" />
+        <attribute original_game="" />
+        <attribute alt_monsters1_game="" />
+        <attribute stage="4" />
+        <attribute level="2" />
+        <attribute icon_folder="custom/characters" />
+        <attribute icon_type="amazon" />
+        <attribute rw_expansion_1="" />
+        <attribute facing="dark" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="5" name="Amazon Fight M5">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute strength="M" />
+        <attribute speed="5" />
+        <attribute character_level="2" />
+        <attribute original_game="" />
+        <attribute alt_monsters1_game="" />
+        <attribute stage="5" />
+        <attribute level="2" />
+        <attribute icon_folder="custom/characters" />
+        <attribute icon_type="amazon" />
+        <attribute rw_expansion_1="" />
+        <attribute facing="dark" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="6" name="Amazon Fight M4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute strength="M" />
+        <attribute speed="4" />
+        <attribute character_level="2" />
+        <attribute effort="1" />
+        <attribute original_game="" />
+        <attribute alt_monsters1_game="" />
+        <attribute stage="6" />
+        <attribute level="2" />
+        <attribute icon_folder="custom/characters" />
+        <attribute icon_type="amazon" />
+        <attribute rw_expansion_1="" />
+        <attribute facing="dark" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="7" name="Amazon Move M3*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute strength="M" />
+        <attribute speed="3" />
+        <attribute character_level="3" />
+        <attribute effort="1" />
+        <attribute original_game="" />
+        <attribute alt_monsters1_game="" />
+        <attribute stage="7" />
+        <attribute level="3" />
+        <attribute icon_folder="custom/characters" />
+        <attribute icon_type="amazon" />
+        <attribute rw_expansion_1="" />
+        <attribute facing="dark" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="8" name="Amazon Fight M3**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute strength="M" />
+        <attribute speed="3" />
+        <attribute character_level="3" />
+        <attribute effort="2" />
+        <attribute original_game="" />
+        <attribute alt_monsters1_game="" />
+        <attribute stage="8" />
+        <attribute level="3" />
+        <attribute icon_folder="custom/characters" />
+        <attribute icon_type="amazon" />
+        <attribute rw_expansion_1="" />
+        <attribute facing="dark" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="9" name="Amazon Fight H4**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute strength="H" />
+        <attribute speed="4" />
+        <attribute character_level="3" />
+        <attribute effort="2" />
+        <attribute original_game="" />
+        <attribute alt_monsters1_game="" />
+        <attribute stage="9" />
+        <attribute level="3" />
+        <attribute icon_folder="custom/characters" />
+        <attribute icon_type="amazon" />
+        <attribute rw_expansion_1="" />
+        <attribute facing="dark" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="10" name="Amazon Fight M4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute strength="M" />
+        <attribute speed="4" />
+        <attribute character_level="4" />
+        <attribute effort="1" />
+        <attribute original_game="" />
+        <attribute alt_monsters1_game="" />
+        <attribute stage="10" />
+        <attribute level="4" />
+        <attribute icon_folder="custom/characters" />
+        <attribute icon_type="amazon" />
+        <attribute rw_expansion_1="" />
+        <attribute facing="dark" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="11" name="Amazon Fight M3**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute strength="M" />
+        <attribute speed="3" />
+        <attribute character_level="4" />
+        <attribute effort="2" />
+        <attribute original_game="" />
+        <attribute alt_monsters1_game="" />
+        <attribute stage="11" />
+        <attribute level="4" />
+        <attribute icon_folder="custom/characters" />
+        <attribute icon_type="amazon" />
+        <attribute rw_expansion_1="" />
+        <attribute facing="dark" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="12" name="Amazon Move M3*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute strength="M" />
+        <attribute speed="3" />
+        <attribute character_level="4" />
+        <attribute effort="1" />
+        <attribute original_game="" />
+        <attribute alt_monsters1_game="" />
+        <attribute stage="12" />
+        <attribute level="4" />
+        <attribute icon_folder="custom/characters" />
+        <attribute icon_type="amazon" />
+        <attribute rw_expansion_1="" />
+        <attribute facing="dark" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="13" name="Medium Bow">
+      <AttributeBlock blockName="this">
+        <attribute weight="M" />
+        <attribute length="16" />
+        <attribute base_price="8" />
+        <attribute missile="" />
+        <attribute two_handed="" />
+        <attribute weapon="" />
+        <attribute original_game="" />
+        <attribute icon_type="medium_bow" />
+        <attribute alt_monsters1_game="" />
+        <attribute icon_folder="weapons" />
+        <attribute rw_expansion_1="" />
+        <attribute item="" />
+        <attribute bow="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="unalerted">
+        <attribute strength="M" />
+        <attribute chit_color="white" />
+      </AttributeBlock>
+      <AttributeBlock blockName="alerted">
+        <attribute attack_speed="1" />
+        <attribute strength="M" />
+        <attribute sharpness="2" />
+        <attribute chit_color="red" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="14" name="Light Bow">
+      <AttributeBlock blockName="this">
+        <attribute weight="L" />
+        <attribute length="14" />
+        <attribute base_price="6" />
+        <attribute missile="" />
+        <attribute two_handed="" />
+        <attribute weapon="" />
+        <attribute original_game="" />
+        <attribute icon_type="light_bow" />
+        <attribute alt_monsters1_game="" />
+        <attribute icon_folder="weapons" />
+        <attribute rw_expansion_1="" />
+        <attribute item="" />
+        <attribute bow="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="unalerted">
+        <attribute strength="L" />
+        <attribute chit_color="white" />
+      </AttributeBlock>
+      <AttributeBlock blockName="alerted">
+        <attribute attack_speed="1" />
+        <attribute strength="L" />
+        <attribute sharpness="2" />
+        <attribute chit_color="red" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="15" name="Crossbow">
+      <AttributeBlock blockName="this">
+        <attribute weight="H" />
+        <attribute length="12" />
+        <attribute base_price="10" />
+        <attribute missile="" />
+        <attribute two_handed="" />
+        <attribute weapon="" />
+        <attribute original_game="" />
+        <attribute icon_type="crossbow" />
+        <attribute alt_monsters1_game="" />
+        <attribute icon_folder="weapons" />
+        <attribute rw_expansion_1="" />
+        <attribute item="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="unalerted">
+        <attribute strength="H" />
+        <attribute chit_color="white" />
+      </AttributeBlock>
+      <AttributeBlock blockName="alerted">
+        <attribute attack_speed="1" />
+        <attribute strength="H" />
+        <attribute sharpness="1" />
+        <attribute chit_color="red" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="16" name="Staff">
+      <AttributeBlock blockName="this">
+        <attribute weight="L" />
+        <attribute length="9" />
+        <attribute base_price="1" />
+        <attribute two_handed="" />
+        <attribute weapon="" />
+        <attribute original_game="" />
+        <attribute icon_type="staff" />
+        <attribute alt_monsters1_game="" />
+        <attribute icon_folder="weapons" />
+        <attribute rw_expansion_1="" />
+        <attribute item="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="unalerted">
+        <attribute strength="L" />
+        <attribute chit_color="white" />
+      </AttributeBlock>
+      <AttributeBlock blockName="alerted">
+        <attribute strength="L" />
+        <attribute chit_color="red" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="17" name="Great Sword">
+      <AttributeBlock blockName="this">
+        <attribute weight="H" />
+        <attribute length="8" />
+        <attribute base_price="10" />
+        <attribute two_handed="" />
+        <attribute weapon="" />
+        <attribute original_game="" />
+        <attribute icon_type="great_sword" />
+        <attribute alt_monsters1_game="" />
+        <attribute icon_folder="weapons" />
+        <attribute rw_expansion_1="" />
+        <attribute item="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="unalerted">
+        <attribute attack_speed="6" />
+        <attribute strength="H" />
+        <attribute sharpness="1" />
+        <attribute chit_color="white" />
+      </AttributeBlock>
+      <AttributeBlock blockName="alerted">
+        <attribute strength="H" />
+        <attribute sharpness="1" />
+        <attribute chit_color="red" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="18" name="Broadsword">
+      <AttributeBlock blockName="this">
+        <attribute weight="M" />
+        <attribute length="7" />
+        <attribute base_price="8" />
+        <attribute weapon="" />
+        <attribute original_game="" />
+        <attribute icon_type="broadsword" />
+        <attribute alt_monsters1_game="" />
+        <attribute icon_folder="weapons" />
+        <attribute rw_expansion_1="" />
+        <attribute item="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="unalerted">
+        <attribute attack_speed="5" />
+        <attribute strength="M" />
+        <attribute sharpness="1" />
+        <attribute chit_color="white" />
+      </AttributeBlock>
+      <AttributeBlock blockName="alerted">
+        <attribute strength="M" />
+        <attribute sharpness="1" />
+        <attribute chit_color="red" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="19" name="Morning Star">
+      <AttributeBlock blockName="this">
+        <attribute weight="H" />
+        <attribute length="6" />
+        <attribute base_price="8" />
+        <attribute two_handed="" />
+        <attribute weapon="" />
+        <attribute original_game="" />
+        <attribute icon_type="morning_star" />
+        <attribute alt_monsters1_game="" />
+        <attribute icon_folder="weapons" />
+        <attribute rw_expansion_1="" />
+        <attribute item="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="unalerted">
+        <attribute strength="H" />
+        <attribute chit_color="white" />
+        <attribute attack_speed="6" />
+      </AttributeBlock>
+      <AttributeBlock blockName="alerted">
+        <attribute attack_speed="3" />
+        <attribute strength="H" />
+        <attribute chit_color="red" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="20" name="Great Axe">
+      <AttributeBlock blockName="this">
+        <attribute weight="H" />
+        <attribute length="5" />
+        <attribute base_price="8" />
+        <attribute two_handed="" />
+        <attribute weapon="" />
+        <attribute original_game="" />
+        <attribute icon_type="great_axe" />
+        <attribute alt_monsters1_game="" />
+        <attribute icon_folder="weapons" />
+        <attribute rw_expansion_1="" />
+        <attribute item="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="unalerted">
+        <attribute strength="H" />
+        <attribute sharpness="1" />
+        <attribute chit_color="white" />
+      </AttributeBlock>
+      <AttributeBlock blockName="alerted">
+        <attribute attack_speed="4" />
+        <attribute strength="H" />
+        <attribute sharpness="1" />
+        <attribute chit_color="red" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="21" name="Thrusting Sword">
+      <AttributeBlock blockName="this">
+        <attribute weight="L" />
+        <attribute length="4" />
+        <attribute base_price="6" />
+        <attribute weapon="" />
+        <attribute original_game="" />
+        <attribute icon_type="thrusting_sword" />
+        <attribute alt_monsters1_game="" />
+        <attribute icon_folder="weapons" />
+        <attribute rw_expansion_1="" />
+        <attribute item="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="unalerted">
+        <attribute attack_speed="4" />
+        <attribute strength="L" />
+        <attribute sharpness="1" />
+        <attribute chit_color="white" />
+      </AttributeBlock>
+      <AttributeBlock blockName="alerted">
+        <attribute strength="L" />
+        <attribute sharpness="1" />
+        <attribute chit_color="red" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="22" name="Short Sword">
+      <AttributeBlock blockName="this">
+        <attribute weight="L" />
+        <attribute length="3" />
+        <attribute base_price="4" />
+        <attribute weapon="" />
+        <attribute original_game="" />
+        <attribute icon_type="short_sword" />
+        <attribute alt_monsters1_game="" />
+        <attribute icon_folder="weapons" />
+        <attribute rw_expansion_1="" />
+        <attribute item="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="unalerted">
+        <attribute strength="L" />
+        <attribute sharpness="1" />
+        <attribute chit_color="white" />
+      </AttributeBlock>
+      <AttributeBlock blockName="alerted">
+        <attribute strength="L" />
+        <attribute sharpness="1" />
+        <attribute chit_color="red" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="23" name="Axe">
+      <AttributeBlock blockName="this">
+        <attribute weight="M" />
+        <attribute length="2" />
+        <attribute base_price="4" />
+        <attribute throwable="" />
+        <attribute weapon="" />
+        <attribute original_game="" />
+        <attribute icon_type="axe" />
+        <attribute alt_monsters1_game="" />
+        <attribute icon_folder="weapons" />
+        <attribute rw_expansion_1="" />
+        <attribute item="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="unalerted">
+        <attribute attack_speed="5" />
+        <attribute strength="M" />
+        <attribute sharpness="1" />
+        <attribute chit_color="white" />
+      </AttributeBlock>
+      <AttributeBlock blockName="alerted">
+        <attribute strength="M" />
+        <attribute sharpness="1" />
+        <attribute chit_color="red" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="24" name="Mace">
+      <AttributeBlock blockName="this">
+        <attribute weight="M" />
+        <attribute length="1" />
+        <attribute base_price="6" />
+        <attribute weapon="" />
+        <attribute original_game="" />
+        <attribute icon_type="mace" />
+        <attribute alt_monsters1_game="" />
+        <attribute icon_folder="weapons" />
+        <attribute rw_expansion_1="" />
+        <attribute item="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="unalerted">
+        <attribute strength="M" />
+        <attribute chit_color="white" />
+      </AttributeBlock>
+      <AttributeBlock blockName="alerted">
+        <attribute attack_speed="3" />
+        <attribute strength="M" />
+        <attribute chit_color="red" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="25" name="Spear">
+      <AttributeBlock blockName="this">
+        <attribute weight="M" />
+        <attribute length="10" />
+        <attribute base_price="6" />
+        <attribute two_handed="" />
+        <attribute throwable="" />
+        <attribute weapon="" />
+        <attribute original_game="" />
+        <attribute icon_type="spear" />
+        <attribute alt_monsters1_game="" />
+        <attribute icon_folder="weapons" />
+        <attribute rw_expansion_1="" />
+        <attribute item="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="unalerted">
+        <attribute attack_speed="6" />
+        <attribute chit_color="white" />
+      </AttributeBlock>
+      <AttributeBlock blockName="alerted">
+        <attribute strength="M" />
+        <attribute sharpness="1" />
+        <attribute chit_color="red" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="26" name="Halberd">
+      <AttributeBlock blockName="this">
+        <attribute weight="H" />
+        <attribute length="10" />
+        <attribute base_price="8" />
+        <attribute two_handed="" />
+        <attribute weapon="" />
+        <attribute icon_type="halberd" />
+        <attribute icon_folder="weapons" />
+        <attribute rw_expansion_1="" />
+        <attribute item="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="unalerted">
+        <attribute attack_speed="6" />
+        <attribute chit_color="white" />
+      </AttributeBlock>
+      <AttributeBlock blockName="alerted">
+        <attribute strength="H" />
+        <attribute sharpness="1" />
+        <attribute chit_color="red" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="27" name="RealmComponent Master Object">
+      <AttributeBlock blockName="this">
+        <attribute tc="0" />
+      </AttributeBlock>
+    </GameObject>
+  </objects>
+  <setups />
+</game>

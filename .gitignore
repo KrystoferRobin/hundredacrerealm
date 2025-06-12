@@ -1,0 +1,6 @@
+node_modules/
+.next/
+uploads/
+prisma/dev.db
+.env
+*.log
