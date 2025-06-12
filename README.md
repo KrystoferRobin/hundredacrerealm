@@ -2,6 +2,8 @@
 
 A modern web application for playing the classic Magic Realm board game, built with React, TypeScript, and Vite.
 
+Created with Cursor, entirely by the AI, just for fun.
+
 ## Features
 
 - Interactive game board with hexagonal tiles
