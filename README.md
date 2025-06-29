@@ -1,26 +1,24 @@
-# Hundred Acre Realm - Magic Realm Web App
+# Hundred Acre Realm - Magic Realm Data Parser & Web Viewer
 
-A modern web application for playing the classic Magic Realm board game, built with React, TypeScript, and Vite.
+A comprehensive web application for parsing, organizing, and viewing Magic Realm game data, built with Next.js, TypeScript, and Tailwind CSS.
 
-Created with Cursor, entirely by the AI, just for fun.
+This project extracts and structures data from Magic Realm's XML files and game logs, providing an interactive web interface to browse characters, monsters, natives, items, spells, tiles, and game session logs.
 
 ## Features
 
-- Interactive game board with hexagonal tiles
-- Character management and movement
-- Combat system
-- Inventory management
-- Real-time game state updates
-- Modern, responsive UI
+- **Core Game Data Parsing**: Extract and organize all Magic Realm entities from XML
+- **Session Log Analysis**: Parse and visualize game session logs with detailed combat and character actions
+- **Interactive Web Interface**: Browse characters, monsters, natives, items, and spells with tooltips
+- **Game Session Viewer**: View parsed game logs with item tooltips and combat details
+- **Responsive Design**: Modern UI with Magic Realm 1979 Avalon Hill aesthetic
 
 ## Tech Stack
 
-- React 18
-- TypeScript
-- Vite
-- Tailwind CSS
-- React Router
-- Zustand (State Management)
+- **Frontend**: Next.js 14, React 18, TypeScript
+- **Styling**: Tailwind CSS 4
+- **Data Parsing**: Node.js with XML parsing libraries
+- **Icons**: Heroicons
+- **Fonts**: EB Garamond
 
 ## Prerequisites
 
@@ -38,36 +36,123 @@ cd hundreacrerealm
 2. Install dependencies:
 ```bash
 npm install
-# or
-yarn install
 ```
 
 3. Start the development server:
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-4. Open your browser and navigate to `http://localhost:5173`
+4. Open your browser and navigate to `http://localhost:3000`
+
+## Data Parsing
+
+This project includes comprehensive parsers for Magic Realm data. All parsers are located in the `scripts/` directory.
+
+### Core Game Data Parsers
+
+Run the master parser to extract all core game data:
+
+```bash
+node scripts/parse-all-core-data.js
+```
+
+This will create the following structure in `coregamedata/`:
+- `characters/` - All playable characters with their chits and attributes
+- `monsters/` - Monster data organized by name with parts
+- `natives/` - Native groups organized by dwelling
+- `items/` - Items categorized as treasures, armor, or weapons
+- `spells/` - Spells organized by level (I-VIII, special)
+- `tiles/` - Game tiles with normal and enchanted states
+- `chits/` - Warning, sound, treasure location, and dwelling chits
+
+### Individual Parsers
+
+You can run parsers individually:
+
+```bash
+# Parse characters (includes .rschar files)
+node scripts/parse-characters.js
+
+# Parse monsters
+node scripts/parse-monsters.js
+
+# Parse natives
+node scripts/parse-natives.js
+
+# Parse items (treasures, armor, weapons)
+node scripts/parse-items.js
+
+# Parse spells by level
+node scripts/parse-spells.js
+
+# Parse game tiles
+node scripts/parse-tiles.js
+
+# Parse chits
+node scripts/parse-chits.js
+```
+
+### Session Log Parsers
+
+Parse game session logs from `.rslog` files:
+
+```bash
+# Parse all logs in upload folder
+node scripts/parse_all_logs.js
+
+# Parse individual log with detailed combat analysis
+node scripts/parse_game_log_detailed.js
+
+# Parse basic log structure
+node scripts/parse_game_log.js
+```
 
 ## Project Structure
 
 ```
 hundreacrerealm/
-├── src/
-│   ├── components/     # React components
-│   ├── hooks/         # Custom React hooks
-│   ├── store/         # Zustand store
-│   ├── types/         # TypeScript type definitions
-│   ├── utils/         # Utility functions
-│   └── App.tsx        # Main application component
-├── public/            # Static assets
-├── index.html         # Entry HTML file
-├── package.json       # Project dependencies
-├── tsconfig.json      # TypeScript configuration
-└── vite.config.ts     # Vite configuration
+├── app/                    # Next.js app directory
+│   ├── api/               # API routes
+│   ├── characters/        # Character pages
+│   ├── game-logs/         # Game logs listing
+│   ├── monsters/          # Monsters page
+│   ├── natives/           # Natives page
+│   ├── session/           # Session viewer
+│   └── page.tsx           # Homepage
+├── coregamedata/          # Parsed game data
+│   ├── characters/        # Character JSON files
+│   ├── monsters/          # Monster JSON files
+│   ├── natives/           # Native JSON files
+│   ├── items/             # Item JSON files
+│   ├── spells/            # Spell JSON files
+│   ├── tiles/             # Tile JSON files
+│   └── chits/             # Chit JSON files
+├── parsed_sessions/       # Parsed game session logs
+├── public/                # Static assets
+│   └── images/            # Game images and icons
+├── scripts/               # Data parsing scripts
+├── MagicRealmData.xml     # Source XML data
+└── characters/            # .rschar character files
 ```
+
+## Web Interface
+
+### Pages
+
+- **Homepage**: Overview with recent game sessions and navigation
+- **Cast of Characters**: Browse all characters with icons and details
+- **Monsters**: View monsters grouped by name with chit displays
+- **Natives**: Browse natives organized by dwelling
+- **Game Logs**: List all parsed game sessions
+- **Session Viewer**: Detailed view of individual game sessions
+
+### Features
+
+- **Item Tooltips**: Hover over item names to see chit-style tooltips
+- **Character Details**: View character portraits, chits, and equipment
+- **Combat Visualization**: Detailed combat logs with round-by-round analysis
+- **Responsive Design**: Works on desktop and mobile devices
 
 ## Development
 
@@ -75,13 +160,20 @@ hundreacrerealm/
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
-- `npm run preview` - Preview production build
+- `npm run start` - Start production server
 - `npm run lint` - Run ESLint
-- `npm run type-check` - Run TypeScript type checking
 
-### Code Style
+### Data Structure
 
-This project uses ESLint and Prettier for code formatting. The configuration is included in the project.
+The parsers create JSON files with the following structure:
+
+- **Characters**: Main character data with nested parts (chits)
+- **Monsters**: Monster data with parts (heads, weapons, etc.)
+- **Natives**: Native groups with contained parts
+- **Items**: Item data with attributes and effects
+- **Spells**: Spell data organized by level
+- **Tiles**: Tile data with paths, clearings, and states
+- **Chits**: Various game chits with attributes
 
 ## Contributing
 
@@ -97,5 +189,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Magic Realm board game by Avalon Hill
-- All contributors and supporters of the project 
+- Magic Realm board game by Avalon Hill (1979)
+- All contributors and supporters of the project
