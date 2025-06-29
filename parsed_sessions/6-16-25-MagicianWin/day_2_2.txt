@@ -1,0 +1,20 @@
+Month 2, Day 2
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Magician
+Starts turn: Maple Woods 4
+Magician
+Hide - Succeeded
+Magician
+Spell Prep -
+Magician
+Spell - enchanted Magician Magic V4**
+Magician
+Spell - enchanted Magician Magic II3*
+Magician
+Ends turn: Maple Woods 4
+host
+========================================
+host

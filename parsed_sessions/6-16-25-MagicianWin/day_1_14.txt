@@ -1,0 +1,24 @@
+Month 1, Day 14
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+host
+7th day - denizens return to setup card:
+host
+- Demon
+Magician
+Starts turn: Crag 6
+Magician
+Hide - Succeeded
+Magician
+Hide - N/A
+Magician
+Search - Loot the Hoard - Found Armor
+Magician
+Search - Loot the Hoard - Found Treasure
+Magician
+Ends turn: Crag 6
+host
+========================================
+host

@@ -1,0 +1,307 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Cyclops",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn,Ghost",
+      "pronoun": "he",
+      "creator": "Stephan Valkyser",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "One-eyed",
+      "vulnerability": "T",
+      "icon_type": "cyclops",
+      "icon_folder": "custom/characters",
+      "extra_notes": ""
+    },
+    "level_1": {
+      "name": "Vagrant",
+      "weapon": "Rock",
+      "badge_icon": "Cyclopsbadge1",
+      "advantages": {
+        "N0": "BAD VISION: Adds one to all rolls on the LOOT, PEER, READ RUNES, LOCATE, and MAGIC SIGHT tables."
+      },
+      "diemod": {
+        "N0": "+1:loot,peer,readrunes,locate,magicsight:all"
+      }
+    },
+    "level_2": {
+      "name": "Brute",
+      "weapon": "Rock",
+      "badge_icon": "Cyclopsbadge2",
+      "rest_double": "",
+      "advantages": {
+        "N0": "STURDINESS: Rest Counts Double"
+      }
+    },
+    "level_3": {
+      "name": "Hulk",
+      "weapon": "Rock",
+      "badge_icon": "Cyclopsbadge3",
+      "advantages": {
+        "N0": "GIANT SIZE: Adds one to all rolls on the HIDE table."
+      },
+      "diemod": {
+        "N0": "+1:hide:all"
+      }
+    },
+    "level_4": {
+      "name": "Cyclops",
+      "weapon": "Rock",
+      "badge_icon": "Cyclopsbadge4",
+      "advantages": {
+        "N0": "EXTRAORDINARY THROWING POWER: Subtracts one from all rolls on the MISSILE table."
+      },
+      "diemod": {
+        "N0": "-1:missile:all"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "guard": "-1",
+      "order": "-1",
+      "patrol": "-1",
+      "soldiers": "-1",
+      "lancers": "-1",
+      "bashkars": "1",
+      "shaman": "1",
+      "crone": "1"
+    },
+    "relationship": {
+      "guard": "-1",
+      "order": "-1",
+      "patrol": "-1",
+      "soldiers": "-1",
+      "lancers": "-1",
+      "bashkars": "1",
+      "shaman": "1",
+      "crone": "1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "MOVE T6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "T",
+          "speed": "6",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "cyclops"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE T5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "T",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "cyclops"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "FIGHT T6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "action": "FIGHT",
+          "strength": "T",
+          "speed": "6",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "cyclops"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "MOVE T5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "action": "MOVE",
+          "strength": "T",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "cyclops"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "FIGHT T5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "action": "FIGHT",
+          "strength": "T",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "cyclops"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "FIGHT T6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "action": "FIGHT",
+          "strength": "T",
+          "speed": "6",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "cyclops"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "MOVE T4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "action": "MOVE",
+          "strength": "T",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "cyclops"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "FIGHT T4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "action": "FIGHT",
+          "strength": "T",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "cyclops"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "FIGHT T5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "action": "FIGHT",
+          "strength": "T",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "cyclops"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "MOVE T4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "action": "MOVE",
+          "strength": "T",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "cyclops"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "FIGHT T4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "action": "FIGHT",
+          "strength": "T",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "cyclops"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "FIGHT T5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "action": "FIGHT",
+          "strength": "T",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "cyclops"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

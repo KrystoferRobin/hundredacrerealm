@@ -1,0 +1,299 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Giant",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn,Ghost",
+      "pronoun": "he",
+      "creator": "Roberto Ullfig",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Brute",
+      "vulnerability": "T",
+      "icon_type": "giant",
+      "icon_folder": "custom/characters",
+      "extra_notes": ""
+    },
+    "level_1": {
+      "name": "Young Giant",
+      "weapon": "Giant Club",
+      "badge_icon": "Giantbadge1",
+      "curse_immunity": "",
+      "advantages": {
+        "N0": "PAGAN: Immune to Curses. [Level 1]"
+      }
+    },
+    "level_2": {
+      "name": "Bull Roarer",
+      "badge_icon": "Giantbadge2",
+      "weapon": "Giant Club",
+      "advantages": {
+        "N0": "LONG LEGS: Gets an extra MOVE phase. [Level 2]"
+      },
+      "extra_actions": {
+        "N0": "M"
+      }
+    },
+    "level_3": {
+      "name": "Bone Crusher",
+      "weapon": "Giant Club",
+      "badge_icon": "Giantbadge3",
+      "advantages": {
+        "N0": "GIANT SIZE: Adds one to all rolls on the HIDE table."
+      },
+      "diemod": {
+        "N0": "+1:hide:all"
+      }
+    },
+    "level_4": {
+      "name": "Giant",
+      "badge_icon": "Giantbadge4",
+      "effort_limit": "3",
+      "weapon": "Giant Club",
+      "advantages": {
+        "N0": "STRENGTH: Effort Limit of 3. [Level 4]"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "guard": "-2",
+      "order": "-2",
+      "patrol": "-1",
+      "soldiers": "-1",
+      "lancers": "-1"
+    },
+    "relationship": {
+      "guard": "-2",
+      "order": "-2",
+      "patrol": "-1",
+      "soldiers": "-1",
+      "lancers": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "MOVE T6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "T",
+          "speed": "6",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "giant"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE T5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "T",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "giant"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "FIGHT H5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "5",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "giant"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "MOVE T5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "action": "MOVE",
+          "strength": "T",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "giant"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "FIGHT H4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "giant"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "FIGHT T6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "action": "FIGHT",
+          "strength": "T",
+          "speed": "6",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "giant"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "MOVE T4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "action": "MOVE",
+          "strength": "T",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "giant"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "FIGHT T4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "action": "FIGHT",
+          "strength": "T",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "giant"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "FIGHT T5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "action": "FIGHT",
+          "strength": "T",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "giant"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "MOVE T4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "action": "MOVE",
+          "strength": "T",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "giant"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "FIGHT T4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "action": "FIGHT",
+          "strength": "T",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "giant"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "FIGHT T5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "action": "FIGHT",
+          "strength": "T",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "giant"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

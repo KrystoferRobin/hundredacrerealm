@@ -1,0 +1,25 @@
+{
+  "id": "375",
+  "name": "Glimmering Ring",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "15",
+      "notoriety": "10",
+      "magic": "III",
+      "original_game": "",
+      "artifact": "",
+      "print": "",
+      "alt_monsters1_game": "",
+      "scholar_price": "20",
+      "shaman_price": "20",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "rw_expansion_1": "",
+      "item": "",
+      "merchant_price": "20"
+    }
+  },
+  "parts": []
+}

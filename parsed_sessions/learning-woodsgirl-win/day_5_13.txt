@@ -1,0 +1,84 @@
+Month 5, Day 13
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Borderland 2
+Woods Girl
+Hide - Failed
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Selling to Order HQ.
+Woods Girl
+Attempting to sell: Bane Sword, and Armor
+Woods Girl
+Trade - Sell to Order HQ - Sold 2 items for 45 gold:
+Woods Girl
+Buying from Order HQ.
+Woods Girl
+Available for sale: 3 Warhorses, 3 Armors, Crossbow, Great Sword, Morning Star, 2 Great Axes, 4 Treasures, and Bane Sword
+Woods Girl
+Bidding for a treasure
+Woods Girl
+Buys the Beast Pipes from the Order HQ
+Woods Girl
+Trade - Buy from Order HQ (as Friendly) - Price x 4
+Woods Girl
+Ends turn: Dark Valley 5
+Lancer HQ
+Starts turn: Dark Valley 5
+Lancer HQ
+Ends turn: Dark Valley 5
+__battle__
+Battle resolving at Dark Valley 5:
+__battle__
+GROUP 1
+__battle__
+Woods Girl
+__battle__
+Lancer HQ (Woods Girl)
+__battle__
+Lancer 1 (Woods Girl)
+__battle__
+Lancer 2 (Woods Girl)
+__battle__
+Lancer 3 (Woods Girl)
+__battle__
+GROUP 2
+__battle__
+Order 1
+__battle__
+Order 2
+__battle__
+Order 3
+__battle__
+Order HQ
+Woods Girl
+Meeting Order on the Friendly table
+Woods Girl
+Rolled 2 and 1. = Price x 2
+__battle__
+=======================
+__battle__
+Evening of month 5, day 13, in clearing Dark Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host

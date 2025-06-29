@@ -1,0 +1,21 @@
+{
+  "id": "309",
+  "name": "Dissolve Spell",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "instant",
+      "target": "spell",
+      "text": "Cancel spell",
+      "magic_color": "purple",
+      "original_game": "",
+      "cancel": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "2282",
+  "name": "Mage Diary",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "text": "When READING RUNES, may look at all spells and attempt to learn any, even fi not awakened.",
+      "base_price": "14",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "weight": "L",
+      "notoriety": "7",
+      "mage_diary": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "1981",
+  "name": "Armor",
+  "attributeBlocks": {
+    "this": {
+      "vulnerability": "H",
+      "weight": "H",
+      "armor_thrust": "",
+      "armor_swing": "",
+      "armor_smash": "",
+      "armor": "",
+      "icon_type": "suitofarmor",
+      "facing": "dark",
+      "armor_row": "3",
+      "ret_dw": "Chapel",
+      "icon_folder": "armor",
+      "item": "",
+      "super_realm": "",
+      "suitofarmor": ""
+    },
+    "intact": {
+      "base_price": "17",
+      "chit_color": "gray"
+    },
+    "damaged": {
+      "base_price": "12",
+      "chit_color": "white"
+    }
+  },
+  "parts": []
+}

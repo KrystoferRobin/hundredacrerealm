@@ -1,0 +1,25 @@
+{
+  "id": "2073",
+  "name": "Hidden Ring",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "20",
+      "great": "",
+      "fame": "-10",
+      "notoriety": "10",
+      "magic": "VI",
+      "artifact": "",
+      "print": "",
+      "scholar_price": "20",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "item": "",
+      "super_realm": "",
+      "warlock_price": "20",
+      "merchant_price": "20"
+    }
+  },
+  "parts": []
+}

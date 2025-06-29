@@ -1,0 +1,18 @@
+{
+  "id": "12",
+  "name": "FIGHT H3**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "12",
+      "level": "4",
+      "action": "FIGHT",
+      "strength": "H",
+      "speed": "3",
+      "effort": "2",
+      "facing": "dark",
+      "icon_type": "beggar king"
+    }
+  }
+}

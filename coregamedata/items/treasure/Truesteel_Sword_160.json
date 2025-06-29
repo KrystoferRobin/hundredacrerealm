@@ -1,0 +1,32 @@
+{
+  "id": "160",
+  "name": "Truesteel Sword",
+  "attributeBlocks": {
+    "this": {
+      "weight": "M",
+      "length": "7",
+      "fame": "6",
+      "notoriety": "3",
+      "base_price": "25",
+      "magic": "",
+      "weapon": "",
+      "original_game": "",
+      "icon_type": "broadsword",
+      "alt_monsters1_game": "",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "unalerted": {
+      "strength": "M",
+      "sharpness": "2",
+      "chit_color": "yellow"
+    },
+    "alerted": {
+      "strength": "M",
+      "sharpness": "2",
+      "chit_color": "gold"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "1223",
+  "name": "Shrine",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "shrine",
+      "clearing": "4",
+      "super_realm": "",
+      "monster_die": "2",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "green",
+      "icon_type": "galerunner",
+      "icon_folder": "wesnoth/units",
+      "spell_site": ""
+    }
+  },
+  "parts": []
+}

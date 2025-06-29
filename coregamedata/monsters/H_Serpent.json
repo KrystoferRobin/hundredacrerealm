@@ -1,0 +1,36 @@
+{
+  "id": "1439",
+  "name": "H Serpent",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "armored": "",
+      "vulnerability": "H",
+      "fame": "4",
+      "notoriety": "4",
+      "icon_type": "waterSerpent",
+      "setup_start": "H Serpents Box",
+      "monster_die": "2",
+      "base_price": "4",
+      "icon_folder": "wesnoth/units",
+      "denizen": "",
+      "super_realm": "",
+      "icon_size": "0.9",
+      "serpent": "",
+      "box_num": "2"
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "strength": "M",
+      "chit_color": "gray"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "5",
+      "strength": "H",
+      "chit_color": "darkgray"
+    }
+  },
+  "parts": []
+}

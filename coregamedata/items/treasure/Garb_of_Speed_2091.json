@@ -1,0 +1,18 @@
+{
+  "id": "2091",
+  "name": "Garb of Speed",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "16",
+      "notoriety": "6",
+      "fame": "2",
+      "text": "*'s determine speed, **=3, *=4, zero=5",
+      "chit_speed": "5,4,3",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

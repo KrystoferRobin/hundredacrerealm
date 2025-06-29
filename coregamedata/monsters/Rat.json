@@ -1,0 +1,35 @@
+{
+  "id": "1397",
+  "name": "Rat",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "0",
+      "notoriety": "1",
+      "super_realm": "",
+      "icon_type": "giant-rat",
+      "setup_start": "Rats Box",
+      "monster_die": "3",
+      "base_price": "1",
+      "icon_folder": "wesnoth/units/monsters",
+      "needs_init": "",
+      "denizen": "",
+      "icon_size": "1",
+      "box_num": "1"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "L",
+      "chit_color": "lightblue"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "5",
+      "strength": "M",
+      "chit_color": "blue"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,61 @@
+{
+  "id": "2271",
+  "name": "Fairy Grove",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "grove",
+      "treasure": "large",
+      "text": "Extra ALERT",
+      "cannot_move": "",
+      "treasure_within_treasure": "7",
+      "print": "",
+      "discovery": "",
+      "color_source": "gold",
+      "facing": "face_dn",
+      "ts_section": "twt",
+      "ts_color": "lightblue",
+      "nosecret": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "extra_actions_clearing": "A"
+    },
+    "table": {
+      "roll_1": "horse",
+      "roll_2": "treasure",
+      "roll_3": "spell",
+      "roll_4": "teleport_woods",
+      "roll_5": "mesmerize",
+      "roll_6": "loose_gold"
+    }
+  },
+  "parts": [
+    {
+      "id": "1933",
+      "name": "Workhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "horse",
+          "move_bonus": "extra",
+          "vulnerability": "H",
+          "base_price": "14",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "nobleBeast",
+          "horse_holder": "Inn"
+        },
+        "trot": {
+          "move_speed": "6",
+          "strength": "T",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "4",
+          "strength": "H",
+          "chit_color": "tan"
+        }
+      }
+    }
+  ]
+}

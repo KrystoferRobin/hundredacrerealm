@@ -1,0 +1,13 @@
+{
+  "id": "960",
+  "name": "Bones S",
+  "attributeBlocks": {
+    "this": {
+      "warning": "bones",
+      "tile_type": "S",
+      "chit": "",
+      "rw_expansion_1": ""
+    }
+  },
+  "parts": []
+}

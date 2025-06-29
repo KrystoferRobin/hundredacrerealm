@@ -1,0 +1,21 @@
+{
+  "id": "334",
+  "name": "Elven Slippers",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "MOVE L2",
+      "base_price": "5",
+      "notoriety": "2",
+      "move_speed": "2",
+      "strength": "L",
+      "original_game": "",
+      "boots": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

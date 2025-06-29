@@ -1,0 +1,24 @@
+{
+  "id": "709",
+  "name": "Holy Hand Grenade",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "3",
+      "text": "Single MISSILE attack (Discard to order)",
+      "rw_expansion_1": "",
+      "potion": "",
+      "discard": "chapel",
+      "strength": "H",
+      "sharpness": "3",
+      "length": "10",
+      "facing": "face_dn",
+      "missile": "thrown",
+      "attack": "",
+      "oneshot": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

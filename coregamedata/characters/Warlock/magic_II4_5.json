@@ -1,0 +1,18 @@
+{
+  "id": "5",
+  "name": "magic II4*",
+  "attributeBlocks": {
+    "this": {
+      "action": "magic",
+      "speed": "4",
+      "character_chit": "",
+      "icon_type": "warlock",
+      "icon_folder": "custom/characters",
+      "stage": "5",
+      "level": "2",
+      "effort": "1",
+      "facing": "dark",
+      "magic": "II"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "1863",
+  "name": "Aborigine HQ",
+  "attributeBlocks": {
+    "this": {
+      "native": "Aborigines",
+      "fame": "0",
+      "notoriety": "4",
+      "base_price": "2",
+      "vulnerability": "M",
+      "rank": "HQ",
+      "icon_type": "Rashy_Era-vixens-sharpshooter",
+      "setup_start": "Aborigine Dwelling",
+      "hire_type": "group",
+      "icon_folder": "wesnoth/units/addons",
+      "commerce": "N",
+      "denizen": "",
+      "super_realm": "",
+      "native_die": "2",
+      "clan": "2",
+      "missile": "",
+      "icon_size": "0.9",
+      "archer": "",
+      "native_name": "Archer"
+    },
+    "light": {
+      "move_speed": "2",
+      "chit_color": "lightgreen",
+      "missile": ""
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "1",
+      "strength": "M",
+      "length": "16",
+      "chit_color": "forestgreen",
+      "missile": "",
+      "sharpness": "2"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "665",
+  "name": "Elemental Power",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "day",
+      "target": "magic(VI,VIII)",
+      "text": "MAGIC VI become PURPLE, VIII become BLACK",
+      "magic_color": "purple",
+      "rw_expansion_1": "",
+      "author": "Deric Page",
+      "benevolent": "",
+      "host_okay": "",
+      "forced_enchant": "",
+      "vi": "purple",
+      "viii": "black",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

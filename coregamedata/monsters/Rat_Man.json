@@ -1,0 +1,38 @@
+{
+  "id": "943",
+  "name": "Rat Man",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "1",
+      "notoriety": "1",
+      "icon_type": "ratman",
+      "setup_start": "Rat Man Box",
+      "monster_die": "5",
+      "base_price": "1",
+      "icon_folder": "monsters2",
+      "rw_expansion_1": "",
+      "box_num": "2",
+      "denizen": "",
+      "weapon_use": "",
+      "icon_type_alt": "soulless-rat",
+      "icon_folder_alt": "wesnoth/units/undead",
+      "icon_size_alt": "1.2"
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "3",
+      "strength": "L",
+      "chit_color": "lightgreen"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "3",
+      "strength": "L",
+      "chit_color": "forestgreen",
+      "sharpness": "2"
+    }
+  },
+  "parts": []
+}

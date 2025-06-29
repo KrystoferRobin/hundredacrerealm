@@ -1,0 +1,22 @@
+Month 4, Day 1
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+White Knight
+Starts turn: High Pass 3
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+After resting, these chits were moved to fatigue: MOVE H5*
+White Knight
+Rest - Rested 1 asterisk
+White Knight
+Ends turn: Borderland 2
+host
+White Knight loses Rogue 6 as a hireling (term is up).
+host
+========================================
+host

@@ -1,0 +1,22 @@
+{
+  "id": "636",
+  "name": "Raise Dead",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "combat",
+      "target": "caster",
+      "text": "Roll once on raise dead table for result",
+      "magic_color": "gray",
+      "rw_expansion_1": "",
+      "host_okay": "",
+      "summoning": "undead",
+      "author": "Expansion 1",
+      "table": "raisedead",
+      "benevolent": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

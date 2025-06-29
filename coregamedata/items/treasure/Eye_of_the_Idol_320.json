@@ -1,0 +1,27 @@
+{
+  "id": "320",
+  "name": "Eye of the Idol",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "magic": "II",
+      "fame": "-5",
+      "weight": "M",
+      "notoriety": "10",
+      "base_price": "34",
+      "original_game": "",
+      "artifact": "",
+      "print": "",
+      "alt_monsters1_game": "",
+      "scholar_price": "20",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "rw_expansion_1": "",
+      "item": "",
+      "shaman_price": "20",
+      "merchant_price": "20"
+    }
+  },
+  "parts": []
+}

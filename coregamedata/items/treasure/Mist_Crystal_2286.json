@@ -1,0 +1,21 @@
+{
+  "id": "2286",
+  "name": "Mist Crystal",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "text": "No one can use the PEER table to Peer into the clearing.",
+      "base_price": "35",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "weight": "M",
+      "notoriety": "10",
+      "fame": "-10",
+      "mist_crystal": "",
+      "great": ""
+    }
+  },
+  "parts": []
+}

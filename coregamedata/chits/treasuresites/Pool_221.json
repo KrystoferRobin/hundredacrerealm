@@ -1,0 +1,26 @@
+{
+  "id": "221",
+  "name": "Pool",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "pool",
+      "clearing": "6",
+      "original_game": "",
+      "monster_die": "3",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "draw": "fatigue_asterisk",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "gold",
+      "icon_type": "octopus",
+      "icon_folder": "monsters",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_type_alt": "kraken"
+    }
+  },
+  "parts": []
+}

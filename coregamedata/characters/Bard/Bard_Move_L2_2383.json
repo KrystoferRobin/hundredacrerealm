@@ -1,0 +1,19 @@
+{
+  "id": "2383",
+  "name": "Bard Move L2**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "strength": "L",
+      "speed": "2",
+      "character_level": "2",
+      "stage": "5",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "bard",
+      "super_realm": "",
+      "effort": "2"
+    }
+  }
+}

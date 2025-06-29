@@ -1,0 +1,17 @@
+{
+  "id": "2064",
+  "name": "Shielded Lantern",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "8",
+      "weight": "L",
+      "text": "Extra phase in caves",
+      "extra_cave_phase": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

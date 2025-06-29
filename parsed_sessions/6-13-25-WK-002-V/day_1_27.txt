@@ -1,0 +1,76 @@
+Month 1, Day 27
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+White Knight
+Starts turn: Dark Valley 2
+White Knight
+Move - moved
+White Knight
+Selling to Order HQ.
+White Knight
+Attempting to sell: Golden Icon
+White Knight
+Trade - Sell to Order HQ - Total received for the Golden Icon was 100 gold.
+White Knight
+Buying from Order HQ.
+White Knight
+Available for sale: 3 Warhorses, Armor, Crossbow, Morning Star, 2 Great Axes, and 3 Treasures
+White Knight
+Bidding for a treasure
+White Knight
+The native group will be no more favorable with drinks.
+White Knight
+Buys the Magic Spectacles from the Order HQ
+White Knight
+Trade - Buy from Order HQ (as Ally) - Boon (x 1)
+White Knight
+The native group will be no more favorable with drinks.
+White Knight
+Hire - Buy from Order 3 (as Ally) - Price x 4
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Dark Valley 5
+__battle__
+Battle resolving at Dark Valley 5:
+__battle__
+GROUP 1
+__battle__
+Order 3 (White Knight)
+__battle__
+White Knight
+__battle__
+GROUP 2
+__battle__
+Order 1
+__battle__
+Order 2
+__battle__
+Order HQ
+White Knight
+The native group will be no more favorable with drinks.
+White Knight
+Meeting Order on the Ally table
+White Knight
+Rolled 6, with a modifier of -1. = Price x 4
+__battle__
+=======================
+__battle__
+Evening of month 1, day 27, in clearing Dark Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+White Knight
+Presses the END combat button.
+White Knight
+Combat has ended.
+host
+========================================
+host

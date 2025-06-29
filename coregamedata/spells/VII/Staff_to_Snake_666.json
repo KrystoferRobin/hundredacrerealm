@@ -1,0 +1,34 @@
+{
+  "id": "666",
+  "name": "Staff to Snake",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "combat",
+      "target": "staff",
+      "text": "Change staff into Snake with M4**/4",
+      "magic_color": "white",
+      "rw_expansion_1": "",
+      "author": "Deric Page",
+      "host_okay": "",
+      "ch2companion": "House",
+      "benevolent": "",
+      "learnable": ""
+    },
+    "ch2companion": {
+      "vulnerability": "M",
+      "armored": "",
+      "strength": "M",
+      "attack_speed": "4",
+      "move_speed": "4",
+      "sharpness": "2",
+      "name": "Snake",
+      "chit_color": "lightblue",
+      "icon_type": "serpent",
+      "icon_folder": "monsters",
+      "length": "0"
+    }
+  },
+  "parts": []
+}

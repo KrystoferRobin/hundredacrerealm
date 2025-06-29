@@ -1,0 +1,20 @@
+{
+  "id": "713",
+  "name": "Magic Flute",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "12",
+      "text": "Subtract one on all HIRE rolls",
+      "rw_expansion_1": "",
+      "fame": "10",
+      "notoriety": "8",
+      "weight": "L",
+      "great": "",
+      "facing": "face_dn",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

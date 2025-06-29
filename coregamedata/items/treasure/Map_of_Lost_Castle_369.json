@@ -1,0 +1,17 @@
+{
+  "id": "369",
+  "name": "Map of Lost Castle",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "3",
+      "text": "-1 to LOCATE rolls in LOST CASTLE",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,134 @@
+{
+  "id": "241",
+  "name": "Crypt of the Knight",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "crypt",
+      "original_game": "",
+      "treasure": "large",
+      "cannot_move": "",
+      "treasure_within_treasure": "5",
+      "print": "",
+      "discovery": "",
+      "search": "fatigue_t,key",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "ts_section": "twt",
+      "ts_color": "lightblue",
+      "nosecret": "",
+      "rw_expansion_1": ""
+    },
+    "table": {
+      "roll_1": "horse",
+      "roll_2": "armor",
+      "roll_3": "weapon",
+      "roll_4": "treasure",
+      "roll_5": "gold",
+      "roll_6": "curse"
+    }
+  },
+  "parts": [
+    {
+      "id": "133",
+      "name": "Warhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "warhorse",
+          "vulnerability": "T",
+          "armored": "",
+          "base_price": "25",
+          "magic": "",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "item": "",
+          "horse_holder": "Chapel",
+          "icon_folder_alt": "wesnoth/units",
+          "icon_type_alt": "royalBeast",
+          "icon_size_alt": "1"
+        },
+        "trot": {
+          "move_speed": "5",
+          "strength": "T",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "3",
+          "strength": "T",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "140",
+      "name": "Armor",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "T",
+          "weight": "T",
+          "armor_thrust": "",
+          "armor_swing": "",
+          "armor_smash": "",
+          "fame": "6",
+          "notoriety": "3",
+          "magic": "",
+          "armor": "",
+          "original_game": "",
+          "icon_type": "suitofarmor",
+          "facing": "dark",
+          "armor_row": "3",
+          "alt_monsters1_game": "",
+          "icon_folder": "armor",
+          "rw_expansion_1": "",
+          "item": "",
+          "suitofarmor": ""
+        },
+        "intact": {
+          "base_price": "25",
+          "chit_color": "gold"
+        },
+        "damaged": {
+          "base_price": "18",
+          "chit_color": "yellow"
+        },
+        "destroyed": {
+          "base_price": "5"
+        }
+      }
+    },
+    {
+      "id": "159",
+      "name": "Bane Sword",
+      "attributeBlocks": {
+        "this": {
+          "weight": "T",
+          "length": "8",
+          "fame": "6",
+          "notoriety": "3",
+          "base_price": "20",
+          "magic": "",
+          "two_handed": "",
+          "weapon": "",
+          "original_game": "",
+          "icon_type": "great_sword",
+          "alt_monsters1_game": "",
+          "icon_folder": "weapons",
+          "rw_expansion_1": "",
+          "item": ""
+        },
+        "unalerted": {
+          "attack_speed": "8",
+          "strength": "T",
+          "sharpness": "1",
+          "chit_color": "yellow"
+        },
+        "alerted": {
+          "attack_speed": "2",
+          "strength": "T",
+          "sharpness": "1",
+          "chit_color": "gold"
+        }
+      }
+    }
+  ]
+}

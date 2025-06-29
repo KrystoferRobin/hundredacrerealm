@@ -1,0 +1,18 @@
+{
+  "id": "10",
+  "name": "FIGHT T4**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "10",
+      "level": "4",
+      "action": "FIGHT",
+      "strength": "T",
+      "speed": "4",
+      "effort": "2",
+      "facing": "dark",
+      "icon_type": "blacksmith"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+Month 3, Day 16
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Elf
+Starts turn: Cliff 1
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Hide - Succeeded
+Elf
+Hide - N/A
+Elf
+Ends turn: Bad Valley 4
+host
+========================================
+host

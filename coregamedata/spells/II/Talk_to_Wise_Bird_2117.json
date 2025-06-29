@@ -1,0 +1,19 @@
+{
+  "id": "2117",
+  "name": "Talk to Wise Bird",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "instant",
+      "target": "character",
+      "text": "Immediate PEER in any hex",
+      "magic_color": "gold",
+      "instant_peer": "",
+      "target_client": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

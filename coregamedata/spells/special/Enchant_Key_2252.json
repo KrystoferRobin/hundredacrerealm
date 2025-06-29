@@ -1,0 +1,24 @@
+{
+  "id": "2252",
+  "name": "Enchant Key",
+  "spellLevel": "*",
+  "attributeBlocks": {
+    "this": {
+      "duration": "permanent",
+      "target": "spells item",
+      "text": "Opens Chest, Crypt, Abbey, Library, Tomb and Vault",
+      "magic_color": "any",
+      "host_okay": "",
+      "spell": "*",
+      "awakened": "",
+      "no_cancel": "",
+      "benevolent": "",
+      "super_realm": "",
+      "no_expire": "",
+      "enchant_key": "",
+      "no_incantation_tie": "",
+      "super_realm_treasure": ""
+    }
+  },
+  "parts": []
+}

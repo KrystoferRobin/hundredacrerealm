@@ -1,0 +1,25 @@
+{
+  "id": "238",
+  "name": "Chest",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "chest",
+      "original_game": "",
+      "gold_reward": "50",
+      "treasure": "large",
+      "weight": "T",
+      "text": "Must have LOST KEYS to open",
+      "treasure_within_treasure": "1",
+      "print": "",
+      "no_loot": "",
+      "needs_open": "key",
+      "remove_from_play": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "ts_section": "twt",
+      "ts_color": "lightblue",
+      "rw_expansion_1": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,22 @@
+Month 1, Day 17
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Elf
+Starts turn: Between Evil Valley 2 and Evil Valley 5
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Hide - Succeeded
+Elf
+Hide - N/A
+Elf
+Ends turn: Ledges 4
+host
+========================================
+host

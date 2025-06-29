@@ -1,0 +1,20 @@
+{
+  "id": "2112",
+  "name": "Vial of Healing",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Move all wounds to fatigue (discard to order)",
+      "base_price": "2",
+      "discard": "order",
+      "potion": "",
+      "wounds_to_fatigue": "",
+      "transferable": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": ""
+    }
+  },
+  "parts": []
+}

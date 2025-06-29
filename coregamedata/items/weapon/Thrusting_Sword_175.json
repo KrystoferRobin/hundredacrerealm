@@ -1,0 +1,30 @@
+{
+  "id": "175",
+  "name": "Thrusting Sword",
+  "attributeBlocks": {
+    "this": {
+      "weight": "L",
+      "length": "4",
+      "base_price": "6",
+      "weapon": "",
+      "original_game": "",
+      "icon_type": "thrusting_sword",
+      "alt_monsters1_game": "",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "unalerted": {
+      "attack_speed": "4",
+      "strength": "L",
+      "sharpness": "1",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "strength": "L",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

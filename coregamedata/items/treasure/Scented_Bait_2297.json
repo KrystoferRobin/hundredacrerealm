@@ -1,0 +1,20 @@
+{
+  "id": "2297",
+  "name": "Scented Bait",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "During Sunset, any monsters in the hex that haven't blocked anyone move to your clearing.",
+      "base_price": "6",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "notoriety": "11",
+      "fame": "12",
+      "native": "Hunters",
+      "scented_bait": ""
+    }
+  },
+  "parts": []
+}

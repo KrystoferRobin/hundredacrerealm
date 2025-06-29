@@ -1,0 +1,20 @@
+{
+  "id": "2232",
+  "name": "Join",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "phase",
+      "target": "character",
+      "text": "You may follow without starting in guide's clearing.",
+      "magic_color": "gold",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "join_following": ""
+    }
+  },
+  "parts": []
+}

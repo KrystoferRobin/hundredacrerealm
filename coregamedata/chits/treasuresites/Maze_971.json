@@ -1,0 +1,25 @@
+{
+  "id": "971",
+  "name": "Maze",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "maze",
+      "clearing": "2",
+      "monster_die": "2",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "gold",
+      "icon_type": "minotaur",
+      "icon_folder": "monsters2",
+      "rw_expansion_1": "",
+      "discover_to_leave": "",
+      "icon_type_alt": "minotaurKing",
+      "icon_folder_alt": "wesnoth/units",
+      "maze": ""
+    }
+  },
+  "parts": []
+}

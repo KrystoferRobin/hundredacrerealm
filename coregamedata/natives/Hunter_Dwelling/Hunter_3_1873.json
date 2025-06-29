@@ -1,0 +1,71 @@
+{
+  "id": "1873",
+  "name": "Hunter 3",
+  "attributeBlocks": {
+    "this": {
+      "native": "Hunters",
+      "fame": "0",
+      "notoriety": "2",
+      "base_price": "1",
+      "vulnerability": "M",
+      "rank": "3",
+      "icon_type": "Rashy_Era-human-forest-axethrower",
+      "setup_start": "Hunter Dwelling",
+      "hire_type": "group",
+      "icon_folder": "wesnoth/units/addons",
+      "denizen": "",
+      "super_realm": "",
+      "native_die": "4",
+      "clan": "3",
+      "icon_size": "0.9",
+      "native_name": "Axeman"
+    },
+    "light": {
+      "move_speed": "3",
+      "chit_color": "peach",
+      "attack_speed": "5",
+      "length": "2",
+      "strength": "M",
+      "sharpness": "1"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "M",
+      "length": "2",
+      "chit_color": "brown",
+      "sharpness": "1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1877",
+      "name": "Workhorse 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Hunters",
+          "horse": "horse",
+          "move_bonus": "extra",
+          "vulnerability": "H",
+          "activated": "",
+          "super_realm": "",
+          "clan": "3",
+          "native_die": "4",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "nobleBeast"
+        },
+        "trot": {
+          "move_speed": "6",
+          "strength": "M",
+          "chit_color": "peach"
+        },
+        "gallop": {
+          "move_speed": "6",
+          "strength": "H",
+          "chit_color": "brown"
+        }
+      }
+    }
+  ]
+}

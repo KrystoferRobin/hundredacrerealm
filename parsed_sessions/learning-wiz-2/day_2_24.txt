@@ -1,0 +1,20 @@
+Month 2, Day 24
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Wizard
+Starts turn: Mountain 5
+Wizard
+Search - Peer - Found hidden enemies
+Wizard
+Search - Locate - Passage(s)
+Wizard
+Hide - Succeeded
+Wizard
+Hide - N/A
+Wizard
+Ends turn: Mountain 5
+host
+========================================
+host

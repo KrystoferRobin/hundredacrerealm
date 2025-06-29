@@ -1,0 +1,22 @@
+{
+  "id": "314",
+  "name": "Premonition",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "day",
+      "target": "character",
+      "text": "Choose when your written move is executed",
+      "magic_color": "gray",
+      "original_game": "",
+      "choose_turn": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

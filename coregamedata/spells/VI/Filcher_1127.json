@@ -1,0 +1,21 @@
+{
+  "id": "1127",
+  "name": "Filcher",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "instant",
+      "target": "human group",
+      "text": "Steal from a native group, but if they find out, there will be trouble",
+      "magic_color": "black",
+      "alt_monsters1_game": "",
+      "new_spells_1": "",
+      "host_okay": "",
+      "benevolent": "",
+      "no_battle": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

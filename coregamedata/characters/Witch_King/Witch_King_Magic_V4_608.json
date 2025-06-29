@@ -1,0 +1,21 @@
+{
+  "id": "608",
+  "name": "Witch King Magic V4*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "magic": "V",
+      "speed": "4",
+      "effort": "1",
+      "character_level": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "2",
+      "level": "1",
+      "icon_folder": "characters",
+      "icon_type": "witch_king",
+      "rw_expansion_1": ""
+    }
+  }
+}

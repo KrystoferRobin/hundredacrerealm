@@ -1,0 +1,312 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Ranger",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn,House",
+      "pronoun": "he",
+      "creator": "Karl Wilhelm",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Gondor",
+      "vulnerability": "M",
+      "icon_type": "ranger",
+      "icon_folder": "custom/characters",
+      "fighter": "",
+      "extra_notes": "Aragorn from the Tolkien books. I got the impression of strengh and agility, combined with good eyes and some magical immunity.  Healing (I), and remedy (VIII) are in character."
+    },
+    "level_1": {
+      "name": "Dunadan",
+      "armor": "Helmet,Breastplate,Shield",
+      "weapon": "Short Sword"
+    },
+    "level_2": {
+      "name": "Halfelven",
+      "weapon": "Light Bow",
+      "spellcount": "1",
+      "badge_icon": "Rangerbadge2",
+      "spelltypes": {
+        "N0": "III"
+      },
+      "advantages": {
+        "N0": "HALFELVEN: Is immune to the Imp, Demon, and Flying Demon."
+      },
+      "monster_immunity": {
+        "N0": "Imp",
+        "N1": "Demon",
+        "N2": "Winged Demon"
+      }
+    },
+    "level_3": {
+      "name": "Captain of Gondor",
+      "spellcount": "1",
+      "weapon": "Spear",
+      "armor": "Shield",
+      "spelltypes": {
+        "N0": "I",
+        "N1": "III"
+      }
+    },
+    "level_4": {
+      "name": "Ranger",
+      "badge_icon": "Rangerbadge4",
+      "weapon": "Broadsword",
+      "spellcount": "2",
+      "advantages": {
+        "N0": "WOODCRAFT: Rolls 1 die instead of 2 for all rolls on the LOCATE, HIDE, and PEER tables in the Mountains, or Woods."
+      },
+      "diemod": {
+        "N0": "1d:locate,hide,peer:&gt;mountain,&gt;woods"
+      },
+      "spelltypes": {
+        "N0": "I",
+        "N1": "III",
+        "N2": "VIII"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "company": "1",
+      "guard": "1",
+      "woodfolk": "1",
+      "warlock": "-1",
+      "shaman": "-1",
+      "rogues": "-1",
+      "bashkars": "-1"
+    },
+    "gamerel": {
+      "company": "1",
+      "guard": "1",
+      "woodfolk": "1",
+      "warlock": "-1",
+      "shaman": "-1",
+      "rogues": "-1",
+      "bashkars": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "FIGHT M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "ranger",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "ranger",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "ranger",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "magic III4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "ranger",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "MOVE M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "ranger",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "MOVE M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "ranger",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "FIGHT M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "ranger",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "ranger",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic I4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "ranger",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "FIGHT H6*",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "ranger",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "fight T6**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "T",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "ranger",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic VIII4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "ranger",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VIII"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

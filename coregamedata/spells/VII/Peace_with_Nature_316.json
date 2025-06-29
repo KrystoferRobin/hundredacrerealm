@@ -1,0 +1,22 @@
+{
+  "id": "316",
+  "name": "Peace with Nature",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "permanent",
+      "target": "leader",
+      "text": "Not attacked by warning or sound chits",
+      "magic_color": "gold",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "peace_with_nature": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

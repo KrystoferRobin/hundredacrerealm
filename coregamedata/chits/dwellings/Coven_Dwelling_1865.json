@@ -1,0 +1,202 @@
+{
+  "id": "1865",
+  "name": "Coven Dwelling",
+  "attributeBlocks": {
+    "this": {
+      "native": "Coven",
+      "dwelling": "cottage,hamlet,hut,l_fire",
+      "print": "",
+      "ts_section": "clan 3",
+      "ts_size": "T",
+      "ts_color": "red",
+      "ts_count": "4",
+      "icon_type": "witch",
+      "icon_folder": "wesnoth/units",
+      "virtual_dwelling": "",
+      "super_realm": "",
+      "native_die": "2",
+      "clan": "3",
+      "icon_size": "0.9",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1866",
+      "name": "Coven 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Coven",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "3",
+          "vulnerability": "L",
+          "rank": "1",
+          "icon_type": "witch",
+          "setup_start": "Coven Dwelling",
+          "hire_type": "single",
+          "icon_folder": "wesnoth/units",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "2",
+          "clan": "3",
+          "icon_size": "0.9",
+          "flying": "",
+          "native_name": "Caster",
+          "no_weapon_usage": ""
+        },
+        "light": {
+          "move_speed": "1",
+          "chit_color": "peach",
+          "attack_speed": "3",
+          "length": "9",
+          "magic_type": "V",
+          "attack_spell": "curse"
+        },
+        "dark": {
+          "move_speed": "1",
+          "attack_speed": "4",
+          "length": "9",
+          "chit_color": "brown",
+          "magic_type": "VIII",
+          "attack_spell": "mesmerize"
+        }
+      }
+    },
+    {
+      "id": "1867",
+      "name": "Coven 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Coven",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "3",
+          "vulnerability": "L",
+          "rank": "2",
+          "icon_type": "witch",
+          "setup_start": "Coven Dwelling",
+          "hire_type": "single",
+          "icon_folder": "wesnoth/units",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "2",
+          "clan": "3",
+          "icon_size": "0.9",
+          "flying": "",
+          "native_name": "Caster",
+          "no_weapon_usage": ""
+        },
+        "light": {
+          "move_speed": "1",
+          "chit_color": "peach",
+          "attack_speed": "3",
+          "length": "9",
+          "magic_type": "V",
+          "attack_spell": "curse"
+        },
+        "dark": {
+          "move_speed": "1",
+          "attack_speed": "4",
+          "length": "9",
+          "chit_color": "brown",
+          "magic_type": "VIII",
+          "attack_spell": "mesmerize"
+        }
+      }
+    },
+    {
+      "id": "1868",
+      "name": "Coven HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Coven",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "3",
+          "vulnerability": "L",
+          "rank": "HQ",
+          "icon_type": "witch",
+          "setup_start": "Coven Dwelling",
+          "hire_type": "single",
+          "icon_folder": "wesnoth/units",
+          "commerce": "N",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "2",
+          "clan": "3",
+          "icon_size": "0.9",
+          "flying": "",
+          "native_name": "Caster",
+          "no_weapon_usage": ""
+        },
+        "light": {
+          "move_speed": "1",
+          "chit_color": "peach",
+          "attack_speed": "3",
+          "length": "9",
+          "magic_type": "V",
+          "attack_spell": "curse"
+        },
+        "dark": {
+          "move_speed": "1",
+          "attack_speed": "4",
+          "length": "9",
+          "chit_color": "brown",
+          "magic_type": "VIII",
+          "attack_spell": "mesmerize"
+        }
+      }
+    },
+    {
+      "id": "2010",
+      "name": "Staff",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "9",
+          "base_price": "1",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "staff",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "L",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "2011",
+      "name": "Staff",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "9",
+          "base_price": "1",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "staff",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "L",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

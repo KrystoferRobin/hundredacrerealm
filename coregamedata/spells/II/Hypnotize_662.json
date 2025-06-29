@@ -1,0 +1,20 @@
+{
+  "id": "662",
+  "name": "Hypnotize",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "day",
+      "target": "native",
+      "text": "Control ONE Native",
+      "magic_color": "gray",
+      "rw_expansion_1": "",
+      "control": "",
+      "author": "Expansion 1",
+      "benevolent": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

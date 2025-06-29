@@ -1,0 +1,140 @@
+Month 2, Day 18
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+White Knight
+Starts turn: Bad Valley 1
+White Knight
+Hide - Succeeded
+White Knight
+Move - moved
+White Knight
+Search - Locate - Passage(s)
+White Knight
+After resting, these chits were made active: FIGHT H5*
+White Knight
+Rest - Rested 1 asterisk
+White Knight
+Ends turn: Caves 5
+__battle__
+Battle resolving at Caves 5:
+__battle__
+GROUP 1
+__battle__
+White Knight
+__battle__
+Order 1 (White Knight)
+__battle__
+Order 2 (White Knight)
+__battle__
+GROUP 2
+__battle__
+T Spider
+__battle__
+=======================
+__battle__
+Evening of month 2, day 18, in clearing Caves 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+White Knight
+Attacks the T Spider
+White Knight
+Becomes unhidden.
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 3
+Order 2
+Changes tactics:  Order 2 T5*
+__battle__
+Change Tactics in Box 3
+Order 1
+Changes tactics:  Order 1 T5*
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+Attack Length=8, Speed=6
+__battle__
+White Knight H6*  vs. T Spider Speed 3
+__battle__
+Intercepted! (box 3 matches box 3)
+__battle__
+Initial harm: H+1
+__battle__
+T Spider is hit with H+1 harm along box 3
+__battle__
+T Spider was killed!
+__battle__
+>
+__battle__
+Attack Length=7, Speed=5
+__battle__
+Order 1 T5*  vs. T Spider Speed 3
+__battle__
+Attack Cancelled:  T Spider was already killed by White Knight.
+__battle__
+>
+__battle__
+Attack Length=7, Speed=5
+__battle__
+Order 2 T5*  vs. T Spider Speed 3
+__battle__
+Attack Cancelled:  T Spider was already killed by White Knight.
+__battle__
+>
+__battle__
+Attack Length=0, Speed=4
+__battle__
+T Spider M4  vs. Order 2 Speed 6
+__battle__
+Attack Cancelled:  T Spider was already killed by White Knight.
+__battle__
+The White Knight gets 6 fame (x 1) and 6 notoriety (x 1) for the death of the T Spider
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+White Knight disengages because target is dead
+__battle__
+Order 1 disengages because target is dead
+__battle__
+Order 2 disengages because target is dead
+__battle__
+T Spider is dead.  Killed by White Knight
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+White Knight
+Presses the END combat button.
+White Knight
+Combat has ended.
+host
+========================================
+host

@@ -1,0 +1,276 @@
+Month 2, Day 3
+host
+========================================
+White Knight
+Spent the night at the Chapel.
+host
+Monster Die roll is Rolled 2.
+White Knight
+Starts turn: Dark Valley 5
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Search - Locate - Nothing
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Linden Woods 5
+host
+Viper is added to Linden Woods, clearing 5
+host
+Viper is added to Linden Woods, clearing 5
+host
+Viper blocks the White Knight
+host
+Viper blocks the White Knight
+__battle__
+Battle resolving at Linden Woods 5:
+__battle__
+GROUP 1
+__battle__
+White Knight
+__battle__
+Order 3 (White Knight)
+__battle__
+Order 2 (White Knight)
+__battle__
+Order 1 (White Knight)
+__battle__
+GROUP 2
+__battle__
+Viper
+__battle__
+Viper
+__battle__
+=======================
+__battle__
+Evening of month 2, day 3, in clearing Linden Woods 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Order 1
+Lures the Viper
+Order 2
+Lures the Viper
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+White Knight
+Attacks the Viper
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 1
+Viper
+Changes tactics:  Viper L2
+__battle__
+Change Tactics in Box 3
+Order 3
+Changes tactics:  Order 3 H4*
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+Attack Length=8, Speed=6
+__battle__
+White Knight H6*  vs. Viper Speed 2
+__battle__
+Missed! (Speed 6 is not faster than Speed 2)
+__battle__
+>
+__battle__
+Attack Length=7, Speed=4
+__battle__
+Order 3 H4*  vs. Viper Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Length=7, Speed=4
+__battle__
+Order 1 H4*  vs. Viper Speed 2
+__battle__
+Intercepted! (box 1 matches box 1)
+__battle__
+Initial harm: H+1
+__battle__
+Viper is hit with H+1 harm along box 1
+Order 1
+Hits armor, and reduces sharpness: H
+__battle__
+Viper was killed!
+__battle__
+>
+__battle__
+Attack Length=7, Speed=5
+__battle__
+Order 2 H5*  vs. Viper Speed 4
+__battle__
+Missed! (Speed 5 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Length=0, Speed=2
+__battle__
+Viper L2  vs. Order 1 Speed 4
+__battle__
+Attack Cancelled:  Viper was already killed by Order 1.
+__battle__
+>
+__battle__
+Attack Length=0, Speed=4
+__battle__
+Viper M4**  vs. Order 2 Speed 5
+__battle__
+Undercut! (Speed 4 is faster than Speed 5)
+__battle__
+Initial harm: M+2
+__battle__
+Order 2 is hit with M+2 harm along box 2
+Viper
+Hits the Order 2's Order Warhorse 2
+Viper
+Hits armor, and reduces sharpness: M+1
+__battle__
+Order 2 was not killed.
+__battle__
+The White Knight gets 1 fame (x 1) and 2 notoriety (x 1) for the death of the Viper
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+White Knight disengages because target is dead
+__battle__
+Order 1 disengages because target is dead
+__battle__
+Viper is dead.  Killed by Order 1
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Order 1
+Lures the Viper
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+White Knight
+Attacks the Viper
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=7
+__battle__
+Order 3 H4*  vs. Viper Speed 4
+__battle__
+Intercepted! (box 1 matches box 1)
+__battle__
+Initial harm: H+1
+__battle__
+Viper is hit with H+1 harm along box 1
+Order 3
+Hits armor, and reduces sharpness: H
+__battle__
+Viper was killed!
+__battle__
+>
+__battle__
+Attack Speed=4, Length=7
+__battle__
+Order 1 H4*  vs. Viper Speed 4
+__battle__
+Intercepted! (box 1 matches box 1)
+__battle__
+Initial harm: H+1
+__battle__
+Viper is hit with H+1 harm along box 1
+Order 1
+Hits armor, and reduces sharpness: H
+__battle__
+Viper was killed!
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+Viper M4**  vs. Order 3 Speed 4
+__battle__
+Attack Cancelled:  Viper was already killed by Order 1.
+__battle__
+>
+__battle__
+Attack Speed=5, Length=7
+__battle__
+Order 2 T5*  vs. Viper Speed 4
+__battle__
+Attack Cancelled:  Viper was already killed by Order 1.
+__battle__
+The White Knight gets 1 fame (x 1) and 2 notoriety (x 1) [split 2 ways] for the death of the Viper
+__battle__
+The White Knight gets 1 fame (x 1) and 2 notoriety (x 1) [split 2 ways] for the death of the Viper
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+White Knight disengages because target is dead
+__battle__
+Order 3 disengages because target is dead
+__battle__
+Order 2 disengages because target is dead
+__battle__
+Order 1 disengages because target is dead
+__battle__
+Viper is dead.  Killed by Order 1
+__battle__
+-----------------------
+__battle__
+--  Combat Round 3
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+White Knight
+Presses the END combat button.
+White Knight
+Combat has ended.
+host
+========================================
+host

@@ -1,0 +1,30 @@
+Month 2, Day 23
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+White Knight
+Starts turn: Caves 5
+White Knight
+Fatigued chit: MAGIC I5**
+White Knight
+Search - Loot the Cairns - Found Treasure
+White Knight
+Fatigued chit: MOVE H6*
+White Knight
+Search - Loot the Cairns - Found Treasure
+White Knight
+Activates Poultice of Health
+White Knight
+Fatigued chit: FIGHT H5*
+White Knight
+Search - Loot the Cairns - Nothing
+White Knight
+After resting, these chits were made active: MAGIC I5**
+White Knight
+Rest - Rested 2 asterisks
+White Knight
+Ends turn: Caves 5
+host
+========================================
+host

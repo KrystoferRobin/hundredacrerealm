@@ -1,0 +1,43 @@
+{
+  "id": "1746",
+  "name": "Bandit 4",
+  "attributeBlocks": {
+    "this": {
+      "native": "Bandits",
+      "fame": "0",
+      "notoriety": "2",
+      "base_price": "1",
+      "vulnerability": "M",
+      "rank": "4",
+      "super_realm": "",
+      "icon_type": "rogue+female",
+      "monster_die": "5",
+      "monster_die2": "6",
+      "setup_start": "Bandit Dwelling",
+      "hire_type": "group",
+      "icon_folder": "wesnoth/units/human-outlaws",
+      "denizen": "",
+      "needs_init": "",
+      "icon_size": "0.9",
+      "native_name": "Swordsman",
+      "roving_native": ""
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "3",
+      "strength": "M",
+      "chit_color": "paleyellow",
+      "sharpness": "1",
+      "length": "4"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "L",
+      "length": "4",
+      "chit_color": "yellow",
+      "sharpness": "1"
+    }
+  },
+  "parts": []
+}

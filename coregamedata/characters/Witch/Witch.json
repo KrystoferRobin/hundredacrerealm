@@ -1,0 +1,327 @@
+{
+  "ids": [
+    "417",
+    "1539"
+  ],
+  "name": "Witch",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "witch",
+      "character": "",
+      "vulnerability": "L",
+      "start": "Inn",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "she",
+      "alt_monsters1_game": "",
+      "magicuser": "",
+      "icon_folder": "characters",
+      "creator": "Richard Hamblen",
+      "artcredit": "Kelly Glancy",
+      "meaning": "Vitriole: Poison",
+      "rw_expansion_1": ""
+    },
+    "level_1": {
+      "name": "Old Woman"
+    },
+    "level_2": {
+      "name": "Medium",
+      "spellcount": "1",
+      "diemod": {
+        "N0": "-1:readrunes:all"
+      },
+      "spelltypes": {
+        "N0": "II",
+        "N1": "V",
+        "N2": "VIII"
+      },
+      "advantages": {
+        "N0": "KNOWLEDGE:  Subtract 1 from all Reading Runes die rolls."
+      }
+    },
+    "level_3": {
+      "name": "Hag",
+      "spellcount": "2",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "V",
+        "N2": "VIII"
+      }
+    },
+    "level_4": {
+      "name": "Witch",
+      "spellcount": "3",
+      "use_familiar": "",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "V",
+        "N2": "VIII"
+      },
+      "advantages": {
+        "N0": "FAMILIAR:  The Witch has an invisible companion that can MOVE, FOLLOW, and PEER separately from her."
+      }
+    },
+    "relationship": {
+      "company": "2",
+      "bashkars": "1",
+      "order": "-1",
+      "lancers": "-1",
+      "soldiers": "-1",
+      "shaman": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "547",
+      "name": "Witch Move L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "strength": "L",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "witch",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "548",
+      "name": "Witch Move L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "3",
+          "strength": "L",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "witch",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "549",
+      "name": "Witch Move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "strength": "M",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "witch",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "550",
+      "name": "Witch Magic VIII4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "magic": "VIII",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "witch",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "551",
+      "name": "Witch Magic V6*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "6",
+          "magic": "V",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "witch",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "552",
+      "name": "Witch Magic II3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "magic": "II",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "witch",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "553",
+      "name": "Witch Magic V5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "5",
+          "magic": "V",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "witch",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "554",
+      "name": "Witch Magic II3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "magic": "II",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "witch",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "555",
+      "name": "Witch Fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "speed": "3",
+          "strength": "L",
+          "effort": "1",
+          "character_level": "3",
+          "action": "fight",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "witch",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "556",
+      "name": "Witch Magic V4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "magic": "V",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "witch",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "557",
+      "name": "Witch Magic II2*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "2",
+          "magic": "II",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "witch",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "558",
+      "name": "Witch Magic VIII2*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "2",
+          "magic": "VIII",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "witch",
+          "rw_expansion_1": ""
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

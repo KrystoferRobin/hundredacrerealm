@@ -1,0 +1,294 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Ninja",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn,House",
+      "pronoun": "he",
+      "creator": "Robin Warren",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Bear Claw",
+      "vulnerability": "L",
+      "icon_type": "ninja",
+      "icon_folder": "custom/characters"
+    },
+    "level_1": {
+      "name": "Page"
+    },
+    "level_2": {
+      "name": "Student",
+      "badge_icon": "Ninjabadge2",
+      "extra_actions": {
+        "N0": "H"
+      },
+      "advantages": {
+        "N0": "STEALTH: Extra HIDE phase."
+      }
+    },
+    "level_3": {
+      "name": "Warrior"
+    },
+    "level_4": {
+      "name": "Ninja",
+      "weapon": "Shuriken",
+      "badge_icon": "Ninjabadge4",
+      "spellcount": "1",
+      "advantages": {
+        "N0": "SMOKE BOMBS: Only rolls one die on the STUMBLE table."
+      },
+      "diemod": {
+        "N0": "1d:stumble:all"
+      },
+      "spelltypes": {
+        "N0": "II",
+        "N1": "VII"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "scholar": "2",
+      "rogues": "1",
+      "shaman": "1",
+      "warlock": "1",
+      "crone": "-1",
+      "guard": "-1",
+      "soldiers": "-1"
+    },
+    "relationship": {
+      "scholar": "2",
+      "rogues": "1",
+      "shaman": "1",
+      "warlock": "1",
+      "crone": "-1",
+      "guard": "-1",
+      "soldiers": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "FIGHT L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "4",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "ninja"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "ninja"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "GameObject",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "4",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "ninja"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "ninja"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "FIGHT L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "3",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "ninja"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "MAGIC II4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "action": "MAGIC",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "II",
+          "icon_type": "ninja"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "MOVE L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "2",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "ninja"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "FIGHT L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "3",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "ninja"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "MAGIC VII4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "action": "MAGIC",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "VII",
+          "icon_type": "ninja"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "FIGHT M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "ninja"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "FIGHT L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "2",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "ninja"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "MOVE L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "2",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "ninja"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

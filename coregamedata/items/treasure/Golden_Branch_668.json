@@ -1,0 +1,43 @@
+{
+  "id": "668",
+  "name": "Golden Branch",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "15",
+      "text": "Use as chit MAGIC III2*",
+      "notoriety": "5",
+      "rw_expansion_1": "",
+      "native": "Lancers",
+      "fame": "5",
+      "facing": "face_dn",
+      "add_chit": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1018",
+      "name": "Magic III2*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "2",
+          "magic": "III",
+          "effort": "1",
+          "character_level": "1",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "monsters2",
+          "icon_type": "unknown",
+          "rw_expansion_1": "",
+          "add_chit": "Golden Branch",
+          "chitearned": "",
+          "treasure_chit": ""
+        }
+      }
+    }
+  ]
+}

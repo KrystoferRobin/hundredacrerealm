@@ -1,0 +1,18 @@
+{
+  "id": "12",
+  "name": "fight L2**",
+  "attributeBlocks": {
+    "this": {
+      "action": "fight",
+      "strength": "L",
+      "speed": "2",
+      "character_chit": "",
+      "icon_type": "saracen",
+      "icon_folder": "custom/characters",
+      "stage": "12",
+      "level": "4",
+      "effort": "2",
+      "facing": "dark"
+    }
+  }
+}

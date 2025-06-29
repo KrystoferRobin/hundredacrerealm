@@ -1,0 +1,21 @@
+{
+  "id": "2243",
+  "name": "Bottled Light",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "8",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "text": "Pacify all monsters in the clearing.",
+      "discard": "priest",
+      "potion": "",
+      "pacify_monsters": "",
+      "combat_only": ""
+    }
+  },
+  "parts": []
+}

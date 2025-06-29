@@ -1,0 +1,316 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Fairy",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn,Ghost,House",
+      "pronoun": "she",
+      "creator": "Roberto Ullfig",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Flight",
+      "vulnerability": "L",
+      "icon_type": "fairy",
+      "icon_folder": "custom/characters",
+      "magicuser": ""
+    },
+    "level_1": {
+      "name": "Fay",
+      "spellcount": "1",
+      "badge_icon": "Fairybadge1",
+      "spelltypes": {
+        "N0": "III"
+      },
+      "advantages": {
+        "N0": "FAIRY ESSENCE: All items except Books are restricted, [LVL 1]"
+      },
+      "item_restrictions": {
+        "N0": "Horse",
+        "N1": "Morning Star",
+        "N2": "Pony",
+        "N3": "Bane Sword",
+        "N4": "Helmet",
+        "N5": "Shield",
+        "N6": "Spear",
+        "N7": "Truesteel Sword",
+        "N8": "Medium Bow",
+        "N9": "Gloves",
+        "N10": "Broadsword",
+        "N11": "Living Sword",
+        "N12": "Devil Sword",
+        "N13": "Light Bow",
+        "N14": "Axe",
+        "N15": "Short Sword",
+        "N16": "Mace",
+        "N17": "Boots",
+        "N18": "Staff",
+        "N19": "Breastplate",
+        "N20": "Thrusting Sword",
+        "N21": "Armor",
+        "N22": "Crossbow",
+        "N23": "Great Sword",
+        "N24": "Great Axe",
+        "N25": "Warhorse"
+      }
+    },
+    "level_2": {
+      "name": "Brownie",
+      "spellcount": "2",
+      "badge_icon": "Fairybadge2",
+      "curse_immunity": "",
+      "spelltypes": {
+        "N0": "III"
+      },
+      "advantages": {
+        "N0": "PAGAN: Immune to Curses. [LVL 2]"
+      }
+    },
+    "level_3": {
+      "name": "Pixie",
+      "spellcount": "2",
+      "spelltypes": {
+        "N0": "III",
+        "N1": "VII"
+      }
+    },
+    "level_4": {
+      "name": "Fairy",
+      "spellcount": "3",
+      "badge_icon": "Fairybadge4",
+      "color_source": "gold",
+      "spelltypes": {
+        "N0": "III",
+        "N1": "VII"
+      },
+      "advantages": {
+        "N0": "WOODS LORE: Is a source of GOLD magic. [LVL 4]"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "fly L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fly",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "fairy",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "magic III2*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "fairy",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "magic III2*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "fairy",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "fly L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fly",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "fairy",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "magic III2*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "fairy",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "magic III2*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "fairy",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "fly L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fly",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "fairy",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "magic VII2*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "fairy",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic VII2*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "fairy",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "fly L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fly",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "fairy",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic VII2*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "fairy",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic VII2*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "fairy",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

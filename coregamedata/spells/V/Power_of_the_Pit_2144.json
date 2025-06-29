@@ -1,0 +1,20 @@
+{
+  "id": "2144",
+  "name": "Power of the Pit",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "instant",
+      "target": "individual",
+      "text": "Roll for Power of the Pit attack",
+      "magic_color": "black",
+      "length": "17",
+      "powerofthepit": "",
+      "table": "powerofthepit",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

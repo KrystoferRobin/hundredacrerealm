@@ -1,0 +1,21 @@
+{
+  "id": "635",
+  "name": "Fleet Foot",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "day",
+      "target": "character",
+      "text": "Movement through mountains costs one less MOVE",
+      "magic_color": "gold",
+      "rw_expansion_1": "",
+      "host_okay": "",
+      "mountain_move_adj": "",
+      "author": "Expansion 1",
+      "benevolent": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,45 @@
+{
+  "id": "1478",
+  "name": "Dwarf 2",
+  "attributeBlocks": {
+    "this": {
+      "native": "Dwarves",
+      "fame": "0",
+      "notoriety": "6",
+      "base_price": "4",
+      "vulnerability": "M",
+      "rank": "2",
+      "super_realm": "",
+      "icon_type": "steelclad",
+      "monster_die": "5",
+      "monster_die2": "6",
+      "setup_start": "Dwarf Dwelling",
+      "hire_type": "group",
+      "icon_folder": "wesnoth/units/dwarves",
+      "denizen": "",
+      "needs_init": "",
+      "armored": "",
+      "icon_size": "0.9",
+      "native_name": "Axeman",
+      "roving_native": ""
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "6",
+      "strength": "T",
+      "chit_color": "paleyellow",
+      "sharpness": "1",
+      "length": "5"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "5",
+      "strength": "H",
+      "length": "5",
+      "chit_color": "yellow",
+      "sharpness": "1",
+      "move_speed_bonus_combat_box3": "1"
+    }
+  },
+  "parts": []
+}

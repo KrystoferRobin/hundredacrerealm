@@ -1,0 +1,37 @@
+{
+  "id": "937",
+  "name": "Swamp Thing",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "T",
+      "fame": "6",
+      "notoriety": "6",
+      "icon_type": "swampthing",
+      "setup_start": "Swamp Thing Box",
+      "monster_die": "4",
+      "base_price": "6",
+      "icon_folder": "monsters2",
+      "rw_expansion_1": "",
+      "box_num": "1",
+      "denizen": "",
+      "icon_type_alt": "giant-mudcrawler",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "icon_size_alt": "1"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "H",
+      "chit_color": "lightgreen"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "3",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": ""
+    }
+  },
+  "parts": []
+}

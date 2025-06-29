@@ -1,0 +1,31 @@
+{
+  "id": "1248",
+  "name": "Stink ST",
+  "attributeBlocks": {
+    "this": {
+      "warning": "stink",
+      "tile_type": "ST",
+      "super_realm": "",
+      "chit": "",
+      "ts_section": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1291",
+      "name": "Large Camp",
+      "attributeBlocks": {
+        "this": {
+          "dwelling": "l_camp",
+          "warning": "stink",
+          "tile_type": "ST",
+          "super_realm": "",
+          "icon_type": "camp3",
+          "icon_folder": "wesnoth/buildings",
+          "general_dwelling": "",
+          "no_shelter": ""
+        }
+      }
+    }
+  ]
+}

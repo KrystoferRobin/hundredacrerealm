@@ -1,0 +1,43 @@
+{
+  "id": "1812",
+  "name": "Company HQ",
+  "attributeBlocks": {
+    "this": {
+      "native": "Company",
+      "fame": "0",
+      "notoriety": "3",
+      "base_price": "2",
+      "vulnerability": "M",
+      "rank": "HQ",
+      "armored": "",
+      "icon_type": "general",
+      "setup_start": "Company Dwelling",
+      "hire_type": "group",
+      "icon_folder": "wesnoth/units/human-loyalists",
+      "commerce": "N",
+      "denizen": "",
+      "super_realm": "",
+      "native_die": "5",
+      "clan": "3",
+      "icon_size": "0.9",
+      "native_name": "S.Swordsman"
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "3",
+      "strength": "M",
+      "length": "3",
+      "sharpness": "1",
+      "chit_color": "lightblue"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "strength": "L",
+      "length": "3",
+      "sharpness": "1",
+      "chit_color": "blue"
+    }
+  },
+  "parts": []
+}

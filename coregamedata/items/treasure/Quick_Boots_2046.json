@@ -1,0 +1,20 @@
+{
+  "id": "2046",
+  "name": "Quick Boots",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "MOVE M3",
+      "base_price": "8",
+      "notoriety": "2",
+      "fame": "1",
+      "move_speed": "3",
+      "strength": "M",
+      "boots": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

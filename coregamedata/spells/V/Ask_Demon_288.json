@@ -1,0 +1,21 @@
+{
+  "id": "288",
+  "name": "Ask Demon",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "instant",
+      "target": "ask demon",
+      "text": "Ask question with yes/no or number answer",
+      "magic_color": "black",
+      "original_game": "",
+      "askdemon": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

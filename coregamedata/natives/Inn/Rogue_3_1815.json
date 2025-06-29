@@ -1,0 +1,43 @@
+{
+  "id": "1815",
+  "name": "Rogue 3",
+  "attributeBlocks": {
+    "this": {
+      "native": "Rogues",
+      "fame": "0",
+      "notoriety": "3",
+      "base_price": "2",
+      "vulnerability": "M",
+      "rank": "3",
+      "armored": "",
+      "icon_type": "captain",
+      "setup_start": "Inn",
+      "hire_type": "single",
+      "garrison": "",
+      "icon_folder": "wesnoth/units/dunefolk",
+      "denizen": "",
+      "super_realm": "",
+      "clan": "3",
+      "native_die": "6",
+      "icon_size": "0.9",
+      "native_name": "S.Swordsman"
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "5",
+      "strength": "M",
+      "length": "3",
+      "sharpness": "1",
+      "chit_color": "lightorange"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "L",
+      "length": "3",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

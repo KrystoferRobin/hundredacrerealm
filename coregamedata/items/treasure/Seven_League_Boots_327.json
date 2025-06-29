@@ -1,0 +1,21 @@
+{
+  "id": "327",
+  "name": "Seven League Boots",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "notoriety": "2",
+      "text": "MOVE T5, plus extra MOVE",
+      "base_price": "5",
+      "strength": "T",
+      "move_speed": "5",
+      "original_game": "",
+      "boots": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

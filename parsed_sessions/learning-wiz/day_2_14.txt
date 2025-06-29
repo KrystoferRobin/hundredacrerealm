@@ -1,0 +1,26 @@
+Month 2, Day 14
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+host
+7th day - denizens return to setup card:
+host
+- H Serpent
+host
+- H Serpent
+Wizard
+Starts turn: Caves 6
+Wizard
+Move - moved
+Wizard
+Move - moved
+Wizard
+Ends turn: Borderland 1
+Wizard
+Reveals: Howl 4
+Wizard
+Reveals: Ruins C
+host
+========================================
+host

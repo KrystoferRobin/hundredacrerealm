@@ -1,0 +1,84 @@
+Month 1, Day 24
+host
+========================================
+Pilgrim
+Spent the night at the Chapel.
+host
+Monster Die roll is Rolled 2.
+Pilgrim
+Starts turn: Evil Valley 4
+Pilgrim
+Move - moved
+Pilgrim
+Move - moved
+Pilgrim
+Move - moved
+Pilgrim
+Hide - Succeeded
+Pilgrim
+Ends turn: Curst Valley 4
+Amazon
+Starts turn: Curst Valley 5
+Amazon
+Hire - Buy from Woodsfolk 2 (as Friendly) - No Deal
+Amazon
+Hire - Buy from Woodsfolk 2 (as Friendly) - Price x 4
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+Ends turn: Curst Valley 4
+Soldier HQ
+Starts turn: Curst Valley 4
+Soldier HQ
+Ends turn: Curst Valley 4
+White Knight
+Starts turn: Curst Valley 4
+White Knight
+Ends turn: Curst Valley 4
+__battle__
+Battle resolving at Curst Valley 4:
+__battle__
+GROUP 1
+__battle__
+Amazon
+__battle__
+Soldier HQ (Amazon)
+__battle__
+Soldier 1 (Amazon)
+__battle__
+Soldier 2 (Amazon)
+__battle__
+Soldier 3 (Amazon)
+__battle__
+GROUP 2
+__battle__
+Pilgrim
+__battle__
+GROUP 3
+__battle__
+White Knight
+__battle__
+=======================
+__battle__
+Evening of month 1, day 24, in clearing Curst Valley 4
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+Pilgrim
+Presses the END combat button.
+Pilgrim
+Combat has ended.
+host
+========================================
+host

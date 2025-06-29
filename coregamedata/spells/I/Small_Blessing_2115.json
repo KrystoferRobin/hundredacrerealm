@@ -1,0 +1,19 @@
+{
+  "id": "2115",
+  "name": "Small Blessing",
+  "spellLevel": "I",
+  "attributeBlocks": {
+    "this": {
+      "spell": "I",
+      "duration": "instant",
+      "target": "character",
+      "text": "Gets one WISH (roll)",
+      "magic_color": "white",
+      "wish": "",
+      "table": "wish",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

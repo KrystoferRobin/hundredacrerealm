@@ -1,0 +1,20 @@
+{
+  "id": "2141",
+  "name": "Violent Storm",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "day",
+      "target": "tile",
+      "text": "Roll to see number of phases lost",
+      "magic_color": "purple",
+      "sp_stormy": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

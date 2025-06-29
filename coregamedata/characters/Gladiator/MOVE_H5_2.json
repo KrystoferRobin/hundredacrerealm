@@ -1,0 +1,18 @@
+{
+  "id": "2",
+  "name": "MOVE H5*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "2",
+      "level": "1",
+      "action": "MOVE",
+      "strength": "H",
+      "speed": "5",
+      "effort": "1",
+      "facing": "dark",
+      "icon_type": "gladiator"
+    }
+  }
+}

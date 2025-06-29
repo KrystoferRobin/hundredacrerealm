@@ -1,0 +1,18 @@
+{
+  "id": "382",
+  "name": "Magic Spectacles",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "6",
+      "notoriety": "2",
+      "original_game": "",
+      "text": "extra SEARCH",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

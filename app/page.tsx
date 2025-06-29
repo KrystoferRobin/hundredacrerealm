@@ -93,6 +93,20 @@ type Game = {
   createdAt: string;
 };
 
+// Folder icon SVG for the process-local-zips button
+const FolderIcon = ({ className = "w-6 h-6" }) => (
+  <svg className={className} fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12V6.75A2.25 2.25 0 014.5 4.5h5.379c.414 0 .81.162 1.104.454l1.561 1.561c.293.293.69.454 1.104.454H19.5a2.25 2.25 0 012.25 2.25v10.5a2.25 2.25 0 01-2.25 2.25H4.5A2.25 2.25 0 012.25 19.5V12z" />
+  </svg>
+);
+
+// Sun icon SVG for the footer
+const SunIcon = ({ className = "w-6 h-6" }) => (
+  <svg className={className} fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+  </svg>
+);
+
 export default function Home() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [fileNames, setFileNames] = useState<string[]>([]);
@@ -109,29 +123,54 @@ export default function Home() {
   const [isUploading, setIsUploading] = useState(false);
   const [uploadError, setUploadError] = useState<string | null>(null);
   const [uploadSuccess, setUploadSuccess] = useState<string | null>(null);
-  const [recentGames, setRecentGames] = useState<Game[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [recentLogs, setRecentLogs] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [selectedPage, setSelectedPage] = useState<'home' | 'characters' | 'monsters' | 'natives' | 'log' | 'games' | 'map' | 'game-logs' | 'session'>("home");
+  const [selectedLogUrl, setSelectedLogUrl] = useState<string | null>(null);
+  const [selectedMapSession, setSelectedMapSession] = useState<string | null>(null);
+  const [selectedSessionId, setSelectedSessionId] = useState<string | null>(null);
+  const [turnCounts, setTurnCounts] = useState<{ [sessionId: string]: number | null }>({});
+  const [processingZips, setProcessingZips] = useState(false);
+  const [processResult, setProcessResult] = useState<{ processed: any[]; errors: any[] } | null>(null);
+  const [processError, setProcessError] = useState<string | null>(null);
   const router = useRouter();
 
   useEffect(() => {
-    const fetchRecentGames = async () => {
+    const fetchRecentSessions = async () => {
       try {
-        const response = await fetch('/api/games/recent');
-        if (!response.ok) {
-          throw new Error('Failed to fetch recent games');
-        }
+        const response = await fetch('/api/game-sessions');
+        if (!response.ok) throw new Error('Failed to fetch recent sessions');
         const data = await response.json();
-        setRecentGames(data);
+        setRecentLogs(data.slice(0, 10)); // Only show the 10 most recent
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'An error occurred');
+        setError('Failed to load recent sessions.');
       } finally {
-        setIsLoading(false);
+        setLoading(false);
       }
     };
-
-    fetchRecentGames();
+    fetchRecentSessions();
   }, []);
+
+  // Fetch turn counts for each session
+  useEffect(() => {
+    async function fetchTurnsForSessions() {
+      const newTurnCounts: { [sessionId: string]: number | null } = {};
+      await Promise.all(recentLogs.map(async (session) => {
+        if (turnCounts[session.sessionId] !== undefined) {
+          newTurnCounts[session.sessionId] = turnCounts[session.sessionId];
+          return;
+        }
+        // Turn count is already available in the session data
+        newTurnCounts[session.sessionId] = session.totalTurns || 0;
+      }));
+      setTurnCounts((prev) => ({ ...prev, ...newTurnCounts }));
+    }
+    if (recentLogs.length > 0) {
+      fetchTurnsForSessions();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [recentLogs]);
 
   function handleUploadClick() {
     fileInputRef.current?.click();
@@ -733,123 +772,329 @@ export default function Home() {
     }
   };
 
+  // Handler for inline log viewing
+  function handleViewLogInline(e: React.MouseEvent, url: string) {
+    e.preventDefault();
+    setSelectedLogUrl(url);
+    setSelectedPage('log');
+  }
+
+  // Handler for inline map viewing
+  function handleViewMapInline(e: React.MouseEvent, sessionId: string) {
+    e.preventDefault();
+    setSelectedMapSession(sessionId);
+    setSelectedPage('map');
+  }
+
+  useEffect(() => {
+    // Handler for inline log opening from iframe
+    (window as any).openLogInline = (url: string) => {
+      setSelectedLogUrl(url);
+      setSelectedPage('log');
+    };
+    // Fallback: listen for postMessage
+    function handleMessage(event: MessageEvent) {
+      if (event.data && event.data.type === 'openLogInline' && event.data.url) {
+        setSelectedLogUrl(event.data.url);
+        setSelectedPage('log');
+      }
+      if (event.data && event.data.type === 'closeMap') {
+        setSelectedMapSession(null);
+        setSelectedPage('home');
+      }
+    }
+    window.addEventListener('message', handleMessage);
+    return () => {
+      window.removeEventListener('message', handleMessage);
+    };
+  }, []);
+
+  // Handle browser back/forward navigation
+  useEffect(() => {
+    const handlePopState = (event: PopStateEvent) => {
+      // If we're not on the home page, go back to home
+      if (selectedPage !== 'home') {
+        setSelectedPage('home');
+        setSelectedLogUrl(null);
+        setSelectedMapSession(null);
+        setSelectedSessionId(null);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [selectedPage]);
+
+  // Update browser history when page changes
+  useEffect(() => {
+    if (selectedPage !== 'home') {
+      window.history.pushState({ page: selectedPage }, '', `#${selectedPage}`);
+    }
+  }, [selectedPage]);
+
   return (
     <div className="min-h-screen bg-[#f6ecd6] flex flex-col font-serif">
       {/* Header */}
-      <header className="bg-[#6b3e26] text-[#f6ecd6] py-6 shadow-md">
+      <header className="bg-[#6b3e26] text-[#f6ecd6] py-5 shadow-lg border-b-4 border-[#bfa76a] relative">
+        {/* Decorative top border */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#bfa76a] via-[#fff8e1] to-[#bfa76a]"></div>
+        
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between px-4">
-          <h1 className="text-3xl md:text-4xl font-bold tracking-wide drop-shadow-md font-serif">
-            Hundred Acre Realm
-          </h1>
+          <div className="text-center sm:text-left">
+            <h1 className="text-3xl md:text-4xl font-bold tracking-wide drop-shadow-lg font-serif text-[#fff8e1] relative">
+              <span className="relative z-10">Hundred Acre Realm</span>
+              <div className="absolute inset-0 bg-[#bfa76a] opacity-20 blur-sm rounded-lg"></div>
+            </h1>
+            <p className="text-sm text-[#bfa76a] mt-1 font-serif italic">A Realm of Magic & Adventure</p>
+          </div>
+          
           <nav className="mt-4 sm:mt-0 flex gap-6 text-lg font-semibold">
-            <Link href="/games" className="hover:underline">Game Logs</Link>
-            <Link href="#" className="hover:underline">Hall of Fame</Link>
-            <Link href="#" className="hover:underline">Stats</Link>
+            <a 
+              href="#" 
+              className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
+              onClick={e => { e.preventDefault(); setSelectedPage('home'); setSelectedLogUrl(null); }}
+            >
+              Home
+            </a>
+            <a 
+              href="#" 
+              className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
+              onClick={e => { e.preventDefault(); setSelectedPage('characters'); setSelectedLogUrl(null); }}
+            >
+              Cast of Characters
+            </a>
+            <a 
+              href="#" 
+              className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
+              onClick={e => { e.preventDefault(); setSelectedPage('monsters'); setSelectedLogUrl(null); }}
+            >
+              Monsters
+            </a>
+            <a 
+              href="#" 
+              className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
+              onClick={e => { e.preventDefault(); setSelectedPage('natives'); setSelectedLogUrl(null); }}
+            >
+              Natives
+            </a>
           </nav>
         </div>
       </header>
 
       {/* Main Content */}
       <main className="flex-1 flex">
-        {/* Left side - Upload Area */}
-        <section className="flex-1 flex flex-col items-center justify-center py-16 px-4">
-          <div className="bg-[#f6ecd6] border-2 border-[#bfa76a] rounded-xl shadow-lg max-w-2xl w-full p-8 text-center relative" style={{boxShadow: '0 4px 24px #bfa76a55'}}>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#6b3e26] font-serif">Hundred Acre Realm</h2>
-            <p className="text-lg text-[#4b3a1e] mb-6 font-serif">
-              All the adventures of the Hundred Acre Realm at your fingertips
-            </p>
-            <p className="text-sm text-[#4b3a1e] mb-6 font-serif">
-              Oh Bother, another flock of bats!
-            </p>
-            <div className="flex flex-col md:flex-row gap-6 justify-center mt-8">
-              <button
-                onClick={handleUploadClick}
-                className="flex-1 bg-[#fff8e1] border-2 border-[#bfa76a] rounded-lg p-6 shadow transition hover:bg-[#f3e3b2] hover:scale-105 text-[#6b3e26] font-serif text-xl font-semibold"
-              >
-                Upload Game Log
-              </button>
-              <input
-                type="file"
-                ref={fileInputRef}
-                onChange={handleFileSelect}
-                accept=".zip"
-                className="hidden"
-              />
-              <Link href="/games" className="flex-1 bg-[#fff8e1] border-2 border-[#bfa76a] rounded-lg p-6 shadow transition hover:bg-[#f3e3b2] hover:scale-105 text-[#6b3e26] font-serif text-xl font-semibold">
-                Game Logs
-              </Link>
-            </div>
-            <div className="flex flex-row gap-6 justify-center mt-4">
-              <Link href="/characters" className="flex-1 bg-[#fff8e1] border-2 border-[#bfa76a] rounded-lg p-6 shadow transition hover:bg-[#f3e3b2] hover:scale-105 text-[#6b3e26] font-serif text-xl font-semibold">
-                Cast of Characters
-              </Link>
-              <Link href="/monsters" className="flex-1 bg-[#fff8e1] border-2 border-[#bfa76a] rounded-lg p-6 shadow transition hover:bg-[#f3e3b2] hover:scale-105 text-[#6b3e26] font-serif text-xl font-semibold">
-                Monsters
-              </Link>
-              <Link href="/natives" className="flex-1 bg-[#fff8e1] border-2 border-[#bfa76a] rounded-lg p-6 shadow transition hover:bg-[#f3e3b2] hover:scale-105 text-[#6b3e26] font-serif text-xl font-semibold">
-                Natives
-              </Link>
-            </div>
+        {/* Universal inline navigation */}
+        {selectedPage === 'log' && selectedLogUrl ? (
+          <div className="flex-1 flex flex-col items-center justify-center py-8 px-4">
+            <button onClick={() => { setSelectedLogUrl(null); setSelectedPage('home'); }} className="mb-4 px-4 py-2 bg-[#bfa76a] text-[#fff8e1] rounded shadow font-bold">Close Log</button>
+            <iframe src={selectedLogUrl} className="w-full h-[70vh] border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Game Log" />
           </div>
-        </section>
-
-        {/* Right side - Recent Games */}
-        <section className="w-80 bg-[#f6ecd6] border-l-2 border-[#bfa76a] p-6 overflow-y-auto">
-          <div className="bg-[#fff8e1] border-2 border-[#bfa76a] rounded-lg p-4 shadow-lg">
-            <h2 className="text-xl font-bold text-[#6b3e26] mb-4 font-serif">Recent Games</h2>
-            {isLoading ? (
-              <div className="text-center text-[#4b3a1e]">Loading...</div>
-            ) : error ? (
-              <div className="text-center text-red-600">{error}</div>
-            ) : recentGames.length === 0 ? (
-              <div className="text-center text-[#4b3a1e]">No games uploaded yet</div>
-            ) : (
-              <div className="space-y-4">
-                {recentGames.map((game) => (
-                  <Link
-                    key={game.id}
-                    href={`/games/${game.id}`}
-                    className="block bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
+        ) : selectedPage === 'characters' ? (
+          <iframe src="/characters" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Characters" />
+        ) : selectedPage === 'monsters' ? (
+          <iframe src="/monsters" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Monsters" />
+        ) : selectedPage === 'natives' ? (
+          <iframe src="/natives" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Natives" />
+        ) : selectedPage === 'games' ? (
+          <iframe src="/games" className="flex-1 w-full h-[70vh] border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Game Logs" />
+        ) : selectedPage === 'game-logs' ? (
+          <iframe src="/game-logs" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Game Logs" />
+        ) : selectedPage === 'session' ? (
+          <iframe src={`/session/${selectedSessionId}`} className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Game Session" />
+        ) : selectedPage === 'map' ? (
+          <div className="flex-1 flex flex-col items-center justify-center py-8 px-4">
+            <button onClick={() => { setSelectedMapSession(null); setSelectedPage('home'); }} className="mb-4 px-4 py-2 bg-[#bfa76a] text-[#fff8e1] rounded shadow font-bold">Close Map</button>
+            <iframe src={`/map?session=${selectedMapSession}`} className="w-full h-[70vh] border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Game Map" />
+          </div>
+        ) : (
+          <>
+            {/* Left side - Upload Area */}
+            <section className="flex-1 flex flex-col items-center py-16 px-4">
+              <div className="bg-[#f6ecd6] border-4 border-[#bfa76a] rounded-xl shadow-2xl max-w-2xl w-full p-8 text-center relative" 
+                   style={{
+                     boxShadow: '0 8px 32px rgba(191, 167, 106, 0.3), inset 0 1px 0 rgba(255, 248, 225, 0.8)',
+                     background: 'linear-gradient(135deg, #f6ecd6 0%, #fff8e1 100%)'
+                   }}>
+                {/* Decorative corner elements */}
+                <div className="absolute top-2 left-2 w-4 h-4 border-l-2 border-t-2 border-[#6b3e26] rounded-tl-lg"></div>
+                <div className="absolute top-2 right-2 w-4 h-4 border-r-2 border-t-2 border-[#6b3e26] rounded-tr-lg"></div>
+                <div className="absolute bottom-2 left-2 w-4 h-4 border-l-2 border-b-2 border-[#6b3e26] rounded-bl-lg"></div>
+                <div className="absolute bottom-2 right-2 w-4 h-4 border-r-2 border-b-2 border-[#6b3e26] rounded-br-lg"></div>
+                
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#6b3e26] font-serif relative">
+                  <span className="relative z-10">All the Adventures of the Hundred Acre Realm</span>
+                  <div className="absolute inset-0 bg-[#bfa76a] opacity-10 blur-sm rounded-lg"></div>
+                </h2>
+                <p className="text-sm text-[#4b3a1e] mb-6 font-serif italic">
+                  "Oh Bother, another flock of bats!"
+                </p>
+                
+                <div className="flex flex-col md:flex-row gap-6 justify-center mt-8">
+                  <button
+                    onClick={() => { setSelectedPage('game-logs'); setSelectedLogUrl(null); }}
+                    className="flex-1 bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-6 shadow-lg transition-all duration-200 hover:bg-[#f3e3b2] hover:scale-105 hover:shadow-xl text-[#6b3e26] font-serif text-xl font-semibold relative overflow-hidden group"
+                    style={{
+                      boxShadow: '0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8)'
+                    }}
                   >
-                    <div className="flex justify-between items-center mb-4">
-                      <div className="text-sm text-gray-600 font-semibold">{game.players.length}</div>
-                      <div className="text-gray-600">{game.players[0]?.character?.eventLog?.length || 0} Days</div>
-                    </div>
-                    <div className="space-y-4">
-                      {game.players.map((player) => (
-                        <div key={player.id} className="flex items-center gap-4">
-                          <Image
-                            src={
-                              player.character?.name === 'White Knight'
-                                ? '/images/characters/white-knight.jpg'
-                                : `/images/characters/${player.character?.portraitImg || 'default.jpg'}`
-                            }
-                            alt={player.character?.name || 'Character Portrait'}
-                            width={80}
-                            height={80}
-                            className="rounded shadow"
-                          />
-                          <div>
-                            <div className="font-medium text-gray-600">{player.character?.name}</div>
-                            <div className="text-sm text-gray-600">
-                              <div>Fame: {player.character?.stats?.fame || 0}</div>
-                              <div>Notoriety: {player.character?.stats?.notoriety || 0}</div>
-                            </div>
+                    <span className="relative z-10">Game Logs</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#bfa76a] to-[#fff8e1] opacity-0 group-hover:opacity-10 transition-opacity duration-200"></div>
+                  </button>
+                </div>
+                
+                <div className="flex flex-row gap-6 justify-center mt-4">
+                  <button
+                    onClick={() => { setSelectedPage('characters'); setSelectedLogUrl(null); }}
+                    className="flex-1 bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-6 shadow-lg transition-all duration-200 hover:bg-[#f3e3b2] hover:scale-105 hover:shadow-xl text-[#6b3e26] font-serif text-xl font-semibold relative overflow-hidden group"
+                    style={{
+                      boxShadow: '0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8)'
+                    }}
+                  >
+                    <span className="relative z-10">Cast of Characters</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#bfa76a] to-[#fff8e1] opacity-0 group-hover:opacity-10 transition-opacity duration-200"></div>
+                  </button>
+                  <button
+                    onClick={() => { setSelectedPage('monsters'); setSelectedLogUrl(null); }}
+                    className="flex-1 bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-6 shadow-lg transition-all duration-200 hover:bg-[#f3e3b2] hover:scale-105 hover:shadow-xl text-[#6b3e26] font-serif text-xl font-semibold relative overflow-hidden group"
+                    style={{
+                      boxShadow: '0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8)'
+                    }}
+                  >
+                    <span className="relative z-10">Monsters</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#bfa76a] to-[#fff8e1] opacity-0 group-hover:opacity-10 transition-opacity duration-200"></div>
+                  </button>
+                  <button
+                    onClick={() => { setSelectedPage('natives'); setSelectedLogUrl(null); }}
+                    className="flex-1 bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-6 shadow-lg transition-all duration-200 hover:bg-[#f3e3b2] hover:scale-105 hover:shadow-xl text-[#6b3e26] font-serif text-xl font-semibold relative overflow-hidden group"
+                    style={{
+                      boxShadow: '0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8)'
+                    }}
+                  >
+                    <span className="relative z-10">Natives</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#bfa76a] to-[#fff8e1] opacity-0 group-hover:opacity-10 transition-opacity duration-200"></div>
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            {/* Right side - Recent Games */}
+            <section className="w-80 bg-[#f6ecd6] border-l-4 border-[#bfa76a] p-6 overflow-y-auto relative">
+              {/* Decorative left border accent */}
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#bfa76a] via-[#fff8e1] to-[#bfa76a]"></div>
+              
+              <div className="bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-4 shadow-lg relative"
+                   style={{
+                     boxShadow: '0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8)',
+                     background: 'linear-gradient(135deg, #fff8e1 0%, #f6ecd6 100%)'
+                   }}>
+                {/* Decorative corner elements */}
+                <div className="absolute top-1 left-1 w-3 h-3 border-l-2 border-t-2 border-[#6b3e26] rounded-tl-md"></div>
+                <div className="absolute top-1 right-1 w-3 h-3 border-r-2 border-t-2 border-[#6b3e26] rounded-tr-md"></div>
+                <div className="absolute bottom-1 left-1 w-3 h-3 border-l-2 border-b-2 border-[#6b3e26] rounded-bl-md"></div>
+                <div className="absolute bottom-1 right-1 w-3 h-3 border-r-2 border-b-2 border-[#6b3e26] rounded-br-md"></div>
+                
+                <h2 className="text-xl font-bold text-[#6b3e26] mb-4 font-serif relative">
+                  <span className="relative z-10">Recent Game Sessions</span>
+                  <div className="absolute inset-0 bg-[#bfa76a] opacity-10 blur-sm rounded-lg"></div>
+                </h2>
+                {loading ? (
+                  <div className="text-center text-[#4b3a1e] font-serif italic">Loading recent sessions...</div>
+                ) : error ? (
+                  <div className="text-center text-red-600 font-serif">{error}</div>
+                ) : recentLogs.length === 0 ? (
+                  <div className="text-center text-[#4b3a1e] font-serif italic">No recent sessions found</div>
+                ) : (
+                  <div className="space-y-4">
+                    {recentLogs.map((session) => (
+                      <div key={session.id} className="mb-2 p-3 bg-[#f6ecd6] border border-[#bfa76a] rounded-md hover:bg-[#f3e3b2] transition-colors duration-200">
+                        <div className="flex justify-between items-center">
+                          <div className="text-sm text-[#6b3e26] font-semibold text-left truncate max-w-[60%] font-serif">
+                            {session.name}
+                          </div>
+                          <div className="text-xs text-[#4b3a1e] font-semibold text-right whitespace-nowrap font-serif">
+                            {session.totalBattles} battles
                           </div>
                         </div>
-                      ))}
-                    </div>
-                  </Link>
-                ))}
+                        <div className="flex justify-between items-center mt-1">
+                          <div className="text-xs text-[#4b3a1e] text-left font-serif">
+                            {session.uniqueCharacters} chars, {session.totalActions} actions
+                          </div>
+                          <button
+                            onClick={() => { setSelectedSessionId(session.id); setSelectedPage('session'); }}
+                            className="text-[#6b3e26] hover:text-[#bfa76a] hover:underline cursor-pointer text-xs font-semibold text-right ml-2 font-serif transition-colors duration-200"
+                          >
+                            View Session
+                          </button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
-            )}
-          </div>
-        </section>
+            </section>
+          </>
+        )}
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#6b3e26] text-[#f6ecd6] py-4 text-center text-sm font-serif">
-        Inspired by Karim's Magic Realm redesign. Not affiliated with Avalon Hill.
+      <footer className="bg-[#6b3e26] text-[#f6ecd6] py-3 text-sm font-serif flex items-center justify-between px-4 relative border-t-2 border-[#bfa76a]">
+        {/* Far left: Folder icon button for processing local zips */}
+        <div className="flex items-center">
+          <button
+            className="p-2 rounded hover:bg-[#bfa76a] focus:outline-none focus:ring-2 focus:ring-[#bfa76a] transition-colors"
+            title="Process local zip uploads"
+            aria-label="Process local zip uploads"
+            onClick={async () => {
+              setProcessingZips(true);
+              setProcessResult(null);
+              setProcessError(null);
+              try {
+                const res = await fetch('/api/process-uploads', { method: 'POST' });
+                if (!res.ok) {
+                  const err = await res.json();
+                  throw new Error(err.error || 'Failed to process uploads');
+                }
+                const data = await res.json();
+                setProcessResult(data.results);
+                // Refresh the recent sessions list after processing
+                const sessionsResponse = await fetch('/api/sessions');
+                if (sessionsResponse.ok) {
+                  const sessionsData = await sessionsResponse.json();
+                  setRecentLogs(sessionsData.sessions || []);
+                }
+              } catch (e: any) {
+                setProcessError(e.message || 'Failed to process uploads');
+              } finally {
+                setProcessingZips(false);
+              }
+            }}
+            disabled={processingZips}
+          >
+            <FolderIcon className="w-6 h-6 text-[#fff8e1]" />
+          </button>
+          {processingZips && (
+            <span className="ml-2 text-xs text-[#fff8e1]">Processing...</span>
+          )}
+          {processResult && (
+            <span className="ml-2 text-xs text-[#fff8e1]">
+              {processResult.processed.length > 0 && `Processed: ${processResult.processed.map(p => p.gameName).join(', ')}`}
+              {processResult.errors.length > 0 && ` Errors: ${processResult.errors.map(e => e.gameName + ': ' + e.error).join('; ')}`}
+            </span>
+          )}
+          {processError && (
+            <span className="ml-2 text-xs text-red-200">{processError}</span>
+          )}
+        </div>
+        
+        {/* Center: Credits */}
+        <div className="flex-1 text-center">
+          <span className="text-[#fff8e1] font-semibold">Inspired by Karim's Magic Realm redesign. Not affiliated with Avalon Hill.</span>
+        </div>
+        
+        {/* Far right: Sun icon */}
+        <div className="flex items-center">
+          <SunIcon className="w-6 h-6 text-[#fff8e1]" />
+        </div>
       </footer>
     </div>
   );

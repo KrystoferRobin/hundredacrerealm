@@ -1,0 +1,20 @@
+{
+  "id": "2296",
+  "name": "Sails",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Each MOVE phase done when moving to a water clearing allows you to do 2 moves.",
+      "base_price": "9",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "notoriety": "2",
+      "fame": "1",
+      "sails": "",
+      "weight": "L"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "2113",
+  "name": "Scroll of Alchemy",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "5",
+      "fame": "7",
+      "notoriety": "10",
+      "magic": "VI",
+      "print": "",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "native": "Enchanters",
+      "book": "",
+      "scroll": "",
+      "scholar_price": "30",
+      "warlock_price": "30",
+      "merchant_price": "20"
+    }
+  },
+  "parts": []
+}

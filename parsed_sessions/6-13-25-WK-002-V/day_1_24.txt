@@ -1,0 +1,20 @@
+Month 1, Day 24
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+White Knight
+Starts turn: High Pass 1
+White Knight
+Search - Loot the Altar - Found Golden Icon
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Curst Valley 4
+host
+========================================
+host

@@ -1,0 +1,290 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Arquebusier",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn",
+      "pronoun": "he",
+      "creator": "Roberto Ullfig",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Arquebus",
+      "vulnerability": "H",
+      "icon_type": "arquebusier",
+      "icon_folder": "custom/characters"
+    },
+    "level_1": {
+      "name": "Shooter",
+      "weapon": "Arquebus",
+      "armor": "Helmet,Breastplate",
+      "badge_icon": "Arquebusierbadge1",
+      "advantages": {
+        "N0": "FOREIGNER: Adds one to all rolls on the COMMERCE, TRADE, and HIRE tables. [Level 1]"
+      },
+      "diemod": {
+        "N0": "+1:commerce,trade,hire:all"
+      }
+    },
+    "level_2": {
+      "name": "Marksman",
+      "weapon": "Arquebus",
+      "armor": "Helmet,Breastplate",
+      "badge_icon": "Arquebusierbadge2",
+      "advantages": {
+        "N0": "AIM: Subtracts one from all rolls on the MISSILE table. [Level 2]"
+      },
+      "diemod": {
+        "N0": "-1:missile:all"
+      }
+    },
+    "level_3": {
+      "name": "Gunner",
+      "weapon": "Arquebus",
+      "armor": "Helmet,Breastplate",
+      "badge_icon": "Arquebusierbadge3",
+      "rest_double": "",
+      "advantages": {
+        "N0": "STOUT: Rest Counts Double. [Level 3]"
+      }
+    },
+    "level_4": {
+      "name": "Arquebusier",
+      "weapon": "Arquebus",
+      "armor": "Helmet,Breastplate",
+      "badge_icon": "Arquebusierbadge4",
+      "advantages": {
+        "N0": "ANCIENT MAPS: Rolls 1 die instead of 2 for all rolls on the LOCATE, and PEER tables in the Ruins, Lost Castle, and Lost City. [Level 4]"
+      },
+      "diemod": {
+        "N0": "1d:locate,peer:%ruins%,lost castle%,lost city%"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "arquebusier",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "arquebusier",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "arquebusier",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "move H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "arquebusier",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "move H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "arquebusier",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "fight H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "arquebusier",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "arquebusier",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "arquebusier",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "arquebusier",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "move H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "arquebusier",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "MOVE H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "arquebusier",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "arquebusier",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

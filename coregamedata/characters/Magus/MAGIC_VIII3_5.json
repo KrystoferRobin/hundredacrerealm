@@ -1,0 +1,18 @@
+{
+  "id": "5",
+  "name": "MAGIC VIII3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "5",
+      "level": "2",
+      "action": "MAGIC",
+      "speed": "3",
+      "effort": "1",
+      "facing": "dark",
+      "magic": "VIII",
+      "icon_type": "magus"
+    }
+  }
+}

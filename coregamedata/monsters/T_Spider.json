@@ -1,0 +1,39 @@
+{
+  "id": "1310",
+  "name": "T Spider",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "T",
+      "fame": "6",
+      "notoriety": "6",
+      "super_realm": "",
+      "icon_type": "spiderQueen",
+      "setup_start": "Cairns",
+      "monster_die": "5",
+      "base_price": "6",
+      "icon_folder": "wesnoth/units",
+      "needs_init": "",
+      "denizen": "",
+      "icon_size": "1",
+      "icon_y_offset": "4",
+      "spider": ""
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "strength": "M",
+      "chit_color": "gray"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "5",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": "",
+      "kills_horse": "",
+      "destroys_armor": ""
+    }
+  },
+  "parts": []
+}

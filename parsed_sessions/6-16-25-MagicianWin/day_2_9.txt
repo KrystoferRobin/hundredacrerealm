@@ -1,0 +1,62 @@
+Month 2, Day 9
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Magician
+Starts turn: Bad Valley 1
+Magician
+Hide - Succeeded
+Magician
+Hide - N/A
+Magician
+Hide - N/A
+Magician
+Move - moved
+Magician
+Ends turn: Dark Valley 5
+__battle__
+Battle resolving at Dark Valley 5:
+__battle__
+GROUP 1
+__battle__
+Magician
+__battle__
+GROUP 2
+__battle__
+Order 1
+__battle__
+Order 2
+__battle__
+Order 3
+__battle__
+Order HQ
+Magician
+The Magician cannot buy drinks with the ASHES curse.
+Magician
+Meeting Order on the Neutral table
+Magician
+Rolled 6. = Trouble!
+Magician
+Meeting Order on the Unfriendly table
+Magician
+Rolled 6. = Block/Battle
+__battle__
+=======================
+__battle__
+Evening of month 2, day 9, in clearing Dark Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Magician
+Presses the END combat button.
+Magician
+Combat has ended.
+host
+========================================
+host

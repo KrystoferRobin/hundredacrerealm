@@ -1,0 +1,251 @@
+{
+  "id": "1317",
+  "name": "Cultist Dwelling",
+  "attributeBlocks": {
+    "this": {
+      "super_realm": "",
+      "native": "Cultists",
+      "dwelling": "Cultists",
+      "monster_die": "1",
+      "monster_die2": "2",
+      "print": "",
+      "ts_section": "lost fortress",
+      "ts_size": "M",
+      "ts_color": "yellow",
+      "ts_count": "4",
+      "icon_type": "darkwizard",
+      "icon_folder": "wesnoth/units/tharis-magi",
+      "virtual_dwelling": "",
+      "icon_size": "0.9",
+      "roving_native": "",
+      "summon": "Patter R, Patter H, Lost Fortress",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1318",
+      "name": "Cultist 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Cultists",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "1",
+          "super_realm": "",
+          "icon_type": "darkwizard-idle3",
+          "monster_die": "1",
+          "monster_die2": "2",
+          "setup_start": "Cultist Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/tharis-magi",
+          "denizen": "",
+          "needs_init": "",
+          "icon_size": "0.9",
+          "no_change_tactics": "",
+          "change_tactics_after_casting": "",
+          "fast_caster": "",
+          "native_name": "Caster",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "3",
+          "length": "9",
+          "chit_color": "paleyellow",
+          "magic_type": "V",
+          "attack_spell": "Summon Demon"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "yellow"
+        }
+      }
+    },
+    {
+      "id": "1319",
+      "name": "Cultist 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Cultists",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "2",
+          "super_realm": "",
+          "icon_type": "shadowwitch-magic2",
+          "monster_die": "1",
+          "monster_die2": "2",
+          "setup_start": "Cultist Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/tharis-magi",
+          "denizen": "",
+          "icon_size": "0.9",
+          "no_change_tactics": "",
+          "change_tactics_after_casting": "",
+          "fast_caster": "",
+          "native_name": "Caster",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "3",
+          "length": "9",
+          "chit_color": "paleyellow",
+          "magic_type": "V",
+          "attack_spell": "Summon Demon"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "yellow"
+        }
+      }
+    },
+    {
+      "id": "1320",
+      "name": "Cultist 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Cultists",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "3",
+          "super_realm": "",
+          "icon_type": "greatwarlock-magic8",
+          "monster_die": "1",
+          "monster_die2": "2",
+          "setup_start": "Cultist Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/tharis-magi",
+          "denizen": "",
+          "icon_size": "0.9",
+          "no_change_tactics": "",
+          "change_tactics_after_casting": "",
+          "fast_caster": "",
+          "native_name": "Caster",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "3",
+          "length": "9",
+          "chit_color": "paleyellow",
+          "magic_type": "V",
+          "attack_spell": "Summon Demon"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "yellow"
+        }
+      }
+    },
+    {
+      "id": "1321",
+      "name": "Cultist HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Cultists",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "HQ",
+          "super_realm": "",
+          "icon_type": "matriarch",
+          "monster_die": "1",
+          "monster_die2": "2",
+          "setup_start": "Cultist Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/tharis-magi",
+          "commerce": "N",
+          "denizen": "",
+          "icon_size": "0.9",
+          "no_change_tactics": "",
+          "change_tactics_after_casting": "",
+          "fast_caster": "",
+          "native_name": "Caster",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "2",
+          "length": "9",
+          "chit_color": "paleyellow",
+          "magic_type": "V",
+          "attack_spell": "Summon Demon"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "yellow"
+        }
+      }
+    },
+    {
+      "id": "1961",
+      "name": "Staff",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "9",
+          "base_price": "1",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "staff",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "L",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1962",
+      "name": "Staff",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "9",
+          "base_price": "1",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "staff",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "L",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

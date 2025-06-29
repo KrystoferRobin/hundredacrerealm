@@ -1,0 +1,299 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Blacksmith",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn",
+      "pronoun": "he",
+      "creator": "Grant Walker",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Steel",
+      "vulnerability": "H",
+      "icon_type": "blacksmith",
+      "icon_folder": "custom/characters",
+      "extra_notes": "11/8/09 - Added SMITH ability - Robin Warren."
+    },
+    "level_1": {
+      "name": "Labourer",
+      "armor": ""
+    },
+    "level_2": {
+      "name": "Apprentice",
+      "badge_icon": "Blacksmithbadge2",
+      "effort_limit": "3",
+      "weapon": "Club",
+      "advantages": {
+        "N0": "MASSIVE EFFORT: Hard work means hard muscle.  Effort limit of 3."
+      }
+    },
+    "level_3": {
+      "name": "Smithy",
+      "badge_icon": "Blacksmithbadge3",
+      "weapon": "Smithhammer",
+      "advantages": {
+        "N0": "TRADESMAN: Willing to barter.  One die on trade rolls."
+      },
+      "diemod": {
+        "N0": "1d:trade:all"
+      }
+    },
+    "level_4": {
+      "name": "Blacksmith",
+      "weapon": "Smithhammer",
+      "armor": "Breastplate",
+      "badge_icon": "Blacksmithbadge4",
+      "advantages": {
+        "N0": "SMITH: Can REPAIR damaged armor in inventory by recording a REPAIR phase."
+      },
+      "special_action": {
+        "N0": "REPAIR"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "company": "1",
+      "rogues": "1",
+      "soldiers": "1",
+      "woodfolk": "-2",
+      "bashkars": "-1",
+      "lancers": "-1",
+      "crone": "-1"
+    },
+    "relationship": {
+      "company": "1",
+      "rogues": "1",
+      "soldiers": "1",
+      "woodfolk": "-2",
+      "bashkars": "-1",
+      "lancers": "-1",
+      "crone": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "MOVE H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "6",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "blacksmith"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "FIGHT H5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "5",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "blacksmith"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "MOVE H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "blacksmith"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "MOVE H4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "blacksmith"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "FIGHT H4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "blacksmith"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "FIGHT H5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "5",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "blacksmith"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "MOVE T5**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "action": "MOVE",
+          "strength": "T",
+          "speed": "5",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "blacksmith"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "FIGHT H3***",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "3",
+          "effort": "3",
+          "facing": "dark",
+          "icon_type": "blacksmith"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "MOVE T6*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "action": "MOVE",
+          "strength": "T",
+          "speed": "6",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "blacksmith"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "FIGHT T4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "action": "FIGHT",
+          "strength": "T",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "blacksmith"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "MOVE T4***",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "action": "MOVE",
+          "strength": "T",
+          "speed": "4",
+          "effort": "3",
+          "facing": "dark",
+          "icon_type": "blacksmith"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "FIGHT T5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "action": "FIGHT",
+          "strength": "T",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "blacksmith"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

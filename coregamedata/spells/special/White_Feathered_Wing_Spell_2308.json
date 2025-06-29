@@ -1,0 +1,24 @@
+{
+  "id": "2308",
+  "name": "White Feathered Wing Spell",
+  "spellLevel": "*",
+  "attributeBlocks": {
+    "this": {
+      "duration": "permanent",
+      "target": "spells item",
+      "text": "-1 to all die rolls",
+      "magic_color": "white",
+      "host_okay": "",
+      "spell": "*",
+      "awakened": "",
+      "no_cancel": "",
+      "benevolent": "",
+      "super_realm": "",
+      "no_expire": "",
+      "no_incantation_tie": "",
+      "super_realm_treasure": ""
+    },
+    "diemod": {}
+  },
+  "parts": []
+}

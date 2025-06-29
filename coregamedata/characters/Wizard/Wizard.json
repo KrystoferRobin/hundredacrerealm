@@ -1,0 +1,357 @@
+{
+  "ids": [
+    "423",
+    "1545"
+  ],
+  "name": "Wizard",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "wizard",
+      "character": "",
+      "vulnerability": "M",
+      "start": "Inn,House,Guard",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "he",
+      "alt_monsters1_game": "",
+      "magicuser": "",
+      "icon_folder": "characters",
+      "creator": "Richard Hamblen",
+      "artcredit": "Chris White",
+      "meaning": "Celestial Power",
+      "rw_expansion_1": ""
+    },
+    "level_1": {
+      "name": "Apprentice"
+    },
+    "level_2": {
+      "name": "Scholar",
+      "diemod": {
+        "N0": "1d:readrunes:all"
+      },
+      "advantages": {
+        "N0": "LORE:  Roll 1 die instead of 2 for all Reading Runes die rolls."
+      }
+    },
+    "level_3": {
+      "name": "Wise One",
+      "weapon": "Staff",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "III",
+        "N2": "IV"
+      }
+    },
+    "level_4": {
+      "name": "Wizard",
+      "weapon": "Staff",
+      "spellcount": "2",
+      "knows_roads": "",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "III",
+        "N2": "IV"
+      },
+      "advantages": {
+        "N0": "EXPERIENCE:  Use secret passages and hidden paths freely."
+      }
+    },
+    "optional_2": {
+      "optkey": "OptCharWizardMagicChit",
+      "advantages": {
+        "N0": "ELVISH STUDIES:  MOVE M5 becomes MAGIC III2*"
+      }
+    },
+    "optional_3": {
+      "optkey": "OptCharWizardIgnoresSpx",
+      "no_spx": "",
+      "advantages": {
+        "N0": "LONG PRACTICE:  Use SPELL phases to do enchantments without doing SPX."
+      }
+    },
+    "relationship": {
+      "woodfolk": "1",
+      "patrol": "1",
+      "soldiers": "1",
+      "guard": "1",
+      "company": "-1",
+      "bashkars": "-1",
+      "warlock": "-1",
+      "lancers": "-2"
+    }
+  },
+  "parts": [
+    {
+      "id": "475",
+      "name": "Wizard Move M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "wizard",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "476",
+      "name": "Wizard Move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "1",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "wizard",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "477",
+      "name": "Wizard Fight M3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_level": "1",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "wizard",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "478",
+      "name": "Wizard Fight L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "wizard",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "479",
+      "name": "Wizard Move M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "optional": "remove",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "wizard",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "480",
+      "name": "Wizard Fight M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "wizard",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "481",
+      "name": "Wizard Magic II4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "character_level": "3",
+          "effort": "1",
+          "magic": "II",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "wizard",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "482",
+      "name": "Wizard Magic IV4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "character_level": "3",
+          "effort": "1",
+          "magic": "IV",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "wizard",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "483",
+      "name": "Wizard Move M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "wizard",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "484",
+      "name": "Wizard Magic II3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "character_level": "4",
+          "effort": "1",
+          "magic": "II",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "wizard",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "485",
+      "name": "Wizard Magic III3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "character_level": "4",
+          "effort": "1",
+          "magic": "III",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "wizard",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "486",
+      "name": "Wizard Magic IV3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "character_level": "4",
+          "effort": "1",
+          "magic": "IV",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "wizard",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "619",
+      "name": "Wizard Magic III3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "2",
+          "character_level": "4",
+          "effort": "1",
+          "magic": "III",
+          "original_game": "",
+          "optional": "add",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "wizard",
+          "rw_expansion_1": ""
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

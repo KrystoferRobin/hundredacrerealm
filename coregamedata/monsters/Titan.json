@@ -1,0 +1,43 @@
+{
+  "id": "1312",
+  "name": "Titan",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "X",
+      "fame": "15",
+      "notoriety": "15",
+      "super_realm": "",
+      "icon_type": "stoneTitan2",
+      "setup_start": "Spire",
+      "monster_die": "5",
+      "base_price": "15",
+      "icon_folder": "wesnoth/units",
+      "needs_init": "",
+      "denizen": "",
+      "icon_size": "1",
+      "titan": "",
+      "missile": "",
+      "archer": "",
+      "blunt_immunity": "",
+      "armored": ""
+    },
+    "light": {
+      "attack_speed": "4",
+      "strength": "M",
+      "length": "18",
+      "sharpness": "3",
+      "chit_color": "blue",
+      "missile": ""
+    },
+    "dark": {
+      "attack_speed": "4",
+      "strength": "M",
+      "length": "18",
+      "sharpness": "3",
+      "chit_color": "blue",
+      "missile": ""
+    }
+  },
+  "parts": []
+}

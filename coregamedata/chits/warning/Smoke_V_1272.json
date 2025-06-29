@@ -1,0 +1,32 @@
+{
+  "id": "1272",
+  "name": "Smoke V",
+  "attributeBlocks": {
+    "this": {
+      "warning": "smoke",
+      "tile_type": "V",
+      "super_realm": "",
+      "chit": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1280",
+      "name": "House",
+      "attributeBlocks": {
+        "this": {
+          "dwelling": "house",
+          "warning": "smoke",
+          "tile_type": "V",
+          "super_realm": "",
+          "print": "",
+          "icon_type": "log-cabin4",
+          "ts_section": "dwellings",
+          "ts_color": "tan",
+          "icon_folder": "wesnoth/buildings",
+          "quest_target": ""
+        }
+      }
+    }
+  ]
+}

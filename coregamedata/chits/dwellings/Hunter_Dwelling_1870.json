@@ -1,0 +1,270 @@
+{
+  "id": "1870",
+  "name": "Hunter Dwelling",
+  "attributeBlocks": {
+    "this": {
+      "native": "Hunters",
+      "dwelling": "inn,l_camp,s_fire",
+      "print": "",
+      "ts_section": "clan 3",
+      "ts_size": "T",
+      "ts_color": "red",
+      "ts_count": "4",
+      "icon_type": "Rashy_Era-human-forest-ranger",
+      "icon_folder": "wesnoth/units/addons",
+      "virtual_dwelling": "",
+      "super_realm": "",
+      "native_die": "4",
+      "clan": "3",
+      "icon_size": "0.9",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1871",
+      "name": "Hunter 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Hunters",
+          "fame": "0",
+          "notoriety": "6",
+          "base_price": "4",
+          "vulnerability": "H",
+          "rank": "1",
+          "icon_type": "Rashy_Era-human-forest-axemaster",
+          "setup_start": "Hunter Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/addons",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "4",
+          "clan": "3",
+          "icon_size": "0.9",
+          "native_name": "G.Axeman"
+        },
+        "light": {
+          "move_speed": "4",
+          "chit_color": "peach",
+          "attack_speed": "5",
+          "length": "5",
+          "strength": "H",
+          "sharpness": "1"
+        },
+        "dark": {
+          "move_speed": "5",
+          "attack_speed": "3",
+          "strength": "T",
+          "length": "5",
+          "chit_color": "brown",
+          "sharpness": "1"
+        }
+      }
+    },
+    {
+      "id": "1872",
+      "name": "Hunter 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Hunters",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "2",
+          "icon_type": "Rashy_Era-human-forest-beastmaster",
+          "setup_start": "Hunter Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/addons",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "4",
+          "clan": "3",
+          "icon_size": "0.9",
+          "native_name": "Spearman"
+        },
+        "light": {
+          "move_speed": "4",
+          "chit_color": "peach",
+          "attack_speed": "3",
+          "length": "10",
+          "strength": "M",
+          "sharpness": "1"
+        },
+        "dark": {
+          "move_speed": "2",
+          "attack_speed": "6",
+          "strength": "H",
+          "length": "10",
+          "chit_color": "brown",
+          "sharpness": "1"
+        }
+      }
+    },
+    {
+      "id": "1873",
+      "name": "Hunter 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Hunters",
+          "fame": "0",
+          "notoriety": "2",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "3",
+          "icon_type": "Rashy_Era-human-forest-axethrower",
+          "setup_start": "Hunter Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/addons",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "4",
+          "clan": "3",
+          "icon_size": "0.9",
+          "native_name": "Axeman"
+        },
+        "light": {
+          "move_speed": "3",
+          "chit_color": "peach",
+          "attack_speed": "5",
+          "length": "2",
+          "strength": "M",
+          "sharpness": "1"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "2",
+          "chit_color": "brown",
+          "sharpness": "1"
+        }
+      }
+    },
+    {
+      "id": "1874",
+      "name": "Hunter HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Hunters",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "HQ",
+          "icon_type": "Rashy_Era-human-forest-ranger",
+          "setup_start": "Hunter Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/addons",
+          "commerce": "F,N",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "4",
+          "clan": "3",
+          "missile": "",
+          "icon_size": "0.9",
+          "archer": "",
+          "native_name": "Archer"
+        },
+        "light": {
+          "move_speed": "2",
+          "chit_color": "peach",
+          "missile": ""
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "1",
+          "strength": "M",
+          "length": "16",
+          "chit_color": "brown",
+          "missile": "",
+          "sharpness": "2"
+        }
+      }
+    },
+    {
+      "id": "1996",
+      "name": "Medium Bow",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "16",
+          "base_price": "8",
+          "missile": "",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "medium_bow",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": "",
+          "bow": ""
+        },
+        "unalerted": {
+          "strength": "M",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "attack_speed": "1",
+          "strength": "M",
+          "sharpness": "2",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "2008",
+      "name": "Axe",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "2",
+          "base_price": "4",
+          "throwable": "",
+          "weapon": "",
+          "icon_type": "axe",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "5",
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "2009",
+      "name": "Spear",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "10",
+          "base_price": "6",
+          "two_handed": "",
+          "throwable": "",
+          "weapon": "",
+          "icon_type": "spear",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "6",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

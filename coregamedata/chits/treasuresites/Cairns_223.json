@@ -1,0 +1,26 @@
+{
+  "id": "223",
+  "name": "Cairns",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "cairns",
+      "clearing": "5",
+      "original_game": "",
+      "monster_die": "5",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "search": "fatigue_asterisk",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "gold",
+      "icon_type": "spider",
+      "icon_folder": "monsters",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_type_alt": "spiderQueen"
+    }
+  },
+  "parts": []
+}

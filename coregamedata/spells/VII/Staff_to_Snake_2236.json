@@ -1,0 +1,35 @@
+{
+  "id": "2236",
+  "name": "Staff to Snake",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "combat",
+      "target": "staff",
+      "text": "Change staff into Snake with M4**/4",
+      "magic_color": "white",
+      "host_okay": "",
+      "ch2companion": "House",
+      "benevolent": "",
+      "learnable": "",
+      "super_realm": ""
+    },
+    "ch2companion": {
+      "vulnerability": "M",
+      "armored": "",
+      "strength": "M",
+      "attack_speed": "4",
+      "move_speed": "4",
+      "sharpness": "2",
+      "name": "Snake",
+      "chit_color": "lightblue",
+      "icon_type": "add-ons-War_of_Legends-images-units-steelhive-steel_serpent",
+      "icon_folder": "wesnoth/units/addons",
+      "length": "0",
+      "icon_size": "0.9",
+      "serpent": ""
+    }
+  },
+  "parts": []
+}

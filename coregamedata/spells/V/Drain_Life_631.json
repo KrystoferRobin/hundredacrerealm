@@ -1,0 +1,23 @@
+{
+  "id": "631",
+  "name": "Drain Life",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "attack",
+      "target": "monster",
+      "text": "Kill monster &amp; rest asterisks T=4, H=3, M=2 (no undercut)",
+      "magic_color": "black",
+      "rw_expansion_1": "",
+      "drain": "",
+      "strength": "RED",
+      "host_okay": "",
+      "author": "Expansion 1",
+      "length": "0",
+      "no_undercut": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

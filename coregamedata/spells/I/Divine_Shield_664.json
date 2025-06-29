@@ -1,0 +1,24 @@
+{
+  "id": "664",
+  "name": "Divine Shield",
+  "spellLevel": "I",
+  "attributeBlocks": {
+    "this": {
+      "spell": "I",
+      "duration": "day",
+      "target": "individual",
+      "text": "Vulnerability counts as armored",
+      "magic_color": "white",
+      "rw_expansion_1": "",
+      "author": "Deric Page",
+      "attribute_add": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": ""
+    },
+    "attribute_add": {
+      "adds_armor": ""
+    }
+  },
+  "parts": []
+}

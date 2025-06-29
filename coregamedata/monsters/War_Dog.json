@@ -1,0 +1,33 @@
+{
+  "id": "1075",
+  "name": "War Dog",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "0",
+      "notoriety": "1",
+      "icon_type": "wardog",
+      "base_price": "6",
+      "icon_folder": "monsters2",
+      "rw_expansion_1": "",
+      "companion": "",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "icon_type_alt": "Archaic_Era-ukians-dog-attack-dog",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "M",
+      "chit_color": "lightblue"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "H",
+      "chit_color": "blue"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "678",
+  "name": "Dragon Bane",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "3",
+      "text": "Dragons will not attack you (discard to scholar)",
+      "rw_expansion_1": "",
+      "facing": "face_dn",
+      "monster_immunity": "T Flying Dragon,T Dragon,H Flying Dragon,H Dragon",
+      "potion": "",
+      "discard": "scholar",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

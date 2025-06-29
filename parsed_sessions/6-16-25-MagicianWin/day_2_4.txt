@@ -1,0 +1,16 @@
+Month 2, Day 4
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Magician
+Starts turn: Borderland 1
+Magician
+Move - moved
+Magician
+Hide - Succeeded
+Magician
+Ends turn: Borderland 6
+host
+========================================
+host

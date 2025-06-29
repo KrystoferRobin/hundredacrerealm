@@ -1,0 +1,22 @@
+Month 1, Day 5
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+White Knight
+Starts turn: Curst Valley 2
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Awful Valley 1
+host
+========================================
+host

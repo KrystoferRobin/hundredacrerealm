@@ -1,0 +1,1600 @@
+Month 1, Day 5
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Awful Valley 1
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Borderland 2
+Berserker
+Starts turn: Borderland 2
+Berserker
+Ends turn: Borderland 2
+White Knight
+Starts turn: Ruins 1
+White Knight
+Hide - Succeeded
+White Knight
+Hide - N/A
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+BLOCKED - Cannot perform action R
+White Knight
+Ends turn: Borderland 2
+Amazon
+Starts turn: Ruins 2
+Amazon
+Search - Locate - Clues and Passage(s)
+Amazon
+Search - Locate - Passage(s)
+Amazon
+Search - Locate - Nothing
+Amazon
+BLOCKED - Cannot perform action H
+Amazon
+Ends turn: Ruins 2
+__battle__
+Battle resolving at Ruins 2:
+__battle__
+GROUP 1
+__battle__
+Amazon
+__battle__
+GROUP 2
+__battle__
+Imp
+__battle__
+=======================
+__battle__
+Evening of month 1, day 5, in clearing Ruins 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Amazon
+Attacks the Imp
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+Attack Length=17, Speed=2
+__battle__
+Imp neg2  vs. Amazon Speed 3
+__battle__
+Undercut! (Speed 2 is faster than Speed 3)
+__battle__
+Amazon was hit with a Curse along box 2
+Amazon
+Cursed with Disgust
+__battle__
+Amazon was not killed.
+__battle__
+>
+__battle__
+Attack Length=3, Speed=5
+__battle__
+Amazon M5*  vs. Imp Speed 2
+__battle__
+Missed! (Speed 5 is not faster than Speed 2)
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Imp won't disengage when fighting a character
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Amazon
+Attacks the Imp
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=2, Length=17
+__battle__
+Imp neg2  vs. Amazon Speed 3
+__battle__
+Intercepted! (box 3 matches box 3)
+__battle__
+Amazon was hit with a Curse along box 3
+Amazon
+Cursed with Ashes
+__battle__
+Amazon was not killed.
+__battle__
+>
+__battle__
+Attack Speed=5, Length=3
+__battle__
+Amazon M5*  vs. Imp Speed 2
+__battle__
+Intercepted! (box 3 matches box 3)
+__battle__
+Initial harm: M+1
+__battle__
+Imp is hit with M+1 harm along box 3
+__battle__
+Imp was killed!
+__battle__
+The Amazon gets 2 fame (x 1) and 1 notoriety (x 1) for the death of the Imp
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Amazon disengages because target is dead
+__battle__
+Imp is dead.  Killed by Amazon
+__battle__
+-----------------------
+__battle__
+--  Combat Round 3
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Amazon
+Presses the END combat button.
+Amazon
+Combat has ended.
+__battle__
+Battle resolving at Borderland 2:
+__battle__
+GROUP 1
+__battle__
+Woods Girl
+__battle__
+Short Swordsman (Woods Girl)
+__battle__
+GROUP 2
+__battle__
+White Knight
+__battle__
+GROUP 3
+__battle__
+Berserker
+__battle__
+GROUP 4
+__battle__
+H Troll
+__battle__
+H Troll
+__battle__
+Patrol HQ
+__battle__
+Patrol 1
+__battle__
+Patrol 2
+Woods Girl
+The Woods Girl chose not to buy drinks.
+Woods Girl
+Meeting Patrol on the Neutral table
+Woods Girl
+Rolled 5. = No Deal
+Berserker
+The Berserker chose not to buy drinks.
+Berserker
+Meeting Patrol on the Unfriendly table
+Berserker
+Rolled 5 and 5. = Challenge
+White Knight
+The White Knight chose not to buy drinks.
+White Knight
+Meeting Patrol on the Enemy table
+White Knight
+Rolled 1 and 6. = Block/Battle
+__battle__
+=======================
+__battle__
+Evening of month 1, day 5, in clearing Borderland 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Berserker
+Lures the Patrol HQ
+Berserker
+Lures the Patrol 2
+Berserker
+Lures the Patrol 1
+Berserker
+Lures the H Troll
+Berserker
+Lures the H Troll
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+White Knight
+Attacks the Patrol HQ
+White Knight
+Becomes unhidden.
+Woods Girl
+Attacks the Patrol 1
+Berserker
+Attacks the Patrol HQ
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+Attack Length=14, Speed=4
+__battle__
+Woods Girl L4  vs. Patrol 1 Speed 6
+__battle__
+Undercut! (Speed 4 is faster than Speed 6)
+__battle__
+Initial harm: L
+__battle__
+Missile roll: Rolled 6 (red).
+__battle__
+Missile table result: 6 = Decrease 3 levels
+__battle__
+Patrol 1 is hit with neg harm along box 1
+Woods Girl
+Hits the Patrol 1's Patrol Horse 1
+__battle__
+Patrol 1 was not killed.
+__battle__
+>
+__battle__
+Attack Length=8, Speed=6
+__battle__
+White Knight T6*  vs. Patrol HQ Speed 5
+__battle__
+Missed! (Speed 6 is not faster than Speed 5)
+__battle__
+>
+__battle__
+Attack Length=5, Speed=5
+__battle__
+Berserker H5*  vs. Patrol HQ Speed 5
+__battle__
+Missed! (Speed 5 is not faster than Speed 5)
+__battle__
+>
+__battle__
+Attack Length=3, Speed=4
+__battle__
+Short Swordsman M4*  vs. Patrol 2 Speed 6
+__battle__
+Undercut! (Speed 4 is faster than Speed 6)
+__battle__
+Initial harm: M+1
+__battle__
+Patrol 2 is hit with M+1 harm along box 2
+Short Swordsman
+Hits the Patrol 2's Patrol Horse 2
+Short Swordsman
+Kills the Patrol Horse 2
+__battle__
+Patrol 2 was not killed.
+__battle__
+>
+__battle__
+Attack Length=3, Speed=4
+__battle__
+Patrol HQ M4*  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Length=3, Speed=4
+__battle__
+Patrol 1 L4*  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Length=3, Speed=5
+__battle__
+Patrol 2 M5*  vs. Short Swordsman Speed 3
+__battle__
+Intercepted! (box 2 matches box 2)
+__battle__
+Initial harm: M+1
+__battle__
+Short Swordsman is hit with M+1 harm along box 2
+Patrol 2
+Hits armor, and reduces sharpness: M
+__battle__
+Short Swordsman was killed!
+Woods Girl
+Loses 3 notoriety for the loss of the Short Swordsman hireling.
+__battle__
+>
+__battle__
+Attack Length=0, Speed=4
+__battle__
+H Troll M4  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Length=0, Speed=4
+__battle__
+H Troll M4  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+White Knight
+Is discovered!  (Ambush rules)
+White Knight
+Becomes unhidden.
+Berserker
+Fatiguing 1 asterisk.
+Berserker
+After fatiguing, these chits were moved to fatigue: MOVE T6*
+White Knight
+Fatiguing 1 asterisk.
+White Knight
+After fatiguing, these chits were moved to fatigue: FIGHT T5*
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Short Swordsman is dead.  Killed by Patrol 2
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+Patrol HQ won't disengage when fighting a character
+__battle__
+Patrol 1 won't disengage when fighting a character
+__battle__
+Patrol 2 disengages because target is dead
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Berserker
+Lures the Patrol 2
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Woods Girl
+Alerts the Light Bow
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Berserker
+Attacks the Patrol HQ
+Woods Girl
+Attacks the Patrol 2
+White Knight
+Attacks the H Troll
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=1, Length=14
+__battle__
+Woods Girl L1**  vs. Patrol 2 Speed 3
+__battle__
+Undercut! (Speed 1 is faster than Speed 3)
+__battle__
+Initial harm: L+2
+__battle__
+Missile roll: Rolled 5 (red).
+__battle__
+Missile table result: 5 = Decrease 2 levels
+__battle__
+Patrol 2 is hit with neg+1 harm along box 3
+Woods Girl
+Hits armor, and reduces sharpness: neg
+__battle__
+Patrol 2 was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=8
+__battle__
+White Knight H4*  vs. H Troll Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=5
+__battle__
+Berserker H4*  vs. Patrol HQ Speed 5
+__battle__
+Undercut! (Speed 4 is faster than Speed 5)
+__battle__
+Initial harm: H+1
+__battle__
+Patrol HQ is hit with H+1 harm along box 3
+Berserker
+Hits the Patrol HQ's Patrol Horse HQ
+Berserker
+Kills the Patrol Horse HQ
+__battle__
+Patrol HQ was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Patrol HQ M4*  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Patrol 1 L4*  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+H Troll M4  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+H Troll M4  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=3
+__battle__
+Patrol 2 M5*  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 5 is not faster than Speed 4)
+Berserker
+Remains hidden!  (Ambush rules)
+Woods Girl
+Fatiguing 1 asterisk.
+Woods Girl
+After fatiguing, these chits were moved to fatigue: FIGHT M4*
+Berserker
+Fatiguing 1 asterisk.
+Berserker
+After fatiguing, these chits were moved to fatigue: MOVE H5*
+White Knight
+Fatiguing 1 asterisk.
+White Knight
+After fatiguing, these chits were moved to fatigue: FIGHT H5*
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+Patrol HQ won't disengage when fighting a character
+__battle__
+Patrol 1 won't disengage when fighting a character
+__battle__
+Patrol 2 won't disengage when fighting a character
+__battle__
+-----------------------
+__battle__
+--  Combat Round 3
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Berserker
+Attacks the Patrol 2
+Berserker
+Becomes unhidden.
+White Knight
+Attacks the H Troll
+Woods Girl
+Attacks the Patrol HQ
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=3, Length=14
+__battle__
+Woods Girl L3  vs. Patrol HQ Speed 3
+__battle__
+Missed! (Speed 3 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Patrol HQ M4*  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Patrol 1 L4*  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+H Troll M4  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+H Troll M4  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=5
+__battle__
+Berserker H5*  vs. Patrol 2 Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=3
+__battle__
+Patrol 2 M5*  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 5 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=6, Length=8
+__battle__
+White Knight H6*  vs. H Troll Speed 4
+__battle__
+Missed! (Speed 6 is not faster than Speed 4)
+Berserker
+Remains hidden!  (Ambush rules)
+Berserker
+Fatiguing 1 asterisk.
+Berserker
+After fatiguing, these chits were made active: MOVE H5*
+Berserker
+After fatiguing, these chits were moved to fatigue: MOVE H4**
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+Patrol HQ won't disengage when fighting a character
+__battle__
+Patrol 1 won't disengage when fighting a character
+__battle__
+Patrol 2 won't disengage when fighting a character
+__battle__
+-----------------------
+__battle__
+--  Combat Round 4
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+White Knight
+Lures the Patrol 1
+White Knight
+Lures the Patrol HQ
+White Knight
+Lures the Patrol 2
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the Patrol HQ
+White Knight
+Attacks the Patrol 2
+Berserker
+Attacks the H Troll
+Berserker
+Becomes unhidden.
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=1, Length=14
+__battle__
+Woods Girl L1**  vs. Patrol HQ Speed 3
+__battle__
+Undercut! (Speed 1 is faster than Speed 3)
+__battle__
+Initial harm: L+2
+__battle__
+Missile roll: Rolled 3 (red).
+__battle__
+Missile table result: 3 = No Change
+__battle__
+Patrol HQ is hit with L+2 harm along box 3
+Woods Girl
+Hits armor, and reduces sharpness: L+1
+__battle__
+Patrol HQ was killed!
+__battle__
+The native leader for the Patrol drops the group's store in the clearing.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=8
+__battle__
+White Knight H4*  vs. Patrol 2 Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=5
+__battle__
+Berserker H4*  vs. H Troll Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Patrol HQ M4*  vs. White Knight Not Moving
+__battle__
+Attack Cancelled:  Patrol HQ was already killed by Woods Girl.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Patrol 1 L4*  vs. White Knight Not Moving
+__battle__
+Intercepted! (box 1 matches box 0)
+__battle__
+Initial harm: L+1
+__battle__
+White Knight is hit with L+1 harm along box 1
+Patrol 1
+Hits armor (Armor), and reduces sharpness: L
+__battle__
+White Knight was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+H Troll M4  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+H Troll M4  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=3
+__battle__
+Patrol 2 M5*  vs. White Knight Not Moving
+__battle__
+Intercepted! (box 1 matches box 0)
+__battle__
+Initial harm: M+1
+__battle__
+White Knight is hit with M+1 harm along box 1
+Patrol 2
+Hits armor (Armor), and reduces sharpness: M
+__battle__
+White Knight takes 1 wound
+__battle__
+White Knight was not killed.
+__battle__
+The Woods Girl gets 3 notoriety (x 1) for the death of the Patrol HQ
+__battle__
+The Woods Girl gets 2 gold bounty from the Patrol HQ
+Berserker
+Remains hidden!  (Ambush rules)
+Berserker
+Fatiguing 1 asterisk.
+Berserker
+After fatiguing, these chits were moved to fatigue: MOVE H5*
+White Knight
+Fatiguing 1 asterisk.
+White Knight
+After fatiguing, these chits were moved to fatigue: FIGHT H5*
+White Knight
+Wounding 1 chit.
+White Knight
+After wounding, these chits were wounded: MOVE T6*
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Woods Girl disengages because target is dead
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+Patrol HQ is dead.  Killed by Woods Girl
+__battle__
+Woods Girl killed Neutral Patrol HQ.
+__battle__
+Woods Girl relationship is harmed by 1! (EXTENDED GRUDGES) --> Unfriendly
+__battle__
+Patrol 1 won't disengage when fighting a character
+__battle__
+Patrol 2 won't disengage when fighting a character
+__battle__
+-----------------------
+__battle__
+--  Combat Round 5
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+White Knight
+Attacks the Patrol 2
+Woods Girl
+Attacks the H Troll
+Woods Girl
+Presses the RESET combat button.
+Woods Girl
+Attacks the Patrol 1
+Berserker
+Attacks the H Troll
+Berserker
+Becomes unhidden.
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=3, Length=14
+__battle__
+Woods Girl L3  vs. Patrol 1 Speed 6
+__battle__
+Undercut! (Speed 3 is faster than Speed 6)
+__battle__
+Initial harm: L
+__battle__
+Missile roll: Rolled 3 (red).
+__battle__
+Missile table result: 3 = No Change
+__battle__
+Patrol 1 is hit with L harm along box 2
+Woods Girl
+Hits the Patrol 1's Patrol Horse 1
+__battle__
+Patrol 1 was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=8
+__battle__
+White Knight H4*  vs. Patrol 2 Speed 3
+__battle__
+Intercepted! (box 3 matches box 3)
+__battle__
+Initial harm: H+1
+__battle__
+Patrol 2 is hit with H+1 harm along box 3
+White Knight
+Hits armor, and reduces sharpness: H
+__battle__
+Patrol 2 was killed!
+__battle__
+>
+__battle__
+Attack Speed=4, Length=5
+__battle__
+Berserker H4*  vs. H Troll Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Patrol 1 L4*  vs. White Knight Not Moving
+__battle__
+Intercepted! (box 3 matches box 0)
+__battle__
+Initial harm: L+1
+__battle__
+White Knight is hit with L+1 harm along box 3
+Patrol 1
+Hits armor (Armor), and reduces sharpness: L
+__battle__
+White Knight was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+H Troll M4  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+H Troll M4  vs. Berserker Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=3
+__battle__
+Patrol 2 M5*  vs. White Knight Not Moving
+__battle__
+Attack Cancelled:  Patrol 2 was already killed by White Knight.
+__battle__
+The White Knight gets 3 notoriety (x 1) for the death of the Patrol 2
+__battle__
+The White Knight gets 2 gold bounty from the Patrol 2
+Woods Girl
+Remains hidden!  (Ambush rules)
+Berserker
+Fatiguing 1 asterisk.
+Berserker
+After fatiguing, these chits were made active: MOVE H5*
+Berserker
+After fatiguing, these chits were moved to fatigue: MOVE H4**
+White Knight
+Fatiguing 1 asterisk.
+White Knight
+After fatiguing, these chits were made active: FIGHT H5*
+White Knight
+After fatiguing, these chits were moved to fatigue: FIGHT T4**
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+White Knight disengages because target is dead
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+Patrol 1 won't disengage when fighting a character
+__battle__
+Patrol 2 is dead.  Killed by White Knight
+__battle__
+-----------------------
+__battle__
+--  Combat Round 6
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the Patrol 1
+Berserker
+Attacks the H Troll
+White Knight
+Attacks the H Troll
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 2
+H Troll
+Changes tactics:  H Troll H5
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=3, Length=14
+__battle__
+Woods Girl L3  vs. Patrol 1 Speed 6
+__battle__
+Undercut! (Speed 3 is faster than Speed 6)
+__battle__
+Initial harm: L
+__battle__
+Missile roll: Rolled 3 (red).
+__battle__
+Missile table result: 3 = No Change
+__battle__
+Patrol 1 is hit with L harm along box 2
+Woods Girl
+Hits the Patrol 1's Patrol Horse 1
+__battle__
+Patrol 1 was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Patrol 1 L4*  vs. White Knight Not Moving
+__battle__
+Intercepted! (box 3 matches box 0)
+__battle__
+Initial harm: L+1
+__battle__
+White Knight is hit with L+1 harm along box 3
+Patrol 1
+Hits armor (Armor), and reduces sharpness: L
+__battle__
+White Knight was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+H Troll M4  vs. Berserker Not Moving
+__battle__
+Intercepted! (box 1 matches box 0)
+__battle__
+Initial harm: M
+__battle__
+Berserker is hit with M harm along box 1
+__battle__
+Berserker takes 1 wound
+__battle__
+Berserker was not killed.
+__battle__
+>
+__battle__
+Attack Speed=5, Length=0
+__battle__
+H Troll H5  vs. Berserker Not Moving
+__battle__
+Intercepted! (box 2 matches box 0)
+__battle__
+Initial harm: H
+__battle__
+Berserker is hit with H harm along box 2
+__battle__
+Berserker was killed!
+__battle__
+The Berserker drops inventory in the clearing.
+Berserker
+Remains hidden!  (Ambush rules)
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Berserker is dead.  Killed by H Troll
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+H Troll disengages because target is dead
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+H Troll disengages because target is dead
+__battle__
+Patrol 1 won't disengage when fighting a character
+__battle__
+-----------------------
+__battle__
+--  Combat Round 7
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+White Knight
+Lures the H Troll
+White Knight
+Lures the H Troll
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+White Knight
+Attacks the H Troll
+Woods Girl
+Attacks the Patrol 1
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=3, Length=14
+__battle__
+Woods Girl L3  vs. Patrol 1 Speed 6
+__battle__
+Undercut! (Speed 3 is faster than Speed 6)
+__battle__
+Initial harm: L
+__battle__
+Missile roll: Rolled 5 (red).
+__battle__
+Missile table result: 5 = Decrease 2 levels
+__battle__
+Patrol 1 is hit with neg harm along box 3
+Woods Girl
+Hits the Patrol 1's Patrol Horse 1
+__battle__
+Patrol 1 was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Patrol 1 L4*  vs. White Knight Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+H Troll M4  vs. White Knight Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=0
+__battle__
+H Troll H5  vs. White Knight Speed 4
+__battle__
+Missed! (Speed 5 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=6, Length=8
+__battle__
+White Knight H6*  vs. H Troll Speed 4
+__battle__
+Missed! (Speed 6 is not faster than Speed 4)
+White Knight
+Is discovered!  (Ambush rules)
+White Knight
+Becomes unhidden.
+White Knight
+Fatiguing 1 asterisk.
+White Knight
+After fatiguing, these chits were moved to fatigue: MOVE H5*
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+Patrol 1 won't disengage when fighting a character
+__battle__
+-----------------------
+__battle__
+--  Combat Round 8
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+White Knight
+Attacks the Patrol 1
+Woods Girl
+Attacks the Patrol 1
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=3, Length=14
+__battle__
+Woods Girl L3  vs. Patrol 1 Speed 6
+__battle__
+Undercut! (Speed 3 is faster than Speed 6)
+__battle__
+Initial harm: L
+__battle__
+Missile roll: Rolled 3 (red).
+__battle__
+Missile table result: 3 = No Change
+__battle__
+Patrol 1 is hit with L harm along box 3
+Woods Girl
+Hits the Patrol 1's Patrol Horse 1
+__battle__
+Patrol 1 was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=8
+__battle__
+White Knight H4*  vs. Patrol 1 Speed 6
+__battle__
+Undercut! (Speed 4 is faster than Speed 6)
+__battle__
+Initial harm: H+1
+__battle__
+Patrol 1 is hit with H+1 harm along box 3
+White Knight
+Hits the Patrol 1's Patrol Horse 1
+White Knight
+Kills the Patrol Horse 1
+__battle__
+Patrol 1 was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Patrol 1 L4*  vs. White Knight Speed 6
+__battle__
+Undercut! (Speed 4 is faster than Speed 6)
+__battle__
+Initial harm: L+1
+__battle__
+White Knight is hit with L+1 harm along box 2
+Patrol 1
+Hits armor (Armor), and reduces sharpness: L
+__battle__
+White Knight was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+H Troll M4  vs. White Knight Speed 6
+__battle__
+Undercut! (Speed 4 is faster than Speed 6)
+__battle__
+Initial harm: M
+__battle__
+White Knight is hit with M harm along box 2
+H Troll
+Hits armor (Armor), and reduces sharpness: M
+__battle__
+White Knight takes 1 wound
+__battle__
+White Knight was not killed.
+__battle__
+>
+__battle__
+Attack Speed=5, Length=0
+__battle__
+H Troll H5  vs. White Knight Speed 6
+__battle__
+Undercut! (Speed 5 is faster than Speed 6)
+__battle__
+Initial harm: H
+__battle__
+White Knight is hit with H harm along box 2
+H Troll
+Hits armor (Armor), and reduces sharpness: H
+H Troll
+Damages the White Knight's Armor
+__battle__
+White Knight takes 1 wound
+__battle__
+White Knight was not killed.
+Woods Girl
+Remains hidden!  (Ambush rules)
+White Knight
+Fatiguing 1 asterisk.
+White Knight
+After fatiguing, these chits were moved to fatigue: FIGHT H5*
+White Knight
+Wounding 2 chits.
+White Knight
+After wounding, these chits were wounded: FIGHT H6, and MOVE H6
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+Patrol 1 won't disengage when fighting a character
+__battle__
+-----------------------
+__battle__
+--  Combat Round 9
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+White Knight
+Attacks the H Troll
+Woods Girl
+Attacks the Patrol 1
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 1
+H Troll
+Changes tactics:  H Troll H5
+H Troll
+Changes tactics:  H Troll M4
+Patrol 1
+Changes tactics:  Patrol 1 M4*
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=3, Length=14
+__battle__
+Woods Girl L3  vs. Patrol 1 Speed 4
+__battle__
+Undercut! (Speed 3 is faster than Speed 4)
+__battle__
+Initial harm: L
+__battle__
+Missile roll: Rolled 5 (red).
+__battle__
+Missile table result: 5 = Decrease 2 levels
+__battle__
+Patrol 1 is hit with neg harm along box 3
+Woods Girl
+Hits armor, and reduces sharpness: neg
+__battle__
+Patrol 1 was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Patrol 1 M4*  vs. White Knight Not Moving
+__battle__
+Intercepted! (box 1 matches box 0)
+__battle__
+Initial harm: M+1
+__battle__
+White Knight is hit with M+1 harm along box 1
+Patrol 1
+Hits armor (Armor), and reduces sharpness: M
+__battle__
+White Knight takes 1 wound
+__battle__
+White Knight was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+H Troll M4  vs. White Knight Not Moving
+__battle__
+Intercepted! (box 1 matches box 0)
+__battle__
+Initial harm: M
+__battle__
+White Knight is hit with M harm along box 1
+H Troll
+Hits armor (Armor), and reduces sharpness: M
+__battle__
+White Knight takes 1 wound
+__battle__
+White Knight was not killed.
+__battle__
+>
+__battle__
+Attack Speed=5, Length=0
+__battle__
+H Troll H5  vs. White Knight Not Moving
+__battle__
+Intercepted! (box 1 matches box 0)
+__battle__
+Initial harm: H
+__battle__
+White Knight is hit with H harm along box 1
+H Troll
+Hits armor (Armor), and reduces sharpness: H
+H Troll
+Destroys the White Knight's Armor
+__battle__
+White Knight takes 1 wound
+__battle__
+White Knight was not killed.
+__battle__
+>
+__battle__
+Attack Speed=6, Length=8
+__battle__
+White Knight H6*  vs. H Troll Speed 4
+__battle__
+Missed! (Speed 6 is not faster than Speed 4)
+Woods Girl
+Remains hidden!  (Ambush rules)
+White Knight
+Fatiguing 1 asterisk.
+White Knight
+After fatiguing, these chits were made active: FIGHT H5*
+White Knight
+After fatiguing, these chits were moved to fatigue: FIGHT H4**
+White Knight
+Wounding 3 chits.
+White Knight
+After wounding, these chits were wounded: MAGIC I5**, FIGHT H5*, and MOVE H4**
+__battle__
+---- DISENGAGEMENT ----
+White Knight
+Destroyed Armor regenerates at the Chapel.
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+Patrol 1 won't disengage when fighting a character
+__battle__
+-----------------------
+__battle__
+--  Combat Round 10
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Woods Girl
+Lures the H Troll
+Woods Girl
+Lures the H Troll
+Woods Girl
+Lures the Patrol 1
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Woods Girl
+Ran away!
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+1 consecutive round of no damage, fatigue, or spellcasting.
+__battle__
+-----------------------
+__battle__
+--  Combat Round 11
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+White Knight
+Attacks the H Troll
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=8
+__battle__
+White Knight H4*  vs. H Troll Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Patrol 1 M4*  vs. White Knight Not Moving
+__battle__
+Intercepted! (box 1 matches box 0)
+__battle__
+Initial harm: M+1
+__battle__
+White Knight is hit with M+1 harm along box 1
+__battle__
+White Knight was killed!
+__battle__
+The White Knight's stuff is taken by the Patrol
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+H Troll M4  vs. White Knight Not Moving
+__battle__
+Attack Cancelled:  White Knight was already killed by Patrol 1.
+__battle__
+>
+__battle__
+Attack Speed=5, Length=0
+__battle__
+H Troll H5  vs. White Knight Not Moving
+__battle__
+Attack Cancelled:  White Knight was already killed by Patrol 1.
+host
+========================================
+host

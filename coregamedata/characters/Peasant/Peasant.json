@@ -1,0 +1,277 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Peasant",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn,House",
+      "pronoun": "he",
+      "creator": "Roberto Ullfig",
+      "artcredit": "East Paladin Gallery / Midjounrey",
+      "meaning": "Harvest",
+      "vulnerability": "M",
+      "icon_type": "peasant",
+      "icon_folder": "custom/characters"
+    },
+    "level_1": {
+      "name": "Countryman",
+      "badge_icon": "Peasantbadge1",
+      "start_gold": "0",
+      "advantages": {
+        "N0": "POOR: Starts out with 0 gold, instead of the usual 10."
+      }
+    },
+    "level_2": {
+      "name": "Serf",
+      "badge_icon": "Peasantbadge2",
+      "advantages": {
+        "N0": "PET: Has a Squirrel companion as a permanent hireling.  If the companion is killed, it is lost for the remainder of the game, or until you achieve a new level (development rules). [Level 2]"
+      },
+      "companion_name": {
+        "N0": "Squirrel"
+      }
+    },
+    "level_3": {
+      "name": "Farmer",
+      "weapon": "Pitchfork"
+    },
+    "level_4": {
+      "name": "Peasant",
+      "weapon": "Pitchfork",
+      "badge_icon": "Peasantbadge4",
+      "advantages": {
+        "N0": "BARTER: Rolls 1 die instead of 2 for all rolls on the TRADE table. [Level 4]"
+      },
+      "diemod": {
+        "N0": "1d:trade:all"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "peasant",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "peasant",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "MOVE M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "peasant",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "peasant",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "peasant",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "fight L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "peasant",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "peasant",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "peasant",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "peasant",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "peasant",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "move H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "peasant",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "fight H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "peasant",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

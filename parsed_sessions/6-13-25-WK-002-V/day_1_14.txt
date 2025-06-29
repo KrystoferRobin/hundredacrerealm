@@ -1,0 +1,32 @@
+Month 1, Day 14
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+host
+7th day - denizens return to setup card:
+host
+- T Troll
+host
+- T Troll
+host
+- H Troll
+host
+- H Troll
+White Knight
+Starts turn: Mountain 4
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Evil Valley 4
+host
+========================================
+host

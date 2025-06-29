@@ -1,0 +1,19 @@
+{
+  "id": "2400",
+  "name": "Gladiator Move T4**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "strength": "T",
+      "speed": "4",
+      "character_level": "3",
+      "stage": "9",
+      "level": "3",
+      "icon_folder": "characters",
+      "icon_type": "gladiator",
+      "super_realm": "",
+      "effort": "2"
+    }
+  }
+}

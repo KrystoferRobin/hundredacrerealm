@@ -1,0 +1,13 @@
+{
+  "id": "962",
+  "name": "Ruins S",
+  "attributeBlocks": {
+    "this": {
+      "warning": "ruins",
+      "tile_type": "S",
+      "chit": "",
+      "rw_expansion_1": ""
+    }
+  },
+  "parts": []
+}

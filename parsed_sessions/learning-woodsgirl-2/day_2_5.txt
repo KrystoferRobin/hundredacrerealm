@@ -1,0 +1,48 @@
+Month 2, Day 5
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Deep Woods 5
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Awful Valley 5
+__battle__
+Battle resolving at Awful Valley 5:
+__battle__
+GROUP 1
+__battle__
+Woods Girl
+__battle__
+GROUP 2
+__battle__
+Ghost
+__battle__
+Ghost
+__battle__
+=======================
+__battle__
+Evening of month 2, day 5, in clearing Awful Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host

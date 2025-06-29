@@ -1,0 +1,307 @@
+{
+  "ids": [
+    "426",
+    "1548"
+  ],
+  "name": "Swordsman",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "swordsman",
+      "character": "",
+      "vulnerability": "L",
+      "start": "Inn",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "he",
+      "alt_monsters1_game": "",
+      "fighter": "",
+      "icon_folder": "characters",
+      "creator": "Richard Hamblen",
+      "artcredit": "Kim Gromoll",
+      "meaning": "Wolf's Hook",
+      "rw_expansion_1": ""
+    },
+    "level_1": {
+      "name": "Wanderer"
+    },
+    "level_2": {
+      "name": "Thief",
+      "diemod": {
+        "N0": "1d:trade:all"
+      },
+      "advantages": {
+        "N0": "BARTER:  Roll 1 die instead of 2 for all TRADE die rolls."
+      }
+    },
+    "level_3": {
+      "name": "Adventurer",
+      "weapon": "Thrusting Sword"
+    },
+    "level_4": {
+      "name": "Swordsman",
+      "weapon": "Thrusting Sword",
+      "choose_turn": "",
+      "advantages": {
+        "N0": "CLEVER:  During Daylight, choose when to take your turn."
+      }
+    },
+    "relationship": {
+      "rogues": "1",
+      "company": "1",
+      "warlock": "1",
+      "patrol": "-2"
+    }
+  },
+  "parts": [
+    {
+      "id": "439",
+      "name": "Swordsman Move L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "4",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "swordsman",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "440",
+      "name": "Swordsman Move L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "3",
+          "character_level": "1",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "swordsman",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "441",
+      "name": "Swordsman Fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "character_level": "1",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "swordsman",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "442",
+      "name": "Swordsman Move L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "3",
+          "character_level": "2",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "swordsman",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "443",
+      "name": "Swordsman Fight L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "2",
+          "character_level": "2",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "swordsman",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "444",
+      "name": "Swordsman Move L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "2",
+          "character_level": "2",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "swordsman",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "445",
+      "name": "Swordsman Move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "3",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "swordsman",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "446",
+      "name": "Swordsman Fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "3",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "swordsman",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "447",
+      "name": "Swordsman Fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_level": "3",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "swordsman",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "448",
+      "name": "Swordsman Fight L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "swordsman",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "449",
+      "name": "Swordsman Fight M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "swordsman",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "450",
+      "name": "Swordsman Fight L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "2",
+          "character_level": "4",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "swordsman",
+          "rw_expansion_1": ""
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

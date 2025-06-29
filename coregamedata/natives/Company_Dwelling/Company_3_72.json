@@ -1,0 +1,44 @@
+{
+  "id": "72",
+  "name": "Company 3",
+  "attributeBlocks": {
+    "this": {
+      "native": "Company",
+      "fame": "0",
+      "notoriety": "3",
+      "base_price": "2",
+      "vulnerability": "M",
+      "rank": "3",
+      "armored": "",
+      "original_game": "",
+      "icon_type": "pikeman",
+      "monster_die": "1",
+      "setup_start": "Company Dwelling",
+      "hire_type": "group",
+      "icon_folder": "natives",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "denizen": "",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "icon_type_alt": "pikeman",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "6",
+      "strength": "H",
+      "length": "10",
+      "sharpness": "1",
+      "chit_color": "lightblue"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "4",
+      "strength": "M",
+      "length": "10",
+      "sharpness": "1",
+      "chit_color": "blue"
+    }
+  },
+  "parts": []
+}

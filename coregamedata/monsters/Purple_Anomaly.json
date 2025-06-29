@@ -1,0 +1,48 @@
+{
+  "id": "1415",
+  "name": "Purple Anomaly",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "H",
+      "fame": "4",
+      "notoriety": "4",
+      "super_realm": "",
+      "icon_type": "darkObserver",
+      "setup_start": "Purple Anomaly Box",
+      "monster_die": "5",
+      "base_price": "4",
+      "icon_folder": "wesnoth/units",
+      "needs_init": "",
+      "denizen": "",
+      "armored": "",
+      "icon_size": "0.9",
+      "icon_y_offset": "7",
+      "color_source": "purple",
+      "magic_immunity": "purple",
+      "archer": "",
+      "elemental": "",
+      "anomaly": "",
+      "box_num": "3",
+      "blunt_immunity": "",
+      "ignore_mist_like": "",
+      "ignore_enchanted_weapons": ""
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "M",
+      "chit_color": "gray"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "3",
+      "strength": "L",
+      "chit_color": "red",
+      "length": "14",
+      "sharpness": "2",
+      "missile": ""
+    }
+  },
+  "parts": []
+}

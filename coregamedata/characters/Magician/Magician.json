@@ -1,0 +1,337 @@
+{
+  "ids": [
+    "422",
+    "1544"
+  ],
+  "name": "Magician",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "magician",
+      "character": "",
+      "vulnerability": "L",
+      "start": "Inn",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "he",
+      "alt_monsters1_game": "",
+      "magicuser": "",
+      "icon_folder": "characters",
+      "creator": "Richard Hamblen",
+      "artcredit": "Chris White",
+      "meaning": "Ginner: Divine and Demonic",
+      "rw_expansion_1": ""
+    },
+    "level_1": {
+      "name": "Student"
+    },
+    "level_2": {
+      "name": "Trickster",
+      "spellcount": "1",
+      "extra_actions": {
+        "N0": "A"
+      },
+      "spelltypes": {
+        "N0": "II"
+      },
+      "advantages": {
+        "N0": "MAGICAL PARAPHERNALIA:  Get one extra ALERT phase every day."
+      }
+    },
+    "level_3": {
+      "name": "Illusionist",
+      "spellcount": "2",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "III",
+        "N2": "VII",
+        "N3": "VIII"
+      }
+    },
+    "level_4": {
+      "name": "Magician",
+      "spellcount": "3",
+      "diemod": {
+        "N0": "-1:readrunes:all"
+      },
+      "spelltypes": {
+        "N0": "II",
+        "N1": "III",
+        "N2": "IV",
+        "N3": "V",
+        "N4": "VI",
+        "N5": "VII",
+        "N6": "VIII"
+      },
+      "advantages": {
+        "N0": "KNOWLEDGE:  Subtract 1 from all Reading Runes die rolls."
+      }
+    },
+    "optional_2": {
+      "optkey": "OptCharMagician",
+      "no_magic_fatigue": "",
+      "advantages": {
+        "N0": "CHARMS:  At midnight, all prepared MAGIC chits become unprepared without fatiguing."
+      }
+    },
+    "relationship": {
+      "company": "1",
+      "rogues": "1",
+      "patrol": "-1",
+      "soldiers": "-1",
+      "crone": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "487",
+      "name": "Magician Fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "character_level": "1",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "magician",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "488",
+      "name": "Magician Move L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "4",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "magician",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "489",
+      "name": "Magician Move L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "3",
+          "character_level": "1",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "magician",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "490",
+      "name": "Magician Fight L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "magician",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "491",
+      "name": "Magician Magic II3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "character_level": "2",
+          "effort": "1",
+          "magic": "II",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "magician",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "492",
+      "name": "Magician Move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "2",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "magician",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "493",
+      "name": "Magician Magic VIII4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "character_level": "3",
+          "effort": "1",
+          "magic": "VIII",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "magician",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "494",
+      "name": "Magician Magic III3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "character_level": "3",
+          "effort": "1",
+          "magic": "III",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "magician",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "495",
+      "name": "Magician Magic VII4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "character_level": "3",
+          "effort": "2",
+          "magic": "VII",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "magician",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "496",
+      "name": "Magician Magic V4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "character_level": "4",
+          "effort": "2",
+          "magic": "V",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "magician",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "497",
+      "name": "Magician Magic VI4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "character_level": "4",
+          "effort": "1",
+          "magic": "VI",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "magician",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "498",
+      "name": "Magician Magic IV3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "character_level": "4",
+          "effort": "1",
+          "magic": "IV",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "magician",
+          "rw_expansion_1": ""
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

@@ -1,0 +1,324 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Beast Master",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn,Ghost",
+      "pronoun": "he",
+      "creator": "John Hickman",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Call of the Wild",
+      "vulnerability": "M",
+      "icon_type": "beast master",
+      "icon_folder": "custom/characters"
+    },
+    "level_1": {
+      "name": "Child of the Wild"
+    },
+    "level_2": {
+      "name": "Animal Trainer",
+      "weapon": "Staff",
+      "badge_icon": "Beast_Masterbadge2",
+      "monster_control_duration": "",
+      "advantages": {
+        "N0": "ANIMAL FRIENDSHIP: Can command the T Spider, H Spider, Giant Bat, Viper, H Serpent, Wolf, T Serpent, and Octopus."
+      },
+      "monster_control": {
+        "N0": "T Spider",
+        "N1": "H Spider",
+        "N2": "Giant Bat",
+        "N3": "Viper",
+        "N4": "H Serpent",
+        "N5": "Wolf",
+        "N6": "T Serpent",
+        "N7": "Octopus"
+      }
+    },
+    "level_3": {
+      "name": "Ranger",
+      "weapon": "Light Bow",
+      "badge_icon": "Beast_Masterbadge3",
+      "advantages": {
+        "N0": "TRACKING: Gets an extra SEARCH phase."
+      },
+      "extra_actions": {
+        "N0": "S"
+      }
+    },
+    "level_4": {
+      "name": "Beast Master",
+      "weapon": "Light Bow",
+      "badge_icon": "Beast_Masterbadge4",
+      "bonus_inv": "",
+      "advantages": {
+        "N0": "PONY OWNER: Starts with a Pony in inventory."
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "bashkars": "1",
+      "lancers": "1",
+      "woodfolk": "-1",
+      "patrol": "-1",
+      "scholar": "-1"
+    },
+    "gamerel": {
+      "bashkars": "1",
+      "lancers": "1",
+      "woodfolk": "-1",
+      "patrol": "-1",
+      "scholar": "-1"
+    },
+    "bonus_invlevel_4": {
+      "_gobm_xx_name": "Pony"
+    },
+    "bonus_invlevel_4this": {
+      "_gobm_xx_horse": "pony",
+      "_gobm_xx_move_bonus": "double",
+      "_gobm_xx_vulnerability": "M",
+      "_gobm_xx_original_game": "",
+      "_gobm_xx_alt_monsters1_game": "",
+      "_gobm_xx_rw_expansion_1": "",
+      "_gobm_xx_item": "",
+      "_gobm_xx_facing": "dark",
+      "_gobm_xx__lkt_": "level_4"
+    },
+    "bonus_invlevel_4trot": {
+      "_gobm_xx_move_speed": "5",
+      "_gobm_xx_strength": "M",
+      "_gobm_xx_chit_color": "tan"
+    },
+    "bonus_invlevel_4gallop": {
+      "_gobm_xx_move_speed": "4",
+      "_gobm_xx_strength": "M",
+      "_gobm_xx_chit_color": "tan"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "beast master",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "beast master",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "beast master",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "beast master",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "MOVE M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "beast master",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "beast master",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "beast master",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "beast master",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight H5**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "beast master",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "FIGHT M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "beast master",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic VII7*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "7",
+          "character_chit": "",
+          "icon_type": "beast master",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic VII7*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "7",
+          "character_chit": "",
+          "icon_type": "beast master",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

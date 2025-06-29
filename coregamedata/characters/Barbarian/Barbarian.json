@@ -1,0 +1,293 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Barbarian",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn",
+      "pronoun": "he",
+      "creator": "Deric Page",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Mountain",
+      "vulnerability": "H",
+      "icon_type": "barbarian",
+      "icon_folder": "custom/characters",
+      "extra_notes": "The Barbarian is a fierce mountain warrior. He is powerful enough to combat the largest monsters, but he is too slow to out maneuver smaller opponents."
+    },
+    "level_1": {
+      "name": "Mountain Youth",
+      "armor": "Helmet",
+      "weapon": "Spear"
+    },
+    "level_2": {
+      "name": "Mountain Hunter",
+      "armor": "Helmet,Breastplate",
+      "weapon": "Spear",
+      "badge_icon": "Barbarianbadge2",
+      "mountain_move_adj": "-1",
+      "advantages": {
+        "N0": "MOUNTAINEER: Costs one less MOVE to enter a Mountain clearing."
+      }
+    },
+    "level_3": {
+      "name": "Mountain Warrior",
+      "armor": "Helmet,Breastplate,Shield",
+      "weapon": "Broadsword"
+    },
+    "level_4": {
+      "name": "Barbarian",
+      "armor": "Helmet,Breastplate",
+      "weapon": "Great Sword",
+      "badge_icon": "Barbarianbadge4",
+      "advantages": {
+        "N0": "MOUNTAINIER TRACKER: Roll one die on HIDE, PEER &amp; LOCATE in Mountain clearings."
+      },
+      "diemod": {
+        "N0": "1d:locate,hide,peer:&gt;mountain"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "bashkars": "1",
+      "lancers": "1",
+      "rogues": "1",
+      "guard": "-1",
+      "patrol": "-1",
+      "soldiers": "-2"
+    },
+    "gamerel": {
+      "bashkars": "1",
+      "lancers": "1",
+      "rogues": "1",
+      "guard": "-1",
+      "patrol": "-1",
+      "soldiers": "-2"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "FIGHT H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "barbarian",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "barbarian",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "MOVE H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "barbarian",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "FIGHT H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "barbarian",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "fight H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "barbarian",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "MOVE H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "barbarian",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "FIGHT H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "barbarian",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "fight T6*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "T",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "barbarian",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "MOVE T6*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "T",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "barbarian",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "FIGHT T7",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "T",
+          "speed": "7",
+          "character_chit": "",
+          "icon_type": "barbarian",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "fight T5**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "T",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "barbarian",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "MOVE H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "barbarian",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

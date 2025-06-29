@@ -1,0 +1,39 @@
+{
+  "id": "1327",
+  "name": "H Gargoyle",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "H",
+      "fame": "4",
+      "notoriety": "4",
+      "super_realm": "",
+      "icon_type": "gargoyle",
+      "setup_start": "H Gargoyles Box",
+      "monster_die": "3",
+      "flying": "",
+      "base_price": "4",
+      "icon_folder": "wesnoth/units",
+      "needs_init": "",
+      "denizen": "",
+      "icon_size": "1",
+      "icon_y_offset": "5",
+      "gargoyle": "",
+      "box_num": "2",
+      "armored": ""
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "chit_color": "gray",
+      "strength": "M"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "M",
+      "chit_color": "darkgray"
+    }
+  },
+  "parts": []
+}

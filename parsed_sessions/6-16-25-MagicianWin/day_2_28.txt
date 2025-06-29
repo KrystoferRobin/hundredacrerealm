@@ -1,0 +1,34 @@
+Month 2, Day 28
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+host
+7th day - denizens return to setup card:
+host
+- Winged Demon
+host
+- Demon
+Magician
+Starts turn: Crag 6
+Magician
+Hide - Succeeded
+Magician
+Hide - N/A
+Magician
+Loses 2 notoriety for the loss of the Rogue 5 hireling.
+Magician
+Loses 2 notoriety for the loss of the Rogue 6 hireling.
+Magician
+Search - Loot the Toadstool Circle - Power of the Pit
+Magician
+- Power of the Pit - Terror
+Magician
+Search - Loot the Toadstool Circle - Power of the Pit
+Magician
+- Power of the Pit - Terror
+Magician
+Ends turn: Crag 6
+host
+========================================
+host

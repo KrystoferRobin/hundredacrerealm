@@ -1,0 +1,50 @@
+Month 1, Day 1
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Wizard
+Starts turn: Awful Valley -1
+Wizard
+Move - moved
+Wizard
+Move - moved
+Wizard
+Move - moved
+Wizard
+Hide - Failed
+Wizard
+Ends turn: Dark Valley 4
+host
+Guard is added to Dark Valley, clearing 5
+Wizard
+Reveals: Ruins V
+__battle__
+Battle resolving at Dark Valley 4:
+__battle__
+GROUP 1
+__battle__
+Wizard
+__battle__
+=======================
+__battle__
+Evening of month 1, day 1, in clearing Dark Valley 4
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Wizard
+Presses the END combat button.
+Wizard
+Combat has ended.
+host
+========================================
+host

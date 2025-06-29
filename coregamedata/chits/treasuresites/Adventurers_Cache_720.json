@@ -1,0 +1,20 @@
+{
+  "id": "720",
+  "name": "Adventurer's Cache",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "adventurer_cache",
+      "treasure": "large",
+      "treasure_within_treasure": "7",
+      "print": "",
+      "rw_expansion_1": "",
+      "facing": "face_dn",
+      "ts_section": "twt",
+      "ts_color": "lightblue",
+      "cannot_move": "",
+      "discovery": "",
+      "author": "Expansion 1"
+    }
+  },
+  "parts": []
+}

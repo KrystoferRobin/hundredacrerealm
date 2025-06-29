@@ -1,0 +1,307 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Grey Elf",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn",
+      "pronoun": "he",
+      "creator": "Roberto Ullfig",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Sextile",
+      "vulnerability": "L",
+      "icon_type": "grey elf",
+      "icon_folder": "custom/characters",
+      "magicuser": "",
+      "extra_notes": "Exactly the same as the Elf except Type III and VII chits have been replaced with Type II and VIII chits."
+    },
+    "level_1": {
+      "name": "Grey Stripling",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "VIII"
+      }
+    },
+    "level_2": {
+      "name": "Grey Faerie",
+      "spellcount": "2",
+      "badge_icon": "Grey_Elfbadge2",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "VIII"
+      },
+      "advantages": {
+        "N0": "ELUSIVENESS: Gets an extra HIDE phase. [Level 2]"
+      },
+      "extra_actions": {
+        "N0": "H"
+      }
+    },
+    "level_3": {
+      "name": "Grey Hunter",
+      "spellcount": "2",
+      "weapon": "Light Bow",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "VIII"
+      }
+    },
+    "level_4": {
+      "name": "Grey Elf",
+      "spellcount": "2",
+      "weapon": "Light Bow",
+      "badge_icon": "Grey_Elfbadge4",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "VIII"
+      },
+      "advantages": {
+        "N0": "ARCHER: Rolls 1 die instead of 2 for all rolls on the MISSILE table. [Level 4]"
+      },
+      "diemod": {
+        "N0": "1d:missile:all"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "woodfolk": "2",
+      "lancers": "-2",
+      "order": "-1",
+      "bashkars": "1",
+      "scholar": "-1"
+    },
+    "relationship": {
+      "woodfolk": "2",
+      "lancers": "-2",
+      "order": "-1",
+      "bashkars": "1",
+      "scholar": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "magic II3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "grey elf",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "magic II4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "grey elf",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "magic VIII4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "grey elf",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VIII"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "magic II2*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "grey elf",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "magic II3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "grey elf",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "magic VIII3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "grey elf",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VIII"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move L2*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "grey elf",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "grey elf",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "grey elf",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "move M4",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "grey elf",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "fight M3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "grey elf",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "fight M4",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "grey elf",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

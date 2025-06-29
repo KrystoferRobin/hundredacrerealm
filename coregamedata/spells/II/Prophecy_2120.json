@@ -1,0 +1,20 @@
+{
+  "id": "2120",
+  "name": "Prophecy",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "day",
+      "target": "character",
+      "text": "Do not write move in advance",
+      "magic_color": "purple",
+      "daytime_actions": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

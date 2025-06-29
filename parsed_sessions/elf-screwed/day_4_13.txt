@@ -1,0 +1,24 @@
+Month 4, Day 13
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Elf
+Starts turn: Between Borderland 3 and Borderland 2
+Elf
+Move - moved
+Elf
+Search - Loot the Vault - Nothing
+Elf
+Search - Loot the Vault - Found Mouldy Skeleton
+Elf
+- Curse! - Ashes
+Elf
+Hide - Succeeded
+Elf
+Search - Loot the Vault - Nothing
+Elf
+Ends turn: Borderland 3
+host
+========================================
+host

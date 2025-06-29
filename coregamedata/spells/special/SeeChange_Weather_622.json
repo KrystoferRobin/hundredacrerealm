@@ -1,0 +1,20 @@
+{
+  "id": "622",
+  "name": "See/Change Weather",
+  "spellLevel": "*",
+  "attributeBlocks": {
+    "this": {
+      "duration": "instant",
+      "target": "weather",
+      "text": "See or change the coming weather",
+      "magic_color": "gray",
+      "original_game": "",
+      "spell": "*",
+      "awakened": "",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "change_weather": ""
+    }
+  },
+  "parts": []
+}

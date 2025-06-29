@@ -1,0 +1,1399 @@
+{
+  "sessionName": "6-17-25-5man",
+  "players": {
+    "GM": {
+      "name": "GM",
+      "characters": [
+        "White Knight",
+        "Amazon",
+        "Berserker",
+        "Pilgrim",
+        "Woods Girl"
+      ]
+    }
+  },
+  "characterToPlayer": {
+    "White Knight": "GM",
+    "Amazon": "GM",
+    "Berserker": "GM",
+    "Pilgrim": "GM",
+    "Woods Girl": "GM"
+  },
+  "days": {
+    "1_1": {
+      "month": 1,
+      "day": 1,
+      "monsterDieRoll": 5,
+      "characterTurns": [
+        {
+          "character": "Woods Girl",
+          "startLocation": "Curst Valley 5",
+          "actions": [
+            {
+              "action": "Trade - Buy from Soldier HQ (as Unfriendly)",
+              "result": "No Deal"
+            },
+            {
+              "action": "Trade - Buy from Soldier HQ (as Unfriendly)",
+              "result": "No Deal"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action M-CV2"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action M-CV2"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action M-BV2"
+            }
+          ],
+          "endLocation": "Curst Valley 5",
+          "player": "GM"
+        },
+        {
+          "character": "Amazon",
+          "startLocation": "Awful Valley 5",
+          "actions": [
+            {
+              "action": "Trade - Buy from Rogue HQ (as Neutral)",
+              "result": "No Deal"
+            },
+            {
+              "action": "Trade",
+              "result": "Cancelled Trade"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "Borderland 1",
+          "player": "GM"
+        },
+        {
+          "character": "Berserker",
+          "startLocation": "Borderland 1",
+          "actions": [],
+          "endLocation": "Borderland 1",
+          "player": "GM"
+        },
+        {
+          "character": "White Knight",
+          "startLocation": "Evil Valley 4",
+          "actions": [
+            {
+              "action": "Trade - Buy from Order HQ (as Ally)",
+              "result": "Price x 4"
+            },
+            {
+              "action": "Trade - Buy from Order HQ (as Ally)",
+              "result": "Price x 1"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Pine Woods 4",
+          "player": "GM"
+        },
+        {
+          "character": "Pilgrim",
+          "startLocation": "Pine Woods 4",
+          "actions": [],
+          "endLocation": "Pine Woods 4",
+          "player": "GM"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Pine Woods 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            },
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "Woods Girl",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "After fatiguing, these chits were moved to fatigue: MOVE L3*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_2": {
+      "month": 1,
+      "day": 2,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Pine Woods 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Read Runes on Sacred Statue - Learn and Awaken a Spell",
+              "result": "learned!"
+            },
+            {
+              "action": "Trades",
+              "result": "with Pilgrim"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            }
+          ],
+          "endLocation": "Curst Valley 4",
+          "player": "GM"
+        },
+        {
+          "character": "Pilgrim",
+          "startLocation": "Curst Valley 4",
+          "actions": [],
+          "endLocation": "Curst Valley 4",
+          "player": "GM"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Between Oak Woods 5 and Curst Valley 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            }
+          ],
+          "endLocation": "Curst Valley 4",
+          "player": "GM"
+        },
+        {
+          "character": "Amazon",
+          "startLocation": "Borderland 1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "Borderland 6",
+          "player": "GM"
+        },
+        {
+          "character": "Berserker",
+          "startLocation": "Borderland 6",
+          "actions": [],
+          "endLocation": "Borderland 6",
+          "player": "GM"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Curst Valley 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            },
+            {
+              "number": 3,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_3": {
+      "month": 1,
+      "day": 3,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "Woods Girl",
+          "startLocation": "Curst Valley 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Bad Valley 4",
+          "player": "GM"
+        },
+        {
+          "character": "White Knight",
+          "startLocation": "Curst Valley 4",
+          "actions": [
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Curst Valley 4",
+          "player": "GM"
+        },
+        {
+          "character": "Pilgrim",
+          "startLocation": "Curst Valley 4",
+          "actions": [
+            {
+              "action": "Search - Read Runes on Sacred Statue - Learn and Awaken a Spell",
+              "result": "learned!"
+            },
+            {
+              "action": "Search - Read Runes on Sacred Statue",
+              "result": "Awaken (nothing)"
+            },
+            {
+              "action": "Trades",
+              "result": "with White Knight"
+            },
+            {
+              "action": "Search - Locate - Choice - Discover chit(s)",
+              "result": "none to discover"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            }
+          ],
+          "endLocation": "Curst Valley 4",
+          "player": "GM"
+        },
+        {
+          "character": "Amazon",
+          "startLocation": "Borderland 6",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Borderland 6",
+          "player": "GM"
+        },
+        {
+          "character": "Berserker",
+          "startLocation": "Borderland 6",
+          "actions": [],
+          "endLocation": "Borderland 6",
+          "player": "GM"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Bad Valley 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Woods Girl",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        },
+        {
+          "location": "Curst Valley 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_4": {
+      "month": 1,
+      "day": 4,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "Amazon",
+          "startLocation": "Borderland 6",
+          "actions": [
+            {
+              "action": "Search - Locate - Discover chit(s)",
+              "result": "Found Hoard,Pool"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            }
+          ],
+          "endLocation": "Borderland 6",
+          "player": "GM"
+        },
+        {
+          "character": "White Knight",
+          "startLocation": "Curst Valley 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action M-LW4"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action M-LW2"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action H"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action R"
+            }
+          ],
+          "endLocation": "Borderland 2",
+          "player": "GM"
+        },
+        {
+          "character": "Pilgrim",
+          "startLocation": "Borderland 2",
+          "actions": [],
+          "endLocation": "Borderland 2",
+          "player": "GM"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Bad Valley 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Borderland 4",
+          "player": "GM"
+        },
+        {
+          "character": "Berserker",
+          "startLocation": "Borderland 6",
+          "actions": [
+            {
+              "action": "Search - Loot the Hoard",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action H"
+            }
+          ],
+          "endLocation": "Borderland 6",
+          "player": "GM"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Borderland 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            },
+            {
+              "number": 3,
+              "participants": []
+            },
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            },
+            {
+              "number": 3,
+              "participants": []
+            },
+            {
+              "number": 1,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Pilgrim",
+                  "action": "Attacks the Spear Goblin"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Spear Goblin"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=9, Speed=3",
+                "Pilgrim M3  vs. Spear Goblin Speed 3",
+                "Attack Length=8, Speed=6",
+                "White Knight H6*  vs. Spear Goblin Speed 3",
+                "Attack Length=0, Speed=8",
+                "Spear Goblin neg  vs. White Knight Speed 5",
+                "Attack Length=0, Speed=8",
+                "Spear Goblin neg  vs. Pilgrim Speed 4",
+                "Attack Length=0, Speed=8",
+                "Spear Goblin neg  vs. Pilgrim Speed 4",
+                "Attack Length=0, Speed=8",
+                "Spear Goblin neg  vs. Pilgrim Speed 4",
+                "Attack Length=0, Speed=8",
+                "Spear Goblin neg  vs. Pilgrim Speed 4",
+                "Attack Length=0, Speed=8",
+                "Spear Goblin neg  vs. Pilgrim Speed 4"
+              ],
+              "damage": [
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target."
+              ],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: MOVE T6*"
+                },
+                {
+                  "performer": "Pilgrim",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "Pilgrim",
+                  "action": "After fatiguing, these chits were moved to fatigue: MOVE H5*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Lures the Spear Goblin"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Lures the Spear Goblin"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Lures the Spear Goblin"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Lures the Spear Goblin"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Lures the Spear Goblin"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Spear Goblin"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the RESET combat button."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Spear Goblin"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=5, Length=8",
+                "White Knight H5*  vs. Spear Goblin Speed 3",
+                "Attack Speed=8, Length=0",
+                "Spear Goblin neg  vs. White Knight Speed 5",
+                "Attack Speed=8, Length=0",
+                "Spear Goblin neg  vs. White Knight Speed 5",
+                "Attack Speed=8, Length=0",
+                "Spear Goblin neg  vs. White Knight Speed 5",
+                "Attack Speed=8, Length=0",
+                "Spear Goblin neg  vs. White Knight Speed 5",
+                "Attack Speed=8, Length=0",
+                "Spear Goblin neg  vs. White Knight Speed 5",
+                "Attack Speed=8, Length=0",
+                "Spear Goblin neg  vs. White Knight Speed 5"
+              ],
+              "damage": [
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target."
+              ],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT H5*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 3,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Spear Goblin"
+                },
+                {
+                  "performer": "Pilgrim",
+                  "action": "Attacks the Spear Goblin"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                },
+                {
+                  "performer": "System",
+                  "action": "1 consecutive round of no damage, fatigue, or spellcasting."
+                }
+              ],
+              "attacks": [
+                "Attack Speed=5, Length=8",
+                "White Knight H5*  vs. Spear Goblin Speed 3",
+                "Attack Speed=8, Length=0",
+                "Attack Speed=8, Length=0",
+                "Attack Speed=8, Length=0",
+                "Attack Speed=8, Length=0",
+                "Attack Speed=8, Length=0",
+                "Attack Speed=8, Length=0"
+              ],
+              "damage": [
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target."
+              ],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 4,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Pilgrim",
+                  "action": "Attacks the Spear Goblin"
+                },
+                {
+                  "performer": "Pilgrim",
+                  "action": "Presses the RESET combat button."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Spear Goblin"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=5, Length=8",
+                "White Knight H5*  vs. Spear Goblin Speed 3",
+                "Attack Speed=8, Length=0",
+                "Attack Speed=8, Length=0",
+                "Attack Speed=8, Length=0",
+                "Attack Speed=8, Length=0",
+                "Attack Speed=8, Length=0",
+                "Attack Speed=8, Length=0"
+              ],
+              "damage": [
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target.",
+                "Spear Goblin didn't attack, and thus does not harm the target."
+              ],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Berserker",
+                  "action": "Lures the Octopus"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Lures the Axe Goblin"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Lures the Axe Goblin"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Lures the Axe Goblin"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Lures the Axe Goblin"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Lures the Axe Goblin"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Lures the Axe Goblin"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Attacks the Octopus"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Attacks the Octopus"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=5, Speed=5",
+                "Berserker H5*  vs. Octopus Speed 2",
+                "Attack Length=3, Speed=4",
+                "Amazon M4*  vs. Octopus Speed 2",
+                "Attack Length=2, Speed=4",
+                "Axe Goblin L4*  vs. Berserker Speed 4",
+                "Attack Length=2, Speed=4",
+                "Axe Goblin L4*  vs. Berserker Speed 4",
+                "Attack Length=2, Speed=4",
+                "Axe Goblin L4*  vs. Berserker Speed 4",
+                "Attack Length=2, Speed=4",
+                "Axe Goblin L4*  vs. Berserker Speed 4",
+                "Attack Length=2, Speed=4",
+                "Axe Goblin L4*  vs. Berserker Speed 4",
+                "Attack Length=2, Speed=4",
+                "Axe Goblin L4*  vs. Berserker Speed 4",
+                "Attack Length=0, Speed=4",
+                "Octopus L4  vs. Berserker Speed 4"
+              ],
+              "damage": [
+                "Initial harm: H+1",
+                "Octopus is hit with H+1 harm along box 3",
+                "Initial harm: L+1",
+                "Berserker is hit with L+1 harm along box 3",
+                "Initial harm: L+1",
+                "Berserker is hit with L+1 harm along box 3",
+                "Initial harm: L+1",
+                "Berserker is hit with L+1 harm along box 3",
+                "Initial harm: L+1",
+                "Berserker is hit with L+1 harm along box 3",
+                "Initial harm: L+1",
+                "Berserker is hit with L+1 harm along box 3",
+                "Initial harm: L+1",
+                "Berserker is hit with L+1 harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor (Helmet), and reduces sharpness: L",
+                "Hits armor (Helmet), and reduces sharpness: L",
+                "Hits armor (Helmet), and reduces sharpness: L",
+                "Hits armor (Helmet), and reduces sharpness: L",
+                "Hits armor (Helmet), and reduces sharpness: L",
+                "Hits armor (Helmet), and reduces sharpness: L"
+              ],
+              "deaths": [
+                "Octopus was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The Berserker",
+                  "action": "The Berserker gets 8 fame (x 1) and 8 notoriety (x 1) for the death of the Octopus"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "Amazon",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT M4*"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "After fatiguing, these chits were moved to fatigue: MOVE T6*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Attacks the Axe Goblin"
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Attacks the Axe Goblin"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=4, Length=3",
+                "Amazon L4*  vs. Axe Goblin Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Berserker Speed 6",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Berserker Speed 6",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Berserker Speed 6",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Berserker Speed 6",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Berserker Speed 6",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Berserker Speed 6",
+                "Attack Speed=5, Length=5",
+                "Berserker H5*  vs. Axe Goblin Speed 3"
+              ],
+              "damage": [
+                "Initial harm: L+1",
+                "Berserker is hit with L+1 harm along box 2",
+                "Berserker takes 1 wound",
+                "Initial harm: L+1",
+                "Berserker is hit with L+1 harm along box 1",
+                "Berserker takes 1 wound",
+                "Initial harm: L+1",
+                "Berserker is hit with L+1 harm along box 2",
+                "Berserker takes 1 wound",
+                "Initial harm: L+1",
+                "Berserker is hit with L+1 harm along box 2",
+                "Berserker takes 1 wound",
+                "Initial harm: L+1",
+                "Berserker is hit with L+1 harm along box 2",
+                "Berserker takes 1 wound",
+                "Initial harm: L+1",
+                "Berserker is hit with L+1 harm along box 2",
+                "Berserker takes 1 wound",
+                "After wounding, these chits were wounded: FIGHT T5*, MOVE H5*, MOVE H6, FIGHT H4*, FIGHT H5, and FIGHT T6*"
+              ],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "Berserker",
+                  "action": "Wounding 6 chits."
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 3,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Amazon",
+                  "action": "Lures the Axe Goblin"
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Lures the Axe Goblin"
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Lures the Axe Goblin"
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Lures the Axe Goblin"
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Lures the Axe Goblin"
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Lures the Axe Goblin"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Attacks the Axe Goblin"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Attacks the Axe Goblin"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=4, Length=5",
+                "Berserker T4*  vs. Axe Goblin Speed 3",
+                "Attack Speed=4, Length=3",
+                "Amazon L4*  vs. Axe Goblin Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3"
+              ],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "Berserker",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT T4**"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 4,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Attacks the Axe Goblin"
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Attacks the Axe Goblin"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                },
+                {
+                  "performer": "System",
+                  "action": "1 consecutive round of no damage, fatigue, or spellcasting."
+                }
+              ],
+              "attacks": [
+                "Attack Speed=4, Length=3",
+                "Amazon L4*  vs. Axe Goblin Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3"
+              ],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 5,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Attacks the Axe Goblin"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=4, Length=3",
+                "Amazon L4*  vs. Axe Goblin Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3",
+                "Attack Speed=4, Length=2",
+                "Axe Goblin L4*  vs. Amazon Speed 3"
+              ],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Woods Girl",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "Axe Goblin",
+          "location": "Borderland 6"
+        },
+        {
+          "monster": "Axe Goblin",
+          "location": "Borderland 6"
+        },
+        {
+          "monster": "Axe Goblin",
+          "location": "Borderland 6"
+        },
+        {
+          "monster": "Axe Goblin",
+          "location": "Borderland 6"
+        },
+        {
+          "monster": "Axe Goblin",
+          "location": "Borderland 6"
+        },
+        {
+          "monster": "Axe Goblin",
+          "location": "Borderland 6"
+        },
+        {
+          "monster": "Spear Goblin",
+          "location": "Borderland 2"
+        },
+        {
+          "monster": "Spear Goblin",
+          "location": "Borderland 2"
+        },
+        {
+          "monster": "Spear Goblin",
+          "location": "Borderland 2"
+        },
+        {
+          "monster": "Spear Goblin",
+          "location": "Borderland 2"
+        },
+        {
+          "monster": "Spear Goblin",
+          "location": "Borderland 2"
+        },
+        {
+          "monster": "Spear Goblin",
+          "location": "Borderland 2"
+        }
+      ],
+      "monsterBlocks": [
+        {
+          "monster": "Octopus",
+          "character": "Amazon"
+        },
+        {
+          "monster": "Axe Goblin",
+          "character": "Amazon"
+        },
+        {
+          "monster": "Axe Goblin",
+          "character": "Amazon"
+        },
+        {
+          "monster": "Axe Goblin",
+          "character": "Amazon"
+        },
+        {
+          "monster": "Axe Goblin",
+          "character": "Amazon"
+        },
+        {
+          "monster": "Axe Goblin",
+          "character": "Amazon"
+        },
+        {
+          "monster": "Axe Goblin",
+          "character": "Amazon"
+        }
+      ]
+    },
+    "1_5": {
+      "month": 1,
+      "day": 5,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "Amazon",
+          "startLocation": "Borderland 6",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action R"
+            }
+          ],
+          "endLocation": "Borderland 6",
+          "player": "GM"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    }
+  }
+}

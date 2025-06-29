@@ -1,0 +1,304 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Necromancer",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn",
+      "pronoun": "he",
+      "creator": "Gex",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Dark Arts",
+      "vulnerability": "M",
+      "icon_type": "necromancer",
+      "icon_folder": "custom/characters",
+      "magicuser": ""
+    },
+    "level_1": {
+      "name": "Gravedigger",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "V"
+      }
+    },
+    "level_2": {
+      "name": "Outcast",
+      "spellcount": "2",
+      "badge_icon": "Necromancerbadge2",
+      "spelltypes": {
+        "N0": "V",
+        "N1": "VIII"
+      },
+      "advantages": {
+        "N0": "THIRD EYE: Rolls 1 die instead of 2 for all rolls on the WISH, CURSE, POP, TRANSFORM, and MAGIC SIGHT tables."
+      },
+      "diemod": {
+        "N0": "1d:wish,curse,powerofthepit,summonelemental,capture,transform,summonanimal,raisedead,magicsight:all"
+      }
+    },
+    "level_3": {
+      "name": "Diabolist",
+      "spellcount": "3",
+      "spelltypes": {
+        "N0": "IV",
+        "N1": "V",
+        "N2": "VI",
+        "N3": "VIII"
+      }
+    },
+    "level_4": {
+      "name": "Necromancer",
+      "spellcount": "4",
+      "badge_icon": "Necromancerbadge4",
+      "curse_immunity": "",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "IV",
+        "N2": "V",
+        "N3": "VI",
+        "N4": "VIII"
+      },
+      "advantages": {
+        "N0": "CORRUPTED: Immune to Curses"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "patrol": "-1",
+      "order": "-2",
+      "bashkars": "1",
+      "crone": "2"
+    },
+    "gamerel": {
+      "patrol": "-1",
+      "order": "-2",
+      "bashkars": "1",
+      "crone": "2"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "necromancer",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "necromancer",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "magic V4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "necromancer",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "V"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "magic V3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "necromancer",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "V"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "magic V2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "necromancer",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "V"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "magic VIII3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "necromancer",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "VIII"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "magic VI5**",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "necromancer",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "VI"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "magic V8*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "8",
+          "character_chit": "",
+          "icon_type": "necromancer",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "V"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic IV8*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "8",
+          "character_chit": "",
+          "icon_type": "necromancer",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "IV"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "magic VI6*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "necromancer",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VI"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic VI6*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "necromancer",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VI"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic II8*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "8",
+          "character_chit": "",
+          "icon_type": "necromancer",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

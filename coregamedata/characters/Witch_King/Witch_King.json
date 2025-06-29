@@ -1,0 +1,333 @@
+{
+  "ids": [
+    "412",
+    "1534"
+  ],
+  "name": "Witch King",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "witch_king",
+      "character": "",
+      "vulnerability": "L",
+      "start": "Inn,Ghost",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "he",
+      "alt_monsters1_game": "",
+      "magicuser": "",
+      "icon_folder": "characters",
+      "creator": "Richard Hamblen",
+      "artcredit": "Michael Brown",
+      "meaning": "Chaotic Intellect",
+      "rw_expansion_1": ""
+    },
+    "level_1": {
+      "name": "Wraith",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "IV",
+        "N1": "V",
+        "N2": "VI"
+      }
+    },
+    "level_2": {
+      "name": "Wight",
+      "spellcount": "2",
+      "magic_sight": "",
+      "spelltypes": {
+        "N0": "IV",
+        "N1": "V",
+        "N2": "VI"
+      },
+      "advantages": {
+        "N0": "DISEMBODIED:  You must use Magic Sight when you search."
+      }
+    },
+    "level_3": {
+      "name": "Evil Spirit",
+      "spellcount": "3",
+      "spelltypes": {
+        "N0": "IV",
+        "N1": "V",
+        "N2": "VI"
+      }
+    },
+    "level_4": {
+      "name": "Witch King",
+      "spellcount": "4",
+      "extra_actions": {
+        "N0": "SP"
+      },
+      "spelltypes": {
+        "N0": "IV",
+        "N1": "V",
+        "N2": "VI"
+      },
+      "advantages": {
+        "N0": "AURA OF POWER:  Get one extra SPELL phase every day."
+      }
+    },
+    "relationship": {
+      "bashkars": "2",
+      "company": "1",
+      "lancers": "-1",
+      "scholar": "-1",
+      "order": "-2"
+    }
+  },
+  "parts": [
+    {
+      "id": "607",
+      "name": "Witch King Magic IV4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "magic": "IV",
+          "speed": "4",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "witch_king",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "608",
+      "name": "Witch King Magic V4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "magic": "V",
+          "speed": "4",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "witch_king",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "609",
+      "name": "Witch King Magic VI4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "magic": "VI",
+          "speed": "4",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "witch_king",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "610",
+      "name": "Witch King Magic IV4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "magic": "IV",
+          "speed": "4",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "witch_king",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "611",
+      "name": "Witch King Magic V3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "magic": "V",
+          "speed": "3",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "witch_king",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "612",
+      "name": "Witch King Magic VI3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "magic": "VI",
+          "speed": "3",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "witch_king",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "613",
+      "name": "Witch King Magic IV3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "magic": "IV",
+          "speed": "3",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "witch_king",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "614",
+      "name": "Witch King Magic V3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "magic": "V",
+          "speed": "3",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "witch_king",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "615",
+      "name": "Witch King Magic VI3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "magic": "VI",
+          "speed": "3",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "witch_king",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "616",
+      "name": "Witch King Magic IV3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "magic": "IV",
+          "speed": "3",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "witch_king",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "617",
+      "name": "Witch King Magic V2*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "magic": "V",
+          "speed": "2",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "witch_king",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "618",
+      "name": "Witch King Magic VI2*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "magic": "VI",
+          "speed": "2",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "witch_king",
+          "rw_expansion_1": ""
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

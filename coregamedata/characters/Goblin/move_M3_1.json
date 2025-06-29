@@ -1,0 +1,18 @@
+{
+  "id": "1",
+  "name": "move M3**",
+  "attributeBlocks": {
+    "this": {
+      "action": "move",
+      "strength": "M",
+      "speed": "3",
+      "character_chit": "",
+      "icon_type": "goblin",
+      "icon_folder": "custom/characters",
+      "stage": "1",
+      "level": "1",
+      "effort": "2",
+      "facing": "dark"
+    }
+  }
+}

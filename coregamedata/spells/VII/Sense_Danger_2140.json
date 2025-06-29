@@ -1,0 +1,19 @@
+{
+  "id": "2140",
+  "name": "Sense Danger",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "permanent",
+      "target": "character",
+      "text": "Extra ALERT phase/turn",
+      "magic_color": "purple",
+      "spell_extra_action": "A",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

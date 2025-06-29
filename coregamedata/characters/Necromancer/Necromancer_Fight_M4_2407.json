@@ -1,0 +1,19 @@
+{
+  "id": "2407",
+  "name": "Necromancer Fight M4*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "strength": "M",
+      "speed": "4",
+      "character_level": "1",
+      "stage": "3",
+      "level": "1",
+      "icon_folder": "characters",
+      "icon_type": "necromancer",
+      "super_realm": "",
+      "effort": "1"
+    }
+  }
+}

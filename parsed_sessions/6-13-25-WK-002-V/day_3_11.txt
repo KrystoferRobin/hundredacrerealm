@@ -1,0 +1,86 @@
+Month 3, Day 11
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+White Knight
+Starts turn: Awful Valley 2
+White Knight
+Move - moved
+White Knight
+Selling to Rogue HQ.
+White Knight
+Attempting to sell: Potion of Energy, and Flying Carpet
+White Knight
+Trade - Sell to Rogue HQ - Sold 2 items for 22 gold:
+White Knight
+Buying from Rogue HQ.
+White Knight
+Available for sale: 6 Horses, and 4 Treasures
+White Knight
+Bidding for a treasure
+White Knight
+Buys the Lost Keys from the Rogue HQ
+White Knight
+Trade - Buy from Rogue HQ (as Friendly) - Price x 3
+White Knight
+The White Knight chose not to buy drinks.
+White Knight
+Hire - Buy from Rogue 7 (as Neutral) - No Deal
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Awful Valley 5
+__battle__
+Battle resolving at Awful Valley 5:
+__battle__
+GROUP 1
+__battle__
+White Knight
+__battle__
+Order 1 (White Knight)
+__battle__
+Order 3 (White Knight)
+__battle__
+GROUP 2
+__battle__
+Rogue 1
+__battle__
+Rogue 2
+__battle__
+Rogue 3
+__battle__
+Rogue 4
+__battle__
+Rogue 5
+__battle__
+Rogue 6
+__battle__
+Rogue 7
+__battle__
+Rogue HQ
+White Knight
+The White Knight chose not to buy drinks.
+White Knight
+Meeting Rogues on the Neutral table
+White Knight
+Rolled 4, with a modifier of -1. = Price x 4
+__battle__
+=======================
+__battle__
+Evening of month 3, day 11, in clearing Awful Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+White Knight
+Presses the END combat button.
+White Knight
+Combat has ended.
+host
+========================================
+host

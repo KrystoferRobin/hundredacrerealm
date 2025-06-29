@@ -1,0 +1,18 @@
+{
+  "id": "3",
+  "name": "FIGHT M4*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "3",
+      "level": "1",
+      "action": "FIGHT",
+      "strength": "M",
+      "speed": "4",
+      "effort": "1",
+      "facing": "dark",
+      "icon_type": "bard"
+    }
+  }
+}

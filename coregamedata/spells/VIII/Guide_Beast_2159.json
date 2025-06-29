@@ -1,0 +1,21 @@
+{
+  "id": "2159",
+  "name": "Guide Beast",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "day",
+      "target": "uncontrolled monster",
+      "targeted_monsters": "spider, octopus, scorpion",
+      "text": "MOVE and FIGHT with one monster",
+      "magic_color": "gray",
+      "control": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

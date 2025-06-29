@@ -1,0 +1,22 @@
+{
+  "id": "1235",
+  "name": "Garden",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "garden",
+      "clearing": "1",
+      "super_realm": "",
+      "monster_die": "6",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "brown",
+      "icon_type": "succubus",
+      "icon_folder": "wesnoth/units",
+      "spell_site": ""
+    }
+  },
+  "parts": []
+}

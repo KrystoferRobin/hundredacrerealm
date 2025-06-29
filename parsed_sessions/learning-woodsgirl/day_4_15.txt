@@ -1,0 +1,62 @@
+Month 4, Day 15
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Evil Valley 4
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Failed
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Dark Valley 5
+__battle__
+Battle resolving at Dark Valley 5:
+__battle__
+GROUP 1
+__battle__
+Woods Girl
+__battle__
+GROUP 2
+__battle__
+Order 1
+__battle__
+Order 2
+__battle__
+Order 3
+__battle__
+Order HQ
+Woods Girl
+The Woods Girl cannot afford to buy drinks for the Order (4 gold).
+Woods Girl
+Meeting Order on the Neutral table
+Woods Girl
+Rolled 4 and 6. = Trouble!
+Woods Girl
+Meeting Order on the Unfriendly table
+Woods Girl
+Rolled 5 and 2. = Challenge
+__battle__
+=======================
+__battle__
+Evening of month 4, day 15, in clearing Dark Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host

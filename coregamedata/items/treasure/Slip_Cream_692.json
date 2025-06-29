@@ -1,0 +1,19 @@
+{
+  "id": "692",
+  "name": "Slip Cream",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "3",
+      "text": "Cannot be pinned by RED (discard to crone)",
+      "rw_expansion_1": "",
+      "potion": "",
+      "discard": "crone",
+      "facing": "face_dn",
+      "nopin": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

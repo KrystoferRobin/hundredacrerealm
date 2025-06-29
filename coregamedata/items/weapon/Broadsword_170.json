@@ -1,0 +1,30 @@
+{
+  "id": "170",
+  "name": "Broadsword",
+  "attributeBlocks": {
+    "this": {
+      "weight": "M",
+      "length": "7",
+      "base_price": "8",
+      "weapon": "",
+      "original_game": "",
+      "icon_type": "broadsword",
+      "alt_monsters1_game": "",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "unalerted": {
+      "attack_speed": "5",
+      "strength": "M",
+      "sharpness": "1",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "strength": "M",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,20 @@
+Month 1, Day 14
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Wizard
+Starts turn: Ruins 4
+Wizard
+Search - Loot the Shrine - Found Treasure
+Wizard
+Search - Loot the Shrine - Nothing
+Wizard
+Hide - Failed
+Wizard
+Hide - Succeeded
+Wizard
+Ends turn: Ruins 4
+host
+========================================
+host

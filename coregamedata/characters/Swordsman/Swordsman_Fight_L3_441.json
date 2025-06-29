@@ -1,0 +1,21 @@
+{
+  "id": "441",
+  "name": "Swordsman Fight L3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "strength": "L",
+      "speed": "3",
+      "character_level": "1",
+      "effort": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "3",
+      "level": "1",
+      "icon_folder": "characters",
+      "icon_type": "swordsman",
+      "rw_expansion_1": ""
+    }
+  }
+}

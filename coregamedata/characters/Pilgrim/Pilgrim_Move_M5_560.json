@@ -1,0 +1,20 @@
+{
+  "id": "560",
+  "name": "Pilgrim Move M5",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "speed": "5",
+      "strength": "M",
+      "character_level": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "2",
+      "level": "1",
+      "icon_folder": "characters",
+      "icon_type": "pilgrim",
+      "rw_expansion_1": ""
+    }
+  }
+}

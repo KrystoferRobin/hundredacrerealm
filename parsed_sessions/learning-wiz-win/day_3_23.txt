@@ -1,0 +1,82 @@
+Month 3, Day 23
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Wizard
+Starts turn: Bad Valley 4
+Wizard
+Move - moved
+Wizard
+Move - moved
+Wizard
+Activates Scroll of Alchemy
+Wizard
+Search - Read Runes on Scroll of Alchemy - Learn and Awaken a Spell - learned!
+Wizard
+Search - Read Runes on Scroll of Alchemy - Learn and Awaken a Spell - learned!
+Wizard
+Deactivates Hidden Ring
+Wizard
+Hide - Succeeded
+Wizard
+Ends turn: Evil Valley 1
+__battle__
+Battle resolving at Evil Valley 1:
+__battle__
+GROUP 1
+__battle__
+Wizard
+__battle__
+=======================
+__battle__
+Evening of month 3, day 23, in clearing Evil Valley 1
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Wizard
+Burns a Purple chit to energize Transform
+Wizard
+Fatigued color chit: MAGIC IV3*
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Wizard
+Presses the END combat button.
+Wizard
+Combat has ended.
+host
+========================================
+host

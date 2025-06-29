@@ -1,0 +1,23 @@
+{
+  "id": "1109",
+  "name": "Bone Hand",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Adds Sharpness Reduces Vulnerability",
+      "rw_expansion_1": "",
+      "weight": "L",
+      "base_price": "9",
+      "notoriety": "15",
+      "facing": "face_dn",
+      "fame": "-5",
+      "author": "Expansion 1",
+      "great": "",
+      "cursed": "",
+      "red_vul": "",
+      "inc_sharp": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

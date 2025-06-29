@@ -1,0 +1,32 @@
+{
+  "id": "133",
+  "name": "Warhorse",
+  "attributeBlocks": {
+    "this": {
+      "horse": "warhorse",
+      "vulnerability": "T",
+      "armored": "",
+      "base_price": "25",
+      "magic": "",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "item": "",
+      "horse_holder": "Chapel",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_type_alt": "royalBeast",
+      "icon_size_alt": "1"
+    },
+    "trot": {
+      "move_speed": "5",
+      "strength": "T",
+      "chit_color": "tan"
+    },
+    "gallop": {
+      "move_speed": "3",
+      "strength": "T",
+      "chit_color": "tan"
+    }
+  },
+  "parts": []
+}

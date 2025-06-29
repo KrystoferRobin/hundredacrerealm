@@ -1,0 +1,416 @@
+{
+  "id": "1040",
+  "name": "Dragonmen Dwelling",
+  "attributeBlocks": {
+    "this": {
+      "native": "Dragonmen",
+      "dwelling": "hut,s_fire",
+      "monster_die": "1",
+      "print": "",
+      "ts_section": "natives",
+      "ts_size": "T",
+      "ts_color": "gray",
+      "ts_count": "6",
+      "icon_type": "dragonman",
+      "icon_folder": "natives2",
+      "rw_expansion_1": "",
+      "virtual_dwelling": "",
+      "icon_folder_alt": "wesnoth/units/drakes",
+      "icon_type_alt": "slasher",
+      "icon_size_alt": "0.9"
+    }
+  },
+  "parts": [
+    {
+      "id": "1023",
+      "name": "Dragonman 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Dragonmen",
+          "fame": "0",
+          "notoriety": "10",
+          "base_price": "6",
+          "vulnerability": "H",
+          "rank": "1",
+          "icon_type": "dragonman",
+          "monster_die": "6",
+          "setup_start": "Dragonmen Dwelling",
+          "hire_type": "single",
+          "icon_folder": "natives2",
+          "rw_expansion_1": "",
+          "flying": "",
+          "denizen": "",
+          "icon_folder_alt": "wesnoth/units/drakes",
+          "icon_type_alt": "slasher",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "4",
+          "strength": "H",
+          "length": "9",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "6",
+          "attack_speed": "4",
+          "strength": "H",
+          "length": "9",
+          "sharpness": "1",
+          "chit_color": "limegreen"
+        }
+      }
+    },
+    {
+      "id": "1024",
+      "name": "Dragonman 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Dragonmen",
+          "fame": "0",
+          "notoriety": "10",
+          "base_price": "6",
+          "vulnerability": "H",
+          "rank": "2",
+          "icon_type": "dragonman",
+          "monster_die": "6",
+          "setup_start": "Dragonmen Dwelling",
+          "hire_type": "single",
+          "icon_folder": "natives2",
+          "rw_expansion_1": "",
+          "flying": "",
+          "denizen": "",
+          "icon_folder_alt": "wesnoth/units/drakes",
+          "icon_type_alt": "arbiter",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "6",
+          "attack_speed": "3",
+          "strength": "H",
+          "length": "9",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "5",
+          "attack_speed": "5",
+          "strength": "H",
+          "length": "9",
+          "sharpness": "1",
+          "chit_color": "limegreen"
+        }
+      }
+    },
+    {
+      "id": "1025",
+      "name": "Dragonman 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Dragonmen",
+          "fame": "0",
+          "notoriety": "10",
+          "base_price": "6",
+          "vulnerability": "H",
+          "rank": "3",
+          "icon_type": "dragonman",
+          "monster_die": "6",
+          "setup_start": "Dragonmen Dwelling",
+          "hire_type": "single",
+          "icon_folder": "natives2",
+          "rw_expansion_1": "",
+          "flying": "",
+          "denizen": "",
+          "icon_folder_alt": "wesnoth/units/drakes",
+          "icon_type_alt": "enforcer",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "4",
+          "strength": "H",
+          "length": "9",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "5",
+          "attack_speed": "5",
+          "strength": "H",
+          "length": "9",
+          "sharpness": "1",
+          "chit_color": "limegreen"
+        }
+      }
+    },
+    {
+      "id": "1026",
+      "name": "Dragonman 4",
+      "attributeBlocks": {
+        "this": {
+          "native": "Dragonmen",
+          "fame": "0",
+          "notoriety": "10",
+          "base_price": "6",
+          "vulnerability": "H",
+          "rank": "4",
+          "icon_type": "dragonman",
+          "monster_die": "6",
+          "setup_start": "Dragonmen Dwelling",
+          "hire_type": "single",
+          "icon_folder": "natives2",
+          "rw_expansion_1": "",
+          "flying": "",
+          "denizen": "",
+          "icon_folder_alt": "wesnoth/units/drakes",
+          "icon_type_alt": "warden",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "5",
+          "strength": "H",
+          "length": "9",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "5",
+          "attack_speed": "4",
+          "strength": "H",
+          "length": "9",
+          "sharpness": "1",
+          "chit_color": "limegreen"
+        }
+      }
+    },
+    {
+      "id": "1027",
+      "name": "Dragonman HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Dragonmen",
+          "fame": "0",
+          "notoriety": "10",
+          "base_price": "6",
+          "vulnerability": "H",
+          "rank": "HQ",
+          "icon_type": "dragonman",
+          "monster_die": "6",
+          "setup_start": "Dragonmen Dwelling",
+          "hire_type": "single",
+          "icon_folder": "natives2",
+          "rw_expansion_1": "",
+          "commerce": "F,N",
+          "flying": "",
+          "denizen": "",
+          "icon_folder_alt": "wesnoth/units/drakes",
+          "icon_type_alt": "flameheart",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "3",
+          "strength": "H",
+          "length": "9",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "5",
+          "attack_speed": "4",
+          "strength": "H",
+          "length": "9",
+          "sharpness": "1",
+          "chit_color": "limegreen"
+        }
+      }
+    },
+    {
+      "id": "1028",
+      "name": "Halberd",
+      "attributeBlocks": {
+        "this": {
+          "weight": "H",
+          "length": "10",
+          "base_price": "8",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "halberd",
+          "icon_folder": "weapons",
+          "rw_expansion_1": "",
+          "item": ""
+        },
+        "unalerted": {
+          "attack_speed": "6",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "H",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1029",
+      "name": "Halberd",
+      "attributeBlocks": {
+        "this": {
+          "weight": "H",
+          "length": "10",
+          "base_price": "8",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "halberd",
+          "icon_folder": "weapons",
+          "rw_expansion_1": "",
+          "item": ""
+        },
+        "unalerted": {
+          "attack_speed": "6",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "H",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1030",
+      "name": "Halberd",
+      "attributeBlocks": {
+        "this": {
+          "weight": "H",
+          "length": "10",
+          "base_price": "8",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "halberd",
+          "icon_folder": "weapons",
+          "rw_expansion_1": "",
+          "item": ""
+        },
+        "unalerted": {
+          "attack_speed": "6",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "H",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1031",
+      "name": "Halberd",
+      "attributeBlocks": {
+        "this": {
+          "weight": "H",
+          "length": "10",
+          "base_price": "8",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "halberd",
+          "icon_folder": "weapons",
+          "rw_expansion_1": "",
+          "item": ""
+        },
+        "unalerted": {
+          "attack_speed": "6",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "H",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "904",
+      "name": "Cap",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "L",
+          "weight": "L",
+          "armor_smash": "",
+          "armor": "",
+          "icon_type": "cap",
+          "facing": "dark",
+          "armor_row": "2",
+          "ret_dw": "House",
+          "icon_folder": "armor",
+          "rw_expansion_1": "",
+          "item": "",
+          "helmet": ""
+        },
+        "intact": {
+          "base_price": "2",
+          "chit_color": "tan"
+        },
+        "damaged": {
+          "base_price": "1",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "905",
+      "name": "Buckler",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "L",
+          "weight": "L",
+          "shield": "",
+          "armor_choice": "",
+          "armor": "",
+          "icon_type": "buckler",
+          "facing": "dark",
+          "armor_row": "1",
+          "ret_dw": "House",
+          "icon_folder": "armor",
+          "rw_expansion_1": "",
+          "item": "",
+          "buckler": ""
+        },
+        "intact": {
+          "base_price": "3",
+          "chit_color": "tan"
+        },
+        "damaged": {
+          "base_price": "1",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "906",
+      "name": "Cuirass",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "L",
+          "weight": "L",
+          "armor_swing": "",
+          "armor_thrust": "",
+          "armor": "",
+          "icon_type": "cuirass",
+          "facing": "dark",
+          "armor_row": "2",
+          "ret_dw": "Guard",
+          "icon_folder": "armor",
+          "rw_expansion_1": "",
+          "item": "",
+          "cuirass": ""
+        },
+        "intact": {
+          "base_price": "9",
+          "chit_color": "tan"
+        },
+        "damaged": {
+          "base_price": "6",
+          "chit_color": "white"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "687",
+  "name": "Druidic Knife",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "10",
+      "text": "Use as MAGIC II2*",
+      "rw_expansion_1": "",
+      "notoriety": "5",
+      "facing": "face_dn",
+      "fame": "-5",
+      "add_chit": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1020",
+      "name": "Magic II2*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "2",
+          "magic": "II",
+          "effort": "1",
+          "character_level": "1",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "monsters2",
+          "icon_type": "unknown",
+          "rw_expansion_1": "",
+          "add_chit": "Druidic Knife",
+          "chitearned": "",
+          "treasure_chit": ""
+        }
+      }
+    }
+  ]
+}

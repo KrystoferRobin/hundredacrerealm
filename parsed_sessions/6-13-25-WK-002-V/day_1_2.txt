@@ -1,0 +1,28 @@
+Month 1, Day 2
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+White Knight
+Starts turn: Linden Woods 5
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: High Pass 5
+White Knight
+Reveals: Lost City
+White Knight
+Reveals: Dank C
+host
+H Troll is added to High Pass, clearing 4
+host
+H Troll is added to High Pass, clearing 4
+host
+========================================
+host

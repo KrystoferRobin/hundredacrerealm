@@ -1,0 +1,18 @@
+{
+  "id": "12",
+  "name": "MAGIC IV3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "12",
+      "level": "4",
+      "action": "MAGIC",
+      "speed": "3",
+      "effort": "1",
+      "facing": "dark",
+      "magic": "IV",
+      "icon_type": "gypsy"
+    }
+  }
+}

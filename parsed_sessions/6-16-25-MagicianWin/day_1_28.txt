@@ -1,0 +1,22 @@
+Month 1, Day 28
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Magician
+Starts turn: Borderland 1
+Magician
+Hide - Succeeded
+Magician
+Search - Loot the Altar - Nothing
+Magician
+Search - Loot the Altar - Found Treasure
+Magician
+Activates Bejeweled Dwarf Vest
+Magician
+Search - Read Runes on Altar - (Learn and) Awaken a Spell
+Magician
+Ends turn: Borderland 1
+host
+========================================
+host

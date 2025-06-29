@@ -1,0 +1,322 @@
+{
+  "ids": [
+    "416",
+    "1538"
+  ],
+  "name": "Pilgrim",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "pilgrim",
+      "character": "",
+      "vulnerability": "M",
+      "start": "Inn,Chapel",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "he",
+      "alt_monsters1_game": "",
+      "magicuser": "",
+      "icon_folder": "characters",
+      "creator": "Richard Hamblen",
+      "artcredit": "Kim Gromoll",
+      "meaning": "Crozier: Shepherd's staff",
+      "rw_expansion_1": ""
+    },
+    "level_1": {
+      "name": "Acolyte"
+    },
+    "level_2": {
+      "name": "Guardian",
+      "weapon": "Staff",
+      "monster_immunity": {
+        "N0": "Winged Demon",
+        "N1": "Demon",
+        "N2": "Imp"
+      },
+      "advantages": {
+        "N0": "HEAVENLY PROTECTION:  Demons and the Imp cannot attack you."
+      }
+    },
+    "level_3": {
+      "name": "Missionary",
+      "weapon": "Staff",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "I",
+        "N1": "VII"
+      }
+    },
+    "level_4": {
+      "name": "Pilgrim",
+      "weapon": "Staff",
+      "spellcount": "1",
+      "diemod": {
+        "N0": "1d:readrunes:all"
+      },
+      "spelltypes": {
+        "N0": "I",
+        "N1": "VII"
+      },
+      "advantages": {
+        "N0": "LEARNING:  Roll 1 die instead of 2 for all Reading Runes die rolls."
+      }
+    },
+    "relationship": {
+      "order": "2",
+      "bashkars": "-1",
+      "company": "-1",
+      "crone": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "559",
+      "name": "Pilgrim Move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "strength": "M",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "pilgrim",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "560",
+      "name": "Pilgrim Move M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "5",
+          "strength": "M",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "pilgrim",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "561",
+      "name": "Pilgrim Fight M3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "3",
+          "strength": "M",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "pilgrim",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "562",
+      "name": "Pilgrim Move H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "H",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "speed": "5",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "pilgrim",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "563",
+      "name": "Pilgrim Fight M4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "strength": "M",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "pilgrim",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "564",
+      "name": "Pilgrim Fight M2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "2",
+          "strength": "M",
+          "effort": "2",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "pilgrim",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "565",
+      "name": "Pilgrim Magic I6*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "6",
+          "magic": "I",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "pilgrim",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "566",
+      "name": "Pilgrim Magic VII3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "magic": "VII",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "pilgrim",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "567",
+      "name": "Pilgrim Fight M3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "3",
+          "strength": "M",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "pilgrim",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "568",
+      "name": "Pilgrim Move H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "6",
+          "strength": "H",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "pilgrim",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "569",
+      "name": "Pilgrim Fight H4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "strength": "H",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "pilgrim",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "570",
+      "name": "Pilgrim Magic I4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "magic": "I",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "pilgrim",
+          "rw_expansion_1": ""
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

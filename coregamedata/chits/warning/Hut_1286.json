@@ -1,0 +1,299 @@
+{
+  "id": "1286",
+  "name": "Hut",
+  "attributeBlocks": {
+    "this": {
+      "dwelling": "hut",
+      "warning": "dank",
+      "tile_type": "H",
+      "super_realm": "",
+      "print": "",
+      "icon_type": "hut",
+      "ts_section": "dwellings",
+      "ts_color": "tan",
+      "icon_folder": "wesnoth/buildings",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1834",
+      "name": "Pagan 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Pagans",
+          "fame": "0",
+          "notoriety": "3",
+          "base_price": "2",
+          "vulnerability": "L",
+          "rank": "1",
+          "icon_type": "wose-shaman",
+          "setup_start": "Hut",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/woses",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "4",
+          "clan": "2",
+          "icon_size": "0.9",
+          "icon_rider": "marksman",
+          "native_name": "Caster",
+          "no_change_tactics": "",
+          "change_tactics_after_casting": ""
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "2",
+          "length": "15",
+          "chit_color": "lightgreen",
+          "magic_type": "II",
+          "attack_spell": "Stones Fly"
+        },
+        "dark": {
+          "move_speed": "3",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "1835",
+      "name": "Pagan 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Pagans",
+          "fame": "0",
+          "notoriety": "3",
+          "base_price": "2",
+          "vulnerability": "L",
+          "rank": "2",
+          "icon_type": "wose-shaman",
+          "setup_start": "Hut",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/woses",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "4",
+          "clan": "2",
+          "icon_size": "0.9",
+          "icon_rider": "marksman",
+          "native_name": "Caster",
+          "no_change_tactics": "",
+          "change_tactics_after_casting": ""
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "2",
+          "length": "15",
+          "chit_color": "lightgreen",
+          "magic_type": "II",
+          "attack_spell": "Stones Fly"
+        },
+        "dark": {
+          "move_speed": "3",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "1836",
+      "name": "Pagan 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Pagans",
+          "fame": "0",
+          "notoriety": "3",
+          "base_price": "2",
+          "vulnerability": "L",
+          "rank": "3",
+          "icon_type": "wose-shaman",
+          "setup_start": "Hut",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/woses",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "4",
+          "clan": "2",
+          "icon_size": "0.9",
+          "icon_rider": "marksman",
+          "native_name": "Caster",
+          "no_change_tactics": "",
+          "change_tactics_after_casting": ""
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "2",
+          "length": "15",
+          "chit_color": "lightgreen",
+          "magic_type": "II",
+          "attack_spell": "Stones Fly"
+        },
+        "dark": {
+          "move_speed": "3",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "1837",
+      "name": "Pagan HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Pagans",
+          "fame": "0",
+          "notoriety": "3",
+          "base_price": "2",
+          "vulnerability": "L",
+          "rank": "HQ",
+          "icon_type": "wose-shaman",
+          "setup_start": "Hut",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/woses",
+          "commerce": "N",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "4",
+          "clan": "2",
+          "icon_size": "0.9",
+          "icon_rider": "marksman",
+          "native_name": "Caster",
+          "no_change_tactics": "",
+          "change_tactics_after_casting": ""
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "2",
+          "length": "15",
+          "chit_color": "lightgreen",
+          "magic_type": "II",
+          "attack_spell": "Stones Fly"
+        },
+        "dark": {
+          "move_speed": "3",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "1930",
+      "name": "Workhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "horse",
+          "move_bonus": "extra",
+          "vulnerability": "H",
+          "base_price": "11",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "nobleBeast",
+          "horse_holder": "Inn"
+        },
+        "trot": {
+          "move_speed": "7",
+          "strength": "H",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "5",
+          "strength": "M",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1931",
+      "name": "Workhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "horse",
+          "move_bonus": "extra",
+          "vulnerability": "H",
+          "base_price": "12",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "nobleBeast",
+          "horse_holder": "Inn"
+        },
+        "trot": {
+          "move_speed": "8",
+          "strength": "T",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "6",
+          "strength": "H",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "2014",
+      "name": "Staff",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "9",
+          "base_price": "1",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "staff",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "L",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "2015",
+      "name": "Staff",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "9",
+          "base_price": "1",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "staff",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "L",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

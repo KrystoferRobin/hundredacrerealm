@@ -1,0 +1,76 @@
+Month 1, Day 14
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Pilgrim
+Starts turn: Borderland 6
+Pilgrim
+Search - Loot the clearing (5 items) - Found Weapon
+Pilgrim
+Search - Loot the clearing (4 items) - Found Weapon
+Pilgrim
+Trades with Amazon
+Pilgrim
+Trades with White Knight
+Pilgrim
+Ends turn: Borderland 6
+Amazon
+Starts turn: Borderland 6
+Amazon
+Search - Loot the clearing (3 items) - Nothing
+Amazon
+Search - Loot the Pool - Nothing
+Amazon
+Ends turn: Borderland 6
+White Knight
+Starts turn: Borderland 6
+White Knight
+Activates Great Axe
+White Knight
+Search - Loot the clearing (3 items) - Nothing
+White Knight
+Search - Loot the clearing (3 items) - Nothing
+White Knight
+After resting, these chits were moved to fatigue: FIGHT T4**, and FIGHT T5*
+White Knight
+Rest - Rested 1 asterisk
+White Knight
+Has fallen asleep due to the presence of the Flowers of Rest.
+White Knight
+Ends turn: Borderland 6
+__battle__
+Battle resolving at Borderland 6:
+__battle__
+GROUP 1
+__battle__
+Amazon
+__battle__
+GROUP 2
+__battle__
+Pilgrim
+__battle__
+GROUP 3
+__battle__
+White Knight
+__battle__
+=======================
+__battle__
+Evening of month 1, day 14, in clearing Borderland 6
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+Pilgrim
+Presses the END combat button.
+Pilgrim
+Combat has ended.
+host
+========================================
+host

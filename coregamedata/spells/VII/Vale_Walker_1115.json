@@ -1,0 +1,21 @@
+{
+  "id": "1115",
+  "name": "Vale Walker",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "day",
+      "target": "character",
+      "text": "Walk the Woods in valleys",
+      "magic_color": "any",
+      "host_okay": "",
+      "alt_monsters1_game": "",
+      "benevolent": "",
+      "new_spells_1": "",
+      "learnable": "",
+      "vale_walker": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,20 @@
+Month 3, Day 1
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Wizard
+Starts turn: Mountain 1
+Wizard
+Search - Locate - Discover chit(s) - Found Lost Castle,Altar
+Wizard
+Search - Read Runes on Altar - Awaken a Spell
+Wizard
+Hide - Succeeded
+Wizard
+Hide - N/A
+Wizard
+Ends turn: Mountain 1
+host
+========================================
+host

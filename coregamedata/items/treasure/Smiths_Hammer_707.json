@@ -1,0 +1,17 @@
+{
+  "id": "707",
+  "name": "Smith's Hammer",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Can do REPAIR phases ",
+      "rw_expansion_1": "",
+      "base_price": "9",
+      "facing": "face_dn",
+      "weight": "M",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

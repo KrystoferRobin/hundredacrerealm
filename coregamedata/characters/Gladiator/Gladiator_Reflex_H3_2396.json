@@ -1,0 +1,19 @@
+{
+  "id": "2396",
+  "name": "Gladiator Reflex H3**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "reflex",
+      "strength": "H",
+      "speed": "3",
+      "character_level": "2",
+      "stage": "5",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "gladiator",
+      "super_realm": "",
+      "effort": "2"
+    }
+  }
+}

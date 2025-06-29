@@ -1,0 +1,26 @@
+Month 4, Day 8
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Borderland 1
+Woods Girl
+Search - Loot the Altar - Found Treasure
+Woods Girl
+Activates Belt of Strength
+Woods Girl
+Fatigued chit: MOVE T2**
+Woods Girl
+Search - Loot the Crypt of the Knight - Found Treasure
+Woods Girl
+Fatigued chit: MOVE T2**
+Woods Girl
+Search - Loot the Crypt of the Knight - Nothing
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Borderland 1
+host
+========================================
+host

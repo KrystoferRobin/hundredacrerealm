@@ -1,0 +1,43 @@
+{
+  "id": "1039",
+  "name": "Murker HQ",
+  "attributeBlocks": {
+    "this": {
+      "native": "Murker",
+      "fame": "0",
+      "notoriety": "6",
+      "base_price": "4",
+      "vulnerability": "H",
+      "rank": "HQ",
+      "armored": "",
+      "icon_type": "great_swordsman",
+      "setup_start": "Murker Dwelling",
+      "hire_type": "group",
+      "monster_die": "5",
+      "icon_folder": "natives",
+      "rw_expansion_1": "",
+      "commerce": "F",
+      "denizen": "",
+      "icon_folder_alt": "wesnoth/units/kharos-sun",
+      "icon_type_alt": "goldenwarrior",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "5",
+      "strength": "H",
+      "length": "8",
+      "sharpness": "1",
+      "chit_color": "pink"
+    },
+    "dark": {
+      "move_speed": "6",
+      "attack_speed": "4",
+      "strength": "T",
+      "length": "8",
+      "sharpness": "1",
+      "chit_color": "purple"
+    }
+  },
+  "parts": []
+}

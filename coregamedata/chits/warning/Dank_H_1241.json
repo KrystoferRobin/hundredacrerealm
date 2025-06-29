@@ -1,0 +1,33 @@
+{
+  "id": "1241",
+  "name": "Dank H",
+  "attributeBlocks": {
+    "this": {
+      "warning": "dank",
+      "tile_type": "H",
+      "super_realm": "",
+      "chit": "",
+      "ts_section": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1286",
+      "name": "Hut",
+      "attributeBlocks": {
+        "this": {
+          "dwelling": "hut",
+          "warning": "dank",
+          "tile_type": "H",
+          "super_realm": "",
+          "print": "",
+          "icon_type": "hut",
+          "ts_section": "dwellings",
+          "ts_color": "tan",
+          "icon_folder": "wesnoth/buildings",
+          "quest_target": ""
+        }
+      }
+    }
+  ]
+}

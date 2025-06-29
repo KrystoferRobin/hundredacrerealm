@@ -1,0 +1,19 @@
+{
+  "id": "2127",
+  "name": "Lost",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "permanent",
+      "target": "character, tile",
+      "text": "MOVE randomly (roll for clearing)",
+      "magic_color": "gold",
+      "sp_mv_random": "",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

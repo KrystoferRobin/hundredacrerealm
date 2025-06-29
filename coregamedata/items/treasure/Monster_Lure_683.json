@@ -1,0 +1,18 @@
+{
+  "id": "683",
+  "name": "Monster Lure",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "8",
+      "text": "Prowling monsters will not leave clearing with lure",
+      "rw_expansion_1": "",
+      "strength": "M",
+      "facing": "face_dn",
+      "no_prowling": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

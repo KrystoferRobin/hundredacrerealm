@@ -1,0 +1,22 @@
+{
+  "id": "289",
+  "name": "Control Bats",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "day",
+      "target": "bats",
+      "text": "MOVE and FIGHT with bats",
+      "magic_color": "any",
+      "original_game": "",
+      "control": "",
+      "host_okay": "",
+      "alt_monsters1_game": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

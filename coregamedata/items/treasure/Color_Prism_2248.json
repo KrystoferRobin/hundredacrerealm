@@ -1,0 +1,22 @@
+{
+  "id": "2248",
+  "name": "Color Prism",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "54",
+      "notoriety": "15",
+      "fame": "12",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "text": "Any chit enchanted to grey, gold, purple may be used as any one of those three colors.",
+      "weight": "H",
+      "native": "Enchanters",
+      "chits_prism_color": ""
+    }
+  },
+  "parts": []
+}

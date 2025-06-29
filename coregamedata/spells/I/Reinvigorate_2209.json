@@ -1,0 +1,20 @@
+{
+  "id": "2209",
+  "name": "Reinvigorate",
+  "spellLevel": "I",
+  "attributeBlocks": {
+    "this": {
+      "spell": "I",
+      "duration": "day",
+      "target": "character",
+      "text": "Target can record and do an extra REST phase.",
+      "magic_color": "white",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "spell_extra_action": "R"
+    }
+  },
+  "parts": []
+}

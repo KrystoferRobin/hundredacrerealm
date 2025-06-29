@@ -1,0 +1,342 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Dragonrider",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "dragonrider",
+      "character": "",
+      "vulnerability": "M",
+      "start": "Inn,Guard",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "he",
+      "alt_monsters1_game": "",
+      "icon_folder": "custom/characters",
+      "creator": "Carl Peck",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Dragon Friend",
+      "rw_expansion_1": "",
+      "custom_character": "",
+      "fighter": "",
+      "extra_notes": ""
+    },
+    "level_1": {
+      "name": "Dragonseeker",
+      "weapon": "Spear"
+    },
+    "level_2": {
+      "name": "Dragonsinger",
+      "weapon": "Spear",
+      "badge_icon": "Dragonriderbadge2",
+      "advantages": {
+        "N0": "DRAGON FRIEND: Dragons cannot attack you. &#xA;You cannot attack them nor loot the Hoard or Lair"
+      },
+      "monster_immunity": {
+        "N0": "T Flying Dragon",
+        "N1": "T Dragon",
+        "N2": "H Dragon",
+        "N3": "H Flying Dragon"
+      }
+    },
+    "level_3": {
+      "name": "Dragonkin",
+      "weapon": "Spear"
+    },
+    "level_4": {
+      "name": "Dragonrider",
+      "weapon": "Spear",
+      "armor": "Helmet",
+      "badge_icon": "Dragonriderbadge4",
+      "monster_control_duration": "0",
+      "advantages": {
+        "N0": "DRAGONRIDER: Can take Heavy Flying Dragons from the same clearing to be an item. Can ride in combat (it retains its attack) or use to FLY during day movement. If this dragon is lost it cannot be replaced."
+      },
+      "monster_control": {
+        "N0": "H Flying Dragon"
+      }
+    },
+    "relationship": {
+      "lancers": "2",
+      "bashkars": "-2",
+      "rogues": "-1",
+      "woodfolk": "1"
+    },
+    "gamerel": {
+      "lancers": "2",
+      "bashkars": "-2",
+      "rogues": "-1",
+      "woodfolk": "1"
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "strength": "M",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "dragonrider",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "move M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "5",
+          "strength": "M",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "dragonrider",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "5",
+          "strength": "H",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "dragonrider",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "fight M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "effort": "0",
+          "character_level": "2",
+          "original_game": "",
+          "speed": "5",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "dragonrider",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "3",
+          "strength": "M",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "dragonrider",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "effort": "2"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "move M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "5",
+          "strength": "M",
+          "effort": "0",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "dragonrider",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "dragonrider",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "5",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "dragonrider",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "strength": "H"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "strength": "M",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "dragonrider",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "strength": "M",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "dragonrider",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "effort": "1"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "fight H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "6",
+          "strength": "H",
+          "effort": "0",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "dragonrider",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "dragonrider",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "strength": "M"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

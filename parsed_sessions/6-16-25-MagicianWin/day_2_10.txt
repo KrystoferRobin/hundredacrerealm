@@ -1,0 +1,38 @@
+Month 2, Day 10
+host
+========================================
+Magician
+Spent the night at the Chapel.
+Magician
+ASHES curse is removed.
+host
+Monster Die roll is Rolled 2.
+Magician
+Starts turn: Dark Valley 5
+Magician
+Hide - Succeeded
+Magician
+Selling to Order HQ.
+Magician
+Attempting to sell: Bejeweled Dwarf Vest
+Magician
+Trade - Sell to Order HQ - Total received for the Bejeweled Dwarf Vest was 27 gold.
+Magician
+Buying from Order HQ.
+Magician
+Available for sale: 3 Warhorses, 2 Armors, Crossbow, Great Sword, Morning Star, 2 Great Axes, and 3 Treasures
+Magician
+Bidding for a treasure
+Magician
+The Magician chose not to buy drinks.
+Magician
+Trade - Buy from Order HQ (as Neutral) - Opportunity
+Magician
+- Buy from Order HQ (as Friendly) - No Deal
+Magician
+Move - moved
+Magician
+Ends turn: Bad Valley 1
+host
+========================================
+host

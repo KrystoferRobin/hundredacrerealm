@@ -1,0 +1,23 @@
+{
+  "id": "322",
+  "name": "Cloven Hoof",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "fame": "-20",
+      "notoriety": "40",
+      "great": "",
+      "text": "Add one to all rolls",
+      "base_price": "4",
+      "original_game": "",
+      "plus_one": "Clearing",
+      "color_source": "black",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "nosecret": "",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

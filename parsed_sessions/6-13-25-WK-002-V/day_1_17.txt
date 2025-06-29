@@ -1,0 +1,20 @@
+Month 1, Day 17
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+White Knight
+Starts turn: Curst Valley 4
+White Knight
+Move - moved
+White Knight
+Hide - Succeeded
+White Knight
+Hide - N/A
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: High Pass 5
+host
+========================================
+host

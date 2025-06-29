@@ -1,0 +1,313 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Gargoyle",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn,Ghost",
+      "pronoun": "he",
+      "creator": "Roberto Ullfig",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Gargoyle",
+      "vulnerability": "H",
+      "icon_type": "gargoyle",
+      "icon_folder": "custom/characters",
+      "extra_notes": "Requires Robin's Productive Dwarf rule.&#xA;STONE chit acts like BERSERK."
+    },
+    "level_1": {
+      "name": "Stone Statue",
+      "weapon": "Spear",
+      "badge_icon": "Gargoylebadge1",
+      "noncave_move_disadavantage": "",
+      "advantages": {
+        "N0": "STONE LEGS: Must spend one additional consecutive MOVE phase to enter any non-cave clearing."
+      }
+    },
+    "level_2": {
+      "name": "Winged Beast",
+      "weapon": "Broadsword",
+      "badge_icon": "Gargoylebadge2",
+      "advantages": {
+        "N0": "METAMORPHOSIS: Cannot activate Horses, Armor, or Boots."
+      },
+      "item_restrictions": {
+        "N0": "Horse",
+        "N1": "Pony",
+        "N2": "Helmet",
+        "N3": "Shield",
+        "N4": "Boots",
+        "N5": "Breastplate",
+        "N6": "Armor",
+        "N7": "Warhorse"
+      }
+    },
+    "level_3": {
+      "name": "Fiend",
+      "weapon": "Broadsword",
+      "badge_icon": "Gargoylebadge3",
+      "armored": "",
+      "advantages": {
+        "N0": "ARMORED SKIN: Has natural armor (like armored monster)."
+      }
+    },
+    "level_4": {
+      "name": "Gargoyle",
+      "weapon": "Broadsword",
+      "spellcount": "1",
+      "badge_icon": "Gargoylebadge4",
+      "extra_cave_phase": "",
+      "spelltypes": {
+        "N0": "II"
+      },
+      "advantages": {
+        "N0": "NIGHT VISION: Extra Phase in Caves."
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "guard": "-2",
+      "order": "-2",
+      "patrol": "-2",
+      "soldiers": "-2",
+      "lancers": "-1",
+      "rogues": "-1",
+      "woodfolk": "-1"
+    },
+    "gamerel": {
+      "guard": "-2",
+      "order": "-2",
+      "patrol": "-2",
+      "soldiers": "-2",
+      "lancers": "-1",
+      "rogues": "-1",
+      "woodfolk": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "FIGHT H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "gargoyle",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "gargoyle",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "move H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "gargoyle",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "FIGHT H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "gargoyle",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "MOVE H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "gargoyle",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "fly H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fly",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "gargoyle",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "FIGHT H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "gargoyle",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "gargoyle",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "move H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "gargoyle",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "stone T5**",
+      "attributeBlocks": {
+        "this": {
+          "action": "stone",
+          "strength": "T",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "gargoyle",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark",
+          "fight_alert": ""
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic II2*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "gargoyle",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "fly H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fly",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "gargoyle",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

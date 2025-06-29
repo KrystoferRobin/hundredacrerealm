@@ -1,0 +1,18 @@
+{
+  "id": "1022",
+  "name": "Hut",
+  "attributeBlocks": {
+    "this": {
+      "dwelling": "hut",
+      "warning": "smoke",
+      "tile_type": "S",
+      "icon_type": "hut",
+      "icon_folder": "dwellings",
+      "rw_expansion_1": "",
+      "general_dwelling": "",
+      "icon_folder_alt": "wesnoth/buildings",
+      "icon_type_alt": "hut"
+    }
+  },
+  "parts": []
+}

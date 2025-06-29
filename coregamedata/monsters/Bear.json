@@ -1,0 +1,35 @@
+{
+  "id": "1399",
+  "name": "Bear",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "H",
+      "fame": "3",
+      "notoriety": "3",
+      "super_realm": "",
+      "icon_type": "bear",
+      "setup_start": "Bear Box",
+      "monster_die": "3",
+      "base_price": "3",
+      "icon_folder": "wesnoth/units/monsters",
+      "needs_init": "",
+      "denizen": "",
+      "icon_size": "0.8",
+      "box_num": "2"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "5",
+      "strength": "H",
+      "chit_color": "lightgreen"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "strength": "M",
+      "chit_color": "forestgreen"
+    }
+  },
+  "parts": []
+}

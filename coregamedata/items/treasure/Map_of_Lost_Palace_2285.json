@@ -1,0 +1,16 @@
+{
+  "id": "2285",
+  "name": "Map of Lost Palace",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "3",
+      "text": "-1 to LOCATE rolls in Lost Palace",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": ""
+    }
+  },
+  "parts": []
+}

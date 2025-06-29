@@ -1,0 +1,118 @@
+Month 3, Day 13
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Magician
+Starts turn: Borderland 2
+Magician
+Hide - Succeeded
+Magician
+Hide - N/A
+Magician
+Move - moved
+Magician
+Alert - alerted Magician Magic VII4**
+Magician
+Ends turn: Borderland 3
+__battle__
+Battle resolving at Borderland 3:
+__battle__
+GROUP 1
+__battle__
+Magician
+__battle__
+Rogue 7 (Magician)
+__battle__
+GROUP 2
+__battle__
+H Troll
+__battle__
+=======================
+__battle__
+Evening of month 3, day 13, in clearing Borderland 3
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Magician
+Burns a Purple chit to energize Enchant Artifact
+Magician
+Fatigued color chit: MAGIC IV3*
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 1
+H Troll
+Changes tactics:  H Troll H5
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+Attack Length=4, Speed=3
+__battle__
+Rogue 7 M3*  vs. H Troll Speed 4
+__battle__
+Intercepted! (box 1 matches box 1)
+__battle__
+Initial harm: M+1
+__battle__
+H Troll is hit with M+1 harm along box 1
+Rogue 7
+Hits armor, and reduces sharpness: M
+__battle__
+H Troll was not killed.
+__battle__
+>
+__battle__
+Attack Length=0, Speed=5
+__battle__
+H Troll H5  vs. Rogue 7 Speed 5
+__battle__
+Intercepted! (box 1 matches box 1)
+__battle__
+Initial harm: H
+__battle__
+Rogue 7 is hit with H harm along box 1
+__battle__
+Rogue 7 was killed!
+Magician
+Loses 2 notoriety for the loss of the Rogue 7 hireling.
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Rogue 7 is dead.  Killed by H Troll
+__battle__
+H Troll disengages because target is dead
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Magician
+Presses the END combat button.
+Magician
+Combat has ended.
+host
+========================================
+host

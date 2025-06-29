@@ -1,0 +1,13 @@
+{
+  "id": "1004",
+  "name": "Slither 5",
+  "attributeBlocks": {
+    "this": {
+      "rw_expansion_1": "",
+      "chit": "",
+      "sound": "slither",
+      "clearing": "5"
+    }
+  },
+  "parts": []
+}

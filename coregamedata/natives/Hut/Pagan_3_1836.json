@@ -1,0 +1,44 @@
+{
+  "id": "1836",
+  "name": "Pagan 3",
+  "attributeBlocks": {
+    "this": {
+      "native": "Pagans",
+      "fame": "0",
+      "notoriety": "3",
+      "base_price": "2",
+      "vulnerability": "L",
+      "rank": "3",
+      "icon_type": "wose-shaman",
+      "setup_start": "Hut",
+      "hire_type": "single",
+      "garrison": "",
+      "icon_folder": "wesnoth/units/woses",
+      "denizen": "",
+      "super_realm": "",
+      "native_die": "4",
+      "clan": "2",
+      "icon_size": "0.9",
+      "icon_rider": "marksman",
+      "native_name": "Caster",
+      "no_change_tactics": "",
+      "change_tactics_after_casting": ""
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "2",
+      "length": "15",
+      "chit_color": "lightgreen",
+      "magic_type": "II",
+      "attack_spell": "Stones Fly"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "5",
+      "strength": "M",
+      "length": "9",
+      "chit_color": "forestgreen"
+    }
+  },
+  "parts": []
+}

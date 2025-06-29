@@ -1,0 +1,39 @@
+{
+  "id": "763",
+  "name": "Tomb Guard",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "H",
+      "fame": "6",
+      "notoriety": "6",
+      "icon_type": "tombguard",
+      "setup_start": "Cairns",
+      "monster_die": "5",
+      "base_price": "9",
+      "icon_folder": "monsters1",
+      "alt_monsters1_game": "",
+      "setup_start_tilereq": "C",
+      "needs_init": "",
+      "denizen": "",
+      "icon_type_alt": "spectre",
+      "icon_folder_alt": "wesnoth/units/undead",
+      "icon_size_alt": "0.8"
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "2",
+      "chit_color": "white",
+      "length": "17",
+      "magic_type": "V",
+      "attack_spell": "powerofthepit"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "H",
+      "chit_color": "gray"
+    }
+  },
+  "parts": []
+}

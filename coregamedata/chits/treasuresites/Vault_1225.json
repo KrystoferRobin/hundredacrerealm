@@ -1,0 +1,22 @@
+{
+  "id": "1225",
+  "name": "Vault",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "vault",
+      "clearing": "3",
+      "super_realm": "",
+      "monster_die": "4",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "needs_open": "fatigue_t,key",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "darkgray",
+      "icon_type": "trollWarrior",
+      "icon_folder": "wesnoth/units"
+    }
+  },
+  "parts": []
+}

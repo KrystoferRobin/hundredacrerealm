@@ -1,0 +1,20 @@
+Month 1, Day 20
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Magician
+Starts turn: Borderland 1
+Magician
+Hide - Failed
+Magician
+Search - Locate - Passage(s)
+Magician
+Search - Locate - Nothing
+Magician
+Search - Locate - Discover chit(s) - Found Altar
+Magician
+Ends turn: Borderland 1
+host
+========================================
+host

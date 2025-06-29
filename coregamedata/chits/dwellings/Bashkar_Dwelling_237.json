@@ -1,0 +1,460 @@
+{
+  "id": "237",
+  "name": "Bashkar Dwelling",
+  "attributeBlocks": {
+    "this": {
+      "original_game": "",
+      "native": "Bashkar",
+      "dwelling": "l_fire,s_fire",
+      "monster_die": "5",
+      "print": "",
+      "ts_section": "natives",
+      "ts_size": "T",
+      "ts_color": "gray",
+      "ts_count": "6",
+      "icon_type": "raider",
+      "icon_folder": "natives",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "virtual_dwelling": "",
+      "icon_folder_alt": "wesnoth/units/human-outlaws",
+      "icon_type_alt": "bandit",
+      "icon_size_alt": "0.9"
+    }
+  },
+  "parts": [
+    {
+      "id": "64",
+      "name": "Bashkar 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Bashkars",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "L",
+          "rank": "1",
+          "original_game": "",
+          "icon_type": "raider",
+          "monster_die": "5",
+          "setup_start": "Bashkar Dwelling",
+          "hire_type": "group",
+          "icon_folder": "natives",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "denizen": "",
+          "icon_folder_alt": "wesnoth/units/human-outlaws",
+          "icon_type_alt": "bandit",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "3",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "lightorange"
+        },
+        "dark": {
+          "move_speed": "3",
+          "attack_speed": "3",
+          "strength": "L",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "65",
+      "name": "Bashkar 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Bashkars",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "L",
+          "rank": "2",
+          "original_game": "",
+          "icon_type": "raider",
+          "monster_die": "5",
+          "setup_start": "Bashkar Dwelling",
+          "hire_type": "group",
+          "icon_folder": "natives",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "denizen": "",
+          "icon_folder_alt": "wesnoth/units/human-outlaws",
+          "icon_type_alt": "delinquent",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "2",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "lightorange"
+        },
+        "dark": {
+          "move_speed": "3",
+          "attack_speed": "3",
+          "strength": "L",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "66",
+      "name": "Bashkar 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Bashkars",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "L",
+          "rank": "3",
+          "original_game": "",
+          "icon_type": "raider",
+          "monster_die": "5",
+          "setup_start": "Bashkar Dwelling",
+          "hire_type": "group",
+          "icon_folder": "natives",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "denizen": "",
+          "icon_folder_alt": "wesnoth/units/human-outlaws",
+          "icon_type_alt": "footpad",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "2",
+          "attack_speed": "4",
+          "strength": "L",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "lightorange"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "67",
+      "name": "Bashkar 4",
+      "attributeBlocks": {
+        "this": {
+          "native": "Bashkars",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "L",
+          "rank": "4",
+          "original_game": "",
+          "icon_type": "raider",
+          "monster_die": "5",
+          "setup_start": "Bashkar Dwelling",
+          "hire_type": "group",
+          "icon_folder": "natives",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "denizen": "",
+          "icon_folder_alt": "wesnoth/units/human-outlaws",
+          "icon_type_alt": "thug",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "2",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "lightorange"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "2",
+          "strength": "L",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "68",
+      "name": "Bashkar 5",
+      "attributeBlocks": {
+        "this": {
+          "native": "Bashkars",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "L",
+          "rank": "5",
+          "original_game": "",
+          "icon_type": "raider",
+          "monster_die": "5",
+          "setup_start": "Bashkar Dwelling",
+          "hire_type": "group",
+          "icon_folder": "natives",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "denizen": "",
+          "icon_folder_alt": "wesnoth/units/human-outlaws",
+          "icon_type_alt": "footpad+female",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "2",
+          "strength": "L",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "lightorange"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "2",
+          "strength": "L",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "69",
+      "name": "Bashkar HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Bashkars",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "L",
+          "rank": "HQ",
+          "original_game": "",
+          "icon_type": "raider",
+          "monster_die": "5",
+          "setup_start": "Bashkar Dwelling",
+          "hire_type": "group",
+          "icon_folder": "natives",
+          "alt_monsters1_game": "",
+          "commerce": "N",
+          "rw_expansion_1": "",
+          "denizen": "",
+          "icon_folder_alt": "wesnoth/units/human-outlaws",
+          "icon_type_alt": "neutral-outlaw-princess",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "2",
+          "attack_speed": "4",
+          "strength": "L",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "lightorange"
+        },
+        "dark": {
+          "move_speed": "3",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "123",
+      "name": "Pony",
+      "attributeBlocks": {
+        "this": {
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "base_price": "12",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "item": "",
+          "horse_holder": "Bashkar Dwelling",
+          "icon_folder_alt": "wesnoth/units/monsters",
+          "icon_type_alt": "horse",
+          "icon_size_alt": "1"
+        },
+        "trot": {
+          "move_speed": "5",
+          "strength": "M",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "4",
+          "strength": "M",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "124",
+      "name": "Pony",
+      "attributeBlocks": {
+        "this": {
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "base_price": "14",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "item": "",
+          "horse_holder": "Bashkar Dwelling",
+          "icon_folder_alt": "wesnoth/units/monsters",
+          "icon_type_alt": "horse",
+          "icon_size_alt": "1"
+        },
+        "trot": {
+          "move_speed": "5",
+          "strength": "M",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "3",
+          "strength": "M",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "125",
+      "name": "Pony",
+      "attributeBlocks": {
+        "this": {
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "base_price": "12",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "item": "",
+          "horse_holder": "Bashkar Dwelling",
+          "icon_folder_alt": "wesnoth/units/monsters",
+          "icon_type_alt": "horse",
+          "icon_size_alt": "1"
+        },
+        "trot": {
+          "move_speed": "5",
+          "strength": "M",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "3",
+          "strength": "L",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "126",
+      "name": "Pony",
+      "attributeBlocks": {
+        "this": {
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "base_price": "16",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "item": "",
+          "horse_holder": "Bashkar Dwelling",
+          "icon_folder_alt": "wesnoth/units/monsters",
+          "icon_type_alt": "horse",
+          "icon_size_alt": "1"
+        },
+        "trot": {
+          "move_speed": "5",
+          "strength": "M",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "2",
+          "strength": "M",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "127",
+      "name": "Pony",
+      "attributeBlocks": {
+        "this": {
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "base_price": "15",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "item": "",
+          "horse_holder": "Bashkar Dwelling",
+          "icon_folder_alt": "wesnoth/units/monsters",
+          "icon_type_alt": "horse",
+          "icon_size_alt": "1"
+        },
+        "trot": {
+          "move_speed": "4",
+          "strength": "M",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "3",
+          "strength": "M",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "128",
+      "name": "Pony",
+      "attributeBlocks": {
+        "this": {
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "base_price": "14",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "item": "",
+          "horse_holder": "Bashkar Dwelling",
+          "icon_folder_alt": "wesnoth/units/monsters",
+          "icon_type_alt": "horse",
+          "icon_size_alt": "1"
+        },
+        "trot": {
+          "move_speed": "4",
+          "strength": "M",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "3",
+          "strength": "L",
+          "chit_color": "tan"
+        }
+      }
+    }
+  ]
+}

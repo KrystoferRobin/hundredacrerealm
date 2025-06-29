@@ -1,0 +1,70 @@
+Month 3, Day 25
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Wizard
+Starts turn: Evil Valley 1
+Wizard
+Move - moved
+Wizard
+Selling to Order HQ.
+Wizard
+Attempting to sell: Hidden Ring
+Wizard
+Trade - Sell to Order HQ - Total received for the Hidden Ring was 20 gold.
+Wizard
+Buying from Order HQ.
+Wizard
+Available for sale: 3 Warhorses, 2 Armors, Crossbow, Great Sword, Morning Star, 2 Great Axes, and 3 Treasures
+Wizard
+Bidding for a treasure
+Wizard
+Trade - Buy from Order HQ (as Friendly) - No Deal
+Wizard
+Hide - Failed due to SQUEAK curse
+Wizard
+Hide - Failed due to SQUEAK curse
+Wizard
+Ends turn: Evil Valley 4
+__battle__
+Battle resolving at Evil Valley 4:
+__battle__
+GROUP 1
+__battle__
+Wizard
+__battle__
+GROUP 2
+__battle__
+Order 1
+__battle__
+Order 2
+__battle__
+Order 3
+__battle__
+Order HQ
+Wizard
+The Wizard chose not to buy drinks.
+Wizard
+Meeting Order on the Neutral table
+Wizard
+Rolled 1 and 3. = Price x 4
+__battle__
+=======================
+__battle__
+Evening of month 3, day 25, in clearing Evil Valley 4
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Wizard
+Presses the END combat button.
+Wizard
+Combat has ended.
+host
+========================================
+host

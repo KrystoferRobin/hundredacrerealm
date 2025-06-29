@@ -1,0 +1,29 @@
+{
+  "id": "2211",
+  "name": "Flood",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "attack",
+      "target": "clearing",
+      "non_mountain_clearing": "",
+      "river_or_adjacent_hex": "",
+      "text": "Missle attack against all non- flying targets. Roll for direction.",
+      "magic_color": "gray",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "length": "18",
+      "strength": "M",
+      "sharpness": "1",
+      "attack_speed": "3",
+      "random_attack_direction": "",
+      "missile": "magic",
+      "table": "magicmissil",
+      "targets": ""
+    }
+  },
+  "parts": []
+}

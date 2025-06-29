@@ -1,0 +1,46 @@
+Month 3, Day 19
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Wizard
+Starts turn: Mountain
+Wizard
+Move - moved
+Wizard
+Move - moved
+Wizard
+Hide - Failed
+Wizard
+Ends turn: Pine Woods 2
+Wizard
+Reveals: Ruins W
+__battle__
+Battle resolving at Pine Woods 2:
+__battle__
+GROUP 1
+__battle__
+Wizard
+__battle__
+=======================
+__battle__
+Evening of month 3, day 19, in clearing Pine Woods 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Wizard
+Presses the END combat button.
+Wizard
+Combat has ended.
+host
+========================================
+host

@@ -1,0 +1,21 @@
+{
+  "id": "579",
+  "name": "Druid Magic VIII3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "3",
+      "magic": "VIII",
+      "effort": "1",
+      "character_level": "3",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "9",
+      "level": "3",
+      "icon_folder": "characters",
+      "icon_type": "druid",
+      "rw_expansion_1": ""
+    }
+  }
+}

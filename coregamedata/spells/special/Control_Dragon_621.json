@@ -1,0 +1,23 @@
+{
+  "id": "621",
+  "name": "Control Dragon",
+  "spellLevel": "*",
+  "attributeBlocks": {
+    "this": {
+      "duration": "day",
+      "target": "dragon",
+      "text": "Control ONE Dragon",
+      "magic_color": "purple",
+      "original_game": "",
+      "control": "",
+      "host_okay": "",
+      "spell": "*",
+      "awakened": "",
+      "alt_monsters1_game": "",
+      "no_cancel": "",
+      "benevolent": "",
+      "rw_expansion_1": ""
+    }
+  },
+  "parts": []
+}

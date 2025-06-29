@@ -1,0 +1,19 @@
+{
+  "id": "2408",
+  "name": "Necromancer Magic V3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "3",
+      "character_level": "2",
+      "stage": "4",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "necromancer",
+      "super_realm": "",
+      "effort": "1",
+      "magic": "V"
+    }
+  }
+}

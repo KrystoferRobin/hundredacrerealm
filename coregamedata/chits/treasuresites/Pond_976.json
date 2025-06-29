@@ -1,0 +1,26 @@
+{
+  "id": "976",
+  "name": "Pond",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "pond",
+      "clearing": "6",
+      "monster_die": "3",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "gold",
+      "icon_type": "blob",
+      "icon_folder": "monsters2",
+      "rw_expansion_1": "",
+      "generator": "1d3",
+      "min_large_t": "2",
+      "susceptibleto": "generator_flamed",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "icon_type_alt": "mudcrawler"
+    }
+  },
+  "parts": []
+}

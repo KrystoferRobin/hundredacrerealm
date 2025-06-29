@@ -1,0 +1,21 @@
+{
+  "id": "341",
+  "name": "Vial of Healing",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Move all wounds to fatigue (discard to order)",
+      "base_price": "2",
+      "discard": "chapel",
+      "potion": "",
+      "original_game": "",
+      "wounds_to_fatigue": "",
+      "alt_monsters1_game": "",
+      "transferable": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

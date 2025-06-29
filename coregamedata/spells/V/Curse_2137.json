@@ -1,0 +1,19 @@
+{
+  "id": "2137",
+  "name": "Curse",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "instant",
+      "target": "character",
+      "text": "Gets one CURSE (roll)",
+      "magic_color": "gray",
+      "curse": "",
+      "table": "curse",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

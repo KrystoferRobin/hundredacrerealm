@@ -1,0 +1,22 @@
+{
+  "id": "317",
+  "name": "Guide Spider or Octopus",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "day",
+      "target": "spider, octopus",
+      "text": "MOVE and FIGHT with one monster",
+      "magic_color": "gray",
+      "original_game": "",
+      "control": "",
+      "host_okay": "",
+      "alt_monsters1_game": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

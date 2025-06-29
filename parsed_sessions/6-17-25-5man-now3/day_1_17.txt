@@ -1,0 +1,68 @@
+Month 1, Day 17
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Pilgrim
+Starts turn: Borderland 3
+Pilgrim
+Move - moved
+Pilgrim
+Hide - Failed
+Pilgrim
+Hide - Failed
+Pilgrim
+Hide - Succeeded
+Pilgrim
+Ends turn: Borderland 2
+White Knight
+Starts turn: Borderland 6
+White Knight
+Move - moved
+White Knight
+Hide - Failed
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Borderland 3
+Amazon
+Starts turn: Borderland 6
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+Hide - Succeeded
+Amazon
+Ends turn: Borderland 2
+__battle__
+Battle resolving at Borderland 2:
+__battle__
+GROUP 1
+__battle__
+Pilgrim
+__battle__
+GROUP 2
+__battle__
+Amazon
+__battle__
+=======================
+__battle__
+Evening of month 1, day 17, in clearing Borderland 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+Pilgrim
+Presses the END combat button.
+Pilgrim
+Combat has ended.
+host
+========================================
+host

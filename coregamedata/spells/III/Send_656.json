@@ -1,0 +1,21 @@
+{
+  "id": "656",
+  "name": "Send",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "day",
+      "target": "wolves",
+      "text": "MOVE and FIGHT with wolves",
+      "magic_color": "gold",
+      "rw_expansion_1": "",
+      "control": "",
+      "host_okay": "",
+      "benevolent": "",
+      "author": "Expansion 1",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

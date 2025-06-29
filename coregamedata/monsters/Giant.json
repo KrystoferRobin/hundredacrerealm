@@ -1,0 +1,67 @@
+{
+  "id": "1511",
+  "name": "Giant",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "T",
+      "fame": "8",
+      "notoriety": "8",
+      "icon_type": "giant",
+      "setup_start": "Giant Box",
+      "box_num": "3",
+      "monster_die": "4",
+      "base_price": "8",
+      "icon_folder": "wesnoth/units",
+      "denizen": "",
+      "super_realm": "",
+      "icon_size": "1",
+      "giant": "",
+      "weapon_use_chit": ""
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "5",
+      "strength": "H",
+      "chit_color": "lightblue"
+    },
+    "dark": {
+      "move_speed": "6",
+      "attack_speed": "4",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": "",
+      "kills_horse": "",
+      "destroys_armor": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1512",
+      "name": "Giant Club",
+      "attributeBlocks": {
+        "this": {
+          "monster": "",
+          "part": "",
+          "icon_type": "club",
+          "icon_folder": "wesnoth/icons/attacks",
+          "super_realm": "",
+          "monster_weapon": "",
+          "giant_club": ""
+        },
+        "light": {
+          "attack_speed": "6",
+          "strength": "H",
+          "length": "8",
+          "chit_color": "pink"
+        },
+        "dark": {
+          "attack_speed": "4",
+          "strength": "T",
+          "length": "8",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

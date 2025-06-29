@@ -1,0 +1,35 @@
+{
+  "id": "2023",
+  "name": "Crystal Bow",
+  "attributeBlocks": {
+    "this": {
+      "weight": "M",
+      "length": "18",
+      "base_price": "30",
+      "missile": "",
+      "two_handed": "",
+      "weapon": "",
+      "icon_type": "medium_bow",
+      "icon_folder": "weapons",
+      "item": "",
+      "super_realm": "",
+      "notoriety": "15",
+      "magic": "",
+      "magic_color_bonus": "purple",
+      "bow": "",
+      "super_realm_treasure": ""
+    },
+    "unalerted": {
+      "strength": "M",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "attack_speed": "1",
+      "strength": "M",
+      "sharpness": "2",
+      "chit_color": "red",
+      "magic_color_bonus_sharpness": "1"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "2210",
+  "name": "Barkskin",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "combat",
+      "target": "individual",
+      "text": "Target is armored, and removes a sharpness star from an attack that hits it.",
+      "magic_color": "gray",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "benevolent": "",
+      "break_when_transmorphed": "",
+      "barkskin": ""
+    }
+  },
+  "parts": []
+}

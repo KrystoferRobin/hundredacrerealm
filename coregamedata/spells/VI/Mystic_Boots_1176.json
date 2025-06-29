@@ -1,0 +1,26 @@
+{
+  "id": "1176",
+  "name": "Mystic Boots",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "day",
+      "target": "character",
+      "text": "Can MOVE M3 in combat or movement",
+      "magic_color": "gray",
+      "host_okay": "",
+      "new_spells_2": "",
+      "learnable": "",
+      "author": "Expansion 1"
+    },
+    "move_chit": {
+      "action": "MOVE",
+      "chit_state": "1",
+      "strength": "M",
+      "speed": "3",
+      "move_chit": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,70 @@
+{
+  "id": "732",
+  "name": "Wyrm",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "armored": "",
+      "vulnerability": "T",
+      "fame": "13",
+      "notoriety": "13",
+      "icon_type": "wyrm",
+      "setup_start": "Wyrm Box",
+      "monster_die": "1",
+      "base_price": "13",
+      "icon_folder": "monsters1",
+      "alt_monsters1_game": "",
+      "denizen": "",
+      "wyrm": "",
+      "icon_type_alt": "wildWyvern",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_size_alt": "0.7"
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "4",
+      "strength": "H",
+      "chit_color": "white"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "5",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "733",
+      "name": "Wyrm Head",
+      "attributeBlocks": {
+        "this": {
+          "monster": "",
+          "part": "",
+          "icon_type": "wyrm_head",
+          "dragon_missile": "",
+          "icon_folder": "monsters1",
+          "alt_monsters1_game": "",
+          "icon_type_alt": "fire-breath-drake",
+          "icon_folder_alt": "wesnoth/icons/attacks",
+          "icon_size_alt": "0.6"
+        },
+        "light": {
+          "attack_speed": "4",
+          "strength": "H",
+          "length": "9",
+          "chit_color": "white",
+          "dragon_length": "13"
+        },
+        "dark": {
+          "attack_speed": "4",
+          "strength": "T",
+          "length": "9",
+          "chit_color": "red",
+          "dragon_length": "13"
+        }
+      }
+    }
+  ]
+}

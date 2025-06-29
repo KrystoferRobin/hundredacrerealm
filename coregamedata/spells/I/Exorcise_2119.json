@@ -1,0 +1,19 @@
+{
+  "id": "2119",
+  "name": "Exorcise",
+  "spellLevel": "I",
+  "attributeBlocks": {
+    "this": {
+      "spell": "I",
+      "duration": "instant",
+      "target": "clearing",
+      "text": "Remove all magic demons and imps",
+      "magic_color": "white",
+      "exorcise": "",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

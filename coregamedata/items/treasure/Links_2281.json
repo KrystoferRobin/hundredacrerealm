@@ -1,0 +1,19 @@
+{
+  "id": "2281",
+  "name": "Links",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "If doing FOLLOW, the guide cannot leave you behind.",
+      "base_price": "7",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "links": "",
+      "weight": "L",
+      "notoriety": "-5"
+    }
+  },
+  "parts": []
+}

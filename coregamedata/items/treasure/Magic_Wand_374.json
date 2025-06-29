@@ -1,0 +1,21 @@
+{
+  "id": "374",
+  "name": "Magic Wand",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "17",
+      "text": "Control red die on spell rolls",
+      "notoriety": "10",
+      "fame": "-10",
+      "great": "",
+      "original_game": "",
+      "red_die": "wish,curse,powerofthepit,transform,lost,violentstorm,magicmissil,attackspell",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

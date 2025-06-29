@@ -1,0 +1,20 @@
+Month 2, Day 1
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Ledges 4
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Ends turn: Oak Woods 5
+host
+========================================
+host

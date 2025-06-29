@@ -1,0 +1,20 @@
+{
+  "id": "2294",
+  "name": "Repair Kit",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "6",
+      "text": "Repair one damaged helmet, breastplate, shield or armor",
+      "potion": "",
+      "discard": "guard",
+      "facing": "face_dn",
+      "repair_one": "",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "weight": "L"
+    }
+  },
+  "parts": []
+}

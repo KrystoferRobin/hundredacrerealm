@@ -1,0 +1,39 @@
+{
+  "id": "2017",
+  "name": "Violet Breastplate",
+  "attributeBlocks": {
+    "this": {
+      "vulnerability": "L",
+      "weight": "L",
+      "armor_swing": "",
+      "armor_thrust": "",
+      "fame": "2",
+      "notoriety": "2",
+      "armor": "",
+      "icon_type": "breastplate",
+      "facing": "dark",
+      "pile_position": "2",
+      "armor_row": "2",
+      "icon_folder": "armor",
+      "item": "",
+      "super_realm": "",
+      "magic": "",
+      "breastplate": "",
+      "magic_color_bonus": "purple",
+      "magic_color_bonus_armor": "H",
+      "super_realm_treasure": ""
+    },
+    "intact": {
+      "base_price": "16",
+      "chit_color": "gold"
+    },
+    "damaged": {
+      "base_price": "9",
+      "chit_color": "yellow"
+    },
+    "destroyed": {
+      "base_price": "6"
+    }
+  },
+  "parts": []
+}

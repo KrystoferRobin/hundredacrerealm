@@ -1,0 +1,371 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Templar",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "templar",
+      "character": "",
+      "vulnerability": "H",
+      "start": "Inn",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "he",
+      "alt_monsters1_game": "",
+      "fighter": "",
+      "icon_folder": "custom/characters",
+      "knight": "",
+      "creator": "Stephan Valkyser",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Cross Pattée",
+      "rw_expansion_1": "",
+      "custom_character": "",
+      "no_invert_icon": "",
+      "extra_notes": ""
+    },
+    "level_1": {
+      "name": "Friar",
+      "weapon": "Halberd",
+      "armor": "Helmet,Shield,Breastplate"
+    },
+    "level_2": {
+      "name": "Brother Knight",
+      "weapon": "Great Sword",
+      "armor": "Helmet,Shield,Breastplate",
+      "badge_icon": "Templarbadge2",
+      "bonus_inv": "",
+      "advantages": {
+        "N0": "MOUNTED: Starts with a Warhorse in inventory."
+      }
+    },
+    "level_3": {
+      "name": "Sergeant",
+      "weapon": "Great Sword",
+      "armor": "Helmet,Shield,Breastplate"
+    },
+    "level_4": {
+      "name": "Templar",
+      "weapon": "Great Sword",
+      "armor": "Helmet,Shield,Breastplate",
+      "badge_icon": "Templarbadge4",
+      "advantages": {
+        "N0": "CLUMSY: Adds one to all rolls."
+      },
+      "diemod": {
+        "N0": "+1:all:all"
+      }
+    },
+    "relationship": {
+      "order": "1",
+      "bashkars": "-1",
+      "crone": "-1",
+      "company": "-2",
+      "shaman": "-1",
+      "warlock": "-2"
+    },
+    "gamerel": {
+      "order": "1",
+      "bashkars": "-1",
+      "crone": "-1",
+      "company": "-2",
+      "shaman": "-1",
+      "warlock": "-2"
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "bonus_invlevel_2": {
+      "_gobm_xx_name": "Warhorse"
+    },
+    "bonus_invlevel_2this": {
+      "_gobm_xx_horse": "warhorse",
+      "_gobm_xx_vulnerability": "T",
+      "_gobm_xx_armored": "",
+      "_gobm_xx_original_game": "",
+      "_gobm_xx_alt_monsters1_game": "",
+      "_gobm_xx_rw_expansion_1": "",
+      "_gobm_xx_item": "",
+      "_gobm_xx_facing": "dark",
+      "_gobm_xx__lkt_": "level_2"
+    },
+    "bonus_invlevel_2trot": {
+      "_gobm_xx_move_speed": "6",
+      "_gobm_xx_strength": "H",
+      "_gobm_xx_chit_color": "tan"
+    },
+    "bonus_invlevel_2gallop": {
+      "_gobm_xx_move_speed": "4",
+      "_gobm_xx_strength": "H",
+      "_gobm_xx_chit_color": "tan"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move T6*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "6",
+          "strength": "T",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "templar",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "move H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "6",
+          "strength": "H",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "templar",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "6",
+          "strength": "H",
+          "effort": "0",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "templar",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "move H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "5",
+          "strength": "H",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "templar",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "5",
+          "strength": "H",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "templar",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "effort": "1"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "fight T6*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "6",
+          "strength": "T",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "templar",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move H4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "strength": "H",
+          "effort": "2",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "templar",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "5",
+          "strength": "H",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "templar",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight T5**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "5",
+          "effort": "2",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "templar",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "strength": "T"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "move H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "5",
+          "strength": "H",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "templar",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "fight T6*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "6",
+          "strength": "T",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "templar",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "smash T4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "smash",
+          "speed": "4",
+          "strength": "T",
+          "effort": "2",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "templar",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "fight_lock": "",
+          "box_constraint": "3"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

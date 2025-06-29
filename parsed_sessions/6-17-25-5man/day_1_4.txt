@@ -1,0 +1,1286 @@
+Month 1, Day 4
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Amazon
+Starts turn: Borderland 6
+Amazon
+Search - Locate - Discover chit(s) - Found Hoard,Pool
+Amazon
+Hide - Failed
+Amazon
+Ends turn: Borderland 6
+Amazon
+Reveals: Lost City
+Amazon
+Reveals: Ruins C
+host
+Axe Goblin is added to Borderland, clearing 6
+host
+Axe Goblin is added to Borderland, clearing 6
+host
+Axe Goblin is added to Borderland, clearing 6
+host
+Axe Goblin is added to Borderland, clearing 6
+host
+Axe Goblin is added to Borderland, clearing 6
+host
+Axe Goblin is added to Borderland, clearing 6
+host
+Spear Goblin is added to Borderland, clearing 2
+host
+Spear Goblin is added to Borderland, clearing 2
+host
+Spear Goblin is added to Borderland, clearing 2
+host
+Spear Goblin is added to Borderland, clearing 2
+host
+Spear Goblin is added to Borderland, clearing 2
+host
+Spear Goblin is added to Borderland, clearing 2
+host
+Octopus blocks the Amazon
+host
+Axe Goblin blocks the Amazon
+host
+Axe Goblin blocks the Amazon
+host
+Axe Goblin blocks the Amazon
+host
+Axe Goblin blocks the Amazon
+host
+Axe Goblin blocks the Amazon
+host
+Axe Goblin blocks the Amazon
+White Knight
+Starts turn: Curst Valley 4
+White Knight
+Activates Sacred Statue
+White Knight
+Move - moved
+White Knight
+BLOCKED - Cannot perform action M-LW4
+White Knight
+BLOCKED - Cannot perform action M-LW2
+White Knight
+BLOCKED - Cannot perform action H
+White Knight
+BLOCKED - Cannot perform action R
+White Knight
+Ends turn: Borderland 2
+Pilgrim
+Starts turn: Borderland 2
+Pilgrim
+Ends turn: Borderland 2
+Woods Girl
+Starts turn: Bad Valley 4
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Borderland 4
+Berserker
+Starts turn: Borderland 6
+Berserker
+Search - Loot the Hoard - Found Treasure
+Berserker
+BLOCKED - Cannot perform action H
+Berserker
+Ends turn: Borderland 6
+__battle__
+Battle resolving at Borderland 2:
+__battle__
+GROUP 1
+__battle__
+Pilgrim
+__battle__
+GROUP 2
+__battle__
+White Knight
+__battle__
+GROUP 3
+__battle__
+Spear Goblin
+__battle__
+Spear Goblin
+__battle__
+Spear Goblin
+__battle__
+Spear Goblin
+__battle__
+Spear Goblin
+__battle__
+Spear Goblin
+__battle__
+=======================
+__battle__
+Evening of month 1, day 4, in clearing Borderland 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Pilgrim
+Attacks the Spear Goblin
+White Knight
+Attacks the Spear Goblin
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+Attack Length=9, Speed=3
+__battle__
+Pilgrim M3  vs. Spear Goblin Speed 3
+__battle__
+Missed! (Speed 3 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Length=8, Speed=6
+__battle__
+White Knight H6*  vs. Spear Goblin Speed 3
+__battle__
+Missed! (Speed 6 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Length=0, Speed=8
+__battle__
+Spear Goblin neg  vs. White Knight Speed 5
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Length=0, Speed=8
+__battle__
+Spear Goblin neg  vs. Pilgrim Speed 4
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Length=0, Speed=8
+__battle__
+Spear Goblin neg  vs. Pilgrim Speed 4
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Length=0, Speed=8
+__battle__
+Spear Goblin neg  vs. Pilgrim Speed 4
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Length=0, Speed=8
+__battle__
+Spear Goblin neg  vs. Pilgrim Speed 4
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Length=0, Speed=8
+__battle__
+Spear Goblin neg  vs. Pilgrim Speed 4
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+White Knight
+Fatiguing 1 asterisk.
+White Knight
+After fatiguing, these chits were moved to fatigue: MOVE T6*
+Pilgrim
+Fatiguing 1 asterisk.
+Pilgrim
+After fatiguing, these chits were moved to fatigue: MOVE H5*
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+White Knight
+Lures the Spear Goblin
+White Knight
+Lures the Spear Goblin
+White Knight
+Lures the Spear Goblin
+White Knight
+Lures the Spear Goblin
+White Knight
+Lures the Spear Goblin
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+White Knight
+Attacks the Spear Goblin
+White Knight
+Presses the RESET combat button.
+White Knight
+Attacks the Spear Goblin
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=5, Length=8
+__battle__
+White Knight H5*  vs. Spear Goblin Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Speed 5
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Speed 5
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Speed 5
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Speed 5
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Speed 5
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Speed 5
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+White Knight
+Fatiguing 1 asterisk.
+White Knight
+After fatiguing, these chits were moved to fatigue: FIGHT H5*
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+-----------------------
+__battle__
+--  Combat Round 3
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+White Knight
+Attacks the Spear Goblin
+Pilgrim
+Attacks the Spear Goblin
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=5, Length=8
+__battle__
+White Knight H5*  vs. Spear Goblin Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Not Moving
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Not Moving
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Not Moving
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Not Moving
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Not Moving
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Not Moving
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+1 consecutive round of no damage, fatigue, or spellcasting.
+__battle__
+-----------------------
+__battle__
+--  Combat Round 4
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Pilgrim
+Attacks the Spear Goblin
+Pilgrim
+Presses the RESET combat button.
+White Knight
+Attacks the Spear Goblin
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=5, Length=8
+__battle__
+White Knight H5*  vs. Spear Goblin Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Not Moving
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Not Moving
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Not Moving
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Not Moving
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Not Moving
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. White Knight Not Moving
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+2 consecutive rounds of no damage, fatigue, or spellcasting.
+__battle__
+Battle resolving at Borderland 6:
+__battle__
+GROUP 1
+__battle__
+Amazon
+__battle__
+GROUP 2
+__battle__
+Berserker
+__battle__
+GROUP 3
+__battle__
+Octopus
+__battle__
+Axe Goblin
+__battle__
+Axe Goblin
+__battle__
+Axe Goblin
+__battle__
+Axe Goblin
+__battle__
+Axe Goblin
+__battle__
+Axe Goblin
+__battle__
+=======================
+__battle__
+Evening of month 1, day 4, in clearing Borderland 6
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Berserker
+Lures the Octopus
+Berserker
+Lures the Axe Goblin
+Berserker
+Lures the Axe Goblin
+Berserker
+Lures the Axe Goblin
+Berserker
+Lures the Axe Goblin
+Berserker
+Lures the Axe Goblin
+Berserker
+Lures the Axe Goblin
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Amazon
+Attacks the Octopus
+Berserker
+Attacks the Octopus
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+Attack Length=5, Speed=5
+__battle__
+Berserker H5*  vs. Octopus Speed 2
+__battle__
+Intercepted! (box 3 matches box 3)
+__battle__
+Initial harm: H+1
+__battle__
+Octopus is hit with H+1 harm along box 3
+__battle__
+Octopus was killed!
+__battle__
+>
+__battle__
+Attack Length=3, Speed=4
+__battle__
+Amazon M4*  vs. Octopus Speed 2
+__battle__
+Attack Cancelled:  Octopus was already killed by Berserker.
+__battle__
+>
+__battle__
+Attack Length=2, Speed=4
+__battle__
+Axe Goblin L4*  vs. Berserker Speed 4
+__battle__
+Intercepted! (box 3 matches box 3)
+__battle__
+Initial harm: L+1
+__battle__
+Berserker is hit with L+1 harm along box 3
+Axe Goblin
+Hits armor (Helmet), and reduces sharpness: L
+__battle__
+Berserker was not killed.
+__battle__
+>
+__battle__
+Attack Length=2, Speed=4
+__battle__
+Axe Goblin L4*  vs. Berserker Speed 4
+__battle__
+Intercepted! (box 3 matches box 3)
+__battle__
+Initial harm: L+1
+__battle__
+Berserker is hit with L+1 harm along box 3
+Axe Goblin
+Hits armor (Helmet), and reduces sharpness: L
+__battle__
+Berserker was not killed.
+__battle__
+>
+__battle__
+Attack Length=2, Speed=4
+__battle__
+Axe Goblin L4*  vs. Berserker Speed 4
+__battle__
+Intercepted! (box 3 matches box 3)
+__battle__
+Initial harm: L+1
+__battle__
+Berserker is hit with L+1 harm along box 3
+Axe Goblin
+Hits armor (Helmet), and reduces sharpness: L
+__battle__
+Berserker was not killed.
+__battle__
+>
+__battle__
+Attack Length=2, Speed=4
+__battle__
+Axe Goblin L4*  vs. Berserker Speed 4
+__battle__
+Intercepted! (box 3 matches box 3)
+__battle__
+Initial harm: L+1
+__battle__
+Berserker is hit with L+1 harm along box 3
+Axe Goblin
+Hits armor (Helmet), and reduces sharpness: L
+__battle__
+Berserker was not killed.
+__battle__
+>
+__battle__
+Attack Length=2, Speed=4
+__battle__
+Axe Goblin L4*  vs. Berserker Speed 4
+__battle__
+Intercepted! (box 3 matches box 3)
+__battle__
+Initial harm: L+1
+__battle__
+Berserker is hit with L+1 harm along box 3
+Axe Goblin
+Hits armor (Helmet), and reduces sharpness: L
+__battle__
+Berserker was not killed.
+__battle__
+>
+__battle__
+Attack Length=2, Speed=4
+__battle__
+Axe Goblin L4*  vs. Berserker Speed 4
+__battle__
+Intercepted! (box 3 matches box 3)
+__battle__
+Initial harm: L+1
+__battle__
+Berserker is hit with L+1 harm along box 3
+Axe Goblin
+Hits armor (Helmet), and reduces sharpness: L
+__battle__
+Berserker was not killed.
+__battle__
+>
+__battle__
+Attack Length=0, Speed=4
+__battle__
+Octopus L4  vs. Berserker Speed 4
+__battle__
+Attack Cancelled:  Octopus was already killed by Berserker.
+__battle__
+The Berserker gets 8 fame (x 1) and 8 notoriety (x 1) for the death of the Octopus
+Amazon
+Fatiguing 1 asterisk.
+Amazon
+After fatiguing, these chits were moved to fatigue: FIGHT M4*
+Berserker
+Fatiguing 1 asterisk.
+Berserker
+After fatiguing, these chits were moved to fatigue: MOVE T6*
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Amazon disengages because target is dead
+__battle__
+Berserker disengages because target is dead
+__battle__
+Octopus is dead.  Killed by Berserker
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Berserker
+Attacks the Axe Goblin
+Amazon
+Attacks the Axe Goblin
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Amazon L4*  vs. Axe Goblin Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Berserker Speed 6
+__battle__
+Undercut! (Speed 4 is faster than Speed 6)
+__battle__
+Initial harm: L+1
+__battle__
+Berserker is hit with L+1 harm along box 2
+__battle__
+Berserker takes 1 wound
+__battle__
+Berserker was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Berserker Speed 6
+__battle__
+Undercut! (Speed 4 is faster than Speed 6)
+__battle__
+Initial harm: L+1
+__battle__
+Berserker is hit with L+1 harm along box 1
+__battle__
+Berserker takes 1 wound
+__battle__
+Berserker was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Berserker Speed 6
+__battle__
+Undercut! (Speed 4 is faster than Speed 6)
+__battle__
+Initial harm: L+1
+__battle__
+Berserker is hit with L+1 harm along box 2
+__battle__
+Berserker takes 1 wound
+__battle__
+Berserker was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Berserker Speed 6
+__battle__
+Undercut! (Speed 4 is faster than Speed 6)
+__battle__
+Initial harm: L+1
+__battle__
+Berserker is hit with L+1 harm along box 2
+__battle__
+Berserker takes 1 wound
+__battle__
+Berserker was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Berserker Speed 6
+__battle__
+Undercut! (Speed 4 is faster than Speed 6)
+__battle__
+Initial harm: L+1
+__battle__
+Berserker is hit with L+1 harm along box 2
+__battle__
+Berserker takes 1 wound
+__battle__
+Berserker was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Berserker Speed 6
+__battle__
+Undercut! (Speed 4 is faster than Speed 6)
+__battle__
+Initial harm: L+1
+__battle__
+Berserker is hit with L+1 harm along box 2
+__battle__
+Berserker takes 1 wound
+__battle__
+Berserker was not killed.
+__battle__
+>
+__battle__
+Attack Speed=5, Length=5
+__battle__
+Berserker H5*  vs. Axe Goblin Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+Berserker
+Wounding 6 chits.
+Berserker
+After wounding, these chits were wounded: FIGHT T5*, MOVE H5*, MOVE H6, FIGHT H4*, FIGHT H5, and FIGHT T6*
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+-----------------------
+__battle__
+--  Combat Round 3
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Amazon
+Lures the Axe Goblin
+Amazon
+Lures the Axe Goblin
+Amazon
+Lures the Axe Goblin
+Amazon
+Lures the Axe Goblin
+Amazon
+Lures the Axe Goblin
+Amazon
+Lures the Axe Goblin
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Amazon
+Attacks the Axe Goblin
+Berserker
+Attacks the Axe Goblin
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=5
+__battle__
+Berserker T4*  vs. Axe Goblin Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Amazon L4*  vs. Axe Goblin Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+Berserker
+Fatiguing 1 asterisk.
+Berserker
+After fatiguing, these chits were moved to fatigue: FIGHT T4**
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+-----------------------
+__battle__
+--  Combat Round 4
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Berserker
+Attacks the Axe Goblin
+Amazon
+Attacks the Axe Goblin
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Amazon L4*  vs. Axe Goblin Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+1 consecutive round of no damage, fatigue, or spellcasting.
+__battle__
+-----------------------
+__battle__
+--  Combat Round 5
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Amazon
+Attacks the Axe Goblin
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Amazon L4*  vs. Axe Goblin Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+2 consecutive rounds of no damage, fatigue, or spellcasting.
+__battle__
+Battle resolving at Borderland 4:
+__battle__
+GROUP 1
+__battle__
+Woods Girl
+__battle__
+=======================
+__battle__
+Evening of month 1, day 4, in clearing Borderland 4
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Actions
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host

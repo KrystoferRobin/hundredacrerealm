@@ -1,0 +1,64 @@
+Month 2, Day 20
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Elf
+Starts turn: Borderland 3
+Elf
+Search - Loot the Lair - Found Crypt of the Knight
+Elf
+Search - Loot the Lair - Found Treasure
+Elf
+Activates Shoes of Stealth
+Elf
+Search - Loot the Lair - Nothing
+Elf
+Hide - Failed
+Elf
+Hide - Succeeded
+Elf
+Ends turn: Borderland 3
+host
+T Troll is prowling.
+host
+H Troll is prowling.
+host
+H Troll is prowling.
+host
+T Troll is prowling.
+__battle__
+Battle resolving at Borderland 3:
+__battle__
+GROUP 1
+__battle__
+Elf
+__battle__
+GROUP 2
+__battle__
+T Troll
+__battle__
+H Troll
+__battle__
+H Troll
+__battle__
+T Troll
+__battle__
+=======================
+__battle__
+Evening of month 2, day 20, in clearing Borderland 3
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Elf
+Presses the END combat button.
+Elf
+Combat has ended.
+host
+========================================
+host

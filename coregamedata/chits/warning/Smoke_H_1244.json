@@ -1,0 +1,33 @@
+{
+  "id": "1244",
+  "name": "Smoke H",
+  "attributeBlocks": {
+    "this": {
+      "warning": "smoke",
+      "tile_type": "H",
+      "super_realm": "",
+      "chit": "",
+      "ts_section": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1287",
+      "name": "Settlement",
+      "attributeBlocks": {
+        "this": {
+          "dwelling": "settlement",
+          "warning": "smoke",
+          "tile_type": "H",
+          "super_realm": "",
+          "print": "",
+          "icon_type": "human-city4",
+          "ts_section": "dwellings",
+          "ts_color": "tan",
+          "icon_folder": "wesnoth/buildings",
+          "quest_target": ""
+        }
+      }
+    }
+  ]
+}

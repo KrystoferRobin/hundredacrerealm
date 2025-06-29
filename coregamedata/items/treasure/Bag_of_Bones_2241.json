@@ -1,0 +1,20 @@
+{
+  "id": "2241",
+  "name": "Bag of Bones",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "17",
+      "notoriety": "9",
+      "fame": "3",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "text": "-1 on Magic Sight Table",
+      "native": "Enchanters"
+    }
+  },
+  "parts": []
+}

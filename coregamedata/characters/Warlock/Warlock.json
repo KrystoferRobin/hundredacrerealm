@@ -1,0 +1,313 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Warlock",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn,Guard,Ghost",
+      "pronoun": "he",
+      "creator": "Casey C Benn",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Coherency",
+      "vulnerability": "M",
+      "icon_type": "warlock",
+      "icon_folder": "custom/characters",
+      "magicuser": "",
+      "extra_notes": "The Warlock is a wielder of Dark Magic energies. Though he has wide capabilities he will need to spend more time resting. "
+    },
+    "level_1": {
+      "name": "Wanderer",
+      "badge_icon": "Warlockbadge1",
+      "advantages": {
+        "N0": "SEETHING MAGIC: Is attuned to Magic energy, Extra Spell Phase"
+      },
+      "extra_actions": {
+        "N0": "SP"
+      }
+    },
+    "level_2": {
+      "name": "Dark Apprentice",
+      "spellcount": "1",
+      "badge_icon": "Warlockbadge2",
+      "spelltypes": {
+        "N0": "II"
+      },
+      "advantages": {
+        "N0": "RUNIC STUDIES: Studied Ancient Runes extensively. Roll 1 die instead of 2 for all Reading Runes die Rolls."
+      },
+      "diemod": {
+        "N0": "1d:readrunes:all"
+      }
+    },
+    "level_3": {
+      "name": "Evoker of Lore",
+      "spellcount": "2",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "IV",
+        "N2": "V"
+      }
+    },
+    "level_4": {
+      "name": "Warlock",
+      "spellcount": "3",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "IV",
+        "N2": "V",
+        "N3": "VI",
+        "N4": "VIII"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "warlock": "2",
+      "dragonmen": "2",
+      "soldiers": "-1",
+      "patrol": "-1",
+      "lancers": "-1",
+      "order": "-2",
+      "murker": "1",
+      "shaman": "1",
+      "scholar": "1",
+      "crone": "2"
+    },
+    "gamerel": {
+      "warlock": "2",
+      "dragonmen": "2",
+      "soldiers": "-1",
+      "patrol": "-1",
+      "lancers": "-1",
+      "order": "-2",
+      "murker": "1",
+      "shaman": "1",
+      "scholar": "1",
+      "crone": "2"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "warlock",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "warlock",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "warlock",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "FIGHT M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "warlock",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "magic II4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "warlock",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "magic II3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "warlock",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "magic IV4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "warlock",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "IV"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "magic IV3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "warlock",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "IV"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic V4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "warlock",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "V"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "magic V3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "warlock",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "V"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic VI4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "warlock",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VI"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic VIII4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "warlock",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VIII"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

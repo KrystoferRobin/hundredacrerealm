@@ -1,0 +1,302 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Satyr",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn,Ghost",
+      "pronoun": "he",
+      "creator": "Roberto Ullfig",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Horns",
+      "vulnerability": "H",
+      "icon_type": "satyr",
+      "icon_folder": "custom/characters"
+    },
+    "level_1": {
+      "name": "Kid",
+      "weapon": "Spear",
+      "badge_icon": "Satyrbadge1",
+      "advantages": {
+        "N0": "SATYR BODY: Restricted from having an active Horse, Pony, Warhorse, or Boots in inventory. [Level 1]"
+      },
+      "item_restrictions": {
+        "N0": "Horse",
+        "N1": "Pony",
+        "N2": "Boots",
+        "N3": "Warhorse"
+      }
+    },
+    "level_2": {
+      "name": "Faun",
+      "weapon": "Spear",
+      "badge_icon": "Satyrbadge2",
+      "spellcount": "1",
+      "advantages": {
+        "N0": "TRACKING SKILLS: Rolls 1 die instead of 2 for all rolls on the SEARCH, MEETING, and HIDE tables in the Woods. [Level 2]"
+      },
+      "diemod": {
+        "N0": "1d:magicsight,commerce,trade,hire,readrunes,locate,hide,peer,meeting,loot:% woods"
+      },
+      "spelltypes": {
+        "N0": "III"
+      }
+    },
+    "level_3": {
+      "name": "Puck",
+      "weapon": "Spear",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "III"
+      }
+    },
+    "level_4": {
+      "name": "Satyr",
+      "weapon": "Spear",
+      "spellcount": "2",
+      "badge_icon": "Satyrbadge4",
+      "walk_woods": "7th",
+      "spelltypes": {
+        "N0": "III"
+      },
+      "advantages": {
+        "N0": "WOODS WALKER: Can Walk the Woods on the 7th day of every week. [Level 4]"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "woodfolk": "1"
+    },
+    "relationship": {
+      "woodfolk": "1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "satyr",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "move H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "satyr",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "satyr",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "move H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "satyr",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "fight H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "satyr",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "magic III3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "satyr",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "satyr",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "fight H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "satyr",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic III3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "satyr",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "dodge H4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "dodge",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "satyr",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "move_lock": "",
+          "box_constraint": "2"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "satyr",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic III3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "satyr",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "242",
+  "name": "Enchanted Meadow",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "meadow",
+      "original_game": "",
+      "treasure": "large",
+      "cannot_move": "",
+      "treasure_within_treasure": "6",
+      "discovery": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "ts_section": "twt",
+      "ts_color": "lightblue",
+      "nosecret": "",
+      "rw_expansion_1": ""
+    },
+    "table": {
+      "roll_1": "horse",
+      "roll_2": "weapon",
+      "roll_3": "wish",
+      "roll_4": "heal",
+      "roll_5": "curse",
+      "roll_6": "nothing"
+    }
+  },
+  "parts": [
+    {
+      "id": "129",
+      "name": "Pony",
+      "attributeBlocks": {
+        "this": {
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "base_price": "16",
+          "magic": "",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "item": "",
+          "horse_holder": "Bashkar Dwelling",
+          "icon_folder_alt": "wesnoth/units/monsters",
+          "icon_type_alt": "horse",
+          "icon_size_alt": "1"
+        },
+        "trot": {
+          "move_speed": "4",
+          "strength": "L",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "2",
+          "strength": "L",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "160",
+      "name": "Truesteel Sword",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "7",
+          "fame": "6",
+          "notoriety": "3",
+          "base_price": "25",
+          "magic": "",
+          "weapon": "",
+          "original_game": "",
+          "icon_type": "broadsword",
+          "alt_monsters1_game": "",
+          "icon_folder": "weapons",
+          "rw_expansion_1": "",
+          "item": ""
+        },
+        "unalerted": {
+          "strength": "M",
+          "sharpness": "2",
+          "chit_color": "yellow"
+        },
+        "alerted": {
+          "strength": "M",
+          "sharpness": "2",
+          "chit_color": "gold"
+        }
+      }
+    }
+  ]
+}

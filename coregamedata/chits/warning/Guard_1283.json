@@ -1,0 +1,406 @@
+{
+  "id": "1283",
+  "name": "Guard",
+  "attributeBlocks": {
+    "this": {
+      "dwelling": "guard",
+      "warning": "ruins",
+      "tile_type": "V",
+      "super_realm": "",
+      "print": "",
+      "icon_type": "drake5",
+      "ts_section": "dwellings",
+      "ts_color": "tan",
+      "icon_folder": "wesnoth/buildings",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1765",
+      "name": "Guard 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Guard",
+          "fame": "0",
+          "notoriety": "6",
+          "base_price": "4",
+          "vulnerability": "H",
+          "rank": "1",
+          "armored": "",
+          "icon_type": "royalguard",
+          "setup_start": "Guard",
+          "hire_type": "group",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/human-loyalists",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "1",
+          "native_die": "5",
+          "icon_size": "0.9",
+          "native_name": "Swordsman"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "5",
+          "strength": "H",
+          "length": "8",
+          "sharpness": "1",
+          "chit_color": "gold"
+        },
+        "dark": {
+          "move_speed": "6",
+          "attack_speed": "4",
+          "strength": "T",
+          "length": "8",
+          "sharpness": "1",
+          "chit_color": "orange"
+        }
+      }
+    },
+    {
+      "id": "1766",
+      "name": "Guard 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Guard",
+          "fame": "0",
+          "notoriety": "6",
+          "base_price": "4",
+          "vulnerability": "H",
+          "rank": "2",
+          "armored": "",
+          "icon_type": "royalguard",
+          "setup_start": "Guard",
+          "hire_type": "group",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/human-loyalists",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "1",
+          "native_die": "5",
+          "icon_size": "0.9",
+          "native_name": "Swordsman"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "5",
+          "strength": "H",
+          "length": "8",
+          "sharpness": "1",
+          "chit_color": "gold"
+        },
+        "dark": {
+          "move_speed": "6",
+          "attack_speed": "4",
+          "strength": "T",
+          "length": "8",
+          "sharpness": "1",
+          "chit_color": "orange"
+        }
+      }
+    },
+    {
+      "id": "1767",
+      "name": "Guard 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Guard",
+          "fame": "0",
+          "notoriety": "6",
+          "base_price": "4",
+          "vulnerability": "H",
+          "rank": "3",
+          "armored": "",
+          "icon_type": "royalguard",
+          "setup_start": "Guard",
+          "hire_type": "group",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/human-loyalists",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "1",
+          "native_die": "5",
+          "icon_size": "0.9",
+          "native_name": "Swordsman"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "5",
+          "strength": "H",
+          "length": "8",
+          "sharpness": "1",
+          "chit_color": "gold"
+        },
+        "dark": {
+          "move_speed": "6",
+          "attack_speed": "4",
+          "strength": "T",
+          "length": "8",
+          "sharpness": "1",
+          "chit_color": "orange"
+        }
+      }
+    },
+    {
+      "id": "1768",
+      "name": "Guard HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Guard",
+          "fame": "0",
+          "notoriety": "6",
+          "base_price": "4",
+          "vulnerability": "H",
+          "rank": "HQ",
+          "armored": "",
+          "icon_type": "royal-warrior",
+          "setup_start": "Guard",
+          "hire_type": "group",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/human-loyalists",
+          "commerce": "F",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "1",
+          "native_die": "5",
+          "icon_size": "0.9",
+          "native_name": "Swordsman"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "5",
+          "strength": "H",
+          "length": "8",
+          "sharpness": "1",
+          "chit_color": "gold"
+        },
+        "dark": {
+          "move_speed": "6",
+          "attack_speed": "4",
+          "strength": "T",
+          "length": "8",
+          "sharpness": "1",
+          "chit_color": "orange"
+        }
+      }
+    },
+    {
+      "id": "1940",
+      "name": "Helmet",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "armor_smash": "",
+          "armor": "",
+          "icon_type": "helmet",
+          "facing": "dark",
+          "armor_row": "2",
+          "ret_dw": "House",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "helmet": ""
+        },
+        "intact": {
+          "base_price": "5",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "3",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "1947",
+      "name": "Breastplate",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "armor_swing": "",
+          "armor_thrust": "",
+          "armor": "",
+          "icon_type": "breastplate",
+          "facing": "dark",
+          "armor_row": "2",
+          "ret_dw": "Guard",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "breastplate": ""
+        },
+        "intact": {
+          "base_price": "9",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "6",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "1964",
+      "name": "Broadsword",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "7",
+          "base_price": "8",
+          "weapon": "",
+          "icon_type": "broadsword",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "5",
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1973",
+      "name": "Axe",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "2",
+          "base_price": "4",
+          "throwable": "",
+          "weapon": "",
+          "icon_type": "axe",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "5",
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1974",
+      "name": "Axe",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "2",
+          "base_price": "4",
+          "throwable": "",
+          "weapon": "",
+          "icon_type": "axe",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "5",
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1975",
+      "name": "Mace",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "1",
+          "base_price": "6",
+          "weapon": "",
+          "icon_type": "mace",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "strength": "M",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "attack_speed": "3",
+          "strength": "M",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1976",
+      "name": "Mace",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "1",
+          "base_price": "6",
+          "weapon": "",
+          "icon_type": "mace",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "strength": "M",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "attack_speed": "3",
+          "strength": "M",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "2000",
+      "name": "Broadsword",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "7",
+          "base_price": "8",
+          "weapon": "",
+          "icon_type": "broadsword",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "5",
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

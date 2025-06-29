@@ -1,0 +1,18 @@
+{
+  "id": "1",
+  "name": "move H6",
+  "attributeBlocks": {
+    "this": {
+      "action": "move",
+      "strength": "H",
+      "speed": "6",
+      "character_chit": "",
+      "icon_type": "satyr",
+      "icon_folder": "custom/characters",
+      "stage": "1",
+      "level": "1",
+      "effort": "0",
+      "facing": "dark"
+    }
+  }
+}

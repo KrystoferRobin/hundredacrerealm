@@ -1,0 +1,303 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Wyrm Lancer",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn,Chapel",
+      "pronoun": "she",
+      "creator": "Roberto Ullfig",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Lance",
+      "vulnerability": "L",
+      "icon_type": "wyrm lancer",
+      "icon_folder": "custom/characters",
+      "extra_notes": ""
+    },
+    "level_1": {
+      "name": "Lancette",
+      "weapon": "Dragon Lance",
+      "badge_icon": "Wyrm_Lancerbadge1",
+      "advantages": {
+        "N0": "LANCER: Restricted from having an active Helmet, Shield, Breastplate, or Armor in inventory. [Level 1]"
+      },
+      "item_restrictions": {
+        "N0": "Helmet",
+        "N1": "Shield",
+        "N2": "Breastplate",
+        "N3": "Armor"
+      }
+    },
+    "level_2": {
+      "name": "Vorpal Runner",
+      "weapon": "Dragon Lance",
+      "badge_icon": "Wyrm_Lancerbadge2",
+      "advantages": {
+        "N0": "TREE HUGGER: Rolls 1 die instead of 2 for all rolls on the HIDE table in Woods tiles [Level 2]"
+      },
+      "diemod": {
+        "N0": "1d:hide:% woods"
+      }
+    },
+    "level_3": {
+      "name": "Deadly Impaler",
+      "weapon": "Dragon Lance"
+    },
+    "level_4": {
+      "name": "Wyrm Lancer",
+      "weapon": "Dragon Lance",
+      "badge_icon": "Wyrm_Lancerbadge4",
+      "advantages": {
+        "N0": "FOREST FRIEND: Rolls 1 die instead of 2 for all rolls on the COMMERCE, TRADE, and MEETING tables in Woods tiles. [Level 4]"
+      },
+      "diemod": {
+        "N0": "1d:commerce,trade,meeting:% woods"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "lancers": "2",
+      "bashkars": "1",
+      "guard": "-2",
+      "soldiers": "-1",
+      "patrol": "-1",
+      "warlock": "1"
+    },
+    "relationship": {
+      "lancers": "2",
+      "bashkars": "1",
+      "guard": "-2",
+      "soldiers": "-1",
+      "patrol": "-1",
+      "warlock": "1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wyrm lancer",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "wyrm lancer",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wyrm lancer",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "move L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "wyrm lancer",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "wyrm lancer",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "fight L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wyrm lancer",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "wyrm lancer",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wyrm lancer",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "wyrm lancer",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "dodge L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "dodge",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "wyrm lancer",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark",
+          "move_lock": "",
+          "box_constraint": "2"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wyrm lancer",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "fight M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "wyrm lancer",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

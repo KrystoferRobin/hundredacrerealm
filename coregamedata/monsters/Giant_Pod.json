@@ -1,0 +1,68 @@
+{
+  "id": "1424",
+  "name": "Giant Pod",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "T",
+      "fame": "8",
+      "notoriety": "8",
+      "super_realm": "",
+      "icon_type": "banebush",
+      "setup_start": "Giant Pod Box",
+      "monster_die": "6",
+      "base_price": "8",
+      "icon_folder": "wesnoth/units",
+      "needs_init": "",
+      "denizen": "",
+      "icon_size": "1",
+      "box_num": "3"
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "6",
+      "strength": "H",
+      "chit_color": "lightgreen"
+    },
+    "dark": {
+      "move_speed": "6",
+      "attack_speed": "3",
+      "strength": "RED",
+      "chit_color": "forestgreen",
+      "pins": "",
+      "kills_horse": "",
+      "destroys_armor": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1425",
+      "name": "Giant Pod Vine",
+      "attributeBlocks": {
+        "this": {
+          "monster": "",
+          "part": "",
+          "super_realm": "",
+          "icon_type": "crush-wose",
+          "icon_folder": "wesnoth/icons/attacks",
+          "icon_size": "0.6",
+          "box_num": "3"
+        },
+        "light": {
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "6",
+          "chit_color": "lightgreen",
+          "sharpness": "1"
+        },
+        "dark": {
+          "attack_speed": "4",
+          "strength": "H",
+          "length": "6",
+          "chit_color": "forestgreen",
+          "sharpness": "1"
+        }
+      }
+    }
+  ]
+}

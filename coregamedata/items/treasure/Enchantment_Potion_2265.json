@@ -1,0 +1,20 @@
+{
+  "id": "2265",
+  "name": "Enchantment Potion",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "6",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "text": "Enchant hex and enchant any of your magic chits.",
+      "discard": "warlock",
+      "potion": "",
+      "enchant": ""
+    }
+  },
+  "parts": []
+}

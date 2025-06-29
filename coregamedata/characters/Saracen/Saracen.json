@@ -1,0 +1,328 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Saracen",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn",
+      "pronoun": "he",
+      "creator": "Grant Walker",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Red Crescent",
+      "vulnerability": "L",
+      "icon_type": "saracen",
+      "icon_folder": "custom/characters"
+    },
+    "level_1": {
+      "name": "Student"
+    },
+    "level_2": {
+      "name": "Mystic",
+      "spellcount": "1",
+      "armor": "Cap",
+      "spelltypes": {
+        "N0": "VIII"
+      }
+    },
+    "level_3": {
+      "name": "Warrior of the Sands",
+      "weapon": "Scimitar",
+      "spellcount": "1",
+      "armor": "Cap,Cuirass,Buckler",
+      "badge_icon": "Saracenbadge3",
+      "spelltypes": {
+        "N0": "VIII"
+      },
+      "advantages": {
+        "N0": "PILLAGER: Raider mentality is always looking for targets which means an extra search phase."
+      },
+      "extra_actions": {
+        "N0": "S"
+      }
+    },
+    "level_4": {
+      "name": "Saracen",
+      "weapon": "Scimitar",
+      "spellcount": "1",
+      "armor": "Buckler,Cap,Cuirass",
+      "badge_icon": "Saracenbadge4",
+      "bonus_inv": "",
+      "spelltypes": {
+        "N0": "VIII"
+      },
+      "advantages": {
+        "N0": "ARABIAN STEED: Light horse carries the Saracen to war."
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "bashkars": "2",
+      "guard": "-1",
+      "patrol": "-1",
+      "shaman": "1",
+      "rogues": "1",
+      "order": "-2",
+      "lancers": "1"
+    },
+    "gamerel": {
+      "bashkars": "2",
+      "guard": "-1",
+      "patrol": "-1",
+      "shaman": "1",
+      "rogues": "1",
+      "order": "-2",
+      "lancers": "1"
+    },
+    "bonus_invlevel_4": {
+      "_gobm_xx_name": "Horse"
+    },
+    "bonus_invlevel_4this": {
+      "_gobm_xx_horse": "horse",
+      "_gobm_xx_move_bonus": "extra",
+      "_gobm_xx_vulnerability": "H",
+      "_gobm_xx_original_game": "",
+      "_gobm_xx_alt_monsters1_game": "",
+      "_gobm_xx_rw_expansion_1": "",
+      "_gobm_xx_facing": "dark",
+      "_gobm_xx__lkt_": "level_4"
+    },
+    "bonus_invlevel_4trot": {
+      "_gobm_xx_move_speed": "5",
+      "_gobm_xx_strength": "L",
+      "_gobm_xx_chit_color": "tan"
+    },
+    "bonus_invlevel_4gallop": {
+      "_gobm_xx_move_speed": "4",
+      "_gobm_xx_strength": "L",
+      "_gobm_xx_chit_color": "tan"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "FIGHT L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "saracen",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "move L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "saracen",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "2",
+          "facing": "dark",
+          "strength": "L"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "saracen",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "FIGHT L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "saracen",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "MOVE M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "saracen",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "magic VIII5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "saracen",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VIII"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "FIGHT M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "saracen",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "move L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "saracen",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "jihad M2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "jihad",
+          "strength": "M",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "saracen",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark",
+          "move_lock": "",
+          "box_constraint": "1"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "saracen",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "saracen",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "fight L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "saracen",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

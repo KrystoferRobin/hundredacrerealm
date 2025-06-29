@@ -1,0 +1,22 @@
+{
+  "id": "2242",
+  "name": "Bard's Lute",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "16",
+      "notoriety": "-5",
+      "fame": "20",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "text": "Natives become Friendly when you buy drinks.",
+      "native": "Guard",
+      "weight": "L",
+      "bards_lute": ""
+    }
+  },
+  "parts": []
+}

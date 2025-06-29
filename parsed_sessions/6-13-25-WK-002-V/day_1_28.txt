@@ -1,0 +1,80 @@
+Month 1, Day 28
+host
+========================================
+White Knight
+Spent the night at the Chapel.
+host
+Monster Die roll is Rolled 6.
+host
+7th day - denizens return to setup card:
+host
+- Guard 1
+host
+- Guard 2
+host
+- Guard HQ
+host
+- Order 1
+host
+- Order 2
+host
+- Order HQ
+White Knight
+Starts turn: Dark Valley 5
+White Knight
+The native group will be no more favorable with drinks.
+White Knight
+Hire - Buy from Order 2 (as Ally) - Boon (x 1)
+White Knight
+Buying from Order HQ.
+White Knight
+Available for sale: 3 Warhorses, Armor, Crossbow, Morning Star, 2 Great Axes, 2 Treasures, and Boon
+White Knight
+Bidding for the Warhorse
+White Knight
+Trade - Buy from Order HQ (as Ally) - Price x 3
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Dark Valley 5
+__battle__
+Battle resolving at Dark Valley 5:
+__battle__
+GROUP 1
+__battle__
+White Knight
+__battle__
+Order 2 (White Knight)
+__battle__
+Order 3 (White Knight)
+__battle__
+GROUP 2
+__battle__
+Order 1
+__battle__
+Order HQ
+White Knight
+The native group will be no more favorable with drinks.
+White Knight
+Meeting Order on the Friendly table
+White Knight
+Rolled 3, with a modifier of -1. = Price x 2
+__battle__
+=======================
+__battle__
+Evening of month 1, day 28, in clearing Dark Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+White Knight
+Presses the END combat button.
+White Knight
+Combat has ended.
+host
+========================================
+host

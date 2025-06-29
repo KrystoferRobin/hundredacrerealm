@@ -1,0 +1,18 @@
+{
+  "id": "3",
+  "name": "MOVE H6",
+  "attributeBlocks": {
+    "this": {
+      "action": "MOVE",
+      "strength": "H",
+      "speed": "6",
+      "character_chit": "",
+      "icon_type": "barbarian",
+      "icon_folder": "custom/characters",
+      "stage": "3",
+      "level": "1",
+      "effort": "0",
+      "facing": "dark"
+    }
+  }
+}

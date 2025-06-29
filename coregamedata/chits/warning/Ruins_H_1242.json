@@ -1,0 +1,83 @@
+{
+  "id": "1242",
+  "name": "Ruins H",
+  "attributeBlocks": {
+    "this": {
+      "warning": "ruins",
+      "tile_type": "H",
+      "super_realm": "",
+      "chit": "",
+      "ts_section": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1294",
+      "name": "Ghost",
+      "attributeBlocks": {
+        "this": {
+          "monster": "",
+          "vulnerability": "M",
+          "fame": "0",
+          "notoriety": "2",
+          "super_realm": "",
+          "icon_type": "ghost",
+          "setup_start": "Ruins H",
+          "base_price": "2",
+          "icon_folder": "wesnoth/units",
+          "monster_die": "99",
+          "denizen": "",
+          "icon_size": "1.2",
+          "ghost": "",
+          "undead": ""
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "H",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "2",
+          "attack_speed": "2",
+          "strength": "L",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "1295",
+      "name": "Ghost",
+      "attributeBlocks": {
+        "this": {
+          "monster": "",
+          "vulnerability": "M",
+          "fame": "0",
+          "notoriety": "2",
+          "super_realm": "",
+          "icon_type": "ghost",
+          "setup_start": "Ruins H",
+          "base_price": "2",
+          "icon_folder": "wesnoth/units",
+          "monster_die": "99",
+          "denizen": "",
+          "icon_size": "1.2",
+          "ghost": "",
+          "undead": ""
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "H",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "2",
+          "attack_speed": "2",
+          "strength": "L",
+          "chit_color": "forestgreen"
+        }
+      }
+    }
+  ]
+}

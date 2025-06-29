@@ -1,0 +1,25 @@
+{
+  "id": "2195",
+  "name": "Ice Bolt",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "duration": "attack",
+      "target": "individual",
+      "text": "MISSILE attack against a target",
+      "magic_color": "purple",
+      "sharpness": "3",
+      "strength": "L",
+      "length": "13",
+      "missile": "magic",
+      "host_okay": "",
+      "table": "magicmissil",
+      "super_realm": "",
+      "spell": "IV",
+      "super_realm_spell": "",
+      "freezing": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

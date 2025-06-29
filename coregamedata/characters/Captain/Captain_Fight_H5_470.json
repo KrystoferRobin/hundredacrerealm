@@ -1,0 +1,21 @@
+{
+  "id": "470",
+  "name": "Captain Fight H5*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "strength": "H",
+      "speed": "5",
+      "character_level": "3",
+      "effort": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "8",
+      "level": "3",
+      "icon_folder": "characters",
+      "icon_type": "captain",
+      "rw_expansion_1": ""
+    }
+  }
+}

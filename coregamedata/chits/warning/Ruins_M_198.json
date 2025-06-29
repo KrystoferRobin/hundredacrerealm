@@ -1,0 +1,15 @@
+{
+  "id": "198",
+  "name": "Ruins M",
+  "attributeBlocks": {
+    "this": {
+      "warning": "ruins",
+      "tile_type": "M",
+      "original_game": "",
+      "chit": "",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": ""
+    }
+  },
+  "parts": []
+}

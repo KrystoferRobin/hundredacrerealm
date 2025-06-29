@@ -1,0 +1,18 @@
+{
+  "id": "2052",
+  "name": "Draught of Speed",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "*'s set speed:  **=2, *=3,  =4 (discard to warlock)",
+      "base_price": "6",
+      "discard": "warlock",
+      "potion": "",
+      "chit_speed": "4,3,2",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

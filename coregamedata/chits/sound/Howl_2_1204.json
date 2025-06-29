@@ -1,0 +1,13 @@
+{
+  "id": "1204",
+  "name": "Howl 2",
+  "attributeBlocks": {
+    "this": {
+      "super_realm": "",
+      "chit": "",
+      "sound": "howl",
+      "clearing": "2"
+    }
+  },
+  "parts": []
+}

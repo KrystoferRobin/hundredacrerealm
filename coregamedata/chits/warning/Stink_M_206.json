@@ -1,0 +1,15 @@
+{
+  "id": "206",
+  "name": "Stink M",
+  "attributeBlocks": {
+    "this": {
+      "warning": "stink",
+      "tile_type": "M",
+      "original_game": "",
+      "chit": "",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": ""
+    }
+  },
+  "parts": []
+}

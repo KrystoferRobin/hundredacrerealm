@@ -1,0 +1,312 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Wizard of Old",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn,Guard,House",
+      "pronoun": "he",
+      "creator": "Casey C. Benn",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Celestial Vision",
+      "vulnerability": "M",
+      "icon_type": "wizard of old",
+      "icon_folder": "custom/characters",
+      "magicuser": "",
+      "extra_notes": "The Old Wizard is Powerful and Experienced"
+    },
+    "level_1": {
+      "name": "Apprentice"
+    },
+    "level_2": {
+      "name": "Scholar",
+      "badge_icon": "Wizard_of_Oldbadge2",
+      "spellcount": "1",
+      "advantages": {
+        "N0": "LORE: Roll 1 die instead of 2 for all Reading Runes die rolls."
+      },
+      "diemod": {
+        "N0": "1d:readrunes:all"
+      },
+      "spelltypes": {
+        "N0": "VIII"
+      }
+    },
+    "level_3": {
+      "name": "Wise One",
+      "spellcount": "2",
+      "badge_icon": "Wizard_of_Oldbadge3",
+      "no_spx": "",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "III",
+        "N2": "VIII"
+      },
+      "advantages": {
+        "N0": "AURA OF POWER: Can wield Magic Readily. SPX not needed to Enchant"
+      }
+    },
+    "level_4": {
+      "name": "Wizard of Old",
+      "spellcount": "3",
+      "badge_icon": "Wizard_of_Oldbadge4",
+      "knows_roads": "",
+      "weapon": "Staff",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "III",
+        "N2": "IV",
+        "N3": "VIII"
+      },
+      "advantages": {
+        "N0": "EXPERIENCE: Use secret passages and hidden paths freely"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "warlock": "-1",
+      "lancers": "-2",
+      "company": "-1",
+      "bashkars": "-1",
+      "woodfolk": "1",
+      "patrol": "1",
+      "soldiers": "1",
+      "guard": "2"
+    },
+    "relationship": {
+      "warlock": "-1",
+      "lancers": "-2",
+      "company": "-1",
+      "bashkars": "-1",
+      "woodfolk": "1",
+      "patrol": "1",
+      "soldiers": "1",
+      "guard": "2"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "wizard of old",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wizard of old",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight M3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "wizard of old",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wizard of old",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wizard of old",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "magic VIII4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wizard of old",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VIII"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "magic II4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wizard of old",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "magic II3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "wizard of old",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic III4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wizard of old",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "magic III3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "wizard of old",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic IV4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wizard of old",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "IV"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic IV3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "wizard of old",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "IV"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

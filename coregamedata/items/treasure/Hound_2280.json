@@ -1,0 +1,38 @@
+{
+  "id": "2280",
+  "name": "Hound",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "text": "Use to lure monsters to separate combat sheet",
+      "base_price": "10",
+      "facing": "face_dn",
+      "fame": "2",
+      "summon_companion": "Hound",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "native": "Hunters"
+    },
+    "companion": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "0",
+      "notoriety": "0",
+      "icon_type": "Era_of_Chaos-animals-hound",
+      "icon_folder": "wesnoth/units/addons",
+      "denizen": "",
+      "hound": "",
+      "super_realm": ""
+    },
+    "companion_light": {
+      "move_speed": "2",
+      "chit_color": "lightgreen"
+    },
+    "companion_dark": {
+      "move_speed": "2",
+      "chit_color": "lightgreen"
+    }
+  },
+  "parts": []
+}

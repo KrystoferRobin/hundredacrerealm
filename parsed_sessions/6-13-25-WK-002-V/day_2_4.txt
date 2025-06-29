@@ -1,0 +1,22 @@
+Month 2, Day 4
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+White Knight
+Starts turn: Linden Woods 5
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Search - Peer Neighboring Clearing - Deep Woods 2: Clues
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: High Pass 5
+host
+========================================
+host

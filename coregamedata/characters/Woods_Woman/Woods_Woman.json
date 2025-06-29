@@ -1,0 +1,342 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Woods Woman",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "woods woman",
+      "character": "",
+      "vulnerability": "L",
+      "start": "Inn,House",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "she",
+      "alt_monsters1_game": "",
+      "fighter": "",
+      "icon_folder": "custom/characters",
+      "creator": "Richard Hamblen",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Erosia: Love and Earth",
+      "rw_expansion_1": "",
+      "custom_character": ""
+    },
+    "level_1": {
+      "name": "Maid"
+    },
+    "level_2": {
+      "name": "Sprite",
+      "diemod": {
+        "N0": "1d:hide,locate,loot,peer,readrunes,magicsight,meeting,commerce:% woods",
+        "N1": "1d:hide,locate,loot,peer,readrunes,magicsight,meeting,commerce:% forest",
+        "N2": "1d:hide,locate,loot,peer,readrunes,magicsight,meeting,commerce:grove"
+      },
+      "advantages": {
+        "N0": "TRACKING SKILLS:  When on any tile labeled WOODS, roll 1 die instead of 2 for all Search, Hide, and Meeting die rolls."
+      }
+    },
+    "level_3": {
+      "name": "Huntress",
+      "weapon": "Light Bow"
+    },
+    "level_4": {
+      "name": "Woods Woman",
+      "weapon": "Light Bow",
+      "diemod": {
+        "N0": "1d:missile:all"
+      },
+      "advantages": {
+        "N0": "ARCHER:  Roll 1 die instead of 2 on the Missile Table."
+      }
+    },
+    "optional_2": {
+      "optkey": "OptCharWoodsgirl",
+      "diemod": {
+        "N0": "1d:hide,locate,loot,peer,readrunes,magicsight,meeting,commerce:&gt;woods"
+      },
+      "advantages": {
+        "N0": "EXPERT WOODCRAFT:  When on a Woods clearing (except on the RUINS and VALLEY tiles), roll 1 die instead of 2 for all Search, Hide, and Meeting rolls."
+      }
+    },
+    "relationship": {
+      "bashkars": "-2",
+      "soldiers": "-1",
+      "woodfolk": "2",
+      "lancers": "1",
+      "warlock": "-1"
+    },
+    "gamerel": {
+      "bashkars": "-2",
+      "soldiers": "-1",
+      "woodfolk": "2",
+      "lancers": "1",
+      "warlock": "-1"
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "Woodsgirl Move L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "3",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "woods woman",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "Woodsgirl Move L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "4",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "woods woman",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Woodsgirl Move L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "2",
+          "character_level": "1",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "woods woman",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "Woodsgirl Fight L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "woods woman",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Woodsgirl Move L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "2",
+          "character_level": "2",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "woods woman",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "move M4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "character_level": "2",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "woods woman",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "Woodsgirl Fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "character_level": "3",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "woods woman",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "Woodsgirl Fight M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "woods woman",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "Woodsgirl Fight L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "woods woman",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "Woodsgirl Move L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "3",
+          "character_level": "4",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "woods woman",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "Woodsgirl Fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "4",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "woods woman",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "Woodsgirl Fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "character_level": "4",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "woods woman",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

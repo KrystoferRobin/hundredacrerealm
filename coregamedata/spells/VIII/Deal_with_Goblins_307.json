@@ -1,0 +1,22 @@
+{
+  "id": "307",
+  "name": "Deal with Goblins",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "day",
+      "target": "goblins",
+      "text": "Group becomes NEUTRAL (can TRADE/HIRE)",
+      "magic_color": "black",
+      "original_game": "",
+      "pacify": "0",
+      "host_okay": "",
+      "alt_monsters1_game": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

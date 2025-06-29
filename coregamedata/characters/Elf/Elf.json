@@ -1,0 +1,336 @@
+{
+  "ids": [
+    "419",
+    "1541"
+  ],
+  "name": "Elf",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "elf",
+      "character": "",
+      "vulnerability": "L",
+      "start": "Inn",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "he",
+      "alt_monsters1_game": "",
+      "magicuser": "",
+      "light_great": "",
+      "icon_folder": "characters",
+      "creator": "Richard Hamblen",
+      "artcredit": "Steve Bickel",
+      "meaning": "Sextile: Half-human",
+      "rw_expansion_1": ""
+    },
+    "level_1": {
+      "name": "Stripling",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "III",
+        "N1": "VII"
+      }
+    },
+    "level_2": {
+      "name": "Faerie",
+      "spellcount": "2",
+      "extra_actions": {
+        "N0": "H"
+      },
+      "spelltypes": {
+        "N0": "III",
+        "N1": "VII"
+      },
+      "advantages": {
+        "N0": "ELUSIVENESS:  Get one extra HIDE phase every day."
+      }
+    },
+    "level_3": {
+      "name": "Hunter",
+      "weapon": "Light Bow",
+      "spellcount": "2",
+      "spelltypes": {
+        "N0": "III",
+        "N1": "VII"
+      }
+    },
+    "level_4": {
+      "name": "Elf",
+      "weapon": "Light Bow",
+      "spellcount": "2",
+      "diemod": {
+        "N0": "1d:missile:all"
+      },
+      "spelltypes": {
+        "N0": "III",
+        "N1": "VII"
+      },
+      "advantages": {
+        "N0": "ARCHER:  Roll 1 die instead of 2 on the Missile Table."
+      }
+    },
+    "relationship": {
+      "woodfolk": "2",
+      "bashkars": "1",
+      "order": "-1",
+      "scholar": "-1",
+      "lancers": "-2"
+    }
+  },
+  "parts": [
+    {
+      "id": "523",
+      "name": "Elf Magic III3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "magic": "III",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "elf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "524",
+      "name": "Elf Magic III4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "magic": "III",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "elf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "525",
+      "name": "Elf Magic VII4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "magic": "VII",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "elf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "526",
+      "name": "Elf Magic VII3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "magic": "VII",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "elf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "527",
+      "name": "Elf Magic III3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "magic": "III",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "elf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "528",
+      "name": "Elf Magic III2*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "2",
+          "magic": "III",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "elf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "529",
+      "name": "Elf Move L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "3",
+          "strength": "L",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "elf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "530",
+      "name": "Elf Fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "3",
+          "strength": "L",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "elf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "531",
+      "name": "Elf Move L2*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "2",
+          "strength": "L",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "restrict": "light",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "elf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "532",
+      "name": "Elf Move M4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "strength": "M",
+          "character_level": "4",
+          "original_game": "",
+          "restrict": "great",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "elf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "533",
+      "name": "Elf Fight M3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "3",
+          "strength": "M",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "restrict": "great",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "elf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "534",
+      "name": "Elf Fight M4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "strength": "M",
+          "character_level": "4",
+          "original_game": "",
+          "restrict": "great",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "elf",
+          "rw_expansion_1": ""
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

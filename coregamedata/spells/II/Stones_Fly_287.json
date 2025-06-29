@@ -1,0 +1,26 @@
+{
+  "id": "287",
+  "name": "Stones Fly",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "attack",
+      "target": "multiple",
+      "text": "MISSILE attack on each target (specify)",
+      "magic_color": "gray",
+      "sharpness": "1",
+      "strength": "L",
+      "original_game": "",
+      "length": "15",
+      "missile": "magic",
+      "min_targets": "4",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "rw_expansion_1": "",
+      "table": "magicmissil",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

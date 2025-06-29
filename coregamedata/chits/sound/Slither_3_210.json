@@ -1,0 +1,15 @@
+{
+  "id": "210",
+  "name": "Slither 3",
+  "attributeBlocks": {
+    "this": {
+      "sound": "slither",
+      "clearing": "3",
+      "original_game": "",
+      "chit": "",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": ""
+    }
+  },
+  "parts": []
+}

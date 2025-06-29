@@ -1,0 +1,67 @@
+{
+  "id": "1314",
+  "name": "Minotaur",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "H",
+      "fame": "5",
+      "notoriety": "5",
+      "super_realm": "",
+      "icon_type": "minotaurKing",
+      "setup_start": "Maze",
+      "monster_die": "6",
+      "base_price": "5",
+      "icon_folder": "wesnoth/units",
+      "needs_init": "",
+      "denizen": "",
+      "icon_size": "0.8",
+      "weapon_use": "",
+      "minotaur": ""
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "5",
+      "strength": "T",
+      "chit_color": "tan",
+      "length": "5",
+      "sharpness": "1",
+      "move_strength": "T"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "4",
+      "strength": "T",
+      "chit_color": "brown",
+      "sharpness": "1",
+      "length": "5",
+      "move_strength": "T"
+    }
+  },
+  "parts": [
+    {
+      "id": "1315",
+      "name": "Minotaur Shield",
+      "attributeBlocks": {
+        "this": {
+          "monster": "",
+          "part": "",
+          "shield": "",
+          "vulnerability": "T",
+          "icon_type": "shield_polished",
+          "icon_folder": "wesnoth/icons",
+          "super_realm": "",
+          "icon_size": "0.6"
+        },
+        "intact": {
+          "strength": "T",
+          "chit_color": "tan"
+        },
+        "damaged": {
+          "strength": "T",
+          "chit_color": "tan"
+        }
+      }
+    }
+  ]
+}

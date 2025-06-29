@@ -1,0 +1,20 @@
+{
+  "id": "2065",
+  "name": "Royal Sceptre",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "8",
+      "weight": "L",
+      "text": "Extra HIRE",
+      "great": "",
+      "fame": "20",
+      "notoriety": "-15",
+      "native": "Guard",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

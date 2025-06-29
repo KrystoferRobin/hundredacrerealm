@@ -1,0 +1,48 @@
+Month 1, Day 1
+host
+========================================
+host
+New player joins: Krystofer
+host
+Monster Die roll is Rolled 6.
+Magician
+Starts turn: Curst Valley 5
+Magician
+Move - moved
+Magician
+Move - moved
+Magician
+Move - moved
+Magician
+Move - moved
+Magician
+Ends turn: Curst Valley 1
+__battle__
+Battle resolving at Curst Valley 1:
+__battle__
+GROUP 1
+__battle__
+Magician
+__battle__
+=======================
+__battle__
+Evening of month 1, day 1, in clearing Curst Valley 1
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Magician
+Presses the END combat button.
+Magician
+Combat has ended.
+host
+========================================
+host

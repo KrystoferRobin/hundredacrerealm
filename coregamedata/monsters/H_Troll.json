@@ -1,0 +1,37 @@
+{
+  "id": "1474",
+  "name": "H Troll",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "armored": "",
+      "vulnerability": "H",
+      "fame": "5",
+      "notoriety": "5",
+      "icon_type": "troll",
+      "setup_start": "H Trolls Box",
+      "monster_die": "4",
+      "base_price": "5",
+      "icon_folder": "wesnoth/units",
+      "denizen": "",
+      "super_realm": "",
+      "icon_size": "0.9",
+      "icon_y_offset": "5",
+      "troll": "",
+      "box_num": "2"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "M",
+      "chit_color": "gray"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "5",
+      "strength": "H",
+      "chit_color": "darkgray"
+    }
+  },
+  "parts": []
+}

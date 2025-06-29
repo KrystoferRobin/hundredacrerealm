@@ -1,0 +1,21 @@
+{
+  "id": "632",
+  "name": "Blunting",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "combat",
+      "target": "clearing",
+      "text": "All weapons and denizens lose one Sharpness star",
+      "magic_color": "gold",
+      "rw_expansion_1": "",
+      "author": "Deric Page",
+      "c_spell_effect": "blunted",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

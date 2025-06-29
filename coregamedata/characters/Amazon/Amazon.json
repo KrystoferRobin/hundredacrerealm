@@ -1,0 +1,314 @@
+{
+  "ids": [
+    "425",
+    "1547"
+  ],
+  "name": "Amazon",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "amazon",
+      "character": "",
+      "vulnerability": "M",
+      "start": "Inn",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "she",
+      "alt_monsters1_game": "",
+      "fighter": "",
+      "icon_folder": "characters",
+      "meaning": "Sword and Shield",
+      "creator": "Richard Hamblen",
+      "artcredit": "Ralph King",
+      "rw_expansion_1": ""
+    },
+    "level_1": {
+      "name": "Scout",
+      "weapon": "Light Bow"
+    },
+    "level_2": {
+      "name": "Warrior",
+      "weapon": "Spear",
+      "armor": "Helmet,Breastplate,Shield",
+      "diemod": {
+        "N0": "-1:missile,thrown:all"
+      },
+      "advantages": {
+        "N0": "AIM:  Subtract 1 from all Missile Table die rolls."
+      }
+    },
+    "level_3": {
+      "name": "Champion",
+      "weapon": "Spear",
+      "armor": "Helmet,Breastplate,Shield"
+    },
+    "level_4": {
+      "name": "Amazon",
+      "weapon": "Short Sword",
+      "armor": "Helmet,Breastplate,Shield",
+      "extra_actions": {
+        "N0": "M"
+      },
+      "advantages": {
+        "N0": "STAMINA:  Get one extra MOVE phase every day."
+      }
+    },
+    "relationship": {
+      "lancers": "1",
+      "patrol": "1",
+      "shaman": "1",
+      "company": "-1",
+      "bashkars": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "451",
+      "name": "Amazon Move M4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "amazon",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "452",
+      "name": "Amazon Move M3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "3",
+          "character_level": "1",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "amazon",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "453",
+      "name": "Amazon Fight L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "amazon",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "454",
+      "name": "Amazon Move M4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "amazon",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "455",
+      "name": "Amazon Fight M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "amazon",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "456",
+      "name": "Amazon Fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "2",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "amazon",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "457",
+      "name": "Amazon Move M3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "3",
+          "character_level": "3",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "amazon",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "458",
+      "name": "Amazon Fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_level": "3",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "amazon",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "459",
+      "name": "Amazon Fight H4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "H",
+          "speed": "4",
+          "character_level": "3",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "amazon",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "460",
+      "name": "Amazon Fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "4",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "amazon",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "461",
+      "name": "Amazon Fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_level": "4",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "amazon",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "462",
+      "name": "Amazon Move M3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "3",
+          "character_level": "4",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "amazon",
+          "rw_expansion_1": ""
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

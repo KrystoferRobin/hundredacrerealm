@@ -1,0 +1,24 @@
+Month 3, Day 27
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Elf
+Starts turn: Deep Woods 2
+Elf
+Move - moved
+Elf
+Search - Peer - Found hidden enemies
+Elf
+Search - Peer - Found hidden enemies
+Elf
+Search - Peer - Found hidden enemies
+Elf
+Hide - Succeeded
+Elf
+Ends turn: Deep Woods 3
+host
+Giant Bat is added to Deep Woods, clearing 1
+host
+========================================
+host

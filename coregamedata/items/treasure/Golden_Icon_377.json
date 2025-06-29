@@ -1,0 +1,22 @@
+{
+  "id": "377",
+  "name": "Golden Icon",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "100",
+      "notoriety": "20",
+      "fame": "-10",
+      "great": "",
+      "weight": "T",
+      "original_game": "",
+      "color_source": "gray",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "nosecret": "",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "190",
+  "name": "Bones M",
+  "attributeBlocks": {
+    "this": {
+      "warning": "bones",
+      "tile_type": "M",
+      "original_game": "",
+      "chit": "",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": ""
+    }
+  },
+  "parts": []
+}

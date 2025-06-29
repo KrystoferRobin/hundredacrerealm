@@ -1,0 +1,17 @@
+{
+  "id": "368",
+  "name": "Map of Lost City",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "3",
+      "text": "-1 to LOCATE rolls in LOST CITY",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

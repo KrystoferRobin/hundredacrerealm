@@ -1,0 +1,44 @@
+{
+  "id": "2076",
+  "name": "Dragonfang Necklace",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "8",
+      "notoriety": "12",
+      "magic_color": "purple",
+      "text": "Control one dragon (in purple)",
+      "great": "",
+      "fame": "12",
+      "native": "Lancers",
+      "target": "uncontrolled monster",
+      "targeted_monsters": "dragon, drake, wyrm",
+      "magic": "*",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "2101",
+      "name": "Control Dragon",
+      "attributeBlocks": {
+        "this": {
+          "duration": "day",
+          "target": "uncontrolled monster",
+          "targeted_monsters": "dragon, drake, wyrm",
+          "text": "Control ONE Dragon",
+          "magic_color": "purple",
+          "control": "",
+          "host_okay": "",
+          "spell": "*",
+          "awakened": "",
+          "no_cancel": "",
+          "benevolent": "",
+          "super_realm": ""
+        }
+      }
+    }
+  ]
+}

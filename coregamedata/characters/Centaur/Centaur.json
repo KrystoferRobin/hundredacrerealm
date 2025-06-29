@@ -1,0 +1,300 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Centaur",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn,House",
+      "pronoun": "she",
+      "creator": "Robin Warren",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "The Archer",
+      "vulnerability": "H",
+      "icon_type": "centaur",
+      "icon_folder": "custom/characters",
+      "extra_notes": "A modification of an original design by John Hickman."
+    },
+    "level_1": {
+      "name": "Foal",
+      "badge_icon": "Centaurbadge1",
+      "advantages": {
+        "N0": "HORSE BODY: The Centaur cannot equip a Suit of Armor, and cannot ride a horse of any kind."
+      },
+      "item_restrictions": {
+        "N0": "Horse",
+        "N1": "Pony",
+        "N2": "Armor",
+        "N3": "Warhorse"
+      }
+    },
+    "level_2": {
+      "name": "Mare",
+      "weapon": "Mace",
+      "badge_icon": "Centaurbadge2",
+      "advantages": {
+        "N0": "HORSE ENDURANCE: Gets an extra MOVE phase."
+      },
+      "extra_actions": {
+        "N0": "M"
+      }
+    },
+    "level_3": {
+      "name": "Ranger",
+      "weapon": "Mace",
+      "armor": "Breastplate"
+    },
+    "level_4": {
+      "name": "Centaur",
+      "weapon": "Light Bow",
+      "armor": "Breastplate",
+      "badge_icon": "Centaurbadge4",
+      "fight_no_weapon": "",
+      "advantages": {
+        "N0": "HOOVES: The centaur can attack without a weapon, for the full amount of harm and speed listed on the chit (zero sharpness, zero length)"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "woodfolk": "1",
+      "bashkars": "-1",
+      "lancers": "-1",
+      "crone": "-1",
+      "scholar": "1",
+      "patrol": "1"
+    },
+    "relationship": {
+      "woodfolk": "1",
+      "bashkars": "-1",
+      "lancers": "-1",
+      "crone": "-1",
+      "scholar": "1",
+      "patrol": "1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "MOVE H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "centaur",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "6",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "centaur"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "centaur",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "centaur"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "FIGHT H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "centaur",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "6",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "centaur"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "MOVE H4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "centaur",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "centaur"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "FIGHT H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "centaur",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "centaur"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "FIGHT H4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "centaur",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "centaur"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "MOVE H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "centaur",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "6",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "centaur"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "centaur",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "action": "fight",
+          "strength": "H",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "centaur"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "FIGHT H4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "centaur",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "centaur"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "MOVE H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "centaur",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "centaur"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "MOVE H4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "centaur",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "centaur"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "FIGHT H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "centaur",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "6",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "centaur"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

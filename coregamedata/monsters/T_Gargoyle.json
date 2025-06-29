@@ -1,0 +1,42 @@
+{
+  "id": "1328",
+  "name": "T Gargoyle",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "T",
+      "fame": "8",
+      "notoriety": "8",
+      "super_realm": "",
+      "icon_type": "marlgoyle",
+      "setup_start": "T Gargoyle Box",
+      "monster_die": "3",
+      "flying": "",
+      "base_price": "8",
+      "icon_folder": "wesnoth/units",
+      "needs_init": "",
+      "denizen": "",
+      "icon_size": "1",
+      "icon_y_offset": "5",
+      "gargoyle": "",
+      "box_num": "3",
+      "armored": ""
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "5",
+      "chit_color": "purple",
+      "strength": "H"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": "",
+      "kills_horse": "",
+      "destroys_armor": ""
+    }
+  },
+  "parts": []
+}

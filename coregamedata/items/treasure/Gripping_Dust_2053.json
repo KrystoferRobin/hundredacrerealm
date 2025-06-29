@@ -1,0 +1,19 @@
+{
+  "id": "2053",
+  "name": "Gripping Dust",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Weapon stays alerted (discard to warlock)",
+      "base_price": "5",
+      "discard": "warlock",
+      "potion": "",
+      "alerted_weapon": "",
+      "sticks_weapon": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

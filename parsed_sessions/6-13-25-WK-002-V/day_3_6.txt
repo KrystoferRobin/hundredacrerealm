@@ -1,0 +1,28 @@
+Month 3, Day 6
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+White Knight
+Starts turn: High Pass 4
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Hide - Succeeded
+White Knight
+After resting, these chits were made active: FIGHT H5*
+White Knight
+Rest - Rested 1 asterisk
+White Knight
+Search - Locate - Discover chit(s) - Found Statue
+White Knight
+Ends turn: Deep Woods 2
+White Knight
+Reveals: Statue
+White Knight
+Reveals: Bones M
+host
+========================================
+host

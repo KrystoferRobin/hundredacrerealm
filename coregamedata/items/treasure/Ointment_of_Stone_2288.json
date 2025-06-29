@@ -1,0 +1,21 @@
+{
+  "id": "2288",
+  "name": "Ointment of Stone",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "4",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "text": "Active armor cannot be damaged (can still be destroyed)",
+      "discard": "priest",
+      "potion": "",
+      "ointment_of_stone": "",
+      "sticks_armor": ""
+    }
+  },
+  "parts": []
+}

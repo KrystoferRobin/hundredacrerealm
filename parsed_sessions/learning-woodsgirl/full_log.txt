@@ -1,0 +1,3367 @@
+1683
+host
+New player joins: Krystofer
+Woods Girl
+Joins the game.
+host
+Host has started the game.
+host
+Visitor/Mission/Campaign chits are placed at random.
+host
+========================================
+host
+Month 1, Day 1
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Curst Valley 5
+Woods Girl
+Buying from Rogue HQ.
+Woods Girl
+Available for sale: 6 Horses, and 2 Treasures
+Woods Girl
+Bidding for a treasure
+Woods Girl
+The Woods Girl chose not to buy drinks.
+Woods Girl
+Trade - Buy from Rogue HQ (as Neutral) - No Deal
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Mountain 5
+Woods Girl
+Reveals: Flutter 2
+Woods Girl
+Reveals: Stink M
+host
+H Flying Dragon is added to Mountain, clearing 2
+host
+H Flying Dragon is added to Mountain, clearing 2
+__battle__
+Battle resolving at Mountain 5:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+=======================
+__battle__
+Evening of month 1, day 1, in clearing Mountain 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host
+Month 1, Day 2
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Mountain 5
+Woods Girl
+Hide - Failed
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Mountain 4
+__battle__
+Battle resolving at Mountain 4:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+=======================
+__battle__
+Evening of month 1, day 2, in clearing Mountain 4
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host
+Month 1, Day 3
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Mountain 4
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Deep Woods 5
+host
+========================================
+host
+Month 1, Day 4
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Deep Woods 5
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Search - Peer - Choice - Clues and Found 1 path(s)
+Woods Girl
+Ends turn: Deep Woods 1
+Woods Girl
+Reveals: Vault
+Woods Girl
+Reveals: Smoke M
+host
+========================================
+host
+Month 1, Day 5
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Deep Woods 1
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Search - Peer - Found hidden enemies and Found 1 path(s)
+Woods Girl
+Search - Locate - Choice - Discover chit(s) - none to discover
+Woods Girl
+Ends turn: Ruins 5
+Woods Girl
+Reveals: Flutter 1
+Woods Girl
+Reveals: Smoke C
+host
+Giant Bat is added to Ruins, clearing 1
+host
+========================================
+host
+Month 1, Day 6
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Ruins 5
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Ruins 2
+host
+========================================
+host
+Month 1, Day 7
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+host
+7th day - denizens return to setup card:
+host
+ - Soldier 1
+host
+ - Soldier 2
+host
+ - Soldier 3
+host
+ - Soldier HQ
+Woods Girl
+Starts turn: Ruins 2
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Search - Peer - Found hidden enemies and Found 1 path(s)
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Cliff 2
+host
+========================================
+host
+Month 1, Day 8
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Cliff 2
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: High Pass 2
+host
+========================================
+host
+Month 1, Day 9
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: High Pass 2
+Woods Girl
+Search - Locate - Passage(s)
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Ends turn: High Pass 2
+host
+========================================
+host
+Month 1, Day 10
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: High Pass 2
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Hide - Failed
+Woods Girl
+Ends turn: Cliff 3
+Woods Girl
+Reveals: Lost Castle
+Woods Girl
+Reveals: Ruins M
+host
+H Serpent is added to Cliff, clearing 3
+host
+H Serpent is added to Cliff, clearing 3
+host
+H Serpent blocks the Woods Girl
+host
+H Serpent blocks the Woods Girl
+__battle__
+Battle resolving at Cliff 3:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  H Serpent
+__battle__
+  H Serpent
+__battle__
+=======================
+__battle__
+Evening of month 1, day 10, in clearing Cliff 3
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+Woods Girl
+Ran away!
+Woods Girl
+Fatiguing 1 asterisk.
+Woods Girl
+After fatiguing, these chits were moved to fatigue: MOVE L3*
+host
+========================================
+host
+Month 1, Day 11
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Between Cliff 5 and Cliff 3
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: High Pass 2
+host
+========================================
+host
+Month 1, Day 12
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: High Pass 2
+Woods Girl
+Search - Locate - Passage(s)
+Woods Girl
+Search - Locate - Choice - Discover chit(s) - Found Statue
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: High Pass 2
+host
+========================================
+host
+Month 1, Day 13
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: High Pass 2
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Hide - Failed
+Woods Girl
+Ends turn: High Pass 2
+Woods Girl
+Reveals: Bones C
+host
+========================================
+host
+Month 1, Day 14
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+host
+7th day - denizens return to setup card:
+host
+ - Rogue 1
+host
+ - Rogue 2
+host
+ - Rogue 3
+host
+ - Rogue 4
+host
+ - Rogue 5
+host
+ - Rogue 6
+host
+ - Rogue 7
+host
+ - Rogue HQ
+Woods Girl
+Starts turn: High Pass 2
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Hide - Failed
+Woods Girl
+Ends turn: High Pass 2
+host
+Imp blocks the Woods Girl
+__battle__
+Battle resolving at High Pass 2:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  Imp
+__battle__
+=======================
+__battle__
+Evening of month 1, day 14, in clearing High Pass 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+__battle__
+ - - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the Imp
+__battle__
+ - - - - - Positioning
+__battle__
+ - - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 1
+Imp
+Changes tactics:  Imp M4 
+__battle__
+ - - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+    Attack Length=14, Speed=3
+__battle__
+        Woods Girl L3  vs. Imp Speed 3 
+__battle__
+        Missed! (Speed 3 is not faster than Speed 3)
+__battle__
+>
+__battle__
+    Attack Length=0, Speed=4
+__battle__
+        Imp M4  vs. Woods Girl Speed 4 
+__battle__
+        Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Imp won't disengage when fighting a character
+__battle__
+1 consecutive round of no damage, fatigue, or spellcasting.
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+__battle__
+ - - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the Imp
+__battle__
+ - - - - - Positioning
+__battle__
+ - - - - - Reposition/Tactics
+__battle__
+ - - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+    Attack Speed=1, Length=14
+__battle__
+        Woods Girl L1**  vs. Imp Speed 3 
+__battle__
+        Undercut! (Speed 1 is faster than Speed 3)
+__battle__
+        Initial harm: L+2
+__battle__
+        Missile roll: Rolled 1 (red).
+__battle__
+        Missile table result: 1 = Increase 2 levels
+__battle__
+        Imp is hit with H+2 harm along box 3
+__battle__
+        Imp was killed!
+__battle__
+>
+__battle__
+    Attack Speed=4, Length=0
+__battle__
+        Imp M4  vs. Woods Girl Speed 3 
+__battle__
+        Attack Cancelled:  Imp was already killed by Woods Girl.
+__battle__
+The Woods Girl gets 2 fame (x 1) and 1 notoriety (x 1) for the death of the Imp
+Woods Girl
+Fatiguing 1 asterisk.
+Woods Girl
+After fatiguing, these chits were moved to fatigue: MOVE L3*
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Woods Girl disengages because target is dead
+__battle__
+Imp is dead.  Killed by Woods Girl
+__battle__
+-----------------------
+__battle__
+--  Combat Round 3
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host
+Month 1, Day 15
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: High Pass 2
+Woods Girl
+After resting, these chits were made active: MOVE L3*, and MOVE L3*
+Woods Girl
+Rest - Rested 2 asterisks
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Hide - Failed
+Woods Girl
+Ends turn: High Pass 2
+host
+========================================
+host
+Month 1, Day 16
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Woods Girl
+Starts turn: High Pass 2
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: High Pass 2
+host
+========================================
+host
+Month 1, Day 17
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: High Pass 2
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Search - Loot the Statue - Found Treasure
+Woods Girl
+Activates Elven Slippers
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: High Pass 2
+host
+========================================
+host
+Month 1, Day 18
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: High Pass 2
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: High Pass 2
+host
+========================================
+host
+Month 1, Day 19
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: High Pass 2
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Borderland 1
+host
+========================================
+host
+Month 1, Day 20
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Borderland 1
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Curst Valley 1
+host
+========================================
+host
+Month 1, Day 21
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+host
+7th day - denizens return to setup card:
+host
+ - Rogue 1
+host
+ - Rogue 2
+host
+ - Rogue 3
+host
+ - Rogue 4
+host
+ - Rogue 5
+host
+ - Rogue 6
+host
+ - Rogue 7
+host
+ - Rogue HQ
+host
+ - Imp
+Woods Girl
+Starts turn: Curst Valley 1
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Crag 2
+Woods Girl
+Reveals: Cairns
+Woods Girl
+Reveals: Dank M
+host
+H Spider is added to Crag, clearing 2
+host
+H Spider blocks the Woods Girl
+__battle__
+Battle resolving at Crag 2:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  H Spider
+__battle__
+=======================
+__battle__
+Evening of month 1, day 21, in clearing Crag 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+__battle__
+ - - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the H Spider
+__battle__
+ - - - - - Positioning
+__battle__
+ - - - - - Reposition/Tactics
+__battle__
+ - - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+    Attack Length=14, Speed=3
+__battle__
+        Woods Girl L3  vs. H Spider Speed 3 
+__battle__
+        Missed! (Speed 3 is not faster than Speed 3)
+__battle__
+>
+__battle__
+    Attack Length=0, Speed=4
+__battle__
+        H Spider L4  vs. Woods Girl Speed 2 
+__battle__
+        Missed! (Speed 4 is not faster than Speed 2)
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+H Spider won't disengage when fighting a character
+__battle__
+1 consecutive round of no damage, fatigue, or spellcasting.
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+__battle__
+ - - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the H Spider
+__battle__
+ - - - - - Positioning
+__battle__
+ - - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 1
+H Spider
+Changes tactics:  H Spider T6 
+__battle__
+ - - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+    Attack Speed=1, Length=14
+__battle__
+        Woods Girl L1**  vs. H Spider Speed 4 
+__battle__
+        Undercut! (Speed 1 is faster than Speed 4)
+__battle__
+        Initial harm: L+2
+__battle__
+        Missile roll: Rolled 6 (red).
+__battle__
+        Missile table result: 6 = Decrease 3 levels
+__battle__
+        H Spider is hit with neg harm along box 3
+__battle__
+        H Spider was not killed.
+__battle__
+>
+__battle__
+    Attack Speed=6, Length=0
+__battle__
+        H Spider T6  vs. Woods Girl Speed 2 
+__battle__
+        Missed! (Speed 6 is not faster than Speed 2)
+host
+========================================
+host
+Month 1, Day 22
+host
+========================================
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+H Spider won't disengage when fighting a character
+__battle__
+2 consecutive rounds of no damage, fatigue, or spellcasting.
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Crag 2
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Hide - N/A
+Woods Girl
+Hide - N/A
+Woods Girl
+Ends turn: Crag 2
+__battle__
+Battle resolving at Crag 2:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  H Spider
+__battle__
+=======================
+__battle__
+Evening of month 1, day 22, in clearing Crag 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+__battle__
+ - - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the H Spider
+Woods Girl
+Becomes unhidden.
+__battle__
+ - - - - - Positioning
+__battle__
+ - - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 3
+H Spider
+Changes tactics:  H Spider T6 
+__battle__
+ - - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+    Attack Length=14, Speed=3
+__battle__
+        Woods Girl L3  vs. H Spider Speed 4 
+__battle__
+        Undercut! (Speed 3 is faster than Speed 4)
+__battle__
+        Initial harm: L
+__battle__
+        Missile roll: Rolled 5 (red).
+__battle__
+        Missile table result: 5 = Decrease 2 levels
+__battle__
+        H Spider is hit with neg harm along box 1
+__battle__
+        H Spider was not killed.
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+1 consecutive round of no damage, fatigue, or spellcasting.
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+__battle__
+ - - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the H Spider
+__battle__
+ - - - - - Positioning
+__battle__
+ - - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 2
+H Spider
+Changes tactics:  H Spider L4 
+__battle__
+ - - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+    Attack Speed=3, Length=14
+__battle__
+        Woods Girl L3  vs. H Spider Speed 3 
+__battle__
+        Missed! (Speed 3 is not faster than Speed 3)
+__battle__
+>
+__battle__
+    Attack Speed=4, Length=0
+__battle__
+        H Spider L4  vs. Woods Girl Speed 2 
+__battle__
+        Missed! (Speed 4 is not faster than Speed 2)
+host
+========================================
+host
+Month 1, Day 23
+host
+========================================
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+H Spider won't disengage when fighting a character
+__battle__
+2 consecutive rounds of no damage, fatigue, or spellcasting.
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Crag 2
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Hide - N/A
+Woods Girl
+Hide - N/A
+Woods Girl
+Ends turn: Crag 2
+__battle__
+Battle resolving at Crag 2:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  H Spider
+__battle__
+=======================
+__battle__
+Evening of month 1, day 23, in clearing Crag 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+__battle__
+ - - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the H Spider
+Woods Girl
+Becomes unhidden.
+__battle__
+ - - - - - Positioning
+__battle__
+ - - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 2
+H Spider
+Changes tactics:  H Spider T6 
+__battle__
+ - - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+    Attack Length=14, Speed=3
+__battle__
+        Woods Girl L3  vs. H Spider Speed 4 
+__battle__
+        Undercut! (Speed 3 is faster than Speed 4)
+__battle__
+        Initial harm: L
+__battle__
+        Missile roll: Rolled 1 (red).
+__battle__
+        Missile table result: 1 = Increase 2 levels
+__battle__
+        H Spider is hit with H harm along box 1
+__battle__
+        H Spider was killed!
+__battle__
+The Woods Girl gets 3 fame (x 1) and 3 notoriety (x 1) for the death of the H Spider
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Woods Girl disengages because target is dead
+__battle__
+H Spider is dead.  Killed by Woods Girl
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host
+Month 1, Day 24
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Crag 2
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Rest - You are fully rested.
+Woods Girl
+Ends turn: Curst Valley 1
+host
+========================================
+host
+Month 1, Day 25
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Curst Valley 1
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Failed
+Woods Girl
+Ends turn: Ruins 2
+host
+========================================
+host
+Month 1, Day 26
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Ruins 2
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Ruins 5
+host
+========================================
+host
+Month 1, Day 27
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Ruins 5
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Ledges 4
+host
+========================================
+host
+Month 1, Day 28
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+host
+7th day - denizens return to setup card:
+host
+ - Soldier 1
+host
+ - Soldier 2
+host
+ - Soldier 3
+host
+ - Soldier HQ
+Woods Girl
+Starts turn: Ledges 4
+Woods Girl
+Search - Peer - Clues and Found 1 path(s)
+Woods Girl
+Search - Locate - Discover chit(s) - none to discover
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Ends turn: Ledges 4
+host
+========================================
+host
+Month 2, Day 1
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Ledges 4
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Ends turn: Oak Woods 5
+host
+========================================
+host
+Month 2, Day 2
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Oak Woods 5
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Deep Woods 1
+host
+========================================
+host
+Month 2, Day 3
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Deep Woods 1
+Woods Girl
+Search - Locate - Discover chit(s) - none to discover
+Woods Girl
+Search - Locate - Passage(s)
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Deep Woods 1
+host
+========================================
+host
+Month 2, Day 4
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Deep Woods 1
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - N/A
+Woods Girl
+Ends turn: Deep Woods 5
+host
+========================================
+host
+Month 2, Day 5
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Deep Woods 5
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Awful Valley 5
+__battle__
+Battle resolving at Awful Valley 5:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  Ghost
+__battle__
+  Ghost
+__battle__
+=======================
+__battle__
+Evening of month 2, day 5, in clearing Awful Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host
+Month 2, Day 6
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Awful Valley 5
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Caves 5
+host
+========================================
+host
+Month 2, Day 7
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+host
+7th day - denizens return to setup card:
+host
+ - Giant Bat
+host
+ - Guard 1
+host
+ - Guard 2
+host
+ - Guard HQ
+host
+ - Order 1
+host
+ - Order 2
+host
+ - Order 3
+host
+ - Order HQ
+Woods Girl
+Starts turn: Caves 5
+Woods Girl
+Search - Locate - Passage(s)
+Woods Girl
+Hide - Failed
+Woods Girl
+Ends turn: Caves 5
+Woods Girl
+Reveals: Shrine
+Woods Girl
+Reveals: Dank C
+host
+========================================
+host
+Month 2, Day 8
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Caves 5
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Caves 3
+host
+========================================
+host
+Month 2, Day 9
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Woods Girl
+Starts turn: Caves 3
+Woods Girl
+Search - Locate - Found 1 passage(s)
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Caves 3
+host
+========================================
+host
+Month 2, Day 10
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Caves 3
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Caves 2
+host
+========================================
+host
+Month 2, Day 11
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Caves 2
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Ledges 2
+Woods Girl
+Reveals: Patter 2
+Woods Girl
+Reveals: Bones M
+host
+Giant Bat is added to Ledges, clearing 2
+host
+Giant Bat blocks the Woods Girl
+__battle__
+Battle resolving at Ledges 2:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  Giant Bat
+__battle__
+=======================
+__battle__
+Evening of month 2, day 11, in clearing Ledges 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+Woods Girl
+Ran away!
+host
+========================================
+host
+Month 2, Day 12
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Between Caves 2 and Ledges 2
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Caves 2
+host
+========================================
+host
+Month 2, Day 13
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Caves 2
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Ledges 2
+__battle__
+Battle resolving at Ledges 2:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  Giant Bat
+__battle__
+=======================
+__battle__
+Evening of month 2, day 13, in clearing Ledges 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+__battle__
+ - - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the Giant Bat
+__battle__
+ - - - - - Positioning
+__battle__
+ - - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 2
+Giant Bat
+Changes tactics:  Giant Bat M3 
+__battle__
+ - - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+    Attack Length=14, Speed=3
+__battle__
+        Woods Girl L3  vs. Giant Bat Speed 2 
+__battle__
+        Missed! (Speed 3 is not faster than Speed 2)
+__battle__
+>
+__battle__
+    Attack Length=0, Speed=3
+__battle__
+        Giant Bat M3  vs. Woods Girl Speed 2 
+__battle__
+        Missed! (Speed 3 is not faster than Speed 2)
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Giant Bat won't disengage when fighting a character
+__battle__
+1 consecutive round of no damage, fatigue, or spellcasting.
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+__battle__
+ - - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the Giant Bat
+__battle__
+ - - - - - Positioning
+__battle__
+ - - - - - Reposition/Tactics
+__battle__
+ - - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+    Attack Speed=1, Length=14
+__battle__
+        Woods Girl L1**  vs. Giant Bat Speed 2 
+__battle__
+        Intercepted! (box 3 matches box 3)
+__battle__
+        Initial harm: L+2
+__battle__
+        Missile roll: Rolled 2 (red).
+__battle__
+        Missile table result: 2 = Increase 1 level
+__battle__
+        Giant Bat is hit with M+2 harm along box 3
+__battle__
+        Giant Bat was killed!
+__battle__
+>
+__battle__
+    Attack Speed=3, Length=0
+__battle__
+        Giant Bat M3  vs. Woods Girl Speed 2 
+__battle__
+        Attack Cancelled:  Giant Bat was already killed by Woods Girl.
+__battle__
+The Woods Girl gets 3 fame (x 1) and 3 notoriety (x 1) for the death of the Giant Bat
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Woods Girl disengages because target is dead
+__battle__
+Giant Bat is dead.  Killed by Woods Girl
+__battle__
+-----------------------
+__battle__
+--  Combat Round 3
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host
+Month 2, Day 14
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+host
+7th day - denizens return to setup card:
+host
+ - Soldier 1
+host
+ - Soldier 2
+host
+ - Soldier 3
+host
+ - Soldier HQ
+Woods Girl
+Starts turn: Ledges 2
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Oak Woods 2
+host
+========================================
+host
+Month 2, Day 15
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Oak Woods 2
+Woods Girl
+Hide - Failed
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Cavern 1
+Woods Girl
+Reveals: Hoard
+Woods Girl
+Reveals: Ruins C
+host
+========================================
+host
+Month 2, Day 16
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Cavern 1
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Failed
+Woods Girl
+Ends turn: Cavern 3
+host
+========================================
+host
+Month 2, Day 17
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Cavern 3
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Cavern 6
+host
+========================================
+host
+Month 2, Day 18
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Cavern 6
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Cavern 6
+host
+========================================
+host
+Month 2, Day 19
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Woods Girl
+Starts turn: Cavern 6
+Woods Girl
+Search - Locate - Passage(s)
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Cavern 6
+host
+========================================
+host
+Month 2, Day 20
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Cavern 6
+Woods Girl
+Search - Locate - Discover chit(s) - Found Hoard
+Woods Girl
+Hide - Failed
+Woods Girl
+Ends turn: Cavern 6
+host
+T Flying Dragon blocks the Woods Girl
+__battle__
+Battle resolving at Cavern 6:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  T Flying Dragon
+__battle__
+=======================
+__battle__
+Evening of month 2, day 20, in clearing Cavern 6
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+Woods Girl
+Ran away!
+host
+========================================
+host
+Month 2, Day 21
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+host
+7th day - denizens return to setup card:
+host
+ - T Spider
+host
+ - Rogue 1
+host
+ - Rogue 2
+host
+ - Rogue 3
+host
+ - Rogue 4
+host
+ - Rogue 5
+host
+ - Rogue 6
+host
+ - Rogue 7
+host
+ - Rogue HQ
+host
+ - H Spider
+Woods Girl
+Starts turn: Between Cavern 3 and Cavern 6
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Cavern 3
+host
+========================================
+host
+Month 2, Day 22
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Woods Girl
+Starts turn: Cavern 3
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Failed
+Woods Girl
+Ends turn: Cavern 1
+host
+========================================
+host
+Month 2, Day 23
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Cavern 1
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Failed
+Woods Girl
+Ends turn: Oak Woods 2
+Woods Girl
+Reveals: Dank W
+host
+Viper is added to Oak Woods, clearing 2
+host
+Viper is added to Oak Woods, clearing 2
+host
+Viper blocks the Woods Girl
+host
+Viper blocks the Woods Girl
+__battle__
+Battle resolving at Oak Woods 2:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  Viper
+__battle__
+  Viper
+__battle__
+=======================
+__battle__
+Evening of month 2, day 23, in clearing Oak Woods 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+Woods Girl
+Ran away!
+host
+========================================
+host
+Month 2, Day 24
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Between Cavern 1 and Oak Woods 2
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Cavern 1
+host
+========================================
+host
+Month 2, Day 25
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Cavern 1
+Woods Girl
+Hide - Failed
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Oak Woods 2
+__battle__
+Battle resolving at Oak Woods 2:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  Viper
+__battle__
+  Viper
+__battle__
+=======================
+__battle__
+Evening of month 2, day 25, in clearing Oak Woods 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+Woods Girl
+Ran away!
+host
+========================================
+host
+Month 2, Day 26
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Between Cavern 1 and Oak Woods 2
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Cavern 1
+host
+========================================
+host
+Month 2, Day 27
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Cavern 1
+Woods Girl
+Hide - Failed
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Oak Woods 2
+__battle__
+Battle resolving at Oak Woods 2:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  Viper
+__battle__
+  Viper
+__battle__
+=======================
+__battle__
+Evening of month 2, day 27, in clearing Oak Woods 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+Woods Girl
+Ran away!
+host
+========================================
+host
+Month 2, Day 28
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+host
+7th day - denizens return to setup card:
+host
+ - T Flying Dragon
+host
+ - H Flying Dragon
+host
+ - H Flying Dragon
+Woods Girl
+Starts turn: Between Cavern 1 and Oak Woods 2
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Cavern 1
+host
+========================================
+host
+Month 3, Day 1
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Woods Girl
+Starts turn: Cavern 1
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Cavern 3
+host
+========================================
+host
+Month 3, Day 2
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Cavern 3
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Cavern 6
+host
+========================================
+host
+Month 3, Day 3
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Cavern 6
+Woods Girl
+Search - Loot the Hoard - Found Treasure
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Cavern 6
+host
+========================================
+host
+Month 3, Day 4
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Cavern 6
+Woods Girl
+Search - Loot the Hoard - Found Toadstool Circle
+Woods Girl
+Search - Loot the Hoard - Found Treasure
+Woods Girl
+Ends turn: Cavern 6
+host
+========================================
+host
+Month 3, Day 5
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Cavern 6
+Woods Girl
+Search - Loot the Hoard - Found Sacred Grail
+Woods Girl
+Search - Loot the Hoard - Found Treasure
+Woods Girl
+Ends turn: Cavern 6
+host
+Axe Goblin is added to Cavern, clearing 6
+host
+Axe Goblin is added to Cavern, clearing 6
+host
+Axe Goblin is added to Cavern, clearing 6
+host
+Axe Goblin is added to Cavern, clearing 6
+host
+Axe Goblin is added to Cavern, clearing 6
+host
+Axe Goblin is added to Cavern, clearing 6
+host
+Axe Goblin blocks the Woods Girl
+host
+Axe Goblin blocks the Woods Girl
+host
+Axe Goblin blocks the Woods Girl
+host
+Axe Goblin blocks the Woods Girl
+host
+Axe Goblin blocks the Woods Girl
+host
+Axe Goblin blocks the Woods Girl
+__battle__
+Battle resolving at Cavern 6:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  Axe Goblin
+__battle__
+  Axe Goblin
+__battle__
+  Axe Goblin
+__battle__
+  Axe Goblin
+__battle__
+  Axe Goblin
+__battle__
+  Axe Goblin
+__battle__
+=======================
+__battle__
+Evening of month 3, day 5, in clearing Cavern 6
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+Woods Girl
+Ran away!
+host
+========================================
+host
+Month 3, Day 6
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Between Cavern 3 and Cavern 6
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Cavern 3
+host
+========================================
+host
+Month 3, Day 7
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Cavern 3
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Failed
+Woods Girl
+Ends turn: Cavern 1
+host
+========================================
+host
+Month 3, Day 8
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Cavern 1
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Oak Woods 2
+__battle__
+Battle resolving at Oak Woods 2:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  Viper
+__battle__
+  Viper
+__battle__
+=======================
+__battle__
+Evening of month 3, day 8, in clearing Oak Woods 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+__battle__
+ - - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+__battle__
+ - - - - - Positioning
+__battle__
+ - - - - - Reposition/Tactics
+__battle__
+ - - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+1 consecutive round of no damage, fatigue, or spellcasting.
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+__battle__
+ - - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the Viper
+Woods Girl
+Becomes unhidden.
+__battle__
+ - - - - - Positioning
+__battle__
+ - - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 3
+Viper
+Changes tactics:  Viper L2 
+__battle__
+ - - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+    Attack Speed=3, Length=14
+__battle__
+        Woods Girl L3  vs. Viper Speed 2 
+__battle__
+        Missed! (Speed 3 is not faster than Speed 2)
+host
+========================================
+host
+Month 3, Day 9
+host
+========================================
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+2 consecutive rounds of no damage, fatigue, or spellcasting.
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Oak Woods 2
+Woods Girl
+Move - moved
+Woods Girl
+Rest - You are fully rested.
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Ends turn: Oak Woods 4
+host
+========================================
+host
+Month 3, Day 10
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Oak Woods 4
+Woods Girl
+Hide - Failed
+Woods Girl
+Move - moved
+Woods Girl
+BLOCKED - Cannot perform action M-L5,M-L5
+Woods Girl
+BLOCKED - Cannot perform action M-L5,M-L5
+Woods Girl
+Ends turn: Oak Woods 2
+__battle__
+Battle resolving at Oak Woods 2:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  Viper
+__battle__
+  Viper
+__battle__
+=======================
+__battle__
+Evening of month 3, day 10, in clearing Oak Woods 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+Woods Girl
+Ran away!
+host
+========================================
+host
+Month 3, Day 11
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Between Oak Woods 4 and Oak Woods 2
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Failed
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Ends turn: Oak Woods 4
+host
+========================================
+host
+Month 3, Day 12
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Oak Woods 4
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Ledges 5
+host
+========================================
+host
+Month 3, Day 13
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Ledges 5
+Woods Girl
+Move - moved
+Woods Girl
+Rest - You are fully rested.
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Ledges 2
+host
+========================================
+host
+Month 3, Day 14
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+host
+7th day - denizens return to setup card:
+host
+ - T Flying Dragon
+Woods Girl
+Starts turn: Ledges 2
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Caves 2
+host
+========================================
+host
+Month 3, Day 15
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Woods Girl
+Starts turn: Caves 2
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Caves 4
+host
+========================================
+host
+Month 3, Day 16
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Caves 4
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Ends turn: Caves 4
+host
+========================================
+host
+Month 3, Day 17
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Caves 4
+Woods Girl
+Search - Locate - Passage(s)
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Ends turn: Caves 4
+host
+========================================
+host
+Month 3, Day 18
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Caves 4
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Ends turn: Caves 4
+host
+========================================
+host
+Month 3, Day 19
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Caves 4
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Ends turn: Caves 4
+host
+Conquer is added to Caves, clearing 4
+host
+========================================
+host
+Month 3, Day 20
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Caves 4
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Search - Locate - Clues and Passage(s)
+Woods Girl
+Ends turn: Caves 4
+host
+========================================
+host
+Month 3, Day 21
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+host
+7th day - denizens return to setup card:
+host
+ - H Serpent
+host
+ - H Serpent
+host
+ - Viper
+host
+ - Viper
+Woods Girl
+Starts turn: Caves 4
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Search - Locate - Discover chit(s) - Found Shrine
+Woods Girl
+Ends turn: Caves 4
+host
+H Serpent is added to Caves, clearing 4
+host
+H Serpent is added to Caves, clearing 4
+host
+Winged Demon blocks the Woods Girl
+host
+H Serpent blocks the Woods Girl
+host
+H Serpent blocks the Woods Girl
+__battle__
+Battle resolving at Caves 4:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  Winged Demon
+__battle__
+  H Serpent
+__battle__
+  H Serpent
+__battle__
+=======================
+__battle__
+Evening of month 3, day 21, in clearing Caves 4
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+Woods Girl
+Ran away!
+host
+========================================
+host
+Month 3, Day 22
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Between Caves 2 and Caves 4
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Caves 2
+host
+========================================
+host
+Month 3, Day 23
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Caves 2
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Failed
+Woods Girl
+Ends turn: Caves 3
+host
+========================================
+host
+Month 3, Day 24
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Caves 3
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Caves 5
+host
+========================================
+host
+Month 3, Day 25
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Caves 5
+Woods Girl
+Hide - Failed
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Awful Valley 5
+__battle__
+Battle resolving at Awful Valley 5:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  Ghost
+__battle__
+  Ghost
+__battle__
+=======================
+__battle__
+Evening of month 3, day 25, in clearing Awful Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+Woods Girl
+Ran away!
+host
+========================================
+host
+Month 3, Day 26
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Between Caves 5 and Awful Valley 5
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Caves 5
+host
+========================================
+host
+Month 3, Day 27
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Caves 5
+Woods Girl
+Hide - Failed
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Awful Valley 5
+__battle__
+Battle resolving at Awful Valley 5:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  Ghost
+__battle__
+  Ghost
+__battle__
+=======================
+__battle__
+Evening of month 3, day 27, in clearing Awful Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+Woods Girl
+Ran away!
+host
+========================================
+host
+Month 3, Day 28
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Between Caves 5 and Awful Valley 5
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Caves 5
+host
+========================================
+host
+Month 4, Day 1
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Caves 5
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Awful Valley 5
+__battle__
+Battle resolving at Awful Valley 5:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  Ghost
+__battle__
+  Ghost
+__battle__
+=======================
+__battle__
+Evening of month 4, day 1, in clearing Awful Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host
+Month 4, Day 2
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Awful Valley 5
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Deep Woods 4
+host
+========================================
+host
+Month 4, Day 3
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Deep Woods 4
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Ruins 5
+host
+========================================
+host
+Month 4, Day 4
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Ruins 5
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Borderland 1
+host
+========================================
+host
+Month 4, Day 5
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Borderland 1
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Search - Locate - Passage(s)
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Ends turn: Borderland 1
+host
+========================================
+host
+Month 4, Day 6
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Borderland 1
+Woods Girl
+Search - Locate - Discover chit(s) - Found Altar
+Woods Girl
+Search - Loot the Altar - Nothing
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Ends turn: Borderland 1
+host
+========================================
+host
+Month 4, Day 7
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Woods Girl
+Starts turn: Borderland 1
+Woods Girl
+Search - Loot the Altar - Found Treasure
+Woods Girl
+Search - Loot the Altar - Found Crypt of the Knight
+Woods Girl
+Search - Loot the Altar - Nothing
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Borderland 1
+host
+========================================
+host
+Month 4, Day 8
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Borderland 1
+Woods Girl
+Search - Loot the Altar - Found Treasure
+Woods Girl
+Activates Belt of Strength
+Woods Girl
+Fatigued chit: MOVE T2**
+Woods Girl
+Search - Loot the Crypt of the Knight - Found Treasure
+Woods Girl
+Fatigued chit: MOVE T2**
+Woods Girl
+Search - Loot the Crypt of the Knight - Nothing
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Borderland 1
+host
+========================================
+host
+Month 4, Day 9
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Borderland 1
+Woods Girl
+After resting, these chits were made active: MOVE T2**
+Woods Girl
+Rest - Rested 2 asterisks
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Evil Valley 2
+host
+========================================
+host
+Month 4, Day 10
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Woods Girl
+Starts turn: Evil Valley 2
+Woods Girl
+Move - moved
+Woods Girl
+Selling to Guard HQ.
+Woods Girl
+Attempting to sell: Reflecting Grease, Alchemist's Mixture, and Crystal Ball
+Woods Girl
+Trade - Sell to Guard HQ - Sold 3 items for 27 gold: 
+Woods Girl
+Buying from Guard HQ.
+Woods Girl
+Available for sale: Helmet, Breastplate, Broadsword, 2 Axes, 2 Maces, and 5 Treasures
+Woods Girl
+Bidding for a treasure
+Woods Girl
+Buys the Shielded Lantern from the Guard HQ
+Woods Girl
+Trade - Buy from Guard HQ (as Friendly) - Price x 4
+Woods Girl
+Activates Shielded Lantern
+Woods Girl
+Activates Elven Slippers
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Evil Valley 2
+host
+========================================
+host
+Month 4, Day 11
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Evil Valley 2
+Woods Girl
+After resting, these chits were made active: MOVE T2**
+Woods Girl
+Rest - Rested 2 asterisks
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Ruins 2
+host
+========================================
+host
+Month 4, Day 12
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Ruins 2
+Woods Girl
+Move - moved
+Woods Girl
+Fatigued chit: MOVE T2**
+Woods Girl
+Search - Loot the Crypt of the Knight - Gained 1 gold.
+Woods Girl
+Fatigued chit: MOVE T2**
+Woods Girl
+Search - Loot the Crypt of the Knight - Curse!
+Woods Girl
+ - Curse! - Ill Health
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Borderland 1
+host
+========================================
+host
+Month 4, Day 13
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Borderland 1
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Failed
+Woods Girl
+Ends turn: Ruins 5
+host
+Giant Bat is added to Ruins, clearing 1
+host
+Giant Bat is added to Ruins, clearing 1
+host
+========================================
+host
+Month 4, Day 14
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+host
+7th day - denizens return to setup card:
+host
+ - Rogue 1
+host
+ - Rogue 2
+host
+ - Rogue 3
+host
+ - Rogue 4
+host
+ - Rogue 5
+host
+ - Rogue 6
+host
+ - Rogue 7
+host
+ - Rogue HQ
+Woods Girl
+Starts turn: Ruins 5
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Evil Valley 4
+host
+========================================
+host
+Month 4, Day 15
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Evil Valley 4
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Failed
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Dark Valley 5
+__battle__
+Battle resolving at Dark Valley 5:
+__battle__
+GROUP 1
+__battle__
+  Woods Girl
+__battle__
+GROUP 2
+__battle__
+  Order 1
+__battle__
+  Order 2
+__battle__
+  Order 3
+__battle__
+  Order HQ
+Woods Girl
+The Woods Girl cannot afford to buy drinks for the Order (4 gold).
+Woods Girl
+Meeting Order on the Neutral table
+Woods Girl
+Rolled 4 and 6. = Trouble!
+Woods Girl
+Meeting Order on the Unfriendly table
+Woods Girl
+Rolled 5 and 2. = Challenge
+__battle__
+=======================
+__battle__
+Evening of month 4, day 15, in clearing Dark Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host
+Month 4, Day 16
+host
+========================================
+Woods Girl
+Spent the night at the Chapel.
+Woods Girl
+ILL_HEALTH curse is removed.
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Dark Valley 5
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Borderland 2
+host
+========================================
+host
+Month 4, Day 17
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Woods Girl
+Starts turn: Borderland 2
+Woods Girl
+Move - moved
+Woods Girl
+Search - Locate - Choice - Discover chit(s) - Found Lair,Lost City
+Woods Girl
+Search - Loot the Lair - Found Treasure
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Borderland 3
+host
+========================================
+host
+Month 4, Day 18
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Borderland 3
+Woods Girl
+Search - Loot the Lair - Found Treasure
+Woods Girl
+Activates Power Gauntlets
+Woods Girl
+Search - Loot the Lair - Found Treasure
+Woods Girl
+Activates Seven League Boots
+Woods Girl
+Search - Loot the Lair - Found Treasure
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Borderland 3
+host
+========================================
+host
+Month 4, Day 19
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Borderland 3
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Search - Loot the Crypt of the Knight - Found Horse
+Woods Girl
+Activates Warhorse

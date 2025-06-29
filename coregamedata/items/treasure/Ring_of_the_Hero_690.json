@@ -1,0 +1,21 @@
+{
+  "id": "690",
+  "name": "Ring of the Hero",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "TRADE to guild for one free advancement",
+      "rw_expansion_1": "",
+      "notoriety": "15",
+      "weight": "L",
+      "base_price": "50",
+      "facing": "face_dn",
+      "author": "Expansion 1",
+      "fame": "30",
+      "advancement": "",
+      "great": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

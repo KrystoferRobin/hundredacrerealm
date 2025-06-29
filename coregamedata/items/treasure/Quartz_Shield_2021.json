@@ -1,0 +1,36 @@
+{
+  "id": "2021",
+  "name": "Quartz Shield",
+  "attributeBlocks": {
+    "this": {
+      "vulnerability": "T",
+      "weight": "T",
+      "shield": "",
+      "armor_choice": "",
+      "fame": "5",
+      "notoriety": "5",
+      "armor": "",
+      "icon_type": "shield",
+      "facing": "dark",
+      "pile_position": "3",
+      "armor_row": "1",
+      "icon_folder": "armor",
+      "item": "",
+      "super_realm": "",
+      "magic": "",
+      "super_realm_treasure": ""
+    },
+    "intact": {
+      "base_price": "30",
+      "chit_color": "gold"
+    },
+    "damaged": {
+      "base_price": "26",
+      "chit_color": "yellow"
+    },
+    "destroyed": {
+      "base_price": "18"
+    }
+  },
+  "parts": []
+}

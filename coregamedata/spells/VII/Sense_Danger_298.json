@@ -1,0 +1,21 @@
+{
+  "id": "298",
+  "name": "Sense Danger",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "permanent",
+      "target": "character",
+      "text": "Extra ALERT phase/turn",
+      "magic_color": "purple",
+      "original_game": "",
+      "spell_extra_action": "A",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,50 @@
+Month 5, Day 1
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Elf
+Starts turn: Between Mountain 5 and Cliff 4
+Elf
+Move - moved
+Elf
+Ends turn: Mountain 5
+__battle__
+Battle resolving at Mountain 5:
+__battle__
+GROUP 1
+__battle__
+Elf
+__battle__
+GROUP 2
+__battle__
+Giant Bat
+__battle__
+T Spider
+__battle__
+H Spider
+__battle__
+Demon
+__battle__
+Giant
+__battle__
+=======================
+__battle__
+Evening of month 5, day 1, in clearing Mountain 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Elf
+Ran away!
+host
+========================================
+host

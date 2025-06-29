@@ -1,0 +1,18 @@
+{
+  "id": "7",
+  "name": "FIGHT M3**",
+  "attributeBlocks": {
+    "this": {
+      "action": "FIGHT",
+      "strength": "M",
+      "speed": "3",
+      "character_chit": "",
+      "icon_type": "ranger",
+      "icon_folder": "custom/characters",
+      "stage": "7",
+      "level": "3",
+      "effort": "2",
+      "facing": "dark"
+    }
+  }
+}

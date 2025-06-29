@@ -1,0 +1,37 @@
+{
+  "id": "1313",
+  "name": "Succubus",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "2",
+      "notoriety": "1",
+      "super_realm": "",
+      "icon_type": "succubus",
+      "setup_start": "Garden",
+      "monster_die": "6",
+      "base_price": "1",
+      "icon_folder": "wesnoth/units",
+      "needs_init": "",
+      "denizen": "",
+      "icon_size": "1",
+      "succubus": ""
+    },
+    "light": {
+      "move_speed": "2",
+      "attack_speed": "2",
+      "chit_color": "gray",
+      "length": "17",
+      "magic_type": "VIII",
+      "attack_spell": "mesmerize"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "M",
+      "chit_color": "darkgray"
+    }
+  },
+  "parts": []
+}

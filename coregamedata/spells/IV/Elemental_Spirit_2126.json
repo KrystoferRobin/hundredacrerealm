@@ -1,0 +1,23 @@
+{
+  "id": "2126",
+  "name": "Elemental Spirit",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "day",
+      "target": "magic(IV,VI)",
+      "text": "Change MAGIC IV to VIII and VI to V",
+      "magic_color": "purple",
+      "iv": "VIII",
+      "vi": "V",
+      "magic_change": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": "",
+      "super_realm": "",
+      "targets_non_magic_changed_chits": ""
+    }
+  },
+  "parts": []
+}

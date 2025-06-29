@@ -1,0 +1,18 @@
+{
+  "id": "11",
+  "name": "magic II2*",
+  "attributeBlocks": {
+    "this": {
+      "action": "magic",
+      "speed": "2",
+      "character_chit": "",
+      "icon_type": "enchantress",
+      "icon_folder": "custom/characters",
+      "stage": "11",
+      "level": "4",
+      "effort": "1",
+      "facing": "dark",
+      "magic": "II"
+    }
+  }
+}

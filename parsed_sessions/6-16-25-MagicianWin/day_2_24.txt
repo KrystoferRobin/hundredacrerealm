@@ -1,0 +1,20 @@
+Month 2, Day 24
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Magician
+Starts turn: Crag 3
+Magician
+Hide - Succeeded
+Magician
+Hide - N/A
+Magician
+After resting, these chits were made active: MAGIC IV3*
+Magician
+Rest - Rested 2 asterisks
+Magician
+Ends turn: Crag 3
+host
+========================================
+host

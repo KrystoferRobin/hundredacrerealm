@@ -1,0 +1,20 @@
+{
+  "id": "1163",
+  "name": "Needful Thing",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Use to trade for any item (not hire)",
+      "rw_expansion_1": "",
+      "base_price": "0",
+      "notoriety": "10",
+      "weight": "L",
+      "facing": "face_dn",
+      "fame": "-20",
+      "valuable": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,46 @@
+Month 1, Day 2
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Magician
+Starts turn: Curst Valley 1
+Magician
+Move - moved
+Magician
+Hide - Failed
+Magician
+Ends turn: Borderland 5
+Magician
+Reveals: Altar
+Magician
+Reveals: Bones C
+__battle__
+Battle resolving at Borderland 5:
+__battle__
+GROUP 1
+__battle__
+Magician
+__battle__
+=======================
+__battle__
+Evening of month 1, day 2, in clearing Borderland 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Magician
+Presses the END combat button.
+Magician
+Combat has ended.
+host
+========================================
+host

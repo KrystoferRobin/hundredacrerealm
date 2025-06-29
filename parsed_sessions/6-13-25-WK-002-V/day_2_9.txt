@@ -1,0 +1,28 @@
+Month 2, Day 9
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+White Knight
+Starts turn: High Pass 4
+White Knight
+Search - Locate - Discover chit(s) - Found Shrine
+White Knight
+Search - Loot the Shrine - Found Treasure
+White Knight
+Search - Loot the Shrine - Found Treasure
+White Knight
+Activates Elven Slippers
+White Knight
+Search - Loot the Shrine - Nothing
+White Knight
+Search - Loot the Shrine - Found Treasure
+White Knight
+Activates Belt of Strength
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: High Pass 4
+host
+========================================
+host

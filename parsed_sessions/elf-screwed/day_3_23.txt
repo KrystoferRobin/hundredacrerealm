@@ -1,0 +1,24 @@
+Month 3, Day 23
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Elf
+Starts turn: Caves 4
+Elf
+Move - moved
+Elf
+Fatigued chit: FIGHT M3*
+Elf
+Search - Loot the Pool - Found Treasure
+Elf
+Fatigued chit: FIGHT L3*
+Elf
+Search - Loot the Pool - Found Treasure
+Elf
+Hide - Succeeded
+Elf
+Ends turn: Caves 6
+host
+========================================
+host

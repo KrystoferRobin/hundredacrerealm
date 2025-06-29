@@ -1,0 +1,18 @@
+{
+  "id": "7",
+  "name": "FIGHT L3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "7",
+      "level": "3",
+      "action": "FIGHT",
+      "strength": "L",
+      "speed": "3",
+      "effort": "1",
+      "facing": "dark",
+      "icon_type": "thief"
+    }
+  }
+}

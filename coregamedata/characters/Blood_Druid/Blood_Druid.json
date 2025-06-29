@@ -1,0 +1,318 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Blood Druid",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn",
+      "pronoun": "he",
+      "creator": "A.C. Higgins",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Sacrifice",
+      "vulnerability": "M",
+      "icon_type": "blood druid",
+      "icon_folder": "custom/characters"
+    },
+    "level_1": {
+      "name": "Herbalist",
+      "weapon": "Staff",
+      "badge_icon": "Blood_Druidbadge1",
+      "advantages": {
+        "N0": "CONCEALMENT: Thank the Wood Sprites. Roll one die instead of two for all HIDE rolls."
+      },
+      "diemod": {
+        "N0": "1d:hide:all"
+      }
+    },
+    "level_2": {
+      "name": "Animalist",
+      "weapon": "Staff",
+      "badge_icon": "Blood_Druidbadge2",
+      "advantages": {
+        "N0": "CREEPY COMPANION: You adopt a fascinating predator (scorpion) as a companion."
+      },
+      "companion_name": {
+        "N0": "Scorpion"
+      }
+    },
+    "level_3": {
+      "name": "Seer",
+      "weapon": "Javelin",
+      "badge_icon": "Blood_Druidbadge3",
+      "advantages": {
+        "N0": "DRUIDIC PROHIBITION: Priests of your rank may use magical swords or wooden javelins, but no other missile or metal weapons."
+      },
+      "item_restrictions": {
+        "N0": "Morning Star",
+        "N1": "Helmet",
+        "N2": "Shield",
+        "N3": "Spear",
+        "N4": "Medium Bow",
+        "N5": "Broadsword",
+        "N6": "Light Bow",
+        "N7": "Axe",
+        "N8": "Short Sword",
+        "N9": "Mace",
+        "N10": "Staff",
+        "N11": "Breastplate",
+        "N12": "Thrusting Sword",
+        "N13": "Armor",
+        "N14": "Crossbow",
+        "N15": "Great Sword",
+        "N16": "Great Axe"
+      }
+    },
+    "level_4": {
+      "name": "Blood Druid",
+      "weapon": "Javelin",
+      "badge_icon": "Blood_Druidbadge4",
+      "advantages": {
+        "N0": "FEAR: Natives cower before your unsavory reputation. Subtract one from all MEETING, TRADE, and HIRE rolls"
+      },
+      "diemod": {
+        "N0": "-1:commerce,trade,hire,meeting:all"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "bashkars": "2",
+      "lancers": "1",
+      "order": "-1",
+      "woodfolk": "-2",
+      "shaman": "-1"
+    },
+    "relationship": {
+      "bashkars": "2",
+      "lancers": "1",
+      "order": "-1",
+      "woodfolk": "-2",
+      "shaman": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "FIGHT L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "blood druid",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE M4",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "blood druid",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "blood druid",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "FIGHT L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "blood druid",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "MOVE M4",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "blood druid",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "fight L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "blood druid",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "magic II3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "blood druid",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "magic VII4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "blood druid",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic VII3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "blood druid",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "magic II2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "blood druid",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic II3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "blood druid",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic VII2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "blood druid",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "2255",
+  "name": "Curdle of Bone",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "7",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "text": "Increase vulnerability one level",
+      "discard": "priest",
+      "potion": "",
+      "curdle_of_bone": ""
+    }
+  },
+  "parts": []
+}

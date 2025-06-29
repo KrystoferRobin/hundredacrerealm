@@ -1,0 +1,22 @@
+{
+  "id": "2256",
+  "name": "Cursed Bell",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "No individual in the clearing may HIDE or remain hidden.",
+      "notoriety": "40",
+      "weight": "M",
+      "facing": "face_dn",
+      "no_hide": "",
+      "base_price": "8",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "fame": "-20",
+      "great": "",
+      "color_source": "black"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "328",
+  "name": "Deft Gloves",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "notoriety": "6",
+      "text": "FIGHT L2, LOOT 1 die",
+      "base_price": "10",
+      "strength": "L",
+      "attack_speed": "2",
+      "fame": "5",
+      "native": "Order",
+      "original_game": "",
+      "gloves": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

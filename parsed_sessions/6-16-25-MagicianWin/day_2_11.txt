@@ -1,0 +1,22 @@
+Month 2, Day 11
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Magician
+Starts turn: Bad Valley 1
+Magician
+Move - moved
+Magician
+Move - moved
+Magician
+Move - moved
+Magician
+Move - moved
+Magician
+Ends turn: Maple Woods 5
+Magician
+Reveals: Dank W
+host
+========================================
+host

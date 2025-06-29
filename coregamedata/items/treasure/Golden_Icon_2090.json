@@ -1,0 +1,20 @@
+{
+  "id": "2090",
+  "name": "Golden Icon",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "100",
+      "notoriety": "20",
+      "fame": "-10",
+      "great": "",
+      "weight": "T",
+      "color_source": "gray",
+      "facing": "face_dn",
+      "nosecret": "",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "163",
+  "name": "Medium Bow",
+  "attributeBlocks": {
+    "this": {
+      "weight": "M",
+      "length": "16",
+      "base_price": "8",
+      "missile": "",
+      "two_handed": "",
+      "weapon": "",
+      "original_game": "",
+      "icon_type": "medium_bow",
+      "alt_monsters1_game": "",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "item": "",
+      "bow": ""
+    },
+    "unalerted": {
+      "strength": "M",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "attack_speed": "1",
+      "strength": "M",
+      "sharpness": "2",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

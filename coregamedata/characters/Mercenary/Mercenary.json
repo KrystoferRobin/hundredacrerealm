@@ -1,0 +1,386 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Mercenary",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "mercenary",
+      "character": "",
+      "vulnerability": "M",
+      "start": "Inn",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "he",
+      "alt_monsters1_game": "",
+      "icon_folder": "custom/characters",
+      "creator": "Stephan Valkyser",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Coat of Arms",
+      "rw_expansion_1": "",
+      "custom_character": "",
+      "fighter": "",
+      "extra_notes": "The mercenary has gone into debt to purchase his initial equipment (starts with 0 Gold)"
+    },
+    "level_1": {
+      "name": "Sutler",
+      "weapon": "Staff",
+      "badge_icon": "Mercenarybadge1",
+      "start_gold": "0",
+      "advantages": {
+        "N0": "DEBT: Starts out with 0 gold, instead of the usual 10."
+      }
+    },
+    "level_2": {
+      "name": "Slinger",
+      "badge_icon": "Mercenarybadge2",
+      "weapon": "Sling",
+      "armor": "Cap",
+      "advantages": {
+        "N0": "VIGILANT: Gets an extra ALERT phase."
+      },
+      "extra_actions": {
+        "N0": "A"
+      }
+    },
+    "level_3": {
+      "name": "Landsknecht",
+      "weapon": "Spear",
+      "armor": "Helmet",
+      "badge_icon": "Mercenarybadge3",
+      "advantages": {
+        "N0": "UNPOPULARITY: Adds one to all rolls on the COMMERCE, TRADE, HIRE, and MEETING tables."
+      },
+      "diemod": {
+        "N0": "+1:commerce,trade,hire,meeting:all"
+      }
+    },
+    "level_4": {
+      "name": "Mercenary",
+      "armor": "Helmet,Breastplate",
+      "weapon": "Spear",
+      "badge_icon": "Mercenarybadge4",
+      "bonus_inv": "",
+      "advantages": {
+        "N0": "HORSE OWNER: Starts with a Medium Horse in inventory."
+      }
+    },
+    "relationship": {
+      "guard": "-2",
+      "order": "-2",
+      "patrol": "-1",
+      "rogues": "1",
+      "woodfolk": "-1",
+      "scholar": "-1",
+      "shaman": "-1",
+      "warlock": "-1",
+      "lancers": "1",
+      "company": "-1"
+    },
+    "gamerel": {
+      "guard": "-2",
+      "order": "-2",
+      "patrol": "-1",
+      "rogues": "1",
+      "woodfolk": "-1",
+      "scholar": "-1",
+      "shaman": "-1",
+      "warlock": "-1",
+      "lancers": "1",
+      "company": "-1"
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "bonus_invlevel_4": {
+      "_gobm_xx_name": "Horse"
+    },
+    "bonus_invlevel_4this": {
+      "_gobm_xx_horse": "horse",
+      "_gobm_xx_move_bonus": "extra",
+      "_gobm_xx_vulnerability": "H",
+      "_gobm_xx_original_game": "",
+      "_gobm_xx_alt_monsters1_game": "",
+      "_gobm_xx_rw_expansion_1": "",
+      "_gobm_xx_item": "",
+      "_gobm_xx_facing": "dark",
+      "_gobm_xx__lkt_": "level_4"
+    },
+    "bonus_invlevel_4trot": {
+      "_gobm_xx_move_speed": "6",
+      "_gobm_xx_strength": "M",
+      "_gobm_xx_chit_color": "tan"
+    },
+    "bonus_invlevel_4gallop": {
+      "_gobm_xx_move_speed": "5",
+      "_gobm_xx_strength": "M",
+      "_gobm_xx_chit_color": "tan"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "strength": "M",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "mercenary",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "move M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "5",
+          "strength": "M",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "mercenary",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "5",
+          "strength": "M",
+          "effort": "0",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "mercenary",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "H",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "speed": "5",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "mercenary",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "strength": "M",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "mercenary",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "effort": "1"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "move M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "5",
+          "strength": "M",
+          "effort": "0",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "mercenary",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "mercenary",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "3",
+          "effort": "2",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "mercenary",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "6",
+          "strength": "H",
+          "effort": "0",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "mercenary",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "strength": "M",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "mercenary",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "effort": "1"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "fight H4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "strength": "H",
+          "effort": "2",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "mercenary",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "5",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "mercenary",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "strength": "H"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

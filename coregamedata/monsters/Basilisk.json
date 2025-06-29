@@ -1,0 +1,39 @@
+{
+  "id": "909",
+  "name": "Basilisk",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "T",
+      "fame": "10",
+      "notoriety": "10",
+      "icon_type": "basilisk",
+      "setup_start": "Stones",
+      "monster_die": "1",
+      "base_price": "10",
+      "icon_folder": "monsters2",
+      "needs_init": "",
+      "rw_expansion_1": "",
+      "armored": "",
+      "denizen": "",
+      "icon_type_alt": "WarOfTheGods-drakes-blue_lizard",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "icon_size_alt": "1.2",
+      "icon_y_offset_alt": "-7"
+    },
+    "light": {
+      "move_speed": "6",
+      "attack_speed": "4",
+      "strength": "T",
+      "chit_color": "blue"
+    },
+    "dark": {
+      "move_speed": "6",
+      "attack_speed": "4",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": ""
+    }
+  },
+  "parts": []
+}

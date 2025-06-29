@@ -1,0 +1,2215 @@
+{
+  "sessionName": "learning-wiz",
+  "players": {
+    "Krystofer": {
+      "name": "Krystofer",
+      "characters": [
+        "Wizard"
+      ]
+    }
+  },
+  "characterToPlayer": {
+    "Wizard": "Krystofer"
+  },
+  "days": {
+    "1_1": {
+      "month": 1,
+      "day": 1,
+      "monsterDieRoll": 5,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Awful Valley -1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            }
+          ],
+          "endLocation": "Dark Valley 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Dark Valley 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Wizard",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "Guard",
+          "location": "Dark Valley 5"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "1_10": {
+      "month": 1,
+      "day": 10,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Ruins 5",
+          "actions": [
+            {
+              "action": "Search - Locate - Discover chit(s)",
+              "result": "none to discover"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Passage(s)"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Ruins 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_11": {
+      "month": 1,
+      "day": 11,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Ruins 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "Ruins 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_12": {
+      "month": 1,
+      "day": 12,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Ruins 4",
+          "actions": [
+            {
+              "action": "Search - Locate - Discover chit(s)",
+              "result": "Found Shrine"
+            },
+            {
+              "action": "Search - Read Runes on Shrine",
+              "result": "Awaken a Spell"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Ruins 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_13": {
+      "month": 1,
+      "day": 13,
+      "monsterDieRoll": 5,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Ruins 4",
+          "actions": [
+            {
+              "action": "Search - Read Runes on Shrine",
+              "result": "(Learn and) Awaken a Spell"
+            },
+            {
+              "action": "Search - Read Runes on Shrine",
+              "result": "(Learn and) Awaken a Spell"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "Ruins 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_14": {
+      "month": 1,
+      "day": 14,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Ruins 4",
+          "actions": [
+            {
+              "action": "Search - Loot the Shrine",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Search - Loot the Shrine",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Ruins 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_15": {
+      "month": 1,
+      "day": 15,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Ruins 4",
+          "actions": [
+            {
+              "action": "Search - Loot the Shrine",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Shrine",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Ruins 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [
+        {
+          "monster": "Raid",
+          "location": "Ruins 4"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "1_16": {
+      "month": 1,
+      "day": 16,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Ruins 4",
+          "actions": [
+            {
+              "action": "Search - Loot the Shrine",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Search - Loot the Shrine",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "Ruins 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_17": {
+      "month": 1,
+      "day": 17,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Ruins 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Dark Valley 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_18": {
+      "month": 1,
+      "day": 18,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Dark Valley 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            }
+          ],
+          "endLocation": "Deep Woods 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [
+        {
+          "monster": "H Dragon",
+          "location": "Deep Woods 3"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "1_19": {
+      "month": 1,
+      "day": 19,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Deep Woods 1",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "Deep Woods 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_2": {
+      "month": 1,
+      "day": 2,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Dark Valley 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Spell",
+              "result": "enchanted Awful Valley"
+            },
+            {
+              "action": "Spell",
+              "result": "enchanted Wizard Magic II3*"
+            }
+          ],
+          "endLocation": "Awful Valley 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Awful Valley 1",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Wizard",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "House",
+          "location": "Awful Valley 5"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "1_20": {
+      "month": 1,
+      "day": 20,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Deep Woods 1",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "Deep Woods 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_21": {
+      "month": 1,
+      "day": 21,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Deep Woods 1",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "Deep Woods 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_22": {
+      "month": 1,
+      "day": 22,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Deep Woods 1",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate - Discover chit(s)",
+              "result": "none to discover"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Deep Woods 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Deep Woods 1",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Wizard",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_23": {
+      "month": 1,
+      "day": 23,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Deep Woods 1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Linden Woods 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Linden Woods 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "Ogre",
+          "location": "Linden Woods 5"
+        },
+        {
+          "monster": "Ogre",
+          "location": "Linden Woods 5"
+        }
+      ],
+      "monsterBlocks": [
+        {
+          "monster": "Ogre",
+          "character": "Wizard"
+        },
+        {
+          "monster": "Ogre",
+          "character": "Wizard"
+        }
+      ]
+    },
+    "1_24": {
+      "month": 1,
+      "day": 24,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Between Deep Woods 5 and Linden Woods 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Linden Woods 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Linden Woods 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Wizard",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_25": {
+      "month": 1,
+      "day": 25,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Linden Woods 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hire - Buy from Guard 2 (as Friendly)",
+              "result": "Price x 2"
+            },
+            {
+              "action": "Hire - Buy from Guard 2 (as Friendly)",
+              "result": "Price x 3"
+            }
+          ],
+          "endLocation": "Dark Valley 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Dark Valley 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Wizard",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_26": {
+      "month": 1,
+      "day": 26,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Dark Valley 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Read Runes on Sacred Statue - Learn and Awaken a Spell",
+              "result": "learned!"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Passage(s)"
+            }
+          ],
+          "endLocation": "Dark Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_27": {
+      "month": 1,
+      "day": 27,
+      "monsterDieRoll": 5,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Dark Valley 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Trade - Sell to Guard HQ",
+              "result": "Sold 2 items for 25 gold:"
+            },
+            {
+              "action": "Hire - Buy from Guard 2 (as Ally)",
+              "result": "Price x 4"
+            },
+            {
+              "action": "Hire - Buy from Guard 2 (as Ally)",
+              "result": "Price x 4"
+            }
+          ],
+          "endLocation": "Dark Valley 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Dark Valley 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Wizard",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_28": {
+      "month": 1,
+      "day": 28,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Dark Valley 5",
+          "actions": [
+            {
+              "action": "Hire - Buy from Guard 2 (as Friendly)",
+              "result": "Price x 2"
+            },
+            {
+              "action": "Hire",
+              "result": "Cancelled Hire"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            }
+          ],
+          "endLocation": "Dark Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_3": {
+      "month": 1,
+      "day": 3,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Awful Valley 1",
+          "actions": [
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            },
+            {
+              "action": "Spell",
+              "result": "enchanted Wizard Magic III3*"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Deep Woods 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Deep Woods 1",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Wizard",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_4": {
+      "month": 1,
+      "day": 4,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Deep Woods 1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Deep Woods 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_5": {
+      "month": 1,
+      "day": 5,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Deep Woods 5",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "Deep Woods 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_6": {
+      "month": 1,
+      "day": 6,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Deep Woods 5",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Clues and Passage(s)"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            }
+          ],
+          "endLocation": "Deep Woods 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_7": {
+      "month": 1,
+      "day": 7,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Deep Woods 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Dark Valley 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_8": {
+      "month": 1,
+      "day": 8,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Dark Valley 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Clues and Passage(s)"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Ruins 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_9": {
+      "month": 1,
+      "day": 9,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Ruins 5",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            }
+          ],
+          "endLocation": "Ruins 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_1": {
+      "month": 2,
+      "day": 1,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Guard HQ",
+          "startLocation": "Dark Valley 5",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "Dark Valley 2",
+          "player": "Unknown"
+        },
+        {
+          "character": "Wizard",
+          "startLocation": "Dark Valley 2",
+          "actions": [
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "Dark Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_10": {
+      "month": 2,
+      "day": 10,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Borderland 1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Caves 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_11": {
+      "month": 2,
+      "day": 11,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Caves 5",
+          "actions": [
+            {
+              "action": "Spell",
+              "result": "enchanted Caves"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Caves 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_12": {
+      "month": 2,
+      "day": 12,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Caves 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            }
+          ],
+          "endLocation": "Caves 6",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Caves 6",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Guard 1",
+                  "action": "Lures the T Dragon"
+                },
+                {
+                  "performer": "Wizard",
+                  "action": "Casts Fiery Blast"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Wizard",
+                  "action": "Targets the T Dragon with Fiery Blast"
+                },
+                {
+                  "performer": "Guard 1",
+                  "action": "Changes tactics:  Guard 1 T4*"
+                },
+                {
+                  "performer": "Dragon Head",
+                  "action": "Changes tactics:  Dragon Head T4"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=13, Speed=3",
+                "Fiery Blast L3***  vs. T Dragon Speed 6",
+                "Attack Length=9, Speed=4",
+                "Dragon Head T4  vs. Guard 1 Speed 6",
+                "Attack Length=8, Speed=4",
+                "Guard 1 T4*  vs. T Dragon Speed 6",
+                "Attack Length=8, Speed=4",
+                "Guard 2 T4*  vs. T Dragon Speed 6",
+                "Attack Length=0, Speed=5",
+                "T Dragon H5  vs. Guard 1 Speed 6"
+              ],
+              "damage": [
+                "Initial harm: L+3",
+                "T Dragon is hit with M+3 harm along box 1"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: M+2"
+              ],
+              "deaths": [
+                "T Dragon was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The Wizard",
+                  "action": "The Wizard gets 10 fame (x 1) and 10 notoriety (x 1) for the death of the T Dragon"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Wizard",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "T Dragon",
+          "location": "Caves 6"
+        }
+      ],
+      "monsterBlocks": [
+        {
+          "monster": "T Dragon",
+          "character": "Wizard"
+        }
+      ]
+    },
+    "2_13": {
+      "month": 2,
+      "day": 13,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Caves 6",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Passage(s)"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Caves 6",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [
+        {
+          "monster": "H Troll",
+          "location": "Caves 4"
+        },
+        {
+          "monster": "H Troll",
+          "location": "Caves 4"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "2_14": {
+      "month": 2,
+      "day": 14,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Caves 6",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Borderland 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_15": {
+      "month": 2,
+      "day": 15,
+      "monsterDieRoll": null,
+      "characterTurns": [],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_2": {
+      "month": 2,
+      "day": 2,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Dark Valley 2",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Deep Woods 5",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Guard HQ",
+          "startLocation": "Deep Woods 5",
+          "actions": [],
+          "endLocation": "Deep Woods 5",
+          "player": "Unknown"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_3": {
+      "month": 2,
+      "day": 3,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Deep Woods 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Locate - Discover chit(s)",
+              "result": "none to discover"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            }
+          ],
+          "endLocation": "Deep Woods 4",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Guard HQ",
+          "startLocation": "Deep Woods 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Peer",
+              "result": "Found hidden enemies and Found 1 path(s)"
+            },
+            {
+              "action": "Search - Locate - Discover chit(s)",
+              "result": "none to discover"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Deep Woods 4",
+          "player": "Unknown"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Deep Woods 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Guard HQ",
+                  "action": "Lures the H Serpent"
+                },
+                {
+                  "performer": "Guard 1",
+                  "action": "Lures the H Serpent"
+                },
+                {
+                  "performer": "Wizard",
+                  "action": "Casts Fiery Blast"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Wizard",
+                  "action": "Targets the H Serpent with Fiery Blast"
+                },
+                {
+                  "performer": "Wizard",
+                  "action": "Targets the H Serpent with Fiery Blast"
+                },
+                {
+                  "performer": "H Serpent",
+                  "action": "Changes tactics:  H Serpent H5"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=13, Speed=3",
+                "Fiery Blast L3***  vs. H Serpent Speed 4",
+                "Attack Length=13, Speed=3",
+                "Fiery Blast L3***  vs. H Serpent Speed 3",
+                "Attack Length=8, Speed=4",
+                "Guard HQ T4*  vs. H Serpent Speed 4",
+                "Attack Length=8, Speed=4",
+                "Guard 1 T4*  vs. H Serpent Speed 3",
+                "Attack Length=0, Speed=4",
+                "H Serpent M4  vs. Guard 1 Speed 6",
+                "Attack Length=0, Speed=5",
+                "H Serpent H5  vs. Guard HQ Speed 6"
+              ],
+              "damage": [
+                "Initial harm: L+3",
+                "H Serpent is hit with neg+2 harm along box 2",
+                "Initial harm: L+3",
+                "H Serpent is hit with M+3 harm along box 2",
+                "Initial harm: H",
+                "Guard HQ is hit with H harm along box 1"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: neg+1",
+                "Hits armor, and reduces sharpness: M+2",
+                "Hits armor, and reduces sharpness: H"
+              ],
+              "deaths": [
+                "H Serpent was killed!",
+                "Guard HQ was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The Wizard",
+                  "action": "The Wizard gets 4 fame (x 1) and 4 notoriety (x 1) for the death of the H Serpent"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Guard 1",
+                  "action": "Lures the H Serpent"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Wizard",
+                  "action": "Attacks the H Serpent"
+                },
+                {
+                  "performer": "Guard 1",
+                  "action": "Changes tactics:  Guard 1 H5*"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=3, Length=9",
+                "Wizard M3  vs. H Serpent Speed 4",
+                "Attack Speed=4, Length=8",
+                "Guard 2 T4*  vs. H Serpent Speed 4",
+                "Attack Speed=5, Length=8",
+                "Guard 1 H5*  vs. H Serpent Speed 4",
+                "Attack Speed=5, Length=0",
+                "H Serpent H5  vs. Guard 1 Speed 5"
+              ],
+              "damage": [
+                "Initial harm: M",
+                "H Serpent is hit with M harm along box 3",
+                "Initial harm: H+1",
+                "H Serpent is hit with H+1 harm along box 1"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: M",
+                "Hits armor, and reduces sharpness: H"
+              ],
+              "deaths": [
+                "H Serpent was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The Wizard",
+                  "action": "The Wizard gets 4 fame (x 1) and 4 notoriety (x 1) for the death of the H Serpent"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 3,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Wizard",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "H Serpent",
+          "location": "Deep Woods 3"
+        },
+        {
+          "monster": "H Serpent",
+          "location": "Deep Woods 3"
+        }
+      ],
+      "monsterBlocks": [
+        {
+          "monster": "H Serpent",
+          "character": "Wizard"
+        },
+        {
+          "monster": "H Serpent",
+          "character": "Wizard"
+        }
+      ]
+    },
+    "2_4": {
+      "month": 2,
+      "day": 4,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Deep Woods 4",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 2 asterisks"
+            },
+            {
+              "action": "Spell",
+              "result": "enchanted Wizard Magic IV4*"
+            }
+          ],
+          "endLocation": "Deep Woods 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Deep Woods 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Guard 1",
+                  "action": "Lures the H Dragon"
+                },
+                {
+                  "performer": "Wizard",
+                  "action": "Casts Fiery Blast"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Wizard",
+                  "action": "Targets the H Dragon with Fiery Blast"
+                },
+                {
+                  "performer": "H Dragon",
+                  "action": "Changes tactics:  H Dragon M4"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=13, Speed=3",
+                "Fiery Blast L3***  vs. H Dragon Speed 3",
+                "Attack Length=8, Speed=4",
+                "Guard 2 T4*  vs. H Dragon Speed 3",
+                "Attack Length=8, Speed=5",
+                "Guard 1 H5*  vs. H Dragon Speed 3",
+                "Attack Length=0, Speed=4",
+                "H Dragon M4  vs. Guard 1 Speed 5"
+              ],
+              "damage": [
+                "Initial harm: T+1",
+                "H Dragon is hit with T+1 harm along box 2"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: T"
+              ],
+              "deaths": [
+                "H Dragon was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The Wizard",
+                  "action": "The Wizard gets 5 fame (x 1) and 5 notoriety (x 1) for the death of the H Dragon"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Wizard",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_5": {
+      "month": 2,
+      "day": 5,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Deep Woods 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            }
+          ],
+          "endLocation": "Dark Valley 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_6": {
+      "month": 2,
+      "day": 6,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Dark Valley 1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Evil Valley 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Evil Valley 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Wizard",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "Chapel",
+          "location": "Evil Valley 4"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "2_7": {
+      "month": 2,
+      "day": 7,
+      "monsterDieRoll": 5,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Evil Valley 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "Bad Valley 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_8": {
+      "month": 2,
+      "day": 8,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Bad Valley 1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Borderland 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_9": {
+      "month": 2,
+      "day": 9,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "Wizard",
+          "startLocation": "Borderland 1",
+          "actions": [
+            {
+              "action": "Rest",
+              "result": "Rested 2 asterisks"
+            },
+            {
+              "action": "Spell",
+              "result": "enchanted Wizard Magic IV4*"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Borderland 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    }
+  }
+}

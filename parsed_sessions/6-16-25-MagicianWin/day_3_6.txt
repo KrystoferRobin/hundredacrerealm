@@ -1,0 +1,18 @@
+Month 3, Day 6
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Magician
+Starts turn: Crag 6
+Magician
+Move - moved
+Magician
+Hire - Buy from Rogue 7 (as Ally) - Price x 1
+Magician
+Hide - Succeeded
+Magician
+Ends turn: Crag 3
+host
+========================================
+host

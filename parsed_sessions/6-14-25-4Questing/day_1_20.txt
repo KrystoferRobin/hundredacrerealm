@@ -1,0 +1,26 @@
+Month 1, Day 20
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Amazon
+Starts turn: Curst Valley 4
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+Hide - Succeeded
+Amazon
+Hide - N/A
+Amazon
+Ends turn: Pine Woods 2
+Woods Girl
+Starts turn: Pine Woods 2
+Woods Girl
+Ends turn: Pine Woods 2
+host
+========================================
+host

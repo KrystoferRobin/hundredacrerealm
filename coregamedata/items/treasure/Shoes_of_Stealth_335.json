@@ -1,0 +1,21 @@
+{
+  "id": "335",
+  "name": "Shoes of Stealth",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "MOVE L3, plus HIDE 1 die",
+      "base_price": "7",
+      "notoriety": "2",
+      "move_speed": "3",
+      "strength": "L",
+      "original_game": "",
+      "boots": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

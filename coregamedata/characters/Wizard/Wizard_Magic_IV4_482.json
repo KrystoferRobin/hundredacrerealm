@@ -1,0 +1,21 @@
+{
+  "id": "482",
+  "name": "Wizard Magic IV4*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "4",
+      "character_level": "3",
+      "effort": "1",
+      "magic": "IV",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "8",
+      "level": "3",
+      "icon_folder": "characters",
+      "icon_type": "wizard",
+      "rw_expansion_1": ""
+    }
+  }
+}

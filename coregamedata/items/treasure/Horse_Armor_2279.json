@@ -1,0 +1,21 @@
+{
+  "id": "2279",
+  "name": "Horse Armor",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "9",
+      "notoriety": "6",
+      "fame": "3",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "text": "If you have an active horse, it is armored with +1 to its speed. Horse must be able to carry armor's weight.",
+      "weight": "M",
+      "horse_armor": ""
+    }
+  },
+  "parts": []
+}

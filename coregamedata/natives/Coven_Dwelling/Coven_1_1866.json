@@ -1,0 +1,43 @@
+{
+  "id": "1866",
+  "name": "Coven 1",
+  "attributeBlocks": {
+    "this": {
+      "native": "Coven",
+      "fame": "0",
+      "notoriety": "4",
+      "base_price": "3",
+      "vulnerability": "L",
+      "rank": "1",
+      "icon_type": "witch",
+      "setup_start": "Coven Dwelling",
+      "hire_type": "single",
+      "icon_folder": "wesnoth/units",
+      "denizen": "",
+      "super_realm": "",
+      "native_die": "2",
+      "clan": "3",
+      "icon_size": "0.9",
+      "flying": "",
+      "native_name": "Caster",
+      "no_weapon_usage": ""
+    },
+    "light": {
+      "move_speed": "1",
+      "chit_color": "peach",
+      "attack_speed": "3",
+      "length": "9",
+      "magic_type": "V",
+      "attack_spell": "curse"
+    },
+    "dark": {
+      "move_speed": "1",
+      "attack_speed": "4",
+      "length": "9",
+      "chit_color": "brown",
+      "magic_type": "VIII",
+      "attack_spell": "mesmerize"
+    }
+  },
+  "parts": []
+}

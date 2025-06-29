@@ -1,0 +1,15 @@
+{
+  "id": "2081",
+  "name": "Map of Lost City",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "3",
+      "text": "-1 to LOCATE rolls in LOST CITY",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

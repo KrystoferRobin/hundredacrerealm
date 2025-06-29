@@ -1,0 +1,18 @@
+{
+  "id": "3",
+  "name": "FIGHT H6",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "centaur",
+      "icon_folder": "custom/characters",
+      "stage": "3",
+      "level": "1",
+      "action": "FIGHT",
+      "strength": "H",
+      "speed": "6",
+      "effort": "0",
+      "facing": "dark",
+      "icon_type": "centaur"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "681",
+  "name": "Potion of Endurance",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "6",
+      "text": "No effort fatigue (discard to crone)",
+      "rw_expansion_1": "",
+      "facing": "face_dn",
+      "potion": "",
+      "discard": "crone",
+      "no_fatigue": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

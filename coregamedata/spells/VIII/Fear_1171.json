@@ -1,0 +1,22 @@
+{
+  "id": "1171",
+  "name": "Fear",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "attack",
+      "target": "multiple",
+      "text": "All affected will flee",
+      "magic_color": "purple",
+      "fear": "",
+      "strength": "L",
+      "length": "11",
+      "host_okay": "",
+      "new_spells_2": "",
+      "learnable": "",
+      "author": "Expansion 1"
+    }
+  },
+  "parts": []
+}

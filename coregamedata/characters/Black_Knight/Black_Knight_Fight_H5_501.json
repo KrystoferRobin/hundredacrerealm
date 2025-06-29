@@ -1,0 +1,21 @@
+{
+  "id": "501",
+  "name": "Black Knight Fight H5*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "speed": "5",
+      "character_level": "1",
+      "strength": "H",
+      "effort": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "3",
+      "level": "1",
+      "icon_folder": "characters",
+      "icon_type": "black_knight",
+      "rw_expansion_1": ""
+    }
+  }
+}

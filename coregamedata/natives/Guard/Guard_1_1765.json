@@ -1,0 +1,43 @@
+{
+  "id": "1765",
+  "name": "Guard 1",
+  "attributeBlocks": {
+    "this": {
+      "native": "Guard",
+      "fame": "0",
+      "notoriety": "6",
+      "base_price": "4",
+      "vulnerability": "H",
+      "rank": "1",
+      "armored": "",
+      "icon_type": "royalguard",
+      "setup_start": "Guard",
+      "hire_type": "group",
+      "garrison": "",
+      "icon_folder": "wesnoth/units/human-loyalists",
+      "denizen": "",
+      "super_realm": "",
+      "clan": "1",
+      "native_die": "5",
+      "icon_size": "0.9",
+      "native_name": "Swordsman"
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "5",
+      "strength": "H",
+      "length": "8",
+      "sharpness": "1",
+      "chit_color": "gold"
+    },
+    "dark": {
+      "move_speed": "6",
+      "attack_speed": "4",
+      "strength": "T",
+      "length": "8",
+      "sharpness": "1",
+      "chit_color": "orange"
+    }
+  },
+  "parts": []
+}

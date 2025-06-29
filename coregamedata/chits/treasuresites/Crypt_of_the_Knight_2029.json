@@ -1,0 +1,126 @@
+{
+  "id": "2029",
+  "name": "Crypt of the Knight",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "crypt",
+      "treasure": "large",
+      "cannot_move": "",
+      "treasure_within_treasure": "5",
+      "print": "",
+      "discovery": "",
+      "search": "fatigue_t,key",
+      "facing": "face_dn",
+      "ts_section": "twt",
+      "ts_color": "lightblue",
+      "nosecret": "",
+      "super_realm": ""
+    },
+    "table": {
+      "roll_1": "horse",
+      "roll_2": "armor",
+      "roll_3": "weapon",
+      "roll_4": "treasure",
+      "roll_5": "gold",
+      "roll_6": "curse"
+    }
+  },
+  "parts": [
+    {
+      "id": "1915",
+      "name": "Warhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "warhorse",
+          "vulnerability": "T",
+          "armored": "",
+          "base_price": "25",
+          "magic": "",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "royalBeast",
+          "horse_holder": "Chapel"
+        },
+        "trot": {
+          "move_speed": "5",
+          "strength": "T",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "3",
+          "strength": "T",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1934",
+      "name": "Tremen. Armor",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "T",
+          "weight": "T",
+          "armor_thrust": "",
+          "armor_swing": "",
+          "armor_smash": "",
+          "fame": "6",
+          "notoriety": "3",
+          "magic": "",
+          "armor": "",
+          "icon_type": "suitofarmor",
+          "facing": "dark",
+          "armor_row": "3",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "suitofarmor": ""
+        },
+        "intact": {
+          "base_price": "25",
+          "chit_color": "gold"
+        },
+        "damaged": {
+          "base_price": "18",
+          "chit_color": "yellow"
+        },
+        "destroyed": {
+          "base_price": "5"
+        }
+      }
+    },
+    {
+      "id": "1953",
+      "name": "Bane Sword",
+      "attributeBlocks": {
+        "this": {
+          "weight": "T",
+          "length": "8",
+          "fame": "6",
+          "notoriety": "3",
+          "base_price": "20",
+          "magic": "",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "great_sword",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "8",
+          "strength": "T",
+          "sharpness": "1",
+          "chit_color": "yellow"
+        },
+        "alerted": {
+          "attack_speed": "2",
+          "strength": "T",
+          "sharpness": "1",
+          "chit_color": "gold"
+        }
+      }
+    }
+  ]
+}

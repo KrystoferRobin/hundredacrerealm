@@ -1,0 +1,303 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Angel",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn,Chapel",
+      "pronoun": "she",
+      "creator": "John Hickman",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Divine Power",
+      "vulnerability": "M",
+      "icon_type": "angel",
+      "icon_folder": "custom/characters"
+    },
+    "level_1": {
+      "name": "Cherub",
+      "badge_icon": "Angelbadge1",
+      "start_gold": "0",
+      "max_gold": "0",
+      "advantages": {
+        "N0": "RENUNCIATION: Starts out with 0 gold, instead of the usual 10, and she cannot acquire Gold, and gets none in return for anything she sells."
+      }
+    },
+    "level_2": {
+      "name": "Servant of Good",
+      "weapon": "Short Sword",
+      "spellcount": "1",
+      "badge_icon": "Angelbadge2",
+      "color_source": "white",
+      "spelltypes": {
+        "N0": "I"
+      },
+      "advantages": {
+        "N0": "AURA OF GOOD: Is a source of WHITE magic."
+      }
+    },
+    "level_3": {
+      "name": "Holy Avenger",
+      "weapon": "Broadsword",
+      "spellcount": "1",
+      "badge_icon": "Angelbadge3",
+      "spelltypes": {
+        "N0": "I"
+      },
+      "advantages": {
+        "N0": "HEAVENLY PROTECTION: She has an Aura chit, which may be used like the Berserker's Berserk chit to make her vulnerability Tremendous."
+      }
+    },
+    "level_4": {
+      "name": "Angel",
+      "weapon": "Broadsword",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "I"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "order": "1",
+      "crone": "-1",
+      "bashkars": "-1",
+      "rogues": "-1",
+      "warlock": "-2",
+      "dragonmen": "-1"
+    },
+    "gamerel": {
+      "order": "1",
+      "crone": "-1",
+      "bashkars": "-1",
+      "rogues": "-1",
+      "warlock": "-2",
+      "dragonmen": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move M4",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "angel",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "fight M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "angel",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "angel",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "move H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "angel",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "fight H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "angel",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "magic I7*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "7",
+          "character_chit": "",
+          "icon_type": "angel",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "fly H5**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fly",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "angel",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "aura T6**",
+      "attributeBlocks": {
+        "this": {
+          "action": "aura",
+          "strength": "T",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "angel",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark",
+          "fight_alert": ""
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "angel",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "fly H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fly",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "angel",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic I5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "angel",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "fight H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "angel",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

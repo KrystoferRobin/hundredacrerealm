@@ -1,0 +1,19 @@
+{
+  "id": "2087",
+  "name": "Magic Wand",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "17",
+      "text": "Control red die on spell rolls",
+      "notoriety": "10",
+      "fame": "-10",
+      "great": "",
+      "red_die": "wish,curse,powerofthepit,transform,lost,violentstorm,magicmissil,attackspell,meditate,mesmerize,summondemon",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

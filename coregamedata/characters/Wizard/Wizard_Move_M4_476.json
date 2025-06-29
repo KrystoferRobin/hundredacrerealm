@@ -1,0 +1,21 @@
+{
+  "id": "476",
+  "name": "Wizard Move M4*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "strength": "M",
+      "speed": "4",
+      "character_level": "1",
+      "effort": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "2",
+      "level": "1",
+      "icon_folder": "characters",
+      "icon_type": "wizard",
+      "rw_expansion_1": ""
+    }
+  }
+}

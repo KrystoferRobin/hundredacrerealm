@@ -1,0 +1,24 @@
+Month 1, Day 16
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Wizard
+Starts turn: Ruins 4
+Wizard
+Search - Loot the Shrine - Found Treasure
+Wizard
+Activates Elven Slippers
+Wizard
+Search - Loot the Shrine - Found Treasure
+Wizard
+Activates Sacred Statue
+Wizard
+Hide - Succeeded
+Wizard
+Hide - N/A
+Wizard
+Ends turn: Ruins 4
+host
+========================================
+host

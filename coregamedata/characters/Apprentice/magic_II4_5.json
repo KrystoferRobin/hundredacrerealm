@@ -1,0 +1,22 @@
+{
+  "id": "5",
+  "name": "magic II4*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "4",
+      "character_level": "2",
+      "effort": "1",
+      "magic": "II",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "5",
+      "level": "2",
+      "icon_folder": "custom/characters",
+      "icon_type": "apprentice",
+      "rw_expansion_1": "",
+      "facing": "dark"
+    }
+  }
+}

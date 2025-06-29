@@ -1,0 +1,18 @@
+{
+  "id": "2069",
+  "name": "Withered Claw",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Roll to get WISH and CURSE",
+      "base_price": "3",
+      "discard": "shaman",
+      "potion": "",
+      "wish_and_curse": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,80 @@
+Month 2, Day 22
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Magician
+Starts turn: Crag 2
+Magician
+Search - Peer - Choice - Clues and Found 1 path(s)
+Magician
+Search - Read Runes on Glimmering Ring - Learn and Awaken (nothing)
+Magician
+Rest - You are fully rested.
+Magician
+Ends turn: Crag 2
+__battle__
+Battle resolving at Crag 2:
+__battle__
+GROUP 1
+__battle__
+Magician
+__battle__
+Rogue 7 (Magician)
+__battle__
+Rogue 6 (Magician)
+__battle__
+Rogue 5 (Magician)
+__battle__
+=======================
+__battle__
+Evening of month 2, day 22, in clearing Crag 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Magician
+Casts Enchant Artifact
+Magician
+Fatigued color chit: MAGIC IV3*
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Magician
+Targets the Glimmering Ring with Enchant Artifact
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+Magician
+Presses the END combat button.
+Magician
+Combat has ended.
+host
+========================================
+host

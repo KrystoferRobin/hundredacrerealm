@@ -1,0 +1,20 @@
+{
+  "id": "2138",
+  "name": "Phantasm",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "day",
+      "target": "character",
+      "text": "Move unseen searcher (PEER only), can SPELL",
+      "magic_color": "purple",
+      "spawn": "phantasm",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

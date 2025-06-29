@@ -1,0 +1,24 @@
+Month 2, Day 11
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+White Knight
+Starts turn: High Pass 5
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Nut Woods 2
+White Knight
+Reveals: Ruins W
+host
+========================================
+host

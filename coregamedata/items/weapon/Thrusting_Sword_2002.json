@@ -1,0 +1,28 @@
+{
+  "id": "2002",
+  "name": "Thrusting Sword",
+  "attributeBlocks": {
+    "this": {
+      "weight": "L",
+      "length": "4",
+      "base_price": "6",
+      "weapon": "",
+      "icon_type": "thrusting_sword",
+      "icon_folder": "weapons",
+      "item": "",
+      "super_realm": ""
+    },
+    "unalerted": {
+      "attack_speed": "4",
+      "strength": "L",
+      "sharpness": "1",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "strength": "L",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "366",
+  "name": "Sacred Grail",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "12",
+      "notoriety": "-25",
+      "great": "",
+      "fame": "50",
+      "native": "Order",
+      "weight": "M",
+      "original_game": "",
+      "color_source": "white",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "nosecret": "",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

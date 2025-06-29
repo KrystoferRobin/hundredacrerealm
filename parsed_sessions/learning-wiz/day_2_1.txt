@@ -1,0 +1,30 @@
+Month 2, Day 1
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Guard HQ
+Starts turn: Dark Valley 5
+Guard HQ
+Hide - Succeeded
+Guard HQ
+Hide - N/A
+Guard HQ
+Move - moved
+Guard HQ
+Hide - N/A
+Guard HQ
+Ends turn: Dark Valley 2
+Wizard
+Starts turn: Dark Valley 2
+Wizard
+Rest - You are fully rested.
+Wizard
+Hide - Succeeded
+Wizard
+Hide - N/A
+Wizard
+Ends turn: Dark Valley 2
+host
+========================================
+host

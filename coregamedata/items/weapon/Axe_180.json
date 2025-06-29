@@ -1,0 +1,31 @@
+{
+  "id": "180",
+  "name": "Axe",
+  "attributeBlocks": {
+    "this": {
+      "weight": "M",
+      "length": "2",
+      "base_price": "4",
+      "throwable": "",
+      "weapon": "",
+      "original_game": "",
+      "icon_type": "axe",
+      "alt_monsters1_game": "",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "unalerted": {
+      "attack_speed": "5",
+      "strength": "M",
+      "sharpness": "1",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "strength": "M",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

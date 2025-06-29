@@ -1,0 +1,141 @@
+{
+  "id": "2266",
+  "name": "Ethereal Abbey",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "abbey",
+      "treasure": "large",
+      "text": "",
+      "cannot_move": "",
+      "treasure_within_treasure": "11",
+      "print": "",
+      "discovery": "",
+      "color_source": "white",
+      "facing": "face_dn",
+      "ts_section": "twt",
+      "ts_color": "lightblue",
+      "nosecret": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "search": "fatigue_t,key"
+    },
+    "table": {
+      "roll_1": "breastplate",
+      "roll_2": "shield",
+      "roll_3": "helmet",
+      "roll_4": "treasure",
+      "roll_5": "spell",
+      "roll_6": "mesmerize"
+    }
+  },
+  "parts": [
+    {
+      "id": "2020",
+      "name": "Opal Helmet",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "T",
+          "weight": "T",
+          "armor_smash": "",
+          "fame": "5",
+          "notoriety": "5",
+          "armor": "",
+          "icon_type": "helmet",
+          "facing": "dark",
+          "pile_position": "1",
+          "armor_row": "2",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "magic": "",
+          "helmet": "",
+          "super_realm_treasure": ""
+        },
+        "intact": {
+          "base_price": "25",
+          "chit_color": "gold"
+        },
+        "damaged": {
+          "base_price": "20",
+          "chit_color": "yellow"
+        },
+        "destroyed": {
+          "base_price": "12"
+        }
+      }
+    },
+    {
+      "id": "2021",
+      "name": "Quartz Shield",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "T",
+          "weight": "T",
+          "shield": "",
+          "armor_choice": "",
+          "fame": "5",
+          "notoriety": "5",
+          "armor": "",
+          "icon_type": "shield",
+          "facing": "dark",
+          "pile_position": "3",
+          "armor_row": "1",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "magic": "",
+          "super_realm_treasure": ""
+        },
+        "intact": {
+          "base_price": "30",
+          "chit_color": "gold"
+        },
+        "damaged": {
+          "base_price": "26",
+          "chit_color": "yellow"
+        },
+        "destroyed": {
+          "base_price": "18"
+        }
+      }
+    },
+    {
+      "id": "2019",
+      "name": "Onyx Breastplate",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "T",
+          "weight": "T",
+          "armor_swing": "",
+          "armor_thrust": "",
+          "fame": "5",
+          "notoriety": "5",
+          "armor": "",
+          "icon_type": "breastplate",
+          "facing": "dark",
+          "pile_position": "2",
+          "armor_row": "2",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "magic": "",
+          "breastplate": "",
+          "magic_color_bonus": "purple",
+          "magic_color_bonus_armor": "H",
+          "super_realm_treasure": ""
+        },
+        "intact": {
+          "base_price": "35",
+          "chit_color": "gold"
+        },
+        "damaged": {
+          "base_price": "32",
+          "chit_color": "yellow"
+        },
+        "destroyed": {
+          "base_price": "24"
+        }
+      }
+    }
+  ]
+}

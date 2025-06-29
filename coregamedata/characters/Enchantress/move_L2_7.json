@@ -1,0 +1,18 @@
+{
+  "id": "7",
+  "name": "move L2**",
+  "attributeBlocks": {
+    "this": {
+      "action": "move",
+      "strength": "L",
+      "speed": "2",
+      "character_chit": "",
+      "icon_type": "enchantress",
+      "icon_folder": "custom/characters",
+      "stage": "7",
+      "level": "3",
+      "effort": "2",
+      "facing": "dark"
+    }
+  }
+}

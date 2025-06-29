@@ -1,0 +1,20 @@
+{
+  "id": "536",
+  "name": "Dwarf Move H6",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "speed": "6",
+      "strength": "H",
+      "character_level": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "2",
+      "level": "1",
+      "icon_folder": "characters",
+      "icon_type": "dwarf",
+      "rw_expansion_1": ""
+    }
+  }
+}

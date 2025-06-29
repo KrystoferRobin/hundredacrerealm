@@ -1,0 +1,20 @@
+{
+  "id": "1165",
+  "name": "Magic Path",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Can move between two clearings in same hex once",
+      "rw_expansion_1": "",
+      "base_price": "20",
+      "discard": "warlock",
+      "potion": "",
+      "facing": "face_dn",
+      "fame": "0",
+      "magic_path": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "676",
+  "name": "Ebony Tooth",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "15",
+      "text": "Absorbs one Power of the Pit attack before disintegrating",
+      "notoriety": "2",
+      "rw_expansion_1": "",
+      "fame": "-5",
+      "facing": "face_dn",
+      "absorb_pop": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

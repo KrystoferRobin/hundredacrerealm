@@ -1,0 +1,241 @@
+{
+  "id": "1288",
+  "name": "Cottage",
+  "attributeBlocks": {
+    "this": {
+      "dwelling": "cottage",
+      "warning": "stink",
+      "tile_type": "H",
+      "super_realm": "",
+      "print": "",
+      "icon_type": "human",
+      "ts_section": "dwellings",
+      "ts_color": "tan",
+      "icon_folder": "wesnoth/buildings",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1830",
+      "name": "Summoner 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Summoners",
+          "fame": "0",
+          "notoriety": "3",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "1",
+          "icon_type": "zerker",
+          "setup_start": "Cottage",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "1",
+          "clan": "2",
+          "icon_size": "0.9",
+          "native_name": "Caster",
+          "spell_pre_battle": "Elven Grace",
+          "spell_targets_self": ""
+        },
+        "light": {
+          "move_speed": "2",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "2",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "1831",
+      "name": "Summoner 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Summoners",
+          "fame": "0",
+          "notoriety": "3",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "2",
+          "icon_type": "zerker",
+          "setup_start": "Cottage",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "1",
+          "clan": "2",
+          "icon_size": "0.9",
+          "native_name": "Caster",
+          "spell_pre_battle": "Elven Grace",
+          "spell_targets_self": ""
+        },
+        "light": {
+          "move_speed": "2",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "2",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "1832",
+      "name": "Summoner 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Summoners",
+          "fame": "0",
+          "notoriety": "3",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "3",
+          "icon_type": "zerker",
+          "setup_start": "Cottage",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "1",
+          "clan": "2",
+          "icon_size": "0.9",
+          "native_name": "Caster",
+          "spell_pre_battle": "Elven Grace",
+          "spell_targets_self": ""
+        },
+        "light": {
+          "move_speed": "2",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "2",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "1833",
+      "name": "Summoner HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Summoners",
+          "fame": "0",
+          "notoriety": "3",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "HQ",
+          "icon_type": "zerker",
+          "setup_start": "Cottage",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units",
+          "commerce": "N",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "1",
+          "clan": "2",
+          "icon_size": "0.9",
+          "native_name": "Caster",
+          "spell_pre_battle": "Elven Grace",
+          "spell_targets_self": ""
+        },
+        "light": {
+          "move_speed": "2",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "2",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "1928",
+      "name": "Pony",
+      "attributeBlocks": {
+        "this": {
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "base_price": "12",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units/monsters",
+          "icon_size": "1",
+          "icon_type": "horse",
+          "horse_holder": "Bashkar Dwelling"
+        },
+        "trot": {
+          "move_speed": "5",
+          "strength": "M",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "4",
+          "strength": "M",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1929",
+      "name": "Pony",
+      "attributeBlocks": {
+        "this": {
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "base_price": "15",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units/monsters",
+          "icon_size": "1",
+          "icon_type": "horse",
+          "horse_holder": "Bashkar Dwelling"
+        },
+        "trot": {
+          "move_speed": "4",
+          "strength": "M",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "3",
+          "strength": "M",
+          "chit_color": "tan"
+        }
+      }
+    }
+  ]
+}

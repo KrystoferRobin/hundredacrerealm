@@ -1,0 +1,18 @@
+{
+  "id": "5",
+  "name": "GameObject",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "5",
+      "level": "2",
+      "action": "MOVE",
+      "strength": "L",
+      "speed": "4",
+      "effort": "0",
+      "facing": "dark",
+      "icon_type": "halfling"
+    }
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Guide",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn,Guard,Chapel,House",
+      "pronoun": "he",
+      "creator": "Roberto Ullfig",
+      "artcredit": "East Paladin Gallery",
+      "meaning": "Trefoil",
+      "vulnerability": "M",
+      "icon_type": "guide",
+      "icon_folder": "custom/characters"
+    },
+    "level_1": {
+      "name": "Rover",
+      "weapon": "Short Sword"
+    },
+    "level_2": {
+      "name": "Tracker",
+      "weapon": "Short Sword",
+      "badge_icon": "Guidebadge2",
+      "advantages": {
+        "N0": "EAGLE EYE: Rolls 1 die instead of 2 for all rolls on the LOCATE, and PEER tables. [Level 2]"
+      },
+      "diemod": {
+        "N0": "1d:locate,peer:all"
+      }
+    },
+    "level_3": {
+      "name": "Pioneer",
+      "weapon": "Short Sword"
+    },
+    "level_4": {
+      "name": "Guide",
+      "weapon": "Short Sword",
+      "badge_icon": "Guidebadge4",
+      "mountain_move_adj": "-1",
+      "advantages": {
+        "N0": "MOUNTAINEER: -1 Mountain MOVE Cost. [Level 4]"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "patrol": "-1",
+      "lancers": "1",
+      "woodfolk": "1",
+      "company": "-1"
+    },
+    "gamerel": {
+      "patrol": "-1",
+      "lancers": "1",
+      "woodfolk": "1",
+      "company": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "MOVE M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "3",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "guide"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "guide"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "FIGHT M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "guide"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "guide"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "MOVE M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "5",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "guide"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "FIGHT M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "5",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "guide"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "MOVE M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "3",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "guide"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "guide"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "FIGHT M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "guide"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "MOVE H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "guide"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "MOVE M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "5",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "guide"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "FIGHT H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "guide"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

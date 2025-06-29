@@ -1,0 +1,40 @@
+{
+  "id": "1374",
+  "name": "Golem",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "armored": "",
+      "vulnerability": "T",
+      "fame": "8",
+      "notoriety": "8",
+      "super_realm": "",
+      "icon_type": "golem",
+      "setup_start": "Golem Box",
+      "monster_die": "6",
+      "base_price": "8",
+      "icon_folder": "wesnoth/units",
+      "needs_init": "",
+      "denizen": "",
+      "icon_size": "1",
+      "golem": "",
+      "box_num": "3"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "H",
+      "chit_color": "purple"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": "",
+      "kills_horse": "",
+      "destroys_armor": ""
+    }
+  },
+  "parts": []
+}

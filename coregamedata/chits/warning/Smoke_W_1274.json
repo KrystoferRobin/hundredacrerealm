@@ -1,0 +1,30 @@
+{
+  "id": "1274",
+  "name": "Smoke W",
+  "attributeBlocks": {
+    "this": {
+      "warning": "smoke",
+      "tile_type": "W",
+      "super_realm": "",
+      "chit": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1284",
+      "name": "Small Campfire",
+      "attributeBlocks": {
+        "this": {
+          "dwelling": "s_fire",
+          "warning": "smoke",
+          "tile_type": "W",
+          "super_realm": "",
+          "icon_type": "fire3",
+          "icon_folder": "wesnoth/buildings",
+          "general_dwelling": "",
+          "no_shelter": ""
+        }
+      }
+    }
+  ]
+}

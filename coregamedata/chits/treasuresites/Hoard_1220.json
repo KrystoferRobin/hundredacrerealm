@@ -1,0 +1,22 @@
+{
+  "id": "1220",
+  "name": "Hoard",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "hoard",
+      "clearing": "6",
+      "super_realm": "",
+      "monster_die": "1",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "red",
+      "icon_type": "fireDragon",
+      "icon_folder": "wesnoth/units",
+      "icon_size": "0.4"
+    }
+  },
+  "parts": []
+}

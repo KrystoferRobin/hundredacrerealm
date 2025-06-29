@@ -1,0 +1,22 @@
+{
+  "id": "4",
+  "name": "move M4*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "strength": "M",
+      "effort": "1",
+      "character_level": "2",
+      "original_game": "",
+      "speed": "4",
+      "alt_monsters1_game": "",
+      "stage": "4",
+      "level": "2",
+      "icon_folder": "custom/characters",
+      "icon_type": "abbot",
+      "rw_expansion_1": "",
+      "facing": "dark"
+    }
+  }
+}

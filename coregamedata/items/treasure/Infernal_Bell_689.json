@@ -1,0 +1,19 @@
+{
+  "id": "689",
+  "name": "Infernal Bell",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Cannot HIDE in same clearing as this item",
+      "rw_expansion_1": "",
+      "notoriety": "1",
+      "weight": "L",
+      "facing": "face_dn",
+      "no_hide": "",
+      "author": "Expansion 1",
+      "base_price": "3",
+      "item": ""
+    }
+  },
+  "parts": []
+}

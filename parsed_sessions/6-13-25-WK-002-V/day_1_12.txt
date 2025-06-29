@@ -1,0 +1,18 @@
+Month 1, Day 12
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+White Knight
+Starts turn: Caves 2
+White Knight
+Hide - Succeeded
+White Knight
+Search - Locate - Discover chit(s) - none to discover
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Caves 2
+host
+========================================
+host

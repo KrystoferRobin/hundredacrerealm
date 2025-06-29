@@ -1,0 +1,160 @@
+Month 1, Day 23
+host
+========================================
+Pilgrim
+Spent the night at the Chapel.
+host
+Monster Die roll is Rolled 2.
+Pilgrim
+Starts turn: Evil Valley 4
+Pilgrim
+Selling to Order HQ.
+Pilgrim
+Attempting to sell: Flowers of Rest, and Dragon Essence
+Pilgrim
+Trade - Sell to Order HQ - Sold 2 items for 5 gold:
+Pilgrim
+Buying from Order HQ.
+Pilgrim
+Available for sale: 3 Warhorses, 2 Armors, Crossbow, Morning Star, Great Axe, 6 Treasures, and Short Sword
+Pilgrim
+Bidding for a treasure
+Pilgrim
+The native group will be no more favorable with drinks.
+Pilgrim
+Trade - Buy from Order HQ (as Ally) - Price x 1
+Pilgrim
+Hire - Cancelled Hire
+Pilgrim
+Hire - Cancelled Hire
+Pilgrim
+Ends turn: Evil Valley 4
+Amazon
+Starts turn: Curst Valley 2
+Amazon
+Hide - Succeeded
+Amazon
+Hide - N/A
+Amazon
+Move - moved
+Amazon
+Selling to Soldier HQ.
+Amazon
+Attempting to sell: Regent of Jewels
+Amazon
+Trade - Sell to Soldier HQ - Total received for the Regent of Jewels was 67 gold.
+Amazon
+Buying from Soldier HQ.
+Amazon
+Available for sale: 4 Helmets, 3 Shields, Staff, 2 Thrusting Swords, 2 Short Swords, and 3 Treasures
+Amazon
+Bidding for a treasure
+Amazon
+Buys the Cloak of Mist from the Soldier HQ
+Amazon
+Trade - Buy from Soldier HQ (as Ally) - Price x 4
+Amazon
+Hire - Buy from Soldier 3 (as Ally) - Price x 1
+Amazon
+Ends turn: Curst Valley 5
+host
+Woodsfolk 1 is added to Curst Valley, clearing 5
+host
+Woodsfolk 2 is added to Curst Valley, clearing 5
+host
+Woodsfolk HQ is added to Curst Valley, clearing 5
+White Knight
+Starts turn: Curst Valley 5
+White Knight
+Ends turn: Curst Valley 5
+__battle__
+Battle resolving at Evil Valley 4:
+__battle__
+GROUP 1
+__battle__
+Pilgrim
+__battle__
+GROUP 2
+__battle__
+Order 1
+__battle__
+Order 2
+__battle__
+Order 3
+__battle__
+Order HQ
+Pilgrim
+The native group will be no more favorable with drinks.
+Pilgrim
+Meeting Order on the Ally table
+Pilgrim
+Rolled 4 and 1. = Price x 3
+__battle__
+=======================
+__battle__
+Evening of month 1, day 23, in clearing Evil Valley 4
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Pilgrim
+Presses the END combat button.
+Pilgrim
+Combat has ended.
+__battle__
+Battle resolving at Curst Valley 5:
+__battle__
+GROUP 1
+__battle__
+White Knight
+__battle__
+GROUP 2
+__battle__
+Soldier 1 (Amazon)
+__battle__
+Soldier 2 (Amazon)
+__battle__
+Soldier 3 (Amazon)
+__battle__
+Soldier HQ (Amazon)
+__battle__
+Amazon
+__battle__
+GROUP 3
+__battle__
+Woodsfolk 1
+__battle__
+Woodsfolk 2
+__battle__
+Woodsfolk HQ
+Amazon
+Meeting Woodfolk on the Friendly table
+Amazon
+Rolled 6 and 5. = No Deal
+White Knight
+Meeting Woodfolk on the Friendly table
+White Knight
+Rolled 5 and 5, with a modifier of -1. = Price x 3
+__battle__
+=======================
+__battle__
+Evening of month 1, day 23, in clearing Curst Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Amazon
+Presses the END combat button.
+Amazon
+Combat has ended.
+host
+========================================
+host

@@ -1,0 +1,299 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Priestess",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn,Chapel",
+      "pronoun": "she",
+      "creator": "Roberto Ullfig",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Ankh",
+      "vulnerability": "L",
+      "icon_type": "priestess",
+      "icon_folder": "custom/characters",
+      "magicuser": ""
+    },
+    "level_1": {
+      "name": "Novitiate"
+    },
+    "level_2": {
+      "name": "Acolyte",
+      "spellcount": "1",
+      "badge_icon": "Priestessbadge2",
+      "curse_immunity": "",
+      "spelltypes": {
+        "N0": "I"
+      },
+      "advantages": {
+        "N0": "PAGAN: Immune to Curses. [Level 2]"
+      }
+    },
+    "level_3": {
+      "name": "Adept",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "I",
+        "N1": "VII"
+      }
+    },
+    "level_4": {
+      "name": "Priestess",
+      "spellcount": "2",
+      "badge_icon": "Priestessbadge4",
+      "spelltypes": {
+        "N0": "I",
+        "N1": "VII"
+      },
+      "advantages": {
+        "N0": "HEAVENLY PROTECTION: Immune to the Balrog, Imp, Demon, and Flying Demon. [Level 4]"
+      },
+      "monster_immunity": {
+        "N0": "Balrog",
+        "N1": "Imp",
+        "N2": "Demon",
+        "N3": "Winged Demon"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "order": "1",
+      "crone": "-1",
+      "rogues": "-1",
+      "company": "-1",
+      "lancers": "1"
+    },
+    "gamerel": {
+      "order": "1",
+      "crone": "-1",
+      "rogues": "-1",
+      "company": "-1",
+      "lancers": "1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "priestess",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "priestess",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "priestess",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "move L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "priestess",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "move L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "priestess",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "magic I5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "priestess",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "priestess",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "strength": "L"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "magic I4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "priestess",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic VII4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "priestess",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "magic I3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "priestess",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic I3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "priestess",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic VII3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "priestess",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

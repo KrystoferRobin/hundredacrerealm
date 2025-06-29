@@ -1,0 +1,34 @@
+Month 2, Day 1
+host
+========================================
+White Knight
+Spent the night at the Chapel.
+host
+Monster Die roll is Rolled 3.
+White Knight
+Starts turn: Dark Valley 5
+White Knight
+Activates Magic Spectacles
+White Knight
+Buying from Order HQ.
+White Knight
+Available for sale: 3 Warhorses, Armor, Crossbow, Morning Star, 2 Great Axes, 2 Treasures, and Boon
+White Knight
+Bidding for the Boon
+White Knight
+Repaid boon, and restored one level of friendliness with Order HQ
+White Knight
+Trade - Buy from Order HQ (as Ally) - Boon (x 1)
+White Knight
+The native group will be no more favorable with drinks.
+White Knight
+Hire - Buy from Order 1 (as Ally) - Boon (x 1)
+White Knight
+Move - moved
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Dark Valley 2
+host
+========================================
+host

@@ -1,0 +1,22 @@
+{
+  "id": "296",
+  "name": "Phantasm",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "day",
+      "target": "character",
+      "text": "Move unseen searcher (PEER only), can SPELL",
+      "magic_color": "purple",
+      "original_game": "",
+      "spawn": "phantasm",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

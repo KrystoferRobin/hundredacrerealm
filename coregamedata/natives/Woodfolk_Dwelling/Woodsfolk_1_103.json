@@ -1,0 +1,42 @@
+{
+  "id": "103",
+  "name": "Woodsfolk 1",
+  "attributeBlocks": {
+    "this": {
+      "native": "Woodfolk",
+      "fame": "0",
+      "notoriety": "4",
+      "base_price": "2",
+      "vulnerability": "M",
+      "rank": "1",
+      "original_game": "",
+      "icon_type": "archer",
+      "monster_die": "2",
+      "setup_start": "Woodfolk Dwelling",
+      "missile": "",
+      "hire_type": "group",
+      "icon_folder": "natives",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "denizen": "",
+      "archer": "",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "icon_type_alt": "bowman",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "2",
+      "chit_color": "lightgreen"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "1",
+      "strength": "L",
+      "length": "14",
+      "sharpness": "2",
+      "missile": "",
+      "chit_color": "forestgreen"
+    }
+  },
+  "parts": []
+}

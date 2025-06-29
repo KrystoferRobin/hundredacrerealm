@@ -1,0 +1,29 @@
+{
+  "id": "1960",
+  "name": "Crossbow",
+  "attributeBlocks": {
+    "this": {
+      "weight": "H",
+      "length": "12",
+      "base_price": "10",
+      "missile": "",
+      "two_handed": "",
+      "weapon": "",
+      "icon_type": "crossbow",
+      "icon_folder": "weapons",
+      "item": "",
+      "super_realm": ""
+    },
+    "unalerted": {
+      "strength": "H",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "attack_speed": "1",
+      "strength": "H",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

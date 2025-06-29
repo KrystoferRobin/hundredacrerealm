@@ -1,0 +1,18 @@
+{
+  "id": "6",
+  "name": "fight L2**",
+  "attributeBlocks": {
+    "this": {
+      "action": "fight",
+      "strength": "L",
+      "speed": "2",
+      "character_chit": "",
+      "icon_type": "druid priestess",
+      "icon_folder": "custom/characters",
+      "stage": "6",
+      "level": "2",
+      "effort": "2",
+      "facing": "dark"
+    }
+  }
+}

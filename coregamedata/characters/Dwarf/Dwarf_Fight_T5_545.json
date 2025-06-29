@@ -1,0 +1,21 @@
+{
+  "id": "545",
+  "name": "Dwarf Fight T5**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "speed": "5",
+      "strength": "T",
+      "effort": "2",
+      "character_level": "4",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "11",
+      "level": "4",
+      "icon_folder": "characters",
+      "icon_type": "dwarf",
+      "rw_expansion_1": ""
+    }
+  }
+}

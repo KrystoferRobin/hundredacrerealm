@@ -1,0 +1,20 @@
+{
+  "id": "303",
+  "name": "Bad Luck",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "permanent",
+      "target": "character",
+      "text": "Add one to all die rolls",
+      "magic_color": "any",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

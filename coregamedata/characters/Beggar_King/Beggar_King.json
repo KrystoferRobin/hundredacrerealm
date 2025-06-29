@@ -1,0 +1,306 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Beggar King",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn",
+      "pronoun": "he",
+      "creator": "JYPE",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Spiral",
+      "vulnerability": "M",
+      "icon_type": "beggar king",
+      "icon_folder": "custom/characters",
+      "extra_notes": "Though he talks like some rich dandy, the Beggar King secured his position by being the most violent thug in the Realm."
+    },
+    "level_1": {
+      "name": "Student",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "IV",
+        "N1": "VI"
+      }
+    },
+    "level_2": {
+      "name": "Drunk",
+      "spellcount": "1",
+      "badge_icon": "Beggar_Kingbadge2",
+      "spelltypes": {
+        "N0": "IV",
+        "N1": "VI"
+      },
+      "advantages": {
+        "N0": "STREETWISE: Roll 1 die on Meeting Table"
+      },
+      "diemod": {
+        "N0": "1d:commerce,trade,hire,meeting:all"
+      }
+    },
+    "level_3": {
+      "name": "Thug",
+      "spellcount": "1",
+      "weapon": "Mace",
+      "spelltypes": {
+        "N0": "IV",
+        "N1": "VI"
+      }
+    },
+    "level_4": {
+      "name": "Beggar King",
+      "armor": "Breastplate",
+      "weapon": "Axe",
+      "spellcount": "1",
+      "badge_icon": "Beggar_Kingbadge4",
+      "spelltypes": {
+        "N0": "IV",
+        "N1": "VI"
+      },
+      "advantages": {
+        "N0": "SCROUNGE: Roll 1 die on Search tables"
+      },
+      "diemod": {
+        "N0": "1d:magicsight,readrunes,locate,peer,loot:all"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "rogues": "2",
+      "patrol": "-1",
+      "company": "1",
+      "guard": "-2"
+    },
+    "gamerel": {
+      "rogues": "2",
+      "patrol": "-1",
+      "company": "1",
+      "guard": "-2"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "MAGIC IV5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "action": "MAGIC",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "IV",
+          "icon_type": "beggar king"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MAGIC VI3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "action": "MAGIC",
+          "speed": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VI",
+          "icon_type": "beggar king"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "MOVE M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "3",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "beggar king"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "beggar king"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "FIGHT M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "beggar king"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "FIGHT M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "3",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "beggar king"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "FIGHT H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "6",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "beggar king"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "MOVE H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "beggar king"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "MOVE H4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "beggar king"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "MOVE H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "6",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "beggar king"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "FIGHT H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "beggar king"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "FIGHT H3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "3",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "beggar king"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

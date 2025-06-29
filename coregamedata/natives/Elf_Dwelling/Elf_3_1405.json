@@ -1,0 +1,44 @@
+{
+  "id": "1405",
+  "name": "Elf 3",
+  "attributeBlocks": {
+    "this": {
+      "native": "Elves",
+      "fame": "0",
+      "notoriety": "4",
+      "base_price": "2",
+      "vulnerability": "M",
+      "rank": "3",
+      "super_realm": "",
+      "icon_type": "archer-bow",
+      "monster_die": "3",
+      "monster_die2": "4",
+      "setup_start": "Elf Dwelling",
+      "hire_type": "group",
+      "icon_folder": "wesnoth/units/elves-wood",
+      "denizen": "",
+      "magic_protection": "",
+      "missile": "",
+      "icon_size": "0.9",
+      "archer": "",
+      "native_name": "Archer",
+      "roving_native": ""
+    },
+    "light": {
+      "move_speed": "2",
+      "attack_speed": "0",
+      "chit_color": "paleyellow",
+      "magic_type": "VII"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "1",
+      "strength": "L",
+      "length": "14",
+      "chit_color": "yellow",
+      "sharpness": "2",
+      "missile": ""
+    }
+  },
+  "parts": []
+}

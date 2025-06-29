@@ -1,0 +1,41 @@
+{
+  "id": "920",
+  "name": "Skeletal Archer",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "1",
+      "notoriety": "1",
+      "icon_type": "skullbow",
+      "setup_start": "Skeleton Box",
+      "monster_die": "2",
+      "base_price": "1",
+      "icon_folder": "monsters2",
+      "rw_expansion_1": "",
+      "box_num": "1",
+      "undead": "",
+      "denizen": "",
+      "archer": "",
+      "missile": "",
+      "weapon_use": "",
+      "skeleton": "",
+      "icon_type_alt": "core-images-units-undead-skeletal-archer-archer",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "3",
+      "chit_color": "white"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "3",
+      "strength": "M",
+      "chit_color": "gray",
+      "sharpness": "1",
+      "length": "14"
+    }
+  },
+  "parts": []
+}

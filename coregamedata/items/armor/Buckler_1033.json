@@ -1,0 +1,30 @@
+{
+  "id": "1033",
+  "name": "Buckler",
+  "attributeBlocks": {
+    "this": {
+      "vulnerability": "L",
+      "weight": "L",
+      "shield": "",
+      "armor_choice": "",
+      "armor": "",
+      "icon_type": "buckler",
+      "facing": "dark",
+      "armor_row": "1",
+      "ret_dw": "House",
+      "icon_folder": "armor",
+      "rw_expansion_1": "",
+      "item": "",
+      "buckler": ""
+    },
+    "intact": {
+      "base_price": "3",
+      "chit_color": "tan"
+    },
+    "damaged": {
+      "base_price": "1",
+      "chit_color": "white"
+    }
+  },
+  "parts": []
+}

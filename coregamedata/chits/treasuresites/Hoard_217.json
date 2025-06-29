@@ -1,0 +1,26 @@
+{
+  "id": "217",
+  "name": "Hoard",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "hoard",
+      "clearing": "6",
+      "original_game": "",
+      "monster_die": "1",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "gold",
+      "icon_type": "dragon_flying",
+      "icon_folder": "monsters",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_type_alt": "fireDragon",
+      "icon_size_alt": "0.4"
+    }
+  },
+  "parts": []
+}

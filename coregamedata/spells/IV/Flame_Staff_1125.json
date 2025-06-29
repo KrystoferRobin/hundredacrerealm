@@ -1,0 +1,21 @@
+{
+  "id": "1125",
+  "name": "Flame Staff",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "combat",
+      "target": "staff",
+      "text": "Staff gains two sharpness stars",
+      "magic_color": "purple",
+      "alt_monsters1_game": "",
+      "new_spells_1": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": "",
+      "add_sharpness": "2"
+    }
+  },
+  "parts": []
+}

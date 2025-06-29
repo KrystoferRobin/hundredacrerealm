@@ -1,0 +1,339 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Ogre Queen",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn,Ghost",
+      "pronoun": "she",
+      "creator": "Roberto Ullfig",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Medicine Woman",
+      "vulnerability": "H",
+      "icon_type": "ogre queen",
+      "icon_folder": "custom/characters",
+      "magicuser": "",
+      "extra_notes": ""
+    },
+    "level_1": {
+      "name": "Ogre Dame",
+      "spellcount": "1",
+      "weapon": "Club",
+      "badge_icon": "Ogre_Queenbadge1",
+      "curse_immunity": "",
+      "spelltypes": {
+        "N0": "VIII"
+      },
+      "advantages": {
+        "N0": "PAGAN: Immune to Curses [L1]"
+      }
+    },
+    "level_2": {
+      "name": "Ogre Lady",
+      "weapon": "Club",
+      "spellcount": "1",
+      "badge_icon": "Ogre_Queenbadge2",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "VIII"
+      },
+      "advantages": {
+        "N0": "UGLY: +1 to all rolls COMMERCE, TRADE, HIRE, and MEETING tables. [L2]"
+      },
+      "diemod": {
+        "N0": "+1:trade,meeting,hire,commerce:all"
+      }
+    },
+    "level_3": {
+      "name": "Ogre Princess",
+      "weapon": "Club",
+      "spellcount": "1",
+      "badge_icon": "Ogre_Queenbadge3",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "V",
+        "N2": "VIII"
+      },
+      "advantages": {
+        "N0": "SLAVE: Has an Ogre companion.Commands Ogres [L3]"
+      },
+      "companion_name": {
+        "N0": "Ogre"
+      }
+    },
+    "level_4": {
+      "name": "Ogre Queen",
+      "weapon": "Club",
+      "spellcount": "2",
+      "badge_icon": "Ogre_Queenbadge4",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "V",
+        "N2": "VIII"
+      },
+      "advantages": {
+        "N0": "PET: Has a Wolf companion. [L4]"
+      },
+      "companion_name": {
+        "N0": "Wolf 2"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "guard": "-2",
+      "order": "-2",
+      "patrol": "-2",
+      "soldiers": "-2",
+      "woodfolk": "-1",
+      "lancers": "-1",
+      "crone": "1",
+      "company": "-1"
+    },
+    "gamerel": {
+      "guard": "-2",
+      "order": "-2",
+      "patrol": "-2",
+      "soldiers": "-2",
+      "woodfolk": "-1",
+      "lancers": "-1",
+      "crone": "1",
+      "company": "-1"
+    },
+    "level_1_1": {
+      "badge_icon": "custom/badges/one",
+      "monster_control_duration": "0",
+      "monster_control_enhanced": "",
+      "advantages": {
+        "N0": "OGRE QUEEN: Command Ogres"
+      },
+      "monster_control": {
+        "N0": "Ogre"
+      }
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "ogre queen",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "fight H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "ogre queen",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "magic VIII4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "ogre queen",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VIII"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "move H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "ogre queen",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "magic II4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "ogre queen",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "magic II4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "ogre queen",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "ogre queen",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "ogre queen",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic V4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "ogre queen",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "V"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "FIGHT H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "ogre queen",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic V4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "ogre queen",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "V"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic VIII4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "ogre queen",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VIII"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

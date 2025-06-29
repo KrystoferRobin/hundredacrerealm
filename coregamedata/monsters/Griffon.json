@@ -1,0 +1,36 @@
+{
+  "id": "769",
+  "name": "Griffon",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "H",
+      "fame": "5",
+      "notoriety": "5",
+      "icon_type": "griffon",
+      "setup_start": "Griffon Box",
+      "monster_die": "2",
+      "base_price": "5",
+      "icon_folder": "monsters1",
+      "alt_monsters1_game": "",
+      "flying": "",
+      "denizen": "",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "icon_type_alt": "gryphon",
+      "icon_size_alt": "1"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "M",
+      "chit_color": "white"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "strength": "H",
+      "chit_color": "gray"
+    }
+  },
+  "parts": []
+}

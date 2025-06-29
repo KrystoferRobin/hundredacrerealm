@@ -1,0 +1,21 @@
+{
+  "id": "551",
+  "name": "Witch Magic V6*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "6",
+      "magic": "V",
+      "effort": "1",
+      "character_level": "2",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "5",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "witch",
+      "rw_expansion_1": ""
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "1956",
+  "name": "Living Sword",
+  "attributeBlocks": {
+    "this": {
+      "weight": "L",
+      "length": "4",
+      "fame": "3",
+      "notoriety": "9",
+      "base_price": "25",
+      "magic": "",
+      "weapon": "",
+      "icon_type": "thrusting_sword",
+      "icon_folder": "weapons",
+      "item": "",
+      "super_realm": ""
+    },
+    "unalerted": {
+      "attack_speed": "3",
+      "strength": "L",
+      "sharpness": "1",
+      "chit_color": "yellow"
+    },
+    "alerted": {
+      "attack_speed": "2",
+      "strength": "L",
+      "sharpness": "1",
+      "chit_color": "gold"
+    }
+  },
+  "parts": []
+}

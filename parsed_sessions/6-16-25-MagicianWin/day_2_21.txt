@@ -1,0 +1,34 @@
+Month 2, Day 21
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+host
+7th day - denizens return to setup card:
+host
+- Guard 1
+host
+- Guard 2
+host
+- Guard HQ
+host
+- Order 1
+host
+- Order 2
+host
+- Order 3
+host
+- Order HQ
+Magician
+Starts turn: Borderland 3
+Magician
+Move - moved
+Magician
+Move - moved
+Magician
+Hide - Succeeded
+Magician
+Ends turn: Crag 2
+host
+========================================
+host

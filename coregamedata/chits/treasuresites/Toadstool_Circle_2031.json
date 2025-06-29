@@ -1,0 +1,62 @@
+{
+  "id": "2031",
+  "name": "Toadstool Circle",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "toadstool_circle",
+      "treasure": "large",
+      "text": "Extra SPELL",
+      "cannot_move": "",
+      "treasure_within_treasure": "4",
+      "print": "",
+      "discovery": "",
+      "color_source": "black",
+      "extra_actions_clearing": "SP",
+      "facing": "face_dn",
+      "ts_section": "twt",
+      "ts_color": "lightblue",
+      "nosecret": "",
+      "super_realm": ""
+    },
+    "table": {
+      "roll_1": "weapon",
+      "roll_2": "treasure",
+      "roll_3": "teleport_cave",
+      "roll_4": "peer_any",
+      "roll_5": "power_pit",
+      "roll_6": "curse"
+    }
+  },
+  "parts": [
+    {
+      "id": "1955",
+      "name": "Devil Sword",
+      "attributeBlocks": {
+        "this": {
+          "weight": "H",
+          "length": "7",
+          "notoriety": "15",
+          "base_price": "20",
+          "magic": "",
+          "weapon": "",
+          "icon_type": "broadsword",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "4",
+          "strength": "H",
+          "sharpness": "1",
+          "chit_color": "yellow"
+        },
+        "alerted": {
+          "attack_speed": "3",
+          "strength": "H",
+          "sharpness": "1",
+          "chit_color": "gold"
+        }
+      }
+    }
+  ]
+}

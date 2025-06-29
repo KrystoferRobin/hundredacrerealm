@@ -1,0 +1,30 @@
+{
+  "id": "1911",
+  "name": "Pony",
+  "attributeBlocks": {
+    "this": {
+      "horse": "pony",
+      "move_bonus": "double",
+      "vulnerability": "M",
+      "base_price": "16",
+      "magic": "",
+      "item": "",
+      "super_realm": "",
+      "icon_folder": "wesnoth/units/monsters",
+      "icon_size": "1",
+      "icon_type": "horse",
+      "horse_holder": "Bashkar Dwelling"
+    },
+    "trot": {
+      "move_speed": "4",
+      "strength": "L",
+      "chit_color": "tan"
+    },
+    "gallop": {
+      "move_speed": "2",
+      "strength": "L",
+      "chit_color": "tan"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,69 @@
+{
+  "id": "1435",
+  "name": "T Dragon",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "armored": "",
+      "vulnerability": "T",
+      "fame": "10",
+      "notoriety": "10",
+      "icon_type": "wildWyvern",
+      "setup_start": "T Dragon Box",
+      "monster_die": "1",
+      "base_price": "10",
+      "icon_folder": "wesnoth/units",
+      "denizen": "",
+      "super_realm": "",
+      "icon_size": "0.7",
+      "dragon": "",
+      "box_num": "3"
+    },
+    "light": {
+      "move_speed": "6",
+      "attack_speed": "5",
+      "strength": "H",
+      "chit_color": "purple"
+    },
+    "dark": {
+      "move_speed": "6",
+      "attack_speed": "3",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": "",
+      "kills_horse": "",
+      "destroys_armor": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1436",
+      "name": "Head",
+      "attributeBlocks": {
+        "this": {
+          "monster": "",
+          "part": "",
+          "icon_type": "fire-breath-drake",
+          "dragon_missile": "",
+          "icon_folder": "wesnoth/icons/attacks",
+          "super_realm": "",
+          "icon_size": "0.6"
+        },
+        "light": {
+          "attack_speed": "4",
+          "strength": "H",
+          "length": "9",
+          "chit_color": "pink",
+          "dragon_length": "15"
+        },
+        "dark": {
+          "attack_speed": "4",
+          "strength": "T",
+          "length": "9",
+          "chit_color": "red",
+          "dragon_length": "15"
+        }
+      }
+    }
+  ]
+}

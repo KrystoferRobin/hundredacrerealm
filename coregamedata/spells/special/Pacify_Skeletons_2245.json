@@ -1,0 +1,24 @@
+{
+  "id": "2245",
+  "name": "Pacify Skeletons",
+  "spellLevel": "*",
+  "attributeBlocks": {
+    "this": {
+      "duration": "permanent",
+      "target": "spells item",
+      "text": "Pacify Skeletons",
+      "magic_color": "black",
+      "host_okay": "",
+      "spell": "*",
+      "awakened": "",
+      "no_cancel": "",
+      "benevolent": "",
+      "super_realm": "",
+      "pacifytype": "1",
+      "no_expire": "",
+      "no_incantation_tie": "",
+      "super_realm_treasure": ""
+    }
+  },
+  "parts": []
+}

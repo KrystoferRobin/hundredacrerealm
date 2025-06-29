@@ -1,0 +1,24 @@
+{
+  "id": "2103",
+  "name": "Alchemist's Mixture",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "One MISSILE attack (discard to WARLOCK)",
+      "base_price": "4",
+      "discard": "warlock",
+      "strength": "M",
+      "sharpness": "3",
+      "potion": "",
+      "length": "11",
+      "missile": "thrown",
+      "attack": "",
+      "transferable": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": ""
+    }
+  },
+  "parts": []
+}

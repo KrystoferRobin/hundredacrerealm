@@ -1,0 +1,26 @@
+{
+  "id": "691",
+  "name": "Ghost Armor",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Heavy Suit of Armor - Use MAGIC SIGHT",
+      "rw_expansion_1": "",
+      "weight": "L",
+      "base_price": "5",
+      "fame": "-5",
+      "facing": "face_dn",
+      "cursed": "",
+      "vulnerability": "H",
+      "armor": "",
+      "armor_row": "3",
+      "armor_thrust": "",
+      "armor_swing": "",
+      "armor_smash": "",
+      "magic_sight": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

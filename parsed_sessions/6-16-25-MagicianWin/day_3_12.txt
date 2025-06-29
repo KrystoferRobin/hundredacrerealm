@@ -1,0 +1,20 @@
+Month 3, Day 12
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Magician
+Starts turn: Borderland 2
+Magician
+Hide - Succeeded
+Magician
+Hide - N/A
+Magician
+Spell Prep -
+Magician
+Spell - enchanted Magician Magic IV3*
+Magician
+Ends turn: Borderland 2
+host
+========================================
+host

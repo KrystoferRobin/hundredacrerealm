@@ -1,0 +1,18 @@
+{
+  "id": "2102",
+  "name": "See/Change Weather",
+  "spellLevel": "*",
+  "attributeBlocks": {
+    "this": {
+      "duration": "instant",
+      "target": "weather",
+      "text": "See or change the coming weather",
+      "magic_color": "gray",
+      "spell": "*",
+      "awakened": "",
+      "super_realm": "",
+      "change_weather": ""
+    }
+  },
+  "parts": []
+}

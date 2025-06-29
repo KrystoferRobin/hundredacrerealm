@@ -1,0 +1,18 @@
+{
+  "id": "8",
+  "name": "magic VII2*",
+  "attributeBlocks": {
+    "this": {
+      "action": "magic",
+      "speed": "2",
+      "character_chit": "",
+      "icon_type": "fairy",
+      "icon_folder": "custom/characters",
+      "stage": "8",
+      "level": "3",
+      "effort": "1",
+      "facing": "dark",
+      "magic": "VII"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+Month 1, Day 6
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+White Knight
+Starts turn: Awful Valley 1
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Hide - Failed
+White Knight
+Hide - Succeeded
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Mountain 2
+White Knight
+Reveals: Flutter 1
+White Knight
+Reveals: Ruins M
+host
+========================================
+host

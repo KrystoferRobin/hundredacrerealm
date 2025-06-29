@@ -1,0 +1,288 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Beancounter",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn",
+      "pronoun": "he",
+      "creator": "Andrew Gould",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Marketplace",
+      "vulnerability": "L",
+      "icon_type": "beancounter",
+      "icon_folder": "custom/characters"
+    },
+    "level_1": {
+      "name": "Assistant"
+    },
+    "level_2": {
+      "name": "Clerk",
+      "badge_icon": "Beancounterbadge2",
+      "advantages": {
+        "N0": "MERCHANT: Gets an extra TRADE phase."
+      },
+      "extra_actions": {
+        "N0": "T"
+      }
+    },
+    "level_3": {
+      "name": "Trader"
+    },
+    "level_4": {
+      "name": "Beancounter",
+      "badge_icon": "Beancounterbadge4",
+      "advantages": {
+        "N0": "TRADER: Rolls 1 die instead of 2 for all rolls on the COMMERCE and MEETING tables."
+      },
+      "diemod": {
+        "N0": "1d:commerce,meeting:all"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "bashkars": "-1",
+      "company": "1",
+      "order": "-1",
+      "rogues": "1",
+      "woodfolk": "1",
+      "lancers": "1",
+      "scholar": "2"
+    },
+    "gamerel": {
+      "bashkars": "-1",
+      "company": "1",
+      "order": "-1",
+      "rogues": "1",
+      "woodfolk": "1",
+      "lancers": "1",
+      "scholar": "2"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "FIGHT L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "beancounter",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "beancounter",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "beancounter",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "FIGHT L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "beancounter",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "beancounter",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "beancounter",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "beancounter",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "beancounter",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "beancounter",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "move M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "beancounter",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "fight L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "beancounter",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "fight M3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "beancounter",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

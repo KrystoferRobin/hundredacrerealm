@@ -1,0 +1,36 @@
+Month 4, Day 10
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Woods Girl
+Starts turn: Evil Valley 2
+Woods Girl
+Move - moved
+Woods Girl
+Selling to Guard HQ.
+Woods Girl
+Attempting to sell: Reflecting Grease, Alchemist's Mixture, and Crystal Ball
+Woods Girl
+Trade - Sell to Guard HQ - Sold 3 items for 27 gold:
+Woods Girl
+Buying from Guard HQ.
+Woods Girl
+Available for sale: Helmet, Breastplate, Broadsword, 2 Axes, 2 Maces, and 5 Treasures
+Woods Girl
+Bidding for a treasure
+Woods Girl
+Buys the Shielded Lantern from the Guard HQ
+Woods Girl
+Trade - Buy from Guard HQ (as Friendly) - Price x 4
+Woods Girl
+Activates Shielded Lantern
+Woods Girl
+Activates Elven Slippers
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Evil Valley 2
+host
+========================================
+host

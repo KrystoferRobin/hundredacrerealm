@@ -1,0 +1,34 @@
+{
+  "id": "1264",
+  "name": "Dank V",
+  "attributeBlocks": {
+    "this": {
+      "warning": "dank",
+      "tile_type": "V",
+      "super_realm": "",
+      "chit": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1282",
+      "name": "Chapel",
+      "attributeBlocks": {
+        "this": {
+          "dwelling": "chapel",
+          "warning": "dank",
+          "tile_type": "V",
+          "super_realm": "",
+          "print": "",
+          "icon_type": "elven2",
+          "color_source": "white",
+          "ts_section": "dwellings",
+          "ts_color": "tan",
+          "icon_folder": "wesnoth/buildings",
+          "remove_curses": "",
+          "quest_target": ""
+        }
+      }
+    }
+  ]
+}

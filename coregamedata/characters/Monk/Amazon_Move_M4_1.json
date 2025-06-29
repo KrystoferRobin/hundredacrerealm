@@ -1,0 +1,21 @@
+{
+  "id": "1",
+  "name": "Amazon Move M4",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "strength": "M",
+      "speed": "4",
+      "character_level": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "1",
+      "level": "1",
+      "icon_folder": "custom/characters",
+      "icon_type": "monk",
+      "rw_expansion_1": "",
+      "facing": "dark"
+    }
+  }
+}

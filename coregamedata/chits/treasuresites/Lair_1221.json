@@ -1,0 +1,21 @@
+{
+  "id": "1221",
+  "name": "Lair",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "lair",
+      "clearing": "3",
+      "super_realm": "",
+      "monster_die": "1",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "red",
+      "icon_type": "wildWyvern",
+      "icon_folder": "wesnoth/units"
+    }
+  },
+  "parts": []
+}

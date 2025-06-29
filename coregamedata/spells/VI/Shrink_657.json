@@ -1,0 +1,24 @@
+{
+  "id": "657",
+  "name": "Shrink",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "combat",
+      "target": "denizen",
+      "text": "Vul, Attack, Move Strengths and Speeds (including Horse) decrease by one",
+      "magic_color": "purple",
+      "rw_expansion_1": "",
+      "author": "Roberto Ullfig",
+      "attribute_add": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": ""
+    },
+    "attribute_add": {
+      "shrink": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,350 @@
+Month 1, Day 27
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Amazon
+Starts turn: Cavern 1
+Amazon
+Search - Locate - Found 1 passage(s)
+Amazon
+Search - Locate - Nothing
+Amazon
+Ends turn: Cavern 1
+host
+H Dragon is added to Cavern, clearing 1
+host
+H Dragon blocks the Amazon
+host
+H Dragon blocks the Woods Girl
+Woods Girl
+Starts turn: Cavern 1
+Woods Girl
+BLOCKED - Cannot perform action S
+Woods Girl
+BLOCKED - Cannot perform action S
+Woods Girl
+Ends turn: Cavern 1
+__battle__
+Battle resolving at Cavern 1:
+__battle__
+GROUP 1
+__battle__
+Amazon
+__battle__
+Ogre (Amazon)
+__battle__
+GROUP 2
+__battle__
+Woods Girl
+__battle__
+GROUP 3
+__battle__
+H Dragon
+__battle__
+=======================
+__battle__
+Evening of month 1, day 27, in clearing Cavern 1
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Amazon
+Lures the H Dragon
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Woods Girl
+Alerts the Light Bow
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Amazon
+Attacks the H Dragon
+Woods Girl
+Attacks the H Dragon
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 2
+H Dragon
+Changes tactics:  H Dragon M4
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+Attack Length=14, Speed=1
+__battle__
+Woods Girl L1**  vs. H Dragon Speed 3
+__battle__
+Undercut! (Speed 1 is faster than Speed 3)
+__battle__
+Initial harm: L+2
+__battle__
+Missile roll: Rolled 4 (red).
+__battle__
+Missile table result: 4 = Decrease 1 level
+__battle__
+H Dragon is hit with neg+2 harm along box 3
+Woods Girl
+Hits armor, and reduces sharpness: neg+1
+__battle__
+H Dragon was not killed.
+__battle__
+>
+__battle__
+Attack Length=3, Speed=4
+__battle__
+Amazon L4*  vs. H Dragon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Length=0, Speed=4
+__battle__
+H Dragon M4  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+H Dragon won't disengage when fighting a character
+__battle__
+1 consecutive round of no damage, fatigue, or spellcasting.
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Amazon
+Attacks the H Dragon
+Woods Girl
+Attacks the H Dragon
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 2
+H Dragon
+Changes tactics:  H Dragon H4
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=3, Length=14
+__battle__
+Woods Girl L3  vs. H Dragon Speed 4
+__battle__
+Undercut! (Speed 3 is faster than Speed 4)
+__battle__
+Initial harm: L
+__battle__
+Missile roll: Rolled 5 (red).
+__battle__
+Missile table result: 5 = Decrease 2 levels
+__battle__
+H Dragon is hit with neg harm along box 1
+Woods Girl
+Hits armor, and reduces sharpness: neg
+__battle__
+H Dragon was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Amazon L4*  vs. H Dragon Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+H Dragon H4  vs. Ogre Speed 5
+__battle__
+Intercepted! (box 2 matches box 2)
+__battle__
+Initial harm: H
+__battle__
+Ogre is hit with H harm along box 2
+__battle__
+Ogre was killed!
+Amazon
+Loses 2 notoriety for the loss of the Ogre hireling.
+__battle__
+>
+__battle__
+Attack Speed=5, Length=0
+__battle__
+Ogre T5  vs. H Dragon Speed 4
+__battle__
+Attack Cancelled:  Ogre was already killed by H Dragon.
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Ogre is dead.  Killed by H Dragon
+__battle__
+H Dragon disengages because target is dead
+__battle__
+-----------------------
+__battle__
+--  Combat Round 3
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Amazon
+Lures the H Dragon
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Woods Girl
+Alerts the Light Bow
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the H Dragon
+Amazon
+Attacks the H Dragon
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=1, Length=14
+__battle__
+Woods Girl L1**  vs. H Dragon Speed 4
+__battle__
+Undercut! (Speed 1 is faster than Speed 4)
+__battle__
+Initial harm: L+2
+__battle__
+Missile roll: Rolled 3 (red).
+__battle__
+Missile table result: 3 = No Change
+__battle__
+H Dragon is hit with L+2 harm along box 3
+Woods Girl
+Hits armor, and reduces sharpness: L+1
+__battle__
+H Dragon was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=3
+__battle__
+Amazon L4*  vs. H Dragon Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+H Dragon H4  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+H Dragon won't disengage when fighting a character
+__battle__
+1 consecutive round of no damage, fatigue, or spellcasting.
+__battle__
+-----------------------
+__battle__
+--  Combat Round 4
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Woods Girl
+Alerts the Light Bow
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Amazon
+Attacks the H Dragon
+Woods Girl
+Attacks the H Dragon
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=1, Length=14
+__battle__
+Woods Girl L1**  vs. H Dragon Speed 4
+__battle__
+Undercut! (Speed 1 is faster than Speed 4)
+__battle__
+Initial harm: L+2
+__battle__
+Missile roll: Rolled 4 (red).
+__battle__
+Missile table result: 4 = Decrease 1 level
+__battle__
+H Dragon is hit with neg+2 harm along box 3
+Woods Girl
+Hits armor, and reduces sharpness: neg+1
+__battle__
+H Dragon was not killed.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=0
+__battle__
+H Dragon H4  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+host
+========================================
+host

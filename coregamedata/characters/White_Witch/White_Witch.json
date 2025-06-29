@@ -1,0 +1,321 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "White Witch",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn,Guard,Chapel",
+      "pronoun": "she",
+      "creator": "Casey C. Benn",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Purity",
+      "vulnerability": "L",
+      "icon_type": "white witch",
+      "icon_folder": "custom/characters",
+      "magicuser": "",
+      "extra_notes": "White Witch follows the Light Magic paths and wants to restore peace and healing to the Realm."
+    },
+    "level_1": {
+      "name": " Peace Keeper",
+      "badge_icon": "White_Witchbadge1",
+      "extra_cave_phase": "",
+      "advantages": {
+        "N0": "LIGHT AURA: Emits an Aura of Light. Gives Extra Phase in Caves"
+      }
+    },
+    "level_2": {
+      "name": "Healer",
+      "badge_icon": "White_Witchbadge2",
+      "curse_immunity": "",
+      "spellcount": "1",
+      "weapon": "Staff",
+      "advantages": {
+        "N0": "PURE SPIRIT: Is unaffected by Curses"
+      },
+      "spelltypes": {
+        "N0": "I"
+      }
+    },
+    "level_3": {
+      "name": "Light Summoner",
+      "badge_icon": "White_Witchbadge3",
+      "spellcount": "2",
+      "weapon": "Staff",
+      "advantages": {
+        "N0": "LIGHT FORCE: Unaffected by Demons or Imps"
+      },
+      "monster_immunity": {
+        "N0": "Balrog",
+        "N1": "Imp",
+        "N2": "Demon",
+        "N3": "Winged Demon"
+      },
+      "spelltypes": {
+        "N0": "I",
+        "N1": "III"
+      }
+    },
+    "level_4": {
+      "name": "White Witch",
+      "spellcount": "3",
+      "weapon": "Staff",
+      "spelltypes": {
+        "N0": "I",
+        "N1": "III",
+        "N2": "VII"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "company": "1",
+      "guard": "1",
+      "order": "2",
+      "rogues": "-1",
+      "woodfolk": "1",
+      "crone": "-1",
+      "shaman": "-1",
+      "warlock": "-2",
+      "dragonmen": "-2",
+      "murker": "-2",
+      "soldiers": "-1"
+    },
+    "gamerel": {
+      "company": "1",
+      "guard": "1",
+      "order": "2",
+      "rogues": "-1",
+      "woodfolk": "1",
+      "crone": "-1",
+      "shaman": "-1",
+      "warlock": "-2",
+      "dragonmen": "-2",
+      "murker": "-2",
+      "soldiers": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "white witch",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "white witch",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "white witch",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "strength": "L"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "magic I5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "white witch",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "magic I4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "white witch",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "magic I3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "white witch",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "magic III5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "white witch",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "magic III4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "white witch",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic III3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "white witch",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "move L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "white witch",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "fight L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "white witch",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark",
+          "strength": "L"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic VII4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "white witch",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

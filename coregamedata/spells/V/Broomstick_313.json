@@ -1,0 +1,28 @@
+{
+  "id": "313",
+  "name": "Broomstick",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "move",
+      "target": "character",
+      "text": "Can FLY L1 in encounter combat and movement",
+      "magic_color": "black",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "rw_expansion_1": "",
+      "learnable": "",
+      "targetlightonly": "",
+      "broomstick": ""
+    },
+    "fly_chit": {
+      "strength": "L",
+      "speed": "1",
+      "fly_chit": "",
+      "broomstick": ""
+    }
+  },
+  "parts": []
+}

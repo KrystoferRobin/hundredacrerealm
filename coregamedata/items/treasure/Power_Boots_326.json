@@ -1,0 +1,21 @@
+{
+  "id": "326",
+  "name": "Power Boots",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "notoriety": "3",
+      "text": "MOVE H4",
+      "base_price": "8",
+      "strength": "H",
+      "move_speed": "4",
+      "original_game": "",
+      "boots": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

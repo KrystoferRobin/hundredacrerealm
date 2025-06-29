@@ -1,0 +1,20 @@
+{
+  "id": "2299",
+  "name": "Scribe Spectacles",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "text": "-1 to LOOT and TWT table rolls",
+      "base_price": "21",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "notoriety": "-15",
+      "fame": "20",
+      "native": "Guard",
+      "weight": "L"
+    }
+  },
+  "parts": []
+}

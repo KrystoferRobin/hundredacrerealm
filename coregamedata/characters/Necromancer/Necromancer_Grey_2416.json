@@ -1,0 +1,18 @@
+{
+  "id": "2416",
+  "name": "Necromancer Grey",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "color",
+      "character_level": "4",
+      "stage": "12",
+      "level": "4",
+      "icon_folder": "characters",
+      "icon_type": "necromancer",
+      "super_realm": "",
+      "magic": "II",
+      "chit_state": "CY"
+    }
+  }
+}

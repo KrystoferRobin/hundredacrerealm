@@ -1,0 +1,15 @@
+7
+host
+New player joins: Krystofer
+Magician
+Joins the game.
+host
+Host has started the game.
+host
+Visitor/Mission/Campaign chits are placed at random.
+host
+========================================
+host
+Month 1, Day 1
+host
+========================================

@@ -1,0 +1,23 @@
+{
+  "id": "2270",
+  "name": "Lift Object",
+  "spellLevel": "*",
+  "attributeBlocks": {
+    "this": {
+      "duration": "permanent",
+      "target": "spells item",
+      "text": "Weight becomes 'negligible' when energized.",
+      "magic_color": "gold",
+      "host_okay": "",
+      "spell": "*",
+      "awakened": "",
+      "no_cancel": "",
+      "benevolent": "",
+      "super_realm": "",
+      "no_expire": "",
+      "no_incantation_tie": "",
+      "super_realm_treasure": ""
+    }
+  },
+  "parts": []
+}

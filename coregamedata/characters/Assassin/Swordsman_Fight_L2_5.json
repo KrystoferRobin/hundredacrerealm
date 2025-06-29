@@ -1,0 +1,22 @@
+{
+  "id": "5",
+  "name": "Swordsman Fight L2**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "strength": "L",
+      "speed": "2",
+      "character_level": "2",
+      "effort": "2",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "5",
+      "level": "2",
+      "icon_folder": "custom/characters",
+      "icon_type": "assassin",
+      "rw_expansion_1": "",
+      "facing": "dark"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "1030",
+  "name": "Halberd",
+  "attributeBlocks": {
+    "this": {
+      "weight": "H",
+      "length": "10",
+      "base_price": "8",
+      "two_handed": "",
+      "weapon": "",
+      "icon_type": "halberd",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "unalerted": {
+      "attack_speed": "6",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "strength": "H",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

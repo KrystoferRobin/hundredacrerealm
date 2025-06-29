@@ -1,0 +1,22 @@
+{
+  "id": "660",
+  "name": "Summon Elemental",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "day",
+      "target": "character",
+      "text": "Roll to see which elemental is summoned to fight for you",
+      "magic_color": "purple",
+      "rw_expansion_1": "",
+      "summoning": "elemental",
+      "host_okay": "",
+      "author": "Expansion 1",
+      "table": "summonelemental",
+      "benevolent": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

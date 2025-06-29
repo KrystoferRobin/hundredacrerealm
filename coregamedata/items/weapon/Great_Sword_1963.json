@@ -1,0 +1,29 @@
+{
+  "id": "1963",
+  "name": "Great Sword",
+  "attributeBlocks": {
+    "this": {
+      "weight": "H",
+      "length": "8",
+      "base_price": "10",
+      "two_handed": "",
+      "weapon": "",
+      "icon_type": "great_sword",
+      "icon_folder": "weapons",
+      "item": "",
+      "super_realm": ""
+    },
+    "unalerted": {
+      "attack_speed": "6",
+      "strength": "H",
+      "sharpness": "1",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "strength": "H",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

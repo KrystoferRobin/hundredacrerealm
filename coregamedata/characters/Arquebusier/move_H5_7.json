@@ -1,0 +1,18 @@
+{
+  "id": "7",
+  "name": "move H5*",
+  "attributeBlocks": {
+    "this": {
+      "action": "move",
+      "strength": "H",
+      "speed": "5",
+      "character_chit": "",
+      "icon_type": "arquebusier",
+      "icon_folder": "custom/characters",
+      "stage": "7",
+      "level": "3",
+      "effort": "1",
+      "facing": "dark"
+    }
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Woods Wizard",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn,House,Guard",
+      "pronoun": "he",
+      "creator": "Casey C. Benn",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Ancient Wisdom",
+      "vulnerability": "M",
+      "icon_type": "woods wizard",
+      "icon_folder": "custom/characters",
+      "magicuser": ""
+    },
+    "level_1": {
+      "name": "Nature Apprentice",
+      "badge_icon": "Woods_Wizardbadge1",
+      "walk_woods": "7th",
+      "advantages": {
+        "N0": "WOODS CHILD: Was raised in the Woodlands. May Walk the Woods on 7th day of Week."
+      }
+    },
+    "level_2": {
+      "name": "Forest Mage",
+      "spellcount": "1",
+      "badge_icon": "Woods_Wizardbadge2",
+      "monster_control_duration": "1",
+      "monster_control_enhanced": "",
+      "spelltypes": {
+        "N0": "III"
+      },
+      "advantages": {
+        "N0": "FOREST WHISPER: Control Woods Monsters. May command Wolves, Vipers, and Ogres."
+      },
+      "monster_control": {
+        "N0": "Ogre",
+        "N1": "Viper",
+        "N2": "Wolf"
+      }
+    },
+    "level_3": {
+      "name": "Woodland Wise",
+      "spellcount": "2",
+      "weapon": "Staff",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "III",
+        "N2": "IV"
+      }
+    },
+    "level_4": {
+      "name": "Woods Wizard",
+      "spellcount": "3",
+      "weapon": "Staff",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "III",
+        "N2": "IV",
+        "N3": "VII",
+        "N4": "VIII"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "woodfolk": "2",
+      "shaman": "2",
+      "dragonmen": "-1",
+      "scholar": "1",
+      "patrol": "-1",
+      "murker": "-2",
+      "warlock": "-1",
+      "crone": "-1"
+    },
+    "gamerel": {
+      "woodfolk": "2",
+      "shaman": "2",
+      "dragonmen": "-1",
+      "scholar": "1",
+      "patrol": "-1",
+      "murker": "-2",
+      "warlock": "-1",
+      "crone": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "woods wizard",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "woods wizard",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight M3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "woods wizard",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "FIGHT M4",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "woods wizard",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "magic III3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "woods wizard",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "magic III6*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "woods wizard",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "magic II3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "woods wizard",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "magic II5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "woods wizard",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic IV5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "woods wizard",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "IV"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "magic IV3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "woods wizard",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "IV"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic VII4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "woods wizard",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic VIII4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "woods wizard",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VIII"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

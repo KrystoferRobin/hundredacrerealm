@@ -1,0 +1,19 @@
+{
+  "id": "2387",
+  "name": "Bard Fight L3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "strength": "L",
+      "speed": "3",
+      "character_level": "3",
+      "stage": "9",
+      "level": "3",
+      "icon_folder": "characters",
+      "icon_type": "bard",
+      "super_realm": "",
+      "effort": "1"
+    }
+  }
+}

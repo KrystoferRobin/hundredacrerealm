@@ -1,0 +1,326 @@
+{
+  "ids": [
+    "420",
+    "1542"
+  ],
+  "name": "Sorceror",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "sorceror",
+      "character": "",
+      "vulnerability": "M",
+      "start": "Inn",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "he",
+      "alt_monsters1_game": "",
+      "magicuser": "",
+      "icon_folder": "characters",
+      "creator": "Richard Hamblen",
+      "artcredit": "Steve Bickel",
+      "meaning": "Controlled Intellect",
+      "rw_expansion_1": ""
+    },
+    "level_1": {
+      "name": "Apprentice"
+    },
+    "level_2": {
+      "name": "Alchemist",
+      "spellcount": "1",
+      "diemod": {
+        "N0": "1d:readrunes:all"
+      },
+      "spelltypes": {
+        "N0": "IV"
+      },
+      "advantages": {
+        "N0": "LORE:  Roll 1 die instead of 2 for all Reading Runes die rolls."
+      }
+    },
+    "level_3": {
+      "name": "Conjuror",
+      "spellcount": "2",
+      "spelltypes": {
+        "N0": "IV",
+        "N1": "VI"
+      }
+    },
+    "level_4": {
+      "name": "Sorceror",
+      "spellcount": "3",
+      "extra_actions": {
+        "N0": "SP"
+      },
+      "spelltypes": {
+        "N0": "IV",
+        "N1": "VI"
+      },
+      "advantages": {
+        "N0": "AURA OF POWER:  Get one extra SPELL phase every day."
+      }
+    },
+    "relationship": {
+      "lancers": "2",
+      "company": "1",
+      "bashkars": "1",
+      "order": "-1",
+      "soldiers": "-1",
+      "warlock": "-1",
+      "guard": "-2"
+    }
+  },
+  "parts": [
+    {
+      "id": "511",
+      "name": "Sorceror Move M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "5",
+          "strength": "M",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "sorceror",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "512",
+      "name": "Sorceror Fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "3",
+          "strength": "L",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "sorceror",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "513",
+      "name": "Sorceror Move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "strength": "M",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "sorceror",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "514",
+      "name": "Sorceror Magic IV4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "magic": "IV",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "sorceror",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "515",
+      "name": "Sorceror Magic IV4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "magic": "IV",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "sorceror",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "516",
+      "name": "Sorceror Magic IV4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "magic": "IV",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "sorceror",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "517",
+      "name": "Sorceror Magic VI5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "5",
+          "magic": "VI",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "sorceror",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "518",
+      "name": "Sorceror Magic VI6*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "6",
+          "magic": "VI",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "sorceror",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "519",
+      "name": "Sorceror Magic VI4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "magic": "VI",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "sorceror",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "520",
+      "name": "Sorceror Magic IV3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "magic": "IV",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "sorceror",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "521",
+      "name": "Sorceror Magic IV3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "magic": "IV",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "sorceror",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "522",
+      "name": "Sorceror Magic IV5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "5",
+          "magic": "IV",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "sorceror",
+          "rw_expansion_1": ""
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "659",
+  "name": "Blur",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "move",
+      "target": "MOVE chit",
+      "text": "Targeted chit is converted to time 1 until use",
+      "magic_color": "gold",
+      "rw_expansion_1": "",
+      "host_okay": "",
+      "final_chit_speed": "1",
+      "author": "Expansion 1",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

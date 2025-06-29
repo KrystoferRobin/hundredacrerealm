@@ -1,0 +1,21 @@
+{
+  "id": "2154",
+  "name": "Blend Into Background",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "day",
+      "target": "leader",
+      "text": "Extra HIDE phase",
+      "magic_color": "gray",
+      "spell_extra_action": "H",
+      "host_okay": "",
+      "benevolent": "",
+      "upg_swap_out": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

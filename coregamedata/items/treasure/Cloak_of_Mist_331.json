@@ -1,0 +1,18 @@
+{
+  "id": "331",
+  "name": "Cloak of Mist",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Extra HIDE",
+      "base_price": "4",
+      "notoriety": "2",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

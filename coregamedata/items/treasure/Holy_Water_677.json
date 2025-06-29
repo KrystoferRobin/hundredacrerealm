@@ -1,0 +1,19 @@
+{
+  "id": "677",
+  "name": "Holy Water",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "2",
+      "text": "Remove one curse (discard to order)",
+      "rw_expansion_1": "",
+      "potion": "",
+      "discard": "chapel",
+      "facing": "face_dn",
+      "remove_curse": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

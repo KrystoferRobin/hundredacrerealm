@@ -1,0 +1,23 @@
+{
+  "id": "2026",
+  "name": "Chest",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "chest",
+      "gold_reward": "50",
+      "treasure": "large",
+      "weight": "T",
+      "text": "Use Lost Keys or Contorting Key to open",
+      "treasure_within_treasure": "1",
+      "print": "",
+      "no_loot": "",
+      "needs_open": "key",
+      "remove_from_play": "",
+      "facing": "face_dn",
+      "ts_section": "twt",
+      "ts_color": "lightblue",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

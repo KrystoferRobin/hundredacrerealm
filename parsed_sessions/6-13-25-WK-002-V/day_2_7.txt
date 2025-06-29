@@ -1,0 +1,40 @@
+Month 2, Day 7
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+host
+7th day - denizens return to setup card:
+host
+- T Troll
+host
+- T Troll
+host
+- H Troll
+host
+- H Troll
+White Knight
+Starts turn: High Pass 1
+White Knight
+Search - Loot the Altar - Nothing
+White Knight
+Search - Loot the Altar - Nothing
+White Knight
+Search - Loot the Altar - Nothing
+White Knight
+Search - Loot the Altar - Nothing
+White Knight
+Search - Loot the Altar - Nothing
+White Knight
+After resting, these chits were made active: FIGHT H5*
+White Knight
+Rest - Rested 1 asterisk
+White Knight
+Ends turn: High Pass 1
+host
+H Troll is added to High Pass, clearing 4
+host
+H Troll is added to High Pass, clearing 4
+host
+========================================
+host

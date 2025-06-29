@@ -1,0 +1,15 @@
+{
+  "id": "2074",
+  "name": "Lucky Charm",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "14",
+      "text": "If active when using table, only roll one die.",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

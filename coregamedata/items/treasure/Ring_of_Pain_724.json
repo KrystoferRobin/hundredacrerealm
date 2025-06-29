@@ -1,0 +1,19 @@
+{
+  "id": "724",
+  "name": "Ring of Pain",
+  "attributeBlocks": {
+    "this": {
+      "base_price": "25",
+      "text": "No REST - Take 4 Wounds - Chit Speed -1",
+      "rw_expansion_1": "",
+      "weight": "L",
+      "treasure": "large",
+      "facing": "face_dn",
+      "chit_speed_inc": "1",
+      "major_wound": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

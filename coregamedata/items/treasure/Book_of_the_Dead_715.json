@@ -1,0 +1,23 @@
+{
+  "id": "715",
+  "name": "Book of the Dead",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "10",
+      "notoriety": "5",
+      "weight": "L",
+      "magic": "V",
+      "book": "",
+      "rw_expansion_1": "",
+      "fame": "-7",
+      "print": "",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,22 @@
+Month 3, Day 5
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Magician
+Starts turn: Crag 6
+Magician
+Hide - Succeeded
+Magician
+Spell Prep -
+Magician
+Spell - nothing to enchant
+Magician
+After resting, these chits were moved to fatigue: FIGHT L3*
+Magician
+Rest - Rested 1 asterisk
+Magician
+Ends turn: Crag 6
+host
+========================================
+host

@@ -1,0 +1,22 @@
+Month 2, Day 26
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Magician
+Starts turn: Crag 3
+Magician
+Move - moved
+Magician
+Hide - Failed
+Magician
+Hide - Succeeded
+Magician
+Ends turn: Crag 6
+host
+Magician loses Rogue 5 as a hireling (term is up).
+host
+Magician loses Rogue 6 as a hireling (term is up).
+host
+========================================
+host

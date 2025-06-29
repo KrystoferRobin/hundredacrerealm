@@ -1,0 +1,26 @@
+Month 1, Day 21
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Magician
+Starts turn: Borderland 1
+Magician
+Hide - Succeeded
+Magician
+Search - Loot the Altar - Found Treasure
+Magician
+Activates Magic Wand
+Magician
+Search - Read Runes on Altar - Curse!
+Magician
+- Curse! - Ashes, but not affected.
+Magician
+Search - Read Runes on Altar - Curse!
+Magician
+- Curse! - Ashes, but not affected.
+Magician
+Ends turn: Borderland 1
+host
+========================================
+host

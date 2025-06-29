@@ -1,0 +1,21 @@
+{
+  "id": "650",
+  "name": "Bewilder",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "combat",
+      "target": "clearing",
+      "text": "All monsters in clearing cannot change tactics",
+      "magic_color": "gold",
+      "rw_expansion_1": "",
+      "c_spell_effect": "bewildered",
+      "host_okay": "",
+      "author": "Expansion 1",
+      "benevolent": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

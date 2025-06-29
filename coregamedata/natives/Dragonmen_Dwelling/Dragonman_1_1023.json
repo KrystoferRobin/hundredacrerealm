@@ -1,0 +1,41 @@
+{
+  "id": "1023",
+  "name": "Dragonman 1",
+  "attributeBlocks": {
+    "this": {
+      "native": "Dragonmen",
+      "fame": "0",
+      "notoriety": "10",
+      "base_price": "6",
+      "vulnerability": "H",
+      "rank": "1",
+      "icon_type": "dragonman",
+      "monster_die": "6",
+      "setup_start": "Dragonmen Dwelling",
+      "hire_type": "single",
+      "icon_folder": "natives2",
+      "rw_expansion_1": "",
+      "flying": "",
+      "denizen": "",
+      "icon_folder_alt": "wesnoth/units/drakes",
+      "icon_type_alt": "slasher",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "4",
+      "strength": "H",
+      "length": "9",
+      "chit_color": "lightgreen"
+    },
+    "dark": {
+      "move_speed": "6",
+      "attack_speed": "4",
+      "strength": "H",
+      "length": "9",
+      "sharpness": "1",
+      "chit_color": "limegreen"
+    }
+  },
+  "parts": []
+}

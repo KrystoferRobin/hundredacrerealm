@@ -1,0 +1,26 @@
+{
+  "id": "293",
+  "name": "Roof Collapses",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "attack",
+      "target": "clearing",
+      "text": "All attacked SMASH H4 (cave only)",
+      "magic_color": "purple",
+      "attack_speed": "4",
+      "strength": "H",
+      "original_game": "",
+      "length": "18",
+      "clearing_req": "C",
+      "box_req": "3",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "nobattle": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

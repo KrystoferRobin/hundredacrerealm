@@ -1,0 +1,23 @@
+{
+  "id": "1232",
+  "name": "Tower",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "tower",
+      "clearing": "5",
+      "super_realm": "",
+      "monster_die": "3",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "blue",
+      "icon_type": "stoneTitan",
+      "icon_folder": "wesnoth/units",
+      "spell_site": "",
+      "teleport_to_location": "Spire"
+    }
+  },
+  "parts": []
+}

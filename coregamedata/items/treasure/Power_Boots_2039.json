@@ -1,0 +1,19 @@
+{
+  "id": "2039",
+  "name": "Power Boots",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "notoriety": "3",
+      "text": "MOVE H4",
+      "base_price": "8",
+      "strength": "H",
+      "move_speed": "4",
+      "boots": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

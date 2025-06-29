@@ -1,0 +1,24 @@
+Month 1, Day 11
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Elf
+Starts turn: Ledges 2
+Elf
+Search - Read Runes on Statue - Awaken a Spell
+Elf
+Search - Read Runes on Statue - Curse!
+Elf
+- Curse! - Ashes
+Elf
+Search - Read Runes on Statue - Nothing
+Elf
+Search - Read Runes on Statue - Nothing
+Elf
+Hide - Succeeded
+Elf
+Ends turn: Ledges 2
+host
+========================================
+host

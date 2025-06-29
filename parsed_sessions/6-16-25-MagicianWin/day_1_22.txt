@@ -1,0 +1,22 @@
+Month 1, Day 22
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Magician
+Starts turn: Borderland 1
+Magician
+Hide - Succeeded
+Magician
+Search - Read Runes on Altar - Learn and Awaken a Spell - learned!
+Magician
+Search - Read Runes on Altar - Learn and Awaken a Spell - learned!
+Magician
+Search - Read Runes on Altar - (Learn and) Awaken a Spell
+Magician
+Ends turn: Borderland 1
+host
+Shaman is added to Borderland, clearing 1
+host
+========================================
+host

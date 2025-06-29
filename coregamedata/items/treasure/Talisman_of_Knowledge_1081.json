@@ -1,0 +1,18 @@
+{
+  "id": "1081",
+  "name": "Talisman of Knowledge",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "50",
+      "text": "-2 to READ RUNES rolls (discard to none)",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "traveler_item": "",
+      "potion": "",
+      "discard": "none",
+      "item": ""
+    }
+  },
+  "parts": []
+}

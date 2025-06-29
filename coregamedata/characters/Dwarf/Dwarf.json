@@ -1,0 +1,318 @@
+{
+  "ids": [
+    "418",
+    "1540"
+  ],
+  "name": "Dwarf",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "dwarf",
+      "character": "",
+      "vulnerability": "H",
+      "start": "Inn,Guard",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "he",
+      "alt_monsters1_game": "",
+      "fighter": "",
+      "icon_folder": "characters",
+      "creator": "Richard Hamblen",
+      "artcredit": "Chris White",
+      "meaning": "Opposition",
+      "rw_expansion_1": ""
+    },
+    "level_1": {
+      "name": "Youngster",
+      "weapon": "Axe",
+      "armor": "Helmet"
+    },
+    "level_2": {
+      "name": "Smith",
+      "weapon": "Axe",
+      "armor": "Helmet",
+      "rest_double": "",
+      "no_sunlight": "",
+      "advantages": {
+        "N0": "SHORT LEGS:  You cannot use Sunlight phases.  Each REST action is worth double."
+      }
+    },
+    "level_3": {
+      "name": "Warrior",
+      "weapon": "Great Axe",
+      "armor": "Helmet"
+    },
+    "level_4": {
+      "name": "Dwarf",
+      "weapon": "Great Axe",
+      "armor": "Helmet",
+      "diemod": {
+        "N0": "1d:hide,locate,loot,peer,readrunes,magicsight,meeting,hire,trade,commerce:&gt;caves"
+      },
+      "advantages": {
+        "N0": "CAVE KNOWLEDGE:  When in a Cave clearing, roll 1 die instead of 2 for all Search, Hide, and Meeting die rolls."
+      }
+    },
+    "relationship": {
+      "company": "1",
+      "guard": "1",
+      "scholar": "1",
+      "woodfolk": "-1",
+      "bashkars": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "535",
+      "name": "Dwarf Duck T3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "duck",
+          "speed": "3",
+          "strength": "T",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "move_lock": "",
+          "box_constraint": "3",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "dwarf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "536",
+      "name": "Dwarf Move H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "6",
+          "strength": "H",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "dwarf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "537",
+      "name": "Dwarf Fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "5",
+          "strength": "H",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "dwarf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "538",
+      "name": "Dwarf Move T6*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "6",
+          "strength": "T",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "dwarf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "539",
+      "name": "Dwarf Fight H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "6",
+          "strength": "H",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "dwarf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "540",
+      "name": "Dwarf Fight H4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "strength": "H",
+          "effort": "2",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "dwarf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "541",
+      "name": "Dwarf Move H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "5",
+          "strength": "H",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "dwarf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "542",
+      "name": "Dwarf Fight T6*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "6",
+          "strength": "T",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "dwarf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "543",
+      "name": "Dwarf Fight H4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "strength": "H",
+          "effort": "2",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "dwarf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "544",
+      "name": "Dwarf Move T5**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "5",
+          "strength": "T",
+          "effort": "2",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "dwarf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "545",
+      "name": "Dwarf Fight T5**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "5",
+          "strength": "T",
+          "effort": "2",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "dwarf",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "546",
+      "name": "Dwarf Fight T5**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "5",
+          "strength": "T",
+          "effort": "2",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "dwarf",
+          "rw_expansion_1": ""
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

@@ -1,0 +1,20 @@
+Month 4, Day 2
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+White Knight
+Starts turn: Borderland 2
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+After resting, these chits were made active: MOVE H5*
+White Knight
+Rest - Rested 1 asterisk
+White Knight
+Ends turn: Borderland 6
+host
+========================================
+host

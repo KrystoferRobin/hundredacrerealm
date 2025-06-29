@@ -1,0 +1,20 @@
+{
+  "id": "502",
+  "name": "Black Knight Move H6",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "speed": "6",
+      "character_level": "2",
+      "strength": "H",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "4",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "black_knight",
+      "rw_expansion_1": ""
+    }
+  }
+}

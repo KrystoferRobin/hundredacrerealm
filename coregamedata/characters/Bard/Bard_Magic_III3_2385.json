@@ -1,0 +1,19 @@
+{
+  "id": "2385",
+  "name": "Bard Magic III3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "3",
+      "character_level": "3",
+      "stage": "7",
+      "level": "3",
+      "icon_folder": "characters",
+      "icon_type": "bard",
+      "super_realm": "",
+      "effort": "1",
+      "magic": "III"
+    }
+  }
+}

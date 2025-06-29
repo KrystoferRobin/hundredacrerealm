@@ -1,0 +1,21 @@
+{
+  "id": "2214",
+  "name": "Horse Whisper",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "combat",
+      "target": "clearing",
+      "text": "All horses in clearing cannot gallop.",
+      "magic_color": "gold",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "benevolent": "",
+      "horse_no_gallop": ""
+    }
+  },
+  "parts": []
+}

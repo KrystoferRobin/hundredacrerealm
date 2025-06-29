@@ -1,0 +1,362 @@
+{
+  "id": "1742",
+  "name": "Bandit Dwelling",
+  "attributeBlocks": {
+    "this": {
+      "super_realm": "",
+      "native": "Bandits",
+      "dwelling": "Bandits",
+      "monster_die": "2",
+      "monster_die2": "3",
+      "print": "",
+      "ts_section": "lost castle",
+      "ts_size": "M",
+      "ts_color": "yellow",
+      "ts_count": "6",
+      "icon_type": "outlaw",
+      "icon_folder": "wesnoth/units/human-outlaws",
+      "virtual_dwelling": "",
+      "ts_sort": "3",
+      "ts_offset": "1",
+      "icon_size": "0.9",
+      "roving_native": "",
+      "summon": "Patter M, Patter W, Lost Castle",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1743",
+      "name": "Bandit 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Bandits",
+          "fame": "0",
+          "notoriety": "2",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "1",
+          "super_realm": "",
+          "icon_type": "assassin",
+          "monster_die": "5",
+          "monster_die2": "6",
+          "setup_start": "Bandit Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/human-outlaws",
+          "denizen": "",
+          "needs_init": "",
+          "icon_size": "0.9",
+          "native_name": "Assassin",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "M",
+          "chit_color": "paleyellow",
+          "sharpness": "1",
+          "length": "3"
+        },
+        "dark": {
+          "move_speed": "2",
+          "attack_speed": "4",
+          "strength": "L",
+          "length": "3",
+          "chit_color": "yellow",
+          "sharpness": "1"
+        }
+      }
+    },
+    {
+      "id": "1744",
+      "name": "Bandit 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Bandits",
+          "fame": "0",
+          "notoriety": "2",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "2",
+          "super_realm": "",
+          "icon_type": "assassin+female",
+          "monster_die": "5",
+          "monster_die2": "6",
+          "setup_start": "Bandit Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/human-outlaws",
+          "denizen": "",
+          "needs_init": "",
+          "icon_size": "0.9",
+          "native_name": "Assassin",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "M",
+          "chit_color": "paleyellow",
+          "sharpness": "1",
+          "length": "3"
+        },
+        "dark": {
+          "move_speed": "2",
+          "attack_speed": "4",
+          "strength": "L",
+          "length": "3",
+          "chit_color": "yellow",
+          "sharpness": "1"
+        }
+      }
+    },
+    {
+      "id": "1745",
+      "name": "Bandit 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Bandits",
+          "fame": "0",
+          "notoriety": "2",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "3",
+          "super_realm": "",
+          "icon_type": "rogue",
+          "monster_die": "5",
+          "monster_die2": "6",
+          "setup_start": "Bandit Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/human-outlaws",
+          "denizen": "",
+          "needs_init": "",
+          "icon_size": "0.9",
+          "native_name": "Swordsman",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "3",
+          "strength": "M",
+          "chit_color": "paleyellow",
+          "sharpness": "1",
+          "length": "4"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "L",
+          "length": "4",
+          "chit_color": "yellow",
+          "sharpness": "1"
+        }
+      }
+    },
+    {
+      "id": "1746",
+      "name": "Bandit 4",
+      "attributeBlocks": {
+        "this": {
+          "native": "Bandits",
+          "fame": "0",
+          "notoriety": "2",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "4",
+          "super_realm": "",
+          "icon_type": "rogue+female",
+          "monster_die": "5",
+          "monster_die2": "6",
+          "setup_start": "Bandit Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/human-outlaws",
+          "denizen": "",
+          "needs_init": "",
+          "icon_size": "0.9",
+          "native_name": "Swordsman",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "3",
+          "strength": "M",
+          "chit_color": "paleyellow",
+          "sharpness": "1",
+          "length": "4"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "L",
+          "length": "4",
+          "chit_color": "yellow",
+          "sharpness": "1"
+        }
+      }
+    },
+    {
+      "id": "1747",
+      "name": "Bandit 5",
+      "attributeBlocks": {
+        "this": {
+          "native": "Bandits",
+          "fame": "0",
+          "notoriety": "2",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "5",
+          "super_realm": "",
+          "icon_type": "thief",
+          "monster_die": "5",
+          "monster_die2": "6",
+          "setup_start": "Bandit Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/human-outlaws",
+          "denizen": "",
+          "needs_init": "",
+          "icon_size": "0.9",
+          "native_name": "Swordsman",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "3",
+          "strength": "M",
+          "chit_color": "paleyellow",
+          "sharpness": "1",
+          "length": "4"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "L",
+          "length": "4",
+          "chit_color": "yellow",
+          "sharpness": "1"
+        }
+      }
+    },
+    {
+      "id": "1748",
+      "name": "Bandit HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Bandits",
+          "fame": "0",
+          "notoriety": "2",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "HQ",
+          "super_realm": "",
+          "icon_type": "fugitive",
+          "monster_die": "5",
+          "monster_die2": "6",
+          "setup_start": "Bandit Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/human-outlaws",
+          "commerce": "N",
+          "denizen": "",
+          "needs_init": "",
+          "icon_size": "0.9",
+          "native_name": "Assassin",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "M",
+          "chit_color": "paleyellow",
+          "sharpness": "1",
+          "length": "3"
+        },
+        "dark": {
+          "move_speed": "2",
+          "attack_speed": "4",
+          "strength": "L",
+          "length": "3",
+          "chit_color": "yellow",
+          "sharpness": "1"
+        }
+      }
+    },
+    {
+      "id": "2001",
+      "name": "Thrusting Sword",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "4",
+          "base_price": "6",
+          "weapon": "",
+          "icon_type": "thrusting_sword",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "4",
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "2002",
+      "name": "Thrusting Sword",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "4",
+          "base_price": "6",
+          "weapon": "",
+          "icon_type": "thrusting_sword",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "4",
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "2003",
+      "name": "Short Sword",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "3",
+          "base_price": "4",
+          "weapon": "",
+          "icon_type": "short_sword",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

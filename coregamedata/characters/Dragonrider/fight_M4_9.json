@@ -1,0 +1,22 @@
+{
+  "id": "9",
+  "name": "fight M4*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "speed": "4",
+      "strength": "M",
+      "effort": "1",
+      "character_level": "3",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "9",
+      "level": "3",
+      "icon_folder": "custom/characters",
+      "icon_type": "dragonrider",
+      "rw_expansion_1": "",
+      "facing": "dark"
+    }
+  }
+}

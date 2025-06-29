@@ -1,0 +1,39 @@
+{
+  "id": "752",
+  "name": "Swamp Haunt",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "T",
+      "fame": "7",
+      "notoriety": "7",
+      "icon_type": "swamphaunt",
+      "setup_start": "Pool",
+      "monster_die": "3",
+      "base_price": "7",
+      "icon_folder": "monsters1",
+      "alt_monsters1_game": "",
+      "setup_start_tilereq": "M",
+      "needs_init": "",
+      "denizen": "",
+      "icon_type_alt": "giant-mudcrawler",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "icon_size_alt": "1.1",
+      "icon_y_offset_alt": "1"
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "3",
+      "strength": "H",
+      "chit_color": "white"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": ""
+    }
+  },
+  "parts": []
+}

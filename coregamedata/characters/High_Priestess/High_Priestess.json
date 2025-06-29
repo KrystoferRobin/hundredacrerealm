@@ -1,0 +1,303 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "High Priestess",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn",
+      "pronoun": "she",
+      "creator": "JYPE",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "High Rank",
+      "vulnerability": "L",
+      "icon_type": "high priestess",
+      "icon_folder": "custom/characters",
+      "extra_notes": "Leader of an ancient cult of nature worshipers, the High Priestess travels the Realm to restore balance to the world."
+    },
+    "level_1": {
+      "name": "Nature Worshiper"
+    },
+    "level_2": {
+      "name": "Village Champion",
+      "spellcount": "1",
+      "badge_icon": "High_Priestessbadge2",
+      "spelltypes": {
+        "N0": "V"
+      },
+      "advantages": {
+        "N0": "SPEAK WITH ANIMALS: Immunity to animals"
+      },
+      "monster_immunity": {
+        "N0": "T Spider",
+        "N1": "H Spider",
+        "N2": "Scorpion",
+        "N3": "Sabertooth",
+        "N4": "Giant Bat",
+        "N5": "Viper",
+        "N6": "H Serpent",
+        "N7": "Wolf",
+        "N8": "T Serpent",
+        "N9": "Octopus",
+        "N10": "Crow"
+      }
+    },
+    "level_3": {
+      "name": "Consecrated Priestess",
+      "spellcount": "2",
+      "spelltypes": {
+        "N0": "I",
+        "N1": "V"
+      }
+    },
+    "level_4": {
+      "name": "High Priestess",
+      "spellcount": "3",
+      "badge_icon": "High_Priestessbadge4",
+      "knows_roads": "",
+      "spelltypes": {
+        "N0": "I",
+        "N1": "V"
+      },
+      "advantages": {
+        "N0": "PATH LORE: Knows all paths/passages"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "woodfolk": "2",
+      "bashkars": "-1",
+      "lancers": "-1"
+    },
+    "relationship": {
+      "woodfolk": "2",
+      "bashkars": "-1",
+      "lancers": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "fight L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "high priestess",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark",
+          "strength": "L"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "move L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "high priestess",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "strength": "L"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "move L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "high priestess",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "2",
+          "facing": "dark",
+          "strength": "L"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "magic V4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "high priestess",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "V"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "magic V4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "high priestess",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "V"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "magic V4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "high priestess",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "V"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "magic I4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "high priestess",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "magic I4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "high priestess",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic I4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "high priestess",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "magic I2*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "high priestess",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic V2*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "high priestess",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "V"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "move M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "high priestess",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "0",
+          "facing": "dark",
+          "strength": "M"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

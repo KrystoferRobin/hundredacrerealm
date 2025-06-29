@@ -1,0 +1,15 @@
+{
+  "id": "192",
+  "name": "Dank C",
+  "attributeBlocks": {
+    "this": {
+      "warning": "dank",
+      "tile_type": "C",
+      "original_game": "",
+      "chit": "",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": ""
+    }
+  },
+  "parts": []
+}

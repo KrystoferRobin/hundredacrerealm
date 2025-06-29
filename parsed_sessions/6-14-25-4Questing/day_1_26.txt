@@ -1,0 +1,26 @@
+Month 1, Day 26
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Amazon
+Starts turn: Cavern 3
+Amazon
+Move - moved
+Amazon
+Search - Locate - Nothing
+Amazon
+Search - Locate - Nothing
+Amazon
+Ends turn: Cavern 1
+Woods Girl
+Starts turn: Cavern 3
+Woods Girl
+Move - moved
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Ends turn: Cavern 1
+host
+========================================
+host

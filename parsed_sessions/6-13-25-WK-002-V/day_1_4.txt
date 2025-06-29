@@ -1,0 +1,22 @@
+Month 1, Day 4
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+White Knight
+Starts turn: Curst Valley 1
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Hide - Failed
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Curst Valley 2
+host
+========================================
+host

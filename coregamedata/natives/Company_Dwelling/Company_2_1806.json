@@ -1,0 +1,42 @@
+{
+  "id": "1806",
+  "name": "Company 2",
+  "attributeBlocks": {
+    "this": {
+      "native": "Company",
+      "fame": "0",
+      "notoriety": "3",
+      "base_price": "2",
+      "vulnerability": "M",
+      "rank": "2",
+      "armored": "",
+      "icon_type": "pikeman",
+      "setup_start": "Company Dwelling",
+      "hire_type": "group",
+      "icon_folder": "wesnoth/units/human-loyalists",
+      "denizen": "",
+      "super_realm": "",
+      "native_die": "5",
+      "clan": "3",
+      "icon_size": "0.9",
+      "native_name": "Pikeman"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "6",
+      "strength": "H",
+      "length": "10",
+      "sharpness": "1",
+      "chit_color": "lightblue"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "4",
+      "strength": "M",
+      "length": "10",
+      "sharpness": "1",
+      "chit_color": "blue"
+    }
+  },
+  "parts": []
+}

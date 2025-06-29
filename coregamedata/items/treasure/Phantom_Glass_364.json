@@ -1,0 +1,20 @@
+{
+  "id": "364",
+  "name": "Phantom Glass",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "8",
+      "notoriety": "2",
+      "text": "Use MAGIC SIGHT",
+      "weight": "L",
+      "original_game": "",
+      "magic_sight": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

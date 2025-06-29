@@ -1,0 +1,343 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Abbot",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "abbot",
+      "character": "",
+      "vulnerability": "M",
+      "start": "Inn,Chapel",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "she",
+      "alt_monsters1_game": "",
+      "magicuser": "",
+      "icon_folder": "custom/characters",
+      "creator": "Thomas Peck",
+      "artcredit": " Casey Benn / Midjourney",
+      "meaning": "Holy Cross : Protection",
+      "rw_expansion_1": "",
+      "custom_character": "",
+      "extra_notes": ""
+    },
+    "level_1": {
+      "name": "Acolyte"
+    },
+    "level_2": {
+      "name": "Novice",
+      "monster_immunity": {
+        "N0": "Winged Demon",
+        "N1": "Demon",
+        "N2": "Imp"
+      },
+      "advantages": {
+        "N0": "HEAVENLY PROTECTION:  Demons and the Imp cannot attack you."
+      }
+    },
+    "level_3": {
+      "name": "Brother",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "I",
+        "N1": "VII"
+      }
+    },
+    "level_4": {
+      "name": "Abbot",
+      "spellcount": "2",
+      "badge_icon": "Abbotbadge4",
+      "curse_immunity": "",
+      "spelltypes": {
+        "N0": "I",
+        "N1": "VII"
+      },
+      "advantages": {
+        "N0": "ASCETIC: Immune to Curses"
+      }
+    },
+    "relationship": {
+      "order": "2",
+      "bashkars": "-1",
+      "company": "-1",
+      "crone": "-1",
+      "scholar": "1"
+    },
+    "gamerel": {
+      "order": "2",
+      "bashkars": "-1",
+      "company": "-1",
+      "crone": "-1",
+      "scholar": "1"
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "Pilgrim Move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "strength": "M",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "abbot",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "Pilgrim Move M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "5",
+          "strength": "M",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "abbot",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight M4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "strength": "M",
+          "effort": "0",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "abbot",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "effort": "1",
+          "character_level": "2",
+          "original_game": "",
+          "speed": "4",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "abbot",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "move M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "5",
+          "strength": "M",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "abbot",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "fight M4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "strength": "M",
+          "effort": "0",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "abbot",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "magic I4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "magic": "I",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "abbot",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "magic I6*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "6",
+          "magic": "I",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "abbot",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic VII3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "abbot",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "magic I4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "abbot",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "magic": "I",
+          "effort": "1"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic I6*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "6",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "abbot",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic VII3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "abbot",
+          "rw_expansion_1": "",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

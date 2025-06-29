@@ -1,0 +1,5752 @@
+{
+  "sessionName": "6-13-25-WK-002-V",
+  "players": {
+    "Krystofer": {
+      "name": "Krystofer",
+      "characters": [
+        "White Knight"
+      ]
+    }
+  },
+  "characterToPlayer": {
+    "White Knight": "Krystofer"
+  },
+  "days": {
+    "1_1": {
+      "month": 1,
+      "day": 1,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Dark Valley 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Linden Woods 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Linden Woods 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_10": {
+      "month": 1,
+      "day": 10,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Awful Valley 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Mountain 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_11": {
+      "month": 1,
+      "day": 11,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Mountain 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Caves 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_12": {
+      "month": 1,
+      "day": 12,
+      "monsterDieRoll": 5,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Caves 2",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Search - Locate - Discover chit(s)",
+              "result": "none to discover"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Caves 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_13": {
+      "month": 1,
+      "day": 13,
+      "monsterDieRoll": 5,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Caves 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Mountain 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_14": {
+      "month": 1,
+      "day": 14,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Mountain 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Evil Valley 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_15": {
+      "month": 1,
+      "day": 15,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Evil Valley 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Curst Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_16": {
+      "month": 1,
+      "day": 16,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Curst Valley 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Curst Valley 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_17": {
+      "month": 1,
+      "day": 17,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Curst Valley 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_18": {
+      "month": 1,
+      "day": 18,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_19": {
+      "month": 1,
+      "day": 19,
+      "monsterDieRoll": 5,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 1",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate - Discover chit(s)",
+              "result": "Found Altar"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_2": {
+      "month": 1,
+      "day": 2,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Linden Woods 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [
+        {
+          "monster": "H Troll",
+          "location": "High Pass 4"
+        },
+        {
+          "monster": "H Troll",
+          "location": "High Pass 4"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "1_20": {
+      "month": 1,
+      "day": 20,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 1",
+          "actions": [
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_21": {
+      "month": 1,
+      "day": 21,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 1",
+          "actions": [
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_22": {
+      "month": 1,
+      "day": 22,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 1",
+          "actions": [
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [
+        {
+          "monster": "Quest",
+          "location": "High Pass 1"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "1_23": {
+      "month": 1,
+      "day": 23,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 1",
+          "actions": [
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            }
+          ],
+          "endLocation": "High Pass 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [
+        {
+          "monster": "H Troll",
+          "location": "High Pass 4"
+        },
+        {
+          "monster": "H Troll",
+          "location": "High Pass 4"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "1_24": {
+      "month": 1,
+      "day": 24,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 1",
+          "actions": [
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Found Golden Icon"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Curst Valley 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_25": {
+      "month": 1,
+      "day": 25,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Curst Valley 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Curst Valley 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_26": {
+      "month": 1,
+      "day": 26,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Curst Valley 1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Dark Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_27": {
+      "month": 1,
+      "day": 27,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Dark Valley 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Trade - Sell to Order HQ",
+              "result": "Total received for the Golden Icon was 100 gold."
+            },
+            {
+              "action": "Trade - Buy from Order HQ (as Ally)",
+              "result": "Boon (x 1)"
+            },
+            {
+              "action": "Hire - Buy from Order 3 (as Ally)",
+              "result": "Price x 4"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Dark Valley 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Dark Valley 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_28": {
+      "month": 1,
+      "day": 28,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Dark Valley 5",
+          "actions": [
+            {
+              "action": "Hire - Buy from Order 2 (as Ally)",
+              "result": "Boon (x 1)"
+            },
+            {
+              "action": "Trade - Buy from Order HQ (as Ally)",
+              "result": "Price x 3"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Dark Valley 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Dark Valley 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_3": {
+      "month": 1,
+      "day": 3,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Curst Valley 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_4": {
+      "month": 1,
+      "day": 4,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Curst Valley 1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Curst Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_5": {
+      "month": 1,
+      "day": 5,
+      "monsterDieRoll": 5,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Curst Valley 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Awful Valley 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_6": {
+      "month": 1,
+      "day": 6,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Awful Valley 1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Mountain 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_7": {
+      "month": 1,
+      "day": 7,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Mountain 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Awful Valley 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_8": {
+      "month": 1,
+      "day": 8,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Awful Valley 4",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Cavern 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [
+        {
+          "monster": "T Troll",
+          "location": "Cavern 6"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "1_9": {
+      "month": 1,
+      "day": 9,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Cavern 1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Awful Valley 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_1": {
+      "month": 2,
+      "day": 1,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Dark Valley 5",
+          "actions": [
+            {
+              "action": "Trade - Buy from Order HQ (as Ally)",
+              "result": "Boon (x 1)"
+            },
+            {
+              "action": "Hire - Buy from Order 1 (as Ally)",
+              "result": "Boon (x 1)"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Dark Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_10": {
+      "month": 2,
+      "day": 10,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_11": {
+      "month": 2,
+      "day": 11,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Nut Woods 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_12": {
+      "month": 2,
+      "day": 12,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Nut Woods 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Trade - Sell to Order HQ",
+              "result": "Sold 2 items for 10 gold:"
+            }
+          ],
+          "endLocation": "Dark Valley 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Dark Valley 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "Patrol 1",
+          "location": "Dark Valley 5"
+        },
+        {
+          "monster": "Patrol 2",
+          "location": "Dark Valley 5"
+        },
+        {
+          "monster": "Patrol HQ",
+          "location": "Dark Valley 5"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "2_13": {
+      "month": 2,
+      "day": 13,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Dark Valley 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Curst Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_14": {
+      "month": 2,
+      "day": 14,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Curst Valley 2",
+          "actions": [
+            {
+              "action": "Hire - Buy from Order 1 (as Ally)",
+              "result": "Price x 4"
+            },
+            {
+              "action": "Hire - Buy from Order 2 (as Ally)",
+              "result": "Boon (x 1)"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Evil Valley 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_15": {
+      "month": 2,
+      "day": 15,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Evil Valley 1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Curst Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_16": {
+      "month": 2,
+      "day": 16,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Curst Valley 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Evil Valley 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_17": {
+      "month": 2,
+      "day": 17,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Evil Valley 4",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Bad Valley 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Bad Valley 1",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Ghost"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the RESET combat button."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Ghost"
+                },
+                {
+                  "performer": "Ghost",
+                  "action": "Changes tactics:  Ghost L2"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=8, Speed=6",
+                "White Knight T6*  vs. Ghost Speed 2",
+                "Attack Length=7, Speed=4",
+                "Order 1 H4*  vs. Ghost Speed 4",
+                "Attack Length=7, Speed=5",
+                "Order 2 H5*  vs. Ghost Speed 2",
+                "Attack Length=0, Speed=2",
+                "Ghost L2  vs. Order 2 Speed 5",
+                "Attack Length=0, Speed=4",
+                "Ghost H4  vs. Order 1 Speed 4"
+              ],
+              "damage": [
+                "Initial harm: H+1",
+                "Ghost is hit with H+1 harm along box 2",
+                "Initial harm: L",
+                "Order 2 is hit with L harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: L"
+              ],
+              "deaths": [
+                "Ghost was killed!"
+              ],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT H5*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 2",
+                  "action": "Lures the Ghost"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Ghost"
+                },
+                {
+                  "performer": "Ghost",
+                  "action": "Changes tactics:  Ghost H4"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=4, Length=7",
+                "Order 1 H4*  vs. Ghost Speed 4",
+                "Attack Speed=4, Length=0",
+                "Ghost H4  vs. Order 2 Speed 5",
+                "Attack Speed=5, Length=8",
+                "White Knight H5*  vs. Ghost Speed 4",
+                "Attack Speed=5, Length=7",
+                "Order 2 H5*  vs. Ghost Speed 4"
+              ],
+              "damage": [
+                "Initial harm: H",
+                "Order 2 is hit with H harm along box 3",
+                "Initial harm: H+1",
+                "Ghost is hit with H+1 harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: H"
+              ],
+              "deaths": [
+                "Ghost was killed!"
+              ],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 3,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_18": {
+      "month": 2,
+      "day": 18,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Bad Valley 1",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Passage(s)"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Caves 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Caves 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the T Spider"
+                },
+                {
+                  "performer": "Order 2",
+                  "action": "Changes tactics:  Order 2 T5*"
+                },
+                {
+                  "performer": "Order 1",
+                  "action": "Changes tactics:  Order 1 T5*"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=8, Speed=6",
+                "White Knight H6*  vs. T Spider Speed 3",
+                "Attack Length=7, Speed=5",
+                "Order 1 T5*  vs. T Spider Speed 3",
+                "Attack Length=7, Speed=5",
+                "Order 2 T5*  vs. T Spider Speed 3",
+                "Attack Length=0, Speed=4",
+                "T Spider M4  vs. Order 2 Speed 6"
+              ],
+              "damage": [
+                "Initial harm: H+1",
+                "T Spider is hit with H+1 harm along box 3"
+              ],
+              "armorDestruction": [],
+              "deaths": [
+                "T Spider was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The White Knight",
+                  "action": "The White Knight gets 6 fame (x 1) and 6 notoriety (x 1) for the death of the T Spider"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_19": {
+      "month": 2,
+      "day": 19,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Caves 5",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Passage(s)"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Clues and Passage(s)"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Caves 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_2": {
+      "month": 2,
+      "day": 2,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Dark Valley 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Dark Valley 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Dark Valley 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_20": {
+      "month": 2,
+      "day": 20,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Caves 5",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Clues and Passage(s)"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Caves 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Caves 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 2",
+                  "action": "Lures the H Dragon"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the H Dragon"
+                },
+                {
+                  "performer": "Order 2",
+                  "action": "Changes tactics:  Order 2 T5*"
+                },
+                {
+                  "performer": "Order 1",
+                  "action": "Changes tactics:  Order 1 T5*"
+                },
+                {
+                  "performer": "H Dragon",
+                  "action": "Changes tactics:  H Dragon M4"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=8, Speed=6",
+                "White Knight H6*  vs. H Dragon Speed 3",
+                "Attack Length=7, Speed=5",
+                "Order 1 T5*  vs. H Dragon Speed 3",
+                "Attack Length=7, Speed=5",
+                "Order 2 T5*  vs. H Dragon Speed 3",
+                "Attack Length=0, Speed=4",
+                "H Dragon M4  vs. Order 2 Speed 6"
+              ],
+              "damage": [
+                "Initial harm: H+1",
+                "H Dragon is hit with H+1 harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: H"
+              ],
+              "deaths": [
+                "H Dragon was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The White Knight",
+                  "action": "The White Knight gets 5 fame (x 1) and 5 notoriety (x 1) for the death of the H Dragon"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "H Dragon",
+          "location": "Caves 5"
+        }
+      ],
+      "monsterBlocks": [
+        {
+          "monster": "H Dragon",
+          "character": "White Knight"
+        }
+      ]
+    },
+    "2_21": {
+      "month": 2,
+      "day": 21,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Caves 5",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Passage(s)"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Passage(s)"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Caves 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [
+        {
+          "monster": "Ghost",
+          "location": "Bad Valley 5"
+        },
+        {
+          "monster": "Ghost",
+          "location": "Bad Valley 5"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "2_22": {
+      "month": 2,
+      "day": 22,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Caves 5",
+          "actions": [
+            {
+              "action": "Search - Locate - Discover chit(s)",
+              "result": "Found Cairns"
+            },
+            {
+              "action": "Search - Loot the Cairns",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Search - Loot the Cairns",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Caves 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Caves 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 2",
+                  "action": "Lures the T Dragon"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the T Dragon"
+                },
+                {
+                  "performer": "Order 2",
+                  "action": "Changes tactics:  Order 2 H5*"
+                },
+                {
+                  "performer": "Order 1",
+                  "action": "Changes tactics:  Order 1 H4*"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=9, Speed=4",
+                "Dragon Head H4  vs. Order 2 Speed 5",
+                "Attack Length=8, Speed=6",
+                "White Knight T6*  vs. T Dragon Speed 6",
+                "Attack Length=7, Speed=4",
+                "Order 1 H4*  vs. T Dragon Speed 6",
+                "Attack Length=7, Speed=5",
+                "Order 2 H5*  vs. T Dragon Speed 6",
+                "Attack Length=0, Speed=5",
+                "T Dragon H5  vs. Order 2 Speed 5"
+              ],
+              "damage": [
+                "Initial harm: H",
+                "Order 2 is hit with H harm along box 1",
+                "Initial harm: H+1",
+                "T Dragon is hit with H+1 harm along box 2",
+                "Initial harm: H+1",
+                "T Dragon is hit with H+1 harm along box 1"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: H",
+                "Hits armor, and reduces sharpness: H",
+                "Hits armor, and reduces sharpness: H"
+              ],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT H5*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the T Dragon"
+                },
+                {
+                  "performer": "Dragon Head",
+                  "action": "Changes tactics:  Dragon Head T4"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=3, Length=0",
+                "T Dragon RED3  vs. Order 2 Speed 5",
+                "Attack Speed=4, Length=9",
+                "Dragon Head T4  vs. Order 2 Speed 5",
+                "Attack Speed=4, Length=8",
+                "White Knight T4*  vs. T Dragon Speed 6",
+                "Attack Speed=5, Length=7",
+                "Order 1 T5*  vs. T Dragon Speed 6",
+                "Attack Speed=5, Length=7",
+                "Order 2 H5*  vs. T Dragon Speed 6"
+              ],
+              "damage": [
+                "Initial harm: RED",
+                "Order 2 is hit with RED harm along box 3",
+                "Initial harm: T+1",
+                "T Dragon is hit with T+1 harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: RED",
+                "Hits armor, and reduces sharpness: T"
+              ],
+              "deaths": [
+                "Order 2 was killed!",
+                "T Dragon was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The White Knight",
+                  "action": "The White Knight gets 10 fame (x 1) and 10 notoriety (x 1) for the death of the T Dragon"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT H5*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 3,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "T Dragon",
+          "location": "Caves 5"
+        }
+      ],
+      "monsterBlocks": [
+        {
+          "monster": "T Dragon",
+          "character": "White Knight"
+        }
+      ]
+    },
+    "2_23": {
+      "month": 2,
+      "day": 23,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Caves 5",
+          "actions": [
+            {
+              "action": "Search - Loot the Cairns",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Search - Loot the Cairns",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Search - Loot the Cairns",
+              "result": "Nothing"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 2 asterisks"
+            }
+          ],
+          "endLocation": "Caves 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_24": {
+      "month": 2,
+      "day": 24,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Caves 5",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Search - Loot the Cairns",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Cairns",
+              "result": "Nothing"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Caves 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_25": {
+      "month": 2,
+      "day": 25,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Caves 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Bad Valley 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Bad Valley 1",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 1",
+                  "action": "Lures the Ghost"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Ghost"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=8, Speed=6",
+                "White Knight T6*  vs. Ghost Speed 4",
+                "Attack Length=7, Speed=4",
+                "Order 1 H4*  vs. Ghost Speed 4",
+                "Attack Length=0, Speed=4",
+                "Attack Length=0, Speed=4",
+                "Ghost H4  vs. Order 1 Speed 4"
+              ],
+              "damage": [
+                "Initial harm: T+1",
+                "Ghost is hit with T+1 harm along box 2",
+                "Initial harm: H",
+                "White Knight is hit with H harm along box 1",
+                "White Knight takes 1 wound",
+                "After wounding, these chits were wounded: FIGHT T4**"
+              ],
+              "armorDestruction": [
+                "Hits armor (Armor), and reduces sharpness: H",
+                "Damages the White Knight's Armor"
+              ],
+              "deaths": [
+                "Ghost was killed!"
+              ],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT H5*"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Wounding 1 chit."
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 1",
+                  "action": "Lures the Ghost"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Ghost"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=4, Length=7",
+                "Order 1 H4*  vs. Ghost Speed 4",
+                "Attack Speed=4, Length=0",
+                "Ghost H4  vs. Order 1 Speed 4",
+                "Attack Speed=6, Length=8",
+                "White Knight T6*  vs. Ghost Speed 4"
+              ],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were made active: FIGHT H5*"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT T4**"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 3,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 1",
+                  "action": "Lures the Ghost"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Ghost"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=4, Length=8",
+                "White Knight T4*  vs. Ghost Speed 4",
+                "Attack Speed=4, Length=7",
+                "Order 1 H4*  vs. Ghost Speed 4",
+                "Attack Speed=4, Length=0",
+                "Ghost H4  vs. Order 1 Speed 4"
+              ],
+              "damage": [
+                "Initial harm: H+1",
+                "Ghost is hit with H+1 harm along box 1"
+              ],
+              "armorDestruction": [],
+              "deaths": [
+                "Ghost was killed!"
+              ],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT H5*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 4,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": [
+        {
+          "monster": "Ghost",
+          "character": "White Knight"
+        },
+        {
+          "monster": "Ghost",
+          "character": "White Knight"
+        }
+      ]
+    },
+    "2_26": {
+      "month": 2,
+      "day": 26,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Bad Valley 1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 2 asterisks"
+            }
+          ],
+          "endLocation": "Evil Valley 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_27": {
+      "month": 2,
+      "day": 27,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Evil Valley 1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 3 asterisks"
+            }
+          ],
+          "endLocation": "Curst Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_28": {
+      "month": 2,
+      "day": 28,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Curst Valley 2",
+          "actions": [
+            {
+              "action": "Hire - Buy from Order 1 (as Ally)",
+              "result": "Price x 3"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 4 asterisks"
+            }
+          ],
+          "endLocation": "Curst Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [
+        {
+          "monster": "Ghost",
+          "location": "Bad Valley 5"
+        },
+        {
+          "monster": "Ghost",
+          "location": "Bad Valley 5"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "2_3": {
+      "month": 2,
+      "day": 3,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Dark Valley 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Linden Woods 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Linden Woods 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 1",
+                  "action": "Lures the Viper"
+                },
+                {
+                  "performer": "Order 2",
+                  "action": "Lures the Viper"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Viper"
+                },
+                {
+                  "performer": "Viper",
+                  "action": "Changes tactics:  Viper L2"
+                },
+                {
+                  "performer": "Order 3",
+                  "action": "Changes tactics:  Order 3 H4*"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=8, Speed=6",
+                "White Knight H6*  vs. Viper Speed 2",
+                "Attack Length=7, Speed=4",
+                "Order 3 H4*  vs. Viper Speed 4",
+                "Attack Length=7, Speed=4",
+                "Order 1 H4*  vs. Viper Speed 2",
+                "Attack Length=7, Speed=5",
+                "Order 2 H5*  vs. Viper Speed 4",
+                "Attack Length=0, Speed=2",
+                "Viper L2  vs. Order 1 Speed 4",
+                "Attack Length=0, Speed=4",
+                "Viper M4**  vs. Order 2 Speed 5"
+              ],
+              "damage": [
+                "Initial harm: H+1",
+                "Viper is hit with H+1 harm along box 1",
+                "Initial harm: M+2",
+                "Order 2 is hit with M+2 harm along box 2"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: H",
+                "Hits armor, and reduces sharpness: M+1"
+              ],
+              "deaths": [
+                "Viper was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The White Knight",
+                  "action": "The White Knight gets 1 fame (x 1) and 2 notoriety (x 1) for the death of the Viper"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 1",
+                  "action": "Lures the Viper"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Viper"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=4, Length=7",
+                "Order 3 H4*  vs. Viper Speed 4",
+                "Attack Speed=4, Length=7",
+                "Order 1 H4*  vs. Viper Speed 4",
+                "Attack Speed=4, Length=0",
+                "Viper M4**  vs. Order 3 Speed 4",
+                "Attack Speed=5, Length=7",
+                "Order 2 T5*  vs. Viper Speed 4"
+              ],
+              "damage": [
+                "Initial harm: H+1",
+                "Viper is hit with H+1 harm along box 1",
+                "Initial harm: H+1",
+                "Viper is hit with H+1 harm along box 1"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: H",
+                "Hits armor, and reduces sharpness: H"
+              ],
+              "deaths": [
+                "Viper was killed!",
+                "Viper was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The White Knight",
+                  "action": "The White Knight gets 1 fame (x 1) and 2 notoriety (x 1) [split 2 ways] for the death of the Viper"
+                },
+                {
+                  "performer": "The White Knight",
+                  "action": "The White Knight gets 1 fame (x 1) and 2 notoriety (x 1) [split 2 ways] for the death of the Viper"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 3,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "Viper",
+          "location": "Linden Woods 5"
+        },
+        {
+          "monster": "Viper",
+          "location": "Linden Woods 5"
+        }
+      ],
+      "monsterBlocks": [
+        {
+          "monster": "Viper",
+          "character": "White Knight"
+        },
+        {
+          "monster": "Viper",
+          "character": "White Knight"
+        }
+      ]
+    },
+    "2_4": {
+      "month": 2,
+      "day": 4,
+      "monsterDieRoll": 5,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Linden Woods 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Peer Neighboring Clearing",
+              "result": "Deep Woods 2: Clues"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_5": {
+      "month": 2,
+      "day": 5,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 1",
+          "player": "Krystofer"
+        },
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 1",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "High Pass 1",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Order 3",
+                  "action": "Changes tactics:  Order 3 H4*"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=7, Speed=4",
+                "Order 3 H4*  vs. T Troll Speed 4",
+                "Attack Length=7, Speed=5",
+                "Order 2 T5*  vs. T Troll Speed 4",
+                "Attack Length=7, Speed=5",
+                "Order 1 T5*  vs. T Troll Speed 4",
+                "Attack Length=0, Speed=4",
+                "T Troll H4  vs. Order 2 Speed 5"
+              ],
+              "damage": [
+                "Initial harm: T+1",
+                "T Troll is hit with T+1 harm along box 1"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: T"
+              ],
+              "deaths": [
+                "T Troll was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The White Knight",
+                  "action": "The White Knight gets 8 fame (x 1) and 8 notoriety (x 1) for the death of the T Troll"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 3",
+                  "action": "Lures the H Troll"
+                },
+                {
+                  "performer": "Order 2",
+                  "action": "Lures the H Troll"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the H Troll"
+                },
+                {
+                  "performer": "Order 2",
+                  "action": "Changes tactics:  Order 2 H5*"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=4, Length=7",
+                "Order 3 H4*  vs. H Troll Speed 4",
+                "Attack Speed=4, Length=0",
+                "H Troll M4  vs. Order 3 Speed 4",
+                "Attack Speed=4, Length=0",
+                "H Troll M4  vs. Order 2 Speed 5",
+                "Attack Speed=5, Length=7",
+                "Order 2 H5*  vs. H Troll Speed 4",
+                "Attack Speed=5, Length=7",
+                "Order 1 T5*  vs. H Troll Speed 4",
+                "Attack Speed=6, Length=8",
+                "White Knight T6*  vs. H Troll Speed 4"
+              ],
+              "damage": [
+                "Initial harm: M",
+                "Order 2 is hit with M harm along box 3",
+                "Initial harm: T+1",
+                "H Troll is hit with T+1 harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: M",
+                "Hits armor, and reduces sharpness: T"
+              ],
+              "deaths": [
+                "H Troll was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The White Knight",
+                  "action": "The White Knight gets 5 fame (x 1) and 5 notoriety (x 1) for the death of the H Troll"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT H5*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 3,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 3",
+                  "action": "Lures the H Troll"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the H Troll"
+                },
+                {
+                  "performer": "Order 3",
+                  "action": "Changes tactics:  Order 3 T5*"
+                },
+                {
+                  "performer": "H Troll",
+                  "action": "Changes tactics:  H Troll H5"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=4, Length=7",
+                "Order 1 H4*  vs. H Troll Speed 4",
+                "Attack Speed=5, Length=7",
+                "Order 3 T5*  vs. H Troll Speed 4",
+                "Attack Speed=5, Length=7",
+                "Order 2 H5*  vs. H Troll Speed 4",
+                "Attack Speed=5, Length=0",
+                "H Troll H5  vs. Order 1 Speed 4",
+                "Attack Speed=6, Length=8",
+                "White Knight H6*  vs. H Troll Speed 4"
+              ],
+              "damage": [
+                "Initial harm: T+1",
+                "H Troll is hit with T+1 harm along box 1"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: T"
+              ],
+              "deaths": [
+                "H Troll was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The White Knight",
+                  "action": "The White Knight gets 5 fame (x 1) and 5 notoriety (x 1) for the death of the H Troll"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT H5*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 4,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "T Troll",
+          "location": "High Pass 4"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "2_7": {
+      "month": 2,
+      "day": 7,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 1",
+          "actions": [
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Altar",
+              "result": "Nothing"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "High Pass 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [
+        {
+          "monster": "H Troll",
+          "location": "High Pass 4"
+        },
+        {
+          "monster": "H Troll",
+          "location": "High Pass 4"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "2_8": {
+      "month": 2,
+      "day": 8,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 1",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Passage(s)"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "High Pass 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "High Pass 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Order 3",
+                  "action": "Changes tactics:  Order 3 T5*"
+                },
+                {
+                  "performer": "H Troll",
+                  "action": "Changes tactics:  H Troll H5"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=7, Speed=4",
+                "Order 1 H4*  vs. H Troll Speed 4",
+                "Attack Length=7, Speed=5",
+                "Order 3 T5*  vs. H Troll Speed 4",
+                "Attack Length=7, Speed=5",
+                "Order 2 H5*  vs. H Troll Speed 4",
+                "Attack Length=0, Speed=4",
+                "H Troll M4  vs. Order 1 Speed 4",
+                "Attack Length=0, Speed=5",
+                "H Troll H5  vs. Order 2 Speed 5"
+              ],
+              "damage": [
+                "Initial harm: H+1",
+                "H Troll is hit with H+1 harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: H"
+              ],
+              "deaths": [
+                "H Troll was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The White Knight",
+                  "action": "The White Knight gets 5 fame (x 1) and 5 notoriety (x 1) for the death of the H Troll"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 3",
+                  "action": "Lures the H Troll"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=4, Length=7",
+                "Order 1 H4*  vs. H Troll Speed 4",
+                "Attack Speed=4, Length=0",
+                "H Troll M4  vs. Order 1 Speed 4",
+                "Attack Speed=5, Length=7",
+                "Order 3 T5*  vs. H Troll Speed 4",
+                "Attack Speed=5, Length=7",
+                "Order 2 H5*  vs. H Troll Speed 4"
+              ],
+              "damage": [
+                "Initial harm: H+1",
+                "H Troll is hit with H+1 harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: H"
+              ],
+              "deaths": [
+                "H Troll was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The White Knight",
+                  "action": "The White Knight gets 5 fame (x 1) and 5 notoriety (x 1) for the death of the H Troll"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 3,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "2_9": {
+      "month": 2,
+      "day": 9,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 4",
+          "actions": [
+            {
+              "action": "Search - Locate - Discover chit(s)",
+              "result": "Found Shrine"
+            },
+            {
+              "action": "Search - Loot the Shrine",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Search - Loot the Shrine",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Search - Loot the Shrine",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Shrine",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_1": {
+      "month": 3,
+      "day": 1,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Curst Valley 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 2 asterisks"
+            }
+          ],
+          "endLocation": "Dark Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_10": {
+      "month": 3,
+      "day": 10,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Borderland 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Awful Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_11": {
+      "month": 3,
+      "day": 11,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Awful Valley 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Trade - Sell to Rogue HQ",
+              "result": "Sold 2 items for 22 gold:"
+            },
+            {
+              "action": "Trade - Buy from Rogue HQ (as Friendly)",
+              "result": "Price x 3"
+            },
+            {
+              "action": "Hire - Buy from Rogue 7 (as Neutral)",
+              "result": "No Deal"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Awful Valley 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Awful Valley 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_12": {
+      "month": 3,
+      "day": 12,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Awful Valley 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action M-CG2,M-CG2"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action S"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action R"
+            }
+          ],
+          "endLocation": "Bad Valley 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Bad Valley 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 1",
+                  "action": "Lures the Ghost"
+                },
+                {
+                  "performer": "Order 3",
+                  "action": "Lures the Ghost"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Ghost"
+                },
+                {
+                  "performer": "Ghost",
+                  "action": "Changes tactics:  Ghost L2"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=8, Speed=6",
+                "White Knight T6*  vs. Ghost Speed 4",
+                "Attack Length=7, Speed=4",
+                "Order 1 H4*  vs. Ghost Speed 4",
+                "Attack Length=7, Speed=4",
+                "Order 3 H4*  vs. Ghost Speed 2",
+                "Attack Length=0, Speed=2",
+                "Ghost L2  vs. Order 3 Speed 4",
+                "Attack Length=0, Speed=4",
+                "Ghost H4  vs. Order 1 Speed 4"
+              ],
+              "damage": [
+                "Initial harm: L",
+                "Order 3 is hit with L harm along box 2"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: L"
+              ],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT H5*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 3",
+                  "action": "Lures the Ghost"
+                },
+                {
+                  "performer": "Order 1",
+                  "action": "Lures the Ghost"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Ghost"
+                },
+                {
+                  "performer": "Ghost",
+                  "action": "Changes tactics:  Ghost L2"
+                },
+                {
+                  "performer": "Ghost",
+                  "action": "Changes tactics:  Ghost H4"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                },
+                {
+                  "performer": "System",
+                  "action": "1 consecutive round of no damage, fatigue, or spellcasting."
+                }
+              ],
+              "attacks": [
+                "Attack Speed=2, Length=0",
+                "Ghost L2  vs. Order 1 Speed 4",
+                "Attack Speed=4, Length=7",
+                "Order 1 H4*  vs. Ghost Speed 2",
+                "Attack Speed=4, Length=7",
+                "Order 3 H4*  vs. Ghost Speed 4",
+                "Attack Speed=4, Length=0",
+                "Ghost H4  vs. Order 3 Speed 4",
+                "Attack Speed=5, Length=8",
+                "White Knight H5*  vs. Ghost Speed 2"
+              ],
+              "damage": [
+                "Initial harm: L",
+                "Order 1 is hit with L harm along box 3",
+                "Initial harm: H",
+                "Order 3 is hit with H harm along box 2"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: L",
+                "Hits armor, and reduces sharpness: H"
+              ],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 3,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 3",
+                  "action": "Lures the Ghost"
+                },
+                {
+                  "performer": "Order 1",
+                  "action": "Lures the Ghost"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Ghost"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=2, Length=0",
+                "Ghost L2  vs. Order 3 Speed 4",
+                "Attack Speed=4, Length=7",
+                "Order 1 H4*  vs. Ghost Speed 4",
+                "Attack Speed=4, Length=7",
+                "Order 3 H4*  vs. Ghost Speed 2",
+                "Attack Speed=4, Length=0",
+                "Ghost H4  vs. Order 1 Speed 4",
+                "Attack Speed=5, Length=8",
+                "White Knight H5*  vs. Ghost Speed 2"
+              ],
+              "damage": [
+                "Initial harm: L",
+                "Order 3 is hit with L harm along box 3",
+                "Initial harm: H+1",
+                "Ghost is hit with H+1 harm along box 1"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: L"
+              ],
+              "deaths": [
+                "Ghost was killed!"
+              ],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 4,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 3",
+                  "action": "Lures the Ghost"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Ghost"
+                },
+                {
+                  "performer": "Order 3",
+                  "action": "Changes tactics:  Order 3 T5*"
+                },
+                {
+                  "performer": "Order 1",
+                  "action": "Changes tactics:  Order 1 T5*"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=2, Length=0",
+                "Ghost L2  vs. Order 3 Speed 4",
+                "Attack Speed=5, Length=8",
+                "White Knight H5*  vs. Ghost Speed 2",
+                "Attack Speed=5, Length=7",
+                "Order 1 T5*  vs. Ghost Speed 2",
+                "Attack Speed=5, Length=7",
+                "Order 3 T5*  vs. Ghost Speed 2"
+              ],
+              "damage": [
+                "Initial harm: L",
+                "Order 3 is hit with L harm along box 3",
+                "Initial harm: H+1",
+                "Ghost is hit with H+1 harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: L"
+              ],
+              "deaths": [
+                "Ghost was killed!"
+              ],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 5,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_13": {
+      "month": 3,
+      "day": 13,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Bad Valley 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Crag 2",
+          "player": "Krystofer"
+        },
+        {
+          "character": "White Knight",
+          "startLocation": "Crag 2",
+          "actions": [
+            {
+              "action": "Hire - Buy from Order 1 (as Ally)",
+              "result": "Price x 2"
+            },
+            {
+              "action": "Hire - Buy from Order 3 (as Ally)",
+              "result": "Price x 3"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Bad Valley 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Bad Valley 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the RESET combat button."
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Ghost"
+                },
+                {
+                  "performer": "Order 3",
+                  "action": "Changes tactics:  Order 3 T5*"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=8, Speed=6",
+                "White Knight H6*  vs. Ghost Speed 4",
+                "Attack Length=7, Speed=4",
+                "Order 1 H4*  vs. Ghost Speed 4",
+                "Attack Length=7, Speed=5",
+                "Order 3 T5*  vs. Ghost Speed 4",
+                "Attack Length=0, Speed=4",
+                "Ghost H4  vs. Order 1 Speed 4"
+              ],
+              "damage": [
+                "Initial harm: H+1",
+                "Ghost is hit with H+1 harm along box 3"
+              ],
+              "armorDestruction": [],
+              "deaths": [
+                "Ghost was killed!"
+              ],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 3",
+                  "action": "Lures the Ghost"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Ghost"
+                },
+                {
+                  "performer": "Ghost",
+                  "action": "Changes tactics:  Ghost L2"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=2, Length=0",
+                "Ghost L2  vs. Order 3 Speed 4",
+                "Attack Speed=4, Length=7",
+                "Order 1 H4*  vs. Ghost Speed 2",
+                "Attack Speed=5, Length=7",
+                "Order 3 T5*  vs. Ghost Speed 2",
+                "Attack Speed=6, Length=8",
+                "White Knight H6*  vs. Ghost Speed 2"
+              ],
+              "damage": [
+                "Initial harm: L",
+                "Order 3 is hit with L harm along box 3",
+                "Initial harm: H+1",
+                "Ghost is hit with H+1 harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: L"
+              ],
+              "deaths": [
+                "Ghost was killed!"
+              ],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 3,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "Ghost",
+          "location": "Bad Valley 5"
+        },
+        {
+          "monster": "Ghost",
+          "location": "Bad Valley 5"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "3_15": {
+      "month": 3,
+      "day": 15,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Bad Valley 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hire - Buy from Rogue 7 (as Friendly)",
+              "result": "Opportunity"
+            },
+            {
+              "action": "- Buy from Rogue 7 (as Ally)",
+              "result": "Price x 4"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Awful Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_16": {
+      "month": 3,
+      "day": 16,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Awful Valley 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hire - Buy from Rogue 6 (as Friendly)",
+              "result": "Price x 2"
+            },
+            {
+              "action": "Trade - Sell to Rogue HQ",
+              "result": "Sold 2 items for 30 gold:"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Awful Valley 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Awful Valley 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_17": {
+      "month": 3,
+      "day": 17,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Awful Valley 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Borderland 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_18": {
+      "month": 3,
+      "day": 18,
+      "monsterDieRoll": 5,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Borderland 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Borderland 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_19": {
+      "month": 3,
+      "day": 19,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Borderland 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 6",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_2": {
+      "month": 3,
+      "day": 2,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Dark Valley 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Trade - Sell to Order HQ",
+              "result": "Sold 3 items for 21 gold:"
+            },
+            {
+              "action": "Hire - Buy from Order 3 (as Ally)",
+              "result": "Boon (x 1)"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Dark Valley 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Dark Valley 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Casts Make Whole"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Targets the White Knight with Make Whole"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_20": {
+      "month": 3,
+      "day": 20,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 6",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Passage(s)"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 3",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_21": {
+      "month": 3,
+      "day": 21,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 3",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Clues and Passage(s)"
+            },
+            {
+              "action": "Search - Locate - Choice - Discover chit(s)",
+              "result": "Found Lost City,Vault"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 3",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [
+        {
+          "monster": "Ghost",
+          "location": "Bad Valley 5"
+        },
+        {
+          "monster": "Ghost",
+          "location": "Bad Valley 5"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "3_22": {
+      "month": 3,
+      "day": 22,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 3",
+          "actions": [
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Nothing"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 3",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_23": {
+      "month": 3,
+      "day": 23,
+      "monsterDieRoll": 5,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 3",
+          "actions": [
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Found Mouldy Skeleton"
+            },
+            {
+              "action": "- Curse!",
+              "result": "Disgust"
+            },
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 3",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_24": {
+      "month": 3,
+      "day": 24,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 3",
+          "actions": [
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Found Armor"
+            },
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Found Armor"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 3",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_25": {
+      "month": 3,
+      "day": 25,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 3",
+          "actions": [
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Nothing"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "High Pass 3",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_26": {
+      "month": 3,
+      "day": 26,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 3",
+          "actions": [
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Nothing"
+            }
+          ],
+          "endLocation": "High Pass 3",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_27": {
+      "month": 3,
+      "day": 27,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 3",
+          "actions": [
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Found Armor"
+            },
+            {
+              "action": "Search - Loot the Vault",
+              "result": "Found Toadstool Circle"
+            },
+            {
+              "action": "Search - Loot the Toadstool Circle",
+              "result": "Power of the Pit"
+            },
+            {
+              "action": "- Power of the Pit",
+              "result": "Blight"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "High Pass 3",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_28": {
+      "month": 3,
+      "day": 28,
+      "monsterDieRoll": 5,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 3",
+          "actions": [
+            {
+              "action": "Hire - Buy from Order 1 (as Ally)",
+              "result": "Price x 1"
+            },
+            {
+              "action": "Hire - Buy from Order 3 (as Ally)",
+              "result": "Price x 3"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "High Pass 3",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_3": {
+      "month": 3,
+      "day": 3,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Dark Valley 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Linden Woods 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Linden Woods 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_4": {
+      "month": 3,
+      "day": 4,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Linden Woods 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "High Pass 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "High Pass 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 3",
+                  "action": "Lures the T Troll"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the T Troll"
+                },
+                {
+                  "performer": "Order 3",
+                  "action": "Changes tactics:  Order 3 T5*"
+                },
+                {
+                  "performer": "Order 1",
+                  "action": "Changes tactics:  Order 1 H4*"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=8, Speed=6",
+                "White Knight T6*  vs. T Troll Speed 4",
+                "Attack Length=7, Speed=4",
+                "Order 1 H4*  vs. T Troll Speed 4",
+                "Attack Length=7, Speed=5",
+                "Order 3 T5*  vs. T Troll Speed 4",
+                "Attack Length=0, Speed=4",
+                "T Troll H4  vs. Order 3 Speed 4"
+              ],
+              "damage": [
+                "Initial harm: T+1",
+                "T Troll is hit with T+1 harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: T"
+              ],
+              "deaths": [
+                "T Troll was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The White Knight",
+                  "action": "The White Knight gets 8 fame (x 1) and 8 notoriety (x 1) for the death of the T Troll"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT H5*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "T Troll",
+          "location": "High Pass 4"
+        }
+      ],
+      "monsterBlocks": [
+        {
+          "monster": "T Troll",
+          "character": "White Knight"
+        }
+      ]
+    },
+    "3_5": {
+      "month": 3,
+      "day": 5,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "High Pass 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "High Pass 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 1",
+                  "action": "Lures the T Troll"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the T Troll"
+                },
+                {
+                  "performer": "Order 1",
+                  "action": "Changes tactics:  Order 1 H4*"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=8, Speed=6",
+                "White Knight T6*  vs. T Troll Speed 4",
+                "Attack Length=7, Speed=4",
+                "Order 1 H4*  vs. T Troll Speed 4",
+                "Attack Length=7, Speed=5",
+                "Order 3 T5*  vs. T Troll Speed 4",
+                "Attack Length=0, Speed=4",
+                "T Troll H4  vs. Order 1 Speed 4"
+              ],
+              "damage": [
+                "Initial harm: T+1",
+                "T Troll is hit with T+1 harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: T"
+              ],
+              "deaths": [
+                "T Troll was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The White Knight",
+                  "action": "The White Knight gets 8 fame (x 1) and 8 notoriety (x 1) for the death of the T Troll"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT H5*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_6": {
+      "month": 3,
+      "day": 6,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            },
+            {
+              "action": "Search - Locate - Discover chit(s)",
+              "result": "Found Statue"
+            }
+          ],
+          "endLocation": "Deep Woods 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_7": {
+      "month": 3,
+      "day": 7,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Deep Woods 2",
+          "actions": [
+            {
+              "action": "Search - Loot the Statue",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Search - Loot the Statue",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Statue",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Statue",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Statue",
+              "result": "Nothing"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Deep Woods 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Deep Woods 2",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Order 3",
+                  "action": "Lures the Giant Bat"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Giant Bat"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=8, Speed=6",
+                "White Knight T6*  vs. Giant Bat Speed 3",
+                "Attack Length=7, Speed=4",
+                "Order 1 H4*  vs. Giant Bat Speed 3",
+                "Attack Length=7, Speed=4",
+                "Order 3 H4*  vs. Giant Bat Speed 3",
+                "Attack Length=0, Speed=2",
+                "Giant Bat M2  vs. Order 3 Speed 4"
+              ],
+              "damage": [
+                "Initial harm: T+1",
+                "Giant Bat is hit with T+1 harm along box 3"
+              ],
+              "armorDestruction": [],
+              "deaths": [
+                "Giant Bat was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The White Knight",
+                  "action": "The White Knight gets 3 fame (x 1) and 3 notoriety (x 1) for the death of the Giant Bat"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT H5*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "Giant Bat",
+          "location": "Deep Woods 2"
+        }
+      ],
+      "monsterBlocks": [
+        {
+          "monster": "Giant Bat",
+          "character": "White Knight"
+        }
+      ]
+    },
+    "3_8": {
+      "month": 3,
+      "day": 8,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Deep Woods 2",
+          "actions": [
+            {
+              "action": "Search - Loot the Statue",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Statue",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Statue",
+              "result": "Found Treasure"
+            },
+            {
+              "action": "Search - Loot the Statue",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Loot the Statue",
+              "result": "Nothing"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Deep Woods 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "3_9": {
+      "month": 3,
+      "day": 9,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Deep Woods 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Clues and Found 1 passage(s)"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Clues and Passage(s)"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Borderland 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "4_1": {
+      "month": 4,
+      "day": 1,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "High Pass 3",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Borderland 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "4_2": {
+      "month": 4,
+      "day": 2,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Borderland 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Borderland 6",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "4_3": {
+      "month": 4,
+      "day": 3,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Borderland 6",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Borderland 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "4_4": {
+      "month": 4,
+      "day": 4,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Borderland 1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Trade - Sell to Guard HQ",
+              "result": "Sold 4 items for 95 gold:"
+            },
+            {
+              "action": "Trade - Buy from Guard HQ (as Friendly)",
+              "result": "Price x 2"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Evil Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "4_5": {
+      "month": 4,
+      "day": 5,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Evil Valley 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Evil Valley 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "4_6": {
+      "month": 4,
+      "day": 6,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Evil Valley 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 2 asterisks"
+            }
+          ],
+          "endLocation": "Curst Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "4_7": {
+      "month": 4,
+      "day": 7,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Curst Valley 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Dark Valley 5",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Dark Valley 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "4_8": {
+      "month": 4,
+      "day": 8,
+      "monsterDieRoll": null,
+      "characterTurns": [],
+      "battles": [],
+      "monsterSpawns": [
+        {
+          "monster": "Large Campfire",
+          "location": "Maple Woods 5"
+        },
+        {
+          "monster": "Small Campfire",
+          "location": "Pine Woods 5"
+        }
+      ],
+      "monsterBlocks": []
+    }
+  }
+}

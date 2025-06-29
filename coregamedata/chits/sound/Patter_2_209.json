@@ -1,0 +1,15 @@
+{
+  "id": "209",
+  "name": "Patter 2",
+  "attributeBlocks": {
+    "this": {
+      "sound": "patter",
+      "clearing": "2",
+      "original_game": "",
+      "chit": "",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": ""
+    }
+  },
+  "parts": []
+}

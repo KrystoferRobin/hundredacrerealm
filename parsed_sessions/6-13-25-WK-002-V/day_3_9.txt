@@ -1,0 +1,26 @@
+Month 3, Day 9
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+White Knight
+Starts turn: Deep Woods 2
+White Knight
+Move - moved
+White Knight
+Search - Locate - Clues and Found 1 passage(s)
+White Knight
+Search - Locate - Clues and Passage(s)
+White Knight
+After resting, these chits were made active: FIGHT H5*
+White Knight
+Rest - Rested 1 asterisk
+White Knight
+Ends turn: Borderland 4
+White Knight
+Reveals: Patter 2
+White Knight
+Reveals: Stink C
+host
+========================================
+host

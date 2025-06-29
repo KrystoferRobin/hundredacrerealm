@@ -1,0 +1,26 @@
+{
+  "id": "220",
+  "name": "Shrine",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "shrine",
+      "clearing": "4",
+      "original_game": "",
+      "monster_die": "2",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "gold",
+      "icon_type": "demon_flying",
+      "icon_folder": "monsters",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "spell_site": "",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_type_alt": "galerunner"
+    }
+  },
+  "parts": []
+}

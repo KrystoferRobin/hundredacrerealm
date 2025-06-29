@@ -1,0 +1,98 @@
+{
+  "id": "2283",
+  "name": "Mage Library",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "library",
+      "treasure": "large",
+      "text": "",
+      "cannot_move": "",
+      "treasure_within_treasure": "8",
+      "print": "",
+      "discovery": "",
+      "color_source": "purple",
+      "facing": "face_dn",
+      "ts_section": "twt",
+      "ts_color": "lightblue",
+      "nosecret": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "search": "fatigue_t,key"
+    },
+    "table": {
+      "roll_1": "staff",
+      "roll_2": "bow",
+      "roll_3": "treasure",
+      "roll_4": "spell",
+      "roll_5": "read_runes_any",
+      "roll_6": "mesmerize"
+    }
+  },
+  "parts": [
+    {
+      "id": "2024",
+      "name": "Mage's Staff",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "9",
+          "notoriety": "9",
+          "base_price": "15",
+          "weapon": "",
+          "icon_type": "staff",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": "",
+          "magic": "",
+          "missile": "",
+          "super_realm_treasure": "",
+          "staff": ""
+        },
+        "unalerted": {
+          "attack_speed": "4",
+          "strength": "L",
+          "chit_color": "yellow"
+        },
+        "alerted": {
+          "strength": "L",
+          "chit_color": "gold",
+          "attack_speed": "2"
+        }
+      }
+    },
+    {
+      "id": "2023",
+      "name": "Crystal Bow",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "18",
+          "base_price": "30",
+          "missile": "",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "medium_bow",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": "",
+          "notoriety": "15",
+          "magic": "",
+          "magic_color_bonus": "purple",
+          "bow": "",
+          "super_realm_treasure": ""
+        },
+        "unalerted": {
+          "strength": "M",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "attack_speed": "1",
+          "strength": "M",
+          "sharpness": "2",
+          "chit_color": "red",
+          "magic_color_bonus_sharpness": "1"
+        }
+      }
+    }
+  ]
+}

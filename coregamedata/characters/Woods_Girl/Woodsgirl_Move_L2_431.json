@@ -1,0 +1,21 @@
+{
+  "id": "431",
+  "name": "Woodsgirl Move L2**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "strength": "L",
+      "speed": "2",
+      "character_level": "2",
+      "effort": "2",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "5",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "woodsgirl",
+      "rw_expansion_1": ""
+    }
+  }
+}

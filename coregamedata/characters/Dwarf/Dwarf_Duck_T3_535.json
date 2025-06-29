@@ -1,0 +1,23 @@
+{
+  "id": "535",
+  "name": "Dwarf Duck T3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "duck",
+      "speed": "3",
+      "strength": "T",
+      "effort": "1",
+      "character_level": "1",
+      "original_game": "",
+      "move_lock": "",
+      "box_constraint": "3",
+      "alt_monsters1_game": "",
+      "stage": "1",
+      "level": "1",
+      "icon_folder": "characters",
+      "icon_type": "dwarf",
+      "rw_expansion_1": ""
+    }
+  }
+}

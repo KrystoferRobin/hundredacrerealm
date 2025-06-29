@@ -1,0 +1,44 @@
+{
+  "id": "1319",
+  "name": "Cultist 2",
+  "attributeBlocks": {
+    "this": {
+      "native": "Cultists",
+      "fame": "0",
+      "notoriety": "4",
+      "base_price": "2",
+      "vulnerability": "M",
+      "rank": "2",
+      "super_realm": "",
+      "icon_type": "shadowwitch-magic2",
+      "monster_die": "1",
+      "monster_die2": "2",
+      "setup_start": "Cultist Dwelling",
+      "hire_type": "group",
+      "icon_folder": "wesnoth/units/tharis-magi",
+      "denizen": "",
+      "icon_size": "0.9",
+      "no_change_tactics": "",
+      "change_tactics_after_casting": "",
+      "fast_caster": "",
+      "native_name": "Caster",
+      "roving_native": ""
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "3",
+      "length": "9",
+      "chit_color": "paleyellow",
+      "magic_type": "V",
+      "attack_spell": "Summon Demon"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "M",
+      "length": "9",
+      "chit_color": "yellow"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,60 @@
+Month 1, Day 14
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+host
+7th day - denizens return to setup card:
+host
+- H Flying Dragon
+host
+- H Flying Dragon
+Elf
+Starts turn: Deep Woods 3
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Hide - Succeeded
+Elf
+Ends turn: Deep Woods 1
+host
+H Flying Dragon is added to Deep Woods, clearing 1
+host
+H Flying Dragon is added to Deep Woods, clearing 1
+__battle__
+Battle resolving at Deep Woods 1:
+__battle__
+GROUP 1
+__battle__
+Elf
+__battle__
+GROUP 2
+__battle__
+H Flying Dragon
+__battle__
+H Flying Dragon
+__battle__
+=======================
+__battle__
+Evening of month 1, day 14, in clearing Deep Woods 1
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Elf
+Presses the END combat button.
+Elf
+Combat has ended.
+host
+========================================
+host

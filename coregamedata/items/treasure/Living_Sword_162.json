@@ -1,0 +1,34 @@
+{
+  "id": "162",
+  "name": "Living Sword",
+  "attributeBlocks": {
+    "this": {
+      "weight": "L",
+      "length": "4",
+      "fame": "3",
+      "notoriety": "9",
+      "base_price": "25",
+      "magic": "",
+      "weapon": "",
+      "original_game": "",
+      "icon_type": "thrusting_sword",
+      "alt_monsters1_game": "",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "unalerted": {
+      "attack_speed": "3",
+      "strength": "L",
+      "sharpness": "1",
+      "chit_color": "yellow"
+    },
+    "alerted": {
+      "attack_speed": "2",
+      "strength": "L",
+      "sharpness": "1",
+      "chit_color": "gold"
+    }
+  },
+  "parts": []
+}

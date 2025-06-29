@@ -1,0 +1,126 @@
+Month 1, Day 8
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Between Borderland 4 and Ruins 2
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Borderland 4
+Amazon
+Starts turn: Between Borderland 4 and Ruins 2
+Amazon
+Move - moved
+Amazon
+BLOCKED - Cannot perform action H
+Amazon
+BLOCKED - Cannot perform action S
+Amazon
+Ends turn: Borderland 4
+__battle__
+Battle resolving at Borderland 4:
+__battle__
+GROUP 1
+__battle__
+Amazon
+__battle__
+GROUP 2
+__battle__
+Woods Girl
+__battle__
+GROUP 3
+__battle__
+Winged Demon
+__battle__
+=======================
+__battle__
+Evening of month 1, day 8, in clearing Borderland 4
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Woods Girl
+Alerts the Light Bow
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Amazon
+Attacks the Winged Demon
+Woods Girl
+Attacks the Winged Demon
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+Attack Length=17, Speed=3
+__battle__
+Winged Demon neg3  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 3 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Length=14, Speed=1
+__battle__
+Woods Girl L1**  vs. Winged Demon Speed 3
+__battle__
+Intercepted! (box 2 matches box 2)
+__battle__
+Initial harm: L+2
+__battle__
+Missile roll: Rolled 2 (red).
+__battle__
+Missile table result: 2 = Increase 1 level
+__battle__
+Winged Demon is hit with M+2 harm along box 2
+__battle__
+Winged Demon was killed!
+__battle__
+The Woods Girl gets 8 fame (x 1) and 8 notoriety (x 1) for the death of the Winged Demon
+Woods Girl
+Remains hidden!  (Ambush rules)
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Woods Girl disengages because target is dead
+__battle__
+Amazon disengages because target is dead
+__battle__
+Winged Demon is dead.  Killed by Woods Girl
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host

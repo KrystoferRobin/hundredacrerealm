@@ -1,0 +1,25 @@
+{
+  "id": "2056",
+  "name": "Book of Nature",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "10",
+      "notoriety": "5",
+      "weight": "L",
+      "magic": "II",
+      "book": "",
+      "print": "",
+      "scholar_price": "50",
+      "shaman_price": "50",
+      "magic_other": "III",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "item": "",
+      "super_realm": "",
+      "merchant_price": "20"
+    }
+  },
+  "parts": []
+}

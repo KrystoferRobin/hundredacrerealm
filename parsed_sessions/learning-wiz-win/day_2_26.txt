@@ -1,0 +1,20 @@
+Month 2, Day 26
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Wizard
+Starts turn: Mountain 6
+Wizard
+Search - Locate - Nothing
+Wizard
+Search - Locate - Passage(s)
+Wizard
+Hide - Failed
+Wizard
+Hide - Succeeded
+Wizard
+Ends turn: Mountain 6
+host
+========================================
+host

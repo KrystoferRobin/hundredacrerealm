@@ -1,0 +1,16 @@
+Month 2, Day 17
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Cavern 3
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Cavern 6
+host
+========================================
+host

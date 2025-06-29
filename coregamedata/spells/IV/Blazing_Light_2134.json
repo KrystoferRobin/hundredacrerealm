@@ -1,0 +1,22 @@
+{
+  "id": "2134",
+  "name": "Blazing Light",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "day",
+      "target": "clearing",
+      "text": "Extra phase (cave only)",
+      "magic_color": "purple",
+      "clearing_req": "C",
+      "extra_cave_phase": "",
+      "host_okay": "",
+      "benevolent": "",
+      "upg_swap_out": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

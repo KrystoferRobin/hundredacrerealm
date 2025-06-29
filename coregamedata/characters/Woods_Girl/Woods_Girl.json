@@ -1,0 +1,332 @@
+{
+  "ids": [
+    "411",
+    "1533"
+  ],
+  "name": "Woods Girl",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "woodsgirl",
+      "character": "",
+      "vulnerability": "L",
+      "start": "Inn,House",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "she",
+      "alt_monsters1_game": "",
+      "fighter": "",
+      "icon_folder": "characters",
+      "creator": "Richard Hamblen",
+      "artcredit": "Ralph King",
+      "meaning": "Erosia: Love and Earth",
+      "rw_expansion_1": ""
+    },
+    "level_1": {
+      "name": "Maid"
+    },
+    "level_2": {
+      "name": "Sprite",
+      "spellcount": "1",
+      "diemod": {
+        "N0": "1d:hide,locate,loot,peer,readrunes,magicsight,meeting,commerce:% woods",
+        "N1": "1d:hide,locate,loot,peer,readrunes,magicsight,meeting,commerce:% forest",
+        "N2": "1d:hide,locate,loot,peer,readrunes,magicsight,meeting,commerce:grove"
+      },
+      "spelltypes": {
+        "N0": "VII"
+      },
+      "advantages": {
+        "N0": "TRACKING SKILLS:  When on any tile labeled WOODS, roll 1 die instead of 2 for all Search, Hide, and Meeting die rolls."
+      }
+    },
+    "level_3": {
+      "name": "Huntress",
+      "spellcount": "1",
+      "weapon": "Light Bow",
+      "spelltypes": {
+        "N0": "VII"
+      }
+    },
+    "level_4": {
+      "name": "Woods Girl",
+      "spellcount": "1",
+      "weapon": "Light Bow",
+      "diemod": {
+        "N0": "1d:missile:all"
+      },
+      "spelltypes": {
+        "N0": "VII"
+      },
+      "advantages": {
+        "N0": "ARCHER:  Roll 1 die instead of 2 on the Missile Table."
+      }
+    },
+    "optional_2": {
+      "optkey": "OptCharWoodsgirl",
+      "diemod": {
+        "N0": "1d:hide,locate,loot,peer,readrunes,magicsight,meeting,commerce:&gt;woods"
+      },
+      "advantages": {
+        "N0": "EXPERT WOODCRAFT:  When on a Woods clearing (except on the RUINS and VALLEY tiles), roll 1 die instead of 2 for all Search, Hide, and Meeting rolls."
+      }
+    },
+    "relationship": {
+      "bashkars": "-2",
+      "soldiers": "-1",
+      "woodfolk": "2",
+      "lancers": "1",
+      "warlock": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "427",
+      "name": "Woodsgirl Move L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "3",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "woodsgirl",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "428",
+      "name": "Woodsgirl Move L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "4",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "woodsgirl",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "429",
+      "name": "Woodsgirl Move L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "2",
+          "character_level": "1",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "woodsgirl",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "430",
+      "name": "Woodsgirl Fight L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "woodsgirl",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "431",
+      "name": "Woodsgirl Move L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "2",
+          "character_level": "2",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "woodsgirl",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "432",
+      "name": "Woodsgirl Magic VII6**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "6",
+          "character_level": "2",
+          "effort": "2",
+          "magic": "VII",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "woodsgirl",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "433",
+      "name": "Woodsgirl Fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "character_level": "3",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "woodsgirl",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "434",
+      "name": "Woodsgirl Fight M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "woodsgirl",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "435",
+      "name": "Woodsgirl Fight L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "woodsgirl",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "436",
+      "name": "Woodsgirl Move L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "3",
+          "character_level": "4",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "woodsgirl",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "437",
+      "name": "Woodsgirl Fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "4",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "woodsgirl",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "438",
+      "name": "Woodsgirl Fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "character_level": "4",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "woodsgirl",
+          "rw_expansion_1": ""
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

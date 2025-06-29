@@ -1,0 +1,20 @@
+{
+  "id": "2238",
+  "name": "Adventure Guide",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "9",
+      "fame": "5",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "native": "Peasants",
+      "text": "A 5 result on SEARCH, PEER and LOCATE rolls also discovers secret passages.",
+      "adventure_guide": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "2003",
+  "name": "Short Sword",
+  "attributeBlocks": {
+    "this": {
+      "weight": "L",
+      "length": "3",
+      "base_price": "4",
+      "weapon": "",
+      "icon_type": "short_sword",
+      "icon_folder": "weapons",
+      "item": "",
+      "super_realm": ""
+    },
+    "unalerted": {
+      "strength": "L",
+      "sharpness": "1",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "strength": "L",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

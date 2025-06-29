@@ -1,0 +1,23 @@
+{
+  "id": "2116",
+  "name": "Witch's Brew",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "day",
+      "target": "magic(II,VIII)",
+      "text": "Change MAGIC II to IV and VIII to III",
+      "magic_color": "gray",
+      "ii": "IV",
+      "viii": "III",
+      "magic_change": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": "",
+      "super_realm": "",
+      "targets_non_magic_changed_chits": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "663",
+  "name": "Divine Might",
+  "spellLevel": "I",
+  "attributeBlocks": {
+    "this": {
+      "spell": "I",
+      "duration": "day",
+      "target": "individual",
+      "text": "MOVE and FIGHT strength increased by one level (max T)",
+      "magic_color": "white",
+      "rw_expansion_1": "",
+      "author": "Deric Page",
+      "attribute_add": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": ""
+    },
+    "attribute_add": {
+      "strong_mf": ""
+    }
+  },
+  "parts": []
+}

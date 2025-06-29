@@ -1,0 +1,75 @@
+{
+  "id": "1308",
+  "name": "Skeleton Knight",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "H",
+      "fame": "5",
+      "notoriety": "5",
+      "icon_type": "draug",
+      "setup_start": "Tomb",
+      "monster_die": "4",
+      "base_price": "5",
+      "icon_folder": "wesnoth/units/undead-skeletal",
+      "super_realm": "",
+      "needs_init": "",
+      "undead": "",
+      "denizen": "",
+      "armored": "",
+      "icon_size": "0.9",
+      "icon_y_offset": "6",
+      "weapon_use": "",
+      "skeleton": ""
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "4",
+      "strength": "H",
+      "length": "8",
+      "chit_color": "white",
+      "sharpness": "1"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "5",
+      "strength": "T",
+      "length": "8",
+      "chit_color": "gray",
+      "sharpness": "1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1309",
+      "name": "Bone Horse",
+      "attributeBlocks": {
+        "this": {
+          "monster_steed": "",
+          "horse": "warhorse",
+          "vulnerability": "T",
+          "armored": "",
+          "super_realm": "",
+          "activated": "",
+          "steed_in_caves_and_water": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "ipoten",
+          "undead": "",
+          "skeleton": "",
+          "transmorph_immunity": ""
+        },
+        "trot": {
+          "move_speed": "6",
+          "strength": "M",
+          "chit_color": "gray"
+        },
+        "gallop": {
+          "move_speed": "4",
+          "strength": "M",
+          "chit_color": "darkgray"
+        }
+      }
+    }
+  ]
+}

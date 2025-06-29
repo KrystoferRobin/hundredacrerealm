@@ -1,0 +1,50 @@
+{
+  "id": "2269",
+  "name": "Faerie Statue",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "80",
+      "notoriety": "10",
+      "fame": "-10",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "text": "Weight becomes 'negligible' when energized.",
+      "weight": "X",
+      "magic": "III",
+      "magic_color": "gold",
+      "cast_spell_on_init": "",
+      "great": "",
+      "speed": "0",
+      "action": "magic",
+      "magic2": "VI",
+      "provides_magic_chit": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "2270",
+      "name": "Lift Object",
+      "attributeBlocks": {
+        "this": {
+          "duration": "permanent",
+          "target": "spells item",
+          "text": "Weight becomes 'negligible' when energized.",
+          "magic_color": "gold",
+          "host_okay": "",
+          "spell": "*",
+          "awakened": "",
+          "no_cancel": "",
+          "benevolent": "",
+          "super_realm": "",
+          "no_expire": "",
+          "no_incantation_tie": "",
+          "super_realm_treasure": ""
+        }
+      }
+    }
+  ]
+}

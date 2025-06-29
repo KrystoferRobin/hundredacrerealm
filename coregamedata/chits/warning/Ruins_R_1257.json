@@ -1,0 +1,14 @@
+{
+  "id": "1257",
+  "name": "Ruins R",
+  "attributeBlocks": {
+    "this": {
+      "warning": "ruins",
+      "tile_type": "R",
+      "super_realm": "",
+      "chit": "",
+      "ts_section": ""
+    }
+  },
+  "parts": []
+}

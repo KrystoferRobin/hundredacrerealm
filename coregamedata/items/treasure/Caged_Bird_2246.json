@@ -1,0 +1,20 @@
+{
+  "id": "2246",
+  "name": "Caged Bird",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "26",
+      "notoriety": "2",
+      "fame": "1",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "text": "Extra Alert",
+      "weight": "M"
+    }
+  },
+  "parts": []
+}

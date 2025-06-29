@@ -1,0 +1,21 @@
+{
+  "id": "2224",
+  "name": "Reanimate",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "combat",
+      "target": "killed denizen",
+      "text": "Target comes back to life under spellcaster's, armored, +1 to FIght and Move speed.",
+      "magic_color": "black",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "benevolent": "",
+      "reanimate": ""
+    }
+  },
+  "parts": []
+}

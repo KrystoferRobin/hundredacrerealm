@@ -1,0 +1,64 @@
+Month 3, Day 21
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+host
+7th day - denizens return to setup card:
+host
+- Octopus
+host
+- Axe Goblin
+host
+- Axe Goblin
+host
+- Axe Goblin
+host
+- Axe Goblin
+host
+- Axe Goblin
+host
+- Axe Goblin
+host
+- Patrol 1
+host
+- Soldier 1
+host
+- Soldier 2
+host
+- Soldier 3
+host
+- Soldier HQ
+host
+- Patrol 2
+host
+- Patrol HQ
+Elf
+Starts turn: Cavern 1
+Elf
+After resting, these chits were made active: FIGHT M3*
+Elf
+Rest - Rested 1 asterisk
+Elf
+Spell Prep -
+Elf
+Spell - enchanted Elf Magic III3*
+Elf
+Hide - Succeeded
+Elf
+Ends turn: Cavern 1
+host
+Axe Goblin is added to Cavern, clearing 2
+host
+Axe Goblin is added to Cavern, clearing 2
+host
+Axe Goblin is added to Cavern, clearing 2
+host
+Axe Goblin is added to Cavern, clearing 2
+host
+Axe Goblin is added to Cavern, clearing 2
+host
+Axe Goblin is added to Cavern, clearing 2
+host
+========================================
+host

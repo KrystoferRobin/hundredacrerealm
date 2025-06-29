@@ -1,0 +1,23 @@
+{
+  "id": "645",
+  "name": "Magic Arrow",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "attack",
+      "target": "individual",
+      "text": "MISSILE attack",
+      "magic_color": "gold",
+      "rw_expansion_1": "",
+      "strength": "M",
+      "sharpness": "2",
+      "length": "14",
+      "missile": "magic",
+      "host_okay": "",
+      "author": "Expansion 1",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

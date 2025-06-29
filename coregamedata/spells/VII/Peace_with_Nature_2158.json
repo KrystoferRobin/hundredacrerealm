@@ -1,0 +1,20 @@
+{
+  "id": "2158",
+  "name": "Peace with Nature",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "permanent",
+      "target": "leader",
+      "text": "Not attacked by warning or sound chits",
+      "magic_color": "gold",
+      "host_okay": "",
+      "benevolent": "",
+      "peace_with_nature": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

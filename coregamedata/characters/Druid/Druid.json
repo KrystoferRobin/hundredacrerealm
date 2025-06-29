@@ -1,0 +1,331 @@
+{
+  "ids": [
+    "415",
+    "1537"
+  ],
+  "name": "Druid",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "druid",
+      "character": "",
+      "vulnerability": "L",
+      "start": "Inn",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "he",
+      "alt_monsters1_game": "",
+      "magicuser": "",
+      "icon_folder": "characters",
+      "creator": "Richard Hamblen",
+      "artcredit": "Steve Bickel",
+      "meaning": "wood",
+      "rw_expansion_1": ""
+    },
+    "level_1": {
+      "name": "Herbalist"
+    },
+    "level_2": {
+      "name": "Animalist",
+      "diemod": {
+        "N0": "1d:hide:all"
+      },
+      "advantages": {
+        "N0": "CONCEALMENT:  Roll 1 die instead of 2 for all HIDE die rolls."
+      }
+    },
+    "level_3": {
+      "name": "Soothsayer",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "VIII"
+      }
+    },
+    "level_4": {
+      "name": "Druid",
+      "spellcount": "2",
+      "peace_with_nature": "",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "VIII"
+      },
+      "advantages": {
+        "N0": "PEACE WITH NATURE:  Sound/Warning chits do not summon monsters."
+      }
+    },
+    "optional_3": {
+      "optkey": "OptCharDruidCurses",
+      "curse_immunity": "",
+      "advantages": {
+        "N0": "EARTH ABSORBS:  Curses have no effect on you."
+      }
+    },
+    "optional_4": {
+      "optkey": "OptCharDruidSummon",
+      "druid_lull": "",
+      "advantages": {
+        "N0": "LULL:  Site chits do not summon monsters."
+      }
+    },
+    "relationship": {
+      "bashkars": "2",
+      "lancers": "1",
+      "order": "-1",
+      "shaman": "-1",
+      "woodfolk": "-2"
+    }
+  },
+  "parts": [
+    {
+      "id": "571",
+      "name": "Druid Move L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "3",
+          "strength": "L",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "druid",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "572",
+      "name": "Druid Move L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "strength": "L",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "druid",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "573",
+      "name": "Druid Fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "3",
+          "strength": "L",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "druid",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "574",
+      "name": "Druid Fight L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "strength": "L",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "druid",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "575",
+      "name": "Druid Move L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "2",
+          "strength": "L",
+          "effort": "2",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "druid",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "576",
+      "name": "Druid Fight L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "2",
+          "strength": "L",
+          "effort": "2",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "druid",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "577",
+      "name": "Druid Magic II3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "magic": "II",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "druid",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "578",
+      "name": "Druid Magic VIII4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "magic": "VIII",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "druid",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "579",
+      "name": "Druid Magic VIII3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "magic": "VIII",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "druid",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "580",
+      "name": "Druid Magic II2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "2",
+          "magic": "II",
+          "effort": "2",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "druid",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "581",
+      "name": "Druid Magic II3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "magic": "II",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "druid",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "582",
+      "name": "Druid Magic VIII2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "2",
+          "magic": "VIII",
+          "effort": "2",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "druid",
+          "rw_expansion_1": ""
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "5",
+  "name": "fight H6",
+  "attributeBlocks": {
+    "this": {
+      "action": "fight",
+      "strength": "H",
+      "speed": "6",
+      "character_chit": "",
+      "icon_type": "satyr",
+      "icon_folder": "custom/characters",
+      "stage": "5",
+      "level": "2",
+      "effort": "0",
+      "facing": "dark"
+    }
+  }
+}

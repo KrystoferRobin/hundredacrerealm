@@ -1,0 +1,20 @@
+{
+  "id": "2222",
+  "name": "Violent Winds",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "day",
+      "target": "clearing",
+      "text": "No one can fly in the clearing. Flying denizens add +1 to maneuver speed.",
+      "magic_color": "purple",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "no_fly": ""
+    }
+  },
+  "parts": []
+}

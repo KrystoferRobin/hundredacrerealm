@@ -1,0 +1,22 @@
+{
+  "id": "1234",
+  "name": "Pit",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "pit",
+      "clearing": "1",
+      "super_realm": "",
+      "monster_die": "1",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "red",
+      "icon_type": "scorpion",
+      "icon_folder": "wesnoth/units/monsters",
+      "pit": ""
+    }
+  },
+  "parts": []
+}

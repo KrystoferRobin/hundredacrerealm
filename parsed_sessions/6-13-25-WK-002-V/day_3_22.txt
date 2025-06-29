@@ -1,0 +1,20 @@
+Month 3, Day 22
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+White Knight
+Starts turn: High Pass 3
+White Knight
+Search - Loot the Vault - Found Treasure
+White Knight
+Search - Loot the Vault - Nothing
+White Knight
+Search - Loot the Vault - Nothing
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: High Pass 3
+host
+========================================
+host

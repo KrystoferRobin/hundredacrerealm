@@ -1,0 +1,19 @@
+{
+  "id": "671",
+  "name": "Snake Oil",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "2",
+      "text": "Skin hardens, reducing sharpness like armor (Discard to warlock)",
+      "rw_expansion_1": "",
+      "potion": "",
+      "discard": "warlock",
+      "facing": "face_dn",
+      "adds_armor": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

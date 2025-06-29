@@ -1,0 +1,44 @@
+{
+  "id": "97",
+  "name": "Rogue 7",
+  "attributeBlocks": {
+    "this": {
+      "native": "Rogues",
+      "fame": "0",
+      "notoriety": "2",
+      "base_price": "1",
+      "vulnerability": "M",
+      "rank": "7",
+      "original_game": "",
+      "icon_type": "swordsman",
+      "setup_start": "Inn",
+      "hire_type": "single",
+      "monster_die": "5",
+      "garrison": "",
+      "icon_folder": "natives",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "denizen": "",
+      "icon_folder_alt": "wesnoth/units/dunefolk",
+      "icon_type_alt": "paragon",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "3",
+      "strength": "M",
+      "length": "4",
+      "sharpness": "1",
+      "chit_color": "lightorange"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "L",
+      "length": "4",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

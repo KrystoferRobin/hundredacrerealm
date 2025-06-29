@@ -1,0 +1,20 @@
+{
+  "id": "2290",
+  "name": "Pentagram",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "You are immune to further CURSE and MESMERIZE spells.",
+      "base_price": "18",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "notoriety": "15",
+      "pentagram": "",
+      "fame": "-10",
+      "great": ""
+    }
+  },
+  "parts": []
+}

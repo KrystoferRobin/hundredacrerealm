@@ -1,0 +1,42 @@
+Month 3, Day 15
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Magician
+Starts turn: Borderland 6
+Magician
+Hide - Succeeded
+Magician
+Move - moved
+Magician
+Ends turn: Borderland 3
+__battle__
+Battle resolving at Borderland 3:
+__battle__
+GROUP 1
+__battle__
+Magician
+__battle__
+GROUP 2
+__battle__
+H Troll
+__battle__
+=======================
+__battle__
+Evening of month 3, day 15, in clearing Borderland 3
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Magician
+Presses the END combat button.
+Magician
+Combat has ended.
+host
+========================================
+host

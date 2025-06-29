@@ -1,0 +1,20 @@
+{
+  "id": "701",
+  "name": "Lockpick Set",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Fatigue one asterisk to open Chest or Vault",
+      "rw_expansion_1": "",
+      "base_price": "5",
+      "weight": "L",
+      "native": "Thieves Guild",
+      "facing": "face_dn",
+      "fame": "5",
+      "lockpick": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

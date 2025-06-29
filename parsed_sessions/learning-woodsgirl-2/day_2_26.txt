@@ -1,0 +1,16 @@
+Month 2, Day 26
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Between Cavern 1 and Oak Woods 2
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Cavern 1
+host
+========================================
+host

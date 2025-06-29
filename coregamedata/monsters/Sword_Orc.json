@@ -1,0 +1,42 @@
+{
+  "id": "737",
+  "name": "Sword Orc",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "2",
+      "notoriety": "2",
+      "icon_type": "orc_sword",
+      "setup_start": "Sword Orc Box",
+      "monster_die": "5",
+      "base_price": "2",
+      "icon_folder": "monsters1",
+      "alt_monsters1_game": "",
+      "armored": "",
+      "denizen": "",
+      "orc": "",
+      "weapon_use": "",
+      "icon_type_alt": "orcishGrunt",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_size_alt": "1"
+    },
+    "light": {
+      "move_speed": "4",
+      "chit_color": "white",
+      "attack_speed": "5",
+      "strength": "M",
+      "sharpness": "1",
+      "length": "7"
+    },
+    "dark": {
+      "move_speed": "6",
+      "attack_speed": "4",
+      "strength": "H",
+      "sharpness": "1",
+      "length": "7",
+      "chit_color": "gray"
+    }
+  },
+  "parts": []
+}

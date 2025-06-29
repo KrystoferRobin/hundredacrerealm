@@ -1,0 +1,158 @@
+Month 2, Day 12
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Wizard
+Starts turn: Caves 5
+Wizard
+Move - moved
+Wizard
+Hide - Failed
+Wizard
+Ends turn: Caves 6
+Wizard
+Reveals: Roar 4
+Wizard
+Reveals: Smoke C
+host
+T Dragon is added to Caves, clearing 6
+host
+T Dragon blocks the Wizard
+__battle__
+Battle resolving at Caves 6:
+__battle__
+GROUP 1
+__battle__
+Wizard
+__battle__
+Guard 1 (Wizard)
+__battle__
+Guard 2 (Wizard)
+__battle__
+GROUP 2
+__battle__
+T Dragon
+__battle__
+=======================
+__battle__
+Evening of month 2, day 12, in clearing Caves 6
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Guard 1
+Lures the T Dragon
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Wizard
+Casts Fiery Blast
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Wizard
+Targets the T Dragon with Fiery Blast
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 2
+Guard 1
+Changes tactics:  Guard 1 T4*
+__battle__
+Change Tactics in Box 3
+Dragon Head
+Changes tactics:  Dragon Head T4
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+Attack Length=13, Speed=3
+__battle__
+Fiery Blast L3***  vs. T Dragon Speed 6
+__battle__
+Undercut! (Speed 3 is faster than Speed 6)
+__battle__
+Initial harm: L+3
+__battle__
+Missile roll: Rolled 2 (red) and 1 (white).
+__battle__
+Missile table result: 2 = Increase 1 level
+__battle__
+T Dragon is hit with M+3 harm along box 1
+Fiery Blast
+Hits armor, and reduces sharpness: M+2
+__battle__
+T Dragon was killed!
+__battle__
+>
+__battle__
+Attack Length=9, Speed=4
+__battle__
+Dragon Head T4  vs. Guard 1 Speed 6
+__battle__
+Attack Cancelled:  Dragon Head was already killed by Fiery Blast.
+__battle__
+>
+__battle__
+Attack Length=8, Speed=4
+__battle__
+Guard 1 T4*  vs. T Dragon Speed 6
+__battle__
+Attack Cancelled:  T Dragon was already killed by Fiery Blast.
+__battle__
+>
+__battle__
+Attack Length=8, Speed=4
+__battle__
+Guard 2 T4*  vs. T Dragon Speed 6
+__battle__
+Attack Cancelled:  T Dragon was already killed by Fiery Blast.
+__battle__
+>
+__battle__
+Attack Length=0, Speed=5
+__battle__
+T Dragon H5  vs. Guard 1 Speed 6
+__battle__
+Attack Cancelled:  T Dragon was already killed by Fiery Blast.
+__battle__
+The Wizard gets 10 fame (x 1) and 10 notoriety (x 1) for the death of the T Dragon
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Guard 1 disengages because target is dead
+__battle__
+Guard 2 disengages because target is dead
+__battle__
+T Dragon is dead.  Killed by Fiery Blast
+Wizard
+Fatigued chit: MAGIC IV3*
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+Wizard
+Presses the END combat button.
+Wizard
+Combat has ended.
+host
+========================================
+host

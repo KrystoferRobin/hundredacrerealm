@@ -1,0 +1,297 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Halfling",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn",
+      "pronoun": "he",
+      "creator": "Roberto Ullfig",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Leisure",
+      "vulnerability": "L",
+      "icon_type": "halfling",
+      "icon_folder": "custom/characters",
+      "extra_notes": "This character requires Robin's Productive Dwarf optional rule."
+    },
+    "level_1": {
+      "name": "Tween",
+      "badge_icon": "Halflingbadge1",
+      "noncave_move_disadavantage": "",
+      "advantages": {
+        "N0": "SHORT LEGS: Must spend one additional consecutive move phase to enter any non-cave clearing. [L1]"
+      }
+    },
+    "level_2": {
+      "name": "Buck",
+      "badge_icon": "Halflingbadge2",
+      "advantages": {
+        "N0": "CONCEALMENT: Rolls 1 die for rolls on the HIDE table. [L2]"
+      },
+      "diemod": {
+        "N0": "1d:hide:all"
+      }
+    },
+    "level_3": {
+      "name": "Took",
+      "weapon": "Sling",
+      "badge_icon": "Halflingbadge3",
+      "advantages": {
+        "N0": "AIM: Subtracts one from all rolls on the MISSILE table. [L3]"
+      },
+      "diemod": {
+        "N0": "-1:missile:all"
+      }
+    },
+    "level_4": {
+      "name": "Halfling",
+      "weapon": "Sling",
+      "badge_icon": "Halflingbadge4",
+      "advantages": {
+        "N0": "DEFT: Rolls 1 die instead of 2 for all rolls on the LOOT table. [L4]"
+      },
+      "diemod": {
+        "N0": "1d:loot:all"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "lancers": "1",
+      "woodfolk": "1",
+      "bashkars": "-1",
+      "company": "-1"
+    },
+    "relationship": {
+      "lancers": "1",
+      "woodfolk": "1",
+      "bashkars": "-1",
+      "company": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "MOVE L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "2",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "halfling"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "halfling"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "MOVE L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "4",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "halfling"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "halfling"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "GameObject",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "4",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "halfling"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "FIGHT L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "4",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "halfling"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "MOVE L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "2",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "halfling"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "halfling"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "FIGHT L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "3",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "halfling"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "halfling"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "GameObject",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "4",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "halfling"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "FIGHT L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "2",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "halfling"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

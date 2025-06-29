@@ -1,0 +1,21 @@
+{
+  "id": "500",
+  "name": "Black Knight Move H5*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "speed": "5",
+      "character_level": "1",
+      "strength": "H",
+      "effort": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "2",
+      "level": "1",
+      "icon_folder": "characters",
+      "icon_type": "black_knight",
+      "rw_expansion_1": ""
+    }
+  }
+}

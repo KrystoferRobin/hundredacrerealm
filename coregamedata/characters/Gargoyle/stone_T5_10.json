@@ -1,0 +1,19 @@
+{
+  "id": "10",
+  "name": "stone T5**",
+  "attributeBlocks": {
+    "this": {
+      "action": "stone",
+      "strength": "T",
+      "speed": "5",
+      "character_chit": "",
+      "icon_type": "gargoyle",
+      "icon_folder": "custom/characters",
+      "stage": "10",
+      "level": "4",
+      "effort": "2",
+      "facing": "dark",
+      "fight_alert": ""
+    }
+  }
+}

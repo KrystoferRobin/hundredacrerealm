@@ -1,0 +1,30 @@
+{
+  "id": "906",
+  "name": "Cuirass",
+  "attributeBlocks": {
+    "this": {
+      "vulnerability": "L",
+      "weight": "L",
+      "armor_swing": "",
+      "armor_thrust": "",
+      "armor": "",
+      "icon_type": "cuirass",
+      "facing": "dark",
+      "armor_row": "2",
+      "ret_dw": "Guard",
+      "icon_folder": "armor",
+      "rw_expansion_1": "",
+      "item": "",
+      "cuirass": ""
+    },
+    "intact": {
+      "base_price": "9",
+      "chit_color": "tan"
+    },
+    "damaged": {
+      "base_price": "6",
+      "chit_color": "white"
+    }
+  },
+  "parts": []
+}

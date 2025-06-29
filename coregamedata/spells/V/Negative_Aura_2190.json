@@ -1,0 +1,20 @@
+{
+  "id": "2190",
+  "name": "Negative Aura",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "day",
+      "target": "character",
+      "text": "All individuals in target's clearing are one level less friendly.",
+      "magic_color": "black",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "negative_aura": "",
+      "host_okay": ""
+    }
+  },
+  "parts": []
+}

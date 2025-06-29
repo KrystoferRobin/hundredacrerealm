@@ -1,0 +1,20 @@
+{
+  "id": "2272",
+  "name": "Flash Bomb",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "7",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "text": "Immediately become hidden. All denizens assigned to you become unassigned.",
+      "discard": "shaman",
+      "potion": "",
+      "flash_bomb": ""
+    }
+  },
+  "parts": []
+}

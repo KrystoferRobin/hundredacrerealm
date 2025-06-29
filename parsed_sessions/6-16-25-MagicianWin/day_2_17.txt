@@ -1,0 +1,94 @@
+Month 2, Day 17
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Magician
+Starts turn: Bad Valley 1
+Magician
+Hide - Succeeded
+Magician
+Hide - N/A
+Magician
+Move - moved
+Magician
+Selling to Order HQ.
+Magician
+Attempting to sell: Sacred Statue
+Magician
+Trade - Sell to Order HQ - Total received for the Sacred Statue was 10 gold.
+Magician
+Ends turn: Dark Valley 5
+host
+Lancer 1 is added to Dark Valley, clearing 5
+host
+Lancer 2 is added to Dark Valley, clearing 5
+host
+Lancer 3 is added to Dark Valley, clearing 5
+host
+Lancer HQ is added to Dark Valley, clearing 5
+__battle__
+Battle resolving at Dark Valley 5:
+__battle__
+GROUP 1
+__battle__
+Magician
+__battle__
+Rogue 7 (Magician)
+__battle__
+Rogue 6 (Magician)
+__battle__
+Rogue 5 (Magician)
+__battle__
+GROUP 2
+__battle__
+Order 1
+__battle__
+Order 2
+__battle__
+Order 3
+__battle__
+Order HQ
+__battle__
+Lancer 1
+__battle__
+Lancer 2
+__battle__
+Lancer 3
+__battle__
+Lancer HQ
+Magician
+The native group will be no more favorable with drinks.
+Magician
+Meeting Order on the Friendly table
+Magician
+Rolled 4. = Price x 3
+Magician
+The Magician chose not to buy drinks.
+Magician
+Meeting Lancers on the Neutral table
+Magician
+Rolled 1. = Opportunity
+Magician
+Meeting Lancers on the Friendly table
+Magician
+Rolled 4. = Price x 3
+__battle__
+=======================
+__battle__
+Evening of month 2, day 17, in clearing Dark Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Magician
+Presses the END combat button.
+Magician
+Combat has ended.
+host
+========================================
+host

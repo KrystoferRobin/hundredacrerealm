@@ -1,0 +1,29 @@
+{
+  "id": "2217",
+  "name": "Water Run",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "day",
+      "target": "character",
+      "text": "Can 'walk the woods' to/from a water clearing. Move to a water clearing costs one phase.",
+      "magic_color": "gray",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "water_run": ""
+    },
+    "move_chit": {
+      "strength": "weight",
+      "speed": "weight",
+      "move_chit": "",
+      "action": "MOVE",
+      "chit_state": "1",
+      "water_run": "",
+      "chit_color": "BOLD_BLUE"
+    }
+  },
+  "parts": []
+}

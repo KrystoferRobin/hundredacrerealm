@@ -1,0 +1,44 @@
+Month 2, Day 14
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+host
+7th day - denizens return to setup card:
+host
+- Imp
+host
+- Rogue 1
+host
+- Rogue 2
+host
+- Rogue 3
+host
+- Rogue 4
+host
+- Rogue 5
+host
+- Rogue 6
+host
+- Rogue 7
+host
+- Rogue HQ
+Elf
+Starts turn: Evil Valley 2
+Elf
+Search - Read Runes on Good Book - Awaken a Spell
+Elf
+Search - Read Runes on Good Book - Nothing
+Elf
+Search - Read Runes on Good Book - Nothing
+Elf
+Search - Read Runes on Good Book - Curse!
+Elf
+- Curse! - Eyemist
+Elf
+Hide - Failed due to SQUEAK curse
+Elf
+Ends turn: Evil Valley 2
+host
+========================================
+host

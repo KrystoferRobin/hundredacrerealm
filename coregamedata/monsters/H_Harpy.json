@@ -1,0 +1,36 @@
+{
+  "id": "946",
+  "name": "H Harpy",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "H",
+      "fame": "2",
+      "notoriety": "2",
+      "icon_type": "harpy",
+      "setup_start": "H Harpy Box",
+      "monster_die": "6",
+      "base_price": "2",
+      "icon_folder": "monsters2",
+      "rw_expansion_1": "",
+      "flying": "",
+      "denizen": "",
+      "icon_type_alt": "Forgotten_Legends-images-frakcja4-black-harpie",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "H",
+      "chit_color": "lightblue"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "5",
+      "strength": "L",
+      "chit_color": "blue"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,20 @@
+Month 1, Day 7
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Wizard
+Starts turn: Deep Woods 5
+Wizard
+Move - moved
+Wizard
+Move - moved
+Wizard
+Move - moved
+Wizard
+Move - moved
+Wizard
+Ends turn: Dark Valley 4
+host
+========================================
+host

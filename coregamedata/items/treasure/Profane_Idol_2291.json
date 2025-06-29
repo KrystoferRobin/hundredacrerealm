@@ -1,0 +1,22 @@
+{
+  "id": "2291",
+  "name": "Profane Idol",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "All natives and monsters in the clearing are one level less friendly.",
+      "base_price": "10",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "weight": "M",
+      "notoriety": "30",
+      "fame": "-20",
+      "color_source": "black",
+      "profane_idol": "",
+      "great": ""
+    }
+  },
+  "parts": []
+}

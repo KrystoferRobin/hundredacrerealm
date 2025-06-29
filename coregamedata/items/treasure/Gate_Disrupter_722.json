@@ -1,0 +1,19 @@
+{
+  "id": "722",
+  "name": "Gate Disrupter",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "14",
+      "text": "Any gate in same clearing is rendered inactive",
+      "rw_expansion_1": "",
+      "notoriety": "2",
+      "weight": "T",
+      "facing": "face_dn",
+      "no_gate": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

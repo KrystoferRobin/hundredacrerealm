@@ -1,0 +1,25 @@
+{
+  "id": "975",
+  "name": "Tomb",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "tomb",
+      "clearing": "4",
+      "monster_die": "3",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "gold",
+      "icon_type": "zombie1",
+      "icon_folder": "monsters2",
+      "rw_expansion_1": "",
+      "generator": "2d4",
+      "min_large_t": "2",
+      "icon_folder_alt": "wesnoth/units/undead",
+      "icon_type_alt": "zombie"
+    }
+  },
+  "parts": []
+}

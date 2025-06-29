@@ -1,0 +1,21 @@
+{
+  "id": "562",
+  "name": "Pilgrim Move H5*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "strength": "H",
+      "effort": "1",
+      "character_level": "2",
+      "original_game": "",
+      "speed": "5",
+      "alt_monsters1_game": "",
+      "stage": "4",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "pilgrim",
+      "rw_expansion_1": ""
+    }
+  }
+}

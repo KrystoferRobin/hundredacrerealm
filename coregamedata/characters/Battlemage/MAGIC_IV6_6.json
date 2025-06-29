@@ -1,0 +1,18 @@
+{
+  "id": "6",
+  "name": "MAGIC IV6*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "6",
+      "level": "2",
+      "action": "MAGIC",
+      "speed": "6",
+      "effort": "1",
+      "facing": "dark",
+      "magic": "IV",
+      "icon_type": "battlemage"
+    }
+  }
+}

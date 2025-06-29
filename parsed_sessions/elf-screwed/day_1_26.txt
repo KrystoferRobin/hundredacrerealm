@@ -1,0 +1,20 @@
+Month 1, Day 26
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Elf
+Starts turn: Borderland 3
+Elf
+Dropped the Golden Crown
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Hide - Succeeded
+Elf
+Ends turn: Bad Valley 4
+host
+========================================
+host

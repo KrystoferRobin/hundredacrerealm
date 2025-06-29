@@ -1,0 +1,18 @@
+{
+  "id": "2412",
+  "name": "Necromancer Black",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "color",
+      "character_level": "3",
+      "stage": "8",
+      "level": "3",
+      "icon_folder": "characters",
+      "icon_type": "necromancer",
+      "super_realm": "",
+      "magic": "V",
+      "chit_state": "CB"
+    }
+  }
+}

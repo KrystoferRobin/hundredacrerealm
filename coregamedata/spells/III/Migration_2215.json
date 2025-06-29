@@ -1,0 +1,21 @@
+{
+  "id": "2215",
+  "name": "Migration",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "instant",
+      "target": "warning chits",
+      "text": "Swap the warning chit in spellcaster's hex with another warning chit.",
+      "magic_color": "purple",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "target_invalid_chit_types": "V,H",
+      "swap_warnings": ""
+    }
+  },
+  "parts": []
+}

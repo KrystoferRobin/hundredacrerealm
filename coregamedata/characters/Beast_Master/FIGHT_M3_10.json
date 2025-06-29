@@ -1,0 +1,18 @@
+{
+  "id": "10",
+  "name": "FIGHT M3**",
+  "attributeBlocks": {
+    "this": {
+      "action": "FIGHT",
+      "strength": "M",
+      "speed": "3",
+      "character_chit": "",
+      "icon_type": "beast master",
+      "icon_folder": "custom/characters",
+      "stage": "10",
+      "level": "4",
+      "effort": "2",
+      "facing": "dark"
+    }
+  }
+}

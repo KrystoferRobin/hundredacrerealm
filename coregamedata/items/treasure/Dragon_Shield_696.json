@@ -1,0 +1,26 @@
+{
+  "id": "696",
+  "name": "Dragon Shield",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "text": "No wounds or damage taken with Dragon Breath - Heavy Shield",
+      "rw_expansion_1": "",
+      "base_price": "20",
+      "notoriety": "10",
+      "great": "",
+      "weight": "H",
+      "facing": "face_dn",
+      "fame": "2",
+      "shield": "",
+      "armor": "",
+      "armor_row": "1",
+      "armor_choice": "",
+      "immune_breath": "",
+      "vulnerability": "H",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2093",
+  "name": "Elusive Cloak",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "10",
+      "notoriety": "2",
+      "text": "Replace MOVE (enemy over 4)",
+      "replace_move": "4",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

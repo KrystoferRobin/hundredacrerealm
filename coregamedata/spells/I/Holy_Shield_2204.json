@@ -1,0 +1,28 @@
+{
+  "id": "2204",
+  "name": "Holy Shield",
+  "spellLevel": "I",
+  "attributeBlocks": {
+    "this": {
+      "spell": "I",
+      "duration": "phase",
+      "target": "individual",
+      "text": "Block next attack made against target",
+      "magic_color": "white",
+      "host_okay": "",
+      "holy_shield": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "benevolent": ""
+    },
+    "phase_chit": {
+      "phase_chit": "",
+      "text": "Holy Shield"
+    },
+    "phase_chit_effects": {
+      "holy_shield": ""
+    }
+  },
+  "parts": []
+}

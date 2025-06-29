@@ -1,0 +1,26 @@
+{
+  "id": "2099",
+  "name": "Book of Alchemy",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "10",
+      "weight": "L",
+      "fame": "-10",
+      "notoriety": "15",
+      "magic": "VI",
+      "great": "",
+      "book": "",
+      "print": "",
+      "scholar_price": "50",
+      "warlock_price": "50",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "item": "",
+      "super_realm": "",
+      "merchant_price": "20"
+    }
+  },
+  "parts": []
+}

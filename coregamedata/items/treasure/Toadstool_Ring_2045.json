@@ -1,0 +1,16 @@
+{
+  "id": "2045",
+  "name": "Toadstool Ring",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Extra SPELL",
+      "base_price": "9",
+      "notoriety": "3",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

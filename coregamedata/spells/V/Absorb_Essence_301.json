@@ -1,0 +1,23 @@
+{
+  "id": "301",
+  "name": "Absorb Essence",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "permanent",
+      "target": "monster",
+      "text": "Become monster",
+      "magic_color": "black",
+      "original_game": "",
+      "transmorph": "target",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "spell_strength": "1",
+      "affects_caster": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

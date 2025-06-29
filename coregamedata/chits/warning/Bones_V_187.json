@@ -1,0 +1,91 @@
+{
+  "id": "187",
+  "name": "Bones V",
+  "attributeBlocks": {
+    "this": {
+      "warning": "bones",
+      "tile_type": "V",
+      "original_game": "",
+      "chit": "",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "ts_section": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "36",
+      "name": "Ghost",
+      "attributeBlocks": {
+        "this": {
+          "monster": "",
+          "vulnerability": "M",
+          "fame": "0",
+          "notoriety": "2",
+          "original_game": "",
+          "icon_type": "ghost",
+          "setup_start": "Bones V",
+          "base_price": "2",
+          "icon_folder": "monsters",
+          "monster_die": "99",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "denizen": "",
+          "ghost": "",
+          "icon_folder_alt": "wesnoth/units",
+          "icon_type_alt": "ghost",
+          "icon_size_alt": "1.2"
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "H",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "2",
+          "attack_speed": "2",
+          "strength": "L",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "37",
+      "name": "Ghost",
+      "attributeBlocks": {
+        "this": {
+          "monster": "",
+          "vulnerability": "M",
+          "fame": "0",
+          "notoriety": "2",
+          "original_game": "",
+          "icon_type": "ghost",
+          "setup_start": "Bones V",
+          "base_price": "2",
+          "icon_folder": "monsters",
+          "monster_die": "99",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "denizen": "",
+          "ghost": "",
+          "icon_folder_alt": "wesnoth/units",
+          "icon_type_alt": "ghost",
+          "icon_size_alt": "1.2"
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "H",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "2",
+          "attack_speed": "2",
+          "strength": "L",
+          "chit_color": "forestgreen"
+        }
+      }
+    }
+  ]
+}

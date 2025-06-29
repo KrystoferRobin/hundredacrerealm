@@ -1,0 +1,18 @@
+{
+  "id": "2085",
+  "name": "Girtle of Energy",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "13",
+      "text": "Effort limit is 3*/round",
+      "notoriety": "4",
+      "fame": "2",
+      "effort_limit": "1",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

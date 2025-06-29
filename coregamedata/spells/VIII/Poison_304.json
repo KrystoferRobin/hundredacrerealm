@@ -1,0 +1,23 @@
+{
+  "id": "304",
+  "name": "Poison",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "combat",
+      "target": "weapon",
+      "text": "Add one sharpness to damage caused by weapon",
+      "magic_color": "gray",
+      "original_game": "",
+      "add_sharpness": "1",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "learnable": "",
+      "non_enchanted_weapon": ""
+    }
+  },
+  "parts": []
+}

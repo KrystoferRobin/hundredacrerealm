@@ -1,0 +1,34 @@
+{
+  "id": "2025",
+  "name": "Golden Axe",
+  "attributeBlocks": {
+    "this": {
+      "weight": "T",
+      "length": "6",
+      "base_price": "20",
+      "two_handed": "",
+      "weapon": "",
+      "icon_type": "great_axe",
+      "icon_folder": "weapons",
+      "item": "",
+      "super_realm": "",
+      "notoriety": "3",
+      "fame": "6",
+      "magic": "",
+      "super_realm_treasure": "",
+      "axe": ""
+    },
+    "unalerted": {
+      "strength": "T",
+      "sharpness": "1",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "attack_speed": "3",
+      "strength": "T",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "968",
+  "name": "Smoke X",
+  "attributeBlocks": {
+    "this": {
+      "warning": "smoke",
+      "tile_type": "X",
+      "chit": "",
+      "rw_expansion_1": ""
+    }
+  },
+  "parts": []
+}

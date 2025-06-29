@@ -1,0 +1,22 @@
+{
+  "id": "640",
+  "name": "Disguise",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "day",
+      "target": "human group",
+      "text": "Group becomes NEUTRAL",
+      "magic_color": "gray",
+      "rw_expansion_1": "",
+      "make_friendly": "",
+      "benevolent": "",
+      "host_okay": "",
+      "pacify": "0",
+      "author": "Expansion 1",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

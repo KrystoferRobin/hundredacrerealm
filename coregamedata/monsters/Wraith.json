@@ -1,0 +1,36 @@
+{
+  "id": "1390",
+  "name": "Wraith",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "H",
+      "fame": "3",
+      "notoriety": "3",
+      "super_realm": "",
+      "icon_type": "wraith",
+      "setup_start": "Wraith Box",
+      "monster_die": "2",
+      "base_price": "3",
+      "icon_folder": "wesnoth/units",
+      "needs_init": "",
+      "denizen": "",
+      "icon_size": "1.1",
+      "wraith": "",
+      "box_num": "4"
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "3",
+      "strength": "L",
+      "chit_color": "gray"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "5",
+      "strength": "T",
+      "chit_color": "darkgray"
+    }
+  },
+  "parts": []
+}

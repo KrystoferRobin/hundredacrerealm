@@ -1,0 +1,304 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Goblin",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn,Ghost",
+      "pronoun": "he",
+      "creator": "Roberto Ullfig",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Axe of War",
+      "vulnerability": "M",
+      "icon_type": "goblin",
+      "icon_folder": "custom/characters"
+    },
+    "level_1": {
+      "name": "Private",
+      "weapon": "Axe",
+      "armor": "Helmet",
+      "badge_icon": "Goblinbadge1",
+      "extra_cave_phase": "",
+      "advantages": {
+        "N0": "NIGHT VISION: Extra Phase in Caves"
+      }
+    },
+    "level_2": {
+      "name": "Corporal",
+      "armor": "Helmet",
+      "weapon": "Axe",
+      "badge_icon": "Goblinbadge2",
+      "advantages": {
+        "N0": "SPEAR GOBLIN: Has a Spear Goblin companion as a permanent (until killed) hireling."
+      },
+      "companion_name": {
+        "N0": "Spear Goblin"
+      }
+    },
+    "level_3": {
+      "name": "Sergeant",
+      "armor": "Helmet",
+      "weapon": "Axe",
+      "badge_icon": "Goblinbadge3",
+      "advantages": {
+        "N0": "SWORD GOBLIN: Has a Sword Goblin companion as a permanent (until killed) hireling."
+      },
+      "companion_name": {
+        "N0": "Sword Goblin"
+      }
+    },
+    "level_4": {
+      "name": "Goblin",
+      "armor": "Helmet",
+      "weapon": "Axe",
+      "badge_icon": "Goblinbadge4",
+      "advantages": {
+        "N0": "CAVE KNOWLEDGE: Rolls 1 die instead of 2 for all Search, Hide, and Meeting rolls in Caves."
+      },
+      "diemod": {
+        "N0": "1d:magicsight,commerce,trade,hire,readrunes,locate,hide,peer,meeting,loot:&gt;caves"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "crone": "1",
+      "order": "-2",
+      "guard": "-2",
+      "soldiers": "-2",
+      "patrol": "-2"
+    },
+    "gamerel": {
+      "crone": "1",
+      "order": "-2",
+      "guard": "-2",
+      "soldiers": "-2",
+      "patrol": "-2"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "goblin",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "goblin",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "goblin",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "move M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "goblin",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "fight M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "goblin",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "goblin",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "goblin",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "goblin",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "goblin",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "goblin",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "goblin",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "fight H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "goblin",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

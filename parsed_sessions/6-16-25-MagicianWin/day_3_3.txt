@@ -1,0 +1,22 @@
+Month 3, Day 3
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Magician
+Starts turn: Crag 6
+Magician
+Hide - Succeeded
+Magician
+Search - Loot the Toadstool Circle - Curse!
+Magician
+- Curse! - Disgust, but not affected.
+Magician
+Search - Loot the Toadstool Circle - PEER any clearing
+Magician
+Search - Loot the Toadstool Circle - Found Treasure
+Magician
+Ends turn: Crag 6
+host
+========================================
+host

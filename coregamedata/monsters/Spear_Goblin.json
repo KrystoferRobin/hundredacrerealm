@@ -1,0 +1,36 @@
+{
+  "id": "1456",
+  "name": "Spear Goblin",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "1",
+      "notoriety": "1",
+      "icon_type": "goblinRouser",
+      "setup_start": "Spear Goblins Box",
+      "monster_die": "3",
+      "base_price": "1",
+      "icon_folder": "wesnoth/units",
+      "denizen": "",
+      "super_realm": "",
+      "icon_size": "1",
+      "goblin": "",
+      "weapon_use": "",
+      "box_num": "2"
+    },
+    "light": {
+      "move_speed": "3",
+      "chit_color": "pink"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "5",
+      "strength": "H",
+      "sharpness": "1",
+      "length": "10",
+      "chit_color": "purple"
+    }
+  },
+  "parts": []
+}

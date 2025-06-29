@@ -1,0 +1,25 @@
+{
+  "id": "2123",
+  "name": "Elven Grace",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "combat",
+      "target": "individual",
+      "text": "Change MOVE L=1, M=2, H=3, T=4, X=5",
+      "magic_color": "gold",
+      "l": "1",
+      "m": "2",
+      "h": "3",
+      "t": "4",
+      "x": "5",
+      "move_speed_change": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

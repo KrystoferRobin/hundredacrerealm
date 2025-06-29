@@ -1,0 +1,351 @@
+{
+  "id": "1857",
+  "name": "Aborigine Dwelling",
+  "attributeBlocks": {
+    "this": {
+      "native": "Aborigines",
+      "dwelling": "l_camp,s_camp,s_fire",
+      "print": "",
+      "ts_section": "clan 2",
+      "ts_size": "T",
+      "ts_color": "green",
+      "ts_count": "6",
+      "icon_type": "Rashy_Era-vixens-smasher",
+      "icon_folder": "wesnoth/units/addons",
+      "virtual_dwelling": "",
+      "super_realm": "",
+      "native_die": "2",
+      "clan": "2",
+      "icon_size": "0.9",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1858",
+      "name": "Aborigine 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Aborigines",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "1",
+          "icon_type": "Rashy_Era-vixens-archer",
+          "setup_start": "Aborigine Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/addons",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "2",
+          "clan": "2",
+          "missile": "",
+          "icon_size": "0.9",
+          "archer": "",
+          "native_name": "Archer"
+        },
+        "light": {
+          "move_speed": "2",
+          "chit_color": "lightgreen",
+          "missile": ""
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "1",
+          "strength": "L",
+          "length": "14",
+          "chit_color": "forestgreen",
+          "missile": "",
+          "sharpness": "2"
+        }
+      }
+    },
+    {
+      "id": "1859",
+      "name": "Aborigine 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Aborigines",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "2",
+          "icon_type": "Rashy_Era-vixens-marksman",
+          "setup_start": "Aborigine Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/addons",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "2",
+          "clan": "2",
+          "missile": "",
+          "icon_size": "0.9",
+          "archer": "",
+          "native_name": "Archer"
+        },
+        "light": {
+          "move_speed": "2",
+          "chit_color": "lightgreen",
+          "missile": ""
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "1",
+          "strength": "L",
+          "length": "14",
+          "chit_color": "forestgreen",
+          "missile": "",
+          "sharpness": "2"
+        }
+      }
+    },
+    {
+      "id": "1860",
+      "name": "Aborigine 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Aborigines",
+          "fame": "0",
+          "notoriety": "2",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "3",
+          "icon_type": "Rashy_Era-vixens-smasher",
+          "setup_start": "Aborigine Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/addons",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "2",
+          "clan": "2",
+          "icon_size": "0.9",
+          "native_name": "Axeman"
+        },
+        "light": {
+          "move_speed": "3",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "2",
+          "chit_color": "lightgreen",
+          "sharpness": "1"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "2",
+          "chit_color": "forestgreen",
+          "sharpness": "1"
+        }
+      }
+    },
+    {
+      "id": "1861",
+      "name": "Aborigine 4",
+      "attributeBlocks": {
+        "this": {
+          "native": "Aborigines",
+          "fame": "0",
+          "notoriety": "2",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "4",
+          "icon_type": "Rashy_Era-vixens-warrior",
+          "setup_start": "Aborigine Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/addons",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "2",
+          "clan": "2",
+          "icon_size": "0.9",
+          "native_name": "Axeman"
+        },
+        "light": {
+          "move_speed": "3",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "2",
+          "chit_color": "lightgreen",
+          "sharpness": "1"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "2",
+          "chit_color": "forestgreen",
+          "sharpness": "1"
+        }
+      }
+    },
+    {
+      "id": "1862",
+      "name": "Aborigine 5",
+      "attributeBlocks": {
+        "this": {
+          "native": "Aborigines",
+          "fame": "0",
+          "notoriety": "2",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "5",
+          "icon_type": "Rashy_Era-vixens-smasher",
+          "setup_start": "Aborigine Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/addons",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "2",
+          "clan": "2",
+          "icon_size": "0.9",
+          "native_name": "Axeman"
+        },
+        "light": {
+          "move_speed": "3",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "2",
+          "chit_color": "lightgreen",
+          "sharpness": "1"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "2",
+          "chit_color": "forestgreen",
+          "sharpness": "1"
+        }
+      }
+    },
+    {
+      "id": "1863",
+      "name": "Aborigine HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Aborigines",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "HQ",
+          "icon_type": "Rashy_Era-vixens-sharpshooter",
+          "setup_start": "Aborigine Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/addons",
+          "commerce": "N",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "2",
+          "clan": "2",
+          "missile": "",
+          "icon_size": "0.9",
+          "archer": "",
+          "native_name": "Archer"
+        },
+        "light": {
+          "move_speed": "2",
+          "chit_color": "lightgreen",
+          "missile": ""
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "1",
+          "strength": "M",
+          "length": "16",
+          "chit_color": "forestgreen",
+          "missile": "",
+          "sharpness": "2"
+        }
+      }
+    },
+    {
+      "id": "1998",
+      "name": "Light Bow",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "14",
+          "base_price": "6",
+          "missile": "",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "light_bow",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": "",
+          "bow": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "attack_speed": "1",
+          "strength": "L",
+          "sharpness": "2",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "2006",
+      "name": "Axe",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "2",
+          "base_price": "4",
+          "throwable": "",
+          "weapon": "",
+          "icon_type": "axe",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "5",
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "2007",
+      "name": "Axe",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "2",
+          "base_price": "4",
+          "throwable": "",
+          "weapon": "",
+          "icon_type": "axe",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "5",
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

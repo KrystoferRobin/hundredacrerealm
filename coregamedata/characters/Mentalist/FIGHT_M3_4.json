@@ -1,0 +1,18 @@
+{
+  "id": "4",
+  "name": "FIGHT M3*",
+  "attributeBlocks": {
+    "this": {
+      "action": "FIGHT",
+      "strength": "M",
+      "speed": "3",
+      "character_chit": "",
+      "icon_type": "mentalist",
+      "icon_folder": "custom/characters",
+      "stage": "4",
+      "level": "2",
+      "effort": "1",
+      "facing": "dark"
+    }
+  }
+}

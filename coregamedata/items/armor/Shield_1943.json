@@ -1,0 +1,29 @@
+{
+  "id": "1943",
+  "name": "Shield",
+  "attributeBlocks": {
+    "this": {
+      "vulnerability": "M",
+      "weight": "M",
+      "shield": "",
+      "armor_choice": "",
+      "armor": "",
+      "icon_type": "shield",
+      "facing": "dark",
+      "armor_row": "1",
+      "ret_dw": "House",
+      "icon_folder": "armor",
+      "item": "",
+      "super_realm": ""
+    },
+    "intact": {
+      "base_price": "7",
+      "chit_color": "gray"
+    },
+    "damaged": {
+      "base_price": "5",
+      "chit_color": "white"
+    }
+  },
+  "parts": []
+}

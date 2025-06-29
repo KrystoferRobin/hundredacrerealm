@@ -1,0 +1,22 @@
+Month 1, Day 11
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+White Knight
+Starts turn: Mountain 4
+White Knight
+Move - moved
+White Knight
+Hide - Succeeded
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Caves 2
+White Knight
+Reveals: Cairns
+White Knight
+Reveals: Smoke C
+host
+========================================
+host

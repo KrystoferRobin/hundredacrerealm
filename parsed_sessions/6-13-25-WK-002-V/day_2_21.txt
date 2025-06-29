@@ -1,0 +1,40 @@
+Month 2, Day 21
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+host
+7th day - denizens return to setup card:
+host
+- Guard 1
+host
+- Guard 2
+host
+- Guard HQ
+host
+- Order 3
+host
+- Order HQ
+host
+- Ghost
+host
+Ghost is added to Bad Valley, clearing 5
+host
+- Ghost
+host
+Ghost is added to Bad Valley, clearing 5
+White Knight
+Starts turn: Caves 5
+White Knight
+Search - Locate - Nothing
+White Knight
+Search - Locate - Passage(s)
+White Knight
+Search - Locate - Passage(s)
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Caves 5
+host
+========================================
+host

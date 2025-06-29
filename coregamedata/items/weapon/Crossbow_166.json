@@ -1,0 +1,31 @@
+{
+  "id": "166",
+  "name": "Crossbow",
+  "attributeBlocks": {
+    "this": {
+      "weight": "H",
+      "length": "12",
+      "base_price": "10",
+      "missile": "",
+      "two_handed": "",
+      "weapon": "",
+      "original_game": "",
+      "icon_type": "crossbow",
+      "alt_monsters1_game": "",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "unalerted": {
+      "strength": "H",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "attack_speed": "1",
+      "strength": "H",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

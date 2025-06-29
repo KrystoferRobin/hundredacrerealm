@@ -1,0 +1,21 @@
+{
+  "id": "349",
+  "name": "Penetrating Grease",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Weapon ignores all armor (discard to crone)",
+      "base_price": "4",
+      "discard": "crone",
+      "potion": "",
+      "original_game": "",
+      "ignore_armor": "",
+      "sticks_weapon": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

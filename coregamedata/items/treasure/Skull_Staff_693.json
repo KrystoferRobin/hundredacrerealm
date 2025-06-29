@@ -1,0 +1,20 @@
+{
+  "id": "693",
+  "name": "Skull Staff",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "text": "Add one sharpness star to any Attack Spell",
+      "rw_expansion_1": "",
+      "weight": "M",
+      "base_price": "12",
+      "notoriety": "10",
+      "facing": "face_dn",
+      "fame": "-10",
+      "enh_spell_shrp": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

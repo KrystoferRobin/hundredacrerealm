@@ -1,0 +1,39 @@
+{
+  "id": "1380",
+  "name": "H Scorpion",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "armored": "",
+      "vulnerability": "H",
+      "fame": "5",
+      "notoriety": "5",
+      "super_realm": "",
+      "icon_type": "sand-scuttler",
+      "setup_start": "H Scorpions Box",
+      "monster_die": "1",
+      "base_price": "5",
+      "icon_folder": "wesnoth/units/monsters",
+      "needs_init": "",
+      "denizen": "",
+      "icon_size": "1",
+      "icon_y_offset": "-10",
+      "scorpion": "",
+      "box_num": "2"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "M",
+      "chit_color": "gray"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "5",
+      "strength": "H",
+      "chit_color": "darkgray",
+      "sharpness": "1"
+    }
+  },
+  "parts": []
+}

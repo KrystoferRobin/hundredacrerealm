@@ -1,0 +1,37 @@
+{
+  "id": "156",
+  "name": "Gold Helmet",
+  "attributeBlocks": {
+    "this": {
+      "vulnerability": "H",
+      "weight": "H",
+      "armor_smash": "",
+      "magic": "Gold",
+      "fame": "4",
+      "notoriety": "4",
+      "armor": "",
+      "original_game": "",
+      "icon_type": "helmet",
+      "facing": "dark",
+      "pile_position": "1",
+      "armor_row": "2",
+      "alt_monsters1_game": "",
+      "icon_folder": "armor",
+      "rw_expansion_1": "",
+      "item": "",
+      "helmet": ""
+    },
+    "intact": {
+      "base_price": "30",
+      "chit_color": "gold"
+    },
+    "damaged": {
+      "base_price": "27",
+      "chit_color": "yellow"
+    },
+    "destroyed": {
+      "base_price": "20"
+    }
+  },
+  "parts": []
+}

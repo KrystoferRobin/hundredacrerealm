@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 @theme inline {
@@ -21,7 +21,7 @@
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: #000000;
   font-family: 'EB Garamond', 'Georgia', serif;
   background-color: #f6ecd6;
 }
@@ -38,10 +38,79 @@ body {
   background-color: #6b3e26;
 }
 
-.text-brown {
-  color: #6b3e26;
+.text-black, .text-brown, .text-parchment, .text-gray-700, .text-gray-800, .text-gray-900 {
+  color: #000000 !important;
 }
 
-.text-parchment {
-  color: #f6ecd6;
+/* Prevent page scrolling when hovering over map */
+.hex-map-container canvas:hover {
+  overflow: hidden;
+}
+
+.hex-map-container:hover {
+  overflow: hidden;
+}
+
+/* Custom scrollbar styling for Magic Realm aesthetic */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f6ecd6;
+  border: 1px solid #bfa76a;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #bfa76a 0%, #6b3e26 100%);
+  border-radius: 6px;
+  border: 1px solid #6b3e26;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #6b3e26 0%, #bfa76a 100%);
+}
+
+/* Enhanced button styling */
+.btn-magic-realm {
+  background: linear-gradient(135deg, #fff8e1 0%, #f6ecd6 100%);
+  border: 3px solid #bfa76a;
+  box-shadow: 0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-magic-realm:hover {
+  background: linear-gradient(135deg, #f3e3b2 0%, #fff8e1 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(191, 167, 106, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Decorative border styling */
+.border-magic-realm {
+  border: 3px solid #bfa76a;
+  box-shadow: 0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* Text shadow for better readability */
+.text-shadow-magic {
+  text-shadow: 1px 1px 2px rgba(107, 62, 38, 0.3);
+}
+
+/* Glow effect for important elements */
+.glow-magic {
+  box-shadow: 0 0 20px rgba(191, 167, 106, 0.4);
+}
+
+/* Animated background for interactive elements */
+@keyframes parchment-shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.parchment-shimmer {
+  background: linear-gradient(90deg, #f6ecd6 0%, #fff8e1 25%, #f6ecd6 50%, #fff8e1 75%, #f6ecd6 100%);
+  background-size: 200% 200%;
+  animation: parchment-shimmer 3s ease-in-out infinite;
 }

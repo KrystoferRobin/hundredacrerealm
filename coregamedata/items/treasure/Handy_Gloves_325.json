@@ -1,0 +1,22 @@
+{
+  "id": "325",
+  "name": "Handy Gloves",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "fame": "1",
+      "notoriety": "2",
+      "text": "FIGHT M3",
+      "base_price": "6",
+      "attack_speed": "3",
+      "strength": "M",
+      "original_game": "",
+      "gloves": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

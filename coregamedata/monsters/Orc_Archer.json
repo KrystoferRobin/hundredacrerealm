@@ -1,0 +1,42 @@
+{
+  "id": "741",
+  "name": "Orc Archer",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "2",
+      "notoriety": "2",
+      "icon_type": "orc_archer",
+      "setup_start": "Orc Archer Box",
+      "monster_die": "5",
+      "base_price": "2",
+      "icon_folder": "monsters1",
+      "alt_monsters1_game": "",
+      "armored": "",
+      "missile": "",
+      "sensitive_tactics": "",
+      "denizen": "",
+      "orc": "",
+      "archer": "",
+      "weapon_use": "",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_type_alt": "orcishArcher",
+      "icon_size_alt": "1"
+    },
+    "light": {
+      "move_speed": "4",
+      "chit_color": "white"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "1",
+      "strength": "L",
+      "sharpness": "2",
+      "length": "14",
+      "chit_color": "gray",
+      "missile": ""
+    }
+  },
+  "parts": []
+}

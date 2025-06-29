@@ -1,0 +1,22 @@
+Month 2, Day 26
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+White Knight
+Starts turn: Bad Valley 1
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+After resting, these chits were moved to fatigue: FIGHT T4**
+White Knight
+Rest - Rested 2 asterisks
+White Knight
+Ends turn: Evil Valley 1
+host
+========================================
+host

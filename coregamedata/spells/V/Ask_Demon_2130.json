@@ -1,0 +1,20 @@
+{
+  "id": "2130",
+  "name": "Ask Demon",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "instant",
+      "target": "ask demon",
+      "text": "Ask question with yes/no or number answer",
+      "magic_color": "black",
+      "askdemon": "",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "askdemon_peek": ""
+    }
+  },
+  "parts": []
+}

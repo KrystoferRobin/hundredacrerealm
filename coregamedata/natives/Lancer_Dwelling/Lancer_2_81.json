@@ -1,0 +1,74 @@
+{
+  "id": "81",
+  "name": "Lancer 2",
+  "attributeBlocks": {
+    "this": {
+      "native": "Lancers",
+      "fame": "0",
+      "notoriety": "4",
+      "base_price": "2",
+      "vulnerability": "L",
+      "rank": "2",
+      "original_game": "",
+      "icon_type": "lancer",
+      "monster_die": "4",
+      "setup_start": "Lancer Dwelling",
+      "hire_type": "group",
+      "icon_folder": "natives",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "denizen": "",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "icon_type_alt": "spearman",
+      "icon_size_alt": "0.9",
+      "icon_type_rider_alt": "horseman"
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "strength": "M",
+      "length": "10",
+      "sharpness": "1",
+      "chit_color": "lightgreen"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "H",
+      "length": "10",
+      "sharpness": "1",
+      "chit_color": "forestgreen"
+    }
+  },
+  "parts": [
+    {
+      "id": "113",
+      "name": "Lancer Pony 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Lancers",
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "original_game": "",
+          "activated": "",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "icon_folder_alt": "wesnoth/units/monsters",
+          "icon_type_alt": "horse",
+          "icon_size_alt": "1"
+        },
+        "trot": {
+          "move_speed": "5",
+          "strength": "M",
+          "chit_color": "lightgreen"
+        },
+        "gallop": {
+          "move_speed": "4",
+          "strength": "M",
+          "chit_color": "limegreen"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "282",
+  "name": "Faerie Lights",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "day",
+      "target": "magic(III,VII)",
+      "text": "Change MAGIC III to II and VII to VI",
+      "magic_color": "gold",
+      "original_game": "",
+      "iii": "II",
+      "vii": "VI",
+      "magic_change": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

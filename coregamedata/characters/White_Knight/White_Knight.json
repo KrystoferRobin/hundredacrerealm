@@ -1,0 +1,326 @@
+{
+  "ids": [
+    "414",
+    "1536"
+  ],
+  "name": "White Knight",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "white_knight",
+      "character": "",
+      "vulnerability": "H",
+      "start": "Inn,Chapel",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "he",
+      "alt_monsters1_game": "",
+      "fighter": "",
+      "icon_folder": "characters",
+      "knight": "",
+      "creator": "Richard Hamblen",
+      "artcredit": "Kim Gromoll",
+      "meaning": "Cross Pommee: Potent Cross",
+      "rw_expansion_1": ""
+    },
+    "level_1": {
+      "name": "Squire",
+      "weapon": "Broadsword",
+      "armor": "Helmet,Breastplate,Shield"
+    },
+    "level_2": {
+      "name": "Knight-Errant",
+      "weapon": "Broadsword",
+      "armor": "Armor,Shield",
+      "extra_actions": {
+        "N0": "R"
+      },
+      "advantages": {
+        "N0": "HEALTH:  Get one extra REST phase every day."
+      }
+    },
+    "level_3": {
+      "name": "Crusader",
+      "weapon": "Broadsword",
+      "armor": "Armor,Shield",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "I"
+      }
+    },
+    "level_4": {
+      "name": "White Knight",
+      "weapon": "Great Sword",
+      "armor": "Armor",
+      "spellcount": "1",
+      "diemod": {
+        "N0": "-1:meeting,commerce:all"
+      },
+      "spelltypes": {
+        "N0": "I"
+      },
+      "advantages": {
+        "N0": "HONOR:  Subtract 1 from all Meeting Table die rolls."
+      }
+    },
+    "relationship": {
+      "order": "2",
+      "lancers": "1",
+      "bashkars": "-1",
+      "crone": "-1",
+      "company": "-2"
+    }
+  },
+  "parts": [
+    {
+      "id": "583",
+      "name": "White Knight Move H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "5",
+          "strength": "H",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "white_knight",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "584",
+      "name": "White Knight Move H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "6",
+          "strength": "H",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "white_knight",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "585",
+      "name": "White Knight Fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "5",
+          "strength": "H",
+          "effort": "1",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "white_knight",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "586",
+      "name": "White Knight Move H4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "strength": "H",
+          "effort": "2",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "white_knight",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "587",
+      "name": "White Knight Fight H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "6",
+          "strength": "H",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "white_knight",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "588",
+      "name": "White Knight Fight H4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "strength": "H",
+          "effort": "2",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "white_knight",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "589",
+      "name": "White Knight Fight H4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "strength": "H",
+          "effort": "2",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "white_knight",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "590",
+      "name": "White Knight Fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "5",
+          "strength": "H",
+          "effort": "1",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "white_knight",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "591",
+      "name": "White Knight Magic I5**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "5",
+          "magic": "I",
+          "effort": "2",
+          "character_level": "3",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "white_knight",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "592",
+      "name": "White Knight Move T6*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "6",
+          "strength": "T",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "white_knight",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "593",
+      "name": "White Knight Fight T4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "strength": "T",
+          "effort": "2",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "white_knight",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "594",
+      "name": "White Knight Fight T5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "5",
+          "strength": "T",
+          "effort": "1",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "white_knight",
+          "rw_expansion_1": ""
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

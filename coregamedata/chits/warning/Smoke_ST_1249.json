@@ -1,0 +1,31 @@
+{
+  "id": "1249",
+  "name": "Smoke ST",
+  "attributeBlocks": {
+    "this": {
+      "warning": "smoke",
+      "tile_type": "ST",
+      "super_realm": "",
+      "chit": "",
+      "ts_section": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1290",
+      "name": "Small Camp",
+      "attributeBlocks": {
+        "this": {
+          "dwelling": "s_camp",
+          "warning": "smoke",
+          "tile_type": "ST",
+          "super_realm": "",
+          "icon_type": "camp2",
+          "icon_folder": "wesnoth/buildings",
+          "general_dwelling": "",
+          "no_shelter": ""
+        }
+      }
+    }
+  ]
+}

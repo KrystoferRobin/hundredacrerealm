@@ -1,0 +1,31 @@
+{
+  "id": "1101",
+  "name": "Cloak",
+  "attributeBlocks": {
+    "this": {
+      "vulnerability": "L",
+      "weight": "L",
+      "armor_thrust": "",
+      "armor_swing": "",
+      "armor_smash": "",
+      "armor": "",
+      "icon_type": "cloak",
+      "facing": "dark",
+      "armor_row": "3",
+      "ret_dw": "Thieves Guild",
+      "icon_folder": "armor",
+      "rw_expansion_1": "",
+      "item": "",
+      "cloak": ""
+    },
+    "intact": {
+      "base_price": "8",
+      "chit_color": "gray"
+    },
+    "damaged": {
+      "base_price": "5",
+      "chit_color": "white"
+    }
+  },
+  "parts": []
+}

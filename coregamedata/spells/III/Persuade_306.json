@@ -1,0 +1,22 @@
+{
+  "id": "306",
+  "name": "Persuade",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "day",
+      "target": "human group",
+      "text": "Group becomes FRIENDLY (works on giants and ogres too)",
+      "magic_color": "gold",
+      "original_game": "",
+      "pacify": "1",
+      "host_okay": "",
+      "alt_monsters1_game": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

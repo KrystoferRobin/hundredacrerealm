@@ -1,0 +1,20 @@
+{
+  "id": "2066",
+  "name": "Regent of Jewels",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "67",
+      "weight": "L",
+      "text": "Extra TRADE",
+      "great": "",
+      "fame": "10",
+      "notoriety": "10",
+      "native": "Soldiers",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

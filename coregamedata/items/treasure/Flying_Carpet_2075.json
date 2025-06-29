@@ -1,0 +1,40 @@
+{
+  "id": "2075",
+  "name": "Flying Carpet",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "17",
+      "notoriety": "12",
+      "weight": "M",
+      "magic_color": "purple",
+      "text": "FLY M2 (in purple)",
+      "cast_spell_on_init": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "2100",
+      "name": "Flying Carpet Spell",
+      "attributeBlocks": {
+        "this": {
+          "spell": "",
+          "duration": "permanent",
+          "target": "Flying Carpet",
+          "text": "FLY M2 (in purple)",
+          "magic_color": "purple",
+          "fly_strength": "M",
+          "fly_speed": "2",
+          "no_expire": "",
+          "no_cancel": "",
+          "host_okay": "",
+          "super_realm": "",
+          "flying_carpet": ""
+        }
+      }
+    }
+  ]
+}

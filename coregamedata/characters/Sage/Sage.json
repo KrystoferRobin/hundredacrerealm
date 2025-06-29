@@ -1,0 +1,297 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Sage",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn,House",
+      "pronoun": "he",
+      "creator": "Deric Page",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Wisdom",
+      "vulnerability": "L",
+      "icon_type": "sage",
+      "icon_folder": "custom/characters",
+      "extra_notes": "",
+      "magicuser": ""
+    },
+    "level_1": {
+      "name": "Apprentice"
+    },
+    "level_2": {
+      "name": "Scribe",
+      "badge_icon": "Sagebadge2",
+      "advantages": {
+        "N0": "ANCIENT REALM LORE: Roll one die on PEER, LOCATE and READING RUNES in the RUINS, Lost City and Lost Castle tiles."
+      },
+      "diemod": {
+        "N0": "1d:readrunes,locate,peer:%ruins%,lost castle%,lost city%"
+      }
+    },
+    "level_3": {
+      "name": "Scholar",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "III",
+        "N1": "VII"
+      }
+    },
+    "level_4": {
+      "name": "Sage",
+      "spellcount": "2",
+      "badge_icon": "Sagebadge4",
+      "knows_roads": "",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "III",
+        "N2": "IV",
+        "N3": "VII"
+      },
+      "advantages": {
+        "N0": "KNOWLEDGE OF THE REALM: As Wizard's EXPERIENCE."
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "scholar": "2",
+      "guard": "1",
+      "soldiers": "1",
+      "crone": "1",
+      "bashkars": "-1",
+      "shaman": "-1"
+    },
+    "gamerel": {
+      "scholar": "2",
+      "guard": "1",
+      "soldiers": "1",
+      "crone": "1",
+      "bashkars": "-1",
+      "shaman": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "FIGHT L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "sage",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "sage",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "sage",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "FIGHT L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "sage",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "sage",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "MOVE M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "sage",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "FIGHT M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "sage",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "magic III4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "sage",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic VII4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "sage",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "sage",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic II4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "sage",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic IV4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "sage",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "IV"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

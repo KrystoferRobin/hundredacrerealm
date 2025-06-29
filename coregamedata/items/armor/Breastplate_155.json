@@ -1,0 +1,32 @@
+{
+  "id": "155",
+  "name": "Breastplate",
+  "attributeBlocks": {
+    "this": {
+      "vulnerability": "M",
+      "weight": "M",
+      "armor_swing": "",
+      "armor_thrust": "",
+      "armor": "",
+      "original_game": "",
+      "icon_type": "breastplate",
+      "facing": "dark",
+      "armor_row": "2",
+      "alt_monsters1_game": "",
+      "ret_dw": "Guard",
+      "icon_folder": "armor",
+      "rw_expansion_1": "",
+      "item": "",
+      "breastplate": ""
+    },
+    "intact": {
+      "base_price": "9",
+      "chit_color": "gray"
+    },
+    "damaged": {
+      "base_price": "6",
+      "chit_color": "white"
+    }
+  },
+  "parts": []
+}

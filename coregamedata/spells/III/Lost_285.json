@@ -1,0 +1,21 @@
+{
+  "id": "285",
+  "name": "Lost",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "permanent",
+      "target": "character, tile",
+      "text": "MOVE randomly (roll for clearing)",
+      "magic_color": "gold",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "sp_mv_random": "",
+      "host_okay": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

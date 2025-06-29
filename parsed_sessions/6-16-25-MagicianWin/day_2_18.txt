@@ -1,0 +1,22 @@
+Month 2, Day 18
+host
+========================================
+Magician
+Spent the night at the Chapel.
+host
+Monster Die roll is Rolled 4.
+Magician
+Starts turn: Dark Valley 5
+Magician
+Move - moved
+Magician
+Move - moved
+Magician
+Move - moved
+Magician
+Move - moved
+Magician
+Ends turn: Curst Valley 1
+host
+========================================
+host

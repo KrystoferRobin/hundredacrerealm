@@ -1,0 +1,50 @@
+Month 3, Day 3
+host
+========================================
+White Knight
+Spent the night at the Chapel.
+host
+Monster Die roll is Rolled 4.
+White Knight
+Starts turn: Dark Valley 5
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Ends turn: Linden Woods 5
+__battle__
+Battle resolving at Linden Woods 5:
+__battle__
+GROUP 1
+__battle__
+White Knight
+__battle__
+Order 1 (White Knight)
+__battle__
+Order 3 (White Knight)
+__battle__
+=======================
+__battle__
+Evening of month 3, day 3, in clearing Linden Woods 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+White Knight
+Presses the END combat button.
+White Knight
+Combat has ended.
+host
+========================================
+host

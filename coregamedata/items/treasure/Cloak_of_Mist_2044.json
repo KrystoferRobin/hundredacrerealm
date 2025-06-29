@@ -1,0 +1,16 @@
+{
+  "id": "2044",
+  "name": "Cloak of Mist",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Extra HIDE",
+      "base_price": "4",
+      "notoriety": "2",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "6",
+  "name": "Amazon Fight M4*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "strength": "M",
+      "speed": "4",
+      "character_level": "2",
+      "effort": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "6",
+      "level": "2",
+      "icon_folder": "custom/characters",
+      "icon_type": "monk",
+      "rw_expansion_1": "",
+      "facing": "dark"
+    }
+  }
+}

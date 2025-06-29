@@ -1,0 +1,31 @@
+{
+  "id": "148",
+  "name": "Helmet",
+  "attributeBlocks": {
+    "this": {
+      "vulnerability": "M",
+      "weight": "M",
+      "armor_smash": "",
+      "armor": "",
+      "original_game": "",
+      "icon_type": "helmet",
+      "facing": "dark",
+      "armor_row": "2",
+      "alt_monsters1_game": "",
+      "ret_dw": "House",
+      "icon_folder": "armor",
+      "rw_expansion_1": "",
+      "item": "",
+      "helmet": ""
+    },
+    "intact": {
+      "base_price": "5",
+      "chit_color": "gray"
+    },
+    "damaged": {
+      "base_price": "3",
+      "chit_color": "white"
+    }
+  },
+  "parts": []
+}

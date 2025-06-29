@@ -1,0 +1,40 @@
+{
+  "id": "1368",
+  "name": "Orc",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "H",
+      "fame": "3",
+      "notoriety": "3",
+      "super_realm": "",
+      "icon_type": "orcishGrunt",
+      "setup_start": "Orcs Box",
+      "monster_die": "5",
+      "base_price": "3",
+      "icon_folder": "wesnoth/units",
+      "denizen": "",
+      "icon_size": "1",
+      "orc": "",
+      "weapon_use": "",
+      "box_num": "4"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "M",
+      "sharpness": "1",
+      "length": "8",
+      "chit_color": "pink"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "5",
+      "strength": "H",
+      "sharpness": "1",
+      "length": "8",
+      "chit_color": "purple"
+    }
+  },
+  "parts": []
+}

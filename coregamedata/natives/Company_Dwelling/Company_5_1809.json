@@ -1,0 +1,42 @@
+{
+  "id": "1809",
+  "name": "Company 5",
+  "attributeBlocks": {
+    "this": {
+      "native": "Company",
+      "fame": "0",
+      "notoriety": "6",
+      "base_price": "4",
+      "vulnerability": "H",
+      "rank": "5",
+      "armored": "",
+      "icon_type": "sergeant-idle-4",
+      "setup_start": "Company Dwelling",
+      "hire_type": "group",
+      "icon_folder": "wesnoth/units/human-loyalists",
+      "denizen": "",
+      "super_realm": "",
+      "native_die": "5",
+      "clan": "3",
+      "icon_size": "0.9",
+      "native_name": "Swordsman"
+    },
+    "light": {
+      "move_speed": "6",
+      "attack_speed": "4",
+      "strength": "T",
+      "length": "8",
+      "sharpness": "1",
+      "chit_color": "lightblue"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "5",
+      "strength": "H",
+      "length": "8",
+      "sharpness": "1",
+      "chit_color": "blue"
+    }
+  },
+  "parts": []
+}

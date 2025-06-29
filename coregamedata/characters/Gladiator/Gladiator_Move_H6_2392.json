@@ -1,0 +1,18 @@
+{
+  "id": "2392",
+  "name": "Gladiator Move H6",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "strength": "H",
+      "speed": "6",
+      "character_level": "1",
+      "stage": "1",
+      "level": "1",
+      "icon_folder": "characters",
+      "icon_type": "gladiator",
+      "super_realm": ""
+    }
+  }
+}

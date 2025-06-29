@@ -1,0 +1,22 @@
+Month 1, Day 13
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Magician
+Starts turn: Crag 6
+Magician
+Hide - Succeeded
+Magician
+Hide - N/A
+Magician
+Search - Loot the Hoard - Found Toadstool Circle
+Magician
+Search - Loot the Hoard - Found Mouldy Skeleton
+Magician
+- Curse! - Ashes
+Magician
+Ends turn: Crag 6
+host
+========================================
+host

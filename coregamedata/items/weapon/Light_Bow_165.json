@@ -1,0 +1,32 @@
+{
+  "id": "165",
+  "name": "Light Bow",
+  "attributeBlocks": {
+    "this": {
+      "weight": "L",
+      "length": "14",
+      "base_price": "6",
+      "missile": "",
+      "two_handed": "",
+      "weapon": "",
+      "original_game": "",
+      "icon_type": "light_bow",
+      "alt_monsters1_game": "",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "item": "",
+      "bow": ""
+    },
+    "unalerted": {
+      "strength": "L",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "attack_speed": "1",
+      "strength": "L",
+      "sharpness": "2",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

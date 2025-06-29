@@ -1,0 +1,21 @@
+{
+  "id": "1119",
+  "name": "Fae Guard",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "day",
+      "target": "character",
+      "text": "Summon a fairy to distract and taunt your foes",
+      "magic_color": "gold",
+      "host_okay": "",
+      "alt_monsters1_game": "",
+      "benevolent": "",
+      "new_spells_1": "",
+      "learnable": "",
+      "summon": "fairy"
+    }
+  },
+  "parts": []
+}

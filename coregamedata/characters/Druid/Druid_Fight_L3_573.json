@@ -1,0 +1,21 @@
+{
+  "id": "573",
+  "name": "Druid Fight L3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "speed": "3",
+      "strength": "L",
+      "effort": "1",
+      "character_level": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "3",
+      "level": "1",
+      "icon_folder": "characters",
+      "icon_type": "druid",
+      "rw_expansion_1": ""
+    }
+  }
+}

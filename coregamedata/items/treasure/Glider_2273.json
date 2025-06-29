@@ -1,0 +1,24 @@
+{
+  "id": "2273",
+  "name": "Glider",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "38",
+      "notoriety": "4",
+      "weight": "H",
+      "magic_color": "purple",
+      "text": "FLY H3 (in purple) in mountain clearings",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "fame": "3",
+      "fly_strength": "H",
+      "fly_speed": "3",
+      "clearing_req": "M",
+      "must_land": ""
+    }
+  },
+  "parts": []
+}

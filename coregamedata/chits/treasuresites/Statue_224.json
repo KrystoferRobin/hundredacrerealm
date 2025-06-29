@@ -1,0 +1,26 @@
+{
+  "id": "224",
+  "name": "Statue",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "statue",
+      "clearing": "2",
+      "original_game": "",
+      "monster_die": "5",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "gold",
+      "icon_type": "imp",
+      "icon_folder": "monsters",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "spell_site": "",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_type_alt": "brazierImp"
+    }
+  },
+  "parts": []
+}

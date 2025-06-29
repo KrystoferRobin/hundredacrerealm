@@ -1,0 +1,72 @@
+{
+  "id": "1489",
+  "name": "T Flying Dragon",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "armored": "",
+      "vulnerability": "T",
+      "fame": "12",
+      "notoriety": "12",
+      "icon_type": "fireDragon",
+      "setup_start": "T Flying Dragon Box",
+      "monster_die": "1",
+      "flying": "",
+      "base_price": "12",
+      "icon_folder": "wesnoth/units",
+      "needs_init": "",
+      "denizen": "",
+      "super_realm": "",
+      "icon_size": "0.4",
+      "icon_y_offset": "4",
+      "dragon": "",
+      "box_num": "3"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "M",
+      "chit_color": "lightblue"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "6",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": "",
+      "kills_horse": "",
+      "destroys_armor": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1490",
+      "name": "Head",
+      "attributeBlocks": {
+        "this": {
+          "monster": "",
+          "part": "",
+          "icon_type": "fire-breath-drake",
+          "dragon_missile": "",
+          "icon_folder": "wesnoth/icons/attacks",
+          "super_realm": "",
+          "icon_size": "0.6"
+        },
+        "light": {
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "7",
+          "chit_color": "pink",
+          "dragon_length": "13"
+        },
+        "dark": {
+          "attack_speed": "3",
+          "strength": "T",
+          "length": "7",
+          "chit_color": "red",
+          "dragon_length": "13"
+        }
+      }
+    }
+  ]
+}

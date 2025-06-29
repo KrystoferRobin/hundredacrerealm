@@ -1,0 +1,17 @@
+{
+  "id": "361",
+  "name": "Lucky Charm",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "14",
+      "text": "Roll 1 die all rolls",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

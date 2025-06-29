@@ -1,0 +1,19 @@
+{
+  "id": "669",
+  "name": "Healing Branch",
+  "attributeBlocks": {
+    "this": {
+      "base_price": "20",
+      "text": "Can do HEAL phases",
+      "notoriety": "5",
+      "rw_expansion_1": "",
+      "fame": "5",
+      "weight": "L",
+      "treasure": "small",
+      "facing": "face_dn",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

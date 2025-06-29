@@ -1,0 +1,19 @@
+{
+  "id": "2040",
+  "name": "Seven League Boots",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "notoriety": "2",
+      "text": "MOVE T5, plus extra MOVE",
+      "base_price": "10",
+      "strength": "T",
+      "move_speed": "5",
+      "boots": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

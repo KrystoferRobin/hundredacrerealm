@@ -1,0 +1,324 @@
+{
+  "ids": [
+    "424",
+    "1546"
+  ],
+  "name": "Captain",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "captain",
+      "character": "",
+      "vulnerability": "M",
+      "start": "Inn,House,Guard",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "he",
+      "alt_monsters1_game": "",
+      "fighter": "",
+      "icon_folder": "characters",
+      "creator": "Richard Hamblen",
+      "artcredit": "Chris White",
+      "meaning": "Chevron: Military Leadership",
+      "rw_expansion_1": ""
+    },
+    "level_1": {
+      "name": "Spearman",
+      "weapon": "Spear",
+      "armor": "Shield"
+    },
+    "level_2": {
+      "name": "Soldier",
+      "weapon": "Short Sword",
+      "armor": "Helmet,Breastplate,Shield",
+      "diemod": {
+        "N0": "-1:missile,thrown:all"
+      },
+      "advantages": {
+        "N0": "AIM:  Subtract 1 from all Missile Table die rolls."
+      }
+    },
+    "level_3": {
+      "name": "Lieutenant",
+      "weapon": "Short Sword",
+      "armor": "Helmet,Breastplate,Shield"
+    },
+    "level_4": {
+      "name": "Captain",
+      "weapon": "Short Sword",
+      "armor": "Helmet,Breastplate,Shield",
+      "extra_dwelling_phase": "",
+      "advantages": {
+        "N0": "REPUTATION:  When at a Dwelling, get one extra phase (limit 1 per day)."
+      }
+    },
+    "optional_3": {
+      "optkey": "OptCharCaptain",
+      "diemod": {
+        "N0": "1d:hire:all"
+      },
+      "advantages": {
+        "N0": "LEADERSHIP:  Roll 1 die instead of 2 for all HIRE die rolls."
+      }
+    },
+    "relationship": {
+      "patrol": "1",
+      "soldiers": "1",
+      "guard": "1",
+      "scholar": "1",
+      "woodfolk": "-1",
+      "bashkars": "-2"
+    }
+  },
+  "parts": [
+    {
+      "id": "463",
+      "name": "Captain Move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "1",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "captain",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "464",
+      "name": "Captain Move M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "captain",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "465",
+      "name": "Captain Fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "H",
+          "speed": "5",
+          "character_level": "1",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "captain",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "466",
+      "name": "Captain Fight M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "captain",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "467",
+      "name": "Captain Fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_level": "2",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "captain",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "468",
+      "name": "Captain Move M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "3",
+          "character_level": "2",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "captain",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "469",
+      "name": "Captain Move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "3",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "captain",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "470",
+      "name": "Captain Fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "H",
+          "speed": "5",
+          "character_level": "3",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "captain",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "471",
+      "name": "Captain Fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "3",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "captain",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "472",
+      "name": "Captain Move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "4",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "captain",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "473",
+      "name": "Captain Fight H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "H",
+          "speed": "6",
+          "character_level": "4",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "captain",
+          "rw_expansion_1": ""
+        }
+      }
+    },
+    {
+      "id": "474",
+      "name": "Captain Fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "4",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "captain",
+          "rw_expansion_1": ""
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

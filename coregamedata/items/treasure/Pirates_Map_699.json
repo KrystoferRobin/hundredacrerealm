@@ -1,0 +1,21 @@
+{
+  "id": "699",
+  "name": "Pirate's Map",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Reveals the location of one random treasure site (discard to rogues)",
+      "rw_expansion_1": "",
+      "base_price": "4",
+      "fame": "10",
+      "native": "Thieves Guild",
+      "facing": "face_dn",
+      "potion": "",
+      "random_tl": "",
+      "author": "Expansion 1",
+      "discard": "Thieves Guild",
+      "item": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,313 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Wise Fool",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn,House,Chapel",
+      "pronoun": "he",
+      "creator": "Teresa Michelsen",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Absence of Mind",
+      "vulnerability": "M",
+      "icon_type": "wise fool",
+      "icon_folder": "custom/characters",
+      "extra_notes": ""
+    },
+    "level_1": {
+      "name": "Slow Child",
+      "badge_icon": "Wise_Foolbadge1",
+      "advantages": {
+        "N0": "DIM WIT: Cannot use spell books or any weapons other than staff, axe, short sword or broadsword."
+      },
+      "item_restrictions": {
+        "N0": "Morning Star",
+        "N1": "Spear",
+        "N2": "Medium Bow",
+        "N3": "Books",
+        "N4": "Light Bow",
+        "N5": "Mace",
+        "N6": "Thrusting Sword",
+        "N7": "Crossbow",
+        "N8": "Great Sword",
+        "N9": "Great Axe"
+      }
+    },
+    "level_2": {
+      "name": "Village Idiot",
+      "badge_icon": "Wise_Foolbadge2",
+      "advantages": {
+        "N0": "SAVANT: Remembers everything he's ever seen. Rolls one die on the Locate table."
+      },
+      "diemod": {
+        "N0": "1d:locate:all"
+      }
+    },
+    "level_3": {
+      "name": "Touched",
+      "badge_icon": "Wise_Foolbadge3",
+      "advantages": {
+        "N0": "BLESSED: Rolls one die on the Wish table."
+      },
+      "diemod": {
+        "N0": "1d:wish:all"
+      }
+    },
+    "level_4": {
+      "name": "Wise Fool",
+      "weapon": "Staff",
+      "badge_icon": "Wise_Foolbadge4",
+      "advantages": {
+        "N0": "INSIGNIFICANT: Nobody bothers with a fool. -1 to meeting rolls."
+      },
+      "diemod": {
+        "N0": "-1:meeting:all"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "shaman": "1",
+      "scholar": "-1",
+      "soldiers": "-1",
+      "rogues": "1",
+      "order": "1",
+      "company": "-2",
+      "bashkars": "-1"
+    },
+    "gamerel": {
+      "shaman": "1",
+      "scholar": "-1",
+      "soldiers": "-1",
+      "rogues": "1",
+      "order": "1",
+      "company": "-2",
+      "bashkars": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "FIGHT L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wise fool",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE M3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "wise fool",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "MOVE M4",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wise fool",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "FIGHT L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "wise fool",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "MOVE M4",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wise fool",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "MOVE H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "wise fool",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "FIGHT M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wise fool",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "fight M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "wise fool",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "MOVE H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wise fool",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "move M4",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "wise fool",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "0",
+          "facing": "dark",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "MOVE M3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "wise fool",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "MOVE H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "wise fool",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

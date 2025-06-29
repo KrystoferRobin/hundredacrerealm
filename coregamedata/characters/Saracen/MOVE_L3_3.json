@@ -1,0 +1,18 @@
+{
+  "id": "3",
+  "name": "MOVE L3*",
+  "attributeBlocks": {
+    "this": {
+      "action": "MOVE",
+      "strength": "L",
+      "speed": "3",
+      "character_chit": "",
+      "icon_type": "saracen",
+      "icon_folder": "custom/characters",
+      "stage": "3",
+      "level": "1",
+      "effort": "1",
+      "facing": "dark"
+    }
+  }
+}

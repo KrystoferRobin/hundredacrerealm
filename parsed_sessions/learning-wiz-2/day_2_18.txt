@@ -1,0 +1,28 @@
+Month 2, Day 18
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Wizard
+Starts turn: Mountain 2
+Wizard
+After resting, these chits were made active: MAGIC II3*
+Wizard
+Rest - Rested 1 asterisk
+Wizard
+Spell - enchanted Wizard Magic II4*
+Wizard
+Search - Locate - Nothing
+Wizard
+Search - Locate - Nothing
+Wizard
+Ends turn: Mountain 2
+Wizard
+Reveals: Lost Castle
+Wizard
+Reveals: Smoke M
+host
+Giant is added to Mountain, clearing 6
+host
+========================================
+host

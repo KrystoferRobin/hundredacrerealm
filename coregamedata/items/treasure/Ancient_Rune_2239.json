@@ -1,0 +1,20 @@
+{
+  "id": "2239",
+  "name": "Ancient Rune",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "19",
+      "notoriety": "8",
+      "weight": "L",
+      "fame": "-5",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "text": "Roll 1 die on Reading Runes Table."
+    }
+  },
+  "parts": []
+}

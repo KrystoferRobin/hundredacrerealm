@@ -1,0 +1,21 @@
+{
+  "id": "549",
+  "name": "Witch Move M4*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "speed": "4",
+      "strength": "M",
+      "effort": "1",
+      "character_level": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "3",
+      "level": "1",
+      "icon_folder": "characters",
+      "icon_type": "witch",
+      "rw_expansion_1": ""
+    }
+  }
+}

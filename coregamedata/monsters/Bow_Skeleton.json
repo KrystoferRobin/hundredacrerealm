@@ -1,0 +1,42 @@
+{
+  "id": "1356",
+  "name": "Bow Skeleton",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "1",
+      "notoriety": "2",
+      "icon_type": "archer",
+      "setup_start": "Bow Skeletons Box",
+      "monster_die": "4",
+      "base_price": "2",
+      "icon_folder": "wesnoth/units/undead-skeletal",
+      "super_realm": "",
+      "box_num": "4",
+      "undead": "",
+      "denizen": "",
+      "armored": "",
+      "icon_size": "1",
+      "icon_y_offset": "5",
+      "archer": "",
+      "weapon_use": "",
+      "skeleton": "",
+      "missile": ""
+    },
+    "light": {
+      "move_speed": "3",
+      "chit_color": "white"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "1",
+      "strength": "L",
+      "chit_color": "gray",
+      "length": "14",
+      "sharpness": "2",
+      "missile": ""
+    }
+  },
+  "parts": []
+}

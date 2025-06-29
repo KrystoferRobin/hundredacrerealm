@@ -1,0 +1,156 @@
+Month 2, Day 13
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Caves 2
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Ledges 2
+__battle__
+Battle resolving at Ledges 2:
+__battle__
+GROUP 1
+__battle__
+Woods Girl
+__battle__
+GROUP 2
+__battle__
+Giant Bat
+__battle__
+=======================
+__battle__
+Evening of month 2, day 13, in clearing Ledges 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the Giant Bat
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 2
+Giant Bat
+Changes tactics:  Giant Bat M3
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+Attack Length=14, Speed=3
+__battle__
+Woods Girl L3  vs. Giant Bat Speed 2
+__battle__
+Missed! (Speed 3 is not faster than Speed 2)
+__battle__
+>
+__battle__
+Attack Length=0, Speed=3
+__battle__
+Giant Bat M3  vs. Woods Girl Speed 2
+__battle__
+Missed! (Speed 3 is not faster than Speed 2)
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Giant Bat won't disengage when fighting a character
+__battle__
+1 consecutive round of no damage, fatigue, or spellcasting.
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the Giant Bat
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=1, Length=14
+__battle__
+Woods Girl L1**  vs. Giant Bat Speed 2
+__battle__
+Intercepted! (box 3 matches box 3)
+__battle__
+Initial harm: L+2
+__battle__
+Missile roll: Rolled 2 (red).
+__battle__
+Missile table result: 2 = Increase 1 level
+__battle__
+Giant Bat is hit with M+2 harm along box 3
+__battle__
+Giant Bat was killed!
+__battle__
+>
+__battle__
+Attack Speed=3, Length=0
+__battle__
+Giant Bat M3  vs. Woods Girl Speed 2
+__battle__
+Attack Cancelled:  Giant Bat was already killed by Woods Girl.
+__battle__
+The Woods Girl gets 3 fame (x 1) and 3 notoriety (x 1) for the death of the Giant Bat
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Woods Girl disengages because target is dead
+__battle__
+Giant Bat is dead.  Killed by Woods Girl
+__battle__
+-----------------------
+__battle__
+--  Combat Round 3
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host

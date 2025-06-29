@@ -1,0 +1,21 @@
+{
+  "id": "493",
+  "name": "Magician Magic VIII4*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "4",
+      "character_level": "3",
+      "effort": "1",
+      "magic": "VIII",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "7",
+      "level": "3",
+      "icon_folder": "characters",
+      "icon_type": "magician",
+      "rw_expansion_1": ""
+    }
+  }
+}

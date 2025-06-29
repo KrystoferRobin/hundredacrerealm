@@ -1,0 +1,24 @@
+Month 3, Day 15
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+White Knight
+Starts turn: Bad Valley 5
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Hire - Buy from Rogue 7 (as Friendly) - Opportunity
+White Knight
+- Buy from Rogue 7 (as Ally) - Price x 4
+White Knight
+Move - moved
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Awful Valley 2
+host
+========================================
+host

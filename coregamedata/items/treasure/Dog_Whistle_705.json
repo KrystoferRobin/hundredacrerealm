@@ -1,0 +1,17 @@
+{
+  "id": "705",
+  "name": "Dog Whistle",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Immune to Wolves",
+      "rw_expansion_1": "",
+      "base_price": "1",
+      "facing": "face_dn",
+      "monster_immunity": "Wolf",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

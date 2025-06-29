@@ -1,0 +1,18 @@
+{
+  "id": "1",
+  "name": "FIGHT L4",
+  "attributeBlocks": {
+    "this": {
+      "action": "FIGHT",
+      "strength": "L",
+      "speed": "4",
+      "character_chit": "",
+      "icon_type": "hans in luck",
+      "icon_folder": "custom/characters",
+      "stage": "1",
+      "level": "1",
+      "effort": "0",
+      "facing": "dark"
+    }
+  }
+}

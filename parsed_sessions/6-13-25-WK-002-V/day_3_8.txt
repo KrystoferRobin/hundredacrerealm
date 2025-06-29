@@ -1,0 +1,26 @@
+Month 3, Day 8
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+White Knight
+Starts turn: Deep Woods 2
+White Knight
+Search - Loot the Statue - Nothing
+White Knight
+Search - Loot the Statue - Nothing
+White Knight
+Search - Loot the Statue - Found Treasure
+White Knight
+Search - Loot the Statue - Nothing
+White Knight
+Search - Loot the Statue - Nothing
+White Knight
+After resting, these chits were made active: FIGHT H5*
+White Knight
+Rest - Rested 1 asterisk
+White Knight
+Ends turn: Deep Woods 2
+host
+========================================
+host

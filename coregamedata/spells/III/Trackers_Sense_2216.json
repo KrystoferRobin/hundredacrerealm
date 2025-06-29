@@ -1,0 +1,20 @@
+{
+  "id": "2216",
+  "name": "Tracker's Sense",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "day",
+      "target": "character",
+      "text": "Targets treated as having 'Discovered Hidden Enemies'",
+      "magic_color": "gold",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "discover_hidden_enemies": ""
+    }
+  },
+  "parts": []
+}

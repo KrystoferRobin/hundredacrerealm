@@ -1,0 +1,21 @@
+{
+  "id": "589",
+  "name": "White Knight Fight H4**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "speed": "4",
+      "strength": "H",
+      "effort": "2",
+      "character_level": "3",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "7",
+      "level": "3",
+      "icon_folder": "characters",
+      "icon_type": "white_knight",
+      "rw_expansion_1": ""
+    }
+  }
+}
