@@ -9,45 +9,32 @@ export async function GET(
   try {
     const filename = params.filename;
     
-    // Validate filename to prevent directory traversal
-    if (!filename || filename.includes('..') || filename.includes('/')) {
-      return new NextResponse('Invalid filename', { status: 400 });
+    // Find the tile file by name (without extension)
+    const tilesDir = path.join(process.cwd(), 'coregamedata', 'tiles');
+    const files = fs.readdirSync(tilesDir);
+    
+    // Look for a file that starts with the tile name
+    const tileFile = files.find(file => 
+      file.startsWith(filename) && file.endsWith('.json')
+    );
+    
+    if (!tileFile) {
+      return NextResponse.json(
+        { error: `Tile not found: ${filename}` },
+        { status: 404 }
+      );
     }
     
-    // Construct the file path
-    const filePath = path.join(process.cwd(), 'public', 'images', 'tiles', filename);
+    const filePath = path.join(tilesDir, tileFile);
+    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    const tileData = JSON.parse(fileContent);
     
-    // Check if file exists
-    if (!fs.existsSync(filePath)) {
-      return new NextResponse('File not found', { status: 404 });
-    }
-    
-    // Read the file
-    const fileBuffer = fs.readFileSync(filePath);
-    
-    // Determine content type based on file extension
-    const ext = path.extname(filename).toLowerCase();
-    let contentType = 'application/octet-stream';
-    
-    if (ext === '.gif') {
-      contentType = 'image/gif';
-    } else if (ext === '.png') {
-      contentType = 'image/png';
-    } else if (ext === '.jpg' || ext === '.jpeg') {
-      contentType = 'image/jpeg';
-    }
-    
-    // Return the file with appropriate headers
-    return new NextResponse(fileBuffer, {
-      status: 200,
-      headers: {
-        'Content-Type': contentType,
-        'Cache-Control': 'public, max-age=31536000', // Cache for 1 year
-        'Access-Control-Allow-Origin': '*',
-      },
-    });
+    return NextResponse.json(tileData);
   } catch (error) {
-    console.error('Error serving tile image:', error);
-    return new NextResponse('Internal server error', { status: 500 });
+    console.error('Error loading tile data:', error);
+    return NextResponse.json(
+      { error: 'Failed to load tile data' },
+      { status: 500 }
+    );
   }
 } 

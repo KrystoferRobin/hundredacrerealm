@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useParams } from 'next/navigation';
 import SessionMap from '../../../components/SessionMap';
 
@@ -576,6 +576,64 @@ export default function SessionPage() {
     );
   };
 
+  // Extract character icon overlay data
+  const characterIcons = useMemo(() => {
+    if (!sessionData) return [];
+    // Find all unique characters
+    const allCharacters = Object.keys(sessionData.characterToPlayer);
+    // Find the latest day chronologically
+    const dayKeys = Object.keys(sessionData.days);
+    const sortedDayKeys = dayKeys.sort((a, b) => {
+      const [am, ad] = a.split('_').map(Number);
+      const [bm, bd] = b.split('_').map(Number);
+      return am !== bm ? am - bm : ad - bd;
+    });
+    // Gather deaths from ALL days (not just the latest)
+    const deadCharacters = new Set<string>();
+    for (const dayKey of sortedDayKeys) {
+      const day = sessionData.days[dayKey];
+      if (day && day.battles) {
+        for (const battle of day.battles) {
+          for (const round of battle.rounds) {
+            for (const death of round.deaths) {
+              const match = death.match(/^(.*?) was killed!/);
+              if (match) {
+                deadCharacters.add(match[1]);
+                console.log(`Found dead character: ${match[1]} on day ${dayKey}`);
+              }
+            }
+          }
+        }
+      }
+    }
+    // For each character, find their last turn (latest day with a turn)
+    const charLastLoc: Record<string, { tile: string, clearing: string }> = {};
+    for (const dayKey of sortedDayKeys) {
+      const day = sessionData.days[dayKey];
+      for (const turn of day.characterTurns) {
+        // Parse endLocation, e.g. "Borderland 4"
+        const m = turn.endLocation.match(/^(.*?) (\d)$/);
+        if (m) {
+          charLastLoc[turn.character] = { tile: m[1], clearing: m[2] };
+        }
+      }
+    }
+    // Build icon array
+    const result = allCharacters.map(character => {
+      const loc = charLastLoc[character];
+      const isDead = deadCharacters.has(character);
+      console.log(`Character ${character}: location=${loc ? `${loc.tile} ${loc.clearing}` : 'unknown'}, dead=${isDead}`);
+      return loc ? {
+        character,
+        tile: loc.tile,
+        clearing: loc.clearing,
+        isDead,
+      } : null;
+    }).filter((x): x is { character: string; tile: string; clearing: string; isDead: boolean } => Boolean(x));
+    console.log('Final character icons:', result);
+    return result;
+  }, [sessionData]);
+
   if (loading) {
     return (
       <div className="min-h-screen bg-amber-50 flex items-center justify-center">
@@ -636,8 +694,8 @@ export default function SessionPage() {
         <div className="flex-shrink-0" style={{ width: '55%' }}>
           <div className="bg-white border-2 border-amber-300 rounded-lg shadow-lg p-4">
             <h2 className="text-xl font-bold text-amber-800 mb-4">🗺️ Game Map</h2>
-            <div className="aspect-square w-full overflow-visible">
-              <SessionMap sessionId={sessionId} />
+            <div className="aspect-square w-full overflow-hidden">
+              <SessionMap sessionId={sessionId} characterIcons={characterIcons} />
             </div>
           </div>
         </div>

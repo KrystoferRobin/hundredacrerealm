@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 interface Tile {
   position: string;
@@ -12,11 +12,20 @@ interface Tile {
   isEnchanted: boolean;
 }
 
-interface SessionMapProps {
-  sessionId: string;
+interface CharacterMapIcon {
+  character: string;
+  tile: string;
+  clearing: string;
+  isDead: boolean;
 }
 
-const SessionMap: React.FC<SessionMapProps> = ({ sessionId }) => {
+interface SessionMapProps {
+  sessionId: string;
+  characterIcons?: CharacterMapIcon[];
+  showCharacterIcons?: boolean;
+}
+
+const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [], showCharacterIcons = true }) => {
   const [mapData, setMapData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -24,6 +33,9 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId }) => {
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [containerSize, setContainerSize] = useState({ width: 400, height: 400 });
+  const [tileDataCache, setTileDataCache] = useState<Record<string, any>>({});
 
   useEffect(() => {
     const loadMapData = async () => {
@@ -34,6 +46,19 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId }) => {
         }
         const data = await response.json();
         setMapData(data);
+        // Pre-load tile data for all tiles
+        const tileData: Record<string, any> = {};
+        for (const tile of data.tiles) {
+          try {
+            const tileResponse = await fetch(`/api/tiles/${tile.objectName.replace(/\s+/g, '_')}`);
+            if (tileResponse.ok) {
+              tileData[tile.objectName] = await tileResponse.json();
+            }
+          } catch (err) {
+            console.warn(`Failed to load tile data for ${tile.objectName}:`, err);
+          }
+        }
+        setTileDataCache(tileData);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to load map data');
       } finally {
@@ -43,6 +68,84 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId }) => {
 
     loadMapData();
   }, [sessionId]);
+
+  // ResizeObserver to track container size
+  useEffect(() => {
+    const handleResize = () => {
+      if (containerRef.current) {
+        const rect = containerRef.current.getBoundingClientRect();
+        setContainerSize({ width: rect.width, height: rect.height });
+      }
+    };
+    handleResize(); // Initial
+    const observer = new (window as any).ResizeObserver(handleResize);
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+    window.addEventListener('resize', handleResize);
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  // Effect to center map on initial load
+  useEffect(() => {
+    if (
+      mapData &&
+      containerSize.width > 0 &&
+      containerSize.height > 0
+    ) {
+      // Calculate map bounds and svg size
+      const positions = mapData.tiles.map((tile: Tile) => parsePosition(tile.position));
+      const minX = Math.min(...positions.map(([x, y]: [number, number]) => x));
+      const maxX = Math.max(...positions.map(([x, y]: [number, number]) => x));
+      const minY = Math.min(...positions.map(([x, y]: [number, number]) => y));
+      const maxY = Math.max(...positions.map(([x, y]: [number, number]) => y));
+      const hexSize = 60;
+      const hexWidth = hexSize * 2;
+      const hexHeight = hexSize * Math.sqrt(3);
+      const tilePixelPositions = mapData.tiles.map((tile: Tile) => {
+        const [x, y] = parsePosition(tile.position);
+        return getHexPosition(x, y);
+      });
+      const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
+      const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
+      const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
+      const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
+      // Half-tile padding
+      const PAD_X = hexWidth / 2;
+      const PAD_Y = hexHeight / 2;
+      const svgWidth = (maxPixelX - minPixelX) + hexWidth + 2 * PAD_X;
+      const svgHeight = (maxPixelY - minPixelY) + hexHeight + 2 * PAD_Y;
+      // Calculate centroid of all tile pixel positions
+      if (tilePixelPositions.length > 0) {
+        const avgX = tilePixelPositions.reduce((sum, pos) => sum + pos.x, 0) / tilePixelPositions.length;
+        const avgY = tilePixelPositions.reduce((sum, pos) => sum + pos.y, 0) / tilePixelPositions.length;
+        // Find the tile closest to the centroid
+        let minDist = Infinity;
+        let centerX = tilePixelPositions[0].x;
+        let centerY = tilePixelPositions[0].y;
+        for (let i = 0; i < tilePixelPositions.length; i++) {
+          const dx = tilePixelPositions[i].x - avgX;
+          const dy = tilePixelPositions[i].y - avgY;
+          const dist = dx * dx + dy * dy;
+          if (dist < minDist) {
+            minDist = dist;
+            centerX = tilePixelPositions[i].x;
+            centerY = tilePixelPositions[i].y;
+          }
+        }
+        let initialPanX, initialPanY;
+        initialPanX = containerSize.width / 2 - centerX * zoom;
+        initialPanY = containerSize.height / 2 - centerY * zoom;
+        setPan({ x: initialPanX, y: initialPanY });
+      } else {
+        initialPanX = (containerSize.width - svgWidth * zoom) / 2;
+        initialPanY = (containerSize.height - svgHeight * zoom) / 2;
+      }
+    }
+  }, [mapData, containerSize.width, containerSize.height, zoom]);
 
   // Convert position string to coordinates
   const parsePosition = (position: string): [number, number] => {
@@ -124,6 +227,35 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId }) => {
     setIsDragging(false);
   };
 
+  // Function to get clearing position within a tile
+  const getClearingPosition = (tile: Tile, clearing: string): { x: number, y: number } | null => {
+    const tileData = tileDataCache[tile.objectName];
+    if (!tileData) return null;
+    
+    // Get the appropriate attribute block (normal or enchanted)
+    const block = tile.isEnchanted ? tileData.attributeBlocks.enchanted : tileData.attributeBlocks.normal;
+    if (!block) return null;
+    
+    // Get clearing coordinates (e.g., "clearing_4_xy": "33.0,84.3")
+    const clearingKey = `clearing_${clearing}_xy`;
+    const coords = block[clearingKey];
+    if (!coords) return null;
+    
+    // Parse coordinates (percentage of 100x100 tile)
+    const [xPercent, yPercent] = coords.split(',').map(Number);
+    
+    // Convert to pixel coordinates within the hex
+    const hexSize = 60;
+    const hexWidth = hexSize * 2;
+    const hexHeight = hexSize * Math.sqrt(3);
+    
+    // Scale from 100x100 to hex dimensions
+    const x = (xPercent / 100) * hexWidth - hexWidth / 2;
+    const y = (yPercent / 100) * hexHeight - hexHeight / 2;
+    
+    return { x, y };
+  };
+
   if (loading) {
     return <div className="text-center p-4">Loading map...</div>;
   }
@@ -143,7 +275,6 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId }) => {
   const minY = Math.min(...positions.map(([x, y]: [number, number]) => y));
   const maxY = Math.max(...positions.map(([x, y]: [number, number]) => y));
 
-  // Calculate map dimensions
   const hexSize = 60; // Base hex size (not zoomed)
   const hexWidth = hexSize * 2;
   const hexHeight = hexSize * Math.sqrt(3);
@@ -157,17 +288,34 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId }) => {
   });
   const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
   const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
+  const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
+  const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
+
+  // Half-tile padding
+  const PAD_X = hexWidth / 2;
+  const PAD_Y = hexHeight / 2;
+  const svgWidth = (maxPixelX - minPixelX) + hexWidth + 2 * PAD_X;
+  const svgHeight = (maxPixelY - minPixelY) + hexHeight + 2 * PAD_Y;
+  const viewBox = `${minPixelX - PAD_X} ${minPixelY - PAD_Y} ${svgWidth} ${svgHeight}`;
+
+  // Center the SVG in the panel
+  let initialPanX, initialPanY;
+  initialPanX = (containerSize.width - svgWidth * zoom) / 2;
+  initialPanY = (containerSize.height - svgHeight * zoom) / 2;
 
   return (
-    <div 
-      className="relative w-full h-full"
+    <div
+      ref={containerRef}
+      className="relative w-full h-full overflow-hidden"
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseLeave}
-      style={{ 
+      style={{
         cursor: isDragging ? 'grabbing' : 'grab',
-        position: 'relative'
+        position: 'relative',
+        width: '100%',
+        height: '100%',
       }}
     >
       {/* Zoom Controls */}
@@ -180,26 +328,86 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId }) => {
         </button>
         <button
           onClick={() => setZoom(Math.max(zoom - 0.1, 0.3))}
-          className="block w-8 h-8 bg-blue-500 text-white rounded hover:bg-blue-600"
+          className="block w-8 h-8 mb-1 bg-blue-500 text-white rounded hover:bg-blue-600"
         >
           -
         </button>
+        <button
+          onClick={() => {
+            if (mapData && containerSize.width > 0 && containerSize.height > 0) {
+              const positions = mapData.tiles.map((tile: Tile) => parsePosition(tile.position));
+              const minX = Math.min(...positions.map(([x, y]: [number, number]) => x));
+              const maxX = Math.max(...positions.map(([x, y]: [number, number]) => x));
+              const minY = Math.min(...positions.map(([x, y]: [number, number]) => y));
+              const maxY = Math.max(...positions.map(([x, y]: [number, number]) => y));
+              const hexSize = 60;
+              const hexWidth = hexSize * 2;
+              const hexHeight = hexSize * Math.sqrt(3);
+              const tilePixelPositions = mapData.tiles.map((tile: Tile) => {
+                const [x, y] = parsePosition(tile.position);
+                return getHexPosition(x, y);
+              });
+              const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
+              const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
+              const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
+              const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
+              // Half-tile padding
+              const PAD_X = hexWidth / 2;
+              const PAD_Y = hexHeight / 2;
+              const svgWidth = (maxPixelX - minPixelX) + hexWidth + 2 * PAD_X;
+              const svgHeight = (maxPixelY - minPixelY) + hexHeight + 2 * PAD_Y;
+              // Calculate centroid of all tile pixel positions
+              if (tilePixelPositions.length > 0) {
+                const avgX = tilePixelPositions.reduce((sum, pos) => sum + pos.x, 0) / tilePixelPositions.length;
+                const avgY = tilePixelPositions.reduce((sum, pos) => sum + pos.y, 0) / tilePixelPositions.length;
+                // Find the tile closest to the centroid
+                let minDist = Infinity;
+                let centerX = tilePixelPositions[0].x;
+                let centerY = tilePixelPositions[0].y;
+                for (let i = 0; i < tilePixelPositions.length; i++) {
+                  const dx = tilePixelPositions[i].x - avgX;
+                  const dy = tilePixelPositions[i].y - avgY;
+                  const dist = dx * dx + dy * dy;
+                  if (dist < minDist) {
+                    minDist = dist;
+                    centerX = tilePixelPositions[i].x;
+                    centerY = tilePixelPositions[i].y;
+                  }
+                }
+                let initialPanX, initialPanY;
+                initialPanX = containerSize.width / 2 - centerX * zoom;
+                initialPanY = containerSize.height / 2 - centerY * zoom;
+                setZoom(1);
+                setPan({ x: initialPanX, y: initialPanY });
+              } else {
+                initialPanX = (containerSize.width - svgWidth * zoom) / 2;
+                initialPanY = (containerSize.height - svgHeight * zoom) / 2;
+              }
+            }
+          }}
+          className="block w-8 h-8 bg-green-500 text-white rounded hover:bg-green-600 text-xs"
+          title="Reset View"
+        >
+          ↺
+        </button>
       </div>
 
-      {/* SVG is a direct child, pan/zoom applied here */}
-      <svg
-        width={mapWidth}
-        height={mapHeight}
-        viewBox={`0 0 ${mapWidth} ${mapHeight}`}
-        style={{
-          display: 'block',
-          background: 'none',
-          transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
-          transformOrigin: 'top left',
-          transition: 'transform 0.1s',
-          overflow: 'visible',
-        }}
-      >
+      {/* SVG container with proper overflow handling */}
+      <div className="w-full h-full overflow-hidden">
+        <svg
+          width={svgWidth}
+          height={svgHeight}
+          viewBox={viewBox}
+          style={{
+            display: 'block',
+            background: 'none',
+            transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
+            transformOrigin: 'top left',
+            transition: 'transform 0.1s',
+            maxWidth: 'none',
+            maxHeight: 'none',
+          }}
+        >
         {/* Render tiles */}
         {mapData.tiles.map((tile: Tile, index: number) => {
           const [x, y] = parsePosition(tile.position);
@@ -231,7 +439,133 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId }) => {
             </g>
           );
         })}
-      </svg>
+        {/* Character Icon Overlay */}
+        {showCharacterIcons && characterIcons.length > 0 && (
+          <g className="character-icon-overlay">
+            {/* Group characters by location to handle stacking */}
+            {(() => {
+              const locationGroups: Record<string, CharacterMapIcon[]> = {};
+              characterIcons.forEach(icon => {
+                const key = `${icon.tile}-${icon.clearing}`;
+                if (!locationGroups[key]) locationGroups[key] = [];
+                locationGroups[key].push(icon);
+              });
+              
+              return Object.entries(locationGroups).map(([locationKey, icons]) => {
+                const firstIcon = icons[0];
+                const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === firstIcon.tile);
+                if (tileIdx === -1) return null;
+                const tile = mapData.tiles[tileIdx];
+                const [x, y] = parsePosition(tile.position);
+                const hexPos = getHexPosition(x, y);
+                const clearingPos = getClearingPosition(tile, firstIcon.clearing);
+                if (!clearingPos) return null;
+                
+                // Apply tile rotation to clearing position
+                const rotation = getTileRotation(tile.rotation);
+                const rad = (rotation * Math.PI) / 180;
+                const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
+                const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
+                
+                // Base position: tile center + rotated clearing offset
+                const baseX = hexPos.x + rotatedX;
+                const baseY = hexPos.y + rotatedY;
+                
+                // Arrange multiple icons in a circle around the clearing
+                const iconSize = 13; // Half size (26 * 0.5)
+                const spacing = iconSize * 0.8; // Much closer spacing
+                
+                return icons.map((icon, idx) => {
+                  let px, py;
+                  if (icons.length === 1) {
+                    px = baseX;
+                    py = baseY;
+                  } else {
+                    // Arrange in a circle around the clearing
+                    const angle = (idx / icons.length) * 2 * Math.PI;
+                    const radius = spacing * 0.6; // Even tighter clustering
+                    px = baseX + Math.cos(angle) * radius;
+                    py = baseY + Math.sin(angle) * radius;
+                  }
+                  
+                  const iconUrl = `/images/charsymbol/${icon.character}_symbol.png`;
+                  
+                  console.log(`Loading character icon: ${icon.character} -> ${iconUrl}, dead=${icon.isDead}`);
+                  
+                  return (
+                    <g key={icon.character}>
+                      {/* Background circle for better visibility */}
+                      <circle
+                        cx={px}
+                        cy={py}
+                        r={iconSize / 2 + 2}
+                        fill={icon.isDead ? "#2d1b1b" : "#ffffff"}
+                        stroke={icon.isDead ? "#8b0000" : "#000000"}
+                        strokeWidth="1"
+                        opacity="0.9"
+                      />
+                      
+                      {icon.isDead && (
+                        <g>
+                          {/* Headstone frame */}
+                          <rect
+                            x={px - iconSize/2 - 4}
+                            y={py - iconSize/2 - 4}
+                            width={iconSize + 8}
+                            height={iconSize + 8}
+                            rx="4"
+                            fill="#4a4a4a"
+                            stroke="#8b0000"
+                            strokeWidth="2"
+                            opacity="0.8"
+                          />
+                          {/* Cross on headstone */}
+                          <line
+                            x1={px - 2}
+                            y1={py - 6}
+                            x2={px + 2}
+                            y2={py + 6}
+                            stroke="#8b0000"
+                            strokeWidth="1"
+                          />
+                          <line
+                            x1={px - 6}
+                            y1={py}
+                            x2={px + 6}
+                            y2={py}
+                            stroke="#8b0000"
+                            strokeWidth="1"
+                          />
+                        </g>
+                      )}
+                      
+                      <image
+                        href={iconUrl}
+                        x={px - iconSize/2}
+                        y={py - iconSize/2}
+                        width={iconSize}
+                        height={iconSize}
+                        style={{
+                          filter: icon.isDead ? 'grayscale(1) brightness(0.5) saturate(0.5) hue-rotate(0deg)' : 'brightness(1.2) contrast(1.3)',
+                        }}
+                        onError={(e) => {
+                          console.error(`Failed to load character icon: ${iconUrl}`);
+                          const target = e.target as SVGImageElement;
+                          target.style.display = 'none';
+                        }}
+                        onLoad={() => {
+                          console.log(`Successfully loaded character icon: ${iconUrl}`);
+                        }}
+                      />
+                    </g>
+                  );
+                });
+              }).flat();
+            })()}
+          </g>
+        )}
+        </svg>
+      </div>
     </div>
   );
 };
