@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   app:
     build: .
@@ -10,8 +8,9 @@ services:
     environment:
       NODE_ENV: production
     volumes:
-      - /fileshare/services/realm/uploads:/app/uploads
-      - /fileshare/services/realm/public:/app/public
+      - ./uploads:/app/uploads
+      - ./public:/app/public
+      - ./coregamedata:/app/coregamedata
     networks:
       - app-network
 

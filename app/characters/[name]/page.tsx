@@ -433,13 +433,18 @@ export default function CharacterPage() {
                   <div className="absolute inset-0 bg-[#bfa76a] opacity-10 blur-sm rounded-lg"></div>
                 </h1>
                 <div className="text-lg text-[#4b3a1e] font-serif">
-                  <span className={`inline-block px-3 py-1 rounded text-sm font-semibold ${
+                  <div className={`inline-block px-3 py-1 rounded text-sm font-semibold ${
                     character.source === 'xml' 
                       ? 'bg-[#bfa76a] text-[#6b3e26]' 
                       : 'bg-[#6b3e26] text-[#fff8e1]'
                   }`}>
-                    {character.source === 'xml' ? 'Core Game Character' : 'Custom Character'}
-                  </span>
+                    <div>{character.source === 'xml' ? 'Core Game Character' : 'Custom Character'}</div>
+                    {thisBlock.creator && (
+                      <div className="text-xs font-normal mt-1 opacity-80">
+                        by {safeString(thisBlock.creator)}
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
 
@@ -504,7 +509,7 @@ export default function CharacterPage() {
             </div>
 
             {/* Right side - Character Portrait */}
-            <div className="bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-6 shadow-lg relative flex items-center justify-center"
+            <div className="bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-6 shadow-lg relative flex items-center justify-center min-h-[400px]"
                  style={{
                    boxShadow: '0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8)'
                  }}>
@@ -514,29 +519,39 @@ export default function CharacterPage() {
               <div className="absolute bottom-2 left-2 w-3 h-3 border-l-2 border-b-2 border-[#6b3e26] rounded-bl-md"></div>
               <div className="absolute bottom-2 right-2 w-3 h-3 border-r-2 border-b-2 border-[#6b3e26] rounded-br-md"></div>
               
-              <div className="relative w-full h-full flex items-center justify-center">
-                <Image
-                  src={getCharacterPortraitPath(character.name)}
-                  alt={`${character.name} portrait`}
-                  fill
-                  className="object-contain"
-                  onError={(e) => {
-                    // Show placeholder if portrait doesn't exist
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                    const parent = target.parentElement;
-                    if (parent) {
-                      parent.innerHTML = `
-                        <div class="w-full h-full flex items-center justify-center bg-[#f6ecd6] border-2 border-dashed border-[#bfa76a] rounded-lg">
-                          <div class="text-center">
-                            <div class="text-[#6b3e26] font-serif text-lg mb-2">No Portrait Available</div>
-                            <div class="text-[#4b3a1e] font-serif text-sm">Portrait will be added later</div>
+              <div className="relative w-full h-full flex flex-col items-center justify-center min-h-[350px]">
+                <div className="relative w-full h-full flex items-center justify-center">
+                  <Image
+                    src={getCharacterPortraitPath(character.name)}
+                    alt={`${character.name} portrait`}
+                    fill
+                    className="object-contain"
+                    onError={(e) => {
+                      // Show placeholder if portrait doesn't exist
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const parent = target.parentElement;
+                      if (parent) {
+                        parent.innerHTML = `
+                          <div class="w-full h-full flex items-center justify-center bg-[#f6ecd6] border-2 border-dashed border-[#bfa76a] rounded-lg">
+                            <div class="text-center">
+                              <div class="text-[#6b3e26] font-serif text-lg mb-2">No Portrait Available</div>
+                              <div class="text-[#4b3a1e] font-serif text-sm">Portrait will be added later</div>
+                            </div>
                           </div>
-                        </div>
-                      `;
-                    }
-                  }}
-                />
+                        `;
+                      }
+                    }}
+                  />
+                </div>
+                {/* Art Credit */}
+                {thisBlock.artcredit && (
+                  <div className="absolute bottom-0 left-0 right-0 text-center">
+                    <div className="bg-[#fff8e1] bg-opacity-90 px-2 py-1 rounded text-xs text-[#4b3a1e] font-serif">
+                      Art: {safeString(thisBlock.artcredit)}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
