@@ -365,13 +365,13 @@ export default function Home() {
     console.log('All tables found:', allTables.length);
     
     // Find the main inventory table (the one with colored headers)
-    let invTable = null;
+    let invTable: HTMLTableElement | null = null;
     for (const table of allTables) {
       const headers = table.querySelectorAll('th');
       if (headers.length === 4 && 
           headers[0].textContent?.includes('Stats') && 
           headers[1].textContent?.includes('Active Inventory')) {
-        invTable = table;
+        invTable = table as HTMLTableElement;
         break;
       }
     }
@@ -1067,17 +1067,8 @@ export default function Home() {
           {processingZips && (
             <span className="ml-2 text-xs text-[#fff8e1]">Processing...</span>
           )}
-          {processResult && (
-            <span className="ml-2 text-xs text-[#fff8e1]">
-              {Array.isArray(processResult.processed) && processResult.processed.length > 0 && `Processed: ${processResult.processed.map(p => p.gameName).join(', ')}`}
-              {Array.isArray(processResult.errors) && processResult.errors.length > 0 && ` Errors: ${processResult.errors.map(e => e.gameName + ': ' + e.error).join('; ')}`}
-              {processResult.message && processResult.message}
-              {processResult.error && processResult.error}
-            </span>
-          )}
-          {processError && (
-            <span className="ml-2 text-xs text-red-200">{processError}</span>
-          )}
+          {processResult && typeof processResult === 'object' && 'message' in processResult && (processResult as any).message && String((processResult as any).message)}
+          {processResult && typeof processResult === 'object' && 'error' in processResult && (processResult as any).error && String((processResult as any).error)}
         </div>
         
         {/* Center: Credits */}

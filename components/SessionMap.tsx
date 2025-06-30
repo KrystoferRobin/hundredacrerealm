@@ -88,7 +88,10 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId }) => {
     
     const baseName = tileNameMap[tile.objectName] || tile.objectName.toLowerCase().replace(/\s+/g, '');
     const suffix = tile.isEnchanted ? '-e1' : '1';
-    return `/images/tiles/${baseName}${suffix}.gif`;
+    const filename = `${baseName}${suffix}.gif`;
+    const imageUrl = `/api/tiles/${filename}`;
+    console.log(`Generated image URL for ${tile.objectName}: ${imageUrl}`);
+    return imageUrl;
   };
 
   // Apply rotation to tile
@@ -157,12 +160,15 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId }) => {
 
   return (
     <div 
-      className="relative w-full h-full overflow-hidden"
+      className="relative w-full h-full"
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseLeave}
-      style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
+      style={{ 
+        cursor: isDragging ? 'grabbing' : 'grab',
+        position: 'relative'
+      }}
     >
       {/* Zoom Controls */}
       <div className="absolute top-4 right-4 z-10 bg-white rounded-lg shadow-lg p-2">
@@ -191,6 +197,7 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId }) => {
           transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
           transformOrigin: 'top left',
           transition: 'transform 0.1s',
+          overflow: 'visible',
         }}
       >
         {/* Render tiles */}
@@ -212,9 +219,13 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId }) => {
                 transform={`rotate(${rotation} ${hexPos.x} ${hexPos.y})`}
                 style={{ imageRendering: 'pixelated' }}
                 onError={(e) => {
-                  console.warn(`Failed to load image: ${imageUrl}`);
+                  console.error(`Failed to load image: ${imageUrl}`);
+                  console.error('Image error details:', e);
                   const target = e.target as SVGImageElement;
                   target.style.display = 'none';
+                }}
+                onLoad={() => {
+                  console.log(`Successfully loaded image: ${imageUrl}`);
                 }}
               />
             </g>

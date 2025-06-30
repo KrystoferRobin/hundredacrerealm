@@ -2,6 +2,17 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+interface SessionData {
+  id: string;
+  name: string;
+  totalCharacterTurns: number;
+  totalBattles: number;
+  totalActions: number;
+  uniqueCharacters: number;
+  players: number;
+  lastModified: string;
+}
+
 export async function GET() {
   try {
     const sessionsDir = path.join(process.cwd(), 'parsed_sessions');
@@ -14,7 +25,7 @@ export async function GET() {
       .filter(dirent => dirent.isDirectory())
       .map(dirent => dirent.name);
 
-    const sessions = [];
+    const sessions: SessionData[] = [];
 
     for (const folder of sessionFolders) {
       const sessionPath = path.join(sessionsDir, folder, 'parsed_session.json');

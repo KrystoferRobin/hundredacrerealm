@@ -1,20 +1,17 @@
 version: '3.8'
 
 services:
-  web:
-    image: hundreacrerealm-web:latest
+  app:
+    build: .
     container_name: hundred-acre-realm
     restart: unless-stopped
     ports:
       - "3000:3000"
     environment:
-      - NODE_ENV=production
-      - NEXT_PUBLIC_API_URL=http://localhost:3000
-      - DATABASE_URL=file:/app/prisma/prod.db
+      NODE_ENV: production
     volumes:
-      - ./uploads:/app/uploads
-      - ./public:/app/public
-      - ./prisma/prod.db:/app/prisma/prod.db
+      - /fileshare/services/realm/uploads:/app/uploads
+      - /fileshare/services/realm/public:/app/public
     networks:
       - app-network
 
