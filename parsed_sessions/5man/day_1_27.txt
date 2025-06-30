@@ -1,0 +1,84 @@
+Month 1, Day 27
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Amazon
+Starts turn: Curst Valley 4
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+Ends turn: Bad Valley 1
+Soldier HQ
+Starts turn: Bad Valley 1
+Soldier HQ
+Ends turn: Bad Valley 1
+Woodsfolk HQ
+Starts turn: Bad Valley 1
+Woodsfolk HQ
+Ends turn: Bad Valley 1
+White Knight
+Starts turn: Bad Valley 1
+White Knight
+Ends turn: Bad Valley 1
+Pilgrim
+Starts turn: Bad Valley 1
+Pilgrim
+Ends turn: Bad Valley 1
+__battle__
+Battle resolving at Bad Valley 1:
+__battle__
+GROUP 1
+__battle__
+Amazon
+__battle__
+Soldier HQ (Amazon)
+__battle__
+Woodsfolk HQ (Amazon)
+__battle__
+Soldier 1 (Amazon)
+__battle__
+Soldier 2 (Amazon)
+__battle__
+Soldier 3 (Amazon)
+__battle__
+Woodsfolk 1 (Amazon)
+__battle__
+Woodsfolk 2 (Amazon)
+__battle__
+GROUP 2
+__battle__
+Pilgrim
+__battle__
+GROUP 3
+__battle__
+White Knight
+__battle__
+=======================
+__battle__
+Evening of month 1, day 27, in clearing Bad Valley 1
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+Amazon
+Presses the END combat button.
+Amazon
+Combat has ended.
+host
+========================================
+host

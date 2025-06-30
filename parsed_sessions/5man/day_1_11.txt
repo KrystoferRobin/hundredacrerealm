@@ -1,0 +1,72 @@
+Month 1, Day 11
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Berserker
+Starts turn: Borderland 6
+Berserker
+Has fallen asleep due to the presence of the Flowers of Rest.
+White Knight
+Has fallen asleep due to the presence of the Flowers of Rest.
+Berserker
+Ends turn: Borderland 6
+White Knight
+Starts turn: Borderland 6
+White Knight
+Ends turn: Borderland 6
+Pilgrim
+Starts turn: Borderland 6
+Pilgrim
+Search - Loot the Hoard - Nothing
+Pilgrim
+Search - Loot the Pool - Nothing
+Pilgrim
+Ends turn: Borderland 6
+Amazon
+Starts turn: Borderland 6
+Amazon
+Search - Loot the Pool - Nothing
+Amazon
+Search - Loot the Pool - Nothing
+Amazon
+Ends turn: Borderland 6
+__battle__
+Battle resolving at Borderland 6:
+__battle__
+GROUP 1
+__battle__
+Berserker
+__battle__
+GROUP 2
+__battle__
+White Knight
+__battle__
+GROUP 3
+__battle__
+Pilgrim
+__battle__
+GROUP 4
+__battle__
+Amazon
+__battle__
+=======================
+__battle__
+Evening of month 1, day 11, in clearing Borderland 6
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+Berserker
+Presses the END combat button.
+Berserker
+Combat has ended.
+host
+========================================
+host

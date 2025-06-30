@@ -1,0 +1,470 @@
+{
+  "character": {
+    "name": "Woods Girl",
+    "id": "411",
+    "baseCharacter": {
+      "name": "Woods Girl",
+      "vulnerability": "L",
+      "startLocation": "Inn,House",
+      "pronoun": "she",
+      "totalParts": 12,
+      "baseParts": [
+        {
+          "id": "427",
+          "name": "Woodsgirl Move L3*",
+          "action": "move",
+          "strength": "L",
+          "speed": "3",
+          "level": "1"
+        },
+        {
+          "id": "428",
+          "name": "Woodsgirl Move L4",
+          "action": "move",
+          "strength": "L",
+          "speed": "4",
+          "level": "1"
+        },
+        {
+          "id": "429",
+          "name": "Woodsgirl Move L2**",
+          "action": "move",
+          "strength": "L",
+          "speed": "2",
+          "level": "1"
+        },
+        {
+          "id": "430",
+          "name": "Woodsgirl Fight L4",
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "level": "2"
+        },
+        {
+          "id": "431",
+          "name": "Woodsgirl Move L2**",
+          "action": "move",
+          "strength": "L",
+          "speed": "2",
+          "level": "2"
+        },
+        {
+          "id": "432",
+          "name": "Woodsgirl Magic VII6**",
+          "action": "magic",
+          "speed": "6",
+          "level": "2"
+        },
+        {
+          "id": "433",
+          "name": "Woodsgirl Fight L3*",
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "level": "3"
+        },
+        {
+          "id": "434",
+          "name": "Woodsgirl Fight M5",
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "level": "3"
+        },
+        {
+          "id": "435",
+          "name": "Woodsgirl Fight L4",
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "level": "3"
+        },
+        {
+          "id": "436",
+          "name": "Woodsgirl Move L3*",
+          "action": "move",
+          "strength": "L",
+          "speed": "3",
+          "level": "4"
+        },
+        {
+          "id": "437",
+          "name": "Woodsgirl Fight M4*",
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "level": "4"
+        },
+        {
+          "id": "438",
+          "name": "Woodsgirl Fight L3*",
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "level": "4"
+        }
+      ]
+    }
+  },
+  "gameProgress": {
+    "currentLevel": 4,
+    "currentMonth": 4,
+    "currentDay": 19,
+    "fame": 8,
+    "notoriety": 7,
+    "gold": 3,
+    "strength": 12,
+    "spellStrength": 12,
+    "playerName": "Krystofer"
+  },
+  "inventory": {
+    "totalItems": 23,
+    "basePartsRetained": 12,
+    "acquiredItems": 11,
+    "items": {
+      "treasures": [
+        {
+          "id": "238",
+          "name": "Chest",
+          "attributes": {
+            "treasure_location": "chest",
+            "original_game": "",
+            "gold_reward": "50",
+            "treasure": "large",
+            "weight": "T",
+            "text": "Must have LOST KEYS to open",
+            "treasure_within_treasure": "1",
+            "print": "",
+            "no_loot": "",
+            "needs_open": "key",
+            "remove_from_play": "",
+            "alt_monsters1_game": "",
+            "facing": "face_up",
+            "ts_section": "twt",
+            "ts_color": "lightblue",
+            "rw_expansion_1": "",
+            "treasure_seen": "",
+            "clearing": "1"
+          }
+        },
+        {
+          "id": "324",
+          "name": "Power Gauntlets",
+          "attributes": {
+            "treasure": "small",
+            "fame": "3",
+            "notoriety": "4",
+            "text": "FIGHT H4",
+            "base_price": "7",
+            "attack_speed": "4",
+            "strength": "H",
+            "original_game": "",
+            "gloves": "",
+            "alt_monsters1_game": "",
+            "facing": "face_up",
+            "rw_expansion_1": "",
+            "item": "",
+            "setup": "218",
+            "treasure_seen": "",
+            "activated": ""
+          }
+        },
+        {
+          "id": "327",
+          "name": "Seven League Boots",
+          "attributes": {
+            "treasure": "small",
+            "notoriety": "2",
+            "text": "MOVE T5, plus extra MOVE",
+            "base_price": "5",
+            "strength": "T",
+            "move_speed": "5",
+            "original_game": "",
+            "boots": "",
+            "alt_monsters1_game": "",
+            "facing": "face_up",
+            "rw_expansion_1": "",
+            "item": "",
+            "setup": "218",
+            "treasure_seen": "",
+            "activated": "",
+            "extra_actions": {}
+          }
+        },
+        {
+          "id": "330",
+          "name": "Ancient Telescope",
+          "attributes": {
+            "treasure": "small",
+            "text": "Extra PEER (mountain only)",
+            "base_price": "5",
+            "original_game": "",
+            "alt_monsters1_game": "",
+            "facing": "face_up",
+            "rw_expansion_1": "",
+            "mountain_peer": "",
+            "item": "",
+            "setup": "218",
+            "treasure_seen": "",
+            "extra_actions": {}
+          }
+        },
+        {
+          "id": "334",
+          "name": "Elven Slippers",
+          "attributes": {
+            "treasure": "small",
+            "text": "MOVE L2",
+            "base_price": "5",
+            "notoriety": "2",
+            "move_speed": "2",
+            "strength": "L",
+            "original_game": "",
+            "boots": "",
+            "alt_monsters1_game": "",
+            "facing": "face_up",
+            "rw_expansion_1": "",
+            "item": "",
+            "setup": "224",
+            "treasure_seen": ""
+          }
+        },
+        {
+          "id": "340",
+          "name": "Gripping Dust",
+          "attributes": {
+            "treasure": "small",
+            "text": "Weapon stays alerted (discard to warlock)",
+            "base_price": "3",
+            "discard": "warlock",
+            "potion": "",
+            "original_game": "",
+            "alerted_weapon": "",
+            "sticks_weapon": "",
+            "alt_monsters1_game": "",
+            "facing": "face_up",
+            "rw_expansion_1": "",
+            "item": "",
+            "setup": "218",
+            "treasure_seen": ""
+          }
+        },
+        {
+          "id": "351",
+          "name": "Shielded Lantern",
+          "attributes": {
+            "treasure": "small",
+            "base_price": "8",
+            "weight": "L",
+            "text": "Extra phase in caves",
+            "original_game": "",
+            "extra_cave_phase": "",
+            "alt_monsters1_game": "",
+            "facing": "face_up",
+            "rw_expansion_1": "",
+            "item": "",
+            "setup": "230",
+            "treasure_seen": "",
+            "activated": ""
+          }
+        },
+        {
+          "id": "379",
+          "name": "Belt of Strength",
+          "attributes": {
+            "treasure": "large",
+            "base_price": "16",
+            "notoriety": "6",
+            "fame": "3",
+            "text": "*'s determine force, **=T, *=H, zero=M",
+            "original_game": "",
+            "chit_strength": "M,H,T",
+            "alt_monsters1_game": "",
+            "facing": "face_up",
+            "rw_expansion_1": "",
+            "item": "",
+            "setup": "219",
+            "treasure_seen": "",
+            "activated": ""
+          }
+        }
+      ],
+      "spells": [
+        {
+          "id": "3360",
+          "name": "Peace with Nature",
+          "attributes": {
+            "spell": "VII",
+            "duration": "permanent",
+            "target": "leader",
+            "text": "Not attacked by warning or sound chits",
+            "magic_color": "gold",
+            "original_game": "",
+            "alt_monsters1_game": "",
+            "host_okay": "",
+            "benevolent": "",
+            "rw_expansion_1": "",
+            "peace_with_nature": "",
+            "learnable": "",
+            "instance": ""
+          }
+        }
+      ],
+      "weapons": [],
+      "unknown": [
+        {
+          "id": "133",
+          "name": "Warhorse",
+          "attributes": {
+            "horse": "warhorse",
+            "vulnerability": "T",
+            "armored": "",
+            "base_price": "25",
+            "magic": "",
+            "original_game": "",
+            "alt_monsters1_game": "",
+            "rw_expansion_1": "",
+            "item": "",
+            "horse_holder": "Chapel",
+            "icon_folder_alt": "wesnoth/units",
+            "icon_type_alt": "royalBeast",
+            "icon_size_alt": "1",
+            "setup": "241",
+            "treasure_seen": "",
+            "tr_is_new": ""
+          }
+        },
+        {
+          "id": "165",
+          "name": "Light Bow",
+          "attributes": {
+            "weight": "L",
+            "length": "14",
+            "base_price": "6",
+            "missile": "",
+            "two_handed": "",
+            "weapon": "",
+            "original_game": "",
+            "icon_type": "light_bow",
+            "alt_monsters1_game": "",
+            "icon_folder": "weapons",
+            "rw_expansion_1": "",
+            "item": "",
+            "bow": "",
+            "setup": "234",
+            "facing": "light",
+            "activated": "",
+            "treasure_seen": ""
+          }
+        }
+      ]
+    }
+  },
+  "relationships": {
+    "bashkars": -2,
+    "soldiers": -1,
+    "woodfolk": 2,
+    "lancers": 1,
+    "warlock": -1
+  },
+  "notes": [],
+  "combatHistory": {
+    "month_1_day_14": [
+      null
+    ],
+    "month_1_day_14_stats": [
+      null
+    ],
+    "month_1_day_23": [
+      null
+    ],
+    "month_1_day_23_stats": [
+      null
+    ],
+    "month_2_day_13": [
+      null
+    ],
+    "month_2_day_13_stats": [
+      null
+    ]
+  },
+  "dailyActions": {
+    "totalDays": 103,
+    "daysWithActions": 0,
+    "sampleDays": [
+      {
+        "day": "month_1_day_1",
+        "actions": [],
+        "phases": {
+          "battle": 2,
+          "spell": 2,
+          "shoot": 0
+        },
+        "monsterRolls": [
+          "red|1"
+        ]
+      },
+      {
+        "day": "month_1_day_2",
+        "actions": [],
+        "phases": {
+          "battle": 2,
+          "spell": 2,
+          "shoot": 0
+        },
+        "monsterRolls": [
+          "red|3"
+        ]
+      },
+      {
+        "day": "month_1_day_3",
+        "actions": [],
+        "phases": {
+          "battle": 2,
+          "spell": 2,
+          "shoot": 0
+        },
+        "monsterRolls": [
+          "red|1"
+        ]
+      },
+      {
+        "day": "month_1_day_4",
+        "actions": [],
+        "phases": {
+          "battle": 2,
+          "spell": 2,
+          "shoot": 0
+        },
+        "monsterRolls": [
+          "red|6"
+        ]
+      },
+      {
+        "day": "month_1_day_5",
+        "actions": [],
+        "phases": {
+          "battle": 2,
+          "spell": 2,
+          "shoot": 0
+        },
+        "monsterRolls": [
+          "red|6"
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "itemsGained": 11,
+    "itemsLost": 0,
+    "netChange": 11,
+    "totalValue": 49,
+    "progression": {
+      "levelGained": 3,
+      "fameGained": 8,
+      "notorietyGained": 7,
+      "goldEarned": 3
+    }
+  }
+}

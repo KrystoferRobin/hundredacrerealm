@@ -1,0 +1,210 @@
+Month 1, Day 10
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+White Knight
+Starts turn: Borderland 6
+White Knight
+Trades with Pilgrim
+White Knight
+Search - Loot the Hoard - Nothing
+White Knight
+Search - Loot the Hoard - Nothing
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Borderland 6
+host
+T Flying Dragon blocks the Amazon
+host
+T Flying Dragon blocks the Berserker
+host
+T Flying Dragon blocks the White Knight
+host
+T Flying Dragon blocks the Pilgrim
+Pilgrim
+Starts turn: Borderland 6
+Pilgrim
+BLOCKED - Cannot perform action S
+Pilgrim
+BLOCKED - Cannot perform action S
+Pilgrim
+Ends turn: Borderland 6
+Amazon
+Starts turn: Borderland 6
+Amazon
+BLOCKED - Cannot perform action S
+Amazon
+BLOCKED - Cannot perform action S
+Amazon
+Ends turn: Borderland 6
+Berserker
+Starts turn: Borderland 6
+Berserker
+BLOCKED - Cannot perform action S
+Berserker
+BLOCKED - Cannot perform action S
+Berserker
+BLOCKED - Cannot perform action R
+Berserker
+Ends turn: Borderland 6
+__battle__
+Battle resolving at Borderland 6:
+__battle__
+GROUP 1
+__battle__
+Berserker
+__battle__
+GROUP 2
+__battle__
+Pilgrim
+__battle__
+GROUP 3
+__battle__
+Amazon
+__battle__
+GROUP 4
+__battle__
+White Knight
+__battle__
+GROUP 5
+__battle__
+T Flying Dragon
+__battle__
+=======================
+__battle__
+Evening of month 1, day 10, in clearing Borderland 6
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+White Knight
+Lures the T Flying Dragon
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Berserker
+BERSERK!
+Berserker
+New vulnerability: T
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Amazon
+Attacks the T Flying Dragon
+Pilgrim
+Attacks the T Flying Dragon
+Berserker
+Attacks the T Flying Dragon
+White Knight
+Attacks the T Flying Dragon
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+Attack Length=9, Speed=4
+__battle__
+Pilgrim M4  vs. T Flying Dragon Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Length=8, Speed=6
+__battle__
+White Knight T6*  vs. T Flying Dragon Speed 4
+__battle__
+Intercepted! (box 3 matches box 3)
+__battle__
+Initial harm: T+1
+__battle__
+T Flying Dragon is hit with T+1 harm along box 3
+White Knight
+Hits armor, and reduces sharpness: T
+__battle__
+T Flying Dragon was killed!
+__battle__
+>
+__battle__
+Attack Length=7, Speed=3
+__battle__
+Flying Dragon Head M3  vs. White Knight Not Moving
+__battle__
+Attack Cancelled:  Flying Dragon Head was already killed by White Knight.
+__battle__
+>
+__battle__
+Attack Length=5, Speed=5
+__battle__
+Berserker H5*  vs. T Flying Dragon Speed 4
+__battle__
+Attack Cancelled:  T Flying Dragon was already killed by White Knight.
+__battle__
+>
+__battle__
+Attack Length=3, Speed=4
+__battle__
+Amazon M4*  vs. T Flying Dragon Speed 4
+__battle__
+Attack Cancelled:  T Flying Dragon was already killed by White Knight.
+__battle__
+>
+__battle__
+Attack Length=0, Speed=3
+__battle__
+T Flying Dragon M3  vs. White Knight Not Moving
+__battle__
+Attack Cancelled:  T Flying Dragon was already killed by White Knight.
+__battle__
+The White Knight gets 12 fame (x 1) and 12 notoriety (x 1) for the death of the T Flying Dragon
+White Knight
+Fatiguing 1 asterisk.
+White Knight
+After fatiguing, these chits were moved to fatigue: FIGHT T5*
+Berserker
+Fatiguing 1 asterisk.
+Berserker
+After fatiguing, these chits were moved to fatigue: FIGHT T5*
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+White Knight disengages because target is dead
+__battle__
+Amazon disengages because target is dead
+__battle__
+Pilgrim disengages because target is dead
+__battle__
+Berserker disengages because target is dead
+__battle__
+T Flying Dragon is dead.  Killed by White Knight
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+White Knight
+Presses the END combat button.
+White Knight
+Combat has ended.
+host
+========================================
+host

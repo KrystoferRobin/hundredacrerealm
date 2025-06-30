@@ -2,9 +2,21 @@ const fs = require('fs');
 const path = require('path');
 const zlib = require('zlib');
 
-// Configuration
-const LOG_FILE = 'public/uploads/6-16-25-MagicianWin.rslog';
-const OUTPUT_DIR = 'parsed_sessions/6-16-25-MagicianWin';
+// Get session name from command line argument
+const sessionName = process.argv[2];
+if (!sessionName) {
+  console.error('Usage: node parse_game_log.js <session-name>');
+  console.error('Example: node parse_game_log.js learning-woodsgirl');
+  process.exit(1);
+}
+
+// Configuration based on session name
+const LOG_FILE = path.join(__dirname, '..', 'public', 'uploads', `${sessionName}.rslog`);
+const OUTPUT_DIR = path.join(__dirname, '..', 'parsed_sessions', sessionName);
+
+console.log(`Processing session: ${sessionName}`);
+console.log(`Log file: ${LOG_FILE}`);
+console.log(`Output directory: ${OUTPUT_DIR}`);
 
 // Ensure output directory exists
 if (!fs.existsSync(OUTPUT_DIR)) {

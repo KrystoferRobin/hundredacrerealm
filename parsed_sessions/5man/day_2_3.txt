@@ -1,0 +1,11 @@
+Month 2, Day 3
+host
+========================================
+Host
+Original version 1.2.2.3, changed to 1.2.2.6
+host
+New player joins: GM
+host
+Small Campfire is added to Linden Woods, clearing 5
+host
+Large Campfire is added to Oak Woods, clearing 5

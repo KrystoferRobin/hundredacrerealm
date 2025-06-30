@@ -1,0 +1,80 @@
+Month 2, Day 2
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Amazon
+Starts turn: Bad Valley 4
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+Hide - Succeeded
+Amazon
+Ends turn: Caves 5
+Soldier HQ
+Starts turn: Caves 5
+Soldier HQ
+Ends turn: Caves 5
+Woodsfolk HQ
+Starts turn: Caves 5
+Woodsfolk HQ
+Ends turn: Caves 5
+White Knight
+Starts turn: Caves 5
+White Knight
+Ends turn: Caves 5
+Pilgrim
+Starts turn: Caves 5
+Pilgrim
+Ends turn: Caves 5
+__battle__
+Battle resolving at Caves 5:
+__battle__
+GROUP 1
+__battle__
+White Knight
+__battle__
+GROUP 2
+__battle__
+Pilgrim
+__battle__
+GROUP 3
+__battle__
+Amazon
+__battle__
+Soldier HQ (Amazon)
+__battle__
+Woodsfolk HQ (Amazon)
+__battle__
+Soldier 1 (Amazon)
+__battle__
+Soldier 2 (Amazon)
+__battle__
+Soldier 3 (Amazon)
+__battle__
+Woodsfolk 1 (Amazon)
+__battle__
+Woodsfolk 2 (Amazon)
+__battle__
+=======================
+__battle__
+Evening of month 2, day 2, in clearing Caves 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+Amazon
+Presses the END combat button.
+Amazon
+Combat has ended.
+host
+========================================
+host

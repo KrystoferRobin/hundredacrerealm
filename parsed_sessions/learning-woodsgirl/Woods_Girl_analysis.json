@@ -1,0 +1,64 @@
+{
+  "characterName": "Woods Girl",
+  "baseCharacter": {
+    "totalParts": 12,
+    "partIds": [
+      "427",
+      "428",
+      "429",
+      "430",
+      "431",
+      "432",
+      "433",
+      "434",
+      "435",
+      "436",
+      "437",
+      "438"
+    ]
+  },
+  "gameState": {
+    "currentLevel": 4,
+    "fame": 8,
+    "notoriety": 7,
+    "gold": 3,
+    "totalInventory": 23,
+    "retainedParts": 12,
+    "acquiredItems": 11
+  },
+  "differences": {
+    "acquiredItems": [
+      "165",
+      "3360",
+      "334",
+      "379",
+      "351",
+      "330",
+      "324",
+      "327",
+      "340",
+      "238",
+      "133"
+    ],
+    "retainedParts": [
+      "427",
+      "428",
+      "429",
+      "430",
+      "431",
+      "432",
+      "433",
+      "434",
+      "435",
+      "436",
+      "437",
+      "438"
+    ],
+    "missingParts": []
+  },
+  "summary": {
+    "itemsGained": 11,
+    "itemsLost": 0,
+    "netChange": 11
+  }
+}

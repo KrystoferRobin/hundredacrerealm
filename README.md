@@ -51,7 +51,7 @@ This project includes comprehensive parsers for Magic Realm data. All parsers ar
 
 ### Core Game Data Parsers
 
-Run the master parser to extract all core game data:
+Run the master parser to extract all core game data (stored in MagicRealmData.xml, extracted from RealmSpeak.  Replace with the latest version to update the core data via the following scripts):
 
 ```bash
 node scripts/parse-all-core-data.js

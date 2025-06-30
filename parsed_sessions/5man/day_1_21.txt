@@ -1,0 +1,108 @@
+Month 1, Day 21
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+host
+7th day - denizens return to setup card:
+host
+- Guard 1
+host
+- Guard 2
+host
+- Guard HQ
+host
+- Order 1
+host
+- Order 2
+host
+- Order 3
+host
+- Order HQ
+Amazon
+Starts turn: Borderland 2
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+Hide - Succeeded
+Amazon
+Selling to Order HQ.
+Amazon
+Attempting to sell: Gripping Dust, Short Sword, Ointment of Steel, and Quick Boots
+Amazon
+Trade - Sell to Order HQ - Sold 4 items for 19 gold:
+Amazon
+Ends turn: Evil Valley 4
+White Knight
+Starts turn: Evil Valley 4
+White Knight
+Ends turn: Evil Valley 4
+Pilgrim
+Starts turn: Evil Valley 4
+Pilgrim
+Ends turn: Evil Valley 4
+__battle__
+Battle resolving at Evil Valley 4:
+__battle__
+GROUP 1
+__battle__
+Amazon
+__battle__
+GROUP 2
+__battle__
+Pilgrim
+__battle__
+GROUP 3
+__battle__
+White Knight
+__battle__
+GROUP 4
+__battle__
+Order 1
+__battle__
+Order 2
+__battle__
+Order 3
+__battle__
+Order HQ
+Amazon
+Meeting Order on the Friendly table
+Amazon
+Rolled 6 and 4. = No Deal
+White Knight
+The native group will be no more favorable with drinks.
+White Knight
+Meeting Order on the Friendly table
+White Knight
+Rolled 4 and 5, with a modifier of -1. = Price x 3
+Pilgrim
+The native group will be no more favorable with drinks.
+Pilgrim
+Meeting Order on the Ally table
+Pilgrim
+Rolled 2 and 5. = Price x 4
+__battle__
+=======================
+__battle__
+Evening of month 1, day 21, in clearing Evil Valley 4
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Amazon
+Presses the END combat button.
+Amazon
+Combat has ended.
+host
+========================================
+host

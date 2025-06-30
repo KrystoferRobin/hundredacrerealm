@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
+import SessionMap from '../../../components/SessionMap';
 
 interface Action {
   performer: string;
@@ -80,14 +81,19 @@ export default function SessionPage() {
 
   useEffect(() => {
     const fetchSessionData = async () => {
+      console.log('SessionPage: Fetching session data for:', sessionId);
       try {
         const response = await fetch(`/api/session/${sessionId}`);
+        console.log('SessionPage: API response status:', response.status);
         if (response.ok) {
           const data = await response.json();
+          console.log('SessionPage: Session data loaded:', data);
           setSessionData(data);
+        } else {
+          console.error('SessionPage: Failed to load session data');
         }
       } catch (error) {
-        console.error('Error fetching session data:', error);
+        console.error('SessionPage: Error fetching session data:', error);
       } finally {
         setLoading(false);
       }
@@ -588,12 +594,10 @@ export default function SessionPage() {
 
   return (
     <div className="min-h-screen bg-amber-50">
-      {/* Main Content */}
-      <div className="max-w-7xl mx-auto p-6">
-        {/* Session Overview */}
+      {/* Session Overview - Centered at top */}
+      <div className="max-w-4xl mx-auto p-6">
         <div className="mb-8 p-6 bg-white border-2 border-amber-300 rounded-lg shadow-lg">
           <h2 className="text-2xl font-bold text-amber-800 mb-4">📊 Session Overview</h2>
-          
           {/* Player Info */}
           <div className="mb-4">
             <h3 className="text-lg font-bold text-amber-700 mb-2">👤 Players</h3>
@@ -604,7 +608,6 @@ export default function SessionPage() {
               </div>
             ))}
           </div>
-
           {/* Statistics */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="text-center p-3 bg-amber-100 rounded">
@@ -625,9 +628,22 @@ export default function SessionPage() {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Days */}
-        <div>
+      {/* Main Content - Map and Log */}
+      <div className="w-full px-6 flex flex-row gap-6">
+        {/* Map Panel - Square, positioned on the left */}
+        <div className="flex-shrink-0" style={{ width: '55%' }}>
+          <div className="bg-white border-2 border-amber-300 rounded-lg shadow-lg p-4">
+            <h2 className="text-xl font-bold text-amber-800 mb-4">🗺️ Game Map</h2>
+            <div className="aspect-square w-full overflow-visible">
+              <SessionMap sessionId={sessionId} />
+            </div>
+          </div>
+        </div>
+        
+        {/* Session Log - Takes remaining space */}
+        <div className="flex-1">
           <h2 className="text-2xl font-bold text-amber-800 mb-6">Game Days</h2>
           {getFilteredDays(sessionData).map(([dayKey, dayData]) => renderDay(dayKey, dayData))}
         </div>

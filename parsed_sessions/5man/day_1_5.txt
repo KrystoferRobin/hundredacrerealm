@@ -1,0 +1,586 @@
+Month 1, Day 5
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Amazon
+Starts turn: Borderland 6
+Amazon
+Hide - Failed
+Amazon
+BLOCKED - Cannot perform action R
+Amazon
+Ends turn: Borderland 6
+White Knight
+Starts turn: Borderland 2
+White Knight
+Hide - Succeeded
+White Knight
+Move - moved
+White Knight
+After resting, these chits were made active: FIGHT H5*, and MOVE T6*
+White Knight
+Rest - Rested 2 asterisks
+Pilgrim
+After resting, these chits were made active: MOVE H5*
+White Knight
+Search - Read Runes on Sacred Statue - Nothing
+White Knight
+Ends turn: Borderland 3
+Pilgrim
+Starts turn: Borderland 3
+Pilgrim
+Ends turn: Borderland 3
+Woods Girl
+Starts turn: Borderland 4
+Woods Girl
+Hide - Failed
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Borderland 6
+Berserker
+Starts turn: Borderland 6
+Berserker
+Hide - Succeeded
+Berserker
+Alert - alerted Berserker Berserk T4**
+Berserker
+After resting, these chits were moved to fatigue: FIGHT H4*
+Berserker
+Rest - Rested 1 asterisk
+Berserker
+Ends turn: Borderland 6
+__battle__
+Battle resolving at Borderland 6:
+__battle__
+GROUP 1
+__battle__
+Amazon
+__battle__
+GROUP 2
+__battle__
+Woods Girl
+__battle__
+GROUP 3
+__battle__
+Berserker
+__battle__
+GROUP 4
+__battle__
+Axe Goblin
+__battle__
+Axe Goblin
+__battle__
+Axe Goblin
+__battle__
+Axe Goblin
+__battle__
+Axe Goblin
+__battle__
+Axe Goblin
+__battle__
+=======================
+__battle__
+Evening of month 1, day 5, in clearing Borderland 6
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Berserker
+Attacks the Axe Goblin
+Berserker
+Becomes unhidden.
+Woods Girl
+Attacks the Axe Goblin
+Amazon
+Attacks the Axe Goblin
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 1
+Axe Goblin
+Changes tactics:  Axe Goblin M4*
+Axe Goblin
+Changes tactics:  Axe Goblin M4*
+Axe Goblin
+Changes tactics:  Axe Goblin M4*
+Axe Goblin
+Changes tactics:  Axe Goblin M4*
+__battle__
+Change Tactics in Box 1
+Axe Goblin
+Changes tactics:  Axe Goblin M4*
+Axe Goblin
+Changes tactics:  Axe Goblin M4*
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+Attack Length=14, Speed=3
+__battle__
+Woods Girl L3  vs. Axe Goblin Speed 4
+__battle__
+Undercut! (Speed 3 is faster than Speed 4)
+__battle__
+Initial harm: L
+__battle__
+Missile roll: Rolled 5 (red).
+__battle__
+Missile table result: 5 = Decrease 2 levels
+__battle__
+Axe Goblin is hit with neg harm along box 3
+__battle__
+Axe Goblin was not killed.
+__battle__
+>
+__battle__
+Attack Length=5, Speed=4
+__battle__
+Berserker T4*  vs. Axe Goblin Speed 4
+__battle__
+Missed! (Speed 4 is not faster than Speed 4)
+__battle__
+>
+__battle__
+Attack Length=3, Speed=4
+__battle__
+Amazon L4*  vs. Axe Goblin Speed 4
+__battle__
+Intercepted! (box 1 matches box 1)
+__battle__
+Initial harm: L+1
+__battle__
+Axe Goblin is hit with L+1 harm along box 1
+__battle__
+Axe Goblin was killed!
+__battle__
+>
+__battle__
+Attack Length=2, Speed=4
+__battle__
+Axe Goblin M4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Length=2, Speed=4
+__battle__
+Axe Goblin M4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Length=2, Speed=4
+__battle__
+Axe Goblin M4*  vs. Woods Girl Speed 3
+__battle__
+Attack Cancelled:  Axe Goblin was already killed by Amazon.
+__battle__
+>
+__battle__
+Attack Length=2, Speed=4
+__battle__
+Axe Goblin M4*  vs. Woods Girl Speed 3
+__battle__
+Intercepted! (box 1 matches box 1)
+__battle__
+Initial harm: M+1
+__battle__
+Woods Girl is hit with M+1 harm along box 1
+__battle__
+Woods Girl was killed!
+__battle__
+The Woods Girl drops inventory in the clearing.
+__battle__
+>
+__battle__
+Attack Length=2, Speed=4
+__battle__
+Axe Goblin M4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Length=2, Speed=4
+__battle__
+Axe Goblin M4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+The Amazon gets 1 fame (x 1) and 1 notoriety (x 1) for the death of the Axe Goblin
+Berserker
+Fatiguing 1 asterisk.
+Berserker
+After fatiguing, these chits were made active: FIGHT H4*
+Berserker
+After fatiguing, these chits were moved to fatigue: FIGHT T4**
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Amazon disengages because target is dead
+__battle__
+Berserker disengages because target is dead
+__battle__
+Woods Girl is dead.  Killed by Axe Goblin
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin is dead.  Killed by Amazon
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin disengages because target is dead
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Amazon
+Lures the Axe Goblin
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Amazon
+Attacks the Axe Goblin
+Berserker
+Attacks the Axe Goblin
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=5
+__battle__
+Berserker H4*  vs. Axe Goblin Speed 4
+__battle__
+Intercepted! (box 2 matches box 2)
+__battle__
+Initial harm: H+1
+__battle__
+Axe Goblin is hit with H+1 harm along box 2
+__battle__
+Axe Goblin was killed!
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin M4*  vs. Amazon Speed 3
+__battle__
+Attack Cancelled:  Axe Goblin was already killed by Berserker.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin M4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin M4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin M4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin M4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=3
+__battle__
+Amazon M5*  vs. Axe Goblin Speed 4
+__battle__
+Attack Cancelled:  Axe Goblin was already killed by Berserker.
+__battle__
+The Berserker gets 1 fame (x 1) and 1 notoriety (x 1) for the death of the Axe Goblin
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Amazon disengages because target is dead
+__battle__
+Berserker disengages because target is dead
+__battle__
+Axe Goblin is dead.  Killed by Berserker
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+-----------------------
+__battle__
+--  Combat Round 3
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Amazon
+Attacks the Axe Goblin
+Berserker
+Attacks the Axe Goblin
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 1
+Axe Goblin
+Changes tactics:  Axe Goblin L4*
+Axe Goblin
+Changes tactics:  Axe Goblin L4*
+Axe Goblin
+Changes tactics:  Axe Goblin L4*
+Axe Goblin
+Changes tactics:  Axe Goblin L4*
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=5
+__battle__
+Berserker H4*  vs. Axe Goblin Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=3
+__battle__
+Amazon M5*  vs. Axe Goblin Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+1 consecutive round of no damage, fatigue, or spellcasting.
+__battle__
+-----------------------
+__battle__
+--  Combat Round 4
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Berserker
+Attacks the Axe Goblin
+Amazon
+Attacks the Axe Goblin
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=4, Length=5
+__battle__
+Berserker H4*  vs. Axe Goblin Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=4, Length=2
+__battle__
+Axe Goblin L4*  vs. Amazon Speed 3
+__battle__
+Missed! (Speed 4 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=3
+__battle__
+Amazon M5*  vs. Axe Goblin Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+Axe Goblin won't disengage when fighting a character
+__battle__
+2 consecutive rounds of no damage, fatigue, or spellcasting.
+__battle__
+Battle resolving at Borderland 3:
+__battle__
+GROUP 1
+__battle__
+Pilgrim
+__battle__
+GROUP 2
+__battle__
+White Knight
+__battle__
+=======================
+__battle__
+Evening of month 1, day 5, in clearing Borderland 3
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+White Knight
+Presses the END combat button.
+White Knight
+Combat has ended.
+host
+========================================
+host

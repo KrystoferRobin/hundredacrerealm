@@ -1,0 +1,84 @@
+Month 1, Day 20
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Amazon
+Starts turn: Borderland 2
+Amazon
+Hide - Succeeded
+Amazon
+Hide - N/A
+Amazon
+Search - Loot the Statue - Nothing
+Amazon
+Search - Loot the Statue - Nothing
+Amazon
+Ends turn: Borderland 2
+Pilgrim
+Starts turn: Borderland 2
+Pilgrim
+Hide - Succeeded
+Pilgrim
+Hide - N/A
+Pilgrim
+Search - Loot the Statue - Nothing
+Pilgrim
+Search - Loot the Statue - Nothing
+Pilgrim
+Ends turn: Borderland 2
+White Knight
+Starts turn: Borderland 2
+White Knight
+Hide - Succeeded
+White Knight
+Hide - N/A
+Pilgrim
+Trades with White Knight
+White Knight
+Activates Beast Pipes
+White Knight
+Activates Eye of the Idol
+White Knight
+Search - Read Runes on Beast Pipes - Nothing
+White Knight
+Search - Read Runes on Beast Pipes - (Learn and) Awaken a Spell
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Borderland 2
+__battle__
+Battle resolving at Borderland 2:
+__battle__
+GROUP 1
+__battle__
+Amazon
+__battle__
+GROUP 2
+__battle__
+Pilgrim
+__battle__
+GROUP 3
+__battle__
+White Knight
+__battle__
+=======================
+__battle__
+Evening of month 1, day 20, in clearing Borderland 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+Amazon
+Presses the END combat button.
+Amazon
+Combat has ended.
+host
+========================================
+host

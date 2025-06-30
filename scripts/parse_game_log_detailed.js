@@ -459,33 +459,30 @@ function parseAllDays(sessionName) {
 }
 
 function main() {
-  // Determine which log file to process
-  const args = process.argv.slice(2);
-  const logFileName = args[0] || '6-17-25-5man-now3.rslog';
+  // Get session name from command line argument
+  const sessionName = process.argv[2];
+  if (!sessionName) {
+    console.error('Usage: node parse_game_log_detailed.js <session-name>');
+    console.error('Example: node parse_game_log_detailed.js learning-woodsgirl');
+    process.exit(1);
+  }
   
-  LOG_FILE = `public/uploads/${logFileName}`;
-  const sessionName = logFileName.replace('.rslog', '');
-  SESSION_DIR = `parsed_sessions/${sessionName}`;
-  OUTPUT_FILE = `${SESSION_DIR}/parsed_session.json`;
+  LOG_FILE = path.join(__dirname, '..', 'public', 'uploads', `${sessionName}.rslog`);
+  SESSION_DIR = path.join(__dirname, '..', 'parsed_sessions', sessionName);
+  OUTPUT_FILE = path.join(SESSION_DIR, 'parsed_session.json');
   
-  console.log(`Starting detailed game log parser for: ${logFileName}`);
+  console.log(`Starting detailed game log parser for: ${sessionName}`);
   
   // First, run the basic parser to split into days
   const { execSync } = require('child_process');
   
   try {
-    // Update the basic parser configuration
-    const basicParserContent = fs.readFileSync('scripts/parse_game_log.js', 'utf8')
-      .replace(/const LOG_FILE = '[^']*';/, `const LOG_FILE = '${LOG_FILE}';`)
-      .replace(/const OUTPUT_DIR = '[^']*';/, `const OUTPUT_DIR = '${SESSION_DIR}';`);
-    
-    fs.writeFileSync('scripts/parse_game_log_temp.js', basicParserContent);
-    
+    // Run the basic parser with the session name
     console.log('Running basic parser to split into days...');
-    execSync('node scripts/parse_game_log_temp.js', { stdio: 'inherit' });
-    
-    // Clean up temp file
-    fs.unlinkSync('scripts/parse_game_log_temp.js');
+    execSync(`node parse_game_log.js ${sessionName}`, { 
+      stdio: 'inherit',
+      cwd: __dirname 
+    });
     
     // Now run the detailed parser
     console.log('\nRunning detailed parser...');

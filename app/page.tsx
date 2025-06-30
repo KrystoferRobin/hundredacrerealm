@@ -832,6 +832,21 @@ export default function Home() {
     }
   }, [selectedPage]);
 
+  async function handleImportSessions() {
+    setProcessingZips(true);
+    setProcessResult(null);
+    try {
+      const response = await fetch('/api/import-sessions', { method: 'POST' });
+      if (!response.ok) throw new Error('Import failed');
+      const data = await response.json();
+      setProcessResult(data.message || 'Import complete!');
+    } catch (err: any) {
+      setProcessResult(err.message || 'Import failed');
+    } finally {
+      setProcessingZips(false);
+    }
+  }
+
   return (
     <div className="min-h-screen bg-[#f6ecd6] flex flex-col font-serif">
       {/* Header */}
@@ -1044,30 +1059,7 @@ export default function Home() {
             className="p-2 rounded hover:bg-[#bfa76a] focus:outline-none focus:ring-2 focus:ring-[#bfa76a] transition-colors"
             title="Process local zip uploads"
             aria-label="Process local zip uploads"
-            onClick={async () => {
-              setProcessingZips(true);
-              setProcessResult(null);
-              setProcessError(null);
-              try {
-                const res = await fetch('/api/process-uploads', { method: 'POST' });
-                if (!res.ok) {
-                  const err = await res.json();
-                  throw new Error(err.error || 'Failed to process uploads');
-                }
-                const data = await res.json();
-                setProcessResult(data.results);
-                // Refresh the recent sessions list after processing
-                const sessionsResponse = await fetch('/api/sessions');
-                if (sessionsResponse.ok) {
-                  const sessionsData = await sessionsResponse.json();
-                  setRecentLogs(sessionsData.sessions || []);
-                }
-              } catch (e: any) {
-                setProcessError(e.message || 'Failed to process uploads');
-              } finally {
-                setProcessingZips(false);
-              }
-            }}
+            onClick={handleImportSessions}
             disabled={processingZips}
           >
             <FolderIcon className="w-6 h-6 text-[#fff8e1]" />
@@ -1077,8 +1069,10 @@ export default function Home() {
           )}
           {processResult && (
             <span className="ml-2 text-xs text-[#fff8e1]">
-              {processResult.processed.length > 0 && `Processed: ${processResult.processed.map(p => p.gameName).join(', ')}`}
-              {processResult.errors.length > 0 && ` Errors: ${processResult.errors.map(e => e.gameName + ': ' + e.error).join('; ')}`}
+              {Array.isArray(processResult.processed) && processResult.processed.length > 0 && `Processed: ${processResult.processed.map(p => p.gameName).join(', ')}`}
+              {Array.isArray(processResult.errors) && processResult.errors.length > 0 && ` Errors: ${processResult.errors.map(e => e.gameName + ': ' + e.error).join('; ')}`}
+              {processResult.message && processResult.message}
+              {processResult.error && processResult.error}
             </span>
           )}
           {processError && (
