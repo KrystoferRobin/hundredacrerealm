@@ -1022,23 +1022,33 @@ export default function Home() {
                   <div className="space-y-4">
                     {recentLogs.map((session) => (
                       <div key={session.id} className="mb-2 p-3 bg-[#f6ecd6] border border-[#bfa76a] rounded-md hover:bg-[#f3e3b2] transition-colors duration-200">
-                        <div className="flex justify-between items-center">
-                          <div className="text-sm text-[#6b3e26] font-semibold text-left truncate max-w-[60%] font-serif">
-                            {session.name}
+                        <div className="flex flex-col items-start">
+                          <div className="text-base text-[#6b3e26] font-bold text-left truncate max-w-full font-serif">
+                            {session.mainTitle || session.name}
                           </div>
-                          <div className="text-xs text-[#4b3a1e] font-semibold text-right whitespace-nowrap font-serif">
-                            {session.totalBattles} battles
-                          </div>
+                          {session.subtitle && (
+                            <div className="text-xs text-[#6b3e26] font-serif mt-0.5" style={{ opacity: 0.85 }}>
+                              (<span>{session.subtitle}</span>)
+                            </div>
+                          )}
                         </div>
                         <div className="flex justify-between items-center mt-1">
-                          <div className="text-xs text-[#4b3a1e] text-left font-serif">
-                            {session.uniqueCharacters} chars, {session.totalActions} actions
+                          <div className="text-xs text-[#4b3a1e] text-left font-serif flex items-center space-x-3">
+                            <span className="flex items-center">
+                              {session.characters} 👥
+                            </span>
+                            <span className="flex items-center">
+                              {session.days} 📅
+                            </span>
+                            <span className="flex items-center">
+                              {session.battles} ⚔️
+                            </span>
                           </div>
                           <button
                             onClick={() => { setSelectedSessionId(session.id); setSelectedPage('session'); }}
                             className="text-[#6b3e26] hover:text-[#bfa76a] hover:underline cursor-pointer text-xs font-semibold text-right ml-2 font-serif transition-colors duration-200"
                           >
-                            View Session
+                            View
                           </button>
                         </div>
                       </div>

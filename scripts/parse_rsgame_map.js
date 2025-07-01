@@ -227,7 +227,7 @@ const parseRsgameMap = (rsgamePath, outputDir = null) => {
 
 // Test the parser if run directly
 if (require.main === module) {
-    const rsgamePath = path.join(__dirname, '../public/uploads/learning-woodsgirl.rsgame');
+    const rsgamePath = path.join(__dirname, '../5man.rsgame');
     
     if (fs.existsSync(rsgamePath)) {
         try {

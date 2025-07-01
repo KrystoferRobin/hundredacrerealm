@@ -11,6 +11,8 @@ interface GameSession {
   uniqueCharacters: number;
   players: number;
   lastModified: string;
+  mainTitle?: string;
+  subtitle?: string;
 }
 
 export default function GameLogsPage() {
@@ -69,14 +71,16 @@ export default function GameLogsPage() {
               <div key={session.id} className="bg-white border-2 border-amber-300 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h2 className="text-2xl font-bold text-amber-800 mb-2">{session.name}</h2>
+                    <h2 className="text-2xl font-bold text-amber-800 mb-2">
+                      {session.mainTitle && session.subtitle ? `${session.mainTitle} -OR- ${session.subtitle}` : session.mainTitle || session.name}
+                    </h2>
                     <p className="text-amber-600">Last modified: {formatDate(session.lastModified)}</p>
                   </div>
                   <a
                     href={`/session/${session.id}`}
                     className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded font-semibold transition-colors"
                   >
-                    View Session
+                    View
                   </a>
                 </div>
                 

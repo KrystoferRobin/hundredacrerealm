@@ -47,6 +47,30 @@ Extracts map tile data from the game XML.
 node scripts/parse_map_data.js <session-name>
 ```
 
+### 5. Character Inventory Extractor
+Extracts final character inventories with item details and fame/notoriety values.
+```bash
+node scripts/extract_character_inventories.js <session-name>
+```
+
+### 6. Scoring Calculator
+Calculates final scores using official Magic Realm rules with faction-specific fame/notoriety filtering.
+```bash
+node scripts/calculate_scoring.js <session-name>
+```
+
+### 7. Missing Data Extractor
+Extracts character stats and scoring data from existing XML files.
+```bash
+node scripts/extract_missing_data.js <session-name>
+```
+
+### 8. Add Scoring to All Sessions
+Adds scoring data to all existing sessions that don't have it yet.
+```bash
+node scripts/add_scoring_to_all_sessions.js
+```
+
 ## File Structure
 
 After processing, each session will have its own directory in `parsed_sessions/`:
@@ -57,6 +81,10 @@ parsed_sessions/
     ├── extracted_game.xml          # Raw game XML from .rsgame
     ├── parsed_session.json         # Structured session data
     ├── map_data.json              # Map tile positions and rotations
+    ├── character_stats.json       # Character end-game stats (gold, fame, notoriety, etc.)
+    ├── scoring.json               # Victory point assignments and starting gold deficits
+    ├── character_inventories.json # Final character inventories with item details
+    ├── final_scores.json          # Calculated final scores for each character
     ├── full_log.txt               # Decompressed full log
     └── day_*.txt                  # Individual day files (103 files)
 ```
@@ -83,6 +111,30 @@ Contains map information:
 - Tile rotations
 - Tile names and types
 - Grouped by tile type
+
+### character_stats.json
+Contains end-game character statistics:
+- Gold, fame, notoriety values
+- Great treasures and learned spells counts
+- Starting spell counts
+
+### scoring.json
+Contains victory point assignments and starting gold deficits:
+- Victory points assigned to each category (GT, Spells, Fame, Notoriety, Gold)
+- Starting gold deficits for each character
+
+### character_inventories.json
+Contains final character inventories:
+- All items carried at end of game
+- Item details including fame/notoriety values
+- Proper categorization (weapons, armor, treasures, etc.)
+
+### final_scores.json
+Contains calculated final scores:
+- Total score for each character
+- Breakdown by category (basic and bonus scores)
+- Item fame/notoriety contributions
+- Follows official Magic Realm scoring rules
 
 ### Day Files
 Individual text files for each game day, useful for debugging or custom parsing.

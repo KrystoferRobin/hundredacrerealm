@@ -1,0 +1,62 @@
+{
+  "Soldier HQ": {
+    "id": "102",
+    "name": "Soldier HQ",
+    "startingGold": 0,
+    "victoryPoints": {
+      "greatTreasures": 0,
+      "spells": 0,
+      "fame": 0,
+      "notoriety": 0,
+      "gold": 0
+    }
+  },
+  "Woodsfolk HQ": {
+    "id": "105",
+    "name": "Woodsfolk HQ",
+    "startingGold": 0,
+    "victoryPoints": {
+      "greatTreasures": 0,
+      "spells": 0,
+      "fame": 0,
+      "notoriety": 0,
+      "gold": 0
+    }
+  },
+  "White Knight": {
+    "id": "414",
+    "name": "White Knight",
+    "startingGold": 37,
+    "victoryPoints": {
+      "greatTreasures": 2,
+      "spells": 1,
+      "fame": 4,
+      "notoriety": 3,
+      "gold": 2
+    }
+  },
+  "Pilgrim": {
+    "id": "416",
+    "name": "Pilgrim",
+    "startingGold": 11,
+    "victoryPoints": {
+      "greatTreasures": 1,
+      "spells": 4,
+      "fame": 3,
+      "notoriety": 2,
+      "gold": 2
+    }
+  },
+  "Amazon": {
+    "id": "425",
+    "name": "Amazon",
+    "startingGold": 35,
+    "victoryPoints": {
+      "greatTreasures": 2,
+      "spells": 0,
+      "fame": 6,
+      "notoriety": 4,
+      "gold": 0
+    }
+  }
+}

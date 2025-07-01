@@ -1,0 +1,10 @@
+{
+  "Wizard": {
+    "gold": 1,
+    "fame": 23,
+    "notoriety": 17,
+    "startingSpells": 2,
+    "greatTreasures": 0,
+    "learnedSpells": 1
+  }
+}

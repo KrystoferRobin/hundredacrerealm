@@ -1,0 +1,36 @@
+{
+  "White Knight": {
+    "totalScore": 5,
+    "totalBasicScore": 6,
+    "totalBonusScore": -1,
+    "categories": {
+      "greatTreasures": {
+        "actual": 2,
+        "required": 3,
+        "factor": 1
+      },
+      "spells": {
+        "actual": 0,
+        "required": 0,
+        "factor": 2
+      },
+      "fame": {
+        "actual": 65,
+        "required": 20,
+        "factor": 10
+      },
+      "notoriety": {
+        "actual": 95,
+        "required": 0,
+        "factor": 20
+      },
+      "gold": {
+        "actual": 35,
+        "required": 0,
+        "factor": 30
+      }
+    },
+    "itemFame": -5,
+    "itemNotoriety": 17
+  }
+}

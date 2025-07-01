@@ -15,6 +15,13 @@ function processSession(sessionName) {
       cwd: path.join(__dirname, '..')
     });
     
+    // Step 1.5: Extract missing data if needed (for sessions without .rslog/.rsgame files)
+    console.log('\n1.5. Extracting missing data...');
+    execSync(`node scripts/extract_missing_data.js ${sessionName}`, { 
+      stdio: 'inherit',
+      cwd: path.join(__dirname, '..')
+    });
+    
     // Step 2: Parse log file into detailed session data
     console.log('\n2. Parsing log file...');
     execSync(`node scripts/parse_game_log_detailed.js ${sessionName}`, { 
@@ -29,11 +36,28 @@ function processSession(sessionName) {
       cwd: path.join(__dirname, '..')
     });
     
+    // Step 4: Extract character inventories
+    console.log('\n4. Extracting character inventories...');
+    execSync(`node scripts/extract_character_inventories.js ${sessionName}`, { 
+      stdio: 'inherit',
+      cwd: path.join(__dirname, '..')
+    });
+    
+    // Step 5: Calculate final scores
+    console.log('\n5. Calculating final scores...');
+    execSync(`node scripts/calculate_scoring.js ${sessionName}`, { 
+      stdio: 'inherit',
+      cwd: path.join(__dirname, '..')
+    });
+    
     console.log(`\n✅ Session "${sessionName}" processed successfully!`);
     console.log(`\nGenerated files:`);
     console.log(`  - parsed_sessions/${sessionName}/extracted_game.xml`);
     console.log(`  - parsed_sessions/${sessionName}/parsed_session.json`);
     console.log(`  - parsed_sessions/${sessionName}/map_data.json`);
+    console.log(`  - parsed_sessions/${sessionName}/character_stats.json`);
+    console.log(`  - parsed_sessions/${sessionName}/scoring.json`);
+    console.log(`  - parsed_sessions/${sessionName}/character_inventories.json`);
     console.log(`  - parsed_sessions/${sessionName}/day_*.txt (103 day files)`);
     
   } catch (error) {

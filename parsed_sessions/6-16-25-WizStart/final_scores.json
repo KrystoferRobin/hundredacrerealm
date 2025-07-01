@@ -1,0 +1,36 @@
+{
+  "Magician": {
+    "totalScore": 0,
+    "totalBasicScore": 0,
+    "totalBonusScore": 0,
+    "categories": {
+      "greatTreasures": {
+        "actual": 0,
+        "required": 0,
+        "factor": 1
+      },
+      "spells": {
+        "actual": 0,
+        "required": 0,
+        "factor": 2
+      },
+      "fame": {
+        "actual": 0,
+        "required": 0,
+        "factor": 10
+      },
+      "notoriety": {
+        "actual": 0,
+        "required": 0,
+        "factor": 20
+      },
+      "gold": {
+        "actual": 0,
+        "required": 0,
+        "factor": 30
+      }
+    },
+    "itemFame": 0,
+    "itemNotoriety": 0
+  }
+}

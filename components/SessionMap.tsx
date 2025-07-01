@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import mapLocationsData from '../parsed_sessions/5man/map_locations.json';
 
 interface Tile {
   position: string;
@@ -36,6 +37,14 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
   const containerRef = useRef<HTMLDivElement>(null);
   const [containerSize, setContainerSize] = useState({ width: 400, height: 400 });
   const [tileDataCache, setTileDataCache] = useState<Record<string, any>>({});
+  // Overlay toggles
+  const [showDwellings, setShowDwellings] = useState(true);
+  const [showSound, setShowSound] = useState(true);
+  const [showWarning, setShowWarning] = useState(true);
+  const [showTreasure, setShowTreasure] = useState(true);
+  const [showLivingCharacters, setShowLivingCharacters] = useState(true);
+  const [showDeadCharacters, setShowDeadCharacters] = useState(true);
+  const [mapLocations, setMapLocations] = useState<any>(null);
 
   useEffect(() => {
     const loadMapData = async () => {
@@ -68,6 +77,24 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
 
     loadMapData();
   }, [sessionId]);
+
+  useEffect(() => {
+    // Load map_locations.json dynamically (in case of server/client differences)
+    const fetchLocations = async () => {
+      try {
+        const res = await fetch('/parsed_sessions/5man/map_locations.json');
+        if (res.ok) {
+          const data = await res.json();
+          setMapLocations(data);
+        } else {
+          setMapLocations(mapLocationsData); // fallback to static import
+        }
+      } catch (e) {
+        setMapLocations(mapLocationsData); // fallback
+      }
+    };
+    fetchLocations();
+  }, []);
 
   // ResizeObserver to track container size
   useEffect(() => {
@@ -318,8 +345,16 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
         height: '100%',
       }}
     >
-      {/* Zoom Controls */}
-      <div className="absolute top-4 right-4 z-10 bg-white rounded-lg shadow-lg p-2">
+      {/* Zoom Controls & Overlay Toggles */}
+      <div className="absolute top-4 right-4 z-10 bg-white rounded-lg shadow-lg p-2 min-w-[180px]">
+        <div className="mb-2 font-bold">Map Overlays</div>
+        <label className="block text-xs mb-1"><input type="checkbox" checked={showDwellings} onChange={e => setShowDwellings(e.target.checked)} /> Dwellings</label>
+        <label className="block text-xs mb-1"><input type="checkbox" checked={showSound} onChange={e => setShowSound(e.target.checked)} /> Sound</label>
+        <label className="block text-xs mb-1"><input type="checkbox" checked={showWarning} onChange={e => setShowWarning(e.target.checked)} /> Warning</label>
+        <label className="block text-xs mb-1"><input type="checkbox" checked={showTreasure} onChange={e => setShowTreasure(e.target.checked)} /> Treasure/Other</label>
+        <label className="block text-xs mb-1"><input type="checkbox" checked={showLivingCharacters} onChange={e => setShowLivingCharacters(e.target.checked)} /> Living Characters</label>
+        <label className="block text-xs mb-2"><input type="checkbox" checked={showDeadCharacters} onChange={e => setShowDeadCharacters(e.target.checked)} /> Dead Characters</label>
+        {/* Zoom controls */}
         <button
           onClick={() => setZoom(Math.min(zoom + 0.1, 3))}
           className="block w-8 h-8 mb-1 bg-blue-500 text-white rounded hover:bg-blue-600"
@@ -439,18 +474,103 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
             </g>
           );
         })}
-        {/* Character Icon Overlay */}
-        {showCharacterIcons && characterIcons.length > 0 && (
+        {/* Dwellings Overlay */}
+        {showDwellings && mapLocations && mapLocations.dwellings.map((item: any, idx: number) => {
+          const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === item.tile);
+          if (tileIdx === -1) return null;
+          const tile = mapData.tiles[tileIdx];
+          const [x, y] = parsePosition(tile.position);
+          const hexPos = getHexPosition(x, y);
+          const clearingPos = item.clearing ? getClearingPosition(tile, item.clearing) : { x: 0, y: 0 };
+          if (!clearingPos) return null;
+          const rotation = getTileRotation(tile.rotation);
+          const rad = (rotation * Math.PI) / 180;
+          const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
+          const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
+          const px = hexPos.x + rotatedX;
+          const py = hexPos.y + rotatedY;
+          return (
+            <g key={idx} className="dwelling-overlay">
+              <rect x={px-10} y={py-10} width={20} height={20} fill="#ffe4b5" stroke="#b8860b" strokeWidth={2} rx={4} />
+              <text x={px} y={py+5} textAnchor="middle" fontSize={12} fill="#b8860b" fontWeight="bold">🏠</text>
+              <title>{item.name} ({item.tile}{item.clearing ? ` clearing ${item.clearing}` : ''})</title>
+            </g>
+          );
+        })}
+        {/* Sound Overlay */}
+        {showSound && mapLocations && mapLocations.sound.map((item: any, idx: number) => {
+          const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === item.tile);
+          if (tileIdx === -1) return null;
+          const tile = mapData.tiles[tileIdx];
+          const [x, y] = parsePosition(tile.position);
+          const hexPos = getHexPosition(x, y);
+          const clearingPos = item.clearing ? getClearingPosition(tile, item.clearing) : { x: 0, y: 0 };
+          if (!clearingPos) return null;
+          const rotation = getTileRotation(tile.rotation);
+          const rad = (rotation * Math.PI) / 180;
+          const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
+          const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
+          const px = hexPos.x + rotatedX;
+          const py = hexPos.y + rotatedY;
+          return (
+            <g key={idx} className="sound-overlay">
+              <circle cx={px} cy={py} r={10} fill="#e0f7fa" stroke="#00796b" strokeWidth={2} />
+              <text x={px} y={py+5} textAnchor="middle" fontSize={12} fill="#00796b" fontWeight="bold">🔊</text>
+              <title>{item.name} ({item.tile}{item.clearing ? ` clearing ${item.clearing}` : ''})</title>
+            </g>
+          );
+        })}
+        {/* Warning Overlay */}
+        {showWarning && mapLocations && mapLocations.warning.map((item: any, idx: number) => {
+          const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === item.tile);
+          if (tileIdx === -1) return null;
+          const tile = mapData.tiles[tileIdx];
+          const [x, y] = parsePosition(tile.position);
+          const hexPos = getHexPosition(x, y);
+          // Warning chits are for the whole tile, not a clearing
+          return (
+            <g key={idx} className="warning-overlay">
+              <rect x={hexPos.x-12} y={hexPos.y-12} width={24} height={24} fill="#fff3cd" stroke="#856404" strokeWidth={2} rx={6} />
+              <text x={hexPos.x} y={hexPos.y+6} textAnchor="middle" fontSize={14} fill="#856404" fontWeight="bold">⚠️</text>
+              <title>{item.name} ({item.tile})</title>
+            </g>
+          );
+        })}
+        {/* Treasure/Other Overlay */}
+        {showTreasure && mapLocations && [...mapLocations.treasure, ...mapLocations.other].map((item: any, idx: number) => {
+          const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === item.tile);
+          if (tileIdx === -1) return null;
+          const tile = mapData.tiles[tileIdx];
+          const [x, y] = parsePosition(tile.position);
+          const hexPos = getHexPosition(x, y);
+          const clearingPos = item.clearing ? getClearingPosition(tile, item.clearing) : { x: 0, y: 0 };
+          if (!clearingPos) return null;
+          const rotation = getTileRotation(tile.rotation);
+          const rad = (rotation * Math.PI) / 180;
+          const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
+          const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
+          const px = hexPos.x + rotatedX;
+          const py = hexPos.y + rotatedY;
+          return (
+            <g key={idx} className="treasure-overlay">
+              <circle cx={px} cy={py} r={9} fill="#fffde7" stroke="#ffd600" strokeWidth={2} />
+              <text x={px} y={py+5} textAnchor="middle" fontSize={12} fill="#ffd600" fontWeight="bold">💰</text>
+              <title>{item.name} ({item.tile}{item.clearing ? ` clearing ${item.clearing}` : ''})</title>
+            </g>
+          );
+        })}
+        {/* Character Icon Overlay (with toggles for living/dead) */}
+        {(showCharacterIcons && characterIcons.length > 0) && (
           <g className="character-icon-overlay">
-            {/* Group characters by location to handle stacking */}
             {(() => {
               const locationGroups: Record<string, CharacterMapIcon[]> = {};
               characterIcons.forEach(icon => {
-                const key = `${icon.tile}-${icon.clearing}`;
-                if (!locationGroups[key]) locationGroups[key] = [];
-                locationGroups[key].push(icon);
+                if ((icon.isDead && showDeadCharacters) || (!icon.isDead && showLivingCharacters)) {
+                  const key = `${icon.tile}-${icon.clearing}`;
+                  if (!locationGroups[key]) locationGroups[key] = [];
+                  locationGroups[key].push(icon);
+                }
               });
-              
               return Object.entries(locationGroups).map(([locationKey, icons]) => {
                 const firstIcon = icons[0];
                 const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === firstIcon.tile);

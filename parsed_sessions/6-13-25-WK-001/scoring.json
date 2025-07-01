@@ -1,0 +1,14 @@
+{
+  "White Knight": {
+    "id": "414",
+    "name": "White Knight",
+    "startingGold": 37,
+    "victoryPoints": {
+      "greatTreasures": 2,
+      "spells": 0,
+      "fame": 2,
+      "notoriety": 1,
+      "gold": 0
+    }
+  }
+}

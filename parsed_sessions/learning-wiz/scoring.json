@@ -1,0 +1,14 @@
+{
+  "Wizard": {
+    "id": "423",
+    "name": "Wizard",
+    "startingGold": 11,
+    "victoryPoints": {
+      "greatTreasures": 1,
+      "spells": 2,
+      "fame": 1,
+      "notoriety": 1,
+      "gold": 0
+    }
+  }
+}

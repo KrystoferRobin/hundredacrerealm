@@ -28,6 +28,7 @@ export async function GET(
     const categories = ['armor', 'weapon', 'treasure'];
     let item: Item | null = null;
 
+    // First search in items directory
     for (const category of categories) {
       const categoryDir = path.join(itemsDir, category);
       if (!fs.existsSync(categoryDir)) continue;
@@ -52,6 +53,41 @@ export async function GET(
       }
       
       if (item) break;
+    }
+
+    // If not found in items, search in spells directory
+    if (!item) {
+      const spellsDir = path.join(process.cwd(), 'coregamedata', 'spells');
+      if (fs.existsSync(spellsDir)) {
+        // Search through all spell level directories
+        const spellLevels = fs.readdirSync(spellsDir);
+        
+        for (const level of spellLevels) {
+          const levelDir = path.join(spellsDir, level);
+          if (!fs.existsSync(levelDir) || !fs.statSync(levelDir).isDirectory()) continue;
+          
+          const files = fs.readdirSync(levelDir);
+          
+          for (const file of files) {
+            if (!file.endsWith('.json')) continue;
+            
+            const spellPath = path.join(levelDir, file);
+            const spellData = JSON.parse(fs.readFileSync(spellPath, 'utf8'));
+            
+            if (spellData.name === itemName) {
+              item = {
+                id: spellData.id,
+                name: spellData.name,
+                attributeBlocks: spellData.attributeBlocks || {},
+                parts: spellData.parts || []
+              };
+              break;
+            }
+          }
+          
+          if (item) break;
+        }
+      }
     }
 
     if (!item) {

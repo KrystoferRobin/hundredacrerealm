@@ -1,0 +1,42 @@
+{
+  "Soldier HQ": {
+    "gold": 0,
+    "fame": 0,
+    "notoriety": 0,
+    "startingSpells": 0,
+    "greatTreasures": 0,
+    "learnedSpells": 0
+  },
+  "Woodsfolk HQ": {
+    "gold": 0,
+    "fame": 0,
+    "notoriety": 0,
+    "startingSpells": 0,
+    "greatTreasures": 0,
+    "learnedSpells": 0
+  },
+  "White Knight": {
+    "gold": 7,
+    "fame": 25,
+    "notoriety": 35,
+    "startingSpells": 1,
+    "greatTreasures": 2,
+    "learnedSpells": 1
+  },
+  "Pilgrim": {
+    "gold": 5,
+    "fame": 31,
+    "notoriety": 31,
+    "startingSpells": 1,
+    "greatTreasures": 0,
+    "learnedSpells": 1
+  },
+  "Amazon": {
+    "gold": 28,
+    "fame": 28,
+    "notoriety": 18,
+    "startingSpells": 0,
+    "greatTreasures": 0,
+    "learnedSpells": 0
+  }
+}

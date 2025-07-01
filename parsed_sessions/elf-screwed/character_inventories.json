@@ -1,0 +1,256 @@
+{
+  "Elf": {
+    "character": "Elf",
+    "items": {
+      "weapons": [],
+      "armor": [],
+      "treasures": [],
+      "great_treasures": [],
+      "spells": [],
+      "natives": [],
+      "other": [
+        {
+          "id": "164",
+          "name": "Light Bow",
+          "type": "weapon",
+          "category": "weapon",
+          "data": {
+            "id": "1094",
+            "name": "Light Bow",
+            "attributeBlocks": {
+              "this": {
+                "weight": "L",
+                "length": "14",
+                "base_price": "6",
+                "missile": "",
+                "two_handed": "",
+                "weapon": "",
+                "icon_type": "light_bow",
+                "icon_folder": "weapons",
+                "rw_expansion_1": "",
+                "item": "",
+                "bow": ""
+              },
+              "unalerted": {
+                "strength": "L",
+                "chit_color": "white"
+              },
+              "alerted": {
+                "attack_speed": "1",
+                "strength": "L",
+                "sharpness": "2",
+                "chit_color": "red"
+              }
+            },
+            "parts": []
+          }
+        },
+        {
+          "id": "3360",
+          "name": "Persuade",
+          "type": "spell",
+          "category": "spell",
+          "data": {
+            "id": "2148",
+            "name": "Persuade",
+            "spellLevel": "III",
+            "attributeBlocks": {
+              "this": {
+                "spell": "III",
+                "duration": "day",
+                "target": "human group",
+                "text": "Group becomes FRIENDLY (works on giants and ogres too)",
+                "magic_color": "gold",
+                "pacify": "1",
+                "host_okay": "",
+                "benevolent": "",
+                "learnable": "",
+                "super_realm": ""
+              }
+            },
+            "parts": []
+          }
+        },
+        {
+          "id": "3361",
+          "name": "Peace with Nature",
+          "type": "spell",
+          "category": "spell",
+          "data": {
+            "id": "2158",
+            "name": "Peace with Nature",
+            "spellLevel": "VII",
+            "attributeBlocks": {
+              "this": {
+                "spell": "VII",
+                "duration": "permanent",
+                "target": "leader",
+                "text": "Not attacked by warning or sound chits",
+                "magic_color": "gold",
+                "host_okay": "",
+                "benevolent": "",
+                "peace_with_nature": "",
+                "learnable": "",
+                "super_realm": ""
+              }
+            },
+            "parts": []
+          }
+        },
+        {
+          "id": "3362",
+          "name": "Protection from Magic",
+          "type": "spell",
+          "category": "spell",
+          "data": {
+            "id": "2157",
+            "name": "Protection from Magic",
+            "spellLevel": "VII",
+            "attributeBlocks": {
+              "this": {
+                "spell": "VII",
+                "duration": "phase",
+                "target": "character",
+                "text": "Immune to spells for one phase",
+                "magic_color": "gold",
+                "host_okay": "",
+                "magic_protection": "",
+                "nullify": "",
+                "learnable": "",
+                "super_realm": ""
+              },
+              "phase_chit": {
+                "phase_chit": "",
+                "text": "Protection from Magic"
+              },
+              "phase_chit_effects": {
+                "nullify": "",
+                "magic_protection": "",
+                "magic_protection_extended": ""
+              }
+            },
+            "parts": []
+          }
+        },
+        {
+          "id": "351",
+          "name": "Shielded Lantern",
+          "type": "treasure",
+          "category": "treasure",
+          "data": {
+            "id": "2064",
+            "name": "Shielded Lantern",
+            "attributeBlocks": {
+              "this": {
+                "treasure": "small",
+                "base_price": "8",
+                "weight": "L",
+                "text": "Extra phase in caves",
+                "extra_cave_phase": "",
+                "facing": "face_dn",
+                "item": "",
+                "super_realm": ""
+              }
+            },
+            "parts": []
+          }
+        },
+        {
+          "id": "374",
+          "name": "Magic Wand",
+          "type": "treasure",
+          "category": "great_treasure",
+          "data": {
+            "id": "2087",
+            "name": "Magic Wand",
+            "attributeBlocks": {
+              "this": {
+                "treasure": "large",
+                "base_price": "17",
+                "text": "Control red die on spell rolls",
+                "notoriety": "10",
+                "fame": "-10",
+                "great": "",
+                "red_die": "wish,curse,powerofthepit,transform,lost,violentstorm,magicmissil,attackspell,meditate,mesmerize,summondemon",
+                "facing": "face_dn",
+                "item": "",
+                "super_realm": ""
+              }
+            },
+            "parts": []
+          }
+        },
+        {
+          "id": "361",
+          "name": "Lucky Charm",
+          "type": "treasure",
+          "category": "great_treasure",
+          "data": {
+            "id": "2074",
+            "name": "Lucky Charm",
+            "attributeBlocks": {
+              "this": {
+                "treasure": "large",
+                "base_price": "14",
+                "text": "If active when using table, only roll one die.",
+                "facing": "face_dn",
+                "item": "",
+                "super_realm": ""
+              }
+            },
+            "parts": []
+          }
+        },
+        {
+          "id": "129",
+          "name": "Pony",
+          "type": "treasure",
+          "category": "other",
+          "data": {
+            "id": "129",
+            "name": "Pony",
+            "attributeBlocks": {
+              "this": {
+                "horse": "pony",
+                "move_bonus": "double",
+                "vulnerability": "M",
+                "base_price": "16",
+                "magic": "",
+                "original_game": "",
+                "alt_monsters1_game": "",
+                "rw_expansion_1": "",
+                "item": "",
+                "horse_holder": "Bashkar Dwelling",
+                "icon_folder_alt": "wesnoth/units/monsters",
+                "icon_type_alt": "horse",
+                "icon_size_alt": "1"
+              },
+              "trot": {
+                "move_speed": "4",
+                "strength": "L",
+                "chit_color": "tan"
+              },
+              "gallop": {
+                "move_speed": "2",
+                "strength": "L",
+                "chit_color": "tan"
+              }
+            },
+            "parts": []
+          }
+        }
+      ],
+      "unknown": []
+    },
+    "raw_contains": [
+      "164",
+      "3360",
+      "3361",
+      "3362",
+      "351",
+      "374",
+      "361",
+      "129"
+    ]
+  }
+}

@@ -78,6 +78,12 @@ export default function SessionPage() {
   const [sessionData, setSessionData] = useState<SessionData | null>(null);
   const [loading, setLoading] = useState(true);
   const [itemCache, setItemCache] = useState<Record<string, Item>>({});
+  const [sessionName, setSessionName] = useState<{ mainTitle: string; subtitle: string } | null>(null);
+  const [characterInventories, setCharacterInventories] = useState<any>(null);
+  const [deadCharacters, setDeadCharacters] = useState<Set<string>>(new Set());
+  const [characterStats, setCharacterStats] = useState<any>(null);
+  const [finalScores, setFinalScores] = useState<any>(null);
+  const [scorePopover, setScorePopover] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchSessionData = async () => {
@@ -89,6 +95,19 @@ export default function SessionPage() {
           const data = await response.json();
           console.log('SessionPage: Session data loaded:', data);
           setSessionData(data);
+          
+          // Fetch session name from game-sessions API
+          const nameResponse = await fetch('/api/game-sessions');
+          if (nameResponse.ok) {
+            const sessions = await nameResponse.json();
+            const session = sessions.find((s: any) => s.id === sessionId);
+            if (session && session.mainTitle) {
+              setSessionName({
+                mainTitle: session.mainTitle,
+                subtitle: session.subtitle || ''
+              });
+            }
+          }
         } else {
           console.error('SessionPage: Failed to load session data');
         }
@@ -97,10 +116,83 @@ export default function SessionPage() {
       } finally {
         setLoading(false);
       }
+
+      // Fetch character inventories
+      try {
+        const invRes = await fetch(`/api/session/${sessionId}/character-inventories`);
+        if (invRes.ok) {
+          const invData = await invRes.json();
+          console.log('Loaded character inventories:', invData);
+          setCharacterInventories(invData);
+        } else {
+          console.error('Failed to load character inventories, status:', invRes.status);
+        }
+      } catch (e) { 
+        console.error('Failed to load character inventories:', e);
+      }
     };
 
     if (sessionId) {
       fetchSessionData();
+    }
+  }, [sessionId]);
+
+  // Extract dead characters for tombstone
+  useEffect(() => {
+    if (!sessionData) return;
+    const dayKeys = Object.keys(sessionData.days);
+    const sortedDayKeys = dayKeys.sort((a, b) => {
+      const [am, ad] = a.split('_').map(Number);
+      const [bm, bd] = b.split('_').map(Number);
+      return am !== bm ? am - bm : ad - bd;
+    });
+    const dead = new Set<string>();
+    for (const dayKey of sortedDayKeys) {
+      const day = sessionData.days[dayKey];
+      if (day && day.battles) {
+        for (const battle of day.battles) {
+          for (const round of battle.rounds) {
+            for (const death of round.deaths) {
+              const match = death.match(/^(.*?) was killed!/);
+              if (match) {
+                dead.add(match[1]);
+              }
+            }
+          }
+        }
+      }
+    }
+    setDeadCharacters(dead);
+  }, [sessionData]);
+
+  useEffect(() => {
+    const fetchStats = async () => {
+      try {
+        const res = await fetch(`/api/session/${sessionId}/character-stats`);
+        if (res.ok) {
+          setCharacterStats(await res.json());
+        }
+      } catch (e) {
+        setCharacterStats(null);
+      }
+    };
+    fetchStats();
+  }, [sessionId]);
+
+  // Fetch final scores
+  useEffect(() => {
+    const fetchFinalScores = async () => {
+      try {
+        const res = await fetch(`/api/session/${sessionId}/final-scores`);
+        if (res.ok) {
+          setFinalScores(await res.json());
+        }
+      } catch (e) {
+        setFinalScores(null);
+      }
+    };
+    if (sessionId) {
+      fetchFinalScores();
     }
   }, [sessionId]);
 
@@ -264,11 +356,32 @@ export default function SessionPage() {
 
     const isArmor = item.attributeBlocks.intact && item.attributeBlocks.damaged;
     const isWeapon = item.attributeBlocks.unalerted && item.attributeBlocks.alerted;
-    const isTreasure = !isArmor && !isWeapon;
+    const isSpell = item.attributeBlocks.this?.spell;
+    const isTreasure = !isArmor && !isWeapon && !isSpell;
+    
+
 
     return (
       <div className="absolute z-50 bg-[#fff8e1] border-2 border-[#bfa76a] rounded-lg p-3 shadow-lg min-w-48">
-        <div className="text-sm font-semibold text-[#6b3e26] font-serif mb-2">{item.name}</div>
+        <div className="text-sm font-semibold text-[#6b3e26] font-serif mb-2 text-center">{item.name}</div>
+        
+        {isSpell && (
+          <div className="space-y-2">
+            <div className="flex justify-between items-center text-xs">
+              <span className="text-[#6b3e26] font-serif font-semibold">Level {item.attributeBlocks.this.spell}</span>
+              <span className="text-[#6b3e26] font-serif capitalize">{item.attributeBlocks.this.duration}</span>
+            </div>
+            <div className="flex justify-between items-center text-xs">
+              <span className="text-[#6b3e26] font-serif capitalize">{item.attributeBlocks.this.magic_color || 'Any'}</span>
+              <span className="text-[#6b3e26] font-serif capitalize">{item.attributeBlocks.this.target || 'Self'}</span>
+            </div>
+            <div className="border-t border-[#bfa76a] pt-2 mt-2">
+              <div className="text-xs text-[#6b3e26] font-serif italic leading-relaxed">
+                {item.attributeBlocks.this.text || 'No description available'}
+              </div>
+            </div>
+          </div>
+        )}
         
         {isArmor && (
           <div className="space-y-2">
@@ -576,6 +689,313 @@ export default function SessionPage() {
     );
   };
 
+  // Function to get character icon path
+  const getCharacterIconPath = (characterName: string) => {
+    const iconName = characterName.replace(/\s+/g, ' ') + '_symbol.png';
+    return `/images/charsymbol/${iconName}`;
+  };
+
+  // Function to render treasure bag icon
+  const renderTreasureBagIcon = () => (
+    <span className="inline-block w-4 h-4 mr-1" title="Treasure">
+      💰
+    </span>
+  );
+
+  // Function to render great treasure with golden bubble
+  const renderGreatTreasure = (itemName: string) => (
+    <span className="inline-block bg-yellow-400 text-black font-bold px-2 py-1 rounded-full text-xs mr-2 mb-1">
+      {itemName.toUpperCase()}
+    </span>
+  );
+
+  // Function to render native chit (simplified version)
+  const renderNativeChit = (nativeName: string) => {
+    return (
+      <div className="inline-block relative w-12 h-12 border-2 border-[#6b3e26] rounded-md bg-white mr-2 mb-1">
+        <div className="absolute inset-0 flex items-center justify-center text-xs font-bold text-[#6b3e26]">
+          {nativeName.split(' ')[0]}
+        </div>
+      </div>
+    );
+  };
+
+  // Function to render character box
+  const renderCharacterBox = (characterName: string, playerName: string) => {
+    const inventory = characterInventories?.[characterName]?.items;
+    const isDead = deadCharacters.has(characterName);
+    console.log(`Rendering ${characterName}:`, { inventory, characterInventories: characterInventories?.[characterName] });
+    
+    // Helper to flatten and filter
+    const flat = (arr: any[]) => arr?.filter(Boolean) || [];
+    
+    // Helper function to create item elements with tooltips
+    const createItemElement = (item: any, category: string, idx: number, arr: any[]) => {
+      const isLast = idx === arr.length - 1;
+      const comma = isLast ? '' : ', ';
+      
+      if (category === 'weapon' || category === 'armor') {
+        return (
+          <div key={`${category}-${idx}`} className="relative group inline-block">
+            <span 
+              className="text-sm text-gray-700 mr-2 mb-1 cursor-pointer hover:text-amber-600 transition-colors"
+              onMouseEnter={() => fetchItem(item.name)}
+            >
+              {item.name}{comma}
+            </span>
+            <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
+              {renderEquipmentTooltip(item.name)}
+            </div>
+          </div>
+        );
+      } else if (category === 'treasure') {
+        return (
+          <div key={`${category}-${idx}`} className="relative group inline-block">
+            <span 
+              className="text-sm text-gray-700 mr-2 mb-1 cursor-pointer hover:text-amber-600 transition-colors"
+              onMouseEnter={() => fetchItem(item.name)}
+            >
+              {renderTreasureBagIcon()}{item.name}{comma}
+            </span>
+            <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
+              {renderEquipmentTooltip(item.name)}
+            </div>
+          </div>
+        );
+      } else if (category === 'great_treasure') {
+        return (
+          <div key={`${category}-${idx}`} className="relative group inline-block">
+            <span 
+              className="mr-2 mb-1 cursor-pointer"
+              onMouseEnter={() => fetchItem(item.name)}
+            >
+              {renderGreatTreasure(item.name)}{comma}
+            </span>
+            <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
+              {renderEquipmentTooltip(item.name)}
+            </div>
+          </div>
+        );
+      } else if (category === 'spell') {
+        return (
+          <div key={`${category}-${idx}`} className="relative group inline-block">
+            <span 
+              className="text-sm text-blue-700 mr-2 mb-1 cursor-pointer hover:text-blue-500 transition-colors"
+              onMouseEnter={() => fetchItem(item.name)}
+            >
+              {item.name}{comma}
+            </span>
+            <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
+              {renderEquipmentTooltip(item.name)}
+            </div>
+          </div>
+        );
+      } else if (category === 'native') {
+        return (
+          <div key={`${category}-${idx}`} className="relative group inline-block">
+            <span 
+              className="mr-2 mb-1 cursor-pointer"
+              onMouseEnter={() => fetchItem(item.name)}
+            >
+              {renderNativeChit(item.name)}{comma}
+            </span>
+            <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
+              {renderEquipmentTooltip(item.name)}
+            </div>
+          </div>
+        );
+      }
+      return null;
+    };
+    
+    // Helper function to remove duplicates by name
+    const removeDuplicates = (items: any[]) => {
+      const seen = new Set<string>();
+      return items.filter(item => {
+        if (seen.has(item.name)) {
+          return false;
+        }
+        seen.add(item.name);
+        return true;
+      });
+    };
+
+    // Collect items by category and remove duplicates
+    const weapons = removeDuplicates([...flat(inventory?.weapons), ...flat(inventory?.other).filter(item => item.category === 'weapon')]);
+    const armor = removeDuplicates([...flat(inventory?.armor), ...flat(inventory?.other).filter(item => item.category === 'armor')]);
+    const treasures = removeDuplicates([...flat(inventory?.treasures), ...flat(inventory?.other).filter(item => item.category === 'treasure')]);
+    const greatTreasures = removeDuplicates([...flat(inventory?.great_treasures), ...flat(inventory?.other).filter(item => item.category === 'great_treasure')]);
+    const natives = removeDuplicates([...flat(inventory?.natives), ...flat(inventory?.other).filter(item => item.category === 'native')]);
+    const spells = removeDuplicates([...flat(inventory?.spells), ...flat(inventory?.other).filter(item => item.category === 'spell')]);
+    
+    // Create item lines
+    const regularItems = [...weapons, ...armor].map((item, idx, arr) => createItemElement(item, item.category, idx, arr));
+    const treasureItems = treasures.map((item, idx, arr) => createItemElement(item, 'treasure', idx, arr));
+    const greatTreasureItems = greatTreasures.map((item, idx, arr) => createItemElement(item, 'great_treasure', idx, arr));
+    const nativeItems = natives.map((item, idx, arr) => createItemElement(item, 'native', idx, arr));
+    const spellItems = spells.map((item, idx, arr) => createItemElement(item, 'spell', idx, arr));
+    
+    // Calculate stats
+    const stats = characterStats?.[characterName] || { gold: 0, fame: 0, notoriety: 0, startingSpells: 0 };
+    // Great treasures
+    const gtCount = greatTreasures.length;
+    // Learned spells: total spells - starting spells
+    const spellCount = spells.length;
+    const learnedSpells = spellCount - (stats.startingSpells || 0);
+
+    // Get final score and breakdown
+    const scoreData = finalScores?.[characterName];
+    let score = scoreData?.totalScore;
+    if (isDead) {
+      score = -100;
+    }
+
+    let scoreColor = 'text-black';
+    if (typeof score === 'number') {
+      if (score < 0) scoreColor = 'text-red-600';
+      else if (score > 0) scoreColor = 'text-green-600';
+    }
+
+    // Popover content for score breakdown
+    const popoverContent = isDead
+      ? (
+          <div className="bg-white border border-gray-300 rounded shadow-lg p-3 text-xs text-gray-900 z-50 min-w-[220px]">
+            <div className="font-bold mb-1">Scoring Breakdown</div>
+            <div className="text-xs text-gray-700">
+              <div className="font-semibold text-red-600 mb-1">Character is Dead</div>
+              <div>Automatic penalty: -100 points</div>
+              {scoreData && (
+                <div className="mt-2 text-gray-500 italic">Original calculated score: {scoreData.totalScore}</div>
+              )}
+            </div>
+          </div>
+        )
+      : scoreData && scoreData.categories
+        ? (
+          <div className="bg-white border border-gray-300 rounded shadow-lg p-3 text-xs text-gray-900 z-50 min-w-[220px]">
+            <div className="font-bold mb-1">Scoring Breakdown</div>
+            <table className="w-full text-xs">
+              <thead>
+                <tr className="border-b">
+                  <th className="text-left">Cat</th>
+                  <th>Actual</th>
+                  <th>Need</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Object.entries(scoreData.categories).map(([cat, d]: any) => (
+                  <tr key={cat}>
+                    <td className="pr-1 font-mono">{cat[0].toUpperCase()}</td>
+                    <td className="text-right">{d.actual ?? 0}</td>
+                    <td className="text-right">{d.required ?? 0}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )
+        : null;
+
+    return (
+      <div key={characterName} className="bg-white border-2 border-amber-300 rounded-lg p-4 mb-4 shadow-lg flex flex-row justify-between min-h-[200px]">
+        <div className="flex-1">
+          <div className="flex items-center mb-3">
+            <div className="w-12 h-12 mr-3 relative">
+              <img
+                src={getCharacterIconPath(characterName)}
+                alt={`${characterName} icon`}
+                className="w-full h-full object-contain"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                }}
+              />
+            </div>
+            <div className="flex flex-col">
+              <div className="flex items-center">
+                <h4 className="text-lg font-bold text-amber-800 mr-2">{characterName}</h4>
+                {isDead && (
+                  <span title="Dead" className="ml-2 text-2xl">👻</span>
+                )}
+              </div>
+              <p className="text-sm text-gray-600">({playerName})</p>
+            </div>
+          </div>
+          
+          {/* Items organized by category */}
+          <div className="space-y-2">
+            {/* Regular items (weapons/armor) */}
+            {regularItems.length > 0 && (
+              <div className="flex flex-wrap items-center">
+                {regularItems}
+              </div>
+            )}
+            
+            {/* Treasures */}
+            {treasureItems.length > 0 && (
+              <div className="flex flex-wrap items-center">
+                {treasureItems}
+              </div>
+            )}
+            
+            {/* Great Treasures */}
+            {greatTreasureItems.length > 0 && (
+              <div className="flex flex-wrap items-center">
+                {greatTreasureItems}
+              </div>
+            )}
+            
+            {/* Natives */}
+            {nativeItems.length > 0 && (
+              <div className="flex flex-wrap items-center">
+                {nativeItems}
+              </div>
+            )}
+            
+            {/* Spells (with extra spacing) */}
+            {spellItems.length > 0 && (
+              <>
+                <div className="h-2"></div> {/* Extra spacing */}
+                <div className="flex flex-wrap items-center">
+                  {spellItems}
+                </div>
+              </>
+            )}
+            
+            {/* No items message */}
+            {regularItems.length === 0 && treasureItems.length === 0 && greatTreasureItems.length === 0 && nativeItems.length === 0 && spellItems.length === 0 && (
+              <div className="flex flex-wrap items-center">
+                <span className="text-sm text-gray-500 italic">No items found</span>
+              </div>
+            )}
+          </div>
+        </div>
+        <div className="flex flex-col items-end justify-start text-xs font-mono text-amber-900 space-y-1 ml-4 relative">
+          <div><span className="font-bold">gt</span>: {gtCount}</div>
+          <div><span className="font-bold">s</span>: {learnedSpells}</div>
+          <div><span className="font-bold">f</span>: {stats.fame}</div>
+          <div><span className="font-bold">n</span>: {stats.notoriety}</div>
+          <div><span className="font-bold">g</span>: {stats.gold}</div>
+          {/* Final Score positioned at bottom */}
+          <div className="mt-auto pt-4">
+            <div
+              className={`text-base font-bold cursor-pointer ${scoreColor}`}
+              onMouseEnter={() => setScorePopover(characterName)}
+              onMouseLeave={() => setScorePopover(null)}
+            >
+              {typeof score === 'number' && `Score: ${score}`}
+              {scorePopover === characterName && (
+                <div className="absolute right-0 bottom-8 z-50">
+                  {popoverContent}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   // Extract character icon overlay data
   const characterIcons = useMemo(() => {
     if (!sessionData) return [];
@@ -652,20 +1072,47 @@ export default function SessionPage() {
 
   return (
     <div className="min-h-screen bg-amber-50">
-      {/* Session Overview - Centered at top */}
-      <div className="max-w-4xl mx-auto p-6">
+      {/* Session Overview - Full width to match columns below */}
+      <div className="w-full px-6">
         <div className="mb-8 p-6 bg-white border-2 border-amber-300 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-bold text-amber-800 mb-4">📊 Session Overview</h2>
-          {/* Player Info */}
-          <div className="mb-4">
-            <h3 className="text-lg font-bold text-amber-700 mb-2">👤 Players</h3>
-            {Object.entries(sessionData.players).map(([player, info]) => (
-              <div key={player} className="mb-2">
-                <span className="font-semibold text-amber-600">{player}:</span>{' '}
-                <span className="text-gray-700">{info.characters.join(', ')}</span>
+          <h2 className="text-3xl font-bold text-amber-800 mb-4 text-center">
+            {sessionName ? sessionName.mainTitle : '📊 Session Overview'}
+            {sessionName?.subtitle && (
+              <div className="text-lg text-amber-600 mt-2 font-normal">
+                {sessionName.subtitle}
               </div>
-            ))}
+            )}
+          </h2>
+          
+          {/* Character Boxes */}
+          <div className="mb-6">
+            <h3 className="text-xl font-bold text-amber-700 mb-4">👥 Characters</h3>
+            {(!characterStats || !characterInventories) ? (
+              <div className="text-center py-8">
+                <div className="text-lg text-amber-600">Loading character data...</div>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                {Object.entries(sessionData.players)
+                  .flatMap(([player, info]) => 
+                    info.characters.map(character => ({ character, player }))
+                  )
+                  .sort((a, b) => {
+                    const aIsDead = deadCharacters.has(a.character);
+                    const bIsDead = deadCharacters.has(b.character);
+                    // Live characters first, then dead characters
+                    if (aIsDead && !bIsDead) return 1;
+                    if (!aIsDead && bIsDead) return -1;
+                    // Within each group, sort alphabetically
+                    return a.character.localeCompare(b.character);
+                  })
+                  .map(({ character, player }) => 
+                    renderCharacterBox(character, player)
+                  )}
+              </div>
+            )}
           </div>
+          
           {/* Statistics */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="text-center p-3 bg-amber-100 rounded">
@@ -702,7 +1149,6 @@ export default function SessionPage() {
         
         {/* Session Log - Takes remaining space */}
         <div className="flex-1">
-          <h2 className="text-2xl font-bold text-amber-800 mb-6">Game Days</h2>
           {getFilteredDays(sessionData).map(([dayKey, dayData]) => renderDay(dayKey, dayData))}
         </div>
       </div>

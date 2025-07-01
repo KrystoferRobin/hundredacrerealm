@@ -58,6 +58,20 @@ async function processAllSessions() {
         cwd: __dirname 
       });
       
+      // Step 4: Extract character inventories
+      console.log('4. Extracting character inventories...');
+      execSync(`node extract_character_inventories.js ${sessionName}`, { 
+        stdio: 'inherit',
+        cwd: __dirname 
+      });
+      
+      // Step 5: Calculate final scores
+      console.log('5. Calculating final scores...');
+      execSync(`node calculate_scoring.js ${sessionName}`, { 
+        stdio: 'inherit',
+        cwd: __dirname 
+      });
+      
       console.log(`✅ ${sessionName} processed successfully!`);
       
     } catch (error) {

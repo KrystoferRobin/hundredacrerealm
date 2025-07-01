@@ -1,0 +1,14 @@
+{
+  "Magician": {
+    "id": "422",
+    "name": "Magician",
+    "startingGold": 10,
+    "victoryPoints": {
+      "greatTreasures": 0,
+      "spells": 0,
+      "fame": 0,
+      "notoriety": 0,
+      "gold": 0
+    }
+  }
+}
