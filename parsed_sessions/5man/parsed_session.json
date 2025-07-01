@@ -84,7 +84,12 @@
         {
           "character": "Berserker",
           "startLocation": "Borderland 1",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Waited Idly",
+              "result": ""
+            }
+          ],
           "endLocation": "Borderland 1",
           "player": "GM"
         },
@@ -115,7 +120,12 @@
         {
           "character": "Pilgrim",
           "startLocation": "Pine Woods 4",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the White Knight",
+              "result": ""
+            }
+          ],
           "endLocation": "Pine Woods 4",
           "player": "GM"
         }
@@ -433,14 +443,24 @@
         {
           "character": "Berserker",
           "startLocation": "Borderland 6",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Waited Idly",
+              "result": ""
+            }
+          ],
           "endLocation": "Borderland 6",
           "player": "GM"
         },
         {
           "character": "White Knight",
           "startLocation": "Borderland 6",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Waited Idly",
+              "result": ""
+            }
+          ],
           "endLocation": "Borderland 6",
           "player": "GM"
         },
@@ -2233,21 +2253,36 @@
         {
           "character": "Pilgrim",
           "startLocation": "Borderland 6",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Waited Idly",
+              "result": ""
+            }
+          ],
           "endLocation": "Borderland 6",
           "player": "GM"
         },
         {
           "character": "Amazon",
           "startLocation": "Borderland 6",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Waited Idly",
+              "result": ""
+            }
+          ],
           "endLocation": "Borderland 6",
           "player": "GM"
         },
         {
           "character": "White Knight",
           "startLocation": "Borderland 6",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Waited Idly",
+              "result": ""
+            }
+          ],
           "endLocation": "Borderland 6",
           "player": "GM"
         }
@@ -3129,7 +3164,12 @@
         {
           "character": "White Knight",
           "startLocation": "Borderland 2",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Waited Idly",
+              "result": ""
+            }
+          ],
           "endLocation": "Borderland 2",
           "player": "GM"
         },
@@ -3233,7 +3273,12 @@
         {
           "character": "Pilgrim",
           "startLocation": "Curst Valley 4",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the White Knight",
+              "result": ""
+            }
+          ],
           "endLocation": "Curst Valley 4",
           "player": "GM"
         },
@@ -3284,7 +3329,12 @@
         {
           "character": "Berserker",
           "startLocation": "Borderland 6",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Waited Idly",
+              "result": ""
+            }
+          ],
           "endLocation": "Borderland 6",
           "player": "GM"
         }
@@ -3497,14 +3547,24 @@
         {
           "character": "White Knight",
           "startLocation": "Evil Valley 4",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Evil Valley 4",
           "player": "GM"
         },
         {
           "character": "Pilgrim",
           "startLocation": "Evil Valley 4",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Evil Valley 4",
           "player": "GM"
         }
@@ -3592,14 +3652,24 @@
         {
           "character": "White Knight",
           "startLocation": "Curst Valley 2",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Curst Valley 2",
           "player": "GM"
         },
         {
           "character": "Pilgrim",
           "startLocation": "Evil Valley 4",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Evil Valley 4",
           "player": "GM"
         }
@@ -3707,7 +3777,12 @@
         {
           "character": "White Knight",
           "startLocation": "Curst Valley 5",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Curst Valley 5",
           "player": "GM"
         }
@@ -3862,14 +3937,24 @@
         {
           "character": "Soldier HQ",
           "startLocation": "Curst Valley 4",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Curst Valley 4",
           "player": "Unknown"
         },
         {
           "character": "White Knight",
           "startLocation": "Curst Valley 4",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Curst Valley 4",
           "player": "GM"
         }
@@ -4058,28 +4143,48 @@
         {
           "character": "Soldier HQ",
           "startLocation": "Curst Valley 4",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Curst Valley 4",
           "player": "Unknown"
         },
         {
           "character": "Woodsfolk HQ",
           "startLocation": "Curst Valley 4",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Curst Valley 4",
           "player": "Unknown"
         },
         {
           "character": "White Knight",
           "startLocation": "Curst Valley 4",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Curst Valley 4",
           "player": "GM"
         },
         {
           "character": "Pilgrim",
           "startLocation": "Curst Valley 4",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Curst Valley 4",
           "player": "GM"
         }
@@ -4163,28 +4268,48 @@
         {
           "character": "Soldier HQ",
           "startLocation": "Bad Valley 1",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Bad Valley 1",
           "player": "Unknown"
         },
         {
           "character": "Woodsfolk HQ",
           "startLocation": "Bad Valley 1",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Bad Valley 1",
           "player": "Unknown"
         },
         {
           "character": "White Knight",
           "startLocation": "Bad Valley 1",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Bad Valley 1",
           "player": "GM"
         },
         {
           "character": "Pilgrim",
           "startLocation": "Bad Valley 1",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Bad Valley 1",
           "player": "GM"
         }
@@ -4284,14 +4409,24 @@
         {
           "character": "Soldier HQ",
           "startLocation": "Bad Valley 1",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Bad Valley 1",
           "player": "Unknown"
         },
         {
           "character": "White Knight",
           "startLocation": "Bad Valley 1",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Bad Valley 1",
           "player": "GM"
         }
@@ -4552,7 +4687,12 @@
         {
           "character": "Berserker",
           "startLocation": "Borderland 6",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Waited Idly",
+              "result": ""
+            }
+          ],
           "endLocation": "Borderland 6",
           "player": "GM"
         }
@@ -4678,7 +4818,12 @@
         {
           "character": "Pilgrim",
           "startLocation": "Borderland 2",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the White Knight",
+              "result": ""
+            }
+          ],
           "endLocation": "Borderland 2",
           "player": "GM"
         },
@@ -5557,7 +5702,12 @@
         {
           "character": "Pilgrim",
           "startLocation": "Borderland 3",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the White Knight",
+              "result": ""
+            }
+          ],
           "endLocation": "Borderland 3",
           "player": "GM"
         },
@@ -5983,7 +6133,12 @@
         {
           "character": "Pilgrim",
           "startLocation": "Borderland 6",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the White Knight",
+              "result": ""
+            }
+          ],
           "endLocation": "Borderland 6",
           "player": "GM"
         },
@@ -6674,21 +6829,36 @@
         {
           "character": "Soldier HQ",
           "startLocation": "Bad Valley 4",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Bad Valley 4",
           "player": "Unknown"
         },
         {
           "character": "White Knight",
           "startLocation": "Bad Valley 4",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Bad Valley 4",
           "player": "GM"
         },
         {
           "character": "Pilgrim",
           "startLocation": "Bad Valley 4",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Bad Valley 4",
           "player": "GM"
         },
@@ -6780,28 +6950,48 @@
         {
           "character": "Soldier HQ",
           "startLocation": "Caves 5",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Caves 5",
           "player": "Unknown"
         },
         {
           "character": "Woodsfolk HQ",
           "startLocation": "Caves 5",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Caves 5",
           "player": "Unknown"
         },
         {
           "character": "White Knight",
           "startLocation": "Caves 5",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Caves 5",
           "player": "GM"
         },
         {
           "character": "Pilgrim",
           "startLocation": "Caves 5",
-          "actions": [],
+          "actions": [
+            {
+              "action": "Followed the Amazon",
+              "result": ""
+            }
+          ],
           "endLocation": "Caves 5",
           "player": "GM"
         }

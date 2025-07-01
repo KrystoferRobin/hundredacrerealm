@@ -1,9 +1,0 @@
-Month 1, Day 28
-host
-========================================
-__battle__
----- DISENGAGEMENT ----
-__battle__
-H Dragon won't disengage when fighting a character
-__battle__
-2 consecutive rounds of no damage, fatigue, or spellcasting.

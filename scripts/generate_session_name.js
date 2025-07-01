@@ -6,10 +6,14 @@ function randomChoice(arr) {
 }
 
 function titleCase(str) {
-    return str.replace(/\b\w/g, c => c.toUpperCase());
+    // Preserve lowercase 's in possessives by temporarily replacing them
+    str = str.replace(/'s/g, '___POSSESSIVE___');
+    str = str.replace(/\b\w/g, c => c.toUpperCase());
+    str = str.replace(/___POSSESSIVE___/g, "'s");
+    return str;
 }
 
-function generateSessionName(sessionData, mapLocations) {
+function generateSessionName(sessionData, mapLocations, finalScores) {
     try {
         // Extract key data from session
         const characters = new Set();
@@ -122,7 +126,87 @@ function generateSessionName(sessionData, mapLocations) {
             .sort(([,a], [,b]) => b - a);
         mainLocation = sortedLocations[0] ? sortedLocations[0][0] : 'Realm';
         
-        // --- VOCABULARY POOLS ---
+        // --- SCORING-BASED TITLE LOGIC ---
+        let scoringTitle = '';
+        let scoringSubtitle = '';
+        let scoringChar = null;
+        let scoringScore = null;
+        let scoringLocation = null;
+        if (finalScores) {
+            // Find highest scoring character
+            let maxScore = -Infinity;
+            let maxChar = null;
+            let allScores = [];
+            
+            // First, collect all valid scores
+            for (const [char, data] of Object.entries(finalScores)) {
+                if (typeof data.totalScore === 'number') {
+                    allScores.push({ char, score: data.totalScore });
+                }
+            }
+            
+            if (allScores.length > 0) {
+                // Check if all scores are negative
+                const allNegative = allScores.every(({ score }) => score < 0);
+                
+                if (allNegative) {
+                    // If all scores are negative, find the one closest to zero (least negative)
+                    let closestToZero = allScores[0];
+                    for (const scoreData of allScores) {
+                        if (scoreData.score > closestToZero.score) { // Closer to zero
+                            closestToZero = scoreData;
+                        }
+                    }
+                    maxScore = closestToZero.score;
+                    maxChar = closestToZero.char;
+                } else {
+                    // If there are positive scores, find the highest positive score
+                    for (const scoreData of allScores) {
+                        if (scoreData.score > maxScore) {
+                            maxScore = scoreData.score;
+                            maxChar = scoreData.char;
+                        }
+                    }
+                }
+            }
+            
+            if (maxChar) {
+                scoringChar = maxChar;
+                scoringScore = maxScore;
+                // Find most visited location for this character
+                const charLocCounts = {};
+                Object.values(sessionData.days).forEach(day => {
+                    if (day.characterTurns) {
+                        day.characterTurns.forEach(turn => {
+                            if (turn.character === scoringChar && turn.startLocation) {
+                                const location = turn.startLocation.split(' ')[0];
+                                charLocCounts[location] = (charLocCounts[location] || 0) + 1;
+                            }
+                        });
+                    }
+                });
+                const sortedCharLocs = Object.entries(charLocCounts).sort(([,a],[,b]) => b - a);
+                scoringLocation = sortedCharLocs[0] ? sortedCharLocs[0][0] : mainLocation;
+                // Generate scoring-based title
+                if (scoringScore > 0) {
+                    // Epic/Heroic
+                    const epicWords = ['Epic Triumph', 'Legendary Feat', 'Glorious Raid', 'Heroic Victory', 'Fabled Exploit', 'Triumphant Quest', 'Grand Adventure', 'Vault Raid', 'Saga of Glory', 'Crowning Achievement'];
+                    scoringTitle = `${scoringChar}'s ${randomChoice(epicWords)}`;
+                    scoringSubtitle = `A tale of valor in the ${scoringLocation}`;
+                } else if (scoringScore === 0) {
+                    // Neutral
+                    const neutralWords = ['Passage', 'Journey', 'Sojourn', 'Wanderings', 'Borderland Passage', 'Realm Trek', 'Wandering', 'Pilgrimage', 'Expedition', 'Adventure'];
+                    scoringTitle = `${scoringChar}'s ${randomChoice(neutralWords)}`;
+                    scoringSubtitle = `A story of survival in the ${scoringLocation}`;
+                } else {
+                    // Failure/Misfortune
+                    const failWords = ['Misfortune', 'Folly', 'Disaster', 'Downfall', 'Tragedy', 'Calamity', 'Debacle', 'Ruin', 'Woe', 'Lost Hope', 'Ill Fate', 'Doom', 'Collapse', 'Despair', 'Defeat'];
+                    scoringTitle = `${scoringChar}'s ${randomChoice(failWords)}`;
+                    scoringSubtitle = `A tale of hardship and loss in the ${scoringLocation}`;
+                }
+            }
+        }
+        // --- GENERIC TITLE LOGIC (as before) ---
         const questWords = [
             'Quest', 'Adventure', 'Expedition', 'Journey', 'Saga', 'Odyssey', 'Campaign', 
             'Foray', 'Pursuit', 'Pilgrimage', 'Chronicle', 'Legend', 'Tale', 'Voyage', 
@@ -206,23 +290,20 @@ function generateSessionName(sessionData, mapLocations) {
         
         // Select main title and subtitle (avoiding duplicates)
         let mainTitle = randomChoice(mainTitleTemplates);
-        let subtitle = randomChoice(subtitleTemplates);
+        let subtitle = scoringTitle ? scoringTitle : randomChoice(mainTitleTemplates);
         
-        // Try to find a good combination (avoid duplicates)
-        let attempts = 0;
-        while ((mainTitle === subtitle || mainTitle.includes(subtitle) || subtitle.includes(mainTitle)) && attempts < 10) {
-            subtitle = randomChoice(subtitleTemplates);
-            attempts++;
+        // Add flourish to subtitle if scoringSubtitle is available
+        if (scoringSubtitle) {
+            subtitle = `${subtitle} — ${scoringSubtitle}`;
         }
         
-        // Fallback if no good combination found
-        if (mainTitle === subtitle) {
-            subtitle = `The ${mainLocation} ${randomChoice(questWords)}`;
-        }
+        // Capitalize
+        mainTitle = titleCase(mainTitle);
+        subtitle = titleCase(subtitle);
         
         return {
-            mainTitle: titleCase(mainTitle),
-            subtitle: titleCase(subtitle),
+            mainTitle,
+            subtitle,
             characters: characterArray.length,
             days: Object.keys(sessionData.days).length,
             battles: battles.length

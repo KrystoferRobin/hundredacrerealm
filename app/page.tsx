@@ -1028,7 +1028,7 @@ export default function Home() {
                           </div>
                           {session.subtitle && (
                             <div className="text-xs text-[#6b3e26] font-serif mt-0.5" style={{ opacity: 0.85 }}>
-                              (<span>{session.subtitle}</span>)
+                              {session.subtitle}
                             </div>
                           )}
                         </div>

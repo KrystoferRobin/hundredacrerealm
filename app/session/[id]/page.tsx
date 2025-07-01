@@ -72,18 +72,47 @@ interface Item {
   parts: any[];
 }
 
+// Helper to map action codes to action names
+const BLOCKED_ACTION_MAP: Record<string, string> = {
+  'M-': 'Move',
+  'H': 'Hide',
+  'S': 'Search',
+  'T': 'Trade',
+  'R': 'Rest',
+  'A': 'Alert',
+  'F': 'Follow',
+  'EX': 'Enchant',
+  'E': 'Enchant',
+  'P': 'Peer',
+  'RE': 'Remove Enchant',
+  'C': 'Cache',
+};
+
+function getBlockedActionType(result: string) {
+  // result: 'Cannot perform action M-CV2' or similar
+  const code = result.replace('Cannot perform action ', '');
+  for (const prefix in BLOCKED_ACTION_MAP) {
+    if (code.startsWith(prefix)) {
+      return BLOCKED_ACTION_MAP[prefix];
+    }
+  }
+  return 'Action';
+}
+
 export default function SessionPage() {
   const params = useParams();
   const sessionId = params.id as string;
   const [sessionData, setSessionData] = useState<SessionData | null>(null);
   const [loading, setLoading] = useState(true);
   const [itemCache, setItemCache] = useState<Record<string, Item>>({});
-  const [sessionName, setSessionName] = useState<{ mainTitle: string; subtitle: string } | null>(null);
+  const [sessionTitles, setSessionTitles] = useState<{ mainTitle: string; subtitle: string } | null>(null);
   const [characterInventories, setCharacterInventories] = useState<any>(null);
   const [deadCharacters, setDeadCharacters] = useState<Set<string>>(new Set());
   const [characterStats, setCharacterStats] = useState<any>(null);
   const [finalScores, setFinalScores] = useState<any>(null);
   const [scorePopover, setScorePopover] = useState<string | null>(null);
+  const [selectedDay, setSelectedDay] = useState<string>('1_1');
+  const [selectedMonth, setSelectedMonth] = useState<number>(1);
 
   useEffect(() => {
     const fetchSessionData = async () => {
@@ -96,17 +125,30 @@ export default function SessionPage() {
           console.log('SessionPage: Session data loaded:', data);
           setSessionData(data);
           
-          // Fetch session name from game-sessions API
-          const nameResponse = await fetch('/api/game-sessions');
-          if (nameResponse.ok) {
-            const sessions = await nameResponse.json();
-            const session = sessions.find((s: any) => s.id === sessionId);
-            if (session && session.mainTitle) {
-              setSessionName({
-                mainTitle: session.mainTitle,
-                subtitle: session.subtitle || ''
+          // Set initial selected day and month to the first day
+          const dayKeys = Object.keys(data.days).sort((a, b) => {
+            const [am, ad] = a.split('_').map(Number);
+            const [bm, bd] = b.split('_').map(Number);
+            return am !== bm ? am - bm : ad - bd;
+          });
+          if (dayKeys.length > 0) {
+            setSelectedDay(dayKeys[0]);
+            const [firstMonth] = dayKeys[0].split('_').map(Number);
+            setSelectedMonth(firstMonth);
+          }
+          
+          // Fetch session titles from session-titles API
+          try {
+            const titlesResponse = await fetch(`/api/session/${sessionId}/session-titles`);
+            if (titlesResponse.ok) {
+              const titlesData = await titlesResponse.json();
+              setSessionTitles({
+                mainTitle: titlesData.mainTitle,
+                subtitle: titlesData.subtitle
               });
             }
+          } catch (error) {
+            console.error('Failed to fetch session titles:', error);
           }
         } else {
           console.error('SessionPage: Failed to load session data');
@@ -492,7 +534,11 @@ export default function SessionPage() {
                dayData.battles.length > 0 || 
                dayData.monsterSpawns.length > 0;
       })
-      .sort(([a], [b]) => a.localeCompare(b));
+      .sort(([a], [b]) => {
+        const [am, ad] = a.split('_').map(Number);
+        const [bm, bd] = b.split('_').map(Number);
+        return am !== bm ? am - bm : ad - bd;
+      });
   };
 
   const addSkulls = (text: string) => {
@@ -620,13 +666,136 @@ export default function SessionPage() {
     );
   };
 
+  // Helper function to check if combat has meaningful actions
+  const hasMeaningfulCombat = (dayData: DayData) => {
+    if (!dayData.battles || dayData.battles.length === 0) return false;
+    
+    return dayData.battles.some(battle => {
+      // Check if any round has meaningful actions beyond just END
+      return battle.rounds.some(round => {
+        const hasNonEndActions = round.actions.some(action => 
+          !action.action.includes('Presses the END combat button') &&
+          !action.action.includes('END combat')
+        );
+        const hasAttacks = round.attacks && round.attacks.length > 0;
+        const hasDamage = round.damage && round.damage.length > 0;
+        const hasDeaths = round.deaths && round.deaths.length > 0;
+        const hasFameGains = round.fameGains && round.fameGains.length > 0;
+        const hasSpellCasting = round.spellCasting && round.spellCasting.length > 0;
+        const hasFatigue = round.fatigue && round.fatigue.length > 0;
+        const hasDisengagement = round.disengagement && round.disengagement.length > 0;
+        
+        return hasNonEndActions || hasAttacks || hasDamage || hasDeaths || 
+               hasFameGains || hasSpellCasting || hasFatigue || hasDisengagement;
+      });
+    });
+  };
+
+  // Calendar component
+  const renderCalendar = () => {
+    if (!sessionData) return null;
+    
+    const dayKeys = Object.keys(sessionData.days).sort((a, b) => {
+      const [am, ad] = a.split('_').map(Number);
+      const [bm, bd] = b.split('_').map(Number);
+      return am !== bm ? am - bm : ad - bd;
+    });
+    
+    // Group days by month
+    const months: { [key: number]: string[] } = {};
+    dayKeys.forEach(dayKey => {
+      const [month] = dayKey.split('_').map(Number);
+      if (!months[month]) months[month] = [];
+      months[month].push(dayKey);
+    });
+    
+    const sortedMonths = Object.keys(months).map(Number).sort((a, b) => a - b);
+    const currentMonthDays = months[selectedMonth] || [];
+    
+    const goToPreviousMonth = () => {
+      const currentIndex = sortedMonths.indexOf(selectedMonth);
+      if (currentIndex > 0) {
+        setSelectedMonth(sortedMonths[currentIndex - 1]);
+      }
+    };
+    
+    const goToNextMonth = () => {
+      const currentIndex = sortedMonths.indexOf(selectedMonth);
+      if (currentIndex < sortedMonths.length - 1) {
+        setSelectedMonth(sortedMonths[currentIndex + 1]);
+      }
+    };
+    
+    return (
+      <div className="mb-6 p-4 bg-white border-2 border-amber-300 rounded-lg shadow-lg">
+        <div className="flex items-center justify-between mb-4">
+          <button
+            onClick={goToPreviousMonth}
+            disabled={sortedMonths.indexOf(selectedMonth) === 0}
+            className="p-2 text-amber-600 hover:text-amber-800 disabled:text-gray-400 disabled:cursor-not-allowed"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <h3 className="text-lg font-bold text-amber-800">📅 Month {selectedMonth}</h3>
+          <button
+            onClick={goToNextMonth}
+            disabled={sortedMonths.indexOf(selectedMonth) === sortedMonths.length - 1}
+            className="p-2 text-amber-600 hover:text-amber-800 disabled:text-gray-400 disabled:cursor-not-allowed"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+        
+        <div className="grid grid-cols-7 gap-1 mb-6">
+          {currentMonthDays.map(dayKey => {
+            const [, day] = dayKey.split('_').map(Number);
+            const dayData = sessionData.days[dayKey];
+            const hasMeaningfulCombatAction = hasMeaningfulCombat(dayData);
+            const hasActions = dayData.characterTurns && dayData.characterTurns.length > 0;
+            
+            return (
+              <button
+                key={dayKey}
+                onClick={() => setSelectedDay(dayKey)}
+                className={`
+                  p-2 text-sm font-medium rounded border transition-colors
+                  ${selectedDay === dayKey 
+                    ? 'bg-amber-500 text-white border-amber-600' 
+                    : 'bg-amber-50 text-amber-800 border-amber-200 hover:bg-amber-100'
+                  }
+                  ${hasMeaningfulCombatAction ? 'ring-2 ring-red-400' : ''}
+                  ${hasActions ? 'font-bold' : 'font-normal'}
+                `}
+                title={`Month ${selectedMonth}, Day ${day}${hasMeaningfulCombatAction ? ' - Combat!' : ''}${hasActions ? ' - Actions' : ''}`}
+              >
+                {day}
+                {hasMeaningfulCombatAction && <span className="block text-xs">⚔️</span>}
+              </button>
+            );
+          })}
+        </div>
+        
+        {/* Day Log integrated in the same panel */}
+        {sessionData.days[selectedDay] && (
+          <div className="border-t border-amber-200 pt-4">
+            {renderDay(selectedDay, sessionData.days[selectedDay])}
+          </div>
+        )}
+      </div>
+    );
+  };
+
   const renderDay = (dayKey: string, dayData: DayData) => {
     const dayNumber = dayKey.replace('day_', '').replace('.txt', '');
     const [month, day] = dayNumber.split('_');
     
     return (
-      <div key={dayKey} className="mb-8 p-6 bg-white border-2 border-amber-300 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-bold text-amber-800 mb-4">
+      <div key={dayKey}>
+        <h2 className="text-xl font-bold text-amber-800 mb-4">
           Month {month}, Day {day}
           {dayData.monsterDieRoll && (
             <span className="ml-4 text-lg text-gray-600">
@@ -651,14 +820,46 @@ export default function SessionPage() {
                 {turn.actions.length > 0 && (
                   <div>
                     <h5 className="font-semibold text-amber-700 mb-1">Actions:</h5>
-                    {turn.actions.map((action, actionIndex) => (
-                      <div key={actionIndex} className="text-sm text-gray-700 mb-1">
-                        <span className="font-medium">{renderTextWithItems(action.action)}</span>
-                        {action.result && (
-                          <span className="text-gray-500"> - {renderTextWithItems(action.result)}</span>
-                        )}
-                      </div>
-                    ))}
+                    {(() => {
+                      let blockedFound = false;
+                      let hideSucceeded = false;
+                      return turn.actions.map((action, actionIndex) => {
+                        if (blockedFound) return null;
+                        // BLOCKED logic
+                        if (action.action === 'BLOCKED' && action.result && action.result.startsWith('Cannot perform action')) {
+                          const actionType = getBlockedActionType(action.result);
+                          blockedFound = true;
+                          return (
+                            <div key={actionIndex} className="text-sm text-gray-700 mb-1">
+                              <span className="font-medium">{actionType}</span>
+                              <span className="text-red-600 font-semibold"> - Blocked</span>
+                            </div>
+                          );
+                        }
+                        // Hide logic
+                        if (action.action === 'Hide') {
+                          if (action.result === 'N/A') return null;
+                          if (hideSucceeded) return null;
+                          if (action.result === 'Succeeded') {
+                            hideSucceeded = true;
+                            return (
+                              <div key={actionIndex} className="text-sm text-gray-700 mb-1">
+                                <span className="font-medium">{renderTextWithItems(action.action)}</span>
+                                <span className="text-green-600 font-semibold"> - {renderTextWithItems(action.result)}</span>
+                              </div>
+                            );
+                          }
+                        }
+                        return (
+                          <div key={actionIndex} className="text-sm text-gray-700 mb-1">
+                            <span className="font-medium">{renderTextWithItems(action.action)}</span>
+                            {action.result && (
+                              <span className="text-gray-500"> - {renderTextWithItems(action.result)}</span>
+                            )}
+                          </div>
+                        );
+                      });
+                    })()}
                   </div>
                 )}
               </div>
@@ -679,10 +880,30 @@ export default function SessionPage() {
         )}
 
         {/* Combat */}
-        {dayData.battles.length > 0 && (
+        {hasMeaningfulCombat(dayData) && (
           <div>
             <h3 className="text-xl font-bold text-red-700 mb-3">⚔️ Combat</h3>
-            {dayData.battles.map((combat, index) => renderCombat(combat, index))}
+            {dayData.battles
+              .filter(combat => {
+                // Filter out combats that only have END actions
+                return combat.rounds.some(round => {
+                  const hasNonEndActions = round.actions.some(action => 
+                    !action.action.includes('Presses the END combat button') &&
+                    !action.action.includes('END combat')
+                  );
+                  const hasAttacks = round.attacks && round.attacks.length > 0;
+                  const hasDamage = round.damage && round.damage.length > 0;
+                  const hasDeaths = round.deaths && round.deaths.length > 0;
+                  const hasFameGains = round.fameGains && round.fameGains.length > 0;
+                  const hasSpellCasting = round.spellCasting && round.spellCasting.length > 0;
+                  const hasFatigue = round.fatigue && round.fatigue.length > 0;
+                  const hasDisengagement = round.disengagement && round.disengagement.length > 0;
+                  
+                  return hasNonEndActions || hasAttacks || hasDamage || hasDeaths || 
+                         hasFameGains || hasSpellCasting || hasFatigue || hasDisengagement;
+                });
+              })
+              .map((combat, index) => renderCombat(combat, index))}
           </div>
         )}
       </div>
@@ -1076,10 +1297,10 @@ export default function SessionPage() {
       <div className="w-full px-6">
         <div className="mb-8 p-6 bg-white border-2 border-amber-300 rounded-lg shadow-lg">
           <h2 className="text-3xl font-bold text-amber-800 mb-4 text-center">
-            {sessionName ? sessionName.mainTitle : '📊 Session Overview'}
-            {sessionName?.subtitle && (
+            {sessionTitles ? sessionTitles.mainTitle : '📊 Session Overview'}
+            {sessionTitles?.subtitle && (
               <div className="text-lg text-amber-600 mt-2 font-normal">
-                {sessionName.subtitle}
+                {sessionTitles.subtitle}
               </div>
             )}
           </h2>
@@ -1149,7 +1370,7 @@ export default function SessionPage() {
         
         {/* Session Log - Takes remaining space */}
         <div className="flex-1">
-          {getFilteredDays(sessionData).map(([dayKey, dayData]) => renderDay(dayKey, dayData))}
+          {renderCalendar()}
         </div>
       </div>
     </div>

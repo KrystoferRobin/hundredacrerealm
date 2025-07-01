@@ -23,7 +23,11 @@ interface SessionData {
 export async function GET() {
   try {
     const sessionsDir = path.join(process.cwd(), 'parsed_sessions');
-    
+    const titlesPath = path.join(process.cwd(), 'data', 'session_titles.json');
+    let sessionTitles = {};
+    if (fs.existsSync(titlesPath)) {
+      sessionTitles = JSON.parse(fs.readFileSync(titlesPath, 'utf8'));
+    }
     if (!fs.existsSync(sessionsDir)) {
       return NextResponse.json([]);
     }
@@ -64,29 +68,36 @@ export async function GET() {
             });
           });
 
-          // Generate session name and stats
+          // Use pregenerated session titles if available
           let mainTitle = sessionData.sessionName;
           let subtitle = '';
           let characters = uniqueCharacters.size;
           let days = Object.keys(sessionData.days).length;
           let battles = totalBattles;
           let finalDay = '';
-          try {
-            const nameData = generateSessionName(sessionData, mapLocations);
-            mainTitle = nameData.mainTitle;
-            subtitle = nameData.subtitle;
-            characters = nameData.characters;
-            days = nameData.days;
-            battles = nameData.battles;
-            // Calculate final day string (e.g. 2m3d)
-            const finalDayNum = days > 0 ? days - 1 : 0;
-            const months = Math.floor(finalDayNum / 28) + 1;
-            const dayNum = (finalDayNum % 28) + 1;
-            finalDay = `${months}m${dayNum}d`;
-          } catch (e) {
-            // fallback to old
-            finalDay = '';
+          if (sessionTitles[folder]) {
+            mainTitle = sessionTitles[folder].mainTitle;
+            subtitle = sessionTitles[folder].subtitle;
+            characters = sessionTitles[folder].characters;
+            days = sessionTitles[folder].days;
+            battles = sessionTitles[folder].battles;
+          } else {
+            try {
+              const nameData = generateSessionName(sessionData, mapLocations);
+              mainTitle = nameData.mainTitle;
+              subtitle = nameData.subtitle;
+              characters = nameData.characters;
+              days = nameData.days;
+              battles = nameData.battles;
+            } catch (e) {
+              // fallback to old
+            }
           }
+          // Calculate final day string (e.g. 2m3d)
+          const finalDayNum = days > 0 ? days - 1 : 0;
+          const months = Math.floor(finalDayNum / 28) + 1;
+          const dayNum = (finalDayNum % 28) + 1;
+          finalDay = `${months}m${dayNum}d`;
 
           // Get file stats for date
           const stats = fs.statSync(sessionPath);

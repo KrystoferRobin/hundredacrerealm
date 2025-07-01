@@ -72,8 +72,11 @@ export default function GameLogsPage() {
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h2 className="text-2xl font-bold text-amber-800 mb-2">
-                      {session.mainTitle && session.subtitle ? `${session.mainTitle} -OR- ${session.subtitle}` : session.mainTitle || session.name}
+                      {session.mainTitle || session.name}
                     </h2>
+                    {session.subtitle && (
+                      <p className="text-lg text-amber-700 mb-1">{session.subtitle}</p>
+                    )}
                     <p className="text-amber-600">Last modified: {formatDate(session.lastModified)}</p>
                   </div>
                   <a
