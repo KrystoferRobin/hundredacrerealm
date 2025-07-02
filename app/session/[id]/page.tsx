@@ -159,19 +159,7 @@ export default function SessionPage() {
         setLoading(false);
       }
 
-      // Fetch character inventories
-      try {
-        const invRes = await fetch(`/api/session/${sessionId}/character-inventories`);
-        if (invRes.ok) {
-          const invData = await invRes.json();
-          console.log('Loaded character inventories:', invData);
-          setCharacterInventories(invData);
-        } else {
-          console.error('Failed to load character inventories, status:', invRes.status);
-        }
-      } catch (e) { 
-        console.error('Failed to load character inventories:', e);
-      }
+      // Character inventories will be fetched in a separate useEffect to avoid race conditions
     };
 
     if (sessionId) {
@@ -209,12 +197,22 @@ export default function SessionPage() {
 
   useEffect(() => {
     const fetchStats = async () => {
+      if (!sessionId) return;
+      
+      console.log('SessionPage: Fetching character stats for:', sessionId);
       try {
         const res = await fetch(`/api/session/${sessionId}/character-stats`);
+        console.log('SessionPage: Character stats response status:', res.status);
         if (res.ok) {
-          setCharacterStats(await res.json());
+          const statsData = await res.json();
+          console.log('SessionPage: Character stats loaded:', statsData);
+          setCharacterStats(statsData);
+        } else {
+          console.error('SessionPage: Failed to load character stats, status:', res.status);
+          setCharacterStats(null);
         }
       } catch (e) {
+        console.error('SessionPage: Error fetching character stats:', e);
         setCharacterStats(null);
       }
     };
@@ -224,12 +222,22 @@ export default function SessionPage() {
   // Fetch character inventories
   useEffect(() => {
     const fetchInventories = async () => {
+      if (!sessionId) return;
+      
+      console.log('SessionPage: Fetching character inventories for:', sessionId);
       try {
         const res = await fetch(`/api/session/${sessionId}/character-inventories`);
+        console.log('SessionPage: Character inventories response status:', res.status);
         if (res.ok) {
-          setCharacterInventories(await res.json());
+          const invData = await res.json();
+          console.log('SessionPage: Character inventories loaded:', invData);
+          setCharacterInventories(invData);
+        } else {
+          console.error('SessionPage: Failed to load character inventories, status:', res.status);
+          setCharacterInventories(null);
         }
       } catch (e) {
+        console.error('SessionPage: Error fetching character inventories:', e);
         setCharacterInventories(null);
       }
     };
