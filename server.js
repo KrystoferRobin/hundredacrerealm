@@ -19,7 +19,7 @@ console.log(`   User: ${process.env.USER || 'unknown'}`);
 console.log(`   UID: ${process.getuid ? process.getuid() : 'unknown'}`);
 
 // Function to wait for volume mount to be ready
-function waitForVolumeMount(maxAttempts = 30, delay = 1000) {
+function waitForVolumeMount(maxAttempts = 5, delay = 1000) {
   return new Promise((resolve, reject) => {
     let attempts = 0;
     
@@ -65,33 +65,22 @@ function waitForVolumeMount(maxAttempts = 30, delay = 1000) {
         }
       }
       
-      if (exists && accessible && contents.length > 0) {
-        // Only resolve if we find actual session folders, not test files or macOS system files
-        const sessionFolders = contents.filter(item => 
-          !item.startsWith('test-') && 
-          !item.startsWith('.') && 
-          !item.startsWith('._') && 
-          item !== '.DS_Store' &&
-          item !== '.AppleDouble' &&
-          item !== '.LSOverride' &&
-          fs.statSync(path.join(SESSIONS_DIR, item)).isDirectory()
-        );
-        
-        if (sessionFolders.length > 0) {
-          console.log(`Volume mount ready! Found ${sessionFolders.length} session folders in ${SESSIONS_DIR}`);
-          resolve();
-        } else {
-          console.log(`Volume mount exists but no session folders found yet (attempt ${attempts}/${maxAttempts})`);
-          if (attempts >= maxAttempts) {
-            reject(new Error(`No session folders found after ${maxAttempts} attempts`));
-          } else {
-            setTimeout(checkMount, delay);
-          }
-        }
+      if (exists && accessible) {
+        // Resolve if directory exists and is accessible, even if empty
+        console.log(`Volume mount ready! Directory ${SESSIONS_DIR} is accessible`);
+        resolve();
       } else {
         console.log(`Volume mount not ready yet (attempt ${attempts}/${maxAttempts})`);
         if (attempts >= maxAttempts) {
-          reject(new Error(`Volume mount not found after ${maxAttempts} attempts`));
+          console.log(`Volume mount not found after ${maxAttempts} attempts, creating directory...`);
+          try {
+            fs.mkdirSync(SESSIONS_DIR, { recursive: true });
+            console.log(`Created sessions directory: ${SESSIONS_DIR}`);
+            resolve();
+          } catch (error) {
+            console.error(`Failed to create sessions directory: ${error.message}`);
+            reject(new Error(`Volume mount not found and could not create directory after ${maxAttempts} attempts`));
+          }
         } else {
           setTimeout(checkMount, delay);
         }

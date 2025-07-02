@@ -151,8 +151,29 @@ async function processAllSessions() {
         throw error;
       }
       
-      // Step 4: Extract character inventories
-      console.log('4. Extracting character inventories...');
+      // Step 4: Extract character stats
+      console.log('4. Extracting character stats...');
+      try {
+        const xmlPath = path.join(__dirname, '../public/parsed_sessions', sessionName, 'extracted_game.xml');
+        const statsPath = path.join(__dirname, '../public/parsed_sessions', sessionName, 'character_stats.json');
+        const result = execSync(`node extract_character_stats.js "${xmlPath}" "${statsPath}"`, { 
+          stdio: 'pipe',
+          cwd: __dirname,
+          encoding: 'utf8',
+          timeout: 30000 // 30 second timeout
+        });
+        console.log('✓ Character stats extracted successfully');
+        console.log('Output:', result);
+      } catch (error) {
+        console.error(`✗ Character stats extraction failed: ${error.message}`);
+        console.error(`Exit code: ${error.status}`);
+        console.error(`Command output: ${error.stdout || 'No output'}`);
+        console.error(`Error output: ${error.stderr || 'No error output'}`);
+        throw error;
+      }
+      
+      // Step 5: Extract character inventories
+      console.log('5. Extracting character inventories...');
       try {
         const result = execSync(`node extract_character_inventories.js ${sessionName}`, { 
           stdio: 'pipe',
@@ -170,8 +191,8 @@ async function processAllSessions() {
         throw error;
       }
       
-      // Step 5: Calculate final scores
-      console.log('5. Calculating final scores...');
+      // Step 6: Calculate final scores
+      console.log('6. Calculating final scores...');
       try {
         const result = execSync(`node calculate_scoring.js ${sessionName}`, { 
           stdio: 'pipe',
@@ -191,8 +212,8 @@ async function processAllSessions() {
       
       console.log(`✅ ${sessionName} processed successfully!`);
       
-      // Step 6: Rename the folder with timestamp and unique ID
-      console.log('6. Renaming folder with unique identifier...');
+      // Step 7: Rename the folder with timestamp and unique ID
+      console.log('7. Renaming folder with unique identifier...');
       try {
         const oldPath = path.join(__dirname, '../public/parsed_sessions', sessionName);
         const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19); // YYYY-MM-DDTHH-MM-SS
@@ -217,8 +238,8 @@ async function processAllSessions() {
           fs.writeFileSync(metadataPath, JSON.stringify(metadata, null, 2));
           console.log(`✓ Metadata file created: ${metadataPath}`);
           
-          // Step 7: Clean up uploaded files
-          console.log('7. Cleaning up uploaded files...');
+          // Step 8: Clean up uploaded files
+          console.log('8. Cleaning up uploaded files...');
           try {
             const rslogPath = path.join(uploadsDir, `${sessionName}.rslog`);
             const rsgamePath = path.join(uploadsDir, `${sessionName}.rsgame`);
