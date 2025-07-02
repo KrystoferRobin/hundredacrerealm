@@ -158,7 +158,7 @@ async function processAllSessions() {
         const statsPath = path.join(__dirname, '../public/parsed_sessions', sessionName, 'character_stats.json');
         const result = execSync(`node extract_character_stats.js "${xmlPath}" "${statsPath}"`, { 
           stdio: 'pipe',
-          cwd: __dirname,
+          cwd: path.dirname(__dirname), // Run from project root, not scripts directory
           encoding: 'utf8',
           timeout: 30000 // 30 second timeout
         });
@@ -177,7 +177,7 @@ async function processAllSessions() {
       try {
         const result = execSync(`node extract_character_inventories.js ${sessionName}`, { 
           stdio: 'pipe',
-          cwd: __dirname,
+          cwd: path.dirname(__dirname), // Run from project root, not scripts directory
           encoding: 'utf8',
           timeout: 30000 // 30 second timeout
         });
