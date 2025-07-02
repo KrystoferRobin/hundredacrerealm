@@ -8,7 +8,7 @@ export async function GET(
 ) {
   try {
     const sessionId = params.id;
-    const mapDataPath = path.join(process.cwd(), 'parsed_sessions', sessionId, 'map_data.json');
+    const mapDataPath = path.join('/app/public/parsed_sessions', sessionId, 'map_data.json');
     
     if (!fs.existsSync(mapDataPath)) {
       return NextResponse.json(

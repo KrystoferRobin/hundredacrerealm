@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import mapLocationsData from '../parsed_sessions/5man/map_locations.json';
 
 interface Tile {
   position: string;
@@ -79,22 +78,21 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
   }, [sessionId]);
 
   useEffect(() => {
-    // Load map_locations.json dynamically (in case of server/client differences)
+    // Load map_locations.json dynamically
     const fetchLocations = async () => {
       try {
-        const res = await fetch('/parsed_sessions/5man/map_locations.json');
+        const res = await fetch(`/api/session/${sessionId}/map-locations`);
         if (res.ok) {
           const data = await res.json();
           setMapLocations(data);
-        } else {
-          setMapLocations(mapLocationsData); // fallback to static import
         }
       } catch (e) {
-        setMapLocations(mapLocationsData); // fallback
+        console.warn('Failed to load map locations:', e);
+        setMapLocations({}); // fallback to empty object
       }
     };
     fetchLocations();
-  }, []);
+  }, [sessionId]);
 
   // ResizeObserver to track container size
   useEffect(() => {
@@ -219,7 +217,7 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
     const baseName = tileNameMap[tile.objectName] || tile.objectName.toLowerCase().replace(/\s+/g, '');
     const suffix = tile.isEnchanted ? '-e1' : '1';
     const filename = `${baseName}${suffix}.gif`;
-    const imageUrl = `/api/tiles/${filename}`;
+    const imageUrl = `/images/tiles/${filename}`;
     console.log(`Generated image URL for ${tile.objectName}: ${imageUrl}`);
     return imageUrl;
   };

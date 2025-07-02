@@ -10,7 +10,7 @@ export async function GET(
     const sessionId = params.id;
     
     // Read session_titles.json
-    const titlesPath = path.join(process.cwd(), 'data', 'session_titles.json');
+    const titlesPath = path.join('/app/data/session_titles.json');
     
     if (!fs.existsSync(titlesPath)) {
       return NextResponse.json({ error: 'Session titles not found' }, { status: 404 });

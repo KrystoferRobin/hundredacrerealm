@@ -1,12 +1,26 @@
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
-const xml2js = require('xml2js');
 
-// Import our parsers
-const { extractRsgameXml } = require('./parse_rsgame_map.js');
-const { extractMapLocations } = require('./extract_map_locations.js');
-const { extractCharacterStats } = require('./extract_character_stats.js');
+// Add error handling for module loading
+let xml2js;
+try {
+    xml2js = require('xml2js');
+} catch (error) {
+    console.error('Error loading xml2js:', error.message);
+    process.exit(1);
+}
+
+// Import our parsers with error handling
+let extractRsgameXml, extractMapLocations, extractCharacterStats;
+try {
+    extractRsgameXml = require('./parse_rsgame_map.js').extractRsgameXml;
+    extractMapLocations = require('./extract_map_locations.js').extractMapLocations;
+    extractCharacterStats = require('./extract_character_stats.js').extractCharacterStats;
+} catch (error) {
+    console.error('Error loading parser modules:', error.message);
+    process.exit(1);
+}
 
 const findGameFiles = (uploadsDir) => {
     console.log(`Searching for game files in: ${uploadsDir}`);
@@ -135,9 +149,36 @@ const extractScoringData = (xmlFilePath, outputFilePath) => {
 const processGameSession = async (sessionName) => {
     console.log(`\n=== Processing session: ${sessionName} ===\n`);
     
+    // Check multiple possible uploads directory locations
+    const possibleUploadsDirs = [
+        '/app/public/uploads',                       // Docker container absolute path (priority)
+        path.join(__dirname, '../public/uploads'),  // Local development
+        path.join(__dirname, '../uploads'),         // Fallback
+    ];
+    
+    let uploadsDir = null;
+    for (const dir of possibleUploadsDirs) {
+        if (fs.existsSync(dir)) {
+            // Check if the directory actually has the session files
+            const rslogPath = path.join(dir, `${sessionName}.rslog`);
+            const rsgamePath = path.join(dir, `${sessionName}.rsgame`);
+            
+            if (fs.existsSync(rslogPath) || fs.existsSync(rsgamePath)) {
+                uploadsDir = dir;
+                break;
+            }
+        }
+    }
+    
+    if (!uploadsDir) {
+        console.log('No uploads directory found. Checked:');
+        possibleUploadsDirs.forEach(dir => console.log(`  - ${dir}`));
+        return;
+    }
+    
     // Check if the session files exist
-    const rslogPath = path.join(__dirname, '../public/uploads', `${sessionName}.rslog`);
-    const rsgamePath = path.join(__dirname, '../public/uploads', `${sessionName}.rsgame`);
+    const rslogPath = path.join(uploadsDir, `${sessionName}.rslog`);
+    const rsgamePath = path.join(uploadsDir, `${sessionName}.rsgame`);
     
     const hasRslog = fs.existsSync(rslogPath);
     const hasRsgame = fs.existsSync(rsgamePath);
@@ -152,7 +193,7 @@ const processGameSession = async (sessionName) => {
     if (hasRsgame) console.log(`  🎯 Game: ${sessionName}.rsgame`);
     
     // Create output directory
-    const outputDir = path.join(__dirname, '../parsed_sessions', sessionName);
+    const outputDir = path.join(__dirname, '../public/parsed_sessions', sessionName);
     if (!fs.existsSync(outputDir)) {
         fs.mkdirSync(outputDir, { recursive: true });
     }
@@ -204,7 +245,20 @@ const processGameSession = async (sessionName) => {
 };
 
 const main = async () => {
-    const uploadsDir = path.join(__dirname, '../public/uploads');
+    // Check multiple possible uploads directory locations
+    const possibleUploadsDirs = [
+        path.join(__dirname, '../public/uploads'),  // Local development
+        path.join(__dirname, '../uploads'),         // Docker container
+        '/app/uploads'                              // Docker container absolute path
+    ];
+    
+    let uploadsDir = null;
+    for (const dir of possibleUploadsDirs) {
+        if (fs.existsSync(dir)) {
+            uploadsDir = dir;
+            break;
+        }
+    }
     
     console.log('🎮 Magic Realm Game Session Parser');
     console.log('=====================================\n');
@@ -217,8 +271,9 @@ const main = async () => {
         console.error('\nOr run without arguments to process all sessions in uploads directory');
         
         // If no session name provided, process all sessions
-        if (!fs.existsSync(uploadsDir)) {
-            console.log('No uploads directory found.');
+        if (!uploadsDir) {
+            console.log('No uploads directory found. Checked:');
+            possibleUploadsDirs.forEach(dir => console.log(`  - ${dir}`));
             return;
         }
         
@@ -226,6 +281,11 @@ const main = async () => {
         const sessionNames = new Set();
         
         files.forEach(file => {
+            // Skip macOS metadata files and other hidden files
+            if (file.startsWith('._') || file.startsWith('.DS_Store') || file.startsWith('.')) {
+                return;
+            }
+            
             if (file.endsWith('.rslog') || file.endsWith('.rsgame')) {
                 const baseName = file.replace(/\.(rslog|rsgame)$/, '');
                 sessionNames.add(baseName);

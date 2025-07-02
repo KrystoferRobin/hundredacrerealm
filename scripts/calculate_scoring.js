@@ -4,7 +4,7 @@ const path = require('path');
 function calculateScoring(sessionId) {
     console.log(`Calculating scoring for session: ${sessionId}`);
     
-    const sessionDir = path.join(__dirname, '../parsed_sessions', sessionId);
+    const sessionDir = path.join('/app/public/parsed_sessions', sessionId);
     const scoringPath = path.join(sessionDir, 'scoring.json');
     const statsPath = path.join(sessionDir, 'character_stats.json');
     const inventoriesPath = path.join(sessionDir, 'character_inventories.json');

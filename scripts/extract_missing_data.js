@@ -7,7 +7,7 @@ const { extractCharacterStats, extractScoringData } = require('./parse_game_sess
 const { generateSessionName } = require('./generate_session_name.js');
 
 async function injectFollowActions(sessionName) {
-    const sessionDir = path.join(__dirname, '../parsed_sessions', sessionName);
+    const sessionDir = path.join('/app/public/parsed_sessions', sessionName);
     const xmlPath = path.join(sessionDir, 'extracted_game.xml');
     const jsonPath = path.join(sessionDir, 'parsed_session.json');
     if (!fs.existsSync(xmlPath) || !fs.existsSync(jsonPath)) {
@@ -74,7 +74,7 @@ async function injectFollowActions(sessionName) {
 }
 
 async function addIdleAndWaitForArrivalActions(sessionName) {
-    const sessionDir = path.join(__dirname, '../parsed_sessions', sessionName);
+    const sessionDir = path.join('/app/public/parsed_sessions', sessionName);
     const jsonPath = path.join(sessionDir, 'parsed_session.json');
     if (!fs.existsSync(jsonPath)) return;
     const sessionData = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
@@ -123,7 +123,7 @@ async function addIdleAndWaitForArrivalActions(sessionName) {
 async function extractMissingData(sessionName) {
     console.log(`Extracting missing data for session: ${sessionName}`);
     
-    const sessionDir = path.join(__dirname, '../parsed_sessions', sessionName);
+    const sessionDir = path.join('/app/public/parsed_sessions', sessionName);
     const xmlPath = path.join(sessionDir, 'extracted_game.xml');
     
     if (!fs.existsSync(xmlPath)) {
@@ -167,7 +167,6 @@ async function extractMissingData(sessionName) {
     await addIdleAndWaitForArrivalActions(sessionName);
 
     // Generate and store session titles
-    const sessionDir = path.join(__dirname, '../parsed_sessions', sessionName);
     const parsedSessionPath = path.join(sessionDir, 'parsed_session.json');
     const mapLocationsPath = path.join(sessionDir, 'map_locations.json');
     const finalScoresPath = path.join(sessionDir, 'final_scores.json');

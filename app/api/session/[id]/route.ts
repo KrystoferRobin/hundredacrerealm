@@ -7,7 +7,7 @@ export async function GET(
   { params }: { params: { id: string } }
 ) {
   try {
-    const sessionPath = path.join(process.cwd(), 'parsed_sessions', params.id, 'parsed_session.json');
+    const sessionPath = path.join('/app/public/parsed_sessions', params.id, 'parsed_session.json');
     
     if (!fs.existsSync(sessionPath)) {
       return NextResponse.json({ error: 'Session not found' }, { status: 404 });

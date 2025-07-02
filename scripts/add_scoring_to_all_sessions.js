@@ -8,7 +8,7 @@ async function addScoringToAllSessions() {
   console.log('🎮 Adding Scoring Data to All Sessions');
   console.log('=====================================\n');
   
-  const parsedSessionsDir = path.join(__dirname, '../parsed_sessions');
+  const parsedSessionsDir = path.join(__dirname, '../public/parsed_sessions');
   
   if (!fs.existsSync(parsedSessionsDir)) {
     console.log('No parsed_sessions directory found.');

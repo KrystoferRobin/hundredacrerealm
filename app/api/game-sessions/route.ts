@@ -22,8 +22,8 @@ interface SessionData {
 
 export async function GET() {
   try {
-    const sessionsDir = path.join(process.cwd(), 'parsed_sessions');
-    const titlesPath = path.join(process.cwd(), 'data', 'session_titles.json');
+    const sessionsDir = '/app/public/parsed_sessions';
+    const titlesPath = '/app/data/session_titles.json';
     let sessionTitles = {};
     if (fs.existsSync(titlesPath)) {
       sessionTitles = JSON.parse(fs.readFileSync(titlesPath, 'utf8'));

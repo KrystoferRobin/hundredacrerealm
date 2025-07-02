@@ -7,7 +7,7 @@ async function generateAllSessionTitles() {
     console.log('Generating session titles for all sessions...');
     
     // Read all session data
-    const sessionsDir = path.join(__dirname, '..', 'parsed_sessions');
+    const sessionsDir = path.join('/app/public/parsed_sessions');
     const sessionTitles = {};
     
     const sessionFolders = fs.readdirSync(sessionsDir).filter(folder => 
@@ -59,7 +59,7 @@ async function generateAllSessionTitles() {
     }
     
     // Write session titles to data directory
-    const dataDir = path.join(__dirname, '..', 'data');
+    const dataDir = path.join('/app/data');
     if (!fs.existsSync(dataDir)) {
       fs.mkdirSync(dataDir, { recursive: true });
     }

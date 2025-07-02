@@ -221,6 +221,21 @@ export default function SessionPage() {
     fetchStats();
   }, [sessionId]);
 
+  // Fetch character inventories
+  useEffect(() => {
+    const fetchInventories = async () => {
+      try {
+        const res = await fetch(`/api/session/${sessionId}/character-inventories`);
+        if (res.ok) {
+          setCharacterInventories(await res.json());
+        }
+      } catch (e) {
+        setCharacterInventories(null);
+      }
+    };
+    fetchInventories();
+  }, [sessionId]);
+
   // Fetch final scores
   useEffect(() => {
     const fetchFinalScores = async () => {

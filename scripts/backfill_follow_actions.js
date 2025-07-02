@@ -3,7 +3,7 @@ const path = require('path');
 const { injectFollowActions, addIdleAndWaitForArrivalActions } = require('./extract_missing_data.js');
 
 async function backfillAllSessions() {
-    const sessionsDir = path.join(__dirname, '../parsed_sessions');
+    const sessionsDir = path.join(__dirname, '../public/parsed_sessions');
     const sessionNames = fs.readdirSync(sessionsDir).filter(name => {
         const sessionPath = path.join(sessionsDir, name);
         return fs.statSync(sessionPath).isDirectory();

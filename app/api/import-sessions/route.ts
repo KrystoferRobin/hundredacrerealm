@@ -10,24 +10,46 @@ export async function POST() {
     await new Promise((resolve, reject) => {
       exec('node process_all_sessions.js', { cwd: scriptsDir }, (error, stdout, stderr) => {
         if (error) {
+          console.error('Script execution error:', error);
+          console.error('stderr:', stderr);
           reject(stderr || error.message);
         } else {
+          console.log('Script output:', stdout);
           resolve(stdout);
         }
       });
     });
 
-    // Empty the /public/uploads directory
-    const uploadsDir = path.join(process.cwd(), 'public', 'uploads');
-    const files = fs.readdirSync(uploadsDir);
-    for (const file of files) {
-      if (file !== '.DS_Store') {
-        fs.unlinkSync(path.join(uploadsDir, file));
+    // Empty the uploads directory (check multiple possible locations)
+    const possibleUploadsDirs = [
+      path.join(process.cwd(), 'public', 'uploads'),  // Local development
+      path.join(process.cwd(), 'uploads'),            // Docker container
+      '/app/uploads'                                  // Docker container absolute path
+    ];
+    
+    let uploadsDir: string | null = null;
+    for (const dir of possibleUploadsDirs) {
+      if (fs.existsSync(dir)) {
+        uploadsDir = dir;
+        break;
       }
+    }
+    
+    if (uploadsDir) {
+      const files = fs.readdirSync(uploadsDir);
+      for (const file of files) {
+        if (file !== '.DS_Store') {
+          fs.unlinkSync(path.join(uploadsDir, file));
+        }
+      }
+      console.log(`Cleaned uploads directory: ${uploadsDir}`);
+    } else {
+      console.log('No uploads directory found to clean');
     }
 
     return NextResponse.json({ message: 'Import complete! All sessions processed and uploads folder emptied.' });
   } catch (err: any) {
+    console.error('Import error:', err);
     return NextResponse.json({ error: err.message || 'Import failed.' }, { status: 500 });
   }
 }

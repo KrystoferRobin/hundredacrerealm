@@ -468,7 +468,7 @@ function main() {
   }
   
   LOG_FILE = path.join(__dirname, '..', 'public', 'uploads', `${sessionName}.rslog`);
-  SESSION_DIR = path.join(__dirname, '..', 'parsed_sessions', sessionName);
+  SESSION_DIR = path.join(__dirname, '..', 'public', 'parsed_sessions', sessionName);
   OUTPUT_FILE = path.join(SESSION_DIR, 'parsed_session.json');
   
   console.log(`Starting detailed game log parser for: ${sessionName}`);

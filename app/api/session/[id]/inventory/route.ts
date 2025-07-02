@@ -8,7 +8,7 @@ export async function GET(
 ) {
   try {
     const sessionId = params.id;
-    const inventoryPath = path.join(process.cwd(), 'parsed_sessions', sessionId, 'character_inventories.json');
+    const inventoryPath = path.join('/app/public/parsed_sessions', sessionId, 'character_inventories.json');
     
     if (!fs.existsSync(inventoryPath)) {
       return NextResponse.json({ error: 'Inventory not found' }, { status: 404 });

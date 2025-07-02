@@ -8,7 +8,7 @@ export async function GET(
 ) {
     try {
         const sessionId = params.id;
-        const scoringPath = path.join(process.cwd(), 'parsed_sessions', sessionId, 'scoring.json');
+        const scoringPath = path.join('/app/public/parsed_sessions', sessionId, 'scoring.json');
         
         if (!fs.existsSync(scoringPath)) {
             return NextResponse.json({ error: 'Scoring data not found' }, { status: 404 });

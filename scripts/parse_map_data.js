@@ -11,8 +11,8 @@ async function parseMapData() {
         process.exit(1);
     }
     
-    const xmlPath = path.join(__dirname, '..', 'parsed_sessions', sessionName, 'extracted_game.xml');
-    const outputPath = path.join(__dirname, '..', 'parsed_sessions', sessionName, 'map_data.json');
+    const xmlPath = path.join('/app/public/parsed_sessions', sessionName, 'extracted_game.xml');
+    const outputPath = path.join('/app/public/parsed_sessions', sessionName, 'map_data.json');
     
     console.log(`Processing map data for session: ${sessionName}`);
     console.log(`XML file: ${xmlPath}`);
@@ -70,13 +70,22 @@ async function parseMapData() {
                             });
                         }
                         
-                        // Check if this object has an enchanted AttributeBlock
-                        // For now, set all tiles to not enchanted since the Woods Girl can't enchant tiles
-                        // TODO: Find the correct attribute that indicates actual enchantment state
+                        // Check if this object is actually enchanted
+                        // Look for the enchanted AttributeBlock and check if it has actual enchantment data
                         obj.AttributeBlock.forEach(enchantedBlock => {
                             if (enchantedBlock.$.blockName === 'enchanted') {
-                                // Don't mark as enchanted - this is just the enchanted state definition
-                                // isEnchanted = true;
+                                // Check if this enchanted block has actual enchantment data (not just the definition)
+                                if (enchantedBlock.attribute && enchantedBlock.attribute.length > 0) {
+                                    // Look for magic type indicators in clearings
+                                    const hasMagic = enchantedBlock.attribute.some(attr => 
+                                        attr.$ && (attr.$['clearing_1_magic'] || attr.$['clearing_2_magic'] || 
+                                                 attr.$['clearing_4_magic'] || attr.$['clearing_5_magic'] || 
+                                                 attr.$['clearing_6_magic'])
+                                    );
+                                    if (hasMagic) {
+                                        isEnchanted = true;
+                                    }
+                                }
                             }
                         });
                         

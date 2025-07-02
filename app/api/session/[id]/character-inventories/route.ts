@@ -8,7 +8,7 @@ export async function GET(
 ) {
   try {
     const sessionId = params.id;
-    const inventoriesPath = path.join(process.cwd(), 'parsed_sessions', sessionId, 'character_inventories.json');
+    const inventoriesPath = path.join('/app/public/parsed_sessions', sessionId, 'character_inventories.json');
     
     if (!fs.existsSync(inventoriesPath)) {
       return NextResponse.json(

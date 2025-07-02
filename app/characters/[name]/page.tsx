@@ -59,7 +59,11 @@ export default function CharacterPage() {
 
   // Function to get the character portrait path
   const getCharacterPortraitPath = (characterName: string) => {
-    const portraitName = characterName.replace(/\s+/g, ' ') + '_picture.png';
+    // Handle special case for Sorceror/Sorcerer spelling inconsistency
+    let portraitName = characterName.replace(/\s+/g, ' ') + '_picture.png';
+    if (characterName === 'Sorceror') {
+      portraitName = 'Sorcerer_picture.png';
+    }
     return `/images/charportraits/${portraitName}`;
   };
 

@@ -52,13 +52,13 @@ function processSession(sessionName) {
     
     console.log(`\n✅ Session "${sessionName}" processed successfully!`);
     console.log(`\nGenerated files:`);
-    console.log(`  - parsed_sessions/${sessionName}/extracted_game.xml`);
-    console.log(`  - parsed_sessions/${sessionName}/parsed_session.json`);
-    console.log(`  - parsed_sessions/${sessionName}/map_data.json`);
-    console.log(`  - parsed_sessions/${sessionName}/character_stats.json`);
-    console.log(`  - parsed_sessions/${sessionName}/scoring.json`);
-    console.log(`  - parsed_sessions/${sessionName}/character_inventories.json`);
-    console.log(`  - parsed_sessions/${sessionName}/day_*.txt (103 day files)`);
+    console.log(`  - public/parsed_sessions/${sessionName}/extracted_game.xml`);
+    console.log(`  - public/parsed_sessions/${sessionName}/parsed_session.json`);
+    console.log(`  - public/parsed_sessions/${sessionName}/map_data.json`);
+    console.log(`  - public/parsed_sessions/${sessionName}/character_stats.json`);
+    console.log(`  - public/parsed_sessions/${sessionName}/scoring.json`);
+    console.log(`  - public/parsed_sessions/${sessionName}/character_inventories.json`);
+    console.log(`  - public/parsed_sessions/${sessionName}/day_*.txt (103 day files)`);
     
   } catch (error) {
     console.error(`❌ Error processing session "${sessionName}":`, error.message);

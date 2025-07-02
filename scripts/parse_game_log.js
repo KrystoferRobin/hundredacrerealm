@@ -12,7 +12,7 @@ if (!sessionName) {
 
 // Configuration based on session name
 const LOG_FILE = path.join(__dirname, '..', 'public', 'uploads', `${sessionName}.rslog`);
-const OUTPUT_DIR = path.join(__dirname, '..', 'parsed_sessions', sessionName);
+const OUTPUT_DIR = path.join(__dirname, '..', 'public', 'parsed_sessions', sessionName);
 
 console.log(`Processing session: ${sessionName}`);
 console.log(`Log file: ${LOG_FILE}`);

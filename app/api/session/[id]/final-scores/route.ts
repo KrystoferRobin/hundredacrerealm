@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 function getFinalScores(sessionId: string) {
-    const sessionDir = path.join(process.cwd(), 'parsed_sessions', sessionId);
+    const sessionDir = path.join('/app/public/parsed_sessions', sessionId);
     const finalScoresPath = path.join(sessionDir, 'final_scores.json');
     
     if (!fs.existsSync(finalScoresPath)) {
