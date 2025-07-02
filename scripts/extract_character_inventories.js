@@ -120,9 +120,9 @@ function categorizeItem(itemData) {
 
 // Main extraction function
 function extractCharacterInventories(sessionId) {
-  const xmlPath = path.join(process.cwd(), 'public', 'parsed_sessions', sessionId, 'extracted_game.xml');
-  const sessionPath = path.join(process.cwd(), 'public', 'parsed_sessions', sessionId, 'parsed_session.json');
-  const outputPath = path.join(process.cwd(), 'public', 'parsed_sessions', sessionId, 'character_inventories.json');
+  const xmlPath = path.join('public', 'parsed_sessions', sessionId, 'extracted_game.xml');
+  const sessionPath = path.join('public', 'parsed_sessions', sessionId, 'parsed_session.json');
+  const outputPath = path.join('public', 'parsed_sessions', sessionId, 'character_inventories.json');
   
   // Get the list of characters that were actually played in this session
   let playedCharacters = [];
