@@ -2,15 +2,20 @@
 
 A comprehensive web application for parsing, organizing, and viewing Magic Realm game data, built with Next.js, TypeScript, and Tailwind CSS.
 
-This project extracts and structures data from Magic Realm's XML files and game logs, providing an interactive web interface to browse characters, monsters, natives, items, spells, tiles, and game session logs.
+This project extracts and structures data from Magic Realm's XML files and game logs, providing an interactive web interface to browse characters, monsters, natives, items, spells, tiles, and game session logs with advanced scoring and analysis features.
 
 ## Features
 
 - **Core Game Data Parsing**: Extract and organize all Magic Realm entities from XML
 - **Session Log Analysis**: Parse and visualize game session logs with detailed combat and character actions
+- **Advanced Scoring System**: Calculate final scores using official Magic Realm rules with faction-specific fame/notoriety filtering
+- **Character Analysis**: Track character inventories, stats, and progression throughout game sessions
 - **Interactive Web Interface**: Browse characters, monsters, natives, items, and spells with tooltips
-- **Game Session Viewer**: View parsed game logs with item tooltips and combat details
+- **Game Session Viewer**: View parsed game logs with item tooltips, combat details, and scoring breakdowns
+- **Map Visualization**: Interactive map display with tile positions and rotations
 - **Responsive Design**: Modern UI with Magic Realm 1979 Avalon Hill aesthetic
+- **Docker Deployment**: Easy deployment with Docker and Docker Compose
+- **RESTful API**: Comprehensive API endpoints for all game data and session analysis
 
 ## Tech Stack
 
@@ -19,17 +24,38 @@ This project extracts and structures data from Magic Realm's XML files and game 
 - **Data Parsing**: Node.js with XML parsing libraries
 - **Icons**: Heroicons
 - **Fonts**: EB Garamond
+- **Deployment**: Docker, Docker Compose
+- **Data Processing**: Custom parsers for Magic Realm file formats
 
 ## Prerequisites
 
-- Node.js (v18 or higher)
+- Node.js (v18 or higher) - for local development
+- Docker and Docker Compose - for deployment
 - npm or yarn
 
-## Getting Started
+## Quick Start
+
+### Option 1: Docker Deployment (Recommended)
+
+```bash
+# Clone the repository
+git clone https://github.com/KrystoferRobin/hundreacrerealm.git
+cd hundreacrerealm
+
+# Start with Docker Compose
+docker-compose up -d
+
+# Or use the deployment script
+./deploy.sh
+```
+
+The application will be available at `http://localhost:3000`
+
+### Option 2: Local Development
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/hundreacrerealm.git
+git clone https://github.com/KrystoferRobin/hundreacrerealm.git
 cd hundreacrerealm
 ```
 
@@ -51,7 +77,7 @@ This project includes comprehensive parsers for Magic Realm data. All parsers ar
 
 ### Core Game Data Parsers
 
-Run the master parser to extract all core game data (stored in MagicRealmData.xml, extracted from RealmSpeak.  Replace with the latest version to update the core data via the following scripts):
+Run the master parser to extract all core game data (stored in MagicRealmData.xml, extracted from RealmSpeak. Replace with the latest version to update the core data via the following scripts):
 
 ```bash
 node scripts/parse-all-core-data.js
@@ -95,18 +121,60 @@ node scripts/parse-chits.js
 
 ### Session Log Parsers
 
-Parse game session logs from `.rslog` files:
+Parse game session logs from `.rslog` and `.rsgame` files:
 
 ```bash
-# Parse all logs in upload folder
-node scripts/parse_all_logs.js
+# Process all sessions in uploads directory
+node scripts/process_all_sessions.js
+
+# Process a single session
+node scripts/process_session.js <session-name>
 
 # Parse individual log with detailed combat analysis
 node scripts/parse_game_log_detailed.js
 
 # Parse basic log structure
 node scripts/parse_game_log.js
+
+# Extract character inventories and stats
+node scripts/extract_character_inventories.js <session-name>
+node scripts/extract_character_stats.js <session-name>
+
+# Calculate final scores
+node scripts/calculate_scoring.js <session-name>
+
+# Add scoring to all existing sessions
+node scripts/add_scoring_to_all_sessions.js
 ```
+
+## API Endpoints
+
+The application provides comprehensive RESTful API endpoints:
+
+### Core Data APIs
+- `GET /api/characters` - List all characters
+- `GET /api/characters/[name]` - Get specific character data
+- `GET /api/monsters` - List all monsters
+- `GET /api/natives` - List all natives
+- `GET /api/items` - List all items
+- `GET /api/tiles/[filename]` - Get tile data
+
+### Session APIs
+- `GET /api/sessions` - List all game sessions
+- `GET /api/sessions/[id]` - Get session metadata
+- `GET /api/session/[id]` - Get detailed session data
+- `GET /api/session/[id]/scoring` - Get session scoring data
+- `GET /api/session/[id]/final-scores` - Get calculated final scores
+- `GET /api/session/[id]/character-stats` - Get character statistics
+- `GET /api/session/[id]/character-inventories` - Get character inventories
+- `GET /api/session/[id]/map-locations` - Get map location data
+- `GET /api/session/[id]/inventory` - Get session inventory summary
+
+### Utility APIs
+- `GET /api/health` - Health check endpoint
+- `GET /api/debug-sessions` - Debug session data
+- `GET /api/game-sessions` - List game sessions
+- `GET /api/import-sessions` - Import session data
 
 ## Project Structure
 
@@ -114,6 +182,14 @@ node scripts/parse_game_log.js
 hundreacrerealm/
 ├── app/                    # Next.js app directory
 │   ├── api/               # API routes
+│   │   ├── characters/    # Character APIs
+│   │   ├── monsters/      # Monster APIs
+│   │   ├── natives/       # Native APIs
+│   │   ├── items/         # Item APIs
+│   │   ├── tiles/         # Tile APIs
+│   │   ├── sessions/      # Session listing APIs
+│   │   ├── session/       # Session detail APIs
+│   │   └── health/        # Health check API
 │   ├── characters/        # Character pages
 │   ├── game-logs/         # Game logs listing
 │   ├── monsters/          # Monsters page
@@ -130,10 +206,24 @@ hundreacrerealm/
 │   └── chits/             # Chit JSON files
 ├── parsed_sessions/       # Parsed game session logs
 ├── public/                # Static assets
-│   └── images/            # Game images and icons
+│   ├── images/            # Game images and icons
+│   │   ├── charportraits/ # Character portraits
+│   │   ├── charsymbol/    # Character symbols
+│   │   └── tiles/         # Tile images
+│   └── parsed_sessions/   # Public session data
 ├── scripts/               # Data parsing scripts
+│   ├── README.md          # Scripts documentation
+│   ├── process_all_sessions.js
+│   ├── process_session.js
+│   ├── calculate_scoring.js
+│   ├── extract_character_inventories.js
+│   └── ...                # Other parsing scripts
+├── data/                  # Application configuration
 ├── MagicRealmData.xml     # Source XML data
-└── characters/            # .rschar character files
+├── characters/            # .rschar character files
+├── docker-compose.yml     # Docker configuration
+├── Dockerfile            # Docker build file
+└── DOCKER_DEPLOYMENT.md  # Docker deployment guide
 ```
 
 ## Web Interface
@@ -145,14 +235,36 @@ hundreacrerealm/
 - **Monsters**: View monsters grouped by name with chit displays
 - **Natives**: Browse natives organized by dwelling
 - **Game Logs**: List all parsed game sessions
-- **Session Viewer**: Detailed view of individual game sessions
+- **Session Viewer**: Detailed view of individual game sessions with scoring
 
 ### Features
 
 - **Item Tooltips**: Hover over item names to see chit-style tooltips
 - **Character Details**: View character portraits, chits, and equipment
 - **Combat Visualization**: Detailed combat logs with round-by-round analysis
+- **Scoring Display**: View calculated final scores with breakdowns
+- **Map Visualization**: Interactive map with tile positions
+- **Character Analysis**: Track character progression and inventories
 - **Responsive Design**: Works on desktop and mobile devices
+
+## Session Analysis Features
+
+### Scoring System
+- **Official Rules**: Follows Magic Realm scoring rules exactly
+- **Faction Filtering**: Fame/notoriety values filtered by character faction
+- **Item Valuation**: Proper fame/notoriety values for all items
+- **Score Breakdown**: Detailed breakdown of basic and bonus scores
+
+### Character Tracking
+- **Inventory Analysis**: Complete character inventories with item details
+- **Stat Tracking**: Gold, fame, notoriety, great treasures, learned spells
+- **Progression Timeline**: Day-by-day character actions and events
+- **Combat Analysis**: Detailed battle logs with monster interactions
+
+### Map Analysis
+- **Tile Positioning**: Exact tile positions and rotations
+- **Path Analysis**: Clearing connections and movement patterns
+- **Location Tracking**: Character and monster locations throughout game
 
 ## Development
 
@@ -174,6 +286,36 @@ The parsers create JSON files with the following structure:
 - **Spells**: Spell data organized by level
 - **Tiles**: Tile data with paths, clearings, and states
 - **Chits**: Various game chits with attributes
+- **Sessions**: Complete session data with scoring and analysis
+
+## Deployment
+
+### Docker Deployment
+
+See [DOCKER_DEPLOYMENT.md](DOCKER_DEPLOYMENT.md) for detailed Docker deployment instructions.
+
+Quick deployment:
+```bash
+# Using Docker Compose
+docker-compose up -d
+
+# Using direct Docker run
+docker run -d --name hundreacrerealm -p 3000:3000 \
+  -v $(pwd)/public:/app/public \
+  -v $(pwd)/coregamedata:/app/coregamedata \
+  -v $(pwd)/data:/app/data \
+  -v $(pwd)/parsed_sessions:/app/parsed_sessions \
+  -v $(pwd)/uploads:/app/uploads \
+  krystoferrobin/hundreacrerealm:latest
+```
+
+### Production Deployment
+
+For production deployment:
+1. Build the Docker image: `docker-compose build`
+2. Set environment variables in `docker-compose.yml`
+3. Start with: `docker-compose up -d`
+4. Monitor with: `docker-compose logs -f`
 
 ## Contributing
 
@@ -189,6 +331,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- All code generated by Cursor - This is purely an AI projected, directed by myself, Krystofer Robin.
+- All code generated by Cursor - This is purely an AI project, directed by myself, Krystofer Robin.
 - Magic Realm board game by Avalon Hill (1979)
 - All contributors and supporters of the project
