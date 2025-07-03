@@ -1,6 +1,6 @@
 services:
-  hundreacrerealm:
-    image: hundreacrerealm:latest
+  hundredacrerealm:
+    image: krystoferrobin/hundredacrerealm:latest
     ports:
       - "3000:3000"
     environment:
