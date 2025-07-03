@@ -3,31 +3,21 @@ const xml2js = require('xml2js');
 const path = require('path');
 
 async function parseMapData() {
-    // Get session name from command line argument
-    const sessionName = process.argv[2];
-    if (!sessionName) {
-        console.error('Usage: node parse_map_data.js <session-name>');
-        console.error('Example: node parse_map_data.js learning-woodsgirl');
+    // Use extracted_game.xml in current directory if no argument
+    let xmlFile = process.argv[2] || 'extracted_game.xml';
+    if (!fs.existsSync(xmlFile)) {
+        console.error('XML file not found:', xmlFile);
         process.exit(1);
     }
+    const outputPath = 'map_data.json';
     
-    const xmlPath = path.join('/app/public/parsed_sessions', sessionName, 'extracted_game.xml');
-    const outputPath = path.join('/app/public/parsed_sessions', sessionName, 'map_data.json');
-    
-    console.log(`Processing map data for session: ${sessionName}`);
-    console.log(`XML file: ${xmlPath}`);
+    console.log(`Processing map data for session: ${xmlFile}`);
+    console.log(`XML file: ${xmlFile}`);
     console.log(`Output file: ${outputPath}`);
     
     try {
-        // Check if the XML file exists
-        if (!fs.existsSync(xmlPath)) {
-            console.error(`XML file not found: ${xmlPath}`);
-            console.error('Make sure to run the game parser first to extract the XML.');
-            process.exit(1);
-        }
-        
         // Read the XML file
-        const xmlData = fs.readFileSync(xmlPath, 'utf8');
+        const xmlData = fs.readFileSync(xmlFile, 'utf8');
         
         // Parse XML
         const parser = new xml2js.Parser();
@@ -138,7 +128,7 @@ async function parseMapData() {
         
         // Save the map data
         const mapData = {
-            sessionName: sessionName,
+            sessionName: xmlFile,
             tiles: mapTiles,
             tilesByType: tilesByType,
             totalTiles: mapTiles.length

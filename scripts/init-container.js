@@ -132,9 +132,10 @@ try {
   console.log('\n🎮 Processing existing game sessions...');
   try {
     const { execSync } = require('child_process');
-    const result = execSync('node process_all_sessions.js', { 
+    // Run from the app root directory, not the scripts directory
+    const result = execSync('node scripts/process_all_sessions.js', { 
       stdio: 'pipe',
-      cwd: __dirname,
+      cwd: '/app',
       encoding: 'utf8',
       timeout: 60000 // 60 second timeout
     });

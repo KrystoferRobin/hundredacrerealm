@@ -68,7 +68,7 @@ function waitForVolumeMount(maxAttempts = 5, delay = 1000) {
       if (exists && accessible) {
         // Resolve if directory exists and is accessible, even if empty
         console.log(`Volume mount ready! Directory ${SESSIONS_DIR} is accessible`);
-        resolve();
+          resolve();
       } else {
         console.log(`Volume mount not ready yet (attempt ${attempts}/${maxAttempts})`);
         if (attempts >= maxAttempts) {

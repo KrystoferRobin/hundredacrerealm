@@ -119,24 +119,31 @@ function categorizeItem(itemData) {
 }
 
 // Main extraction function
-function extractCharacterInventories(sessionId) {
-  const xmlPath = path.join('public', 'parsed_sessions', sessionId, 'extracted_game.xml');
-  const sessionPath = path.join('public', 'parsed_sessions', sessionId, 'parsed_session.json');
-  const outputPath = path.join('public', 'parsed_sessions', sessionId, 'character_inventories.json');
-  
-  // Get the list of characters that were actually played in this session
-  let playedCharacters = [];
-  if (fs.existsSync(sessionPath)) {
-    const sessionData = JSON.parse(fs.readFileSync(sessionPath, 'utf8'));
-    playedCharacters = Object.keys(sessionData.characterToPlayer || {});
+function extractCharacterInventories(
+  sessionId = null,
+  xmlPath = 'extracted_game.xml',
+  sessionPath = 'parsed_session.json',
+  outputPath = 'character_inventories.json'
+) {
+  // If sessionId is provided, use legacy mode (for manual use)
+  if (sessionId && sessionId !== 'extracted_game.xml') {
+    xmlPath = path.join('public', 'parsed_sessions', sessionId, 'extracted_game.xml');
+    sessionPath = path.join('public', 'parsed_sessions', sessionId, 'parsed_session.json');
+    outputPath = path.join('public', 'parsed_sessions', sessionId, 'character_inventories.json');
   }
+  if (!fs.existsSync(xmlPath)) {
+    console.error('XML file not found:', xmlPath);
+    process.exit(1);
+  }
+  if (!fs.existsSync(sessionPath)) {
+    console.error('Parsed session file not found:', sessionPath);
+    process.exit(1);
+  }
+  
+    const sessionData = JSON.parse(fs.readFileSync(sessionPath, 'utf8'));
+  const playedCharacters = Object.keys(sessionData.characterToPlayer || {});
   
   console.log(`Characters played in this session: ${playedCharacters.join(', ')}`);
-  
-  if (!fs.existsSync(xmlPath)) {
-    console.error(`XML file not found: ${xmlPath}`);
-    return;
-  }
   
   console.log(`Extracting character inventories for session: ${sessionId}`);
   
@@ -283,13 +290,8 @@ function extractCharacterInventories(sessionId) {
 
 // Run extraction if called directly
 if (require.main === module) {
-  const sessionId = process.argv[2];
-  if (!sessionId) {
-    console.error('Usage: node extract_character_inventories.js <session_id>');
-    process.exit(1);
-  }
-  
-  extractCharacterInventories(sessionId);
+  const arg = process.argv[2];
+  extractCharacterInventories(arg);
 }
 
 module.exports = { extractCharacterInventories }; 

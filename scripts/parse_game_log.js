@@ -2,26 +2,19 @@ const fs = require('fs');
 const path = require('path');
 const zlib = require('zlib');
 
-// Get session name from command line argument
-const sessionName = process.argv[2];
-if (!sessionName) {
-  console.error('Usage: node parse_game_log.js <session-name>');
-  console.error('Example: node parse_game_log.js learning-woodsgirl');
+// Use first .rslog in current directory if no argument
+let logFile = process.argv[2] || (fs.readdirSync('.').find(f => f.endsWith('.rslog')));
+if (!logFile) {
+  console.error('No .rslog file found in current directory.');
   process.exit(1);
 }
 
-// Configuration based on session name
-const LOG_FILE = path.join(__dirname, '..', 'public', 'uploads', `${sessionName}.rslog`);
-const OUTPUT_DIR = path.join(__dirname, '..', 'public', 'parsed_sessions', sessionName);
+const LOG_FILE = logFile;
+const OUTPUT_DIR = '.';
 
-console.log(`Processing session: ${sessionName}`);
+console.log(`Processing session: ${logFile.replace('.rslog', '')}`);
 console.log(`Log file: ${LOG_FILE}`);
 console.log(`Output directory: ${OUTPUT_DIR}`);
-
-// Ensure output directory exists
-if (!fs.existsSync(OUTPUT_DIR)) {
-  fs.mkdirSync(OUTPUT_DIR, { recursive: true });
-}
 
 function decompressLogFile(filePath) {
   try {

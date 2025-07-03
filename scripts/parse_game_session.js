@@ -146,62 +146,40 @@ const extractScoringData = (xmlFilePath, outputFilePath) => {
     });
 };
 
-const processGameSession = async (sessionName) => {
-    console.log(`\n=== Processing session: ${sessionName} ===\n`);
-    
-    // Check multiple possible uploads directory locations
-    const possibleUploadsDirs = [
-        '/app/public/uploads',                       // Docker container absolute path (priority)
-        path.join(__dirname, '../public/uploads'),  // Local development
-        path.join(__dirname, '../uploads'),         // Fallback
-    ];
-    
-    let uploadsDir = null;
-    for (const dir of possibleUploadsDirs) {
-        if (fs.existsSync(dir)) {
-            // Check if the directory actually has the session files
-            const rslogPath = path.join(dir, `${sessionName}.rslog`);
-            const rsgamePath = path.join(dir, `${sessionName}.rsgame`);
-            
-            if (fs.existsSync(rslogPath) || fs.existsSync(rsgamePath)) {
-                uploadsDir = dir;
-                break;
-            }
+const processGameSession = async (sessionNameOrFile) => {
+    let sessionFile = sessionNameOrFile;
+    let sessionName = null;
+    // If no argument, use first .rslog or .rsgame in current directory
+    if (!sessionFile) {
+        const files = fs.readdirSync('.');
+        sessionFile = files.find(f => f.endsWith('.rslog') || f.endsWith('.rsgame'));
+        if (!sessionFile) {
+            console.error('No .rslog or .rsgame file found in current directory.');
+            process.exit(1);
         }
-    }
-    
-    if (!uploadsDir) {
-        console.log('No uploads directory found. Checked:');
-        possibleUploadsDirs.forEach(dir => console.log(`  - ${dir}`));
-        return;
-    }
-    
-    // Check if the session files exist
-    const rslogPath = path.join(uploadsDir, `${sessionName}.rslog`);
-    const rsgamePath = path.join(uploadsDir, `${sessionName}.rsgame`);
-    
+        sessionName = sessionFile.replace(/\.(rslog|rsgame)$/,'');
+    } else {
+        sessionName = sessionFile.replace(/\.(rslog|rsgame)$/,'');
+            }
+    const outputDir = '.';
+    console.log(`\n=== Processing session: ${sessionName} ===\n`);
+    // Only use files in the current directory
+    const rslogPath = `${sessionName}.rslog`;
+    const rsgamePath = `${sessionName}.rsgame`;
     const hasRslog = fs.existsSync(rslogPath);
     const hasRsgame = fs.existsSync(rsgamePath);
-    
     if (!hasRslog && !hasRsgame) {
         console.log(`No .rslog or .rsgame files found for session: ${sessionName}`);
         return;
     }
-    
     console.log(`Session files found:`);
-    if (hasRslog) console.log(`  📄 Log: ${sessionName}.rslog`);
-    if (hasRsgame) console.log(`  🎯 Game: ${sessionName}.rsgame`);
-    
-    // Create output directory
-    const outputDir = path.join(__dirname, '../public/parsed_sessions', sessionName);
-    if (!fs.existsSync(outputDir)) {
-        fs.mkdirSync(outputDir, { recursive: true });
-    }
+    if (hasRslog) console.log(`  📄 Log: ${rslogPath}`);
+    if (hasRsgame) console.log(`  🎯 Game: ${rsgamePath}`);
     
     // Step 1: Extract .rsgame XML if it exists
     let xmlPath = null;
     if (hasRsgame) {
-        console.log(`Extracting game XML: ${sessionName}.rsgame`);
+        console.log(`Extracting game XML: ${rsgamePath}`);
         try {
             xmlPath = extractRsgameXml(rsgamePath, outputDir);
             console.log(`✓ Game XML extracted to: ${path.basename(xmlPath)}`);
@@ -245,83 +223,12 @@ const processGameSession = async (sessionName) => {
 };
 
 const main = async () => {
-    // Check multiple possible uploads directory locations
-    const possibleUploadsDirs = [
-        path.join(__dirname, '../public/uploads'),  // Local development
-        path.join(__dirname, '../uploads'),         // Docker container
-        '/app/uploads'                              // Docker container absolute path
-    ];
-    
-    let uploadsDir = null;
-    for (const dir of possibleUploadsDirs) {
-        if (fs.existsSync(dir)) {
-            uploadsDir = dir;
-            break;
-        }
-    }
-    
-    console.log('🎮 Magic Realm Game Session Parser');
-    console.log('=====================================\n');
-    
-    // Get session name from command line argument
-    const sessionName = process.argv[2];
-    if (!sessionName) {
-        console.error('Usage: node parse_game_session.js <session-name>');
-        console.error('Example: node parse_game_session.js learning-woodsgirl');
-        console.error('\nOr run without arguments to process all sessions in uploads directory');
-        
-        // If no session name provided, process all sessions
-        if (!uploadsDir) {
-            console.log('No uploads directory found. Checked:');
-            possibleUploadsDirs.forEach(dir => console.log(`  - ${dir}`));
-            return;
-        }
-        
-        const files = fs.readdirSync(uploadsDir);
-        const sessionNames = new Set();
-        
-        files.forEach(file => {
-            // Skip macOS metadata files and other hidden files
-            if (file.startsWith('._') || file.startsWith('.DS_Store') || file.startsWith('.')) {
-                return;
-            }
-            
-            if (file.endsWith('.rslog') || file.endsWith('.rsgame')) {
-                const baseName = file.replace(/\.(rslog|rsgame)$/, '');
-                sessionNames.add(baseName);
-            }
-        });
-        
-        if (sessionNames.size === 0) {
-            console.log('No game files found. Please place .rslog and/or .rsgame files in the uploads directory.');
-            return;
-        }
-        
-        console.log(`\nFound ${sessionNames.size} session(s) to process:`);
-        Array.from(sessionNames).forEach(name => console.log(`  - ${name}`));
-        
-        // Process all sessions
-        for (const name of sessionNames) {
-            await processGameSession(name);
-        }
-    } else {
-        // Process specific session
-        await processGameSession(sessionName);
-    }
-    
-    console.log('\n✅ All game sessions processed successfully!');
-    console.log('\nNext steps:');
-    console.log('1. Examine the extracted XML files in the parsed_sessions folders');
-    console.log('2. Update the map parser to extract the specific data you need');
-    console.log('3. Combine log and game data into unified session files');
+    const arg = process.argv[2];
+    await processGameSession(arg);
 };
 
-// Run if called directly
 if (require.main === module) {
-    main().catch(error => {
-        console.error('Fatal error:', error);
-        process.exit(1);
-    });
+    main();
 }
 
 module.exports = { findGameFiles, processGameSession, extractCharacterStats, extractScoringData }; 

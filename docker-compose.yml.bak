@@ -13,6 +13,8 @@ services:
       - ./public/uploads:/app/public/uploads
       - ./coregamedata:/app/coregamedata
       - ./data:/app/data
+      # Map scripts directory to use local changes
+      - ./scripts:/app/scripts
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]

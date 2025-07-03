@@ -1,17 +1,24 @@
 const fs = require('fs');
 const path = require('path');
 
-function calculateScoring(sessionId) {
-    console.log(`Calculating scoring for session: ${sessionId}`);
-    
-    const sessionDir = path.join('/app/public/parsed_sessions', sessionId);
-    const scoringPath = path.join(sessionDir, 'scoring.json');
-    const statsPath = path.join(sessionDir, 'character_stats.json');
-    const inventoriesPath = path.join(sessionDir, 'character_inventories.json');
-    
-    if (!fs.existsSync(scoringPath) || !fs.existsSync(statsPath) || !fs.existsSync(inventoriesPath)) {
+function calculateScoring(
+  sessionId = null,
+  statsPath = 'character_stats.json',
+  inventoriesPath = 'character_inventories.json',
+  scoringPath = 'scoring.json',
+  resultsPath = 'final_scores.json'
+) {
+  // If sessionId is provided, use legacy mode (for manual use)
+  if (sessionId && sessionId !== 'character_stats.json') {
+    const sessionDir = path.join('public', 'parsed_sessions', sessionId);
+    statsPath = path.join(sessionDir, 'character_stats.json');
+    inventoriesPath = path.join(sessionDir, 'character_inventories.json');
+    scoringPath = path.join(sessionDir, 'scoring.json');
+    resultsPath = path.join(sessionDir, 'final_scores.json');
+  }
+  if (!fs.existsSync(statsPath) || !fs.existsSync(inventoriesPath) || !fs.existsSync(scoringPath)) {
         console.error('Required files not found');
-        return;
+    process.exit(1);
     }
     
     const scoringData = JSON.parse(fs.readFileSync(scoringPath, 'utf8'));
@@ -151,19 +158,15 @@ function calculateScoring(sessionId) {
     });
     
     // Save results to file
-    const resultsPath = path.join(sessionDir, 'final_scores.json');
     fs.writeFileSync(resultsPath, JSON.stringify(results, null, 2));
     console.log(`\nFinal scores saved to: ${resultsPath}`);
     
     return results;
 }
 
-// Calculate for session specified in command line
-const sessionId = process.argv[2];
-if (!sessionId) {
-    console.error('Usage: node calculate_scoring.js <session-id>');
-    console.error('Example: node calculate_scoring.js 5man');
-    process.exit(1);
+if (require.main === module) {
+  const arg = process.argv[2];
+  calculateScoring(arg);
 }
 
-calculateScoring(sessionId); 
+module.exports = { calculateScoring }; 

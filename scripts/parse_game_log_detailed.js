@@ -6,6 +6,11 @@ let SESSION_DIR = '';
 let OUTPUT_FILE = '';
 let LOG_FILE = '';
 
+const DEFAULT_LOG_FILE = () => {
+  const files = fs.readdirSync('.')
+  return files.find(f => f.endsWith('.rslog'));
+};
+
 function parseDayFile(filePath) {
   const content = fs.readFileSync(filePath, 'utf8');
   const lines = content.split('\n').map(line => line.trim()).filter(line => line.length > 0);
@@ -459,17 +464,17 @@ function parseAllDays(sessionName) {
 }
 
 function main() {
-  // Get session name from command line argument
-  const sessionName = process.argv[2];
-  if (!sessionName) {
-    console.error('Usage: node parse_game_log_detailed.js <session-name>');
-    console.error('Example: node parse_game_log_detailed.js learning-woodsgirl');
+  // Use first .rslog in current directory if no argument
+  let logFile = process.argv[2] || DEFAULT_LOG_FILE();
+  if (!logFile) {
+    console.error('No .rslog file found in current directory.');
     process.exit(1);
   }
-  
-  LOG_FILE = path.join(__dirname, '..', 'public', 'uploads', `${sessionName}.rslog`);
-  SESSION_DIR = path.join(__dirname, '..', 'public', 'parsed_sessions', sessionName);
+  // Output parsed_session.json in current directory
+  const sessionName = logFile.replace('.rslog', '');
+  SESSION_DIR = '.';
   OUTPUT_FILE = path.join(SESSION_DIR, 'parsed_session.json');
+  LOG_FILE = logFile;
   
   console.log(`Starting detailed game log parser for: ${sessionName}`);
   
@@ -477,20 +482,17 @@ function main() {
   const { execSync } = require('child_process');
   
   try {
-    // Run the basic parser with the session name
+    // Run the basic parser with the log file name
     console.log('Running basic parser to split into days...');
-    execSync(`node parse_game_log.js ${sessionName}`, { 
+    execSync(`node ../../../scripts/parse_game_log.js ${logFile}`, {
       stdio: 'inherit',
-      cwd: __dirname 
+      cwd: SESSION_DIR
     });
-    
     // Now run the detailed parser
     console.log('\nRunning detailed parser...');
     const sessionData = parseAllDays(sessionName);
-    
     // Save the parsed data
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(sessionData, null, 2));
-    
     console.log(`\nParsing complete!`);
     console.log(`Total days parsed: ${Object.keys(sessionData.days).length}`);
     console.log(`Output saved to: ${OUTPUT_FILE}`);
@@ -523,4 +525,6 @@ function main() {
   }
 }
 
+if (require.main === module) {
 main(); 
+} 

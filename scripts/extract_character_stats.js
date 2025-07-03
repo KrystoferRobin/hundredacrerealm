@@ -1,8 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 const { DOMParser } = require('xmldom');
+const xml2js = require('xml2js');
 
-function extractCharacterStats(xmlPath, outputPath) {
+function extractCharacterStats(xmlPath = 'extracted_game.xml', outputPath = 'character_stats.json') {
+  if (!fs.existsSync(xmlPath)) {
+    console.error('XML file not found:', xmlPath);
+    process.exit(1);
+  }
+  
   console.log(`Extracting character stats from ${xmlPath}...`);
   
   const xmlContent = fs.readFileSync(xmlPath, 'utf8');
@@ -137,16 +143,10 @@ function extractCharacterStats(xmlPath, outputPath) {
   return characterStats;
 }
 
-// If run directly
 if (require.main === module) {
-  const args = process.argv.slice(2);
-  if (args.length !== 2) {
-    console.log('Usage: node extract_character_stats.js <input_xml> <output_json>');
-    process.exit(1);
-  }
-  
-  const [inputPath, outputPath] = args;
-  extractCharacterStats(inputPath, outputPath);
+  const xmlArg = process.argv[2] || 'extracted_game.xml';
+  const outArg = process.argv[3] || 'character_stats.json';
+  extractCharacterStats(xmlArg, outArg);
 }
 
 module.exports = { extractCharacterStats }; 

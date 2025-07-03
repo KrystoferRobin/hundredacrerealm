@@ -5,10 +5,10 @@ import fs from 'fs';
 
 export async function POST() {
   try {
-    // Run the session import script
-    const scriptsDir = path.join(process.cwd(), 'scripts');
+    // Run the session import script from the app root directory
+    const appRoot = process.cwd();
     await new Promise((resolve, reject) => {
-      exec('node process_all_sessions.js', { cwd: scriptsDir }, (error, stdout, stderr) => {
+      exec('node scripts/process_all_sessions.js', { cwd: appRoot }, (error, stdout, stderr) => {
         if (error) {
           console.error('Script execution error:', error);
           console.error('stderr:', stderr);
@@ -20,20 +20,8 @@ export async function POST() {
       });
     });
 
-    // Empty the uploads directory (check multiple possible locations)
-    const possibleUploadsDirs = [
-      path.join(process.cwd(), 'public', 'uploads'),  // Local development
-      path.join(process.cwd(), 'uploads'),            // Docker container
-      '/app/uploads'                                  // Docker container absolute path
-    ];
-    
-    let uploadsDir: string | null = null;
-    for (const dir of possibleUploadsDirs) {
-      if (fs.existsSync(dir)) {
-        uploadsDir = dir;
-        break;
-      }
-    }
+    // Empty the uploads directory
+    const uploadsDir = path.join(process.cwd(), 'public', 'uploads');
     
     if (uploadsDir) {
       const files = fs.readdirSync(uploadsDir);
