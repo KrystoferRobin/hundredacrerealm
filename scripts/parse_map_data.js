@@ -62,22 +62,25 @@ async function parseMapData() {
                         
                         // Check if this object is actually enchanted
                         // Look for the enchanted AttributeBlock and check if it has actual enchantment data
-                        obj.AttributeBlock.forEach(enchantedBlock => {
-                            if (enchantedBlock.$.blockName === 'enchanted') {
-                                // Check if this enchanted block has actual enchantment data (not just the definition)
-                                if (enchantedBlock.attribute && enchantedBlock.attribute.length > 0) {
-                                    // Look for magic type indicators in clearings
-                                    const hasMagic = enchantedBlock.attribute.some(attr => 
-                                        attr.$ && (attr.$['clearing_1_magic'] || attr.$['clearing_2_magic'] || 
-                                                 attr.$['clearing_4_magic'] || attr.$['clearing_5_magic'] || 
-                                                 attr.$['clearing_6_magic'])
-                                    );
-                                    if (hasMagic) {
-                                        isEnchanted = true;
+                        if (obj.AttributeBlock) {
+                            obj.AttributeBlock.forEach(enchantedBlock => {
+                                if (enchantedBlock.$.blockName === 'enchanted') {
+                                    // Check if this enchanted block has actual enchantment data (not just the definition)
+                                    if (enchantedBlock.attribute && enchantedBlock.attribute.length > 0) {
+                                        // Look for magic type indicators in clearings
+                                        const hasMagic = enchantedBlock.attribute.some(attr => {
+                                            if (!attr.$) return false;
+                                            // Check for magic attributes in clearings
+                                            const magicAttrs = ['clearing_1_magic', 'clearing_2_magic', 'clearing_4_magic', 'clearing_5_magic', 'clearing_6_magic'];
+                                            return magicAttrs.some(magicAttr => attr.$[magicAttr] && attr.$[magicAttr] !== '');
+                                        });
+                                        if (hasMagic) {
+                                            isEnchanted = true;
+                                        }
                                     }
                                 }
-                            }
-                        });
+                            });
+                        }
                         
                         if (position) {
                             mapTiles.push({
@@ -123,7 +126,8 @@ async function parseMapData() {
         
         console.log('\n=== ALL MAP TILES ===');
         mapTiles.forEach(tile => {
-            console.log(`Position ${tile.position}, Rotation ${tile.rotation}, Type ${tile.tileType}, Name: ${tile.objectName}`);
+            const enchantedStatus = tile.isEnchanted ? ' (Enchanted)' : '';
+            console.log(`Position ${tile.position}, Rotation ${tile.rotation}, Type ${tile.tileType}, Name: ${tile.objectName}${enchantedStatus}`);
         });
         
         // Save the map data

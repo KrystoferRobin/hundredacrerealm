@@ -98,6 +98,9 @@ async function processAllSessions() {
       // Final scores
       console.log('Running scoring calculation...');
       execSync('node /app/scripts/calculate_scoring.js', { stdio: 'inherit' });
+      // Generate session titles
+      console.log('Generating session titles...');
+      execSync('node /app/scripts/generate_session_titles.js', { stdio: 'inherit' });
 
       // 5. Write metadata file
           const metadata = {

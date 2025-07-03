@@ -32,21 +32,21 @@ function findFileByName(dir, itemName) {
 function getItemData(itemName) {
   try {
     // Search in weapon directory
-    const weaponDir = path.join(process.cwd(), 'coregamedata', 'items', 'weapon');
+    const weaponDir = path.join('/app/coregamedata', 'items', 'weapon');
     const weaponPath = findFileByName(weaponDir, itemName);
     if (weaponPath) {
       return { type: 'weapon', data: JSON.parse(fs.readFileSync(weaponPath, 'utf8')) };
     }
     
     // Search in armor directory
-    const armorDir = path.join(process.cwd(), 'coregamedata', 'items', 'armor');
+    const armorDir = path.join('/app/coregamedata', 'items', 'armor');
     const armorPath = findFileByName(armorDir, itemName);
     if (armorPath) {
       return { type: 'armor', data: JSON.parse(fs.readFileSync(armorPath, 'utf8')) };
     }
     
     // Search in treasure directory
-    const treasureDir = path.join(process.cwd(), 'coregamedata', 'items', 'treasure');
+    const treasureDir = path.join('/app/coregamedata', 'items', 'treasure');
     const treasurePath = findFileByName(treasureDir, itemName);
     if (treasurePath) {
       return { type: 'treasure', data: JSON.parse(fs.readFileSync(treasurePath, 'utf8')) };
@@ -62,7 +62,7 @@ function getItemData(itemName) {
 // Function to get spell data from coregamedata
 function getSpellData(spellName) {
   try {
-    const spellsDir = path.join(process.cwd(), 'coregamedata', 'spells');
+    const spellsDir = path.join('/app/coregamedata', 'spells');
     const spellPath = findFileByName(spellsDir, spellName);
     if (spellPath) {
       // Extract level from path
@@ -80,7 +80,7 @@ function getSpellData(spellName) {
 // Function to get native data from coregamedata
 function getNativeData(nativeName) {
   try {
-    const nativesDir = path.join(process.cwd(), 'coregamedata', 'natives');
+    const nativesDir = path.join('/app/coregamedata', 'natives');
     const nativePath = findFileByName(nativesDir, nativeName);
     if (nativePath) {
       // Extract dwelling type from path
@@ -131,6 +131,7 @@ function extractCharacterInventories(
     sessionPath = path.join('public', 'parsed_sessions', sessionId, 'parsed_session.json');
     outputPath = path.join('public', 'parsed_sessions', sessionId, 'character_inventories.json');
   }
+  
   if (!fs.existsSync(xmlPath)) {
     console.error('XML file not found:', xmlPath);
     process.exit(1);
@@ -140,12 +141,12 @@ function extractCharacterInventories(
     process.exit(1);
   }
   
-    const sessionData = JSON.parse(fs.readFileSync(sessionPath, 'utf8'));
+  const sessionData = JSON.parse(fs.readFileSync(sessionPath, 'utf8'));
   const playedCharacters = Object.keys(sessionData.characterToPlayer || {});
   
   console.log(`Characters played in this session: ${playedCharacters.join(', ')}`);
   
-  console.log(`Extracting character inventories for session: ${sessionId}`);
+  console.log(`Extracting character inventories for session: ${sessionId || 'current'}`);
   
   const xmlContent = fs.readFileSync(xmlPath, 'utf8');
   const parser = new xml2js.Parser();
