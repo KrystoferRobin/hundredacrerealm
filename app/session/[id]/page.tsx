@@ -113,6 +113,8 @@ export default function SessionPage() {
   const [scorePopover, setScorePopover] = useState<string | null>(null);
   const [selectedDay, setSelectedDay] = useState<string>('1_1');
   const [selectedMonth, setSelectedMonth] = useState<number>(1);
+  const [isAutoAdvancing, setIsAutoAdvancing] = useState<boolean>(false);
+  const [autoAdvanceInterval, setAutoAdvanceInterval] = useState<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const fetchSessionData = async () => {
@@ -125,16 +127,16 @@ export default function SessionPage() {
           console.log('SessionPage: Session data loaded:', data);
           setSessionData(data);
           
-          // Set initial selected day and month to the first day
+          // Set initial selected day and month to the last day
           const dayKeys = Object.keys(data.days).sort((a, b) => {
             const [am, ad] = a.split('_').map(Number);
             const [bm, bd] = b.split('_').map(Number);
             return am !== bm ? am - bm : ad - bd;
           });
           if (dayKeys.length > 0) {
-            setSelectedDay(dayKeys[0]);
-            const [firstMonth] = dayKeys[0].split('_').map(Number);
-            setSelectedMonth(firstMonth);
+            setSelectedDay(dayKeys[dayKeys.length - 1]);
+            const [lastMonth] = dayKeys[dayKeys.length - 1].split('_').map(Number);
+            setSelectedMonth(lastMonth);
           }
           
           // Fetch session titles from session-titles API
@@ -194,6 +196,42 @@ export default function SessionPage() {
     }
     setDeadCharacters(dead);
   }, [sessionData]);
+
+  // Auto-advance functionality
+  useEffect(() => {
+    if (isAutoAdvancing && sessionData) {
+      const dayKeys = Object.keys(sessionData.days).sort((a, b) => {
+        const [am, ad] = a.split('_').map(Number);
+        const [bm, bd] = b.split('_').map(Number);
+        return am !== bm ? am - bm : ad - bd;
+      });
+      
+      const currentIndex = dayKeys.indexOf(selectedDay);
+      
+      if (currentIndex < dayKeys.length - 1) {
+        const interval = setTimeout(() => {
+          const nextDay = dayKeys[currentIndex + 1];
+          setSelectedDay(nextDay);
+          const [month] = nextDay.split('_').map(Number);
+          setSelectedMonth(month);
+        }, 5000);
+        
+        setAutoAdvanceInterval(interval);
+      } else {
+        // Reached the end, stop auto-advancing
+        setIsAutoAdvancing(false);
+      }
+    } else if (autoAdvanceInterval) {
+      clearTimeout(autoAdvanceInterval);
+      setAutoAdvanceInterval(null);
+    }
+
+    return () => {
+      if (autoAdvanceInterval) {
+        clearTimeout(autoAdvanceInterval);
+      }
+    };
+  }, [isAutoAdvancing, selectedDay, sessionData]);
 
   useEffect(() => {
     const fetchStats = async () => {
@@ -433,7 +471,7 @@ export default function SessionPage() {
         {isSpell && (
           <div className="space-y-2">
             <div className="flex justify-between items-center text-xs">
-              <span className="text-[#6b3e26] font-serif font-semibold">Level {item.attributeBlocks.this.spell}</span>
+              <span className="text-[#6b3e26] font-serif font-semibold">Type {item.attributeBlocks.this.spell}</span>
               <span className="text-[#6b3e26] font-serif capitalize">{item.attributeBlocks.this.duration}</span>
             </div>
             <div className="flex justify-between items-center text-xs">
@@ -748,6 +786,45 @@ export default function SessionPage() {
         setSelectedMonth(sortedMonths[currentIndex + 1]);
       }
     };
+
+    // Day navigation functions
+    const goToPreviousDay = () => {
+      const currentIndex = dayKeys.indexOf(selectedDay);
+      if (currentIndex > 0) {
+        setSelectedDay(dayKeys[currentIndex - 1]);
+        const [month] = dayKeys[currentIndex - 1].split('_').map(Number);
+        setSelectedMonth(month);
+      }
+    };
+
+    const goToNextDay = () => {
+      const currentIndex = dayKeys.indexOf(selectedDay);
+      if (currentIndex < dayKeys.length - 1) {
+        setSelectedDay(dayKeys[currentIndex + 1]);
+        const [month] = dayKeys[currentIndex + 1].split('_').map(Number);
+        setSelectedMonth(month);
+      }
+    };
+
+    const goToFirstDay = () => {
+      if (dayKeys.length > 0) {
+        setSelectedDay(dayKeys[0]);
+        const [month] = dayKeys[0].split('_').map(Number);
+        setSelectedMonth(month);
+      }
+    };
+
+    const goToLastDay = () => {
+      if (dayKeys.length > 0) {
+        setSelectedDay(dayKeys[dayKeys.length - 1]);
+        const [month] = dayKeys[dayKeys.length - 1].split('_').map(Number);
+        setSelectedMonth(month);
+      }
+    };
+
+    const toggleAutoAdvance = () => {
+      setIsAutoAdvancing(!isAutoAdvancing);
+    };
     
     return (
       <div className="mb-6 p-4 bg-white border-2 border-amber-300 rounded-lg shadow-lg">
@@ -773,7 +850,7 @@ export default function SessionPage() {
           </button>
         </div>
         
-        <div className="grid grid-cols-7 gap-1 mb-6">
+        <div className="grid grid-cols-7 gap-1 mb-6 sm:gap-2">
           {currentMonthDays.map(dayKey => {
             const [, day] = dayKey.split('_').map(Number);
             const dayData = sessionData.days[dayKey];
@@ -785,7 +862,7 @@ export default function SessionPage() {
                 key={dayKey}
                 onClick={() => setSelectedDay(dayKey)}
                 className={`
-                  p-2 text-sm font-medium rounded border transition-colors
+                  p-1 sm:p-2 text-xs sm:text-sm font-medium rounded border transition-colors
                   ${selectedDay === dayKey 
                     ? 'bg-amber-500 text-white border-amber-600' 
                     : 'bg-amber-50 text-amber-800 border-amber-200 hover:bg-amber-100'
@@ -800,6 +877,81 @@ export default function SessionPage() {
               </button>
             );
           })}
+        </div>
+        
+        {/* Day Navigation Arrows */}
+        <div className="flex flex-col sm:flex-row items-center justify-between mb-4 space-y-2 sm:space-y-0">
+          <div className="flex items-center space-x-1 sm:space-x-2">
+            <button
+              onClick={goToFirstDay}
+              disabled={dayKeys.indexOf(selectedDay) === 0}
+              className="p-1 sm:p-2 text-amber-600 hover:text-amber-800 disabled:text-gray-400 disabled:cursor-not-allowed"
+              title="Go to first day"
+            >
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              onClick={goToPreviousDay}
+              disabled={dayKeys.indexOf(selectedDay) === 0}
+              className="p-1 sm:p-2 text-amber-600 hover:text-amber-800 disabled:text-gray-400 disabled:cursor-not-allowed"
+              title="Previous day"
+            >
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+          </div>
+          
+          <div className="flex flex-col items-center">
+            <div className="text-xs sm:text-sm font-medium text-amber-800 mb-1 sm:mb-2">
+              Day {dayKeys.indexOf(selectedDay) + 1} of {dayKeys.length}
+            </div>
+            <button
+              onClick={toggleAutoAdvance}
+              disabled={dayKeys.indexOf(selectedDay) === dayKeys.length - 1}
+              className={`p-1 sm:p-2 rounded-full transition-colors ${
+                isAutoAdvancing 
+                  ? 'bg-red-500 hover:bg-red-600 text-white' 
+                  : 'bg-green-500 hover:bg-green-600 text-white'
+              } disabled:bg-gray-400 disabled:cursor-not-allowed`}
+              title={isAutoAdvancing ? "Pause auto-advance" : "Play auto-advance (5s delay)"}
+            >
+              {isAutoAdvancing ? (
+                <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                </svg>
+              ) : (
+                <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              )}
+            </button>
+          </div>
+          
+          <div className="flex items-center space-x-1 sm:space-x-2">
+            <button
+              onClick={goToNextDay}
+              disabled={dayKeys.indexOf(selectedDay) === dayKeys.length - 1}
+              className="p-1 sm:p-2 text-amber-600 hover:text-amber-800 disabled:text-gray-400 disabled:cursor-not-allowed"
+              title="Next day"
+            >
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+            <button
+              onClick={goToLastDay}
+              disabled={dayKeys.indexOf(selectedDay) === dayKeys.length - 1}
+              className="p-1 sm:p-2 text-amber-600 hover:text-amber-800 disabled:text-gray-400 disabled:cursor-not-allowed"
+              title="Go to last day"
+            >
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7m-8 0l7-7-7-7" />
+              </svg>
+            </button>
+          </div>
         </div>
         
         {/* Day Log integrated in the same panel */}
@@ -1141,7 +1293,7 @@ export default function SessionPage() {
         : null;
 
     return (
-      <div key={characterName} className="bg-white border-2 border-amber-300 rounded-lg p-4 mb-4 shadow-lg flex flex-row justify-between min-h-[200px]">
+      <div key={characterName} className="bg-white border-2 border-amber-300 rounded-lg p-4 mb-4 shadow-lg flex flex-col lg:flex-row justify-between min-h-[200px]">
         <div className="flex-1">
           <div className="flex items-center mb-3">
             <div className="w-12 h-12 mr-3 relative">
@@ -1317,12 +1469,12 @@ export default function SessionPage() {
   return (
     <div className="min-h-screen bg-amber-50">
       {/* Session Overview - Full width to match columns below */}
-      <div className="w-full px-6">
-        <div className="mb-8 p-6 bg-white border-2 border-amber-300 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-bold text-amber-800 mb-4 text-center">
+      <div className="w-full px-4 sm:px-6">
+        <div className="mb-8 p-4 sm:p-6 bg-white border-2 border-amber-300 rounded-lg shadow-lg">
+          <h2 className="text-2xl sm:text-3xl font-bold text-amber-800 mb-4 text-center">
             {sessionTitles ? sessionTitles.mainTitle : '📊 Session Overview'}
             {sessionTitles?.subtitle && (
-              <div className="text-lg text-amber-600 mt-2 font-normal">
+              <div className="text-base sm:text-lg text-amber-600 mt-2 font-normal">
                 {sessionTitles.subtitle}
               </div>
             )}
@@ -1358,7 +1510,7 @@ export default function SessionPage() {
           </div>
           
           {/* Statistics */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4">
             <div className="text-center p-3 bg-amber-100 rounded">
               <div className="text-2xl font-bold text-amber-800">{calculateStatistics(sessionData).totalCharacterTurns}</div>
               <div className="text-sm text-amber-600">Character Turns</div>
@@ -1380,19 +1532,19 @@ export default function SessionPage() {
       </div>
 
       {/* Main Content - Map and Log */}
-      <div className="w-full px-6 flex flex-row gap-6">
+      <div className="w-full px-4 sm:px-6 flex flex-col lg:flex-row gap-4 lg:gap-6">
         {/* Map Panel - Square, positioned on the left */}
-        <div className="flex-shrink-0" style={{ width: '55%' }}>
+        <div className="w-full lg:w-1/2 xl:w-3/5">
           <div className="bg-white border-2 border-amber-300 rounded-lg shadow-lg p-4">
             <h2 className="text-xl font-bold text-amber-800 mb-4">🗺️ Game Map</h2>
             <div className="aspect-square w-full overflow-hidden">
-              <SessionMap sessionId={sessionId} characterIcons={characterIcons} />
+              <SessionMap sessionId={sessionId} characterIcons={characterIcons} selectedDay={selectedDay} />
             </div>
           </div>
         </div>
         
         {/* Session Log - Takes remaining space */}
-        <div className="flex-1">
+        <div className="w-full lg:w-1/2 xl:w-2/5">
           {renderCalendar()}
         </div>
       </div>
