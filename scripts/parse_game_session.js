@@ -160,12 +160,17 @@ const processGameSession = async (sessionNameOrFile) => {
         sessionName = sessionFile.replace(/\.(rslog|rsgame)$/,'');
     } else {
         sessionName = sessionFile.replace(/\.(rslog|rsgame)$/,'');
-            }
+    }
     const outputDir = '.';
     console.log(`\n=== Processing session: ${sessionName} ===\n`);
-    // Only use files in the current directory
-    const rslogPath = `${sessionName}.rslog`;
-    const rsgamePath = `${sessionName}.rsgame`;
+    
+    // Find the actual files in the current directory (regardless of exact names)
+    const files = fs.readdirSync('.');
+    const rslogFile = files.find(f => f.endsWith('.rslog'));
+    const rsgameFile = files.find(f => f.endsWith('.rsgame'));
+    
+    const rslogPath = rslogFile || `${sessionName}.rslog`;
+    const rsgamePath = rsgameFile || `${sessionName}.rsgame`;
     const hasRslog = fs.existsSync(rslogPath);
     const hasRsgame = fs.existsSync(rsgamePath);
     if (!hasRslog && !hasRsgame) {

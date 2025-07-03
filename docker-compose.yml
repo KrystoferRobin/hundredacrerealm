@@ -1,6 +1,6 @@
 services:
   hundreacrerealm:
-    image: krystoferrobin/hundreacrerealm:2025-07-02-v9
+    image: hundreacrerealm:latest
     ports:
       - "3000:3000"
     environment:

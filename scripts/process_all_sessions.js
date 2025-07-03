@@ -101,6 +101,9 @@ async function processAllSessions() {
       // Generate session titles
       console.log('Generating session titles...');
       execSync('node /app/scripts/generate_session_titles.js', { stdio: 'inherit' });
+      // Generate map state data
+      console.log('Generating map state data...');
+      execSync('node /app/scripts/track_map_state.js', { stdio: 'inherit' });
 
       // 5. Write metadata file
           const metadata = {

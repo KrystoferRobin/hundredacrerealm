@@ -60,27 +60,9 @@ async function parseMapData() {
                             });
                         }
                         
-                        // Check if this object is actually enchanted
-                        // Look for the enchanted AttributeBlock and check if it has actual enchantment data
-                        if (obj.AttributeBlock) {
-                            obj.AttributeBlock.forEach(enchantedBlock => {
-                                if (enchantedBlock.$.blockName === 'enchanted') {
-                                    // Check if this enchanted block has actual enchantment data (not just the definition)
-                                    if (enchantedBlock.attribute && enchantedBlock.attribute.length > 0) {
-                                        // Look for magic type indicators in clearings
-                                        const hasMagic = enchantedBlock.attribute.some(attr => {
-                                            if (!attr.$) return false;
-                                            // Check for magic attributes in clearings
-                                            const magicAttrs = ['clearing_1_magic', 'clearing_2_magic', 'clearing_4_magic', 'clearing_5_magic', 'clearing_6_magic'];
-                                            return magicAttrs.some(magicAttr => attr.$[magicAttr] && attr.$[magicAttr] !== '');
-                                        });
-                                        if (hasMagic) {
-                                            isEnchanted = true;
-                                        }
-                                    }
-                                }
-                            });
-                        }
+                        // All tiles start unenchanted - enchantment state will be determined by game events
+                        // The enchanted AttributeBlock in the XML represents the potential for enchantment, not current state
+                        isEnchanted = false;
                         
                         if (position) {
                             mapTiles.push({

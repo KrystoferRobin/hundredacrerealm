@@ -471,7 +471,8 @@ function main() {
     process.exit(1);
   }
   // Output parsed_session.json in current directory
-  const sessionName = logFile.replace('.rslog', '');
+  // Use a simple session name based on the base name without timestamp
+  const sessionName = logFile.replace(/_\d{4}-\d{2}-\d{2}T\d{2}-\d{2}-\d{2}_[a-z0-9]+\.rslog$/, '').replace('.rslog', '');
   SESSION_DIR = '.';
   OUTPUT_FILE = path.join(SESSION_DIR, 'parsed_session.json');
   LOG_FILE = logFile;
@@ -484,7 +485,7 @@ function main() {
   try {
     // Run the basic parser with the log file name
     console.log('Running basic parser to split into days...');
-    execSync(`node ../../../scripts/parse_game_log.js ${logFile}`, {
+    execSync(`node /app/scripts/parse_game_log.js ${logFile}`, {
       stdio: 'inherit',
       cwd: SESSION_DIR
     });
