@@ -1,0 +1,16 @@
+Month 2, Day 8
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Caves 5
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Caves 3
+host
+========================================
+host

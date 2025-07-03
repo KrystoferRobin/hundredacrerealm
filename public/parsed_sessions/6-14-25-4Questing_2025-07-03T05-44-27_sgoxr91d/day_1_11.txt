@@ -1,0 +1,34 @@
+Month 1, Day 11
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Amazon
+Starts turn: Curst Valley 4
+Amazon
+Hide - Succeeded
+Amazon
+Move - moved
+Amazon
+Search - Peer - Clues
+Amazon
+Hide - N/A
+Amazon
+Search - Peer - Nothing
+Amazon
+Ends turn: Ledges 3
+Woods Girl
+Starts turn: Curst Valley 4
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Hide - N/A
+Woods Girl
+Search - Peer - Found hidden enemies and Found 1 path(s)
+Woods Girl
+Ends turn: Ledges 3
+host
+========================================
+host

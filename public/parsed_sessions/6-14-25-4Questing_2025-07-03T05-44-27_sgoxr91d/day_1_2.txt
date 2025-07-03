@@ -1,0 +1,102 @@
+Month 1, Day 2
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+White Knight
+Starts turn: Cliff 1
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Bad Valley 2
+Woods Girl
+Starts turn: Deep Woods 2
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+The native group will be no more favorable with drinks.
+Woods Girl
+Activated Quest Card: A Short Swordsman Joins You
+Woods Girl
+Ends turn: Evil Valley 5
+Berserker
+Starts turn: Evil Valley 5
+Berserker
+Ends turn: Evil Valley 5
+Amazon
+Starts turn: Between Awful Valley 4 and Borderland 2
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+Hide - Succeeded
+Amazon
+Hide - N/A
+Amazon
+Ends turn: Ruins 1
+__battle__
+Battle resolving at Evil Valley 5:
+__battle__
+GROUP 1
+__battle__
+Woods Girl
+__battle__
+GROUP 2
+__battle__
+Berserker
+__battle__
+GROUP 3
+__battle__
+Soldier 1
+__battle__
+Soldier 2
+__battle__
+Soldier 3
+__battle__
+Soldier HQ
+Woods Girl
+Meeting Soldiers on the Neutral table
+Woods Girl
+Rolled 2 and 1. = Price x 3
+Berserker
+The Berserker chose not to buy drinks.
+Berserker
+Meeting Soldiers on the Neutral table
+Berserker
+Rolled 1 and 4. = No Deal
+__battle__
+=======================
+__battle__
+Evening of month 1, day 2, in clearing Evil Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host

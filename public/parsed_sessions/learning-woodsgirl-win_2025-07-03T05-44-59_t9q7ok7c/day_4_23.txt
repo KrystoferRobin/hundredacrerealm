@@ -1,0 +1,26 @@
+Month 4, Day 23
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Borderland 2
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Selling to Order HQ.
+Woods Girl
+Attempting to sell: Bejeweled Dwarf Vest, and Golden Icon
+Woods Girl
+Trade - Sell to Order HQ - Sold 2 items for 127 gold:
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Failed
+Woods Girl
+Ends turn: Dark Valley 2
+host
+========================================
+host

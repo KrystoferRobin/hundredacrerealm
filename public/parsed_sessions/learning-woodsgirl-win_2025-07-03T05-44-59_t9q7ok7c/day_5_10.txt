@@ -1,0 +1,38 @@
+Month 5, Day 10
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Lancer HQ
+Starts turn: Borderland 1
+Lancer HQ
+Search - Loot the Altar - Nothing
+Lancer HQ
+Search - Loot the Altar - Nothing
+Lancer HQ
+Search - Loot the Altar - Nothing
+Lancer HQ
+Hide - Succeeded
+Lancer HQ
+Ends turn: Borderland 1
+Woods Girl
+Starts turn: Borderland 1
+Woods Girl
+Activates Cloak of Mist
+Woods Girl
+Activates Warhorse
+Woods Girl
+Search - Loot the Altar - Found Crypt of the Knight
+Woods Girl
+Search - Loot the Crypt of the Knight - Gained 1 gold.
+Woods Girl
+Search - Loot the Crypt of the Knight - Curse!
+Woods Girl
+- Curse! - Wither
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Borderland 1
+host
+========================================
+host

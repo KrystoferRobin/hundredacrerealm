@@ -1,0 +1,20 @@
+Month 1, Day 21
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Wizard
+Starts turn: Deep Woods 1
+Wizard
+Search - Locate - Nothing
+Wizard
+Search - Locate - Nothing
+Wizard
+Hide - Succeeded
+Wizard
+Hide - N/A
+Wizard
+Ends turn: Deep Woods 1
+host
+========================================
+host

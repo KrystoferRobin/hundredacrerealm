@@ -1,0 +1,60 @@
+Month 1, Day 27
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Wizard
+Starts turn: Dark Valley 2
+Wizard
+Move - moved
+Wizard
+Selling to Guard HQ.
+Wizard
+Attempting to sell: Sacred Statue, and Golden Arm Band
+Wizard
+Trade - Sell to Guard HQ - Sold 2 items for 25 gold:
+Wizard
+Hire - Buy from Guard 2 (as Ally) - Price x 4
+Wizard
+Hire - Buy from Guard 2 (as Ally) - Price x 4
+Wizard
+Ends turn: Dark Valley 5
+__battle__
+Battle resolving at Dark Valley 5:
+__battle__
+GROUP 1
+__battle__
+Wizard
+__battle__
+GROUP 2
+__battle__
+Guard 1
+__battle__
+Guard 2
+__battle__
+Guard HQ
+Wizard
+The native group will be no more favorable with drinks.
+Wizard
+Meeting Guard on the Friendly table
+Wizard
+Rolled 4 and 5. = Price x 4
+__battle__
+=======================
+__battle__
+Evening of month 1, day 27, in clearing Dark Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Wizard
+Presses the END combat button.
+Wizard
+Combat has ended.
+host
+========================================
+host

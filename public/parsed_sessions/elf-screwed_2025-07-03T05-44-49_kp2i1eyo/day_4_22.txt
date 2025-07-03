@@ -1,0 +1,58 @@
+Month 4, Day 22
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Elf
+Starts turn: Cliff 6
+Elf
+Hide - Failed
+Elf
+Hide - Succeeded
+Elf
+Hide - N/A
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Ends turn: Mountain 5
+Elf
+Reveals: Lost Castle
+Elf
+Reveals: Bones M
+host
+Giant Bat is added to Mountain, clearing 5
+host
+Giant Bat is added to Mountain, clearing 2
+host
+Giant Bat is added to Mountain, clearing 2
+__battle__
+Battle resolving at Mountain 5:
+__battle__
+GROUP 1
+__battle__
+Elf
+__battle__
+GROUP 2
+__battle__
+Giant Bat
+__battle__
+=======================
+__battle__
+Evening of month 4, day 22, in clearing Mountain 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Elf
+Presses the END combat button.
+Elf
+Combat has ended.
+host
+========================================
+host

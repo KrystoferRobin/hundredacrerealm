@@ -1,0 +1,32 @@
+Month 2, Day 4
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Elf
+Starts turn: Deep Woods 1
+Elf
+Move - moved
+Elf
+The native group will be no more favorable with drinks.
+Elf
+Selling to Order HQ.
+Elf
+Attempting to sell: Deft Gloves
+Elf
+Trade - Sell to Order HQ - Total received for the Deft Gloves was 10 gold.
+Elf
+Selling to Order HQ.
+Elf
+Attempting to sell: Sacred Grail
+Elf
+Trade - Sell to Order HQ - Total received for the Sacred Grail was 12 gold.
+Elf
+Move - moved
+Elf
+Hide - Succeeded
+Elf
+Ends turn: Evil Valley 2
+host
+========================================
+host

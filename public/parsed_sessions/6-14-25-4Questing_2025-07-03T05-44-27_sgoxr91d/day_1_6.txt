@@ -1,0 +1,48 @@
+Month 1, Day 6
+host
+========================================
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+White Knight is dead.  Killed by Patrol 1
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+H Troll disengages because target is dead
+__battle__
+H Troll won't disengage when fighting a character
+__battle__
+H Troll disengages because target is dead
+__battle__
+Patrol 1 won't disengage when fighting a character
+__battle__
+Patrol 1 disengages because target is dead
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Between Awful Valley 4 and Borderland 2
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Ends turn: Ruins 2
+Amazon
+Starts turn: Ruins 2
+Amazon
+Search - Locate - Passage(s)
+Amazon
+Search - Locate - Clues and Passage(s)
+Amazon
+Search - Locate - Nothing
+Amazon
+Search - Locate - Nothing
+Amazon
+Ends turn: Ruins 2
+host
+========================================
+host

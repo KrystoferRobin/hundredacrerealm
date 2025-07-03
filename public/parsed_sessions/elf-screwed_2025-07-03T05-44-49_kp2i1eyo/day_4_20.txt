@@ -1,0 +1,26 @@
+Month 4, Day 20
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Elf
+Starts turn: Deep Woods 6
+Elf
+Hide - Succeeded
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Hide - N/A
+Elf
+Ends turn: Evil Valley 1
+host
+========================================
+host

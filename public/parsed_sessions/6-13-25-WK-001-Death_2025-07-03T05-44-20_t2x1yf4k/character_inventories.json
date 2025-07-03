@@ -1,0 +1,45 @@
+{
+  "White Knight": {
+    "character": "White Knight",
+    "items": {
+      "weapons": [],
+      "armor": [],
+      "treasures": [],
+      "great_treasures": [],
+      "spells": [],
+      "natives": [],
+      "other": [
+        {
+          "id": "3517",
+          "name": "Make Whole",
+          "type": "spell",
+          "category": "spell",
+          "data": {
+            "id": "2114",
+            "name": "Make Whole",
+            "spellLevel": "I",
+            "attributeBlocks": {
+              "this": {
+                "spell": "I",
+                "duration": "instant",
+                "target": "character",
+                "text": "repair damage, wounds, and fatigue",
+                "magic_color": "white",
+                "heal": "",
+                "repair": "",
+                "host_okay": "",
+                "learnable": "",
+                "super_realm": ""
+              }
+            },
+            "parts": []
+          }
+        }
+      ],
+      "unknown": []
+    },
+    "raw_contains": [
+      "3517"
+    ]
+  }
+}

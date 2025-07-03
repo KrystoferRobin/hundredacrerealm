@@ -1,0 +1,22 @@
+Month 4, Day 1
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Elf
+Starts turn: Deep Woods 3
+Elf
+Search - Peer - Clues and Found 1 path(s)
+Elf
+Search - Peer - Found hidden enemies
+Elf
+Move - moved
+Elf
+Hide - Succeeded
+Elf
+Hide - N/A
+Elf
+Ends turn: Deep Woods 6
+host
+========================================
+host

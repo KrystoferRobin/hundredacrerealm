@@ -1,0 +1,54 @@
+Month 1, Day 4
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Elf
+Starts turn: Cliff 3
+Elf
+Search - Locate - Nothing
+Elf
+Search - Locate - Nothing
+Elf
+Search - Locate - Nothing
+Elf
+Hide - Succeeded
+Elf
+Hide - N/A
+Elf
+Ends turn: Cliff 3
+host
+H Flying Dragon is prowling.
+host
+H Flying Dragon is prowling.
+__battle__
+Battle resolving at Cliff 3:
+__battle__
+GROUP 1
+__battle__
+Elf
+__battle__
+GROUP 2
+__battle__
+H Flying Dragon
+__battle__
+H Flying Dragon
+__battle__
+=======================
+__battle__
+Evening of month 1, day 4, in clearing Cliff 3
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Elf
+Presses the END combat button.
+Elf
+Combat has ended.
+host
+========================================
+host

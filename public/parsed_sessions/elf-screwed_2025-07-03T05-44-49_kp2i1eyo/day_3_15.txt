@@ -1,0 +1,18 @@
+Month 3, Day 15
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Elf
+Starts turn: Cliff 4
+Elf
+Hide - Succeeded
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Ends turn: Cliff 1
+host
+========================================
+host

@@ -1,0 +1,22 @@
+Month 1, Day 24
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Elf
+Starts turn: Between Borderland 3 and Borderland 6
+Elf
+Move - moved
+Elf
+Search - Locate - Choice - Discover chit(s) - Found Lost City,Lair,Vault
+Elf
+Search - Loot the Lair - Found Treasure
+Elf
+Hide - Succeeded
+Elf
+Hide - N/A
+Elf
+Ends turn: Borderland 3
+host
+========================================
+host

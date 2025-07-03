@@ -1,0 +1,60 @@
+Month 1, Day 1
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Curst Valley 5
+Woods Girl
+Buying from Rogue HQ.
+Woods Girl
+Available for sale: 6 Horses, and 2 Treasures
+Woods Girl
+Bidding for a treasure
+Woods Girl
+The Woods Girl chose not to buy drinks.
+Woods Girl
+Trade - Buy from Rogue HQ (as Neutral) - No Deal
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Mountain 5
+Woods Girl
+Reveals: Flutter 2
+Woods Girl
+Reveals: Stink M
+host
+H Flying Dragon is added to Mountain, clearing 2
+host
+H Flying Dragon is added to Mountain, clearing 2
+__battle__
+Battle resolving at Mountain 5:
+__battle__
+GROUP 1
+__battle__
+Woods Girl
+__battle__
+=======================
+__battle__
+Evening of month 1, day 1, in clearing Mountain 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host

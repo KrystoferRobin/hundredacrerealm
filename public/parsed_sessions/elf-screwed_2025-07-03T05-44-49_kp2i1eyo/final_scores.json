@@ -1,0 +1,36 @@
+{
+  "Elf": {
+    "totalScore": -10,
+    "totalBasicScore": 2,
+    "totalBonusScore": -12,
+    "categories": {
+      "greatTreasures": {
+        "actual": 1,
+        "required": 2,
+        "factor": 1
+      },
+      "spells": {
+        "actual": 1,
+        "required": 0,
+        "factor": 2
+      },
+      "fame": {
+        "actual": 83,
+        "required": 0,
+        "factor": 10
+      },
+      "notoriety": {
+        "actual": -5,
+        "required": 0,
+        "factor": 20
+      },
+      "gold": {
+        "actual": 73,
+        "required": 90,
+        "factor": 30
+      }
+    },
+    "itemFame": -10,
+    "itemNotoriety": 10
+  }
+}

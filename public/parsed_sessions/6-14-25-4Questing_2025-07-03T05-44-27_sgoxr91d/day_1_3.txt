@@ -1,0 +1,84 @@
+Month 1, Day 3
+host
+========================================
+Woods Girl
+Activated Quest Card: A Short Swordsman Joins You
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Evil Valley 5
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Deep Woods 4
+Berserker
+Starts turn: Deep Woods 4
+Berserker
+Ends turn: Deep Woods 4
+Amazon
+Starts turn: Ruins 1
+Amazon
+Move - moved
+Amazon
+Search - Locate - Nothing
+Amazon
+Search - Locate - Nothing
+Amazon
+Hide - Failed
+Amazon
+Search - Locate - Nothing
+Amazon
+Ends turn: Ruins 2
+Amazon
+Reveals: Statue
+Amazon
+Reveals: Stink C
+White Knight
+Starts turn: Bad Valley 2
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Ruins 6
+__battle__
+Battle resolving at Deep Woods 4:
+__battle__
+GROUP 1
+__battle__
+Woods Girl
+__battle__
+Short Swordsman (Woods Girl)
+__battle__
+GROUP 2
+__battle__
+Berserker
+__battle__
+=======================
+__battle__
+Evening of month 1, day 3, in clearing Deep Woods 4
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host

@@ -1,0 +1,22 @@
+Month 1, Day 14
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Amazon
+Starts turn: High Pass 6
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+Hide - Succeeded
+Amazon
+Ends turn: Linden Woods 2
+Woods Girl
+Starts turn: Linden Woods 2
+Woods Girl
+Ends turn: Linden Woods 2
+host
+========================================
+host

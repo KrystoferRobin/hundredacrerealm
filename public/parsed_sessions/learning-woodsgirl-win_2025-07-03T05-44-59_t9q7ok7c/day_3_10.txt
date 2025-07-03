@@ -1,0 +1,50 @@
+Month 3, Day 10
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Oak Woods 4
+Woods Girl
+Hide - Failed
+Woods Girl
+Move - moved
+Woods Girl
+BLOCKED - Cannot perform action M-L5,M-L5
+Woods Girl
+BLOCKED - Cannot perform action M-L5,M-L5
+Woods Girl
+Ends turn: Oak Woods 2
+__battle__
+Battle resolving at Oak Woods 2:
+__battle__
+GROUP 1
+__battle__
+Woods Girl
+__battle__
+GROUP 2
+__battle__
+Viper
+__battle__
+Viper
+__battle__
+=======================
+__battle__
+Evening of month 3, day 10, in clearing Oak Woods 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Woods Girl
+Ran away!
+host
+========================================
+host

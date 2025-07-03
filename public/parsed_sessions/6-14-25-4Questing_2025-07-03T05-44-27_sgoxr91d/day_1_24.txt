@@ -1,0 +1,28 @@
+Month 1, Day 24
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Amazon
+Starts turn: Dark Valley 4
+Amazon
+Hide - Failed
+Amazon
+Hide - Failed
+Amazon
+Move - moved
+Amazon
+Move - moved
+Amazon
+After resting, these chits were made active: FIGHT M4*
+Amazon
+Rest - Rested 1 asterisk
+Amazon
+Ends turn: Curst Valley 2
+Woods Girl
+Starts turn: Curst Valley 2
+Woods Girl
+Ends turn: Curst Valley 2
+host
+========================================
+host

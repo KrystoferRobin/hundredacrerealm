@@ -1,0 +1,18 @@
+{
+  "Lancer HQ": {
+    "gold": 0,
+    "fame": 0,
+    "notoriety": 0,
+    "startingSpells": 0,
+    "greatTreasures": 3,
+    "learnedSpells": 0
+  },
+  "Woods Girl": {
+    "gold": 109,
+    "fame": 37,
+    "notoriety": 32,
+    "startingSpells": 1,
+    "greatTreasures": 1,
+    "learnedSpells": 0
+  }
+}

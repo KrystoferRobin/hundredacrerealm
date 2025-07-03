@@ -1,0 +1,20 @@
+Month 2, Day 15
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Oak Woods 2
+Woods Girl
+Hide - Failed
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Cavern 1
+Woods Girl
+Reveals: Hoard
+Woods Girl
+Reveals: Ruins C
+host
+========================================
+host

@@ -1,0 +1,20 @@
+Month 1, Day 4
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Wizard
+Starts turn: Deep Woods 1
+Wizard
+Move - moved
+Wizard
+Move - moved
+Wizard
+Move - moved
+Wizard
+Hide - Succeeded
+Wizard
+Ends turn: Deep Woods 5
+host
+========================================
+host

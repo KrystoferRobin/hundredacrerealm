@@ -1,0 +1,70 @@
+Month 4, Day 12
+host
+========================================
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Patrol HQ is dead.  Killed by T Dragon
+__battle__
+T Dragon is a Tremendous monster
+__battle__
+T Dragon hit result: Intercepted
+__battle__
+T Dragon flips back to light side.
+__battle__
+T Dragon has a Dragon Head
+__battle__
+Dragon Head hit result is null
+__battle__
+T Dragon disengages because target is dead
+host
+Monster Die roll is Rolled 1.
+Elf
+Starts turn: Between Borderland 2 and Borderland 3
+Elf
+Move - moved
+Elf
+Activates Timeless Jewel
+Elf
+Ends turn: Borderland 2
+host
+T Flying Dragon is prowling.
+host
+T Flying Dragon blocks the Elf
+host
+T Dragon is prowling.
+host
+T Dragon blocks the Elf
+__battle__
+Battle resolving at Borderland 2:
+__battle__
+GROUP 1
+__battle__
+Elf
+__battle__
+GROUP 2
+__battle__
+T Flying Dragon
+__battle__
+T Dragon
+__battle__
+=======================
+__battle__
+Evening of month 4, day 12, in clearing Borderland 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Elf
+Ran away!
+host
+========================================
+host

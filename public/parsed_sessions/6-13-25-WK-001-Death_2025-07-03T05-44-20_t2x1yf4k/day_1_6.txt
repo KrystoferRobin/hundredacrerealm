@@ -1,0 +1,54 @@
+Month 1, Day 6
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+White Knight
+Starts turn: Deep Woods 6
+White Knight
+Search - Locate - Discover chit(s) - Found Pool
+White Knight
+Fatigued chit: MOVE T6*
+White Knight
+Search - Loot the Pool - Found Treasure
+White Knight
+Fatigued chit: FIGHT H5*
+White Knight
+Search - Loot the Pool - Found Treasure
+White Knight
+Hide - Succeeded
+White Knight
+After resting, these chits were made active: FIGHT H5*
+White Knight
+Rest - Rested 1 asterisk
+White Knight
+Ends turn: Deep Woods 6
+__battle__
+Battle resolving at Deep Woods 6:
+__battle__
+GROUP 1
+__battle__
+White Knight
+__battle__
+GROUP 2
+__battle__
+Octopus
+__battle__
+=======================
+__battle__
+Evening of month 1, day 6, in clearing Deep Woods 6
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+White Knight
+Presses the END combat button.
+White Knight
+Combat has ended.
+host
+========================================
+host

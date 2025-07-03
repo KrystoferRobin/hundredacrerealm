@@ -1,0 +1,20 @@
+Month 1, Day 12
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Elf
+Starts turn: Ledges 2
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Hide - Succeeded
+Elf
+Ends turn: Bad Valley 2
+host
+========================================
+host

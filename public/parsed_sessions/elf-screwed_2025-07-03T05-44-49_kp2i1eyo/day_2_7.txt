@@ -1,0 +1,38 @@
+Month 2, Day 7
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+host
+7th day - denizens return to setup card:
+host
+- Giant Bat
+host
+- Guard 1
+host
+- Guard 2
+host
+- Guard HQ
+host
+- Order 1
+host
+- Order 2
+host
+- Order 3
+host
+- Order HQ
+Elf
+Starts turn: Borderland 6
+Elf
+Search - Loot the Hoard - Found Treasure
+Elf
+Search - Loot the Hoard - Found Treasure
+Elf
+Activates Battle Bracelets
+Elf
+Hide - Succeeded
+Elf
+Ends turn: Borderland 6
+host
+========================================
+host

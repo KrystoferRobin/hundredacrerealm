@@ -1,0 +1,54 @@
+Month 2, Day 20
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Wizard
+Starts turn: Mountain 2
+Wizard
+After resting, these chits were made active: MAGIC IV4*
+Wizard
+Rest - Rested 1 asterisk
+Wizard
+Spell - enchanted Wizard Magic IV4*
+Wizard
+Search - Loot the Statue - Nothing
+Wizard
+Hide - Succeeded
+Wizard
+Ends turn: Mountain 2
+host
+T Troll is prowling.
+host
+Giant is prowling.
+__battle__
+Battle resolving at Mountain 2:
+__battle__
+GROUP 1
+__battle__
+Wizard
+__battle__
+GROUP 2
+__battle__
+T Troll
+__battle__
+Giant
+__battle__
+=======================
+__battle__
+Evening of month 2, day 20, in clearing Mountain 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Wizard
+Presses the END combat button.
+Wizard
+Combat has ended.
+host
+========================================
+host

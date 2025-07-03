@@ -1,0 +1,969 @@
+{
+  "dwellings": [
+    {
+      "name": "Small Campfire",
+      "id": "231",
+      "type": "warning",
+      "dwelling": "s_fire",
+      "clearing": null,
+      "tile": "Smoke W",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Large Campfire",
+      "id": "232",
+      "type": "warning",
+      "dwelling": "l_fire",
+      "clearing": null,
+      "tile": "Stink W",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "House",
+      "id": "227",
+      "type": "warning",
+      "dwelling": "house",
+      "clearing": "5",
+      "tile": "Awful Valley",
+      "position": "0,-2",
+      "rotation": "0"
+    },
+    {
+      "name": "Chapel",
+      "id": "229",
+      "type": "warning",
+      "dwelling": "chapel",
+      "clearing": "5",
+      "tile": "Bad Valley",
+      "position": "-1,2",
+      "rotation": "0"
+    },
+    {
+      "name": "Inn",
+      "id": "228",
+      "type": "warning",
+      "dwelling": "inn",
+      "clearing": "5",
+      "tile": "Curst Valley",
+      "position": "0,1",
+      "rotation": "2"
+    },
+    {
+      "name": "Guard",
+      "id": "230",
+      "type": "warning",
+      "dwelling": "guard",
+      "clearing": "5",
+      "tile": "Evil Valley",
+      "position": "1,0",
+      "rotation": "0"
+    }
+  ],
+  "sound": [
+    {
+      "name": "Roar 4",
+      "id": "212",
+      "type": null,
+      "dwelling": null,
+      "clearing": "4",
+      "tile": "Deep Woods",
+      "position": "1,-1",
+      "rotation": "5"
+    },
+    {
+      "name": "Flutter 2",
+      "id": "208",
+      "type": null,
+      "dwelling": null,
+      "clearing": "2",
+      "tile": "Ledges",
+      "position": "2,-2",
+      "rotation": "4"
+    },
+    {
+      "name": "Howl 5",
+      "id": "213",
+      "type": null,
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Crag",
+      "position": "-2,0",
+      "rotation": "2"
+    },
+    {
+      "name": "Flutter 1",
+      "id": "207",
+      "type": null,
+      "dwelling": null,
+      "clearing": "1",
+      "tile": "High Pass",
+      "position": "0,2",
+      "rotation": "0"
+    },
+    {
+      "name": "Slither 3",
+      "id": "210",
+      "type": null,
+      "dwelling": null,
+      "clearing": "3",
+      "tile": "Ruins",
+      "position": "-1,0",
+      "rotation": "3"
+    }
+  ],
+  "warning": [
+    {
+      "name": "Smoke V",
+      "id": "199",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Awful Valley",
+      "position": "0,-2",
+      "rotation": "0"
+    },
+    {
+      "name": "Dank V",
+      "id": "191",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Bad Valley",
+      "position": "-1,2",
+      "rotation": "0"
+    },
+    {
+      "name": "Stink V",
+      "id": "203",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Curst Valley",
+      "position": "0,1",
+      "rotation": "2"
+    },
+    {
+      "name": "Bones V",
+      "id": "187",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Dark Valley",
+      "position": "2,0",
+      "rotation": "1"
+    },
+    {
+      "name": "Ruins V",
+      "id": "195",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Evil Valley",
+      "position": "1,0",
+      "rotation": "0"
+    },
+    {
+      "name": "Bones W",
+      "id": "189",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Linden Woods",
+      "position": "0,-1",
+      "rotation": "3"
+    },
+    {
+      "name": "Ruins W",
+      "id": "197",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Maple Woods",
+      "position": "-2,3",
+      "rotation": "2"
+    },
+    {
+      "name": "Stink W",
+      "id": "205",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Nut Woods",
+      "position": "1,-3",
+      "rotation": "0"
+    },
+    {
+      "name": "Smoke W",
+      "id": "201",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Oak Woods",
+      "position": "-2,2",
+      "rotation": "2"
+    },
+    {
+      "name": "Dank W",
+      "id": "193",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Pine Woods",
+      "position": "1,-2",
+      "rotation": "3"
+    },
+    {
+      "name": "Stink M",
+      "id": "206",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Deep Woods",
+      "position": "1,-1",
+      "rotation": "5"
+    },
+    {
+      "name": "Smoke M",
+      "id": "202",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Ledges",
+      "position": "2,-2",
+      "rotation": "4"
+    },
+    {
+      "name": "Dank M",
+      "id": "194",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Crag",
+      "position": "-2,0",
+      "rotation": "2"
+    },
+    {
+      "name": "Ruins M",
+      "id": "198",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Mountain",
+      "position": "-2,1",
+      "rotation": "3"
+    },
+    {
+      "name": "Bones M",
+      "id": "190",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Cliff",
+      "position": "-1,1",
+      "rotation": "2"
+    },
+    {
+      "name": "Bones C",
+      "id": "188",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Borderland",
+      "position": "0,0",
+      "rotation": "2"
+    },
+    {
+      "name": "Stink C",
+      "id": "204",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "High Pass",
+      "position": "0,2",
+      "rotation": "0"
+    },
+    {
+      "name": "Ruins C",
+      "id": "196",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Ruins",
+      "position": "-1,0",
+      "rotation": "3"
+    },
+    {
+      "name": "Smoke C",
+      "id": "200",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Caves",
+      "position": "-1,-1",
+      "rotation": "3"
+    },
+    {
+      "name": "Dank C",
+      "id": "192",
+      "type": "warning",
+      "dwelling": null,
+      "clearing": null,
+      "tile": "Cavern",
+      "position": "1,1",
+      "rotation": "4"
+    }
+  ],
+  "treasure": [
+    {
+      "name": "Hoard",
+      "id": "217",
+      "type": "treasure",
+      "dwelling": null,
+      "clearing": "6",
+      "tile": "Cliff",
+      "position": "-1,1",
+      "rotation": "2"
+    },
+    {
+      "name": "Cairns",
+      "id": "223",
+      "type": "treasure",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Caves",
+      "position": "-1,-1",
+      "rotation": "3"
+    },
+    {
+      "name": "Lair",
+      "id": "218",
+      "type": "treasure",
+      "dwelling": null,
+      "clearing": "3",
+      "tile": "Cavern",
+      "position": "1,1",
+      "rotation": "4"
+    }
+  ],
+  "other": [
+    {
+      "name": "Helmet",
+      "id": "143",
+      "type": null,
+      "clearing": null,
+      "tile": "House",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Helmet",
+      "id": "144",
+      "type": null,
+      "clearing": null,
+      "tile": "House",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Helmet",
+      "id": "145",
+      "type": null,
+      "clearing": null,
+      "tile": "House",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Shield",
+      "id": "149",
+      "type": null,
+      "clearing": null,
+      "tile": "House",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Shield",
+      "id": "150",
+      "type": null,
+      "clearing": null,
+      "tile": "House",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Staff",
+      "id": "167",
+      "type": null,
+      "clearing": null,
+      "tile": "House",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Staff",
+      "id": "168",
+      "type": null,
+      "clearing": null,
+      "tile": "House",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Thrusting Sword",
+      "id": "174",
+      "type": null,
+      "clearing": null,
+      "tile": "House",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Thrusting Sword",
+      "id": "175",
+      "type": null,
+      "clearing": null,
+      "tile": "House",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Short Sword",
+      "id": "176",
+      "type": null,
+      "clearing": null,
+      "tile": "House",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Short Sword",
+      "id": "177",
+      "type": null,
+      "clearing": null,
+      "tile": "House",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Short Sword",
+      "id": "178",
+      "type": null,
+      "clearing": null,
+      "tile": "House",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Vial of Healing",
+      "id": "341",
+      "type": null,
+      "clearing": null,
+      "tile": "House",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Alchemist's Mixture",
+      "id": "337",
+      "type": null,
+      "clearing": null,
+      "tile": "House",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Horse",
+      "id": "134",
+      "type": null,
+      "clearing": null,
+      "tile": "Inn",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Horse",
+      "id": "135",
+      "type": null,
+      "clearing": null,
+      "tile": "Inn",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Horse",
+      "id": "136",
+      "type": null,
+      "clearing": null,
+      "tile": "Inn",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Horse",
+      "id": "137",
+      "type": null,
+      "clearing": null,
+      "tile": "Inn",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Horse",
+      "id": "138",
+      "type": null,
+      "clearing": null,
+      "tile": "Inn",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Horse",
+      "id": "139",
+      "type": null,
+      "clearing": null,
+      "tile": "Inn",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Withered Claw",
+      "id": "356",
+      "type": null,
+      "clearing": null,
+      "tile": "Inn",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Good Book",
+      "id": "344",
+      "type": null,
+      "clearing": null,
+      "tile": "Inn",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Warhorse",
+      "id": "130",
+      "type": null,
+      "clearing": null,
+      "tile": "Chapel",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Warhorse",
+      "id": "131",
+      "type": null,
+      "clearing": null,
+      "tile": "Chapel",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Warhorse",
+      "id": "132",
+      "type": null,
+      "clearing": null,
+      "tile": "Chapel",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Armor",
+      "id": "141",
+      "type": null,
+      "clearing": null,
+      "tile": "Chapel",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Armor",
+      "id": "142",
+      "type": null,
+      "clearing": null,
+      "tile": "Chapel",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Crossbow",
+      "id": "166",
+      "type": null,
+      "clearing": null,
+      "tile": "Chapel",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Great Sword",
+      "id": "169",
+      "type": null,
+      "clearing": null,
+      "tile": "Chapel",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Morning Star",
+      "id": "171",
+      "type": null,
+      "clearing": null,
+      "tile": "Chapel",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Great Axe",
+      "id": "172",
+      "type": null,
+      "clearing": null,
+      "tile": "Chapel",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Great Axe",
+      "id": "173",
+      "type": null,
+      "clearing": null,
+      "tile": "Chapel",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Draught of Speed",
+      "id": "339",
+      "type": null,
+      "clearing": null,
+      "tile": "Chapel",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Cloak of Mist",
+      "id": "331",
+      "type": null,
+      "clearing": null,
+      "tile": "Chapel",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Helmet",
+      "id": "146",
+      "type": null,
+      "clearing": null,
+      "tile": "Guard",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Breastplate",
+      "id": "153",
+      "type": null,
+      "clearing": null,
+      "tile": "Guard",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Broadsword",
+      "id": "170",
+      "type": null,
+      "clearing": null,
+      "tile": "Guard",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Axe",
+      "id": "179",
+      "type": null,
+      "clearing": null,
+      "tile": "Guard",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Axe",
+      "id": "180",
+      "type": null,
+      "clearing": null,
+      "tile": "Guard",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Mace",
+      "id": "181",
+      "type": null,
+      "clearing": null,
+      "tile": "Guard",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Mace",
+      "id": "182",
+      "type": null,
+      "clearing": null,
+      "tile": "Guard",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Cloven Hoof",
+      "id": "322",
+      "type": null,
+      "clearing": null,
+      "tile": "Guard",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Map of Ruins",
+      "id": "370",
+      "type": null,
+      "clearing": null,
+      "tile": "Guard",
+      "position": null,
+      "rotation": null
+    },
+    {
+      "name": "Soldier 1",
+      "id": "99",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Awful Valley",
+      "position": "0,-2",
+      "rotation": "0"
+    },
+    {
+      "name": "Soldier 2",
+      "id": "100",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Awful Valley",
+      "position": "0,-2",
+      "rotation": "0"
+    },
+    {
+      "name": "Soldier 3",
+      "id": "101",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Awful Valley",
+      "position": "0,-2",
+      "rotation": "0"
+    },
+    {
+      "name": "Soldier HQ",
+      "id": "102",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Awful Valley",
+      "position": "0,-2",
+      "rotation": "0"
+    },
+    {
+      "name": "Order 1",
+      "id": "84",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Bad Valley",
+      "position": "-1,2",
+      "rotation": "0"
+    },
+    {
+      "name": "Order 2",
+      "id": "85",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Bad Valley",
+      "position": "-1,2",
+      "rotation": "0"
+    },
+    {
+      "name": "Order 3",
+      "id": "86",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Bad Valley",
+      "position": "-1,2",
+      "rotation": "0"
+    },
+    {
+      "name": "Order HQ",
+      "id": "87",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Bad Valley",
+      "position": "-1,2",
+      "rotation": "0"
+    },
+    {
+      "name": "Rogue 1",
+      "id": "91",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Curst Valley",
+      "position": "0,1",
+      "rotation": "2"
+    },
+    {
+      "name": "Rogue 2",
+      "id": "92",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Curst Valley",
+      "position": "0,1",
+      "rotation": "2"
+    },
+    {
+      "name": "Rogue 3",
+      "id": "93",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Curst Valley",
+      "position": "0,1",
+      "rotation": "2"
+    },
+    {
+      "name": "Rogue 4",
+      "id": "94",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Curst Valley",
+      "position": "0,1",
+      "rotation": "2"
+    },
+    {
+      "name": "Rogue 5",
+      "id": "95",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Curst Valley",
+      "position": "0,1",
+      "rotation": "2"
+    },
+    {
+      "name": "Rogue 6",
+      "id": "96",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Curst Valley",
+      "position": "0,1",
+      "rotation": "2"
+    },
+    {
+      "name": "Rogue 7",
+      "id": "97",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Curst Valley",
+      "position": "0,1",
+      "rotation": "2"
+    },
+    {
+      "name": "Rogue HQ",
+      "id": "98",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Curst Valley",
+      "position": "0,1",
+      "rotation": "2"
+    },
+    {
+      "name": "Ghost",
+      "id": "36",
+      "type": "monster",
+      "dwelling": null,
+      "clearing": "4",
+      "tile": "Dark Valley",
+      "position": "2,0",
+      "rotation": "1"
+    },
+    {
+      "name": "Ghost",
+      "id": "37",
+      "type": "monster",
+      "dwelling": null,
+      "clearing": "4",
+      "tile": "Dark Valley",
+      "position": "2,0",
+      "rotation": "1"
+    },
+    {
+      "name": "Guard 1",
+      "id": "77",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Evil Valley",
+      "position": "1,0",
+      "rotation": "0"
+    },
+    {
+      "name": "Guard 2",
+      "id": "78",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Evil Valley",
+      "position": "1,0",
+      "rotation": "0"
+    },
+    {
+      "name": "Guard HQ",
+      "id": "79",
+      "type": "native",
+      "dwelling": null,
+      "clearing": "5",
+      "tile": "Evil Valley",
+      "position": "1,0",
+      "rotation": "0"
+    },
+    {
+      "name": "Lost Castle",
+      "id": "225",
+      "type": null,
+      "dwelling": null,
+      "clearing": "1",
+      "tile": "Mountain",
+      "position": "-2,1",
+      "rotation": "3"
+    },
+    {
+      "name": "Lost City",
+      "id": "226",
+      "type": null,
+      "dwelling": null,
+      "clearing": "3",
+      "tile": "Borderland",
+      "position": "0,0",
+      "rotation": "2"
+    }
+  ]
+}

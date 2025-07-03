@@ -1,0 +1,22 @@
+Month 2, Day 19
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Wizard
+Starts turn: Mountain 2
+Wizard
+Search - Locate - Discover chit(s) - Found Statue
+Wizard
+Search - Loot the Statue - Nothing
+Wizard
+Fatigued color chit: MAGIC IV4*
+Wizard
+Spell - enchanted Mountain
+Wizard
+Hide - Succeeded
+Wizard
+Ends turn: Mountain 2
+host
+========================================
+host

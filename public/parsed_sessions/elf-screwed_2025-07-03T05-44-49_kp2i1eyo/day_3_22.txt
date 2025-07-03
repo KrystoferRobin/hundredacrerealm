@@ -1,0 +1,52 @@
+Month 3, Day 22
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Elf
+Starts turn: Cavern 1
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Hide - Succeeded
+Elf
+Hide - N/A
+Elf
+Ends turn: Caves 4
+host
+H Dragon is prowling.
+host
+T Dragon is added to Caves, clearing 4
+__battle__
+Battle resolving at Caves 4:
+__battle__
+GROUP 1
+__battle__
+Elf
+__battle__
+GROUP 2
+__battle__
+H Dragon
+__battle__
+T Dragon
+__battle__
+=======================
+__battle__
+Evening of month 3, day 22, in clearing Caves 4
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Elf
+Presses the END combat button.
+Elf
+Combat has ended.
+host
+========================================
+host

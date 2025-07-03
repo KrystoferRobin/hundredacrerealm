@@ -1,0 +1,20 @@
+Month 4, Day 2
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Awful Valley 5
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Deep Woods 4
+host
+========================================
+host

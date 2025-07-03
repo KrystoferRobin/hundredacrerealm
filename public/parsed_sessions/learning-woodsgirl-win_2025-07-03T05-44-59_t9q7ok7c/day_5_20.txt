@@ -1,0 +1,22 @@
+Month 5, Day 20
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Cliff 6
+Woods Girl
+After resting, these chits were made active: MOVE L2**, FIGHT L3*, and FIGHT L3*
+Woods Girl
+Rest - Rested 4 asterisks
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Cliff 6
+Lancer HQ
+Starts turn: Cliff 6
+Lancer HQ
+Ends turn: Cliff 6
+host
+========================================
+host

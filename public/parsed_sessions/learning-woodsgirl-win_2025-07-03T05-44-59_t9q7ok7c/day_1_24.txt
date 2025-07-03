@@ -1,0 +1,20 @@
+Month 1, Day 24
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Woods Girl
+Starts turn: Crag 2
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Rest - You are fully rested.
+Woods Girl
+Ends turn: Curst Valley 1
+host
+========================================
+host

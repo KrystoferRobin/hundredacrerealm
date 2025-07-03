@@ -1,0 +1,305 @@
+{
+  "Wizard": {
+    "character": "Wizard",
+    "items": {
+      "weapons": [],
+      "armor": [],
+      "treasures": [],
+      "great_treasures": [],
+      "spells": [],
+      "natives": [],
+      "other": [
+        {
+          "id": "3360",
+          "name": "Fiery Blast",
+          "type": "spell",
+          "category": "spell",
+          "data": {
+            "id": "2133",
+            "name": "Fiery Blast",
+            "spellLevel": "IV",
+            "attributeBlocks": {
+              "this": {
+                "spell": "IV",
+                "duration": "attack",
+                "target": "multiple",
+                "text": "MISSILE attack on each target",
+                "magic_color": "purple",
+                "sharpness": "3",
+                "strength": "L",
+                "length": "13",
+                "missile": "magic",
+                "host_okay": "",
+                "table": "magicmissil",
+                "learnable": "",
+                "super_realm": ""
+              }
+            },
+            "parts": []
+          }
+        },
+        {
+          "id": "3361",
+          "name": "Hurricane Winds",
+          "type": "spell",
+          "category": "spell",
+          "data": {
+            "id": "2142",
+            "name": "Hurricane Winds",
+            "spellLevel": "IV",
+            "attributeBlocks": {
+              "this": {
+                "spell": "IV",
+                "duration": "move",
+                "target": "individual + hex",
+                "text": "Must FLY T1 one hex (mountain only)",
+                "magic_color": "purple",
+                "clearing_req": "M",
+                "blows_target": "",
+                "host_okay": "",
+                "learnable": "",
+                "super_realm": ""
+              }
+            },
+            "parts": []
+          }
+        },
+        {
+          "id": "3362",
+          "name": "Small Blessing",
+          "type": "spell",
+          "category": "spell",
+          "data": {
+            "id": "2115",
+            "name": "Small Blessing",
+            "spellLevel": "I",
+            "attributeBlocks": {
+              "this": {
+                "spell": "I",
+                "duration": "instant",
+                "target": "character",
+                "text": "Gets one WISH (roll)",
+                "magic_color": "white",
+                "wish": "",
+                "table": "wish",
+                "learnable": "",
+                "super_realm": ""
+              }
+            },
+            "parts": []
+          }
+        },
+        {
+          "id": "3363",
+          "name": "See Hidden Signs",
+          "type": "spell",
+          "category": "spell",
+          "data": {
+            "id": "2125",
+            "name": "See Hidden Signs",
+            "spellLevel": "III",
+            "attributeBlocks": {
+              "this": {
+                "spell": "III",
+                "duration": "day",
+                "target": "character",
+                "text": "Extra SEARCH phase",
+                "magic_color": "gold",
+                "spell_extra_action": "S",
+                "host_okay": "",
+                "benevolent": "",
+                "upg_swap_out": "",
+                "learnable": "",
+                "super_realm": ""
+              }
+            },
+            "parts": []
+          }
+        },
+        {
+          "id": "3364",
+          "name": "Blend Into Background",
+          "type": "spell",
+          "category": "spell",
+          "data": {
+            "id": "2154",
+            "name": "Blend Into Background",
+            "spellLevel": "II",
+            "attributeBlocks": {
+              "this": {
+                "spell": "II",
+                "duration": "day",
+                "target": "leader",
+                "text": "Extra HIDE phase",
+                "magic_color": "gray",
+                "spell_extra_action": "H",
+                "host_okay": "",
+                "benevolent": "",
+                "upg_swap_out": "",
+                "learnable": "",
+                "super_realm": ""
+              }
+            },
+            "parts": []
+          }
+        },
+        {
+          "id": "386",
+          "name": "Scroll of Alchemy",
+          "type": "treasure",
+          "category": "treasure",
+          "data": {
+            "id": "2113",
+            "name": "Scroll of Alchemy",
+            "attributeBlocks": {
+              "this": {
+                "treasure": "small",
+                "base_price": "5",
+                "fame": "7",
+                "notoriety": "10",
+                "magic": "VI",
+                "print": "",
+                "facing": "face_dn",
+                "ts_section": "magic",
+                "ts_color": "lightgreen",
+                "item": "",
+                "super_realm": "",
+                "super_realm_treasure": "",
+                "native": "Enchanters",
+                "book": "",
+                "scroll": "",
+                "scholar_price": "30",
+                "warlock_price": "30",
+                "merchant_price": "20"
+              }
+            },
+            "parts": []
+          }
+        },
+        {
+          "id": "168",
+          "name": "Staff",
+          "type": "weapon",
+          "category": "weapon",
+          "data": {
+            "id": "1088",
+            "name": "Staff",
+            "attributeBlocks": {
+              "this": {
+                "weight": "L",
+                "length": "9",
+                "base_price": "1",
+                "two_handed": "",
+                "weapon": "",
+                "icon_type": "staff",
+                "icon_folder": "weapons",
+                "rw_expansion_1": "",
+                "item": ""
+              },
+              "unalerted": {
+                "strength": "L",
+                "chit_color": "white"
+              },
+              "alerted": {
+                "strength": "L",
+                "chit_color": "red"
+              }
+            },
+            "parts": []
+          }
+        },
+        {
+          "id": "334",
+          "name": "Elven Slippers",
+          "type": "treasure",
+          "category": "treasure",
+          "data": {
+            "id": "2047",
+            "name": "Elven Slippers",
+            "attributeBlocks": {
+              "this": {
+                "treasure": "small",
+                "text": "MOVE L2",
+                "base_price": "5",
+                "notoriety": "2",
+                "move_speed": "2",
+                "strength": "L",
+                "boots": "",
+                "facing": "face_dn",
+                "item": "",
+                "super_realm": ""
+              }
+            },
+            "parts": []
+          }
+        },
+        {
+          "id": "360",
+          "name": "Hidden Ring",
+          "type": "treasure",
+          "category": "great_treasure",
+          "data": {
+            "id": "2073",
+            "name": "Hidden Ring",
+            "attributeBlocks": {
+              "this": {
+                "treasure": "large",
+                "base_price": "20",
+                "great": "",
+                "fame": "-10",
+                "notoriety": "10",
+                "magic": "VI",
+                "artifact": "",
+                "print": "",
+                "scholar_price": "20",
+                "facing": "face_dn",
+                "ts_section": "magic",
+                "ts_color": "lightgreen",
+                "item": "",
+                "super_realm": "",
+                "warlock_price": "20",
+                "merchant_price": "20"
+              }
+            },
+            "parts": []
+          }
+        },
+        {
+          "id": "331",
+          "name": "Cloak of Mist",
+          "type": "treasure",
+          "category": "treasure",
+          "data": {
+            "id": "2044",
+            "name": "Cloak of Mist",
+            "attributeBlocks": {
+              "this": {
+                "treasure": "small",
+                "text": "Extra HIDE",
+                "base_price": "4",
+                "notoriety": "2",
+                "facing": "face_dn",
+                "item": "",
+                "super_realm": ""
+              }
+            },
+            "parts": []
+          }
+        }
+      ],
+      "unknown": []
+    },
+    "raw_contains": [
+      "3360",
+      "3361",
+      "3362",
+      "3363",
+      "3364",
+      "386",
+      "168",
+      "334",
+      "360",
+      "331"
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+Month 4, Day 28
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+host
+7th day - denizens return to setup card:
+host
+- T Flying Dragon
+host
+- T Dragon
+host
+- T Dragon
+host
+- H Flying Dragon
+host
+- H Flying Dragon
+host
+- H Dragon
+Elf
+Starts turn: Between Cliff 4 and Mountain 5
+Elf
+Move - moved
+Elf
+BLOCKED - Cannot perform action H
+Elf
+BLOCKED - Cannot perform action M-CL6,M-CL6
+Elf
+BLOCKED - Cannot perform action M-CL3
+Elf
+BLOCKED - Cannot perform action M-CL5
+Elf
+Ends turn: Cliff 4
+host
+H Flying Dragon is added to Cliff, clearing 4
+host
+H Flying Dragon is added to Cliff, clearing 4
+host
+H Flying Dragon blocks the Elf
+host
+H Flying Dragon blocks the Elf
+__battle__
+Battle resolving at Cliff 4:
+__battle__
+GROUP 1
+__battle__
+Elf
+__battle__
+GROUP 2
+__battle__
+Winged Demon
+__battle__
+H Flying Dragon
+__battle__
+H Flying Dragon
+__battle__
+=======================
+__battle__
+Evening of month 4, day 28, in clearing Cliff 4
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Elf
+Ran away!
+host
+========================================
+host

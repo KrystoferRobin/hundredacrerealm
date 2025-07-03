@@ -1,0 +1,26 @@
+{
+  "Woods Girl": {
+    "id": "411",
+    "name": "Woods Girl",
+    "startingGold": 16,
+    "victoryPoints": {
+      "greatTreasures": 0,
+      "spells": 0,
+      "fame": 0,
+      "notoriety": 0,
+      "gold": 0
+    }
+  },
+  "Amazon": {
+    "id": "425",
+    "name": "Amazon",
+    "startingGold": 35,
+    "victoryPoints": {
+      "greatTreasures": 0,
+      "spells": 0,
+      "fame": 0,
+      "notoriety": 0,
+      "gold": 0
+    }
+  }
+}

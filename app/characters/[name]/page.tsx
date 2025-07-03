@@ -35,6 +35,8 @@ export default function CharacterPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [itemCache, setItemCache] = useState<Record<string, Item>>({});
+  const [characterStats, setCharacterStats] = useState<any>(null);
+  const [statsLoading, setStatsLoading] = useState(true);
 
   useEffect(() => {
     const fetchCharacter = async () => {
@@ -52,8 +54,23 @@ export default function CharacterPage() {
       }
     };
 
+    const fetchCharacterStats = async () => {
+      try {
+        const response = await fetch(`/api/characters/${encodeURIComponent(characterName)}/stats`);
+        if (response.ok) {
+          const data = await response.json();
+          setCharacterStats(data);
+        }
+      } catch (err) {
+        console.log('Failed to load character stats:', err);
+      } finally {
+        setStatsLoading(false);
+      }
+    };
+
     if (characterName) {
       fetchCharacter();
+      fetchCharacterStats();
     }
   }, [characterName]);
 
@@ -470,6 +487,101 @@ export default function CharacterPage() {
                     )}
                   </div>
                 </div>
+
+                {/* Character Statistics */}
+                {!statsLoading && characterStats && (
+                  <div className="space-y-4">
+                    <h3 className="text-lg font-semibold text-[#6b3e26] font-serif">Game Statistics</h3>
+                    
+                    {/* Basic Stats */}
+                    <div className="bg-[#f6ecd6] p-3 rounded border border-[#bfa76a]">
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <div>
+                          <p className="text-xs font-semibold text-[#6b3e26] font-serif">Total Plays</p>
+                          <p className="text-sm text-[#4b3a1e] font-serif">{characterStats.totalPlays}</p>
+                        </div>
+                        <div>
+                          <p className="text-xs font-semibold text-[#6b3e26] font-serif">Total Deaths</p>
+                          <p className="text-sm text-[#4b3a1e] font-serif">{characterStats.totalDeaths}</p>
+                        </div>
+                        <div>
+                          <p className="text-xs font-semibold text-[#6b3e26] font-serif">Best Score</p>
+                          <p className="text-sm text-[#4b3a1e] font-serif">{characterStats.bestScore}</p>
+                        </div>
+                        <div>
+                          <p className="text-xs font-semibold text-[#6b3e26] font-serif">Average Score</p>
+                          <p className="text-sm text-[#4b3a1e] font-serif">{characterStats.averageScore?.toFixed(1)}</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Players */}
+                    {characterStats.players && characterStats.players.length > 0 && (
+                      <div className="bg-[#f6ecd6] p-3 rounded border border-[#bfa76a]">
+                        <p className="text-xs font-semibold text-[#6b3e26] font-serif mb-2">Players</p>
+                        <div className="flex flex-wrap gap-2">
+                          {characterStats.players.map((player: string, index: number) => (
+                            <span key={index} className="bg-[#bfa76a] text-[#6b3e26] px-2 py-1 rounded text-xs font-serif">
+                              {player}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Top Killers */}
+                    {characterStats.topKillers && characterStats.topKillers.length > 0 && (
+                      <div className="bg-[#f6ecd6] p-3 rounded border border-[#bfa76a]">
+                        <p className="text-xs font-semibold text-[#6b3e26] font-serif mb-2">Most Frequent Killers</p>
+                        <div className="space-y-1">
+                          {characterStats.topKillers.map((killer: any, index: number) => (
+                            <div key={index} className="flex justify-between text-xs">
+                              <span className="text-[#4b3a1e] font-serif">{killer.name}</span>
+                              <span className="text-[#6b3e26] font-serif">{killer.count} times</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Top Killed */}
+                    {characterStats.topKilled && characterStats.topKilled.length > 0 && (
+                      <div className="bg-[#f6ecd6] p-3 rounded border border-[#bfa76a]">
+                        <p className="text-xs font-semibold text-[#6b3e26] font-serif mb-2">Most Killed</p>
+                        <div className="space-y-1">
+                          {characterStats.topKilled.map((killed: any, index: number) => (
+                            <div key={index} className="flex justify-between text-xs">
+                              <span className="text-[#4b3a1e] font-serif">{killed.name}</span>
+                              <span className="text-[#6b3e26] font-serif">{killed.count} times</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Games List */}
+                    {characterStats.games && characterStats.games.length > 0 && (
+                      <div className="bg-[#f6ecd6] p-3 rounded border border-[#bfa76a]">
+                        <p className="text-xs font-semibold text-[#6b3e26] font-serif mb-2">Games Played</p>
+                        <div className="space-y-2 max-h-40 overflow-y-auto">
+                          {characterStats.games.map((game: any, index: number) => (
+                            <div key={index} className="text-xs border-b border-[#bfa76a] pb-1 last:border-b-0">
+                              <div className="flex justify-between items-start">
+                                <span className="text-[#4b3a1e] font-serif flex-1">{game.sessionTitle}</span>
+                                <span className="text-[#6b3e26] font-serif ml-2">
+                                  {game.score !== null ? game.score : 'N/A'}
+                                </span>
+                              </div>
+                              <div className="text-[#8b7355] text-xs">
+                                {game.player} • {game.dayCount} days
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
 
                 {/* Level Information */}
                 {Object.entries(character.attributeBlocks)

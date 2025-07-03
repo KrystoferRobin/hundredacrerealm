@@ -1,0 +1,16 @@
+Month 2, Day 10
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Wizard
+Starts turn: Borderland 1
+Wizard
+Move - moved
+Wizard
+Hide - Succeeded
+Wizard
+Ends turn: Caves 5
+host
+========================================
+host

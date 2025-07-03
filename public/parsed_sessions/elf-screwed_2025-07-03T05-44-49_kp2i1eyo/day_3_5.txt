@@ -1,0 +1,182 @@
+Month 3, Day 5
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Elf
+Starts turn: Nut Woods 5
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Hide - Succeeded
+Elf
+Hide - N/A
+Elf
+Hide - N/A
+Elf
+Ends turn: Ruins 1
+host
+T Dragon is added to Ruins, clearing 3
+Guard HQ
+Starts turn: Ruins 1
+Guard HQ
+Ends turn: Ruins 1
+host
+T Dragon is prowling.
+__battle__
+Battle resolving at Ruins 1:
+__battle__
+GROUP 1
+__battle__
+Elf
+__battle__
+Guard HQ (Elf)
+__battle__
+Guard 2 (Elf)
+__battle__
+Guard 1 (Elf)
+__battle__
+Patrol 1 (Elf)
+__battle__
+GROUP 2
+__battle__
+T Dragon
+__battle__
+=======================
+__battle__
+Evening of month 3, day 5, in clearing Ruins 1
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Patrol 1
+Lures the T Dragon
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 3
+Guard 1
+Changes tactics:  Guard 1 H5*
+__battle__
+Change Tactics in Box 1
+Dragon Head
+Changes tactics:  Dragon Head T4
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+Attack Length=9, Speed=4
+__battle__
+Dragon Head T4  vs. Guard HQ Speed 6
+__battle__
+Undercut! (Speed 4 is faster than Speed 6)
+__battle__
+Initial harm: T
+__battle__
+Guard HQ is hit with T harm along box 1
+Dragon Head
+Hits armor, and reduces sharpness: T
+__battle__
+Guard HQ was killed!
+__battle__
+The Guard HQ drops inventory in the clearing.
+Elf
+Loses 6 notoriety for the loss of the Guard HQ hireling.
+__battle__
+>
+__battle__
+Attack Length=8, Speed=4
+__battle__
+Guard HQ T4*  vs. T Dragon Speed 6
+__battle__
+Attack Cancelled:  Guard HQ was already killed by Dragon Head.
+__battle__
+>
+__battle__
+Attack Length=8, Speed=4
+__battle__
+Guard 2 T4*  vs. T Dragon Speed 6
+__battle__
+Intercepted! (box 2 matches box 2)
+__battle__
+Initial harm: T+1
+__battle__
+T Dragon is hit with T+1 harm along box 2
+Guard 2
+Hits armor, and reduces sharpness: T
+__battle__
+T Dragon was killed!
+__battle__
+>
+__battle__
+Attack Length=8, Speed=5
+__battle__
+Guard 1 H5*  vs. T Dragon Speed 6
+__battle__
+Attack Cancelled:  T Dragon was already killed by Guard 2.
+__battle__
+>
+__battle__
+Attack Length=3, Speed=4
+__battle__
+Patrol 1 L4*  vs. T Dragon Speed 6
+__battle__
+Attack Cancelled:  T Dragon was already killed by Guard 2.
+__battle__
+>
+__battle__
+Attack Length=0, Speed=5
+__battle__
+T Dragon H5  vs. Guard HQ Speed 6
+__battle__
+Attack Cancelled:  Guard HQ was already killed by Dragon Head.
+__battle__
+The Elf gets 10 fame (x 1) and 10 notoriety (x 1) for the death of the T Dragon
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Guard HQ is dead.  Killed by Dragon Head
+__battle__
+Guard 2 disengages because target is dead
+__battle__
+Guard 1 disengages because target is dead
+__battle__
+Patrol 1 disengages because target is dead
+__battle__
+T Dragon is dead.  Killed by Guard 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+Elf
+Presses the END combat button.
+Elf
+Combat has ended.
+host
+========================================
+host

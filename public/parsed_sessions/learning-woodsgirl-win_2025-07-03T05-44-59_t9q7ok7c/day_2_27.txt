@@ -1,0 +1,46 @@
+Month 2, Day 27
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Cavern 1
+Woods Girl
+Hide - Failed
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Oak Woods 2
+__battle__
+Battle resolving at Oak Woods 2:
+__battle__
+GROUP 1
+__battle__
+Woods Girl
+__battle__
+GROUP 2
+__battle__
+Viper
+__battle__
+Viper
+__battle__
+=======================
+__battle__
+Evening of month 2, day 27, in clearing Oak Woods 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Woods Girl
+Ran away!
+host
+========================================
+host

@@ -1,0 +1,42 @@
+{
+  "Woods Girl": {
+    "gold": 10,
+    "fame": 0,
+    "notoriety": 0,
+    "startingSpells": 1,
+    "greatTreasures": 0,
+    "learnedSpells": 0
+  },
+  "Berserker": {
+    "gold": 10,
+    "fame": 8,
+    "notoriety": 8,
+    "startingSpells": 0,
+    "greatTreasures": 1,
+    "learnedSpells": 0
+  },
+  "White Knight": {
+    "gold": 10,
+    "fame": -10,
+    "notoriety": 0,
+    "startingSpells": 1,
+    "greatTreasures": 1,
+    "learnedSpells": 1
+  },
+  "Pilgrim": {
+    "gold": 0,
+    "fame": 0,
+    "notoriety": 0,
+    "startingSpells": 1,
+    "greatTreasures": 0,
+    "learnedSpells": 1
+  },
+  "Amazon": {
+    "gold": 10,
+    "fame": 0,
+    "notoriety": 0,
+    "startingSpells": 0,
+    "greatTreasures": 0,
+    "learnedSpells": 0
+  }
+}

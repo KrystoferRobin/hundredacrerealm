@@ -1,0 +1,52 @@
+Month 3, Day 7
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+host
+7th day - denizens return to setup card:
+host
+- Giant
+host
+- T Troll
+Wizard
+Starts turn: Mountain 1
+Wizard
+Search - Read Runes on Hidden Ring - Awaken a Spell
+Wizard
+After resting, these chits were made active: MAGIC IV3*, and MAGIC II4*
+Wizard
+Rest - Rested 2 asterisks
+Wizard
+Hide - Succeeded
+Wizard
+Ends turn: Mountain 1
+__battle__
+Battle resolving at Mountain 1:
+__battle__
+GROUP 1
+__battle__
+Wizard
+__battle__
+=======================
+__battle__
+Evening of month 3, day 7, in clearing Mountain 1
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Wizard
+Presses the END combat button.
+Wizard
+Combat has ended.
+host
+========================================
+host

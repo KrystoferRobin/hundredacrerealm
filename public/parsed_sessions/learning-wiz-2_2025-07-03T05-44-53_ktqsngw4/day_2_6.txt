@@ -1,0 +1,64 @@
+Month 2, Day 6
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Wizard
+Starts turn: Dark Valley 1
+Wizard
+Move - moved
+Wizard
+Move - moved
+Wizard
+Move - moved
+Wizard
+Move - moved
+Wizard
+Ends turn: Evil Valley 4
+host
+Chapel is added to Evil Valley, clearing 4
+Wizard
+Reveals: Dank V
+__battle__
+Battle resolving at Evil Valley 4:
+__battle__
+GROUP 1
+__battle__
+Wizard
+__battle__
+Guard 1 (Wizard)
+__battle__
+Guard 2 (Wizard)
+__battle__
+GROUP 2
+__battle__
+Order 1
+__battle__
+Order 2
+__battle__
+Order 3
+__battle__
+Order HQ
+Wizard
+Meeting Order on the Friendly table
+Wizard
+Rolled 6 and 6. = No Deal
+__battle__
+=======================
+__battle__
+Evening of month 2, day 6, in clearing Evil Valley 4
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Wizard
+Presses the END combat button.
+Wizard
+Combat has ended.
+host
+========================================
+host

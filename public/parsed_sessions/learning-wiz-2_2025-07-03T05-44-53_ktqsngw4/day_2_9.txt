@@ -1,0 +1,20 @@
+Month 2, Day 9
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Wizard
+Starts turn: Borderland 1
+Wizard
+After resting, these chits were made active: MAGIC IV3*, and MAGIC IV4*
+Wizard
+Rest - Rested 2 asterisks
+Wizard
+Spell - enchanted Wizard Magic IV4*
+Wizard
+Hide - Succeeded
+Wizard
+Ends turn: Borderland 1
+host
+========================================
+host

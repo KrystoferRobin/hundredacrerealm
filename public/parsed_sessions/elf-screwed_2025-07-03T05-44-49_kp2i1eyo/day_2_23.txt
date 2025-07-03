@@ -1,0 +1,96 @@
+Month 2, Day 23
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Elf
+Starts turn: Evil Valley 2
+Elf
+Move - moved
+Elf
+Selling to Order HQ.
+Elf
+Attempting to sell: Dragonfang Necklace
+Elf
+Trade - Sell to Order HQ - Total received for the Dragonfang Necklace was 8 gold.
+Elf
+Buying from Patrol HQ.
+Elf
+Available for sale: Helmet, Shield, Breastplate, and 2 Treasures
+Elf
+Bidding for a treasure
+Elf
+Buys the Flowers of Rest from the Patrol HQ
+Elf
+Trade - Buy from Patrol HQ (as Friendly) - Price x 2
+Elf
+Hire - Buy from Patrol 2 (as Friendly) - Price x 2
+Elf
+Ends turn: Evil Valley 5
+host
+Lancer 1 is added to Evil Valley, clearing 5
+host
+Lancer 2 is added to Evil Valley, clearing 5
+host
+Lancer 3 is added to Evil Valley, clearing 5
+host
+Lancer HQ is added to Evil Valley, clearing 5
+__battle__
+Battle resolving at Evil Valley 5:
+__battle__
+GROUP 1
+__battle__
+Patrol 1 (Elf)
+__battle__
+Patrol 2 (Elf)
+__battle__
+Patrol HQ (Elf)
+__battle__
+Elf
+__battle__
+GROUP 2
+__battle__
+Order 1
+__battle__
+Order 2
+__battle__
+Order 3
+__battle__
+Order HQ
+__battle__
+Lancer 1
+__battle__
+Lancer 2
+__battle__
+Lancer 3
+__battle__
+Lancer HQ
+Elf
+The native group will be no more favorable with drinks.
+Elf
+Meeting Order on the Friendly table
+Elf
+Rolled 5 and 6. = No Deal
+Elf
+Meeting Lancers on the Unfriendly table
+Elf
+Rolled 1 and 2. = No Deal
+__battle__
+=======================
+__battle__
+Evening of month 2, day 23, in clearing Evil Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Elf
+Presses the END combat button.
+Elf
+Combat has ended.
+host
+========================================
+host

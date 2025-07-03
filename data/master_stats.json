@@ -1,0 +1,1164 @@
+{
+  "lastUpdated": "2025-07-03T05:47:52.306Z",
+  "totalSessions": 9,
+  "characters": {
+    "White Knight": {
+      "totalPlays": 4,
+      "totalDeaths": 2,
+      "players": [
+        "Krystofer",
+        "GM"
+      ],
+      "games": [
+        {
+          "sessionId": "6-13-25-WK-001-Death_2025-07-03T05-44-20_t2x1yf4k",
+          "sessionName": "6-13-25-WK-001-Death",
+          "sessionTitle": "6-13-25-WK-001-Death",
+          "player": "Krystofer",
+          "score": -50,
+          "dayCount": 10
+        },
+        {
+          "sessionId": "6-13-25-WK-001_2025-07-03T05-44-24_npdg27ul",
+          "sessionName": "6-13-25-WK-001",
+          "sessionTitle": "6-13-25-WK-001",
+          "player": "Krystofer",
+          "score": -46,
+          "dayCount": 9
+        },
+        {
+          "sessionId": "6-14-25-4Questing_2025-07-03T05-44-27_sgoxr91d",
+          "sessionName": "6-14-25-4Questing",
+          "sessionTitle": "6-14-25-4Questing",
+          "player": "Krystofer",
+          "score": null,
+          "dayCount": 28
+        },
+        {
+          "sessionId": "6-17-25-5man_2025-07-03T05-44-46_mvdbv34p",
+          "sessionName": "6-17-25-5man",
+          "sessionTitle": "6-17-25-5man",
+          "player": "GM",
+          "score": -155,
+          "dayCount": 5
+        }
+      ],
+      "killers": {},
+      "killed": {},
+      "totalScore": -251,
+      "averageScore": -62.75,
+      "bestScore": 0,
+      "worstScore": -155
+    },
+    "Amazon": {
+      "totalPlays": 2,
+      "totalDeaths": 0,
+      "players": [
+        "Krystofer",
+        "GM"
+      ],
+      "games": [
+        {
+          "sessionId": "6-14-25-4Questing_2025-07-03T05-44-27_sgoxr91d",
+          "sessionName": "6-14-25-4Questing",
+          "sessionTitle": "6-14-25-4Questing",
+          "player": "Krystofer",
+          "score": -3,
+          "dayCount": 28
+        },
+        {
+          "sessionId": "6-17-25-5man_2025-07-03T05-44-46_mvdbv34p",
+          "sessionName": "6-17-25-5man",
+          "sessionTitle": "6-17-25-5man",
+          "player": "GM",
+          "score": -207,
+          "dayCount": 5
+        }
+      ],
+      "killers": {},
+      "killed": {},
+      "totalScore": -210,
+      "averageScore": -105,
+      "bestScore": 0,
+      "worstScore": -207
+    },
+    "Woods Girl": {
+      "totalPlays": 4,
+      "totalDeaths": 0,
+      "players": [
+        "Krystofer",
+        "GM"
+      ],
+      "games": [
+        {
+          "sessionId": "6-14-25-4Questing_2025-07-03T05-44-27_sgoxr91d",
+          "sessionName": "6-14-25-4Questing",
+          "sessionTitle": "6-14-25-4Questing",
+          "player": "Krystofer",
+          "score": -1,
+          "dayCount": 28
+        },
+        {
+          "sessionId": "6-17-25-5man_2025-07-03T05-44-46_mvdbv34p",
+          "sessionName": "6-17-25-5man",
+          "sessionTitle": "6-17-25-5man",
+          "player": "GM",
+          "score": -165,
+          "dayCount": 5
+        },
+        {
+          "sessionId": "learning-woodsgirl-2_2025-07-03T05-44-56_bncdmtjr",
+          "sessionName": "learning-woodsgirl-2",
+          "sessionTitle": "learning-woodsgirl-2",
+          "player": "Krystofer",
+          "score": -29,
+          "dayCount": 109
+        },
+        {
+          "sessionId": "learning-woodsgirl-win_2025-07-03T05-44-59_t9q7ok7c",
+          "sessionName": "learning-woodsgirl-win",
+          "sessionTitle": "learning-woodsgirl-win",
+          "player": "Krystofer",
+          "score": null,
+          "dayCount": 134
+        }
+      ],
+      "killers": {},
+      "killed": {},
+      "totalScore": -195,
+      "averageScore": -48.75,
+      "bestScore": 0,
+      "worstScore": -165
+    },
+    "Berserker": {
+      "totalPlays": 2,
+      "totalDeaths": 1,
+      "players": [
+        "Krystofer",
+        "GM"
+      ],
+      "games": [
+        {
+          "sessionId": "6-14-25-4Questing_2025-07-03T05-44-27_sgoxr91d",
+          "sessionName": "6-14-25-4Questing",
+          "sessionTitle": "6-14-25-4Questing",
+          "player": "Krystofer",
+          "score": null,
+          "dayCount": 28
+        },
+        {
+          "sessionId": "6-17-25-5man_2025-07-03T05-44-46_mvdbv34p",
+          "sessionName": "6-17-25-5man",
+          "sessionTitle": "6-17-25-5man",
+          "player": "GM",
+          "score": -246,
+          "dayCount": 5
+        }
+      ],
+      "killers": {},
+      "killed": {},
+      "totalScore": -246,
+      "averageScore": -123,
+      "bestScore": 0,
+      "worstScore": -246
+    },
+    "Pilgrim": {
+      "totalPlays": 1,
+      "totalDeaths": 0,
+      "players": [
+        "GM"
+      ],
+      "games": [
+        {
+          "sessionId": "6-17-25-5man_2025-07-03T05-44-46_mvdbv34p",
+          "sessionName": "6-17-25-5man",
+          "sessionTitle": "6-17-25-5man",
+          "player": "GM",
+          "score": -139,
+          "dayCount": 5
+        }
+      ],
+      "killers": {},
+      "killed": {},
+      "totalScore": -139,
+      "averageScore": -139,
+      "bestScore": 0,
+      "worstScore": -139
+    },
+    "Elf": {
+      "totalPlays": 1,
+      "totalDeaths": 0,
+      "players": [
+        "Krystofer"
+      ],
+      "games": [
+        {
+          "sessionId": "elf-screwed_2025-07-03T05-44-49_kp2i1eyo",
+          "sessionName": "elf-screwed",
+          "sessionTitle": "elf-screwed",
+          "player": "Krystofer",
+          "score": -10,
+          "dayCount": 113
+        }
+      ],
+      "killers": {},
+      "killed": {},
+      "totalScore": -10,
+      "averageScore": -10,
+      "bestScore": 0,
+      "worstScore": -10
+    },
+    "Wizard": {
+      "totalPlays": 1,
+      "totalDeaths": 0,
+      "players": [
+        "Krystofer"
+      ],
+      "games": [
+        {
+          "sessionId": "learning-wiz-2_2025-07-03T05-44-53_ktqsngw4",
+          "sessionName": "learning-wiz-2",
+          "sessionTitle": "learning-wiz-2",
+          "player": "Krystofer",
+          "score": -4,
+          "dayCount": 76
+        }
+      ],
+      "killers": {},
+      "killed": {},
+      "totalScore": -4,
+      "averageScore": -4,
+      "bestScore": 0,
+      "worstScore": -4
+    }
+  },
+  "treasures": {
+    "found": {},
+    "sold": {},
+    "byCharacter": {
+      "White Knight": {
+        "found": {},
+        "sold": {}
+      },
+      "Woods Girl": {
+        "found": {},
+        "sold": {}
+      },
+      "Berserker": {
+        "found": {},
+        "sold": {}
+      },
+      "Amazon": {
+        "found": {},
+        "sold": {}
+      },
+      "Pilgrim": {
+        "found": {},
+        "sold": {}
+      },
+      "Elf": {
+        "found": {},
+        "sold": {}
+      },
+      "Wizard": {
+        "found": {},
+        "sold": {}
+      }
+    }
+  },
+  "monsters": {
+    "spawns": {
+      "Patrol 1": 4,
+      "Patrol 2": 4,
+      "Patrol HQ": 4,
+      "Axe Goblin": 66,
+      "Giant": 16,
+      "H Troll": 16,
+      "H Flying Dragon": 24,
+      "H Dragon": 7,
+      "T Troll": 6,
+      "Spear Goblin": 42,
+      "Giant Bat": 17,
+      "H Serpent": 14,
+      "Large Campfire": 1,
+      "Conquer": 3,
+      "Lancer 1": 2,
+      "Lancer 2": 2,
+      "Lancer 3": 2,
+      "Lancer HQ": 2,
+      "H Spider": 5,
+      "Shaman": 1,
+      "T Dragon": 3,
+      "Pillage": 1,
+      "T Serpent": 1,
+      "Guard": 1,
+      "Raid": 1,
+      "House": 1,
+      "Ogre": 2,
+      "Chapel": 1,
+      "Warlock": 3,
+      "Viper": 4,
+      "Sword Goblin": 12
+    },
+    "killed": {
+      "Order 3": 2,
+      "White Knight": 2,
+      "Ghost": 2,
+      "Ogre": 1,
+      "Imp": 3,
+      "Short Swordsman": 1,
+      "Patrol HQ": 3,
+      "Patrol 2": 3,
+      "Berserker": 1,
+      "Winged Demon": 1,
+      "Octopus": 1,
+      "H Spider": 3,
+      "H Dragon": 2,
+      "Guard HQ": 2,
+      "T Dragon": 2,
+      "Patrol 1": 1,
+      "H Serpent": 2,
+      "Giant Bat": 5,
+      "Sword Goblin": 6,
+      "Lancer 2": 1,
+      "Giant": 1,
+      "Spear Goblin": 6
+    },
+    "killedByCharacter": {},
+    "spawnLocations": {
+      "Patrol 1": {
+        "Awful Valley 5": 2,
+        "Evil Valley 5": 2
+      },
+      "Patrol 2": {
+        "Awful Valley 5": 2,
+        "Evil Valley 5": 2
+      },
+      "Patrol HQ": {
+        "Awful Valley 5": 2,
+        "Evil Valley 5": 2
+      },
+      "Axe Goblin": {
+        "Ruins 5": 6,
+        "Borderland 6": 30,
+        "Borderland 4": 12,
+        "Cavern 2": 6,
+        "Cavern 6": 12
+      },
+      "Giant": {
+        "Cliff 6": 5,
+        "Mountain 4": 5,
+        "Deep Woods 1": 1,
+        "Mountain 5": 1,
+        "Mountain 6": 3,
+        "Cliff 4": 1
+      },
+      "H Troll": {
+        "Borderland 2": 8,
+        "Borderland 3": 2,
+        "Borderland 1": 2,
+        "High Pass 6": 2,
+        "Caves 4": 2
+      },
+      "H Flying Dragon": {
+        "High Pass 1": 8,
+        "Deep Woods 1": 4,
+        "Cliff 5": 2,
+        "Cliff 4": 4,
+        "Mountain 2": 6
+      },
+      "H Dragon": {
+        "Cavern 1": 4,
+        "Ruins 3": 1,
+        "Caves 1": 1,
+        "Deep Woods 3": 1
+      },
+      "T Troll": {
+        "Ruins 2": 4,
+        "Borderland 6": 1,
+        "Borderland 3": 1
+      },
+      "Spear Goblin": {
+        "Borderland 2": 30,
+        "Borderland 4": 12
+      },
+      "Giant Bat": {
+        "Crag 5": 1,
+        "Deep Woods 1": 4,
+        "Mountain 5": 1,
+        "Mountain 2": 2,
+        "Ruins 1": 6,
+        "Ledges 2": 2,
+        "Cliff 6": 1
+      },
+      "H Serpent": {
+        "Borderland 6": 4,
+        "Deep Woods 3": 2,
+        "Cliff 3": 4,
+        "Caves 4": 4
+      },
+      "Large Campfire": {
+        "Maple Woods 5": 1
+      },
+      "Conquer": {
+        "Evil Valley 5": 1,
+        "Caves 4": 2
+      },
+      "Lancer 1": {
+        "Evil Valley 5": 1,
+        "Dark Valley 5": 1
+      },
+      "Lancer 2": {
+        "Evil Valley 5": 1,
+        "Dark Valley 5": 1
+      },
+      "Lancer 3": {
+        "Evil Valley 5": 1,
+        "Dark Valley 5": 1
+      },
+      "Lancer HQ": {
+        "Evil Valley 5": 1,
+        "Dark Valley 5": 1
+      },
+      "H Spider": {
+        "Deep Woods 4": 1,
+        "Mountain 5": 1,
+        "Deep Woods 3": 1,
+        "Crag 2": 2
+      },
+      "Shaman": {
+        "Cliff 4": 1
+      },
+      "T Dragon": {
+        "Caves 4": 1,
+        "Ruins 3": 1,
+        "Caves 6": 1
+      },
+      "Pillage": {
+        "Borderland 3": 1
+      },
+      "T Serpent": {
+        "Borderland 6": 1
+      },
+      "Guard": {
+        "Dark Valley 5": 1
+      },
+      "Raid": {
+        "Ruins 4": 1
+      },
+      "House": {
+        "Awful Valley 5": 1
+      },
+      "Ogre": {
+        "Linden Woods 5": 2
+      },
+      "Chapel": {
+        "Evil Valley 4": 1
+      },
+      "Warlock": {
+        "Mountain 1": 1,
+        "Borderland 1": 2
+      },
+      "Viper": {
+        "Oak Woods 2": 4
+      },
+      "Sword Goblin": {
+        "Borderland 5": 12
+      }
+    }
+  },
+  "sessions": [
+    {
+      "sessionId": "6-13-25-WK-001-Death_2025-07-03T05-44-20_t2x1yf4k",
+      "sessionName": "6-13-25-WK-001-Death",
+      "sessionTitle": "6-13-25-WK-001-Death",
+      "dayCount": 10,
+      "characters": {
+        "White Knight": "Krystofer"
+      },
+      "scores": {
+        "White Knight": {
+          "totalScore": -50,
+          "totalBasicScore": -21,
+          "totalBonusScore": -29,
+          "categories": {
+            "greatTreasures": {
+              "actual": 0,
+              "required": 2,
+              "factor": 1
+            },
+            "spells": {
+              "actual": 0,
+              "required": 0,
+              "factor": 2
+            },
+            "fame": {
+              "actual": 0,
+              "required": 20,
+              "factor": 10
+            },
+            "notoriety": {
+              "actual": -12,
+              "required": 20,
+              "factor": 20
+            },
+            "gold": {
+              "actual": -37,
+              "required": 0,
+              "factor": 30
+            }
+          },
+          "itemFame": 0,
+          "itemNotoriety": 0
+        }
+      }
+    },
+    {
+      "sessionId": "6-13-25-WK-001_2025-07-03T05-44-24_npdg27ul",
+      "sessionName": "6-13-25-WK-001",
+      "sessionTitle": "6-13-25-WK-001",
+      "dayCount": 9,
+      "characters": {
+        "White Knight": "Krystofer"
+      },
+      "scores": {
+        "White Knight": {
+          "totalScore": -46,
+          "totalBasicScore": -19,
+          "totalBonusScore": -27,
+          "categories": {
+            "greatTreasures": {
+              "actual": 0,
+              "required": 2,
+              "factor": 1
+            },
+            "spells": {
+              "actual": 0,
+              "required": 0,
+              "factor": 2
+            },
+            "fame": {
+              "actual": 0,
+              "required": 20,
+              "factor": 10
+            },
+            "notoriety": {
+              "actual": 0,
+              "required": 20,
+              "factor": 20
+            },
+            "gold": {
+              "actual": -37,
+              "required": 0,
+              "factor": 30
+            }
+          },
+          "itemFame": 0,
+          "itemNotoriety": 0
+        }
+      }
+    },
+    {
+      "sessionId": "6-14-25-4Questing_2025-07-03T05-44-27_sgoxr91d",
+      "sessionName": "6-14-25-4Questing",
+      "sessionTitle": "6-14-25-4Questing",
+      "dayCount": 28,
+      "characters": {
+        "Amazon": "Krystofer",
+        "White Knight": "Krystofer",
+        "Woods Girl": "Krystofer",
+        "Berserker": "Krystofer"
+      },
+      "scores": {
+        "Woods Girl": {
+          "totalScore": -1,
+          "totalBasicScore": -1,
+          "totalBonusScore": 0,
+          "categories": {
+            "greatTreasures": {
+              "actual": 0,
+              "required": 0,
+              "factor": 1
+            },
+            "spells": {
+              "actual": 0,
+              "required": 0,
+              "factor": 2
+            },
+            "fame": {
+              "actual": 8,
+              "required": 0,
+              "factor": 10
+            },
+            "notoriety": {
+              "actual": 10,
+              "required": 0,
+              "factor": 20
+            },
+            "gold": {
+              "actual": -9,
+              "required": 0,
+              "factor": 30
+            }
+          },
+          "itemFame": 0,
+          "itemNotoriety": 0
+        },
+        "Amazon": {
+          "totalScore": -3,
+          "totalBasicScore": -3,
+          "totalBonusScore": 0,
+          "categories": {
+            "greatTreasures": {
+              "actual": 0,
+              "required": 0,
+              "factor": 1
+            },
+            "spells": {
+              "actual": 0,
+              "required": 0,
+              "factor": 2
+            },
+            "fame": {
+              "actual": 2,
+              "required": 0,
+              "factor": 10
+            },
+            "notoriety": {
+              "actual": 1,
+              "required": 0,
+              "factor": 20
+            },
+            "gold": {
+              "actual": -25,
+              "required": 0,
+              "factor": 30
+            }
+          },
+          "itemFame": 0,
+          "itemNotoriety": 0
+        }
+      }
+    },
+    {
+      "sessionId": "6-15-25-sorc-test-base_2025-07-03T05-44-43_xzinke13",
+      "sessionName": "6-15-25-sorc-test-base",
+      "sessionTitle": "6-15-25-sorc-test-base",
+      "dayCount": 0,
+      "characters": {},
+      "scores": {}
+    },
+    {
+      "sessionId": "6-17-25-5man_2025-07-03T05-44-46_mvdbv34p",
+      "sessionName": "6-17-25-5man",
+      "sessionTitle": "6-17-25-5man",
+      "dayCount": 5,
+      "characters": {
+        "White Knight": "GM",
+        "Amazon": "GM",
+        "Berserker": "GM",
+        "Pilgrim": "GM",
+        "Woods Girl": "GM"
+      },
+      "scores": {
+        "Woods Girl": {
+          "totalScore": -165,
+          "totalBasicScore": -37,
+          "totalBonusScore": -128,
+          "categories": {
+            "greatTreasures": {
+              "actual": 0,
+              "required": 2,
+              "factor": 1
+            },
+            "spells": {
+              "actual": 0,
+              "required": 0,
+              "factor": 2
+            },
+            "fame": {
+              "actual": 0,
+              "required": 50,
+              "factor": 10
+            },
+            "notoriety": {
+              "actual": 0,
+              "required": 60,
+              "factor": 20
+            },
+            "gold": {
+              "actual": -6,
+              "required": 60,
+              "factor": 30
+            }
+          },
+          "itemFame": 0,
+          "itemNotoriety": 0
+        },
+        "Berserker": {
+          "totalScore": -246,
+          "totalBasicScore": -36,
+          "totalBonusScore": -210,
+          "categories": {
+            "greatTreasures": {
+              "actual": 1,
+              "required": 0,
+              "factor": 1
+            },
+            "spells": {
+              "actual": 0,
+              "required": 0,
+              "factor": 2
+            },
+            "fame": {
+              "actual": -2,
+              "required": 60,
+              "factor": 10
+            },
+            "notoriety": {
+              "actual": 18,
+              "required": 120,
+              "factor": 20
+            },
+            "gold": {
+              "actual": -13,
+              "required": 0,
+              "factor": 30
+            }
+          },
+          "itemFame": -10,
+          "itemNotoriety": 10
+        },
+        "White Knight": {
+          "totalScore": -155,
+          "totalBasicScore": -39,
+          "totalBonusScore": -116,
+          "categories": {
+            "greatTreasures": {
+              "actual": 1,
+              "required": 2,
+              "factor": 1
+            },
+            "spells": {
+              "actual": 1,
+              "required": 2,
+              "factor": 2
+            },
+            "fame": {
+              "actual": -10,
+              "required": 40,
+              "factor": 10
+            },
+            "notoriety": {
+              "actual": -5,
+              "required": 60,
+              "factor": 20
+            },
+            "gold": {
+              "actual": -27,
+              "required": 60,
+              "factor": 30
+            }
+          },
+          "itemFame": 0,
+          "itemNotoriety": -5
+        },
+        "Pilgrim": {
+          "totalScore": -139,
+          "totalBasicScore": -37,
+          "totalBonusScore": -102,
+          "categories": {
+            "greatTreasures": {
+              "actual": 0,
+              "required": 1,
+              "factor": 1
+            },
+            "spells": {
+              "actual": 1,
+              "required": 8,
+              "factor": 2
+            },
+            "fame": {
+              "actual": 0,
+              "required": 30,
+              "factor": 10
+            },
+            "notoriety": {
+              "actual": 0,
+              "required": 40,
+              "factor": 20
+            },
+            "gold": {
+              "actual": -11,
+              "required": 60,
+              "factor": 30
+            }
+          },
+          "itemFame": 0,
+          "itemNotoriety": 0
+        },
+        "Amazon": {
+          "totalScore": -207,
+          "totalBasicScore": -39,
+          "totalBonusScore": -168,
+          "categories": {
+            "greatTreasures": {
+              "actual": 0,
+              "required": 2,
+              "factor": 1
+            },
+            "spells": {
+              "actual": 0,
+              "required": 0,
+              "factor": 2
+            },
+            "fame": {
+              "actual": 0,
+              "required": 60,
+              "factor": 10
+            },
+            "notoriety": {
+              "actual": 0,
+              "required": 80,
+              "factor": 20
+            },
+            "gold": {
+              "actual": -25,
+              "required": 0,
+              "factor": 30
+            }
+          },
+          "itemFame": 0,
+          "itemNotoriety": 0
+        }
+      }
+    },
+    {
+      "sessionId": "elf-screwed_2025-07-03T05-44-49_kp2i1eyo",
+      "sessionName": "elf-screwed",
+      "sessionTitle": "elf-screwed",
+      "dayCount": 113,
+      "characters": {
+        "Elf": "Krystofer"
+      },
+      "scores": {
+        "Elf": {
+          "totalScore": -10,
+          "totalBasicScore": 2,
+          "totalBonusScore": -12,
+          "categories": {
+            "greatTreasures": {
+              "actual": 1,
+              "required": 2,
+              "factor": 1
+            },
+            "spells": {
+              "actual": 1,
+              "required": 0,
+              "factor": 2
+            },
+            "fame": {
+              "actual": 83,
+              "required": 0,
+              "factor": 10
+            },
+            "notoriety": {
+              "actual": -5,
+              "required": 0,
+              "factor": 20
+            },
+            "gold": {
+              "actual": 73,
+              "required": 90,
+              "factor": 30
+            }
+          },
+          "itemFame": -10,
+          "itemNotoriety": 10
+        }
+      }
+    },
+    {
+      "sessionId": "learning-wiz-2_2025-07-03T05-44-53_ktqsngw4",
+      "sessionName": "learning-wiz-2",
+      "sessionTitle": "learning-wiz-2",
+      "dayCount": 76,
+      "characters": {
+        "Wizard": "Krystofer"
+      },
+      "scores": {
+        "Wizard": {
+          "totalScore": -4,
+          "totalBasicScore": -1,
+          "totalBonusScore": -3,
+          "categories": {
+            "greatTreasures": {
+              "actual": 2,
+              "required": 1,
+              "factor": 1
+            },
+            "spells": {
+              "actual": 3,
+              "required": 4,
+              "factor": 2
+            },
+            "fame": {
+              "actual": 13,
+              "required": 10,
+              "factor": 10
+            },
+            "notoriety": {
+              "actual": 31,
+              "required": 20,
+              "factor": 20
+            },
+            "gold": {
+              "actual": 3,
+              "required": 0,
+              "factor": 30
+            }
+          },
+          "itemFame": -10,
+          "itemNotoriety": 14
+        }
+      }
+    },
+    {
+      "sessionId": "learning-woodsgirl-2_2025-07-03T05-44-56_bncdmtjr",
+      "sessionName": "learning-woodsgirl-2",
+      "sessionTitle": "learning-woodsgirl-2",
+      "dayCount": 109,
+      "characters": {
+        "Woods Girl": "Krystofer"
+      },
+      "scores": {
+        "Woods Girl": {
+          "totalScore": -29,
+          "totalBasicScore": -8,
+          "totalBonusScore": -21,
+          "categories": {
+            "greatTreasures": {
+              "actual": 0,
+              "required": 1,
+              "factor": 1
+            },
+            "spells": {
+              "actual": 0,
+              "required": 0,
+              "factor": 2
+            },
+            "fame": {
+              "actual": 8,
+              "required": 20,
+              "factor": 10
+            },
+            "notoriety": {
+              "actual": 11,
+              "required": 40,
+              "factor": 20
+            },
+            "gold": {
+              "actual": 145,
+              "required": 0,
+              "factor": 30
+            }
+          },
+          "itemFame": 0,
+          "itemNotoriety": 4
+        }
+      }
+    },
+    {
+      "sessionId": "learning-woodsgirl-win_2025-07-03T05-44-59_t9q7ok7c",
+      "sessionName": "learning-woodsgirl-win",
+      "sessionTitle": "learning-woodsgirl-win",
+      "dayCount": 134,
+      "characters": {
+        "Woods Girl": "Krystofer"
+      },
+      "scores": {
+        "Woods Girl": {
+          "totalScore": 0,
+          "totalBasicScore": 2,
+          "totalBonusScore": -2,
+          "categories": {
+            "greatTreasures": {
+              "actual": 1,
+              "required": 1,
+              "factor": 1
+            },
+            "spells": {
+              "actual": 0,
+              "required": 0,
+              "factor": 2
+            },
+            "fame": {
+              "actual": 32,
+              "required": 20,
+              "factor": 10
+            },
+            "notoriety": {
+              "actual": 33,
+              "required": 40,
+              "factor": 20
+            },
+            "gold": {
+              "actual": 93,
+              "required": 0,
+              "factor": 30
+            }
+          },
+          "itemFame": -5,
+          "itemNotoriety": 1
+        }
+      }
+    }
+  ],
+  "topStats": {
+    "mostPlayedCharacters": [
+      {
+        "name": "White Knight",
+        "plays": 4
+      },
+      {
+        "name": "Woods Girl",
+        "plays": 4
+      },
+      {
+        "name": "Amazon",
+        "plays": 2
+      },
+      {
+        "name": "Berserker",
+        "plays": 2
+      },
+      {
+        "name": "Pilgrim",
+        "plays": 1
+      },
+      {
+        "name": "Elf",
+        "plays": 1
+      },
+      {
+        "name": "Wizard",
+        "plays": 1
+      }
+    ],
+    "mostDeadlyCharacters": [
+      {
+        "name": "White Knight",
+        "deaths": 2
+      },
+      {
+        "name": "Berserker",
+        "deaths": 1
+      },
+      {
+        "name": "Amazon",
+        "deaths": 0
+      },
+      {
+        "name": "Woods Girl",
+        "deaths": 0
+      },
+      {
+        "name": "Pilgrim",
+        "deaths": 0
+      },
+      {
+        "name": "Elf",
+        "deaths": 0
+      },
+      {
+        "name": "Wizard",
+        "deaths": 0
+      }
+    ],
+    "mostFoundTreasures": [],
+    "mostSpawnedMonsters": [
+      {
+        "name": "Axe Goblin",
+        "count": 66
+      },
+      {
+        "name": "Spear Goblin",
+        "count": 42
+      },
+      {
+        "name": "H Flying Dragon",
+        "count": 24
+      },
+      {
+        "name": "Giant Bat",
+        "count": 17
+      },
+      {
+        "name": "Giant",
+        "count": 16
+      },
+      {
+        "name": "H Troll",
+        "count": 16
+      },
+      {
+        "name": "H Serpent",
+        "count": 14
+      },
+      {
+        "name": "Sword Goblin",
+        "count": 12
+      },
+      {
+        "name": "H Dragon",
+        "count": 7
+      },
+      {
+        "name": "T Troll",
+        "count": 6
+      }
+    ],
+    "mostKilledMonsters": [
+      {
+        "name": "Sword Goblin",
+        "count": 6
+      },
+      {
+        "name": "Spear Goblin",
+        "count": 6
+      },
+      {
+        "name": "Giant Bat",
+        "count": 5
+      },
+      {
+        "name": "Imp",
+        "count": 3
+      },
+      {
+        "name": "Patrol HQ",
+        "count": 3
+      },
+      {
+        "name": "Patrol 2",
+        "count": 3
+      },
+      {
+        "name": "H Spider",
+        "count": 3
+      },
+      {
+        "name": "Order 3",
+        "count": 2
+      },
+      {
+        "name": "White Knight",
+        "count": 2
+      },
+      {
+        "name": "Ghost",
+        "count": 2
+      }
+    ]
+  }
+}

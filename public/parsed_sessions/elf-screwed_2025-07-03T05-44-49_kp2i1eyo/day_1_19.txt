@@ -1,0 +1,22 @@
+Month 1, Day 19
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Elf
+Starts turn: Ledges 1
+Elf
+Search - Peer - Found hidden enemies
+Elf
+Search - Peer - Clues
+Elf
+Search - Peer - Found hidden enemies and Found 1 path(s)
+Elf
+Hide - Succeeded
+Elf
+Hide - N/A
+Elf
+Ends turn: Ledges 1
+host
+========================================
+host

@@ -1,0 +1,16 @@
+Month 3, Day 16
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Caves 4
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Ends turn: Caves 4
+host
+========================================
+host

@@ -1,0 +1,3277 @@
+{
+  "sessionName": "6-14-25-4Questing",
+  "players": {
+    "Krystofer": {
+      "name": "Krystofer",
+      "characters": [
+        "Amazon",
+        "White Knight",
+        "Woods Girl",
+        "Berserker"
+      ]
+    }
+  },
+  "characterToPlayer": {
+    "Amazon": "Krystofer",
+    "White Knight": "Krystofer",
+    "Woods Girl": "Krystofer",
+    "Berserker": "Krystofer"
+  },
+  "days": {
+    "1_1": {
+      "month": 1,
+      "day": 1,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "Berserker",
+          "startLocation": "Awful Valley 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Deep Woods 2",
+          "player": "Krystofer"
+        },
+        {
+          "character": "White Knight",
+          "startLocation": "Bad Valley 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Cliff 1",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Amazon",
+          "startLocation": "Awful Valley 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Borderland 2",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Awful Valley 5",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Deep Woods 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Deep Woods 2",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            },
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Berserker",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        },
+        {
+          "location": "Cliff 1",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "Giant",
+          "location": "Cliff 6"
+        },
+        {
+          "monster": "H Troll",
+          "location": "Borderland 2"
+        },
+        {
+          "monster": "H Troll",
+          "location": "Borderland 2"
+        }
+      ],
+      "monsterBlocks": [
+        {
+          "monster": "H Troll",
+          "character": "Amazon"
+        },
+        {
+          "monster": "H Troll",
+          "character": "Amazon"
+        }
+      ]
+    },
+    "1_10": {
+      "month": 1,
+      "day": 10,
+      "monsterDieRoll": 5,
+      "characterTurns": [
+        {
+          "character": "Amazon",
+          "startLocation": "Between Borderland 5 and Borderland 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Curst Valley 4",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Between Borderland 5 and Borderland 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Curst Valley 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_11": {
+      "month": 1,
+      "day": 11,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "Amazon",
+          "startLocation": "Curst Valley 4",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Peer",
+              "result": "Clues"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            },
+            {
+              "action": "Search - Peer",
+              "result": "Nothing"
+            }
+          ],
+          "endLocation": "Ledges 3",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Curst Valley 4",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            },
+            {
+              "action": "Search - Peer",
+              "result": "Found hidden enemies and Found 1 path(s)"
+            }
+          ],
+          "endLocation": "Ledges 3",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_12": {
+      "month": 1,
+      "day": 12,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "Woods Girl",
+          "startLocation": "Ledges 3",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Mountain 2",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Amazon",
+          "startLocation": "Mountain 2",
+          "actions": [],
+          "endLocation": "Mountain 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_13": {
+      "month": 1,
+      "day": 13,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "Amazon",
+          "startLocation": "Mountain 2",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "High Pass 6",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "High Pass 6",
+          "actions": [],
+          "endLocation": "High Pass 6",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_14": {
+      "month": 1,
+      "day": 14,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "Amazon",
+          "startLocation": "High Pass 6",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Linden Woods 2",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Linden Woods 2",
+          "actions": [],
+          "endLocation": "Linden Woods 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_15": {
+      "month": 1,
+      "day": 15,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "Amazon",
+          "startLocation": "Linden Woods 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Mountain 4",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Mountain 4",
+          "actions": [],
+          "endLocation": "Mountain 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Mountain 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            },
+            {
+              "number": 3,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "Giant",
+          "location": "Mountain 4"
+        }
+      ],
+      "monsterBlocks": [
+        {
+          "monster": "Giant",
+          "character": "Amazon"
+        },
+        {
+          "monster": "Giant",
+          "character": "Woods Girl"
+        }
+      ]
+    },
+    "1_16": {
+      "month": 1,
+      "day": 16,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Amazon",
+          "startLocation": "Between High Pass 6 and Mountain 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "High Pass 6",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Between High Pass 6 and Mountain 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            }
+          ],
+          "endLocation": "High Pass 6",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [
+        {
+          "monster": "H Flying Dragon",
+          "location": "High Pass 1"
+        },
+        {
+          "monster": "H Flying Dragon",
+          "location": "High Pass 1"
+        }
+      ],
+      "monsterBlocks": []
+    },
+    "1_17": {
+      "month": 1,
+      "day": 17,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "Woods Girl",
+          "startLocation": "High Pass 6",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "High Pass 6",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Amazon",
+          "startLocation": "High Pass 6",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "High Pass 6",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_18": {
+      "month": 1,
+      "day": 18,
+      "monsterDieRoll": 5,
+      "characterTurns": [
+        {
+          "character": "Woods Girl",
+          "startLocation": "High Pass 6",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Mountain 4",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Amazon",
+          "startLocation": "Mountain 4",
+          "actions": [],
+          "endLocation": "Mountain 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Mountain 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            },
+            {
+              "number": 3,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Woods Girl",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_19": {
+      "month": 1,
+      "day": 19,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "Amazon",
+          "startLocation": "Mountain 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Curst Valley 4",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Curst Valley 4",
+          "actions": [],
+          "endLocation": "Curst Valley 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_2": {
+      "month": 1,
+      "day": 2,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Cliff 1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Bad Valley 2",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Deep Woods 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Evil Valley 5",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Berserker",
+          "startLocation": "Evil Valley 5",
+          "actions": [],
+          "endLocation": "Evil Valley 5",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Amazon",
+          "startLocation": "Between Awful Valley 4 and Borderland 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "Ruins 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Evil Valley 5",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            },
+            {
+              "number": 3,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Woods Girl",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_20": {
+      "month": 1,
+      "day": 20,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "Amazon",
+          "startLocation": "Curst Valley 4",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "Pine Woods 2",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Pine Woods 2",
+          "actions": [],
+          "endLocation": "Pine Woods 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_21": {
+      "month": 1,
+      "day": 21,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Woods Girl",
+          "startLocation": "Pine Woods 2",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            },
+            {
+              "action": "Search - Locate - Choice - Discover chit(s)",
+              "result": "none to discover"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            }
+          ],
+          "endLocation": "Pine Woods 2",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Amazon",
+          "startLocation": "Pine Woods 2",
+          "actions": [],
+          "endLocation": "Pine Woods 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_22": {
+      "month": 1,
+      "day": 22,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "Amazon",
+          "startLocation": "Pine Woods 2",
+          "actions": [
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Pine Woods 2",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Pine Woods 2",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            }
+          ],
+          "endLocation": "Pine Woods 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_23": {
+      "month": 1,
+      "day": 23,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "Amazon",
+          "startLocation": "Pine Woods 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Dark Valley 4",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Dark Valley 4",
+          "actions": [],
+          "endLocation": "Dark Valley 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Dark Valley 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            },
+            {
+              "number": 3,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Ogre",
+                  "action": "Lures the Ghost"
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Lures the Ghost"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Attacks the Ghost"
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Presses the RESET combat button."
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Attacks the Ghost"
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Attacks the Ghost"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=14, Speed=1",
+                "Woods Girl L1**  vs. Ghost Speed 4",
+                "Attack Length=3, Speed=3",
+                "Amazon M3*  vs. Ghost Speed 4",
+                "Attack Length=0, Speed=4",
+                "Attack Length=0, Speed=4",
+                "Ghost H4  vs. Ogre Speed 4",
+                "Attack Length=0, Speed=5",
+                "Ogre H5  vs. Ghost Speed 4"
+              ],
+              "damage": [
+                "Initial harm: L+2",
+                "Ghost is hit with H+2 harm along box 1",
+                "Initial harm: M+1",
+                "Ghost is hit with M+1 harm along box 3"
+              ],
+              "armorDestruction": [],
+              "deaths": [
+                "Ghost was killed!",
+                "Ghost was killed!"
+              ],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "Amazon",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT M4*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Amazon",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": [
+        {
+          "monster": "Ghost",
+          "character": "Amazon"
+        },
+        {
+          "monster": "Ghost",
+          "character": "Woods Girl"
+        },
+        {
+          "monster": "Ghost",
+          "character": "Amazon"
+        },
+        {
+          "monster": "Ghost",
+          "character": "Woods Girl"
+        }
+      ]
+    },
+    "1_24": {
+      "month": 1,
+      "day": 24,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "Amazon",
+          "startLocation": "Dark Valley 4",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "Rested 1 asterisk"
+            }
+          ],
+          "endLocation": "Curst Valley 2",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Curst Valley 2",
+          "actions": [],
+          "endLocation": "Curst Valley 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_25": {
+      "month": 1,
+      "day": 25,
+      "monsterDieRoll": 6,
+      "characterTurns": [
+        {
+          "character": "Amazon",
+          "startLocation": "Curst Valley 2",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Cavern 3",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Cavern 3",
+          "actions": [],
+          "endLocation": "Cavern 3",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_26": {
+      "month": 1,
+      "day": 26,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "Amazon",
+          "startLocation": "Cavern 3",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            }
+          ],
+          "endLocation": "Cavern 1",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Cavern 3",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            }
+          ],
+          "endLocation": "Cavern 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_27": {
+      "month": 1,
+      "day": 27,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Amazon",
+          "startLocation": "Cavern 1",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Found 1 passage(s)"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            }
+          ],
+          "endLocation": "Cavern 1",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Cavern 1",
+          "actions": [
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action S"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action S"
+            }
+          ],
+          "endLocation": "Cavern 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Cavern 1",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            },
+            {
+              "number": 3,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Amazon",
+                  "action": "Lures the H Dragon"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Attacks the H Dragon"
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Attacks the H Dragon"
+                },
+                {
+                  "performer": "H Dragon",
+                  "action": "Changes tactics:  H Dragon M4"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                },
+                {
+                  "performer": "System",
+                  "action": "1 consecutive round of no damage, fatigue, or spellcasting."
+                }
+              ],
+              "attacks": [
+                "Attack Length=14, Speed=1",
+                "Woods Girl L1**  vs. H Dragon Speed 3",
+                "Attack Length=3, Speed=4",
+                "Amazon L4*  vs. H Dragon Speed 3",
+                "Attack Length=0, Speed=4",
+                "H Dragon M4  vs. Amazon Speed 3"
+              ],
+              "damage": [
+                "Initial harm: L+2",
+                "H Dragon is hit with neg+2 harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: neg+1"
+              ],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Attacks the H Dragon"
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Attacks the H Dragon"
+                },
+                {
+                  "performer": "H Dragon",
+                  "action": "Changes tactics:  H Dragon H4"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=3, Length=14",
+                "Woods Girl L3  vs. H Dragon Speed 4",
+                "Attack Speed=4, Length=3",
+                "Amazon L4*  vs. H Dragon Speed 4",
+                "Attack Speed=4, Length=0",
+                "H Dragon H4  vs. Ogre Speed 5",
+                "Attack Speed=5, Length=0",
+                "Ogre T5  vs. H Dragon Speed 4"
+              ],
+              "damage": [
+                "Initial harm: L",
+                "H Dragon is hit with neg harm along box 1",
+                "Initial harm: H",
+                "Ogre is hit with H harm along box 2"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: neg"
+              ],
+              "deaths": [
+                "Ogre was killed!"
+              ],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 3,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Amazon",
+                  "action": "Lures the H Dragon"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Attacks the H Dragon"
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Attacks the H Dragon"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                },
+                {
+                  "performer": "System",
+                  "action": "1 consecutive round of no damage, fatigue, or spellcasting."
+                }
+              ],
+              "attacks": [
+                "Attack Speed=1, Length=14",
+                "Woods Girl L1**  vs. H Dragon Speed 4",
+                "Attack Speed=4, Length=3",
+                "Amazon L4*  vs. H Dragon Speed 4",
+                "Attack Speed=4, Length=0",
+                "H Dragon H4  vs. Amazon Speed 3"
+              ],
+              "damage": [
+                "Initial harm: L+2",
+                "H Dragon is hit with L+2 harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: L+1"
+              ],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 4,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Attacks the H Dragon"
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Attacks the H Dragon"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                }
+              ],
+              "attacks": [
+                "Attack Speed=1, Length=14",
+                "Woods Girl L1**  vs. H Dragon Speed 4",
+                "Attack Speed=4, Length=0",
+                "H Dragon H4  vs. Amazon Speed 3"
+              ],
+              "damage": [
+                "Initial harm: L+2",
+                "H Dragon is hit with neg+2 harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: neg+1"
+              ],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "H Dragon",
+          "location": "Cavern 1"
+        }
+      ],
+      "monsterBlocks": [
+        {
+          "monster": "H Dragon",
+          "character": "Amazon"
+        },
+        {
+          "monster": "H Dragon",
+          "character": "Woods Girl"
+        }
+      ]
+    },
+    "1_28": {
+      "month": 1,
+      "day": 28,
+      "monsterDieRoll": null,
+      "characterTurns": [],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_3": {
+      "month": 1,
+      "day": 3,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "Woods Girl",
+          "startLocation": "Evil Valley 5",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Deep Woods 4",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Berserker",
+          "startLocation": "Deep Woods 4",
+          "actions": [],
+          "endLocation": "Deep Woods 4",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Amazon",
+          "startLocation": "Ruins 1",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            }
+          ],
+          "endLocation": "Ruins 2",
+          "player": "Krystofer"
+        },
+        {
+          "character": "White Knight",
+          "startLocation": "Bad Valley 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Rest",
+              "result": "You are fully rested."
+            }
+          ],
+          "endLocation": "Ruins 6",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Deep Woods 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Woods Girl",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_4": {
+      "month": 1,
+      "day": 4,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "White Knight",
+          "startLocation": "Ruins 6",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action R"
+            }
+          ],
+          "endLocation": "Ruins 1",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Amazon",
+          "startLocation": "Ruins 2",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Ruins 2",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Woods Girl",
+          "startLocation": "Deep Woods 4",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Awful Valley 1",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Berserker",
+          "startLocation": "Awful Valley 1",
+          "actions": [],
+          "endLocation": "Awful Valley 1",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Ruins 2",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Amazon",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_5": {
+      "month": 1,
+      "day": 5,
+      "monsterDieRoll": 1,
+      "characterTurns": [
+        {
+          "character": "Woods Girl",
+          "startLocation": "Awful Valley 1",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            }
+          ],
+          "endLocation": "Borderland 2",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Berserker",
+          "startLocation": "Borderland 2",
+          "actions": [],
+          "endLocation": "Borderland 2",
+          "player": "Krystofer"
+        },
+        {
+          "character": "White Knight",
+          "startLocation": "Ruins 1",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            },
+            {
+              "action": "Hide",
+              "result": "N/A"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action R"
+            }
+          ],
+          "endLocation": "Borderland 2",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Amazon",
+          "startLocation": "Ruins 2",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Clues and Passage(s)"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Passage(s)"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action H"
+            }
+          ],
+          "endLocation": "Ruins 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Ruins 2",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Attacks the Imp"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=17, Speed=2",
+                "Imp neg2  vs. Amazon Speed 3",
+                "Attack Length=3, Speed=5",
+                "Amazon M5*  vs. Imp Speed 2"
+              ],
+              "damage": [
+                "Amazon was hit with a Curse along box 2"
+              ],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Attacks the Imp"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=2, Length=17",
+                "Imp neg2  vs. Amazon Speed 3",
+                "Attack Speed=5, Length=3",
+                "Amazon M5*  vs. Imp Speed 2"
+              ],
+              "damage": [
+                "Amazon was hit with a Curse along box 3",
+                "Initial harm: M+1",
+                "Imp is hit with M+1 harm along box 3"
+              ],
+              "armorDestruction": [],
+              "deaths": [
+                "Imp was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The Amazon",
+                  "action": "The Amazon gets 2 fame (x 1) and 1 notoriety (x 1) for the death of the Imp"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 3,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Amazon",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        },
+        {
+          "location": "Borderland 2",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            },
+            {
+              "number": 3,
+              "participants": []
+            },
+            {
+              "number": 4,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Berserker",
+                  "action": "Lures the Patrol HQ"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Lures the Patrol 2"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Lures the Patrol 1"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Lures the H Troll"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Lures the H Troll"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Patrol HQ"
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Attacks the Patrol 1"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Attacks the Patrol HQ"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=14, Speed=4",
+                "Woods Girl L4  vs. Patrol 1 Speed 6",
+                "Attack Length=8, Speed=6",
+                "White Knight T6*  vs. Patrol HQ Speed 5",
+                "Attack Length=5, Speed=5",
+                "Berserker H5*  vs. Patrol HQ Speed 5",
+                "Attack Length=3, Speed=4",
+                "Short Swordsman M4*  vs. Patrol 2 Speed 6",
+                "Attack Length=3, Speed=4",
+                "Patrol HQ M4*  vs. Berserker Speed 4",
+                "Attack Length=3, Speed=4",
+                "Patrol 1 L4*  vs. Berserker Speed 4",
+                "Attack Length=3, Speed=5",
+                "Patrol 2 M5*  vs. Short Swordsman Speed 3",
+                "Attack Length=0, Speed=4",
+                "H Troll M4  vs. Berserker Speed 4",
+                "Attack Length=0, Speed=4",
+                "H Troll M4  vs. Berserker Speed 4"
+              ],
+              "damage": [
+                "Initial harm: L",
+                "Patrol 1 is hit with neg harm along box 1",
+                "Initial harm: M+1",
+                "Patrol 2 is hit with M+1 harm along box 2",
+                "Initial harm: M+1",
+                "Short Swordsman is hit with M+1 harm along box 2"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: M"
+              ],
+              "deaths": [
+                "Short Swordsman was killed!"
+              ],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "Berserker",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "After fatiguing, these chits were moved to fatigue: MOVE T6*"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT T5*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Berserker",
+                  "action": "Lures the Patrol 2"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Attacks the Patrol HQ"
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Attacks the Patrol 2"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the H Troll"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=1, Length=14",
+                "Woods Girl L1**  vs. Patrol 2 Speed 3",
+                "Attack Speed=4, Length=8",
+                "White Knight H4*  vs. H Troll Speed 4",
+                "Attack Speed=4, Length=5",
+                "Berserker H4*  vs. Patrol HQ Speed 5",
+                "Attack Speed=4, Length=3",
+                "Patrol HQ M4*  vs. Berserker Speed 4",
+                "Attack Speed=4, Length=3",
+                "Patrol 1 L4*  vs. Berserker Speed 4",
+                "Attack Speed=4, Length=0",
+                "H Troll M4  vs. Berserker Speed 4",
+                "Attack Speed=4, Length=0",
+                "H Troll M4  vs. Berserker Speed 4",
+                "Attack Speed=5, Length=3",
+                "Patrol 2 M5*  vs. Berserker Speed 4"
+              ],
+              "damage": [
+                "Initial harm: L+2",
+                "Patrol 2 is hit with neg+1 harm along box 3",
+                "Initial harm: H+1",
+                "Patrol HQ is hit with H+1 harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: neg"
+              ],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "Woods Girl",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT M4*"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "After fatiguing, these chits were moved to fatigue: MOVE H5*"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT H5*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 3,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Attacks the Patrol 2"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the H Troll"
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Attacks the Patrol HQ"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=3, Length=14",
+                "Woods Girl L3  vs. Patrol HQ Speed 3",
+                "Attack Speed=4, Length=3",
+                "Patrol HQ M4*  vs. Berserker Speed 4",
+                "Attack Speed=4, Length=3",
+                "Patrol 1 L4*  vs. Berserker Speed 4",
+                "Attack Speed=4, Length=0",
+                "H Troll M4  vs. Berserker Speed 4",
+                "Attack Speed=4, Length=0",
+                "H Troll M4  vs. Berserker Speed 4",
+                "Attack Speed=5, Length=5",
+                "Berserker H5*  vs. Patrol 2 Speed 3",
+                "Attack Speed=5, Length=3",
+                "Patrol 2 M5*  vs. Berserker Speed 4",
+                "Attack Speed=6, Length=8",
+                "White Knight H6*  vs. H Troll Speed 4"
+              ],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "Berserker",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "After fatiguing, these chits were made active: MOVE H5*"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "After fatiguing, these chits were moved to fatigue: MOVE H4**"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 4,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Lures the Patrol 1"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Lures the Patrol HQ"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Lures the Patrol 2"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Attacks the Patrol HQ"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Patrol 2"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Attacks the H Troll"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=1, Length=14",
+                "Woods Girl L1**  vs. Patrol HQ Speed 3",
+                "Attack Speed=4, Length=8",
+                "White Knight H4*  vs. Patrol 2 Speed 3",
+                "Attack Speed=4, Length=5",
+                "Berserker H4*  vs. H Troll Speed 4",
+                "Attack Speed=4, Length=3",
+                "Attack Speed=4, Length=3",
+                "Attack Speed=4, Length=0",
+                "H Troll M4  vs. Berserker Speed 4",
+                "Attack Speed=4, Length=0",
+                "H Troll M4  vs. Berserker Speed 4",
+                "Attack Speed=5, Length=3"
+              ],
+              "damage": [
+                "Initial harm: L+2",
+                "Patrol HQ is hit with L+2 harm along box 3",
+                "Initial harm: L+1",
+                "White Knight is hit with L+1 harm along box 1",
+                "Initial harm: M+1",
+                "White Knight is hit with M+1 harm along box 1",
+                "White Knight takes 1 wound",
+                "After wounding, these chits were wounded: MOVE T6*",
+                "Woods Girl relationship is harmed by 1! (EXTENDED GRUDGES) --> Unfriendly"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: L+1",
+                "Hits armor (Armor), and reduces sharpness: L",
+                "Hits armor (Armor), and reduces sharpness: M"
+              ],
+              "deaths": [
+                "Patrol HQ was killed!"
+              ],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "Berserker",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "After fatiguing, these chits were moved to fatigue: MOVE H5*"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT H5*"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Wounding 1 chit."
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 5,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Patrol 2"
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Attacks the H Troll"
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Presses the RESET combat button."
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Attacks the Patrol 1"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Attacks the H Troll"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=3, Length=14",
+                "Woods Girl L3  vs. Patrol 1 Speed 6",
+                "Attack Speed=4, Length=8",
+                "White Knight H4*  vs. Patrol 2 Speed 3",
+                "Attack Speed=4, Length=5",
+                "Berserker H4*  vs. H Troll Speed 4",
+                "Attack Speed=4, Length=3",
+                "Attack Speed=4, Length=0",
+                "H Troll M4  vs. Berserker Speed 4",
+                "Attack Speed=4, Length=0",
+                "H Troll M4  vs. Berserker Speed 4",
+                "Attack Speed=5, Length=3"
+              ],
+              "damage": [
+                "Initial harm: L",
+                "Patrol 1 is hit with L harm along box 2",
+                "Initial harm: H+1",
+                "Patrol 2 is hit with H+1 harm along box 3",
+                "Initial harm: L+1",
+                "White Knight is hit with L+1 harm along box 3"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: H",
+                "Hits armor (Armor), and reduces sharpness: L"
+              ],
+              "deaths": [
+                "Patrol 2 was killed!"
+              ],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "Berserker",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "After fatiguing, these chits were made active: MOVE H5*"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "After fatiguing, these chits were moved to fatigue: MOVE H4**"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were made active: FIGHT H5*"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT T4**"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 6,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Attacks the Patrol 1"
+                },
+                {
+                  "performer": "Berserker",
+                  "action": "Attacks the H Troll"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the H Troll"
+                },
+                {
+                  "performer": "H Troll",
+                  "action": "Changes tactics:  H Troll H5"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=3, Length=14",
+                "Woods Girl L3  vs. Patrol 1 Speed 6",
+                "Attack Speed=4, Length=3",
+                "Attack Speed=4, Length=0",
+                "Attack Speed=5, Length=0"
+              ],
+              "damage": [
+                "Initial harm: L",
+                "Patrol 1 is hit with L harm along box 2",
+                "Initial harm: L+1",
+                "White Knight is hit with L+1 harm along box 3",
+                "Initial harm: M",
+                "Berserker is hit with M harm along box 1",
+                "Berserker takes 1 wound",
+                "Initial harm: H",
+                "Berserker is hit with H harm along box 2"
+              ],
+              "armorDestruction": [
+                "Hits armor (Armor), and reduces sharpness: L"
+              ],
+              "deaths": [
+                "Berserker was killed!"
+              ],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 7,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "White Knight",
+                  "action": "Lures the H Troll"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Lures the H Troll"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the H Troll"
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Attacks the Patrol 1"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=3, Length=14",
+                "Woods Girl L3  vs. Patrol 1 Speed 6",
+                "Attack Speed=4, Length=3",
+                "Patrol 1 L4*  vs. White Knight Speed 4",
+                "Attack Speed=4, Length=0",
+                "H Troll M4  vs. White Knight Speed 4",
+                "Attack Speed=5, Length=0",
+                "H Troll H5  vs. White Knight Speed 4",
+                "Attack Speed=6, Length=8",
+                "White Knight H6*  vs. H Troll Speed 4"
+              ],
+              "damage": [
+                "Initial harm: L",
+                "Patrol 1 is hit with neg harm along box 3"
+              ],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: MOVE H5*"
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 8,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the Patrol 1"
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Attacks the Patrol 1"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=3, Length=14",
+                "Woods Girl L3  vs. Patrol 1 Speed 6",
+                "Attack Speed=4, Length=8",
+                "White Knight H4*  vs. Patrol 1 Speed 6",
+                "Attack Speed=4, Length=3",
+                "Patrol 1 L4*  vs. White Knight Speed 6",
+                "Attack Speed=4, Length=0",
+                "H Troll M4  vs. White Knight Speed 6",
+                "Attack Speed=5, Length=0",
+                "H Troll H5  vs. White Knight Speed 6"
+              ],
+              "damage": [
+                "Initial harm: L",
+                "Patrol 1 is hit with L harm along box 3",
+                "Initial harm: H+1",
+                "Patrol 1 is hit with H+1 harm along box 3",
+                "Initial harm: L+1",
+                "White Knight is hit with L+1 harm along box 2",
+                "Initial harm: M",
+                "White Knight is hit with M harm along box 2",
+                "White Knight takes 1 wound",
+                "Initial harm: H",
+                "White Knight is hit with H harm along box 2",
+                "White Knight takes 1 wound",
+                "After wounding, these chits were wounded: FIGHT H6, and MOVE H6"
+              ],
+              "armorDestruction": [
+                "Hits armor (Armor), and reduces sharpness: L",
+                "Hits armor (Armor), and reduces sharpness: M",
+                "Hits armor (Armor), and reduces sharpness: H",
+                "Damages the White Knight's Armor"
+              ],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT H5*"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Wounding 2 chits."
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 9,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the H Troll"
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Attacks the Patrol 1"
+                },
+                {
+                  "performer": "H Troll",
+                  "action": "Changes tactics:  H Troll H5"
+                },
+                {
+                  "performer": "H Troll",
+                  "action": "Changes tactics:  H Troll M4"
+                },
+                {
+                  "performer": "Patrol 1",
+                  "action": "Changes tactics:  Patrol 1 M4*"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Speed=3, Length=14",
+                "Woods Girl L3  vs. Patrol 1 Speed 4",
+                "Attack Speed=4, Length=3",
+                "Attack Speed=4, Length=0",
+                "Attack Speed=5, Length=0",
+                "Attack Speed=6, Length=8",
+                "White Knight H6*  vs. H Troll Speed 4"
+              ],
+              "damage": [
+                "Initial harm: L",
+                "Patrol 1 is hit with neg harm along box 3",
+                "Initial harm: M+1",
+                "White Knight is hit with M+1 harm along box 1",
+                "White Knight takes 1 wound",
+                "Initial harm: M",
+                "White Knight is hit with M harm along box 1",
+                "White Knight takes 1 wound",
+                "Initial harm: H",
+                "White Knight is hit with H harm along box 1",
+                "White Knight takes 1 wound",
+                "After wounding, these chits were wounded: MAGIC I5**, FIGHT H5*, and MOVE H4**"
+              ],
+              "armorDestruction": [
+                "Hits armor, and reduces sharpness: neg",
+                "Hits armor (Armor), and reduces sharpness: M",
+                "Hits armor (Armor), and reduces sharpness: M",
+                "Hits armor (Armor), and reduces sharpness: H",
+                "Destroys the White Knight's Armor"
+              ],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "White Knight",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were made active: FIGHT H5*"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "After fatiguing, these chits were moved to fatigue: FIGHT H4**"
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Wounding 3 chits."
+                }
+              ],
+              "disengagement": []
+            },
+            {
+              "round": 10,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Woods Girl",
+                  "action": "Lures the H Troll"
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Lures the H Troll"
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Lures the Patrol 1"
+                },
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                },
+                {
+                  "performer": "System",
+                  "action": "1 consecutive round of no damage, fatigue, or spellcasting."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 11,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "White Knight",
+                  "action": "Attacks the H Troll"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by SPEED first, then by LENGTH."
+                }
+              ],
+              "attacks": [
+                "Attack Speed=4, Length=8",
+                "White Knight H4*  vs. H Troll Speed 4",
+                "Attack Speed=4, Length=3",
+                "Attack Speed=4, Length=0",
+                "Attack Speed=5, Length=0"
+              ],
+              "damage": [
+                "Initial harm: M+1",
+                "White Knight is hit with M+1 harm along box 1"
+              ],
+              "armorDestruction": [],
+              "deaths": [
+                "White Knight was killed!"
+              ],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_6": {
+      "month": 1,
+      "day": 6,
+      "monsterDieRoll": 1,
+      "characterTurns": [],
+      "battles": [],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_7": {
+      "month": 1,
+      "day": 7,
+      "monsterDieRoll": 4,
+      "characterTurns": [
+        {
+          "character": "Woods Girl",
+          "startLocation": "Ruins 2",
+          "actions": [
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Nothing"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Passage(s)"
+            },
+            {
+              "action": "Hide",
+              "result": "Failed"
+            }
+          ],
+          "endLocation": "Ruins 2",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Amazon",
+          "startLocation": "Ruins 2",
+          "actions": [
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action S"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action S"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action S"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action S"
+            }
+          ],
+          "endLocation": "Ruins 2",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Ruins 2",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            },
+            {
+              "number": 3,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [
+        {
+          "monster": "T Troll",
+          "location": "Ruins 2"
+        }
+      ],
+      "monsterBlocks": [
+        {
+          "monster": "T Troll",
+          "character": "Amazon"
+        },
+        {
+          "monster": "T Troll",
+          "character": "Woods Girl"
+        }
+      ]
+    },
+    "1_8": {
+      "month": 1,
+      "day": 8,
+      "monsterDieRoll": 2,
+      "characterTurns": [
+        {
+          "character": "Woods Girl",
+          "startLocation": "Between Borderland 4 and Ruins 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "Hide",
+              "result": "Succeeded"
+            }
+          ],
+          "endLocation": "Borderland 4",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Amazon",
+          "startLocation": "Between Borderland 4 and Ruins 2",
+          "actions": [
+            {
+              "action": "Move",
+              "result": "moved"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action H"
+            },
+            {
+              "action": "BLOCKED",
+              "result": "Cannot perform action S"
+            }
+          ],
+          "endLocation": "Borderland 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Borderland 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            },
+            {
+              "number": 3,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "System",
+                  "action": "Assigning random target selection order."
+                },
+                {
+                  "performer": "Amazon",
+                  "action": "Attacks the Winged Demon"
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "Attacks the Winged Demon"
+                },
+                {
+                  "performer": "System",
+                  "action": "Attacks are sorted by LENGTH first, then by SPEED."
+                },
+                {
+                  "performer": "System",
+                  "action": "---- DISENGAGEMENT ----"
+                }
+              ],
+              "attacks": [
+                "Attack Length=17, Speed=3",
+                "Winged Demon neg3  vs. Amazon Speed 3",
+                "Attack Length=14, Speed=1",
+                "Woods Girl L1**  vs. Winged Demon Speed 3"
+              ],
+              "damage": [
+                "Initial harm: L+2",
+                "Winged Demon is hit with M+2 harm along box 2"
+              ],
+              "armorDestruction": [],
+              "deaths": [
+                "Winged Demon was killed!"
+              ],
+              "fameGains": [
+                {
+                  "performer": "The Woods Girl",
+                  "action": "The Woods Girl gets 8 fame (x 1) and 8 notoriety (x 1) for the death of the Winged Demon"
+                }
+              ],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            },
+            {
+              "round": 2,
+              "phase": null,
+              "actions": [
+                {
+                  "performer": "Woods Girl",
+                  "action": "Presses the END combat button."
+                }
+              ],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    },
+    "1_9": {
+      "month": 1,
+      "day": 9,
+      "monsterDieRoll": 3,
+      "characterTurns": [
+        {
+          "character": "Woods Girl",
+          "startLocation": "Borderland 4",
+          "actions": [
+            {
+              "action": "Hide",
+              "result": "Failed"
+            },
+            {
+              "action": "Search - Locate",
+              "result": "Found 1 passage(s)"
+            }
+          ],
+          "endLocation": "Borderland 4",
+          "player": "Krystofer"
+        },
+        {
+          "character": "Amazon",
+          "startLocation": "Borderland 4",
+          "actions": [
+            {
+              "action": "Search - Locate - Discover chit(s)",
+              "result": "Found Shrine"
+            },
+            {
+              "action": "Search - Loot the Shrine",
+              "result": "Found Treasure"
+            }
+          ],
+          "endLocation": "Borderland 4",
+          "player": "Krystofer"
+        }
+      ],
+      "battles": [
+        {
+          "location": "Borderland 4",
+          "groups": [
+            {
+              "number": 1,
+              "participants": []
+            },
+            {
+              "number": 2,
+              "participants": []
+            },
+            {
+              "number": 3,
+              "participants": []
+            }
+          ],
+          "rounds": [
+            {
+              "round": 1,
+              "phase": null,
+              "actions": [],
+              "attacks": [],
+              "damage": [],
+              "armorDestruction": [],
+              "deaths": [],
+              "fameGains": [],
+              "spellCasting": [],
+              "fatigue": [
+                {
+                  "performer": "Woods Girl",
+                  "action": "Fatiguing 1 asterisk."
+                },
+                {
+                  "performer": "Woods Girl",
+                  "action": "After fatiguing, these chits were moved to fatigue: MOVE L3*"
+                }
+              ],
+              "disengagement": []
+            }
+          ],
+          "participants": []
+        }
+      ],
+      "monsterSpawns": [],
+      "monsterBlocks": []
+    }
+  }
+}

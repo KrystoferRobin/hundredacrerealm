@@ -1,0 +1,22 @@
+Month 1, Day 18
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Wizard
+Starts turn: Dark Valley 4
+Wizard
+Move - moved
+Wizard
+Search - Locate - Nothing
+Wizard
+Search - Locate - Nothing
+Wizard
+Hide - Failed
+Wizard
+Ends turn: Deep Woods 1
+host
+H Dragon is added to Deep Woods, clearing 3
+host
+========================================
+host

@@ -124,6 +124,15 @@ async function processAllSessions() {
       continue;
     }
   }
+  
+  // 7. Build master statistics after all sessions are processed
+  console.log('\n📊 Building master statistics...');
+  try {
+    execSync('node /app/scripts/build_master_stats.js', { stdio: 'inherit' });
+    console.log('✅ Master statistics built successfully!');
+  } catch (error) {
+    console.error(`❌ Error building master statistics: ${error.message}`);
+  }
 }
 
 processAllSessions();
