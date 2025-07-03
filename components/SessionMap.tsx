@@ -23,12 +23,14 @@ interface SessionMapProps {
   sessionId: string;
   characterIcons?: CharacterMapIcon[];
   showCharacterIcons?: boolean;
+  selectedDay?: string; // New prop for dynamic map state
 }
 
-const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [], showCharacterIcons = true }) => {
+const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [], showCharacterIcons = true, selectedDay }) => {
   const [mapData, setMapData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [dynamicMapState, setDynamicMapState] = useState<any>(null);
   const [zoom, setZoom] = useState(1);
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
@@ -76,6 +78,60 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
 
     loadMapData();
   }, [sessionId]);
+
+  // Load tile data for dynamic map state tiles
+  useEffect(() => {
+    const loadDynamicTileData = async () => {
+      if (!dynamicMapState || !dynamicMapState.tiles) return;
+      
+      const newTileData: Record<string, any> = {};
+      for (const tile of dynamicMapState.tiles) {
+        // Only load if not already in cache
+        if (!tileDataCache[tile.objectName]) {
+          try {
+            const tileResponse = await fetch(`/api/tiles/${tile.objectName.replace(/\s+/g, '_')}`);
+            if (tileResponse.ok) {
+              newTileData[tile.objectName] = await tileResponse.json();
+            }
+          } catch (err) {
+            console.warn(`Failed to load tile data for ${tile.objectName}:`, err);
+          }
+        }
+      }
+      
+      if (Object.keys(newTileData).length > 0) {
+        setTileDataCache(prev => ({ ...prev, ...newTileData }));
+      }
+    };
+
+    loadDynamicTileData();
+  }, [dynamicMapState, tileDataCache]);
+
+  // Load dynamic map state when selectedDay changes
+  useEffect(() => {
+    const loadDynamicMapState = async () => {
+      if (!selectedDay) {
+        setDynamicMapState(null);
+        return;
+      }
+
+      try {
+        const response = await fetch(`/api/session/${sessionId}/map-state/${selectedDay}`);
+        if (!response.ok) {
+          console.warn(`Failed to load map state for day ${selectedDay}`);
+          setDynamicMapState(null);
+          return;
+        }
+        const data = await response.json();
+        setDynamicMapState(data);
+      } catch (err) {
+        console.warn(`Error loading map state for day ${selectedDay}:`, err);
+        setDynamicMapState(null);
+      }
+    };
+
+    loadDynamicMapState();
+  }, [sessionId, selectedDay]);
 
   useEffect(() => {
     // Load map_locations.json dynamically
@@ -252,7 +308,23 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
     setIsDragging(false);
   };
 
-  // Function to get clearing position within a tile
+  // Helper function to parse location strings with spaces in tile names
+  const parseLocation = (location: string): { tileName: string; clearing: string } => {
+    // Find the last number in the string (the clearing number)
+    const match = location.match(/^(.*?)\s+(\d+)$/);
+    if (match) {
+      return {
+        tileName: match[1].trim(),
+        clearing: match[2]
+      };
+    }
+    // Fallback: if no number found, assume it's just a tile name
+    return {
+      tileName: location.trim(),
+      clearing: ''
+    };
+  };
+
   const getClearingPosition = (tile: Tile, clearing: string): { x: number, y: number } | null => {
     const tileData = tileDataCache[tile.objectName];
     if (!tileData) return null;
@@ -442,7 +514,7 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
           }}
         >
         {/* Render tiles */}
-        {mapData.tiles.map((tile: Tile, index: number) => {
+        {(dynamicMapState ? dynamicMapState.tiles : mapData.tiles).map((tile: Tile, index: number) => {
           const [x, y] = parsePosition(tile.position);
           const hexPos = getHexPosition(x, y);
           const imageUrl = getTileImage(tile);
@@ -557,8 +629,85 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
             </g>
           );
         })}
+        {/* Combat Indicators */}
+        {dynamicMapState && dynamicMapState.battles && dynamicMapState.battles.map((battle: any, idx: number) => {
+          const { tileName, clearing } = parseLocation(battle.location);
+          const tileIdx = (dynamicMapState.tiles || mapData.tiles).findIndex((t: Tile) => t.objectName === tileName);
+          if (tileIdx === -1) return null;
+          const tile = (dynamicMapState.tiles || mapData.tiles)[tileIdx];
+          const [x, y] = parsePosition(tile.position);
+          const hexPos = getHexPosition(x, y);
+          const clearingPos = clearing ? getClearingPosition(tile, clearing) : { x: 0, y: 0 };
+          if (!clearingPos) return null;
+          
+          const rotation = getTileRotation(tile.rotation);
+          const rad = (rotation * Math.PI) / 180;
+          const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
+          const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
+          const px = hexPos.x + rotatedX;
+          const py = hexPos.y + rotatedY;
+          
+          return (
+            <g key={`battle-${idx}`} className="combat-indicator">
+              <circle cx={px} cy={py} r={12} fill="#ffebee" stroke="#d32f2f" strokeWidth={2} />
+              <text x={px} y={py+4} textAnchor="middle" fontSize={14} fill="#d32f2f" fontWeight="bold">⚔️</text>
+              <title>Combat at {battle.location}</title>
+            </g>
+          );
+        })}
+        
+        {/* Dynamic Character Positions */}
+        {dynamicMapState && dynamicMapState.characterPositions && Object.entries(dynamicMapState.characterPositions).map(([character, position]: [string, any]) => {
+          const { tileName, clearing } = parseLocation(position.endLocation);
+          const tileIdx = (dynamicMapState.tiles || mapData.tiles).findIndex((t: Tile) => t.objectName === tileName);
+          if (tileIdx === -1) return null;
+          const tile = (dynamicMapState.tiles || mapData.tiles)[tileIdx];
+          const [x, y] = parsePosition(tile.position);
+          const hexPos = getHexPosition(x, y);
+          const clearingPos = clearing ? getClearingPosition(tile, clearing) : { x: 0, y: 0 };
+          if (!clearingPos) return null;
+          
+          const rotation = getTileRotation(tile.rotation);
+          const rad = (rotation * Math.PI) / 180;
+          const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
+          const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
+          const px = hexPos.x + rotatedX;
+          const py = hexPos.y + rotatedY;
+          
+          const iconUrl = `/images/charsymbol/${character}_symbol.png`;
+          const iconSize = 13;
+          
+          return (
+            <g key={`dynamic-${character}`} className="dynamic-character">
+              <circle
+                cx={px}
+                cy={py}
+                r={iconSize / 2 + 2}
+                fill="#ffffff"
+                stroke="#000000"
+                strokeWidth="1"
+                opacity="0.9"
+              />
+              <image
+                href={iconUrl}
+                x={px - iconSize/2}
+                y={py - iconSize/2}
+                width={iconSize}
+                height={iconSize}
+                style={{ filter: 'brightness(1.2) contrast(1.3)' }}
+                onError={(e) => {
+                  console.error(`Failed to load character icon: ${iconUrl}`);
+                  const target = e.target as SVGImageElement;
+                  target.style.display = 'none';
+                }}
+              />
+              <title>{character} at {position.endLocation}</title>
+            </g>
+          );
+        })}
+        
         {/* Character Icon Overlay (with toggles for living/dead) */}
-        {(showCharacterIcons && characterIcons.length > 0) && (
+        {(showCharacterIcons && characterIcons.length > 0 && !dynamicMapState) && (
           <g className="character-icon-overlay">
             {(() => {
               const locationGroups: Record<string, CharacterMapIcon[]> = {};
