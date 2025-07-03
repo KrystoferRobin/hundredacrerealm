@@ -214,7 +214,7 @@ export default function SessionPage() {
           setSelectedDay(nextDay);
           const [month] = nextDay.split('_').map(Number);
           setSelectedMonth(month);
-        }, 5000);
+        }, 3000);
         
         setAutoAdvanceInterval(interval);
       } else {
@@ -823,7 +823,20 @@ export default function SessionPage() {
     };
 
     const toggleAutoAdvance = () => {
-      setIsAutoAdvancing(!isAutoAdvancing);
+      if (!isAutoAdvancing) {
+        // Starting auto-advance
+        const currentIndex = dayKeys.indexOf(selectedDay);
+        if (currentIndex === dayKeys.length - 1) {
+          // We're on the last day, jump to day 1 and start
+          setSelectedDay(dayKeys[0]);
+          const [month] = dayKeys[0].split('_').map(Number);
+          setSelectedMonth(month);
+        }
+        setIsAutoAdvancing(true);
+      } else {
+        // Stopping auto-advance
+        setIsAutoAdvancing(false);
+      }
     };
     
     return (
@@ -916,7 +929,7 @@ export default function SessionPage() {
                   ? 'bg-red-500 hover:bg-red-600 text-white' 
                   : 'bg-green-500 hover:bg-green-600 text-white'
               } disabled:bg-gray-400 disabled:cursor-not-allowed`}
-              title={isAutoAdvancing ? "Pause auto-advance" : "Play auto-advance (5s delay)"}
+              title={isAutoAdvancing ? "Pause auto-advance" : "Play auto-advance (3s delay)"}
             >
               {isAutoAdvancing ? (
                 <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 24 24">
