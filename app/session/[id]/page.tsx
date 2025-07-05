@@ -1411,7 +1411,7 @@ export default function Page({ params }: { params: { id: string } }) {
     const greatTreasureIcon = <span className="font-bold text-yellow-900">💎</span>;
 
     return (
-      <div key={characterName} className={`rounded-lg border-2 p-4 mb-4 shadow-md ${isDead ? 'bg-gray-200 border-gray-400' : 'bg-white border-amber-300'} w-[340px] min-h-[220px] flex flex-col`}
+      <div key={characterName} className={`rounded-lg border-2 p-4 shadow-md ${isDead ? 'bg-gray-200 border-gray-400' : 'bg-white border-amber-300'} w-[340px] min-h-[220px] flex flex-col`}
            onMouseEnter={() => setHoveredCharacter(characterName)}
            onMouseLeave={() => setHoveredCharacter(null)}>
         {/* Header */}
@@ -1556,9 +1556,46 @@ export default function Page({ params }: { params: { id: string } }) {
             {(!characterStats || !characterInventories) ? (
               <div className="text-center text-[#4b3a1e] font-serif italic">Loading character data...</div>
             ) : (
-              Object.entries(sessionData.characterToPlayer).map(([character, player]) => 
-                renderCharacterBox(character, player)
-              )
+              (() => {
+                // Get all characters and determine which are dead
+                const characterEntries = Object.entries(sessionData.characterToPlayer);
+                const deadCharacters = new Set<string>();
+                
+                // Check all days for deaths
+                Object.values(sessionData.days).forEach(dayData => {
+                  dayData.battles.forEach(battle => {
+                    battle.rounds.forEach(round => {
+                      round.deaths.forEach(death => {
+                        const match = death.match(/^(.*?) was killed!/);
+                        if (match) {
+                          deadCharacters.add(match[1]);
+                        }
+                      });
+                    });
+                  });
+                });
+                
+                // Sort characters: alive first (alphabetically), then dead (alphabetically)
+                const sortedCharacters = characterEntries.sort(([charA, playerA], [charB, playerB]) => {
+                  const isDeadA = deadCharacters.has(charA);
+                  const isDeadB = deadCharacters.has(charB);
+                  
+                  // If one is dead and the other isn't, alive comes first
+                  if (isDeadA && !isDeadB) return 1;
+                  if (!isDeadA && isDeadB) return -1;
+                  
+                  // If both are alive or both are dead, sort alphabetically
+                  return charA.localeCompare(charB);
+                });
+                
+                return (
+                  <div className="flex flex-wrap gap-4 justify-start">
+                    {sortedCharacters.map(([character, player]) => 
+                      renderCharacterBox(character, player)
+                    )}
+                  </div>
+                );
+              })()
             )}
           </div>
           {/* Statistics */}
