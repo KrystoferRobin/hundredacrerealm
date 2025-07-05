@@ -1,15 +1,28 @@
-import { useState } from 'react';
-import { Document, Page, pdfjs } from 'react-pdf';
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import 'react-pdf/dist/esm/Page/TextLayer.css';
+import { useState, useEffect } from 'react';
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+let Document: any = null;
+let Page: any = null;
+let pdfjs: any = null;
+if (typeof window !== 'undefined') {
+  // Only require react-pdf on the client
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const reactPdf = require('react-pdf');
+  Document = reactPdf.Document;
+  Page = reactPdf.Page;
+  pdfjs = reactPdf.pdfjs;
+  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+}
 
 export default function RulesPanel() {
   const [numPages, setNumPages] = useState<number | null>(null);
   const [pageNumber, setPageNumber] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
   const [searchPage, setSearchPage] = useState<number | null>(null);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(typeof window !== 'undefined');
+  }, []);
 
   function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
     setNumPages(numPages);
@@ -25,12 +38,15 @@ export default function RulesPanel() {
 
   function handleSearch(e: React.FormEvent) {
     e.preventDefault();
-    // For now, just go to the page number if entered
     const n = Number(searchTerm);
     if (!isNaN(n) && n >= 1 && numPages && n <= numPages) {
-      setPageNumber(n % 2 === 0 ? n - 1 : n); // always start on odd page
+      setPageNumber(n % 2 === 0 ? n - 1 : n);
       setSearchPage(n);
     }
+  }
+
+  if (!isClient || !Document || !Page) {
+    return <div className="text-[#6b3e26] font-serif">Loading PDF viewer...</div>;
   }
 
   return (
