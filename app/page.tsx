@@ -1204,9 +1204,9 @@ export default function Home() {
       <header className="bg-[#6b3e26] text-[#f6ecd6] py-5 shadow-lg border-b-4 border-[#bfa76a] relative">
         {/* Decorative top border */}
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#bfa76a] via-[#fff8e1] to-[#bfa76a]"></div>
-        <div className="max-w-5xl mx-auto flex items-center justify-between px-4">
-          {/* Centered Title */}
-          <div className="flex-1 flex justify-center">
+        <div className="max-w-7xl mx-auto flex items-center justify-center px-4 relative">
+          {/* Centered Title and Score Line */}
+          <div className="flex flex-col items-center flex-1">
             <h1
               className="text-3xl md:text-4xl font-bold tracking-wide drop-shadow-lg font-serif text-[#fff8e1] relative cursor-pointer"
               onClick={() => { setSelectedPage('home'); setSelectedLogUrl(null); }}
@@ -1215,9 +1215,18 @@ export default function Home() {
               <span className="relative z-10">Hundred Acre Realm</span>
               <div className="absolute inset-0 bg-[#bfa76a] opacity-20 blur-sm rounded-lg"></div>
             </h1>
+            <p className="text-sm text-[#e7d3a1] mt-1 font-serif italic text-center">
+              {headerStats ? (
+                <>
+                  {headerStats.totalGold} Gold Pillaged · {headerStats.totalGreatTreasures} Great Treasures Looted · {headerStats.totalMonstersKilled} Beasts Slain · {headerStats.totalCharactersKilled} Heroes Laid To Rest
+                </>
+              ) : (
+                "A Realm of Magic & Adventure"
+              )}
+            </p>
           </div>
-          {/* Right-justified Tome Icon */}
-          <div className="flex items-center justify-end flex-1">
+          {/* Far right: Tome Icon */}
+          <div className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center">
             <button
               className="ml-4 p-2 rounded-full hover:bg-[#bfa76a] transition-colors"
               title="Game Rules"
