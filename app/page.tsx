@@ -128,9 +128,10 @@ export default function Home() {
   const [uploadError, setUploadError] = useState<string | null>(null);
   const [uploadSuccess, setUploadSuccess] = useState<string | null>(null);
   const [recentLogs, setRecentLogs] = useState<any[]>([]);
+  const [totalSessions, setTotalSessions] = useState<number>(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [selectedPage, setSelectedPage] = useState<'home' | 'characters' | 'monsters' | 'natives' | 'log' | 'games' | 'map' | 'game-logs' | 'session'>("home");
+  const [selectedPage, setSelectedPage] = useState<'home' | 'characters' | 'monsters' | 'natives' | 'log' | 'games' | 'map' | 'game-logs' | 'session' | 'players' | 'items' | 'spells'>("home");
   const [selectedLogUrl, setSelectedLogUrl] = useState<string | null>(null);
   const [selectedMapSession, setSelectedMapSession] = useState<string | null>(null);
   const [selectedSessionId, setSelectedSessionId] = useState<string | null>(null);
@@ -167,6 +168,7 @@ export default function Home() {
         if (!response.ok) throw new Error('Failed to fetch recent sessions');
         const data = await response.json();
         setRecentLogs(data.slice(0, 5)); // Only show the 5 most recent
+        setTotalSessions(data.length); // Set total count
       } catch (err) {
         setError('Failed to load recent sessions.');
       } finally {
@@ -1264,6 +1266,12 @@ export default function Home() {
           <iframe src="/monsters" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Monsters" />
         ) : selectedPage === 'natives' ? (
           <iframe src="/natives" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Natives" />
+        ) : selectedPage === 'players' ? (
+          <iframe src="/players" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Players" />
+        ) : selectedPage === 'items' ? (
+          <iframe src="/items" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Items" />
+        ) : selectedPage === 'spells' ? (
+          <iframe src="/spells" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Spells" />
         ) : selectedPage === 'games' ? (
           <iframe src="/games" className="flex-1 w-full h-[70vh] border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Game Logs" />
         ) : selectedPage === 'game-logs' ? (
@@ -1302,33 +1310,63 @@ export default function Home() {
                   "Oh Bother, another flock of bats!"
                 </p>
                 
-                <div className="flex flex-col md:flex-row gap-6 justify-center mt-8">
+                <div className="flex flex-col md:flex-row gap-4 justify-center mt-8">
                   <button
                     onClick={() => { setSelectedPage('game-logs'); setSelectedLogUrl(null); }}
-                    className="flex-1 bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-6 shadow-lg transition-all duration-200 hover:bg-[#f3e3b2] hover:scale-105 hover:shadow-xl text-[#6b3e26] font-serif text-xl font-semibold relative overflow-hidden group"
+                    className="flex-1 bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-4 shadow-lg transition-all duration-200 hover:bg-[#f3e3b2] hover:scale-105 hover:shadow-xl text-[#6b3e26] font-serif text-lg font-semibold relative overflow-hidden group"
                     style={{
                       boxShadow: '0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8)'
                     }}
                   >
-                    <span className="relative z-10">Game Logs</span>
+                    <span className="relative z-10">Game Sessions ({totalSessions})</span>
                     <div className="absolute inset-0 bg-gradient-to-r from-[#bfa76a] to-[#fff8e1] opacity-0 group-hover:opacity-10 transition-opacity duration-200"></div>
                   </button>
                 </div>
                 
-                <div className="flex flex-row gap-6 justify-center mt-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 justify-center mt-4">
                   <button
-                    onClick={() => { setSelectedPage('characters'); setSelectedLogUrl(null); }}
-                    className="flex-1 bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-6 shadow-lg transition-all duration-200 hover:bg-[#f3e3b2] hover:scale-105 hover:shadow-xl text-[#6b3e26] font-serif text-xl font-semibold relative overflow-hidden group"
+                    onClick={() => { setSelectedPage('players'); setSelectedLogUrl(null); }}
+                    className="bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-4 shadow-lg transition-all duration-200 hover:bg-[#f3e3b2] hover:scale-105 hover:shadow-xl text-[#6b3e26] font-serif text-lg font-semibold relative overflow-hidden group"
                     style={{
                       boxShadow: '0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8)'
                     }}
                   >
-                    <span className="relative z-10">Cast of Characters</span>
+                    <span className="relative z-10">Players</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#bfa76a] to-[#fff8e1] opacity-0 group-hover:opacity-10 transition-opacity duration-200"></div>
+                  </button>
+                  <button
+                    onClick={() => { setSelectedPage('characters'); setSelectedLogUrl(null); }}
+                    className="bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-4 shadow-lg transition-all duration-200 hover:bg-[#f3e3b2] hover:scale-105 hover:shadow-xl text-[#6b3e26] font-serif text-lg font-semibold relative overflow-hidden group"
+                    style={{
+                      boxShadow: '0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8)'
+                    }}
+                  >
+                    <span className="relative z-10">Characters</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#bfa76a] to-[#fff8e1] opacity-0 group-hover:opacity-10 transition-opacity duration-200"></div>
+                  </button>
+                  <button
+                    onClick={() => { setSelectedPage('items'); setSelectedLogUrl(null); }}
+                    className="bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-4 shadow-lg transition-all duration-200 hover:bg-[#f3e3b2] hover:scale-105 hover:shadow-xl text-[#6b3e26] font-serif text-lg font-semibold relative overflow-hidden group"
+                    style={{
+                      boxShadow: '0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8)'
+                    }}
+                  >
+                    <span className="relative z-10">Items</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#bfa76a] to-[#fff8e1] opacity-0 group-hover:opacity-10 transition-opacity duration-200"></div>
+                  </button>
+                  <button
+                    onClick={() => { setSelectedPage('spells'); setSelectedLogUrl(null); }}
+                    className="bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-4 shadow-lg transition-all duration-200 hover:bg-[#f3e3b2] hover:scale-105 hover:shadow-xl text-[#6b3e26] font-serif text-lg font-semibold relative overflow-hidden group"
+                    style={{
+                      boxShadow: '0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8)'
+                    }}
+                  >
+                    <span className="relative z-10">Spells</span>
                     <div className="absolute inset-0 bg-gradient-to-r from-[#bfa76a] to-[#fff8e1] opacity-0 group-hover:opacity-10 transition-opacity duration-200"></div>
                   </button>
                   <button
                     onClick={() => { setSelectedPage('monsters'); setSelectedLogUrl(null); }}
-                    className="flex-1 bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-6 shadow-lg transition-all duration-200 hover:bg-[#f3e3b2] hover:scale-105 hover:shadow-xl text-[#6b3e26] font-serif text-xl font-semibold relative overflow-hidden group"
+                    className="bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-4 shadow-lg transition-all duration-200 hover:bg-[#f3e3b2] hover:scale-105 hover:shadow-xl text-[#6b3e26] font-serif text-lg font-semibold relative overflow-hidden group"
                     style={{
                       boxShadow: '0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8)'
                     }}
@@ -1338,7 +1376,7 @@ export default function Home() {
                   </button>
                   <button
                     onClick={() => { setSelectedPage('natives'); setSelectedLogUrl(null); }}
-                    className="flex-1 bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-6 shadow-lg transition-all duration-200 hover:bg-[#f3e3b2] hover:scale-105 hover:shadow-xl text-[#6b3e26] font-serif text-xl font-semibold relative overflow-hidden group"
+                    className="bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-4 shadow-lg transition-all duration-200 hover:bg-[#f3e3b2] hover:scale-105 hover:shadow-xl text-[#6b3e26] font-serif text-lg font-semibold relative overflow-hidden group"
                     style={{
                       boxShadow: '0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8)'
                     }}
