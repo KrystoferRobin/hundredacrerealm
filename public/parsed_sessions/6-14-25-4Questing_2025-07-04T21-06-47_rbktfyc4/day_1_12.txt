@@ -1,0 +1,22 @@
+Month 1, Day 12
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Ledges 3
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Mountain 2
+Amazon
+Starts turn: Mountain 2
+Amazon
+Ends turn: Mountain 2
+host
+========================================
+host

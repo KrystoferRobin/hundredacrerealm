@@ -1,0 +1,26 @@
+Month 1, Day 5
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Deep Woods 1
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Search - Peer - Found hidden enemies and Found 1 path(s)
+Woods Girl
+Search - Locate - Choice - Discover chit(s) - none to discover
+Woods Girl
+Ends turn: Ruins 5
+Woods Girl
+Reveals: Flutter 1
+Woods Girl
+Reveals: Smoke C
+host
+Giant Bat is added to Ruins, clearing 1
+host
+========================================
+host

@@ -8,7 +8,22 @@ export async function GET(
 ) {
   try {
     const sessionId = params.id;
-    const mapDataPath = path.join('/app/public/parsed_sessions', sessionId, 'map_data.json');
+    
+    // Try both local and Docker paths
+    const possiblePaths = [
+      path.join(process.cwd(), 'public', 'parsed_sessions'),
+      '/app/public/parsed_sessions'
+    ];
+    const sessionsDir = possiblePaths.find(p => fs.existsSync(p));
+    
+    if (!sessionsDir) {
+      return NextResponse.json(
+        { error: 'Sessions directory not found' },
+        { status: 404 }
+      );
+    }
+    
+    const mapDataPath = path.join(sessionsDir, sessionId, 'map_data.json');
     
     if (!fs.existsSync(mapDataPath)) {
       return NextResponse.json(

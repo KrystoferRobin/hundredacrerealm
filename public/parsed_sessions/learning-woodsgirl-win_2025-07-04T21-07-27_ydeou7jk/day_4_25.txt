@@ -1,0 +1,438 @@
+Month 4, Day 25
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Evil Valley 4
+Woods Girl
+Hide - Failed
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Alert - alerted Light Bow
+Woods Girl
+Ends turn: Borderland 2
+__battle__
+Battle resolving at Borderland 2:
+__battle__
+GROUP 1
+__battle__
+Woods Girl
+__battle__
+GROUP 2
+__battle__
+Spear Goblin
+__battle__
+Spear Goblin
+__battle__
+Spear Goblin
+__battle__
+Spear Goblin
+__battle__
+Spear Goblin
+__battle__
+Spear Goblin
+__battle__
+Sword Goblin
+__battle__
+Sword Goblin
+__battle__
+Sword Goblin
+__battle__
+Sword Goblin
+__battle__
+Sword Goblin
+__battle__
+Sword Goblin
+__battle__
+=======================
+__battle__
+Evening of month 4, day 25, in clearing Borderland 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the Sword Goblin
+Woods Girl
+Becomes unhidden.
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+>
+__battle__
+Attack Length=14, Speed=1
+__battle__
+Woods Girl L1**  vs. Sword Goblin Speed 3
+__battle__
+Undercut! (Speed 1 is faster than Speed 3)
+__battle__
+Initial harm: L+2
+__battle__
+Missile roll: Rolled 2 (red).
+__battle__
+Missile table result: 2 = Increase 1 level
+__battle__
+Sword Goblin is hit with M+2 harm along box 1
+__battle__
+Sword Goblin was killed!
+__battle__
+The Woods Girl gets 1 fame (x 1) and 1 notoriety (x 1) for the death of the Sword Goblin
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Woods Girl disengages because target is dead
+__battle__
+Sword Goblin is dead.  Killed by Woods Girl
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the Sword Goblin
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 1
+Spear Goblin
+Changes tactics:  Spear Goblin H5*
+Spear Goblin
+Changes tactics:  Spear Goblin H5*
+Spear Goblin
+Changes tactics:  Spear Goblin H5*
+Spear Goblin
+Changes tactics:  Spear Goblin H5*
+Spear Goblin
+Changes tactics:  Spear Goblin H5*
+Spear Goblin
+Changes tactics:  Spear Goblin H5*
+Sword Goblin
+Changes tactics:  Sword Goblin T5*
+Sword Goblin
+Changes tactics:  Sword Goblin T5*
+Sword Goblin
+Changes tactics:  Sword Goblin T5*
+Sword Goblin
+Changes tactics:  Sword Goblin T5*
+Sword Goblin
+Changes tactics:  Sword Goblin T5*
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=3, Length=14
+__battle__
+Woods Girl L3  vs. Sword Goblin Speed 5
+__battle__
+Undercut! (Speed 3 is faster than Speed 5)
+__battle__
+Initial harm: L
+__battle__
+Missile roll: Rolled 4 (red).
+__battle__
+Missile table result: 4 = Decrease 1 level
+__battle__
+Sword Goblin is hit with neg harm along box 3
+__battle__
+Sword Goblin was not killed.
+__battle__
+>
+__battle__
+Attack Speed=5, Length=10
+__battle__
+Spear Goblin H5*  vs. Woods Girl Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=10
+__battle__
+Spear Goblin H5*  vs. Woods Girl Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=10
+__battle__
+Spear Goblin H5*  vs. Woods Girl Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=10
+__battle__
+Spear Goblin H5*  vs. Woods Girl Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=10
+__battle__
+Spear Goblin H5*  vs. Woods Girl Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=10
+__battle__
+Spear Goblin H5*  vs. Woods Girl Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=8
+__battle__
+Sword Goblin T5*  vs. Woods Girl Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=8
+__battle__
+Sword Goblin T5*  vs. Woods Girl Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=8
+__battle__
+Sword Goblin T5*  vs. Woods Girl Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=8
+__battle__
+Sword Goblin T5*  vs. Woods Girl Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=5, Length=8
+__battle__
+Sword Goblin T5*  vs. Woods Girl Speed 3
+__battle__
+Missed! (Speed 5 is not faster than Speed 3)
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Spear Goblin won't disengage when fighting a character
+__battle__
+Sword Goblin won't disengage when fighting a character
+__battle__
+Sword Goblin won't disengage when fighting a character
+__battle__
+Sword Goblin won't disengage when fighting a character
+__battle__
+Sword Goblin won't disengage when fighting a character
+__battle__
+Sword Goblin won't disengage when fighting a character
+__battle__
+1 consecutive round of no damage, fatigue, or spellcasting.
+__battle__
+-----------------------
+__battle__
+--  Combat Round 3
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the Sword Goblin
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 1
+Spear Goblin
+Changes tactics:  Spear Goblin neg
+Spear Goblin
+Changes tactics:  Spear Goblin neg
+Spear Goblin
+Changes tactics:  Spear Goblin neg
+Spear Goblin
+Changes tactics:  Spear Goblin neg
+Spear Goblin
+Changes tactics:  Spear Goblin neg
+Spear Goblin
+Changes tactics:  Spear Goblin neg
+Sword Goblin
+Changes tactics:  Sword Goblin H6*
+Sword Goblin
+Changes tactics:  Sword Goblin H6*
+Sword Goblin
+Changes tactics:  Sword Goblin H6*
+Sword Goblin
+Changes tactics:  Sword Goblin H6*
+Sword Goblin
+Changes tactics:  Sword Goblin H6*
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=3, Length=14
+__battle__
+Woods Girl L3  vs. Sword Goblin Speed 3
+__battle__
+Missed! (Speed 3 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=6, Length=8
+__battle__
+Sword Goblin H6*  vs. Woods Girl Speed 3
+__battle__
+Missed! (Speed 6 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=6, Length=8
+__battle__
+Sword Goblin H6*  vs. Woods Girl Speed 3
+__battle__
+Missed! (Speed 6 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=6, Length=8
+__battle__
+Sword Goblin H6*  vs. Woods Girl Speed 3
+__battle__
+Missed! (Speed 6 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=6, Length=8
+__battle__
+Sword Goblin H6*  vs. Woods Girl Speed 3
+__battle__
+Missed! (Speed 6 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=6, Length=8
+__battle__
+Sword Goblin H6*  vs. Woods Girl Speed 3
+__battle__
+Missed! (Speed 6 is not faster than Speed 3)
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. Woods Girl Speed 3
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. Woods Girl Speed 3
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. Woods Girl Speed 3
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. Woods Girl Speed 3
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. Woods Girl Speed 3
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+__battle__
+>
+__battle__
+Attack Speed=8, Length=0
+__battle__
+Spear Goblin neg  vs. Woods Girl Speed 3
+__battle__
+Spear Goblin didn't attack, and thus does not harm the target.
+host
+========================================
+host

@@ -1,0 +1,50 @@
+Month 1, Day 18
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: High Pass 6
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Mountain 4
+Amazon
+Starts turn: Mountain 4
+Amazon
+Ends turn: Mountain 4
+__battle__
+Battle resolving at Mountain 4:
+__battle__
+GROUP 1
+__battle__
+Amazon
+__battle__
+GROUP 2
+__battle__
+Woods Girl
+__battle__
+GROUP 3
+__battle__
+Giant
+__battle__
+=======================
+__battle__
+Evening of month 1, day 18, in clearing Mountain 4
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Woods Girl
+Presses the END combat button.
+Woods Girl
+Combat has ended.
+host
+========================================
+host

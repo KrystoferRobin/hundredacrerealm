@@ -1,0 +1,18 @@
+Month 2, Day 22
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Wizard
+Starts turn: Between Mountain 5 and Mountain 2
+Wizard
+Move - moved
+Wizard
+Hide - Succeeded
+Wizard
+Hide - N/A
+Wizard
+Ends turn: Mountain 5
+host
+========================================
+host

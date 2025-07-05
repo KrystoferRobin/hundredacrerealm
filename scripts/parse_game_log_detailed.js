@@ -6,6 +6,14 @@ let SESSION_DIR = '';
 let OUTPUT_FILE = '';
 let LOG_FILE = '';
 
+// Helper to resolve paths for Docker or local
+function resolveAppPath(subPath) {
+  if (process.env.IS_DOCKER === '1') {
+    return `/app/${subPath}`;
+  }
+  return require('path').join(__dirname, '..', subPath);
+}
+
 const DEFAULT_LOG_FILE = () => {
   const files = fs.readdirSync('.')
   return files.find(f => f.endsWith('.rslog'));
@@ -485,7 +493,7 @@ function main() {
   try {
     // Run the basic parser with the log file name
     console.log('Running basic parser to split into days...');
-    execSync(`node /app/scripts/parse_game_log.js ${logFile}`, {
+    execSync(`node ${resolveAppPath('scripts/parse_game_log.js')} ${logFile}`, {
       stdio: 'inherit',
       cwd: SESSION_DIR
     });

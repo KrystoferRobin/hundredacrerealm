@@ -1,0 +1,329 @@
+164
+host
+New player joins: Krystofer
+White Knight
+Spent the night at the Chapel.
+White Knight
+Joins the game.
+White Knight
+Spent the night at the Chapel.
+host
+Host has started the game.
+host
+Visitor/Mission/Campaign chits are placed at random.
+host
+========================================
+host
+Month 1, Day 1
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+White Knight
+Starts turn: Awful Valley 5
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Hide - Succeeded
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Ruins 1
+White Knight
+Reveals: Lost City
+White Knight
+Reveals: Smoke C
+__battle__
+Battle resolving at Ruins 1:
+__battle__
+GROUP 1
+__battle__
+  White Knight
+__battle__
+=======================
+__battle__
+Evening of month 1, day 1, in clearing Ruins 1
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+__battle__
+ - - - - - Deployment
+__battle__
+ - - - - - Actions
+__battle__
+ - - - - - Actions
+White Knight
+Presses the END combat button.
+White Knight
+Combat has ended.
+host
+========================================
+host
+Month 1, Day 2
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+White Knight
+Starts turn: Ruins 1
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Hide - Succeeded
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Curst Valley 1
+host
+========================================
+host
+Month 1, Day 3
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+White Knight
+Starts turn: Curst Valley 1
+White Knight
+Move - moved
+White Knight
+Hide - Succeeded
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Cavern 1
+White Knight
+Reveals: Patter 5
+White Knight
+Reveals: Stink C
+host
+========================================
+host
+Month 1, Day 4
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+White Knight
+Starts turn: Cavern 1
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Curst Valley 4
+host
+========================================
+host
+Month 1, Day 5
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+White Knight
+Starts turn: Curst Valley 4
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Hide - Succeeded
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Deep Woods 6
+White Knight
+Reveals: Pool
+White Knight
+Reveals: Ruins M
+host
+========================================
+host
+Month 1, Day 6
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+White Knight
+Starts turn: Deep Woods 6
+White Knight
+Search - Locate - Discover chit(s) - Found Pool
+White Knight
+Fatigued chit: MOVE T6*
+White Knight
+Search - Loot the Pool - Found Treasure
+White Knight
+Fatigued chit: FIGHT H5*
+White Knight
+Search - Loot the Pool - Found Treasure
+White Knight
+Hide - Succeeded
+White Knight
+After resting, these chits were made active: FIGHT H5*
+White Knight
+Rest - Rested 1 asterisk
+White Knight
+Ends turn: Deep Woods 6
+__battle__
+Battle resolving at Deep Woods 6:
+__battle__
+GROUP 1
+__battle__
+  White Knight
+__battle__
+GROUP 2
+__battle__
+  Octopus
+__battle__
+=======================
+__battle__
+Evening of month 1, day 6, in clearing Deep Woods 6
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+White Knight
+Presses the END combat button.
+White Knight
+Combat has ended.
+host
+========================================
+host
+Month 1, Day 7
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+White Knight
+Starts turn: Deep Woods 6
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+After resting, these chits were made active: MOVE T6*
+White Knight
+Rest - Rested 1 asterisk
+White Knight
+Ends turn: Bad Valley 2
+host
+========================================
+host
+Month 1, Day 8
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+White Knight
+Starts turn: Bad Valley 2
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+Selling to Order HQ.
+White Knight
+Attempting to sell: Lost Keys, and Enchanter's Skull
+White Knight
+Trade - Sell to Order HQ - Sold 2 items for 22 gold: 
+White Knight
+The native group will be no more favorable with drinks.
+White Knight
+Hire - Buy from Order 3 (as Ally) - Price x 4
+White Knight
+Rest - You are fully rested.
+White Knight
+Ends turn: Awful Valley 5
+host
+Patrol 1 is added to Awful Valley, clearing 5
+host
+Patrol 2 is added to Awful Valley, clearing 5
+host
+Patrol HQ is added to Awful Valley, clearing 5
+__battle__
+Battle resolving at Awful Valley 5:
+__battle__
+GROUP 1
+__battle__
+  Order 3 (White Knight)
+__battle__
+  White Knight
+__battle__
+GROUP 2
+__battle__
+  Order 1
+__battle__
+  Order 2
+__battle__
+  Order HQ
+__battle__
+  Patrol 1
+__battle__
+  Patrol 2
+__battle__
+  Patrol HQ
+White Knight
+The native group will be no more favorable with drinks.
+White Knight
+Meeting Order on the Ally table
+White Knight
+Rolled 2 and 3, with a modifier of -1. = Price x 1
+White Knight
+The White Knight cannot afford to buy drinks for the Patrol (3 gold).
+White Knight
+Meeting Patrol on the Neutral table
+White Knight
+Rolled 2 and 2, with a modifier of -1. = Opportunity
+White Knight
+Meeting Patrol on the Friendly table
+White Knight
+Rolled 5 and 5, with a modifier of -1. = Price x 3
+__battle__
+=======================
+__battle__
+Evening of month 1, day 8, in clearing Awful Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+ - - - - - Luring
+White Knight
+Presses the END combat button.
+White Knight
+Combat has ended.
+host
+========================================
+host
+Month 1, Day 9
+host
+========================================
+White Knight
+Spent the night at the Chapel.

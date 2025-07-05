@@ -1,0 +1,48 @@
+Month 3, Day 18
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Elf
+Starts turn: Caves 1
+Elf
+Move - moved
+Elf
+Search - Locate - Discover chit(s) - Found Pool
+Elf
+Fatigued chit: FIGHT M3*
+Elf
+Search - Loot the Pool - Found Treasure
+Elf
+Hide - Succeeded
+Elf
+Ends turn: Caves 6
+__battle__
+Battle resolving at Caves 6:
+__battle__
+GROUP 1
+__battle__
+Elf
+__battle__
+GROUP 2
+__battle__
+Octopus
+__battle__
+=======================
+__battle__
+Evening of month 3, day 18, in clearing Caves 6
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Elf
+Presses the END combat button.
+Elf
+Combat has ended.
+host
+========================================
+host

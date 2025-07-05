@@ -9,20 +9,34 @@ export async function GET(
   try {
     const sessionId = params.id;
     
-    // Read session_titles.json
-    const titlesPath = path.join('/app/data/session_titles.json');
+    // Try both local and Docker paths for session_titles.json
+    const possiblePaths = [
+      path.join(process.cwd(), 'data', 'session_titles.json'),
+      '/app/data/session_titles.json'
+    ];
+    const titlesPath = possiblePaths.find(p => fs.existsSync(p));
     
-    if (!fs.existsSync(titlesPath)) {
+    if (!titlesPath) {
       return NextResponse.json({ error: 'Session titles not found' }, { status: 404 });
     }
     
     const titlesData = JSON.parse(fs.readFileSync(titlesPath, 'utf8'));
     
-    if (!titlesData[sessionId]) {
-      return NextResponse.json({ error: 'Session title not found' }, { status: 404 });
+    // Find matching session title by session name (without timestamp)
+    const sessionName = sessionId.split('_')[0]; // Get base session name without timestamp
+    let sessionTitle: any = null;
+    
+    for (const [titleKey, titleData] of Object.entries(titlesData)) {
+      const titleSessionName = titleKey.split('_')[0];
+      if (titleSessionName === sessionName) {
+        sessionTitle = titleData;
+        break;
+      }
     }
     
-    const sessionTitle = titlesData[sessionId];
+    if (!sessionTitle) {
+      return NextResponse.json({ error: 'Session title not found' }, { status: 404 });
+    }
     
     return NextResponse.json({
       mainTitle: sessionTitle.mainTitle,

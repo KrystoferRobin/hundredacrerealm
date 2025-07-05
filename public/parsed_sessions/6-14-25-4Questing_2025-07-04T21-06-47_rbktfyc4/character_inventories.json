@@ -1,0 +1,120 @@
+{
+  "Woods Girl": {
+    "character": "Woods Girl",
+    "items": {
+      "weapons": [],
+      "armor": [],
+      "treasures": [],
+      "great_treasures": [],
+      "spells": [],
+      "natives": [],
+      "other": [
+        {
+          "id": "165",
+          "name": "Light Bow",
+          "type": "unknown",
+          "category": "other"
+        },
+        {
+          "id": "22174",
+          "name": "Control Bats",
+          "type": "unknown",
+          "category": "other"
+        }
+      ],
+      "unknown": []
+    },
+    "raw_contains": [
+      "165",
+      "22174"
+    ]
+  },
+  "Berserker": {
+    "character": "Berserker",
+    "items": {
+      "weapons": [],
+      "armor": [],
+      "treasures": [],
+      "great_treasures": [],
+      "spells": [],
+      "natives": [],
+      "other": [],
+      "unknown": []
+    },
+    "raw_contains": []
+  },
+  "White Knight": {
+    "character": "White Knight",
+    "items": {
+      "weapons": [],
+      "armor": [],
+      "treasures": [],
+      "great_treasures": [],
+      "spells": [],
+      "natives": [],
+      "other": [
+        {
+          "id": "17884",
+          "name": "Small Blessing",
+          "type": "unknown",
+          "category": "other"
+        }
+      ],
+      "unknown": []
+    },
+    "raw_contains": [
+      "17884"
+    ]
+  },
+  "Amazon": {
+    "character": "Amazon",
+    "items": {
+      "weapons": [],
+      "armor": [],
+      "treasures": [],
+      "great_treasures": [],
+      "spells": [],
+      "natives": [],
+      "other": [
+        {
+          "id": "178",
+          "name": "Short Sword",
+          "type": "unknown",
+          "category": "other"
+        },
+        {
+          "id": "146",
+          "name": "Helmet",
+          "type": "unknown",
+          "category": "other"
+        },
+        {
+          "id": "155",
+          "name": "Breastplate",
+          "type": "unknown",
+          "category": "other"
+        },
+        {
+          "id": "151",
+          "name": "Shield",
+          "type": "unknown",
+          "category": "other"
+        },
+        {
+          "id": "349",
+          "name": "Penetrating Grease",
+          "type": "unknown",
+          "category": "other"
+        }
+      ],
+      "unknown": []
+    },
+    "raw_contains": [
+      "178",
+      "146",
+      "155",
+      "151",
+      "349"
+    ]
+  }
+}

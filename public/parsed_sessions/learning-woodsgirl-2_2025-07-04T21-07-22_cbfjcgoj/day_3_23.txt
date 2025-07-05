@@ -1,0 +1,16 @@
+Month 3, Day 23
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Caves 2
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Failed
+Woods Girl
+Ends turn: Caves 3
+host
+========================================
+host

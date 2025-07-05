@@ -6,21 +6,29 @@ const path = require('path');
 console.log('🚀 Initializing Hundred Acre Realm container...');
 console.log('📋 Version: 2025-07-02-v6 (fix scoring, map parsing, and session titles)');
 
+// Helper to resolve paths for Docker or local
+function resolveAppPath(subPath) {
+  if (process.env.IS_DOCKER === '1') {
+    return `/app/${subPath}`;
+  }
+  return require('path').join(__dirname, '..', subPath);
+}
+
 // Define the source and destination paths
 const initData = [
   {
-    source: '/app/coregamedata',
-    dest: '/app/coregamedata',
+    source: resolveAppPath('coregamedata'),
+    dest: resolveAppPath('coregamedata'),
     description: 'Core game data (characters, items, spells, etc.)'
   },
   {
-    source: '/app/public/images',
-    dest: '/app/public/images', 
+    source: resolveAppPath('public/images'),
+    dest: resolveAppPath('public/images'), 
     description: 'Static images and assets'
   },
   {
-    source: '/app/data',
-    dest: '/app/data',
+    source: resolveAppPath('data'),
+    dest: resolveAppPath('data'),
     description: 'Application data'
   }
 ];
@@ -58,7 +66,7 @@ function initializeContainer() {
   
   // Ensure required directories exist for volume mounts
   const requiredDirs = [
-    '/app/public/uploads'  // Only create uploads, not parsed_sessions
+    resolveAppPath('public/uploads')  // Only create uploads, not parsed_sessions
   ];
   
   for (const dir of requiredDirs) {
@@ -85,7 +93,7 @@ function initializeContainer() {
   }
   
   // Check parsed_sessions but don't create it (let volume mount handle it)
-  const parsedSessionsDir = '/app/public/parsed_sessions';
+  const parsedSessionsDir = resolveAppPath('public/parsed_sessions');
   console.log(`🔍 Checking volume-mounted directory: ${parsedSessionsDir}`);
   console.log(`   Exists: ${fs.existsSync(parsedSessionsDir)}`);
   

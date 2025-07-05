@@ -1,0 +1,104 @@
+Month 1, Day 16
+host
+========================================
+Elf
+Spent the night at the Chapel.
+Elf
+ASHES curse is removed.
+host
+Monster Die roll is Rolled 3.
+Elf
+Starts turn: Evil Valley 5
+Elf
+Hide - Succeeded
+Elf
+Hide - N/A
+Elf
+Selling to Order HQ.
+Elf
+Attempting to sell: Potion of Energy
+Elf
+Trade - Sell to Order HQ - Total received for the Potion of Energy was 5 gold.
+Elf
+Buying from Order HQ.
+Elf
+Available for sale: 3 Warhorses, 2 Armors, Crossbow, Great Sword, Morning Star, 2 Great Axes, and 3 Treasures
+Elf
+Bidding for a treasure
+Elf
+The Elf chose not to buy drinks.
+Elf
+Trade - Buy from Order HQ (as Unfriendly) - Challenge
+Elf
+The native group will be no more favorable with drinks.
+Elf
+BLOCKED - Cannot perform action M-EV2
+Elf
+The native group will be no more favorable with drinks.
+Elf
+Ends turn: Evil Valley 5
+host
+Patrol 1 is added to Evil Valley, clearing 5
+host
+Patrol 2 is added to Evil Valley, clearing 5
+host
+Patrol HQ is added to Evil Valley, clearing 5
+__battle__
+Battle resolving at Evil Valley 5:
+__battle__
+GROUP 1
+__battle__
+Elf
+__battle__
+GROUP 2
+__battle__
+Order 1
+__battle__
+Order 2
+__battle__
+Order 3
+__battle__
+Order HQ
+__battle__
+Patrol 1
+__battle__
+Patrol 2
+__battle__
+Patrol HQ
+Elf
+The Elf chose not to buy drinks.
+Elf
+Meeting Order on the Unfriendly table
+Elf
+Rolled 5 and 5. = Challenge
+Elf
+The Elf chose not to buy drinks.
+Elf
+Meeting Patrol on the Neutral table
+Elf
+Rolled 1 and 6. = Trouble!
+Elf
+Meeting Patrol on the Unfriendly table
+Elf
+Rolled 4 and 4. = Insult
+__battle__
+=======================
+__battle__
+Evening of month 1, day 16, in clearing Evil Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Elf
+Ran away!
+host
+========================================
+host

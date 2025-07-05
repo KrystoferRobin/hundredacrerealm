@@ -1,0 +1,20 @@
+Month 2, Day 3
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Deep Woods 1
+Woods Girl
+Search - Locate - Discover chit(s) - none to discover
+Woods Girl
+Search - Locate - Passage(s)
+Woods Girl
+Search - Locate - Nothing
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Deep Woods 1
+host
+========================================
+host

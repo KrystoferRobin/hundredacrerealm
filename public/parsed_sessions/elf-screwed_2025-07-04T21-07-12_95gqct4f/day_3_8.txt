@@ -1,0 +1,62 @@
+Month 3, Day 8
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Elf
+Starts turn: Deep Woods 1
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Hide - Succeeded
+Elf
+Hide - N/A
+Elf
+Ends turn: Borderland 1
+host
+H Troll is added to Borderland, clearing 1
+host
+H Troll is added to Borderland, clearing 1
+__battle__
+Battle resolving at Borderland 1:
+__battle__
+GROUP 1
+__battle__
+Elf
+__battle__
+Guard 1 (Elf)
+__battle__
+Guard 2 (Elf)
+__battle__
+Patrol 1 (Elf)
+__battle__
+GROUP 2
+__battle__
+H Troll
+__battle__
+H Troll
+__battle__
+=======================
+__battle__
+Evening of month 3, day 8, in clearing Borderland 1
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Elf
+Presses the END combat button.
+Elf
+Combat has ended.
+host
+Elf loses Patrol 1 as a hireling (term is up).
+host
+========================================
+host

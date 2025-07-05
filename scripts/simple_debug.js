@@ -62,6 +62,14 @@ const uploadDirs = [
   '/app/public/uploads'
 ];
 
+// Helper to resolve paths for Docker or local
+function resolveAppPath(subPath) {
+  if (process.env.IS_DOCKER === '1') {
+    return `/app/${subPath}`;
+  }
+  return require('path').join(__dirname, '..', subPath);
+}
+
 for (const dir of uploadDirs) {
   if (fs.existsSync(dir)) {
     console.log(`✅ ${dir} - EXISTS`);

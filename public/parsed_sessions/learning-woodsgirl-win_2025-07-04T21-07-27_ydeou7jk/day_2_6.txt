@@ -1,0 +1,16 @@
+Month 2, Day 6
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Woods Girl
+Starts turn: Awful Valley 5
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Caves 5
+host
+========================================
+host

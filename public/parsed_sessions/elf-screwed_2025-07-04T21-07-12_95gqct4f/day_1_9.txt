@@ -1,0 +1,22 @@
+Month 1, Day 9
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Elf
+Starts turn: Ledges 2
+Elf
+Search - Loot the Statue - Nothing
+Elf
+Search - Loot the Statue - Found Treasure
+Elf
+Search - Loot the Statue - Nothing
+Elf
+Search - Loot the Statue - Nothing
+Elf
+Hide - Succeeded
+Elf
+Ends turn: Ledges 2
+host
+========================================
+host

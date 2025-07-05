@@ -1,0 +1,24 @@
+Month 3, Day 20
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Elf
+Starts turn: Caves 2
+Elf
+Move - moved
+Elf
+Search - Locate - Nothing
+Elf
+Search - Locate - Found 1 passage(s)
+Elf
+Hide - Failed
+Elf
+Ends turn: Cavern 1
+Elf
+Reveals: Patter 2
+Elf
+Reveals: Bones C
+host
+========================================
+host

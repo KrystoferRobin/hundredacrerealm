@@ -1,0 +1,10 @@
+{
+  "White Knight": {
+    "gold": 0,
+    "fame": 0,
+    "notoriety": -12,
+    "startingSpells": 1,
+    "greatTreasures": 0,
+    "learnedSpells": 0
+  }
+}

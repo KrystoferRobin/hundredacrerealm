@@ -1,0 +1,86 @@
+Month 1, Day 4
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+White Knight
+Starts turn: Ruins 6
+White Knight
+Move - moved
+White Knight
+Move - moved
+White Knight
+The native group will be no more favorable with drinks.
+White Knight
+BLOCKED - Cannot perform action R
+White Knight
+The native group will be no more favorable with drinks.
+White Knight
+Ends turn: Ruins 1
+Amazon
+Starts turn: Ruins 2
+Amazon
+Search - Locate - Nothing
+Amazon
+Search - Locate - Nothing
+Amazon
+Search - Locate - Nothing
+Amazon
+Hide - Succeeded
+Amazon
+Ends turn: Ruins 2
+Woods Girl
+Starts turn: Deep Woods 4
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Awful Valley 1
+Berserker
+Starts turn: Awful Valley 1
+Berserker
+Ends turn: Awful Valley 1
+__battle__
+Battle resolving at Ruins 2:
+__battle__
+GROUP 1
+__battle__
+Amazon
+__battle__
+GROUP 2
+__battle__
+Patrol 1
+__battle__
+Patrol 2
+__battle__
+Patrol HQ
+Amazon
+The native group will be no more favorable with drinks.
+Amazon
+Meeting Patrol on the Friendly table
+Amazon
+Rolled 4 and 5. = Price x 4
+__battle__
+=======================
+__battle__
+Evening of month 1, day 4, in clearing Ruins 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Amazon
+Presses the END combat button.
+Amazon
+Combat has ended.
+host
+========================================
+host

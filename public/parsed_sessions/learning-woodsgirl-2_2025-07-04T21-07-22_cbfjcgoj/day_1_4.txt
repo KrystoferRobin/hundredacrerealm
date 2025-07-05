@@ -1,0 +1,24 @@
+Month 1, Day 4
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Deep Woods 5
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Search - Peer - Choice - Clues and Found 1 path(s)
+Woods Girl
+Ends turn: Deep Woods 1
+Woods Girl
+Reveals: Vault
+Woods Girl
+Reveals: Smoke M
+host
+========================================
+host

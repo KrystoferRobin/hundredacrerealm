@@ -1,0 +1,24 @@
+Month 1, Day 17
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Woods Girl
+Starts turn: High Pass 6
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Ends turn: High Pass 6
+Amazon
+Starts turn: High Pass 6
+Amazon
+Hide - Succeeded
+Amazon
+Hide - N/A
+Amazon
+Ends turn: High Pass 6
+host
+========================================
+host

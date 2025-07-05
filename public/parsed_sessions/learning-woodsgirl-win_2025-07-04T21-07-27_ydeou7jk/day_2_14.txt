@@ -1,0 +1,28 @@
+Month 2, Day 14
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+host
+7th day - denizens return to setup card:
+host
+- Soldier 1
+host
+- Soldier 2
+host
+- Soldier 3
+host
+- Soldier HQ
+Woods Girl
+Starts turn: Ledges 2
+Woods Girl
+Move - moved
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Oak Woods 2
+host
+========================================
+host

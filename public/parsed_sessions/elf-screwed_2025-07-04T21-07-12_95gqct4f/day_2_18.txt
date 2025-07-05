@@ -1,0 +1,18 @@
+Month 2, Day 18
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Elf
+Starts turn: Borderland 6
+Elf
+Move - moved
+Elf
+Hide - Succeeded
+Elf
+Hide - N/A
+Elf
+Ends turn: Borderland 3
+host
+========================================
+host

@@ -1,0 +1,20 @@
+Month 2, Day 26
+host
+========================================
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+2 consecutive rounds of no damage, fatigue, or spellcasting.
+host
+Monster Die roll is Rolled 5.
+Elf
+Starts turn: Between Deep Woods 2 and Ruins 1
+Elf
+Move - moved
+Elf
+Has fallen asleep due to the presence of the Flowers of Rest.
+Elf
+Ends turn: Deep Woods 2
+host
+========================================
+host

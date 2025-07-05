@@ -1,0 +1,24 @@
+Month 3, Day 9
+host
+========================================
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+2 consecutive rounds of no damage, fatigue, or spellcasting.
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Oak Woods 2
+Woods Girl
+Move - moved
+Woods Girl
+Rest - You are fully rested.
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Hide - N/A
+Woods Girl
+Ends turn: Oak Woods 4
+host
+========================================
+host

@@ -1,0 +1,92 @@
+Month 3, Day 4
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Wizard
+Starts turn: Mountain 1
+Wizard
+Search - Loot the Altar - Nothing
+Wizard
+Search - Loot the Altar - Found Treasure
+Wizard
+Activates Eye of the Moon
+Wizard
+Search - Loot the Altar - Found Treasure
+Wizard
+Activates Hidden Ring
+Wizard
+Hide - Succeeded
+Wizard
+Hide - N/A
+Wizard
+Ends turn: Mountain 1
+host
+Warlock is added to Mountain, clearing 1
+Wizard
+Fatigued chit: MAGIC II3*
+__battle__
+Battle resolving at Mountain 1:
+__battle__
+GROUP 1
+__battle__
+Wizard
+__battle__
+=======================
+__battle__
+Evening of month 3, day 4, in clearing Mountain 1
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Wizard
+Casts Hurricane Winds
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Wizard
+Targets the Wizard (Wizard) with Hurricane Winds
+Wizard
+Presses the RESET combat button.
+Wizard
+Cancels Hurricane Winds
+Wizard
+Fatigued chit: MAGIC IV3*
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Wizard
+Presses the END combat button.
+Wizard
+Combat has ended.
+host
+========================================
+host

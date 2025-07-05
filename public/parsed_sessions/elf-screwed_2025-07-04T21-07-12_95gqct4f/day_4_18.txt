@@ -1,0 +1,58 @@
+Month 4, Day 18
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Elf
+Starts turn: Borderland 1
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Selling to Order HQ.
+Elf
+Attempting to sell: Ointment of Steel, Crystal Ball, and Timeless Jewel
+Elf
+Trade - Sell to Order HQ - Sold 3 items for 58 gold:
+Elf
+Ends turn: Evil Valley 5
+__battle__
+Battle resolving at Evil Valley 5:
+__battle__
+GROUP 1
+__battle__
+Elf
+__battle__
+GROUP 2
+__battle__
+Order 1
+__battle__
+Order 2
+__battle__
+Order HQ
+Elf
+The native group will be no more favorable with drinks.
+Elf
+Meeting Order on the Friendly table
+Elf
+Rolled 5. = Price x 4
+__battle__
+=======================
+__battle__
+Evening of month 4, day 18, in clearing Evil Valley 5
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Elf
+Presses the END combat button.
+Elf
+Combat has ended.
+host
+========================================
+host

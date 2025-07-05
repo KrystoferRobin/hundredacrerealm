@@ -1,0 +1,16 @@
+Month 3, Day 26
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Woods Girl
+Starts turn: Between Caves 5 and Awful Valley 5
+Woods Girl
+Move - moved
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: Caves 5
+host
+========================================
+host

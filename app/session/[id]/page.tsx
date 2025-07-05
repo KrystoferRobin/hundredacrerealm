@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useParams } from 'next/navigation';
 import SessionMap from '../../../components/SessionMap';
+import Image from 'next/image';
 
 interface Action {
   performer: string;
@@ -99,9 +100,16 @@ function getBlockedActionType(result: string) {
   return 'Action';
 }
 
-export default function SessionPage() {
+interface SessionPageProps {
+  sessionId?: string;
+  setSelectedPage?: (page: 'home' | 'characters' | 'monsters' | 'natives' | 'log' | 'games' | 'map' | 'game-logs' | 'session') => void;
+  setSelectedCharacter?: (character: string | null) => void;
+}
+
+export default function SessionPage(props: SessionPageProps = {}) {
+  const { sessionId: sessionIdProp, setSelectedPage, setSelectedCharacter } = props;
   const params = useParams();
-  const sessionId = params.id as string;
+  const sessionId = sessionIdProp || (params.id as string);
   const [sessionData, setSessionData] = useState<SessionData | null>(null);
   const [loading, setLoading] = useState(true);
   const [itemCache, setItemCache] = useState<Record<string, Item>>({});
@@ -115,6 +123,9 @@ export default function SessionPage() {
   const [selectedMonth, setSelectedMonth] = useState<number>(1);
   const [isAutoAdvancing, setIsAutoAdvancing] = useState<boolean>(false);
   const [autoAdvanceInterval, setAutoAdvanceInterval] = useState<NodeJS.Timeout | null>(null);
+  const [hoveredCharacter, setHoveredCharacter] = useState<string | null>(null);
+  const [hoveredCharacterData, setHoveredCharacterData] = useState<any>(null);
+  const [hoveredCharacterStats, setHoveredCharacterStats] = useState<any>(null);
 
   useEffect(() => {
     const fetchSessionData = async () => {
@@ -1100,7 +1111,7 @@ export default function SessionPage() {
 
   // Function to get character icon path
   const getCharacterIconPath = (characterName: string) => {
-    const iconName = characterName.replace(/\s+/g, ' ') + '_symbol.png';
+    const iconName = characterName + '_symbol.png';
     return `/images/charsymbol/${iconName}`;
   };
 
@@ -1129,127 +1140,169 @@ export default function SessionPage() {
     );
   };
 
-  // Function to render character box
+  // Function to categorize items based on name
+  const categorizeItemByName = (itemName: string): string => {
+    const name = itemName.toLowerCase();
+    
+    // Weapons
+    if (name.includes('bow') || name.includes('sword') || name.includes('axe') || 
+        name.includes('spear') || name.includes('mace') || name.includes('staff') ||
+        name.includes('crossbow') || name.includes('halberd') || name.includes('broadsword') ||
+        name.includes('great sword') || name.includes('great axe') || name.includes('morning star') ||
+        name.includes('thrusting sword') || name.includes('short sword')) {
+      return 'weapon';
+    }
+    
+    // Armor
+    if (name.includes('armor') || name.includes('shield') || name.includes('helmet') ||
+        name.includes('breastplate') || name.includes('greaves') || name.includes('gauntlets')) {
+      return 'armor';
+    }
+    
+    // Spells
+    if (name.includes('peace with nature') || name.includes('type vii') || name.includes('type vi') ||
+        name.includes('type v') || name.includes('type iv') || name.includes('type iii') ||
+        name.includes('type ii') || name.includes('type i')) {
+      return 'spell';
+    }
+    
+    // Great Treasures
+    if (name.includes('great') && (name.includes('treasure') || name.includes('sword') || 
+        name.includes('axe') || name.includes('armor'))) {
+      return 'great_treasure';
+    }
+    
+    // Regular Treasures
+    if (name.includes('treasure') || name.includes('gold') || name.includes('jewel') ||
+        name.includes('gem') || name.includes('coin')) {
+      return 'treasure';
+    }
+    
+    // Natives
+    if (name.includes('native') || name.includes('guard') || name.includes('mercenary') ||
+        name.includes('lancer') || name.includes('dwarf') || name.includes('elf')) {
+      return 'native';
+    }
+    
+    return 'other';
+  };
+
+  // Fetch character data and stats on hover
+  useEffect(() => {
+    if (!hoveredCharacter) {
+      setHoveredCharacterData(null);
+      setHoveredCharacterStats(null);
+      return;
+    }
+    let cancelled = false;
+    const fetchData = async () => {
+      try {
+        const [charRes, statsRes] = await Promise.all([
+          fetch(`/api/characters/${encodeURIComponent(hoveredCharacter)}`),
+          fetch(`/api/characters/${encodeURIComponent(hoveredCharacter)}/stats`)
+        ]);
+        if (!cancelled && charRes.ok && statsRes.ok) {
+          const charData = await charRes.json();
+          const statsData = await statsRes.json();
+          setHoveredCharacterData(charData.character);
+          setHoveredCharacterStats(statsData);
+        }
+      } catch {}
+    };
+    fetchData();
+    return () => { cancelled = true; };
+  }, [hoveredCharacter]);
+
   const renderCharacterBox = (characterName: string, playerName: string) => {
     const inventory = characterInventories?.[characterName]?.items;
     const isDead = deadCharacters.has(characterName);
     console.log(`Rendering ${characterName}:`, { inventory, characterInventories: characterInventories?.[characterName] });
     
-    // Helper to flatten and filter
-    const flat = (arr: any[]) => arr?.filter(Boolean) || [];
-    
-    // Helper function to create item elements with tooltips
-    const createItemElement = (item: any, category: string, idx: number, arr: any[]) => {
-      const isLast = idx === arr.length - 1;
-      const comma = isLast ? '' : ', ';
-      
-      if (category === 'weapon' || category === 'armor') {
-        return (
-          <div key={`${category}-${idx}`} className="relative group inline-block">
-            <span 
-              className="text-sm text-gray-700 mr-2 mb-1 cursor-pointer hover:text-amber-600 transition-colors"
-              onMouseEnter={() => fetchItem(item.name)}
-            >
-              {item.name}{comma}
-            </span>
-            <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
-              {renderEquipmentTooltip(item.name)}
-            </div>
-          </div>
-        );
-      } else if (category === 'treasure') {
-        return (
-          <div key={`${category}-${idx}`} className="relative group inline-block">
-            <span 
-              className="text-sm text-gray-700 mr-2 mb-1 cursor-pointer hover:text-amber-600 transition-colors"
-              onMouseEnter={() => fetchItem(item.name)}
-            >
-              {renderTreasureBagIcon()}{item.name}{comma}
-            </span>
-            <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
-              {renderEquipmentTooltip(item.name)}
-            </div>
-          </div>
-        );
-      } else if (category === 'great_treasure') {
-        return (
-          <div key={`${category}-${idx}`} className="relative group inline-block">
-            <span 
-              className="mr-2 mb-1 cursor-pointer"
-              onMouseEnter={() => fetchItem(item.name)}
-            >
-              {renderGreatTreasure(item.name)}{comma}
-            </span>
-            <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
-              {renderEquipmentTooltip(item.name)}
-            </div>
-          </div>
-        );
-      } else if (category === 'spell') {
-        return (
-          <div key={`${category}-${idx}`} className="relative group inline-block">
-            <span 
-              className="text-sm text-blue-700 mr-2 mb-1 cursor-pointer hover:text-blue-500 transition-colors"
-              onMouseEnter={() => fetchItem(item.name)}
-            >
-              {item.name}{comma}
-            </span>
-            <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
-              {renderEquipmentTooltip(item.name)}
-            </div>
-          </div>
-        );
-      } else if (category === 'native') {
-        return (
-          <div key={`${category}-${idx}`} className="relative group inline-block">
-            <span 
-              className="mr-2 mb-1 cursor-pointer"
-              onMouseEnter={() => fetchItem(item.name)}
-            >
-              {renderNativeChit(item.name)}{comma}
-            </span>
-            <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
-              {renderEquipmentTooltip(item.name)}
-            </div>
-          </div>
-        );
+    // Collect all items from all inventory categories, flatten, and deduplicate by name
+    const allInventoryArrays = [
+      inventory?.weapons,
+      inventory?.armor,
+      inventory?.treasures,
+      inventory?.great_treasures,
+      inventory?.spells,
+      inventory?.natives,
+      inventory?.other,
+      inventory?.unknown
+    ];
+    const allItemsRaw = allInventoryArrays.flat().filter(Boolean);
+    const seenNames = new Set();
+    const allItems = allItemsRaw.filter(item => {
+      if (!item || !item.name) return false;
+      if (seenNames.has(item.name)) return false;
+      seenNames.add(item.name);
+      return true;
+    });
+
+    // Helper to get category from fetched item data or fallback to heuristic
+    const getItemCategory = (item) => {
+      const cached = itemCache[item.name];
+      if (cached) {
+        // Use attributeBlocks to determine type
+        if (cached.attributeBlocks.intact && cached.attributeBlocks.damaged) return 'armor';
+        if (cached.attributeBlocks.unalerted && cached.attributeBlocks.alerted) return 'weapon';
+        if (cached.attributeBlocks.this?.spell) return 'spell';
+        if (cached.attributeBlocks.this?.base_price) return 'treasure';
+        // Add more rules as needed
       }
-      return null;
-    };
-    
-    // Helper function to remove duplicates by name
-    const removeDuplicates = (items: any[]) => {
-      const seen = new Set<string>();
-      return items.filter(item => {
-        if (seen.has(item.name)) {
-          return false;
-        }
-        seen.add(item.name);
-        return true;
-      });
+      // Fallback to heuristic
+      return categorizeItemByName(item.name);
     };
 
-    // Collect items by category and remove duplicates
-    const weapons = removeDuplicates([...flat(inventory?.weapons), ...flat(inventory?.other).filter(item => item.category === 'weapon')]);
-    const armor = removeDuplicates([...flat(inventory?.armor), ...flat(inventory?.other).filter(item => item.category === 'armor')]);
-    const treasures = removeDuplicates([...flat(inventory?.treasures), ...flat(inventory?.other).filter(item => item.category === 'treasure')]);
-    const greatTreasures = removeDuplicates([...flat(inventory?.great_treasures), ...flat(inventory?.other).filter(item => item.category === 'great_treasure')]);
-    const natives = removeDuplicates([...flat(inventory?.natives), ...flat(inventory?.other).filter(item => item.category === 'native')]);
-    const spells = removeDuplicates([...flat(inventory?.spells), ...flat(inventory?.other).filter(item => item.category === 'spell')]);
-    
-    // Create item lines
-    const regularItems = [...weapons, ...armor].map((item, idx, arr) => createItemElement(item, item.category, idx, arr));
-    const treasureItems = treasures.map((item, idx, arr) => createItemElement(item, 'treasure', idx, arr));
-    const greatTreasureItems = greatTreasures.map((item, idx, arr) => createItemElement(item, 'great_treasure', idx, arr));
-    const nativeItems = natives.map((item, idx, arr) => createItemElement(item, 'native', idx, arr));
-    const spellItems = spells.map((item, idx, arr) => createItemElement(item, 'spell', idx, arr));
-    
+    // Categorize items for display
+    const equipmentItems = allItems.filter(item => {
+      const cat = getItemCategory(item);
+      // Equipment: weapons, armor, mounts, lanterns, etc. (not treasure, not spell, not great treasure)
+      return cat === 'weapon' || cat === 'armor' || cat === 'mount' || (cat === 'other' && !item.name.toLowerCase().includes('treasure') && !item.name.toLowerCase().includes('spell'));
+    });
+    const treasureItems = allItems.filter(item => getItemCategory(item) === 'treasure' && !item.name.toLowerCase().includes('great'));
+    const greatTreasureItems = allItems.filter(item => getItemCategory(item) === 'great_treasure' || (getItemCategory(item) === 'treasure' && item.name.toLowerCase().includes('great')));
+    const spellItems = allItems.filter(item => getItemCategory(item) === 'spell');
+
+    // Render helpers for each line
+    const renderItemLine = (items: any[], icon: React.ReactNode = null, extraClass = '') => (
+      <div className={`flex flex-wrap items-center gap-x-2 gap-y-1 ${extraClass}`}>
+        {items.map((item, idx) => (
+          <span key={item.name} className={"relative group inline-block text-sm cursor-pointer" + (icon ? ' flex items-center' : '')} onMouseEnter={() => fetchItem(item.name)}>
+            {icon && <span className="mr-1">{icon}</span>}
+            {item.name}{idx < items.length - 1 ? ',' : ''}
+            <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
+              {renderEquipmentTooltip(item.name)}
+            </div>
+          </span>
+        ))}
+      </div>
+    );
+
+    // Render spells as a separate section
+    const renderSpells = () => (
+      spellItems.length > 0 && (
+        <div className="mt-2">
+          <span className="text-blue-700 font-semibold text-xs">Spells: </span>
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+            {spellItems.map((item, idx) => (
+              <span key={item.name} className="relative group inline-block text-xs cursor-pointer text-blue-700" onMouseEnter={() => fetchItem(item.name)}>
+                {item.name}{idx < spellItems.length - 1 ? ',' : ''}
+                <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
+                  {renderEquipmentTooltip(item.name)}
+                </div>
+              </span>
+            ))}
+          </div>
+        </div>
+      )
+    );
+
     // Calculate stats
     const stats = characterStats?.[characterName] || { gold: 0, fame: 0, notoriety: 0, startingSpells: 0 };
     // Great treasures
-    const gtCount = greatTreasures.length;
+    const gtCount = allItems.filter(item => getItemCategory(item) === 'great_treasure').length;
     // Learned spells: total spells - starting spells
-    const spellCount = spells.length;
+    const spellCount = allItems.filter(item => getItemCategory(item) === 'spell').length;
     const learnedSpells = spellCount - (stats.startingSpells || 0);
 
     // Get final score and breakdown
@@ -1305,80 +1358,26 @@ export default function SessionPage() {
         )
         : null;
 
+    // For great treasures, use a simple icon (e.g., 48e) or styled span
+    const greatTreasureIcon = <span className="font-bold text-yellow-900">💎</span>;
+
     return (
-      <div key={characterName} className="bg-white border-2 border-amber-300 rounded-lg p-4 mb-4 shadow-lg flex flex-col lg:flex-row justify-between min-h-[200px]">
-        <div className="flex-1">
-          <div className="flex items-center mb-3">
-            <div className="w-12 h-12 mr-3 relative">
-              <img
-                src={getCharacterIconPath(characterName)}
-                alt={`${characterName} icon`}
-                className="w-full h-full object-contain"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
-                }}
-              />
-            </div>
-            <div className="flex flex-col">
-              <div className="flex items-center">
-                <h4 className="text-lg font-bold text-amber-800 mr-2">{characterName}</h4>
-                {isDead && (
-                  <span title="Dead" className="ml-2 text-2xl">👻</span>
-                )}
-              </div>
-              <p className="text-sm text-gray-600">({playerName})</p>
-            </div>
-          </div>
-          
-          {/* Items organized by category */}
-          <div className="space-y-2">
-            {/* Regular items (weapons/armor) */}
-            {regularItems.length > 0 && (
-              <div className="flex flex-wrap items-center">
-                {regularItems}
-              </div>
-            )}
-            
-            {/* Treasures */}
-            {treasureItems.length > 0 && (
-              <div className="flex flex-wrap items-center">
-                {treasureItems}
-              </div>
-            )}
-            
-            {/* Great Treasures */}
-            {greatTreasureItems.length > 0 && (
-              <div className="flex flex-wrap items-center">
-                {greatTreasureItems}
-              </div>
-            )}
-            
-            {/* Natives */}
-            {nativeItems.length > 0 && (
-              <div className="flex flex-wrap items-center">
-                {nativeItems}
-              </div>
-            )}
-            
-            {/* Spells (with extra spacing) */}
-            {spellItems.length > 0 && (
-              <>
-                <div className="h-2"></div> {/* Extra spacing */}
-                <div className="flex flex-wrap items-center">
-                  {spellItems}
-                </div>
-              </>
-            )}
-            
-            {/* No items message */}
-            {regularItems.length === 0 && treasureItems.length === 0 && greatTreasureItems.length === 0 && nativeItems.length === 0 && spellItems.length === 0 && (
-              <div className="flex flex-wrap items-center">
-                <span className="text-sm text-gray-500 italic">No items found</span>
-              </div>
-            )}
-          </div>
+      <div key={characterName} className={`rounded-lg border-2 p-4 mb-4 shadow-md ${isDead ? 'bg-gray-200 border-gray-400' : 'bg-white border-amber-300'} w-[340px] min-h-[220px] flex flex-col justify-between`}
+           onMouseEnter={() => setHoveredCharacter(characterName)}
+           onMouseLeave={() => setHoveredCharacter(null)}>
+        <div className="flex items-center mb-2">
+          <span className="font-bold text-lg text-amber-800 cursor-pointer hover:underline" onClick={() => handleCharacterClick(characterName)}>{characterName}</span>
+          <span className="ml-2 text-sm text-gray-500">({playerName})</span>
+          {isDead && <span className="ml-2 text-xs text-red-600 font-bold">DEAD</span>}
         </div>
+        {/* Inventory lines */}
+        <div className="mb-2">
+          {equipmentItems.length > 0 && renderItemLine(equipmentItems)}
+          {treasureItems.length > 0 && renderItemLine(treasureItems, renderTreasureBagIcon())}
+          {greatTreasureItems.length > 0 && renderItemLine(greatTreasureItems, greatTreasureIcon)}
+        </div>
+        {/* Spells at bottom left */}
+        <div className="absolute left-4 bottom-4">{renderSpells()}</div>
         <div className="flex flex-col items-end justify-start text-xs font-mono text-amber-900 space-y-1 ml-4 relative">
           <div><span className="font-bold">gt</span>: {gtCount}</div>
           <div><span className="font-bold">s</span>: {learnedSpells}</div>
@@ -1463,9 +1462,16 @@ export default function SessionPage() {
     return result;
   }, [sessionData]);
 
+  const handleCharacterClick = (characterName: string) => {
+    if (setSelectedCharacter && setSelectedPage) {
+      setSelectedCharacter(characterName);
+      setSelectedPage('characters');
+    }
+  };
+
   if (loading) {
     return (
-      <div className="min-h-screen bg-amber-50 flex items-center justify-center">
+      <div className="min-h-screen bg-amber-50 flex items-center justify-center w-full">
         <div className="text-2xl text-amber-800">Loading session data...</div>
       </div>
     );
@@ -1473,17 +1479,17 @@ export default function SessionPage() {
 
   if (!sessionData) {
     return (
-      <div className="min-h-screen bg-amber-50 flex items-center justify-center">
+      <div className="min-h-screen bg-amber-50 flex items-center justify-center w-full">
         <div className="text-2xl text-amber-800">Session not found</div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-amber-50">
+    <div className="min-h-screen bg-amber-50 w-full">
       {/* Session Overview - Full width to match columns below */}
       <div className="w-full px-4 sm:px-6">
-        <div className="mb-8 p-4 sm:p-6 bg-white border-2 border-amber-300 rounded-lg shadow-lg">
+        <div className="mb-8 p-4 sm:p-6 bg-white border-2 border-amber-300 rounded-lg shadow-lg w-full">
           <h2 className="text-2xl sm:text-3xl font-bold text-amber-800 mb-4 text-center">
             {sessionTitles ? sessionTitles.mainTitle : '📊 Session Overview'}
             {sessionTitles?.subtitle && (
@@ -1492,38 +1498,19 @@ export default function SessionPage() {
               </div>
             )}
           </h2>
-          
           {/* Character Boxes */}
-          <div className="mb-6">
+          <div className="mb-6 w-full">
             <h3 className="text-xl font-bold text-amber-700 mb-4">👥 Characters</h3>
             {(!characterStats || !characterInventories) ? (
-              <div className="text-center py-8">
-                <div className="text-lg text-amber-600">Loading character data...</div>
-              </div>
+              <div className="text-center text-[#4b3a1e] font-serif italic">Loading character data...</div>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                {Object.entries(sessionData.players)
-                  .flatMap(([player, info]) => 
-                    info.characters.map(character => ({ character, player }))
-                  )
-                  .sort((a, b) => {
-                    const aIsDead = deadCharacters.has(a.character);
-                    const bIsDead = deadCharacters.has(b.character);
-                    // Live characters first, then dead characters
-                    if (aIsDead && !bIsDead) return 1;
-                    if (!aIsDead && bIsDead) return -1;
-                    // Within each group, sort alphabetically
-                    return a.character.localeCompare(b.character);
-                  })
-                  .map(({ character, player }) => 
-                    renderCharacterBox(character, player)
-                  )}
-              </div>
+              Object.entries(sessionData.characterToPlayer).map(([character, player]) => 
+                renderCharacterBox(character, player)
+              )
             )}
           </div>
-          
           {/* Statistics */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 w-full">
             <div className="text-center p-3 bg-amber-100 rounded">
               <div className="text-2xl font-bold text-amber-800">{calculateStatistics(sessionData).totalCharacterTurns}</div>
               <div className="text-sm text-amber-600">Character Turns</div>
@@ -1543,12 +1530,11 @@ export default function SessionPage() {
           </div>
         </div>
       </div>
-
       {/* Main Content - Map and Log */}
       <div className="w-full px-4 sm:px-6 flex flex-col lg:flex-row gap-4 lg:gap-6">
         {/* Map Panel - Square, positioned on the left */}
         <div className="w-full lg:w-1/2 xl:w-3/5">
-          <div className="bg-white border-2 border-amber-300 rounded-lg shadow-lg p-4">
+          <div className="bg-white border-2 border-amber-300 rounded-lg shadow-lg p-4 w-full">
             <h2 className="text-xl font-bold text-amber-800 mb-4">🗺️ Game Map</h2>
             <div className="aspect-square w-full overflow-hidden">
               <SessionMap sessionId={sessionId} characterIcons={characterIcons} selectedDay={selectedDay} />

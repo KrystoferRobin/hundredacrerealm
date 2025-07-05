@@ -1,0 +1,20 @@
+Month 1, Day 16
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Woods Girl
+Starts turn: High Pass 2
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Search - Loot the Statue - Nothing
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Ends turn: High Pass 2
+host
+========================================
+host

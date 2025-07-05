@@ -1,0 +1,24 @@
+Month 2, Day 2
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Wizard
+Starts turn: Dark Valley 2
+Wizard
+Hide - Failed
+Wizard
+Hide - Succeeded
+Wizard
+Move - moved
+Wizard
+Move - moved
+Wizard
+Ends turn: Deep Woods 5
+Guard HQ
+Starts turn: Deep Woods 5
+Guard HQ
+Ends turn: Deep Woods 5
+host
+========================================
+host

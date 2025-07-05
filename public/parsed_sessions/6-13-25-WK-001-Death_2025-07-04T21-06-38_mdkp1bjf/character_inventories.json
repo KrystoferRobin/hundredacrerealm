@@ -1,0 +1,25 @@
+{
+  "White Knight": {
+    "character": "White Knight",
+    "items": {
+      "weapons": [],
+      "armor": [],
+      "treasures": [],
+      "great_treasures": [],
+      "spells": [],
+      "natives": [],
+      "other": [
+        {
+          "id": "3517",
+          "name": "Make Whole",
+          "type": "unknown",
+          "category": "other"
+        }
+      ],
+      "unknown": []
+    },
+    "raw_contains": [
+      "3517"
+    ]
+  }
+}

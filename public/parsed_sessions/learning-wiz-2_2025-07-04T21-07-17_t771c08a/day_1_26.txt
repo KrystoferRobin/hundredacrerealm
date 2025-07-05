@@ -1,0 +1,20 @@
+Month 1, Day 26
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Wizard
+Starts turn: Dark Valley 5
+Wizard
+Move - moved
+Wizard
+Search - Read Runes on Sacred Statue - Learn and Awaken a Spell - learned!
+Wizard
+Search - Locate - Nothing
+Wizard
+Search - Locate - Passage(s)
+Wizard
+Ends turn: Dark Valley 2
+host
+========================================
+host

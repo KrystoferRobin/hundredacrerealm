@@ -1,0 +1,44 @@
+Month 3, Day 16
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Wizard
+Starts turn: Mountain 2
+Wizard
+Move - moved
+Wizard
+Rest - Cannot REST while transmorphed.
+Wizard
+Hide - Succeeded
+Wizard
+Ends turn: Borderland 2
+__battle__
+Battle resolving at Borderland 2:
+__battle__
+GROUP 1
+__battle__
+Wizard
+__battle__
+=======================
+__battle__
+Evening of month 3, day 16, in clearing Borderland 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Wizard
+Presses the END combat button.
+Wizard
+Combat has ended.
+host
+========================================
+host

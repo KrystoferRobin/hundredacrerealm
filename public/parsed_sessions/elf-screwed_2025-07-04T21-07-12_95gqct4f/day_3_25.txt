@@ -1,0 +1,18 @@
+Month 3, Day 25
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Elf
+Starts turn: Caves 6
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Move - moved
+Elf
+Ends turn: Bad Valley 4
+host
+========================================
+host

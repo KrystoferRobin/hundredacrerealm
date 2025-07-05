@@ -1,0 +1,62 @@
+Month 3, Day 18
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+Wizard
+Starts turn: Mountain 2
+Wizard
+Move - BLOCKED
+Wizard
+BLOCKED - Cannot perform action M-M5,M-M5
+Wizard
+BLOCKED - Cannot perform action M-PW2
+Wizard
+BLOCKED - Cannot perform action H
+Wizard
+Ends turn: Mountain 2
+host
+H Flying Dragon is added to Mountain, clearing 2
+host
+H Flying Dragon is added to Mountain, clearing 2
+host
+H Flying Dragon blocks the Wizard
+host
+H Flying Dragon blocks the Wizard
+__battle__
+Battle resolving at Mountain 2:
+__battle__
+GROUP 1
+__battle__
+Wizard
+__battle__
+GROUP 2
+__battle__
+T Troll
+__battle__
+Giant
+__battle__
+H Flying Dragon
+__battle__
+H Flying Dragon
+__battle__
+=======================
+__battle__
+Evening of month 3, day 18, in clearing Mountain 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Wizard
+Ran away!
+host
+========================================
+host

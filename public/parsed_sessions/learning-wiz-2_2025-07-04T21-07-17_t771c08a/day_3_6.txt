@@ -1,0 +1,60 @@
+Month 3, Day 6
+host
+========================================
+host
+Monster Die roll is Rolled 4.
+Wizard
+Starts turn: Mountain 1
+Wizard
+Selling to Warlock.
+Wizard
+Attempting to sell: Eye of the Moon
+Wizard
+Trade - Sell to Warlock - Total received for the Eye of the Moon was 13 gold.
+Wizard
+Buying from Warlock.
+Wizard
+Available for sale: 2 Spells, and Treasure
+Wizard
+Bidding for the Enchant Artifact
+Wizard
+Buying drinks only affects native groups.
+Wizard
+Trade - Buy from Warlock (as Unfriendly) - Block/Battle
+Wizard
+BLOCKED - Cannot perform action H
+Wizard
+BLOCKED - Cannot perform action H
+Wizard
+Ends turn: Mountain 1
+host
+Giant is added to Mountain, clearing 6
+__battle__
+Battle resolving at Mountain 1:
+__battle__
+GROUP 1
+__battle__
+Wizard
+__battle__
+=======================
+__battle__
+Evening of month 3, day 6, in clearing Mountain 1
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Wizard
+Presses the END combat button.
+Wizard
+Combat has ended.
+host
+========================================
+host

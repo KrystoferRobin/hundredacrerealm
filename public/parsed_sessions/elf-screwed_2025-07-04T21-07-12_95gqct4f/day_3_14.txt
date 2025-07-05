@@ -1,0 +1,80 @@
+Month 3, Day 14
+host
+========================================
+host
+Monster Die roll is Rolled 1.
+host
+7th day - denizens return to setup card:
+host
+- H Flying Dragon
+host
+- H Flying Dragon
+Elf
+Starts turn: Cliff 4
+Elf
+Selling to Shaman.
+Elf
+Attempting to sell: Ointment of Bite, Shoes of Stealth, and Deft Gloves
+Elf
+Trade - Sell to Shaman - Sold 3 items for 22 gold:
+Elf
+Buying from Shaman.
+Elf
+Available for sale: Spell, and 4 Treasures
+Elf
+Bidding for the Lost
+Elf
+Buying drinks only affects native groups.
+Elf
+Trade - Buy from Shaman (as Neutral) - Price x 3
+Elf
+Search - Loot the Shrine - Nothing
+Elf
+Search - Loot the Shrine - Nothing
+Elf
+Hide - Succeeded
+Elf
+Ends turn: Cliff 4
+host
+H Flying Dragon is added to Cliff, clearing 4
+host
+H Flying Dragon is added to Cliff, clearing 4
+__battle__
+Battle resolving at Cliff 4:
+__battle__
+GROUP 1
+__battle__
+Elf
+__battle__
+Guard 1 (Elf)
+__battle__
+Guard 2 (Elf)
+__battle__
+GROUP 2
+__battle__
+H Flying Dragon
+__battle__
+H Flying Dragon
+__battle__
+=======================
+__battle__
+Evening of month 3, day 14, in clearing Cliff 4
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+Elf
+Presses the END combat button.
+Elf
+Combat has ended.
+host
+Elf loses Guard 1 as a hireling (term is up).
+host
+Elf loses Guard 2 as a hireling (term is up).
+host
+========================================
+host

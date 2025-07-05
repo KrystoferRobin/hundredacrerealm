@@ -1,0 +1,552 @@
+{
+  "lastUpdated": "2025-07-04T22:36:55.863Z",
+  "totalSessions": 8,
+  "characters": {
+    "White Knight": {
+      "totalPlays": 4,
+      "totalDeaths": 2,
+      "players": [
+        "Krystofer",
+        "GM"
+      ],
+      "games": [
+        {
+          "sessionId": "6-13-25-WK-001-Death_2025-07-04T21-06-38_mdkp1bjf",
+          "sessionName": "6-13-25-WK-001-Death",
+          "sessionTitle": "6-13-25-WK-001-Death",
+          "player": "Krystofer",
+          "score": -100,
+          "isDead": 1,
+          "dayCount": 0
+        },
+        {
+          "sessionId": "6-13-25-WK-001_2025-07-04T21-06-43_rqvw5ybf",
+          "sessionName": "6-13-25-WK-001",
+          "sessionTitle": "6-13-25-WK-001",
+          "player": "Krystofer",
+          "score": -46,
+          "isDead": 0,
+          "dayCount": 0
+        },
+        {
+          "sessionId": "6-14-25-4Questing_2025-07-04T21-06-47_rbktfyc4",
+          "sessionName": "6-14-25-4Questing",
+          "sessionTitle": "6-14-25-4Questing",
+          "player": "Krystofer",
+          "score": -100,
+          "isDead": 1,
+          "dayCount": 0
+        },
+        {
+          "sessionId": "6-17-25-5man_2025-07-04T21-07-08_c1gr9u95",
+          "sessionName": "6-17-25-5man",
+          "sessionTitle": "6-17-25-5man",
+          "player": "GM",
+          "score": -151,
+          "isDead": 0,
+          "dayCount": 0
+        }
+      ],
+      "killers": {},
+      "killed": {}
+    },
+    "Amazon": {
+      "totalPlays": 2,
+      "totalDeaths": 0,
+      "players": [
+        "Krystofer",
+        "GM"
+      ],
+      "games": [
+        {
+          "sessionId": "6-14-25-4Questing_2025-07-04T21-06-47_rbktfyc4",
+          "sessionName": "6-14-25-4Questing",
+          "sessionTitle": "6-14-25-4Questing",
+          "player": "Krystofer",
+          "score": -3,
+          "isDead": 0,
+          "dayCount": 0
+        },
+        {
+          "sessionId": "6-17-25-5man_2025-07-04T21-07-08_c1gr9u95",
+          "sessionName": "6-17-25-5man",
+          "sessionTitle": "6-17-25-5man",
+          "player": "GM",
+          "score": -207,
+          "isDead": 0,
+          "dayCount": 0
+        }
+      ],
+      "killers": {},
+      "killed": {}
+    },
+    "Woods Girl": {
+      "totalPlays": 4,
+      "totalDeaths": 0,
+      "players": [
+        "Krystofer",
+        "GM"
+      ],
+      "games": [
+        {
+          "sessionId": "6-14-25-4Questing_2025-07-04T21-06-47_rbktfyc4",
+          "sessionName": "6-14-25-4Questing",
+          "sessionTitle": "6-14-25-4Questing",
+          "player": "Krystofer",
+          "score": -1,
+          "isDead": 0,
+          "dayCount": 0
+        },
+        {
+          "sessionId": "6-17-25-5man_2025-07-04T21-07-08_c1gr9u95",
+          "sessionName": "6-17-25-5man",
+          "sessionTitle": "6-17-25-5man",
+          "player": "GM",
+          "score": -165,
+          "isDead": 0,
+          "dayCount": 0
+        },
+        {
+          "sessionId": "learning-woodsgirl-2_2025-07-04T21-07-22_cbfjcgoj",
+          "sessionName": "learning-woodsgirl-2",
+          "sessionTitle": "learning-woodsgirl-2",
+          "player": "Krystofer",
+          "score": -29,
+          "isDead": 0,
+          "dayCount": 0
+        },
+        {
+          "sessionId": "learning-woodsgirl-win_2025-07-04T21-07-27_ydeou7jk",
+          "sessionName": "learning-woodsgirl-win",
+          "sessionTitle": "learning-woodsgirl-win",
+          "player": "Krystofer",
+          "score": 0,
+          "isDead": 0,
+          "dayCount": 0
+        }
+      ],
+      "killers": {},
+      "killed": {}
+    },
+    "Berserker": {
+      "totalPlays": 2,
+      "totalDeaths": 1,
+      "players": [
+        "Krystofer",
+        "GM"
+      ],
+      "games": [
+        {
+          "sessionId": "6-14-25-4Questing_2025-07-04T21-06-47_rbktfyc4",
+          "sessionName": "6-14-25-4Questing",
+          "sessionTitle": "6-14-25-4Questing",
+          "player": "Krystofer",
+          "score": -100,
+          "isDead": 1,
+          "dayCount": 0
+        },
+        {
+          "sessionId": "6-17-25-5man_2025-07-04T21-07-08_c1gr9u95",
+          "sessionName": "6-17-25-5man",
+          "sessionTitle": "6-17-25-5man",
+          "player": "GM",
+          "score": -232,
+          "isDead": 0,
+          "dayCount": 0
+        }
+      ],
+      "killers": {},
+      "killed": {}
+    },
+    "Pilgrim": {
+      "totalPlays": 1,
+      "totalDeaths": 0,
+      "players": [
+        "GM"
+      ],
+      "games": [
+        {
+          "sessionId": "6-17-25-5man_2025-07-04T21-07-08_c1gr9u95",
+          "sessionName": "6-17-25-5man",
+          "sessionTitle": "6-17-25-5man",
+          "player": "GM",
+          "score": -139,
+          "isDead": 0,
+          "dayCount": 0
+        }
+      ],
+      "killers": {},
+      "killed": {}
+    },
+    "Elf": {
+      "totalPlays": 1,
+      "totalDeaths": 0,
+      "players": [
+        "Krystofer"
+      ],
+      "games": [
+        {
+          "sessionId": "elf-screwed_2025-07-04T21-07-12_95gqct4f",
+          "sessionName": "elf-screwed",
+          "sessionTitle": "elf-screwed",
+          "player": "Krystofer",
+          "score": -11,
+          "isDead": 0,
+          "dayCount": 0
+        }
+      ],
+      "killers": {},
+      "killed": {}
+    },
+    "Wizard": {
+      "totalPlays": 1,
+      "totalDeaths": 0,
+      "players": [
+        "Krystofer"
+      ],
+      "games": [
+        {
+          "sessionId": "learning-wiz-2_2025-07-04T21-07-17_t771c08a",
+          "sessionName": "learning-wiz-2",
+          "sessionTitle": "learning-wiz-2",
+          "player": "Krystofer",
+          "score": -4,
+          "isDead": 0,
+          "dayCount": 0
+        }
+      ],
+      "killers": {},
+      "killed": {}
+    }
+  },
+  "treasures": {
+    "found": {},
+    "sold": {},
+    "byCharacter": {
+      "White Knight": {
+        "found": {},
+        "sold": {}
+      },
+      "Woods Girl": {
+        "found": {},
+        "sold": {}
+      },
+      "Berserker": {
+        "found": {},
+        "sold": {}
+      },
+      "Amazon": {
+        "found": {},
+        "sold": {}
+      },
+      "Pilgrim": {
+        "found": {},
+        "sold": {}
+      },
+      "Elf": {
+        "found": {},
+        "sold": {}
+      },
+      "Wizard": {
+        "found": {},
+        "sold": {}
+      }
+    }
+  },
+  "monsters": {
+    "spawns": {},
+    "killed": {
+      "Order 3": 2,
+      "Ghost": 2,
+      "Ogre": 1,
+      "Imp": 3,
+      "Short Swordsman": 1,
+      "Patrol HQ": 3,
+      "Patrol 2": 3,
+      "Winged Demon": 1,
+      "Octopus": 1,
+      "H Spider": 3,
+      "H Dragon": 2,
+      "Guard HQ": 2,
+      "T Dragon": 2,
+      "Patrol 1": 1,
+      "H Serpent": 2,
+      "Giant Bat": 5,
+      "Sword Goblin": 6,
+      "Lancer 2": 1,
+      "Giant": 1,
+      "Spear Goblin": 6
+    },
+    "killedByCharacter": {},
+    "spawnLocations": {}
+  },
+  "sessions": [
+    {
+      "sessionId": "6-13-25-WK-001-Death_2025-07-04T21-06-38_mdkp1bjf",
+      "sessionName": "6-13-25-WK-001-Death",
+      "sessionTitle": "6-13-25-WK-001-Death",
+      "dayCount": 0,
+      "characters": {
+        "White Knight": "Krystofer"
+      },
+      "scores": {
+        "White Knight": {
+          "totalScore": -100,
+          "isDead": 1
+        }
+      }
+    },
+    {
+      "sessionId": "6-13-25-WK-001_2025-07-04T21-06-43_rqvw5ybf",
+      "sessionName": "6-13-25-WK-001",
+      "sessionTitle": "6-13-25-WK-001",
+      "dayCount": 0,
+      "characters": {
+        "White Knight": "Krystofer"
+      },
+      "scores": {
+        "White Knight": {
+          "totalScore": -46,
+          "isDead": 0
+        }
+      }
+    },
+    {
+      "sessionId": "6-14-25-4Questing_2025-07-04T21-06-47_rbktfyc4",
+      "sessionName": "6-14-25-4Questing",
+      "sessionTitle": "6-14-25-4Questing",
+      "dayCount": 0,
+      "characters": {
+        "Amazon": "Krystofer",
+        "White Knight": "Krystofer",
+        "Woods Girl": "Krystofer",
+        "Berserker": "Krystofer"
+      },
+      "scores": {
+        "Amazon": {
+          "totalScore": -3,
+          "isDead": 0
+        },
+        "White Knight": {
+          "totalScore": -100,
+          "isDead": 1
+        },
+        "Woods Girl": {
+          "totalScore": -1,
+          "isDead": 0
+        },
+        "Berserker": {
+          "totalScore": -100,
+          "isDead": 1
+        }
+      }
+    },
+    {
+      "sessionId": "6-17-25-5man_2025-07-04T21-07-08_c1gr9u95",
+      "sessionName": "6-17-25-5man",
+      "sessionTitle": "6-17-25-5man",
+      "dayCount": 0,
+      "characters": {
+        "White Knight": "GM",
+        "Amazon": "GM",
+        "Berserker": "GM",
+        "Pilgrim": "GM",
+        "Woods Girl": "GM"
+      },
+      "scores": {
+        "White Knight": {
+          "totalScore": -151,
+          "isDead": 0
+        },
+        "Amazon": {
+          "totalScore": -207,
+          "isDead": 0
+        },
+        "Berserker": {
+          "totalScore": -232,
+          "isDead": 0
+        },
+        "Pilgrim": {
+          "totalScore": -139,
+          "isDead": 0
+        },
+        "Woods Girl": {
+          "totalScore": -165,
+          "isDead": 0
+        }
+      }
+    },
+    {
+      "sessionId": "elf-screwed_2025-07-04T21-07-12_95gqct4f",
+      "sessionName": "elf-screwed",
+      "sessionTitle": "elf-screwed",
+      "dayCount": 0,
+      "characters": {
+        "Elf": "Krystofer"
+      },
+      "scores": {
+        "Elf": {
+          "totalScore": -11,
+          "isDead": 0
+        }
+      }
+    },
+    {
+      "sessionId": "learning-wiz-2_2025-07-04T21-07-17_t771c08a",
+      "sessionName": "learning-wiz-2",
+      "sessionTitle": "learning-wiz-2",
+      "dayCount": 0,
+      "characters": {
+        "Wizard": "Krystofer"
+      },
+      "scores": {
+        "Wizard": {
+          "totalScore": -4,
+          "isDead": 0
+        }
+      }
+    },
+    {
+      "sessionId": "learning-woodsgirl-2_2025-07-04T21-07-22_cbfjcgoj",
+      "sessionName": "learning-woodsgirl-2",
+      "sessionTitle": "learning-woodsgirl-2",
+      "dayCount": 0,
+      "characters": {
+        "Woods Girl": "Krystofer"
+      },
+      "scores": {
+        "Woods Girl": {
+          "totalScore": -29,
+          "isDead": 0
+        }
+      }
+    },
+    {
+      "sessionId": "learning-woodsgirl-win_2025-07-04T21-07-27_ydeou7jk",
+      "sessionName": "learning-woodsgirl-win",
+      "sessionTitle": "learning-woodsgirl-win",
+      "dayCount": 0,
+      "characters": {
+        "Woods Girl": "Krystofer"
+      },
+      "scores": {
+        "Woods Girl": {
+          "totalScore": 0,
+          "isDead": 0
+        }
+      }
+    }
+  ],
+  "topStats": {
+    "mostPlayedCharacters": [
+      {
+        "name": "White Knight",
+        "plays": 4
+      },
+      {
+        "name": "Woods Girl",
+        "plays": 4
+      },
+      {
+        "name": "Amazon",
+        "plays": 2
+      },
+      {
+        "name": "Berserker",
+        "plays": 2
+      },
+      {
+        "name": "Pilgrim",
+        "plays": 1
+      },
+      {
+        "name": "Elf",
+        "plays": 1
+      },
+      {
+        "name": "Wizard",
+        "plays": 1
+      }
+    ],
+    "mostDeadlyCharacters": [
+      {
+        "name": "White Knight",
+        "deaths": 2
+      },
+      {
+        "name": "Berserker",
+        "deaths": 1
+      },
+      {
+        "name": "Amazon",
+        "deaths": 0
+      },
+      {
+        "name": "Woods Girl",
+        "deaths": 0
+      },
+      {
+        "name": "Pilgrim",
+        "deaths": 0
+      },
+      {
+        "name": "Elf",
+        "deaths": 0
+      },
+      {
+        "name": "Wizard",
+        "deaths": 0
+      }
+    ],
+    "mostFoundTreasures": [],
+    "mostSpawnedMonsters": [],
+    "mostKilledMonsters": [
+      {
+        "name": "Sword Goblin",
+        "count": 6
+      },
+      {
+        "name": "Spear Goblin",
+        "count": 6
+      },
+      {
+        "name": "Giant Bat",
+        "count": 5
+      },
+      {
+        "name": "Imp",
+        "count": 3
+      },
+      {
+        "name": "Patrol HQ",
+        "count": 3
+      },
+      {
+        "name": "Patrol 2",
+        "count": 3
+      },
+      {
+        "name": "H Spider",
+        "count": 3
+      },
+      {
+        "name": "Order 3",
+        "count": 2
+      },
+      {
+        "name": "Ghost",
+        "count": 2
+      },
+      {
+        "name": "H Dragon",
+        "count": 2
+      }
+    ]
+  },
+  "headerStats": {
+    "totalGold": 124,
+    "totalGreatTreasures": 6,
+    "totalMonstersKilled": 48,
+    "totalCharactersKilled": 3
+  }
+}

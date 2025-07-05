@@ -4,6 +4,10 @@ import { useRef, useState, useEffect } from "react";
 import JSZip from "jszip";
 import { useRouter } from 'next/navigation';
 import Image from "next/image";
+import { usePathname } from 'next/navigation';
+import CastOfCharacters from '../components/CastOfCharacters';
+import CharacterDetail from '../components/CharacterDetail';
+import SessionPage from './session/[id]/page';
 
 // TypeScript interface for parsed character log
 interface CharacterLog {
@@ -134,7 +138,27 @@ export default function Home() {
   const [processingZips, setProcessingZips] = useState(false);
   const [processResult, setProcessResult] = useState<{ processed: any[]; errors: any[] } | null>(null);
   const [processError, setProcessError] = useState<string | null>(null);
+  const [hallOfFame, setHallOfFame] = useState<any>(null);
+  const [hallOfFameLoading, setHallOfFameLoading] = useState(true);
+  const [headerStats, setHeaderStats] = useState<any>(null);
+  const [selectedCharacter, setSelectedCharacter] = useState<string | null>(null);
+  const [hofSessionTitles, setHofSessionTitles] = useState<{ [sessionId: string]: { mainTitle: string; subtitle: string } }>({});
   const router = useRouter();
+
+  // Handle URL parameters for character navigation
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const page = urlParams.get('page');
+    const character = urlParams.get('character');
+    
+    if (page === 'characters' && character) {
+      setSelectedPage('characters');
+      setSelectedCharacter(character);
+      // Clear URL parameters after setting state
+      const newUrl = window.location.pathname;
+      window.history.replaceState({}, '', newUrl);
+    }
+  }, []);
 
   useEffect(() => {
     const fetchRecentSessions = async () => {
@@ -142,7 +166,7 @@ export default function Home() {
         const response = await fetch('/api/game-sessions');
         if (!response.ok) throw new Error('Failed to fetch recent sessions');
         const data = await response.json();
-        setRecentLogs(data.slice(0, 10)); // Only show the 10 most recent
+        setRecentLogs(data.slice(0, 5)); // Only show the 5 most recent
       } catch (err) {
         setError('Failed to load recent sessions.');
       } finally {
@@ -150,6 +174,53 @@ export default function Home() {
       }
     };
     fetchRecentSessions();
+  }, []);
+
+  // Handle messages from iframes
+  useEffect(() => {
+    const handleMessage = (event: MessageEvent) => {
+      if (event.data && event.data.type === 'navigate') {
+        if (event.data.url && event.data.url.startsWith('/characters/')) {
+          // Extract character name from URL
+          const name = decodeURIComponent(event.data.url.replace('/characters/', ''));
+          setSelectedCharacter(name);
+        } else {
+          router.push(event.data.url);
+        }
+      }
+    };
+
+    window.addEventListener('message', handleMessage);
+    return () => window.removeEventListener('message', handleMessage);
+  }, [router]);
+
+  useEffect(() => {
+    const fetchHallOfFame = async () => {
+      try {
+        const response = await fetch('/api/hall-of-fame');
+        if (!response.ok) throw new Error('Failed to fetch Hall of Fame data');
+        const data = await response.json();
+        setHallOfFame(data);
+      } catch (err) {
+        console.error('Failed to load Hall of Fame data:', err);
+      } finally {
+        setHallOfFameLoading(false);
+      }
+    };
+
+    const fetchHeaderStats = async () => {
+      try {
+        const response = await fetch('/api/stats');
+        if (!response.ok) throw new Error('Failed to fetch header stats');
+        const data = await response.json();
+        setHeaderStats(data.headerStats);
+      } catch (err) {
+        console.log('Failed to load header stats:', err);
+      }
+    };
+
+    fetchHallOfFame();
+    fetchHeaderStats();
   }, []);
 
   // Fetch turn counts for each session
@@ -847,6 +918,282 @@ export default function Home() {
     }
   }
 
+  // Fetch fancy session titles for Hall of Fame sessions
+  useEffect(() => {
+    if (!hallOfFame || !hallOfFame.highestScoringCharacter?.characters) return;
+    const sessionIds = Array.from(new Set(hallOfFame.highestScoringCharacter.characters.map((c: any) => String(c.bestSessionId))));
+    Promise.all(
+      sessionIds.map(async (id) => {
+        try {
+          const res = await fetch(`/api/session/${id}/session-titles`);
+          if (res.ok) {
+            const data = await res.json();
+            return [id, { mainTitle: data.mainTitle, subtitle: data.subtitle }];
+          }
+        } catch {}
+        return [id, null];
+      })
+    ).then(results => {
+      const titles: any = {};
+      results.forEach(([id, data]: [string, any]) => { if (data) titles[id] = data; });
+      setHofSessionTitles(titles);
+    });
+  }, [hallOfFame]);
+
+  // Render character page directly if selectedPage === 'characters'
+  if (selectedPage === 'characters') {
+    if (selectedCharacter) {
+      return (
+        <div className="min-h-screen bg-[#f6ecd6] flex flex-col font-serif">
+          {/* Header */}
+          <header className="bg-[#6b3e26] text-[#f6ecd6] py-5 shadow-lg border-b-4 border-[#bfa76a] relative">
+            {/* Decorative top border */}
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#bfa76a] via-[#fff8e1] to-[#bfa76a]"></div>
+            
+            <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between px-4">
+              <div className="text-center sm:text-left">
+                <h1 className="text-3xl md:text-4xl font-bold tracking-wide drop-shadow-lg font-serif text-[#fff8e1] relative">
+                  <span className="relative z-10">Hundred Acre Realm</span>
+                  <div className="absolute inset-0 bg-[#bfa76a] opacity-20 blur-sm rounded-lg"></div>
+                </h1>
+                <p className="text-sm text-[#bfa76a] mt-1 font-serif italic">
+                  {headerStats ? (
+                    <>
+                      {headerStats.totalGold} Gold Pillaged - {headerStats.totalGreatTreasures} Great Treasures Looted - {headerStats.totalMonstersKilled} Beasts Slain - {headerStats.totalCharactersKilled} Heroes Laid To Rest
+                    </>
+                  ) : (
+                    "A Realm of Magic & Adventure"
+                  )}
+                </p>
+              </div>
+              
+              <nav className="mt-4 sm:mt-0 flex gap-6 text-lg font-semibold">
+                <a 
+                  href="#" 
+                  className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
+                  onClick={e => { e.preventDefault(); setSelectedPage('home'); setSelectedLogUrl(null); }}
+                >
+                  Home
+                </a>
+                <a 
+                  href="#" 
+                  className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
+                  onClick={e => { e.preventDefault(); setSelectedPage('characters'); setSelectedLogUrl(null); }}
+                >
+                  Cast of Characters
+                </a>
+                <a 
+                  href="#" 
+                  className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
+                  onClick={e => { e.preventDefault(); setSelectedPage('monsters'); setSelectedLogUrl(null); }}
+                >
+                  Monsters
+                </a>
+                <a 
+                  href="#" 
+                  className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
+                  onClick={e => { e.preventDefault(); setSelectedPage('natives'); setSelectedLogUrl(null); }}
+                >
+                  Natives
+                </a>
+              </nav>
+            </div>
+          </header>
+
+          {/* Main Content */}
+          <main className="flex-1 flex">
+            <CharacterDetail
+              characterName={selectedCharacter}
+              setSelectedCharacter={setSelectedCharacter}
+              setSelectedPage={setSelectedPage}
+            />
+          </main>
+
+          {/* Footer */}
+          <footer className="bg-[#6b3e26] text-[#f6ecd6] py-3 text-sm font-serif flex items-center justify-between px-4 relative border-t-2 border-[#bfa76a]">
+            {/* Far left: Folder icon button for processing local zips */}
+            <div className="flex items-center">
+              <button
+                className="p-2 rounded hover:bg-[#bfa76a] focus:outline-none focus:ring-2 focus:ring-[#bfa76a] transition-colors"
+                title="Process local zip uploads"
+                aria-label="Process local zip uploads"
+                onClick={handleImportSessions}
+                disabled={processingZips}
+              >
+                <FolderIcon className="w-6 h-6 text-[#fff8e1]" />
+              </button>
+              {processingZips && (
+                <span className="ml-2 text-xs text-[#fff8e1]">Processing...</span>
+              )}
+              {processResult && typeof processResult === 'object' && 'message' in processResult && (processResult as any).message && String((processResult as any).message)}
+              {processResult && typeof processResult === 'object' && 'error' in processResult && (processResult as any).error && String((processResult as any).error)}
+            </div>
+            
+            {/* Center: Credits */}
+            <div className="flex-1 text-center flex items-center justify-center space-x-4">
+              <span className="text-[#fff8e1] font-semibold">Inspired by Karim's Redesign - 100% AI coded with Cursor</span>
+              <div className="flex items-center space-x-2">
+                <a 
+                  href="https://github.com/krystoferrobin/hundredacrerealm" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#fff8e1] hover:text-[#bfa76a] transition-colors duration-200"
+                  title="GitHub Repository"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.239 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+                <a 
+                  href="https://cursor.sh" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#fff8e1] hover:text-[#bfa76a] transition-colors duration-200"
+                  title="Cursor AI"
+                >
+                  <img 
+                    src="/images/icons/cursor-app-icon.webp" 
+                    alt="Cursor AI" 
+                    className="w-5 h-5 object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+            
+            {/* Far right: Sun icon */}
+            <div className="flex items-center">
+              <SunIcon className="w-6 h-6 text-[#fff8e1]" />
+            </div>
+          </footer>
+        </div>
+      );
+    } else {
+      return (
+        <div className="min-h-screen bg-[#f6ecd6] flex flex-col font-serif">
+          {/* Header */}
+          <header className="bg-[#6b3e26] text-[#f6ecd6] py-5 shadow-lg border-b-4 border-[#bfa76a] relative">
+            {/* Decorative top border */}
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#bfa76a] via-[#fff8e1] to-[#bfa76a]"></div>
+            
+            <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between px-4">
+              <div className="text-center sm:text-left">
+                <h1 className="text-3xl md:text-4xl font-bold tracking-wide drop-shadow-lg font-serif text-[#fff8e1] relative">
+                  <span className="relative z-10">Hundred Acre Realm</span>
+                  <div className="absolute inset-0 bg-[#bfa76a] opacity-20 blur-sm rounded-lg"></div>
+                </h1>
+                <p className="text-sm text-[#bfa76a] mt-1 font-serif italic">
+                  {headerStats ? (
+                    <>
+                      {headerStats.totalGold} Gold Pillaged - {headerStats.totalGreatTreasures} Great Treasures Looted - {headerStats.totalMonstersKilled} Beasts Slain - {headerStats.totalCharactersKilled} Heroes Laid To Rest
+                    </>
+                  ) : (
+                    "A Realm of Magic & Adventure"
+                  )}
+                </p>
+              </div>
+              
+              <nav className="mt-4 sm:mt-0 flex gap-6 text-lg font-semibold">
+                <a 
+                  href="#" 
+                  className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
+                  onClick={e => { e.preventDefault(); setSelectedPage('home'); setSelectedLogUrl(null); }}
+                >
+                  Home
+                </a>
+                <a 
+                  href="#" 
+                  className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
+                  onClick={e => { e.preventDefault(); setSelectedPage('characters'); setSelectedLogUrl(null); }}
+                >
+                  Cast of Characters
+                </a>
+                <a 
+                  href="#" 
+                  className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
+                  onClick={e => { e.preventDefault(); setSelectedPage('monsters'); setSelectedLogUrl(null); }}
+                >
+                  Monsters
+                </a>
+                <a 
+                  href="#" 
+                  className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
+                  onClick={e => { e.preventDefault(); setSelectedPage('natives'); setSelectedLogUrl(null); }}
+                >
+                  Natives
+                </a>
+              </nav>
+            </div>
+          </header>
+
+          {/* Main Content */}
+          <main className="flex-1 flex">
+            <CastOfCharacters
+              setSelectedCharacter={setSelectedCharacter}
+              setSelectedPage={setSelectedPage}
+            />
+          </main>
+
+          {/* Footer */}
+          <footer className="bg-[#6b3e26] text-[#f6ecd6] py-3 text-sm font-serif flex items-center justify-between px-4 relative border-t-2 border-[#bfa76a]">
+            {/* Far left: Folder icon button for processing local zips */}
+            <div className="flex items-center">
+              <button
+                className="p-2 rounded hover:bg-[#bfa76a] focus:outline-none focus:ring-2 focus:ring-[#bfa76a] transition-colors"
+                title="Process local zip uploads"
+                aria-label="Process local zip uploads"
+                onClick={handleImportSessions}
+                disabled={processingZips}
+              >
+                <FolderIcon className="w-6 h-6 text-[#fff8e1]" />
+              </button>
+              {processingZips && (
+                <span className="ml-2 text-xs text-[#fff8e1]">Processing...</span>
+              )}
+              {processResult && typeof processResult === 'object' && 'message' in processResult && (processResult as any).message && String((processResult as any).message)}
+              {processResult && typeof processResult === 'object' && 'error' in processResult && (processResult as any).error && String((processResult as any).error)}
+            </div>
+            
+            {/* Center: Credits */}
+            <div className="flex-1 text-center flex items-center justify-center space-x-4">
+              <span className="text-[#fff8e1] font-semibold">Inspired by Karim's Redesign - 100% AI coded with Cursor</span>
+              <div className="flex items-center space-x-2">
+                <a 
+                  href="https://github.com/krystoferrobin/hundredacrerealm" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#fff8e1] hover:text-[#bfa76a] transition-colors duration-200"
+                  title="GitHub Repository"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.239 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+                <a 
+                  href="https://cursor.sh" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#fff8e1] hover:text-[#bfa76a] transition-colors duration-200"
+                  title="Cursor AI"
+                >
+                  <img 
+                    src="/images/icons/cursor-app-icon.webp" 
+                    alt="Cursor AI" 
+                    className="w-5 h-5 object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+            
+            {/* Far right: Sun icon */}
+            <div className="flex items-center">
+              <SunIcon className="w-6 h-6 text-[#fff8e1]" />
+            </div>
+          </footer>
+        </div>
+      );
+    }
+  }
+
   return (
     <div className="min-h-screen bg-[#f6ecd6] flex flex-col font-serif">
       {/* Header */}
@@ -860,7 +1207,15 @@ export default function Home() {
               <span className="relative z-10">Hundred Acre Realm</span>
               <div className="absolute inset-0 bg-[#bfa76a] opacity-20 blur-sm rounded-lg"></div>
             </h1>
-            <p className="text-sm text-[#bfa76a] mt-1 font-serif italic">A Realm of Magic & Adventure</p>
+            <p className="text-sm text-[#bfa76a] mt-1 font-serif italic">
+              {headerStats ? (
+                <>
+                  {headerStats.totalGold} Gold Pillaged - {headerStats.totalGreatTreasures} Great Treasures Looted - {headerStats.totalMonstersKilled} Beasts Slain - {headerStats.totalCharactersKilled} Heroes Laid To Rest
+                </>
+              ) : (
+                "A Realm of Magic & Adventure"
+              )}
+            </p>
           </div>
           
           <nav className="mt-4 sm:mt-0 flex gap-6 text-lg font-semibold">
@@ -904,8 +1259,6 @@ export default function Home() {
             <button onClick={() => { setSelectedLogUrl(null); setSelectedPage('home'); }} className="mb-4 px-4 py-2 bg-[#bfa76a] text-[#fff8e1] rounded shadow font-bold">Close Log</button>
             <iframe src={selectedLogUrl} className="w-full h-[70vh] border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Game Log" />
           </div>
-        ) : selectedPage === 'characters' ? (
-          <iframe src="/characters" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Characters" />
         ) : selectedPage === 'monsters' ? (
           <iframe src="/monsters" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Monsters" />
         ) : selectedPage === 'natives' ? (
@@ -914,8 +1267,12 @@ export default function Home() {
           <iframe src="/games" className="flex-1 w-full h-[70vh] border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Game Logs" />
         ) : selectedPage === 'game-logs' ? (
           <iframe src="/game-logs" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Game Logs" />
-        ) : selectedPage === 'session' ? (
-          <iframe src={`/session/${selectedSessionId}`} className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Game Session" />
+        ) : selectedPage === 'session' && typeof selectedSessionId === 'string' ? (
+          <SessionPage 
+            sessionId={selectedSessionId}
+            setSelectedPage={setSelectedPage as (page: 'home' | 'characters' | 'monsters' | 'natives' | 'log' | 'games' | 'map' | 'game-logs' | 'session') => void} 
+            setSelectedCharacter={setSelectedCharacter as (character: string | null) => void} 
+          />
         ) : selectedPage === 'map' ? (
           <div className="flex-1 flex flex-col items-center justify-center py-8 px-4">
             <button onClick={() => { setSelectedMapSession(null); setSelectedPage('home'); }} className="mb-4 px-4 py-2 bg-[#bfa76a] text-[#fff8e1] rounded shadow font-bold">Close Map</button>
@@ -990,6 +1347,195 @@ export default function Home() {
                   </button>
                 </div>
               </div>
+
+              {/* Hall of Fame Section */}
+              <div className="mt-8 bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-6 shadow-lg relative"
+                   style={{
+                     boxShadow: '0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8)',
+                     background: 'linear-gradient(135deg, #fff8e1 0%, #f6ecd6 100%)'
+                   }}>
+                {/* Decorative corner elements */}
+                <div className="absolute top-1 left-1 w-3 h-3 border-l-2 border-t-2 border-[#6b3e26] rounded-tl-md"></div>
+                <div className="absolute top-1 right-1 w-3 h-3 border-r-2 border-t-2 border-[#6b3e26] rounded-tr-md"></div>
+                <div className="absolute bottom-1 left-1 w-3 h-3 border-l-2 border-b-2 border-[#6b3e26] rounded-bl-md"></div>
+                <div className="absolute bottom-1 right-1 w-3 h-3 border-r-2 border-b-2 border-[#6b3e26] rounded-br-md"></div>
+                
+                <h2 className="text-xl font-bold text-[#6b3e26] mb-4 font-serif relative text-center">
+                  <span className="relative z-10">🏆 Hall of Fame 🏆</span>
+                  <div className="absolute inset-0 bg-[#bfa76a] opacity-10 blur-sm rounded-lg"></div>
+                </h2>
+                
+                {hallOfFameLoading ? (
+                  <div className="text-center text-[#4b3a1e] font-serif italic">Loading Hall of Fame...</div>
+                ) : hallOfFame ? (
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {/* Highest Scoring Character */}
+                    <div className="bg-[#f6ecd6] border border-[#bfa76a] rounded-lg p-4">
+                      <h3 className="text-lg font-bold text-[#6b3e26] mb-2 font-serif flex items-center">
+                        👑 Highest Scoring Character
+                      </h3>
+                      {hallOfFame.highestScoringCharacter.characters.length > 0 ? (
+                        <div>
+                          {hallOfFame.highestScoringCharacter.characters.map((char: { name: string; characterSlug: string; bestScore: number; bestSessionId: string; bestSessionTitle: string; players: string[] }, index) => (
+                            <div key={index} className="mb-3">
+                              <div className="flex items-center space-x-3 mb-2">
+                                <div className="w-8 h-8 bg-[#bfa76a] rounded-full flex items-center justify-center text-[#6b3e26] font-bold text-sm">
+                                  {char.name.charAt(0)}
+                                </div>
+                                <div>
+                                  <button
+                                    onClick={() => {
+                                      setSelectedCharacter(char.characterSlug);
+                                      setSelectedPage('characters');
+                                    }}
+                                    className="font-semibold text-[#6b3e26] font-serif hover:text-[#bfa76a] hover:underline cursor-pointer transition-colors duration-200"
+                                  >
+                                    {char.name} 👑
+                                  </button>
+                                  <div className="text-sm text-[#4b3a1e] font-serif italic">
+                                    ({char.players.join(', ')})
+                                  </div>
+                                  <div className="text-xs text-[#6b3e26] font-serif">
+                                    Score: <span className={
+                                      typeof char.bestScore === 'number' 
+                                        ? char.bestScore < 0 
+                                          ? 'text-red-600' 
+                                          : char.bestScore > 0 
+                                            ? 'text-green-600' 
+                                            : 'text-black'
+                                        : 'text-black'
+                                    }>{char.bestScore}</span>
+                                  </div>
+                                </div>
+                              </div>
+                              {String(char.bestSessionId) in hofSessionTitles && (
+                                <div className="ml-11">
+                                  <button
+                                    onClick={() => {
+                                      setSelectedSessionId(char.bestSessionId);
+                                      setSelectedPage('session');
+                                    }}
+                                    className="text-xs text-[#6b3e26] hover:text-[#bfa76a] hover:underline cursor-pointer font-serif transition-colors duration-200"
+                                  >
+                                    View Game: {hofSessionTitles[String(char.bestSessionId)]?.mainTitle}
+                                  </button>
+                                </div>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <div className="text-sm text-[#4b3a1e] font-serif italic">No scoring data available</div>
+                      )}
+                    </div>
+
+                    {/* Most Played Character */}
+                    <div className="bg-[#f6ecd6] border border-[#bfa76a] rounded-lg p-4">
+                      <h3 className="text-lg font-bold text-[#6b3e26] mb-2 font-serif flex items-center">
+                        🎮 Most Played Character
+                      </h3>
+                      {hallOfFame.mostPlayedCharacter.characters.length > 0 ? (
+                        <div>
+                          {hallOfFame.mostPlayedCharacter.characters.map((char: { name: string; characterSlug: string; bestScore: number; bestSessionId: string; bestSessionTitle: string; players: string[] }, index) => (
+                            <div key={index} className="mb-3">
+                              <div className="flex items-center space-x-3 mb-2">
+                                <div className="w-8 h-8 bg-[#bfa76a] rounded-full flex items-center justify-center text-[#6b3e26] font-bold text-sm">
+                                  {char.name.charAt(0)}
+                                </div>
+                                <div>
+                                  <button
+                                    onClick={() => {
+                                      setSelectedCharacter(char.characterSlug);
+                                      setSelectedPage('characters');
+                                    }}
+                                    className="font-semibold text-[#6b3e26] font-serif hover:text-[#bfa76a] hover:underline cursor-pointer transition-colors duration-200"
+                                  >
+                                    {char.name}
+                                  </button>
+                                  <div className="text-sm text-[#4b3a1e] font-serif italic">
+                                    {hallOfFame.mostPlayedCharacter.plays} games played
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <div className="text-sm text-[#4b3a1e] font-serif italic">No play data available</div>
+                      )}
+                    </div>
+
+                    {/* Player with Highest Scoring Game */}
+                    <div className="bg-[#f6ecd6] border border-[#bfa76a] rounded-lg p-4">
+                      <h3 className="text-lg font-bold text-[#6b3e26] mb-2 font-serif flex items-center">
+                        🏅 Player with Highest Scoring Game
+                      </h3>
+                      {hallOfFame.highestScoringPlayer.players.length > 0 ? (
+                        <div>
+                          {hallOfFame.highestScoringPlayer.players.map((player: { player: string; characterSlug: string; sessionId: string; bestScore: number; mostPlayedCharacter: { character: string; characterSlug: string; count: number }; }, index) => (
+                            <div key={index} className="mb-3">
+                              <div className="flex items-center space-x-3 mb-2">
+                                <div className="w-8 h-8 bg-[#bfa76a] rounded-full flex items-center justify-center text-[#6b3e26] font-bold text-sm">
+                                  {player.player.charAt(0)}
+                                </div>
+                                <div>
+                                  <span className="font-semibold text-[#6b3e26] font-serif">
+                                    {player.player}
+                                  </span>
+                                  <div className="text-sm text-[#4b3a1e] font-serif">
+                                    as <button
+                                      onClick={() => {
+                                        setSelectedCharacter(player.characterSlug);
+                                        setSelectedPage('characters');
+                                      }}
+                                      className="hover:text-[#bfa76a] hover:underline cursor-pointer transition-colors duration-200"
+                                    >{player.characterSlug}</button> in 
+                                    <button
+                                      onClick={() => {
+                                        setSelectedSessionId(player.sessionId);
+                                        setSelectedPage('session');
+                                      }}
+                                      className="hover:text-[#bfa76a] hover:underline cursor-pointer transition-colors duration-200"
+                                    >{hofSessionTitles[String(player.sessionId)]?.mainTitle}</button>
+                                  </div>
+                                  <div className="text-xs text-[#6b3e26] font-serif">
+                                    Score: <span className={
+                                      typeof player.bestScore === 'number' 
+                                        ? player.bestScore < 0 
+                                          ? 'text-red-600' 
+                                          : player.bestScore > 0 
+                                            ? 'text-green-600' 
+                                            : 'text-black'
+                                        : 'text-black'
+                                    }>{player.bestScore}</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="ml-11 space-y-1">
+                                {player.mostPlayedCharacter && (
+                                  <div className="text-sm text-[#4b3a1e] font-serif italic">
+                                    Most played: <button
+                                      onClick={() => {
+                                        setSelectedCharacter(player.mostPlayedCharacter.characterSlug);
+                                        setSelectedPage('characters');
+                                      }}
+                                      className="hover:text-[#bfa76a] hover:underline cursor-pointer transition-colors duration-200"
+                                    >{player.mostPlayedCharacter.character}</button> ({player.mostPlayedCharacter.count} times)
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <div className="text-sm text-[#4b3a1e] font-serif italic">No player data available</div>
+                      )}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="text-center text-[#4b3a1e] font-serif italic">Failed to load Hall of Fame data</div>
+                )}
+              </div>
             </section>
 
             {/* Right side - Recent Games */}
@@ -1035,7 +1581,7 @@ export default function Home() {
                         <div className="flex justify-between items-center mt-1">
                           <div className="text-xs text-[#4b3a1e] text-left font-serif flex items-center space-x-3">
                             <span className="flex items-center">
-                              {session.characters} 👥
+                              {session.characters || 0} 👥
                             </span>
                             <span className="flex items-center">
                               {session.days} 📅
@@ -1082,15 +1628,41 @@ export default function Home() {
         </div>
         
         {/* Center: Credits */}
-        <div className="flex-1 text-center">
-          <span className="text-[#fff8e1] font-semibold">Inspired by Karim's Magic Realm redesign. Not affiliated with Avalon Hill.</span>
+        <div className="flex-1 text-center flex items-center justify-center space-x-4">
+          <span className="text-[#fff8e1] font-semibold">Inspired by Karim's Redesign - 100% AI coded with Cursor</span>
+          <div className="flex items-center space-x-2">
+            <a 
+              href="https://github.com/krystoferrobin/hundredacrerealm" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[#fff8e1] hover:text-[#bfa76a] transition-colors duration-200"
+              title="GitHub Repository"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.239 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a 
+            href="https://cursor.sh" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-[#fff8e1] hover:text-[#bfa76a] transition-colors duration-200"
+            title="Cursor AI"
+          >
+            <img 
+              src="/images/icons/cursor-app-icon.webp" 
+              alt="Cursor AI" 
+              className="w-5 h-5 object-contain"
+            />
+          </a>
         </div>
-        
-        {/* Far right: Sun icon */}
-        <div className="flex items-center">
-          <SunIcon className="w-6 h-6 text-[#fff8e1]" />
-        </div>
-      </footer>
-    </div>
-  );
+      </div>
+      
+      {/* Far right: Sun icon */}
+      <div className="flex items-center">
+        <SunIcon className="w-6 h-6 text-[#fff8e1]" />
+      </div>
+    </footer>
+  </div>
+);
 }

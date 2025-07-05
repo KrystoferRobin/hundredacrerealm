@@ -1,0 +1,50 @@
+Month 2, Day 11
+host
+========================================
+host
+Monster Die roll is Rolled 6.
+Woods Girl
+Starts turn: Caves 2
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Ledges 2
+Woods Girl
+Reveals: Patter 2
+Woods Girl
+Reveals: Bones M
+host
+Giant Bat is added to Ledges, clearing 2
+host
+Giant Bat blocks the Woods Girl
+__battle__
+Battle resolving at Ledges 2:
+__battle__
+GROUP 1
+__battle__
+Woods Girl
+__battle__
+GROUP 2
+__battle__
+Giant Bat
+__battle__
+=======================
+__battle__
+Evening of month 2, day 11, in clearing Ledges 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Woods Girl
+Ran away!
+host
+========================================
+host

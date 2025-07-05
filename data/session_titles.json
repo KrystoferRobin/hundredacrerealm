@@ -1,9 +1,100 @@
 {
-  "5man": {
-    "mainTitle": "Saga Of The Borderland",
-    "subtitle": "Pilgrim's Disaster — A Tale Of Hardship And Loss In The Borderland",
+  "3man-done-dwarf-win_2025-07-03T06-57-46_wnntsc20": {
+    "mainTitle": "Elf's Enchanted Caves",
+    "subtitle": "Dwarf's Wanderings — A Story Of Survival In The Caves",
+    "characters": 3,
+    "days": 19,
+    "battles": 43
+  },
+  "5man_2025-07-03T06-57-50_cbeavf97": {
+    "mainTitle": "The Fabled Vault",
+    "subtitle": "Pilgrim's Debacle — A Tale Of Hardship And Loss In The Borderland",
     "characters": 5,
     "days": 31,
     "battles": 33
+  },
+  "6-13-25-WK-001-Death_2025-07-03T06-57-54_812lg7ea": {
+    "mainTitle": "White Knight's Saga",
+    "subtitle": "White Knight's Disaster — A Tale Of Hardship And Loss In The Awful",
+    "characters": 1,
+    "days": 10,
+    "battles": 4
+  },
+  "6-13-25-WK-001_2025-07-03T06-57-57_z5umuguh": {
+    "mainTitle": "White Knight's Ordeal",
+    "subtitle": "White Knight's Woe — A Tale Of Hardship And Loss In The Curst",
+    "characters": 1,
+    "days": 9,
+    "battles": 3
+  },
+  "6-14-25-4Questing_2025-07-03T06-58-00_195o60yl": {
+    "mainTitle": "Berserker's Daring Between",
+    "subtitle": "Woods Girl's Doom — A Tale Of Hardship And Loss In The Between",
+    "characters": 4,
+    "days": 28,
+    "battles": 14
+  },
+  "6-14-25-6charrunaround_2025-07-03T06-58-16_true65xy": {
+    "mainTitle": "The Deep Unit",
+    "subtitle": "Berserker's Wanderings — A Story Of Survival In The Deep",
+    "characters": 6,
+    "days": 24,
+    "battles": 30
+  },
+  "6-15-25-sorc-test-base_2025-07-03T06-58-20_lx788x4w": {
+    "mainTitle": "Adventurer's Realm Reclamation",
+    "subtitle": "Adventurer And The Hoard",
+    "characters": 0,
+    "days": 0,
+    "battles": 0
+  },
+  "6-16-25-WizStart_2025-07-03T06-58-23_aye8pc1b": {
+    "mainTitle": "Saga Of The Realm",
+    "subtitle": "Magician's Adventure — A Story Of Survival In The Realm",
+    "characters": 0,
+    "days": 1,
+    "battles": 0
+  },
+  "6-17-25-5man_2025-07-03T06-58-26_63a2iwsy": {
+    "mainTitle": "The Borderland Sacred Feud",
+    "subtitle": "Pilgrim's Tragedy — A Tale Of Hardship And Loss In The Curst",
+    "characters": 5,
+    "days": 5,
+    "battles": 5
+  },
+  "elf-screwed_2025-07-03T06-58-29_b8tjdbbv": {
+    "mainTitle": "Elf's Daring Adventure",
+    "subtitle": "Elf's Ill Fate — A Tale Of Hardship And Loss In The Borderland",
+    "characters": 1,
+    "days": 113,
+    "battles": 45
+  },
+  "learning-wiz-2_2025-07-03T06-58-32_0fyntb5x": {
+    "mainTitle": "Wizard's Perilous Myth",
+    "subtitle": "Wizard's Misfortune — A Tale Of Hardship And Loss In The Mountain",
+    "characters": 1,
+    "days": 76,
+    "battles": 32
+  },
+  "learning-wiz-win_2025-07-03T06-58-36_5h79c6a3": {
+    "mainTitle": "Wizard's Heroic Journey",
+    "subtitle": "Wizard's Glorious Raid — A Tale Of Valor In The Mountain",
+    "characters": 1,
+    "days": 82,
+    "battles": 38
+  },
+  "learning-woodsgirl-2_2025-07-03T06-58-39_lxbwqhp6": {
+    "mainTitle": "Woods Girl's Rumble",
+    "subtitle": "Woods Girl's Downfall — A Tale Of Hardship And Loss In The Caves",
+    "characters": 1,
+    "days": 109,
+    "battles": 23
+  },
+  "learning-woodsgirl-win_2025-07-03T06-58-42_1aewdvb7": {
+    "mainTitle": "The Borderland First Trial",
+    "subtitle": "Woods Girl's Journey — A Story Of Survival In The Borderland",
+    "characters": 1,
+    "days": 134,
+    "battles": 31
   }
 }

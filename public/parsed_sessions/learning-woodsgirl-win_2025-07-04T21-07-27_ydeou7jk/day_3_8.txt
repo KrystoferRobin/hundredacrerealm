@@ -1,0 +1,100 @@
+Month 3, Day 8
+host
+========================================
+host
+Monster Die roll is Rolled 5.
+Woods Girl
+Starts turn: Cavern 1
+Woods Girl
+Hide - Succeeded
+Woods Girl
+Move - moved
+Woods Girl
+Ends turn: Oak Woods 2
+__battle__
+Battle resolving at Oak Woods 2:
+__battle__
+GROUP 1
+__battle__
+Woods Girl
+__battle__
+GROUP 2
+__battle__
+Viper
+__battle__
+Viper
+__battle__
+=======================
+__battle__
+Evening of month 3, day 8, in clearing Oak Woods 2
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by LENGTH first, then by SPEED.
+__battle__
+---- DISENGAGEMENT ----
+__battle__
+1 consecutive round of no damage, fatigue, or spellcasting.
+__battle__
+-----------------------
+__battle__
+--  Combat Round 2
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+__battle__
+- - - - - Assign Targets
+__battle__
+Assigning random target selection order.
+Woods Girl
+Attacks the Viper
+Woods Girl
+Becomes unhidden.
+__battle__
+- - - - - Positioning
+__battle__
+- - - - - Reposition/Tactics
+__battle__
+Change Tactics in Box 3
+Viper
+Changes tactics:  Viper L2
+__battle__
+- - - - - Resolve Combat
+__battle__
+Attacks are sorted by SPEED first, then by LENGTH.
+__battle__
+>
+__battle__
+Attack Speed=3, Length=14
+__battle__
+Woods Girl L3  vs. Viper Speed 2
+__battle__
+Missed! (Speed 3 is not faster than Speed 2)
+host
+========================================
+host

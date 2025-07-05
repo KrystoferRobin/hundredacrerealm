@@ -1,0 +1,22 @@
+Month 1, Day 18
+host
+========================================
+host
+Monster Die roll is Rolled 3.
+Elf
+Starts turn: Ledges 4
+Elf
+Move - moved
+Elf
+Search - Peer - Clues
+Elf
+Search - Peer - Nothing
+Elf
+Hide - Failed
+Elf
+Hide - Failed
+Elf
+Ends turn: Ledges 1
+host
+========================================
+host

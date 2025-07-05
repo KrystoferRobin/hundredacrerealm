@@ -1,0 +1,46 @@
+Month 3, Day 11
+host
+========================================
+host
+Monster Die roll is Rolled 2.
+Wizard
+Starts turn: Mountain 1
+Wizard
+Search - Loot the Altar - Nothing
+Wizard
+Search - Loot the Altar - Nothing
+Wizard
+Hide - Succeeded
+Wizard
+Hide - N/A
+Wizard
+Ends turn: Mountain 1
+__battle__
+Battle resolving at Mountain 1:
+__battle__
+GROUP 1
+__battle__
+Wizard
+__battle__
+=======================
+__battle__
+Evening of month 3, day 11, in clearing Mountain 1
+__battle__
+-----------------------
+__battle__
+--  Combat Round 1
+__battle__
+-----------------------
+__battle__
+- - - - - Luring
+__battle__
+- - - - - Deployment
+__battle__
+- - - - - Actions
+Wizard
+Presses the END combat button.
+Wizard
+Combat has ended.
+host
+========================================
+host
