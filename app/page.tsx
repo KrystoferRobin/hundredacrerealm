@@ -1290,7 +1290,7 @@ export default function Home() {
         ) : (
           <>
             {/* Left side - Upload Area */}
-            <section className="flex-1 flex flex-col items-center py-16 px-4">
+            <section className="flex-1 flex flex-col items-center py-8 px-4 max-h-[calc(100vh-120px)] overflow-y-auto">
               <div className="bg-[#f6ecd6] border-4 border-[#bfa76a] rounded-xl shadow-2xl max-w-2xl w-full p-8 text-center relative" 
                    style={{
                      boxShadow: '0 8px 32px rgba(191, 167, 106, 0.3), inset 0 1px 0 rgba(255, 248, 225, 0.8)',
@@ -1578,11 +1578,11 @@ export default function Home() {
             </section>
 
             {/* Right side - Recent Games */}
-            <section className="w-80 bg-[#f6ecd6] border-l-4 border-[#bfa76a] p-6 overflow-y-auto relative">
+            <section className="w-80 bg-[#f6ecd6] border-l-4 border-[#bfa76a] p-6 relative">
               {/* Decorative left border accent */}
               <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#bfa76a] via-[#fff8e1] to-[#bfa76a]"></div>
               
-              <div className="bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-4 shadow-lg relative"
+              <div className="bg-[#fff8e1] border-3 border-[#bfa76a] rounded-lg p-4 shadow-lg relative max-h-[calc(100vh-200px)] overflow-y-auto"
                    style={{
                      boxShadow: '0 4px 16px rgba(191, 167, 106, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8)',
                      background: 'linear-gradient(135deg, #fff8e1 0%, #f6ecd6 100%)'

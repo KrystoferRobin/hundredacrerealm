@@ -34,8 +34,7 @@ export default function UniversalTooltip({
   const [loading, setLoading] = useState(false);
 
   const handleMouseEnter = async (event: React.MouseEvent) => {
-    const rect = event.currentTarget.getBoundingClientRect();
-    setPosition({ x: rect.left, y: rect.bottom });
+    setPosition({ x: event.clientX, y: event.clientY });
     setShowTooltip(true);
 
     if (!tooltipData && !loading) {
@@ -63,6 +62,12 @@ export default function UniversalTooltip({
       } finally {
         setLoading(false);
       }
+    }
+  };
+
+  const handleMouseMove = (event: React.MouseEvent) => {
+    if (showTooltip) {
+      setPosition({ x: event.clientX, y: event.clientY });
     }
   };
 
@@ -139,17 +144,19 @@ export default function UniversalTooltip({
     <div 
       className={`cursor-pointer ${className}`}
       onMouseEnter={handleMouseEnter}
+      onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
       {children}
       
       {showTooltip && position && (
         <div 
-          className="fixed z-50 bg-[#fff8e1] border-2 border-[#bfa76a] rounded-lg shadow-lg"
+          className="fixed z-[9999] bg-[#fff8e1] border-2 border-[#bfa76a] rounded-lg shadow-lg"
           style={{
-            left: position.x,
+            left: position.x + 10,
             top: position.y + 10,
-            transform: 'translateX(-50%)'
+            maxWidth: '300px',
+            pointerEvents: 'none'
           }}
         >
           {renderTooltipContent()}
