@@ -8,7 +8,6 @@ import { usePathname } from 'next/navigation';
 import CastOfCharacters from '../components/CastOfCharacters';
 import CharacterDetail from '../components/CharacterDetail';
 import SessionPage from './session/[id]/page';
-import RulesPanel from '../components/RulesPanel';
 
 // TypeScript interface for parsed character log
 interface CharacterLog {
@@ -1263,6 +1262,8 @@ export default function Home() {
           <iframe src="/items" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Items" />
         ) : selectedPage === 'spells' ? (
           <iframe src="/spells" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Spells" />
+        ) : selectedPage === 'rules' ? (
+          <iframe src="/rules/iframe" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Rules" />
         ) : selectedPage === 'games' ? (
           <iframe src="/games" className="flex-1 w-full h-[70vh] border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Game Logs" />
         ) : selectedPage === 'game-logs' ? (
@@ -1278,10 +1279,7 @@ export default function Home() {
             <button onClick={() => { setSelectedMapSession(null); setSelectedPage('home'); }} className="mb-4 px-4 py-2 bg-[#bfa76a] text-[#fff8e1] rounded shadow font-bold">Close Map</button>
             <iframe src={`/map?session=${selectedMapSession}`} className="w-full h-[70vh] border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Game Map" />
           </div>
-        ) : selectedPage === 'rules' ? (
-          <div className="flex-1 flex flex-col items-center justify-center py-8 px-4">
-            <RulesPanel />
-          </div>
+
         ) : (
           <>
             {/* Left side - Upload Area */}

@@ -1,0 +1,23 @@
+{
+  "title": "Magic Realm Rules",
+  "subtitle": "The unofficial third edition rules",
+  "attribution": {
+    "editors": ["Teresa Michelsen", "Stephen McKnight"],
+    "contributors": ["Teresa Michelsen", "Stephen McKnight"],
+    "proofreading": ["Jay Richardson"],
+    "indexing": ["Daniel W. Farrow IV"],
+    "reviewers": ["Richard Hamblen", "The Magic Realm on-line discussion list"],
+    "originalDesigner": "Richard Hamblen",
+    "originalPublisher": "Avalon Hill",
+    "edition": "Third Edition",
+    "year": "1986"
+  },
+  "description": "The Third Edition Rules are the product of long-time Magic Realm players who came to the conclusion that a new rulebook is necessary for the true elegance of Magic Realm to emerge from the existing rules.",
+  "chapters": [
+    {
+      "id": "1",
+      "title": "Introduction to the Third Edition Rules",
+      "sections": ["1.1", "1.2", "1.3", "1.4", "1.5", "1.6"]
+    }
+  ]
+} 

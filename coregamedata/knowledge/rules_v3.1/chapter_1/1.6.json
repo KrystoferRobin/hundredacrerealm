@@ -1,0 +1,132 @@
+{
+  "id": "1.6",
+  "title": "DEFINITIONS",
+  "content": "",
+  "subsections": [
+    {
+      "id": "1.6.1",
+      "title": "Active Chits",
+      "content": "Active Chits – See In Play Chits."
+    },
+    {
+      "id": "1.6.2",
+      "title": "Assigned",
+      "content": "Assigned – A denizen is assigned if it is on a character's or other denizen's sheet attacking him, or if it is on its own sheet being attacked by a character or other denizens."
+    },
+    {
+      "id": "1.6.3",
+      "title": "Attention Chit",
+      "content": "Attention Chit – The action chit which has the character symbol on one side and is blank on the other."
+    },
+    {
+      "id": "1.6.4",
+      "title": "Beast",
+      "content": "Beast – A Frog, Squirrel, Bird, Eagle, Lion, or Dragon created by the Transform spell."
+    },
+    {
+      "id": "1.6.5",
+      "title": "Cave Clearing",
+      "content": "Cave Clearing – A clearing that is in a cave."
+    },
+    {
+      "id": "1.6.6",
+      "title": "Caves Tile",
+      "content": "Caves Tile – Any tile with at least one cave on it, in which treasure sites can appear."
+    },
+    {
+      "id": "1.6.7",
+      "title": "Character",
+      "content": "Character – One of the 16 adventurer types that can be played by a player. Described on the character cards."
+    },
+    {
+      "id": "1.6.8",
+      "title": "Chit",
+      "content": "Chit – The smallest square counters, including action chits, sound chits, warning chits, site chits, Lost City and Lost Castle chits, Monster Roll, Day (Turn), Weather chits, visitor chits, and number chits."
+    },
+    {
+      "id": "1.6.9",
+      "title": "Counter",
+      "content": "Counter – Any game piece other than the hex tiles, character cards, and chits."
+    },
+    {
+      "id": "1.6.10",
+      "title": "Creature",
+      "content": "Creature – A beast or monster."
+    },
+    {
+      "id": "1.6.11",
+      "title": "Denizen",
+      "content": "Denizen – A monster or native of the Magic Realm."
+    },
+    {
+      "id": "1.6.12",
+      "title": "Garrison Natives",
+      "content": "Garrison Natives – Native groups that start out on the map at a dwelling, including the Order, Guard, Soldiers, and Rogues."
+    },
+    {
+      "id": "1.6.13",
+      "title": "Hired Leaders",
+      "content": "Hired Leaders – The HQ of each native group. When hired, the HQ gets a turn just like a character. Controlled monsters also play like hired leaders."
+    },
+    {
+      "id": "1.6.14",
+      "title": "Hirelings",
+      "content": "Hirelings – Any denizen who is hired by a character, including hired leaders, underlings, and hired monsters."
+    },
+    {
+      "id": "1.6.15",
+      "title": "In Play Chits",
+      "content": "In Play Chits – Any chit that can be played during Daylight or Evening for any purpose. Includes regular action chits that are not fatigued or wounded and enchanted color chits."
+    },
+    {
+      "id": "1.6.16",
+      "title": "Minion",
+      "content": "Minion – Any native or monster that is hired or controlled by a character."
+    },
+    {
+      "id": "1.6.17",
+      "title": "Mountain Clearing",
+      "content": "Mountain Clearing – A clearing that has ridges drawn around it on a mountain tile; not every clearing on a mountain tile is a mountain clearing."
+    },
+    {
+      "id": "1.6.18",
+      "title": "Mountain Tile",
+      "content": "Mountain Tile – A tile with at least one mountain clearing in which treasure sites can appear. Also includes the Deep Woods tile (even though there are no mountains in it) to round out the 5 Mountain tiles, along with the 5 Cave tiles, in which treasure sites can appear."
+    },
+    {
+      "id": "1.6.19",
+      "title": "Native",
+      "content": "Native – A member of a native group which can be hired, traded with, or battled."
+    },
+    {
+      "id": "1.6.20",
+      "title": "Out of Play Chits",
+      "content": "Out of Play Chits – Action chits that are unavailable for use during Daylight or Evening activities. Includes fatigued chits, wounded chits, and Magic chits dedicated to spells."
+    },
+    {
+      "id": "1.6.21",
+      "title": "Player",
+      "content": "Player – A person who plays one of the characters. A distinction between the character and the player is made in some rules."
+    },
+    {
+      "id": "1.6.22",
+      "title": "Prowling",
+      "content": "Prowling – The denizens that are prowling each day are those in the row corresponding to the day's Monster Roll. Prowling denizens will move from the Appearance Chart to the playing board if summoned by game chits, and prowling monsters will move within their hex tile when characters and hired leaders finish their turn."
+    },
+    {
+      "id": "1.6.23",
+      "title": "Underlings",
+      "content": "Underlings – Hired natives who are not leaders (HQs) and hired monsters. Underlings do not get turns of their own and can only follow characters or hired leaders."
+    },
+    {
+      "id": "1.6.24",
+      "title": "Visitors",
+      "content": "Visitors – One of the four individuals that can appear on the board when Row 6 is prowling. Can be traded with but not hired or battled."
+    },
+    {
+      "id": "1.6.25",
+      "title": "Woods Clearing",
+      "content": "Woods Clearing – Any clearing that is not a cave or mountain clearing."
+    }
+  ]
+} 
