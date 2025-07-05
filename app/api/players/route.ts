@@ -56,9 +56,19 @@ export async function GET() {
         }
       }
       
-      if (sessionData && sessionData.characterToPlayer && sessionData.scores) {
+      if (sessionData && sessionData.characterToPlayer) {
         const characters = sessionData.characterToPlayer;
-        const scores = sessionData.scores;
+        
+        // Try to load scores from the separate scores file
+        let scores: any = {};
+        const scoresPath = path.join(sessionsDir, folder, 'final_scores.json');
+        if (fs.existsSync(scoresPath)) {
+          try {
+            scores = JSON.parse(fs.readFileSync(scoresPath, 'utf8'));
+          } catch (error) {
+            console.error(`Error reading scores from ${scoresPath}:`, error);
+          }
+        }
         
         // Process each character and their player
         Object.entries(characters).forEach(([character, playerName]: [string, string]) => {

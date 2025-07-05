@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
+import UniversalTooltip from '../../components/UniversalTooltip';
 
 interface Item {
   id: string;
@@ -20,8 +21,6 @@ export default function ItemsPage() {
   const [itemGroups, setItemGroups] = useState<ItemGroup[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [selectedItem, setSelectedItem] = useState<Item | null>(null);
-  const [popoverPosition, setPopoverPosition] = useState<{ x: number; y: number } | null>(null);
 
   useEffect(() => {
     const fetchItems = async () => {
@@ -42,33 +41,22 @@ export default function ItemsPage() {
     fetchItems();
   }, []);
 
-  const handleItemClick = (item: Item, event: React.MouseEvent) => {
-    if (item.type === 'treasure') {
-      const rect = event.currentTarget.getBoundingClientRect();
-      setPopoverPosition({ x: rect.left, y: rect.bottom });
-      setSelectedItem(item);
-    }
-  };
-
-  const handleMouseLeave = () => {
-    setSelectedItem(null);
-    setPopoverPosition(null);
-  };
+  // Remove old popover logic - now using UniversalTooltip
 
   const renderItemCard = (item: Item) => {
     const isTreasure = item.type === 'treasure';
     const isLargeTreasure = isTreasure && item.attributeBlocks.this?.size === 'large';
     
     return (
-      <div
-        key={item.id}
-        className={`relative p-4 rounded-lg border-2 transition-all duration-200 cursor-pointer ${
+      <UniversalTooltip
+        type="item"
+        name={item.name}
+        category={item.type}
+        className={`relative p-4 rounded-lg border-2 transition-all duration-200 ${
           isTreasure 
             ? 'bg-[#fff8e1] border-[#bfa76a] hover:bg-[#f3e3b2] hover:scale-105' 
             : 'bg-[#f6ecd6] border-[#bfa76a]'
         }`}
-        onClick={(e) => handleItemClick(item, e)}
-        onMouseLeave={handleMouseLeave}
       >
         {/* Gold bubble for large treasures */}
         {isLargeTreasure && (
@@ -102,7 +90,7 @@ export default function ItemsPage() {
             {item.type}
           </div>
         </div>
-      </div>
+      </UniversalTooltip>
     );
   };
 
@@ -178,32 +166,7 @@ export default function ItemsPage() {
         )}
       </div>
 
-      {/* Item Popover */}
-      {selectedItem && popoverPosition && (
-        <div 
-          className="fixed z-50 bg-[#fff8e1] border-2 border-[#bfa76a] rounded-lg p-4 shadow-lg max-w-sm"
-          style={{
-            left: popoverPosition.x,
-            top: popoverPosition.y + 10,
-            transform: 'translateX(-50%)'
-          }}
-        >
-          <h3 className="font-bold text-[#6b3e26] font-serif mb-2">{selectedItem.name}</h3>
-          {selectedItem.description && (
-            <p className="text-sm text-[#4b3a1e] font-serif mb-2">{selectedItem.description}</p>
-          )}
-          {selectedItem.attributeBlocks.this && (
-            <div className="text-xs text-[#6b3e26] font-serif">
-              {Object.entries(selectedItem.attributeBlocks.this).map(([key, value]) => (
-                <div key={key} className="flex justify-between">
-                  <span className="font-semibold">{key}:</span>
-                  <span>{String(value)}</span>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
+      {/* Item tooltips now handled by UniversalTooltip component */}
     </div>
   );
 } 

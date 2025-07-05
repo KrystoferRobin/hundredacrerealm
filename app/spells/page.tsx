@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
+import UniversalTooltip from '../../components/UniversalTooltip';
 
 interface Spell {
   id: string;
@@ -20,8 +21,6 @@ export default function SpellsPage() {
   const [spellGroups, setSpellGroups] = useState<SpellGroup[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [selectedSpell, setSelectedSpell] = useState<Spell | null>(null);
-  const [popoverPosition, setPopoverPosition] = useState<{ x: number; y: number } | null>(null);
 
   useEffect(() => {
     const fetchSpells = async () => {
@@ -42,24 +41,15 @@ export default function SpellsPage() {
     fetchSpells();
   }, []);
 
-  const handleSpellClick = (spell: Spell, event: React.MouseEvent) => {
-    const rect = event.currentTarget.getBoundingClientRect();
-    setPopoverPosition({ x: rect.left, y: rect.bottom });
-    setSelectedSpell(spell);
-  };
-
-  const handleMouseLeave = () => {
-    setSelectedSpell(null);
-    setPopoverPosition(null);
-  };
+  // Remove old popover logic - now using UniversalTooltip
 
   const renderSpellCard = (spell: Spell) => {
     return (
-      <div
-        key={spell.id}
-        className="bg-[#fff8e1] border-2 border-[#bfa76a] p-4 rounded-lg transition-all duration-200 cursor-pointer hover:bg-[#f3e3b2] hover:scale-105"
-        onClick={(e) => handleSpellClick(spell, e)}
-        onMouseLeave={handleMouseLeave}
+      <UniversalTooltip
+        type="spell"
+        name={spell.name}
+        level={spell.level}
+        className="bg-[#fff8e1] border-2 border-[#bfa76a] p-4 rounded-lg transition-all duration-200 hover:bg-[#f3e3b2] hover:scale-105"
       >
         <div className="text-center">
           <h4 className="font-semibold text-[#6b3e26] font-serif text-sm mb-2">
@@ -86,7 +76,7 @@ export default function SpellsPage() {
             Level {spell.level}
           </div>
         </div>
-      </div>
+      </UniversalTooltip>
     );
   };
 
@@ -162,35 +152,7 @@ export default function SpellsPage() {
         )}
       </div>
 
-      {/* Spell Popover */}
-      {selectedSpell && popoverPosition && (
-        <div 
-          className="fixed z-50 bg-[#fff8e1] border-2 border-[#bfa76a] rounded-lg p-4 shadow-lg max-w-sm"
-          style={{
-            left: popoverPosition.x,
-            top: popoverPosition.y + 10,
-            transform: 'translateX(-50%)'
-          }}
-        >
-          <h3 className="font-bold text-[#6b3e26] font-serif mb-2">{selectedSpell.name}</h3>
-          <div className="text-xs text-[#6b3e26] font-serif mb-2">
-            Level {selectedSpell.level}
-          </div>
-          {selectedSpell.description && (
-            <p className="text-sm text-[#4b3a1e] font-serif mb-2">{selectedSpell.description}</p>
-          )}
-          {selectedSpell.attributeBlocks.this && (
-            <div className="text-xs text-[#6b3e26] font-serif">
-              {Object.entries(selectedSpell.attributeBlocks.this).map(([key, value]) => (
-                <div key={key} className="flex justify-between">
-                  <span className="font-semibold">{key}:</span>
-                  <span>{String(value)}</span>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
+      {/* Spell tooltips now handled by UniversalTooltip component */}
     </div>
   );
 } 

@@ -41,6 +41,7 @@ export async function GET() {
       }
 
       const spells: Spell[] = [];
+      const seenNames = new Set<string>();
 
       const files = fs.readdirSync(levelPath, { withFileTypes: true })
         .filter(dirent => dirent.isFile() && dirent.name.endsWith('.json'))
@@ -51,14 +52,19 @@ export async function GET() {
           const filePath = path.join(levelPath, filename);
           const spellData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
           
-          spells.push({
-            id: spellData.id || filename.replace('.json', ''),
-            name: spellData.name,
-            level,
-            description: spellData.description,
-            image: spellData.image,
-            attributeBlocks: spellData.attributeBlocks || {}
-          });
+          // Only include the first spell if there are duplicates with the same name
+          if (!seenNames.has(spellData.name)) {
+            seenNames.add(spellData.name);
+            
+            spells.push({
+              id: spellData.id || filename.replace('.json', ''),
+              name: spellData.name,
+              level,
+              description: spellData.description,
+              image: spellData.image,
+              attributeBlocks: spellData.attributeBlocks || {}
+            });
+          }
         } catch (error) {
           console.error(`Error reading spell file ${filename}:`, error);
         }
