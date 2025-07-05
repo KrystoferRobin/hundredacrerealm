@@ -1213,6 +1213,46 @@ export default function SessionPage(props: SessionPageProps = {}) {
     return () => { cancelled = true; };
   }, [hoveredCharacter]);
 
+  // Pre-fetch item data for all characters when inventories are loaded
+  useEffect(() => {
+    if (!characterInventories) return;
+    
+    const fetchAllItemData = async () => {
+      const allItems = new Set<string>();
+      
+      // Collect all unique item names from all characters
+      Object.values(characterInventories).forEach((charData: any) => {
+        if (charData?.items) {
+          const itemArrays = [
+            charData.items.weapons,
+            charData.items.armor,
+            charData.items.treasures,
+            charData.items.great_treasures,
+            charData.items.spells,
+            charData.items.natives,
+            charData.items.other,
+            charData.items.unknown
+          ];
+          
+          itemArrays.flat().filter(Boolean).forEach((item: any) => {
+            if (item?.name) {
+              allItems.add(item.name);
+            }
+          });
+        }
+      });
+      
+      // Pre-fetch data for all items
+      for (const itemName of Array.from(allItems)) {
+        if (!itemCache[itemName]) {
+          await fetchItem(itemName);
+        }
+      }
+    };
+    
+    fetchAllItemData();
+  }, [characterInventories, itemCache]);
+
   const renderCharacterBox = (characterName: string, playerName: string) => {
     const inventory = characterInventories?.[characterName]?.items;
     const isDead = deadCharacters.has(characterName);
@@ -1246,11 +1286,21 @@ export default function SessionPage(props: SessionPageProps = {}) {
         if (cached.attributeBlocks.intact && cached.attributeBlocks.damaged) return 'armor';
         if (cached.attributeBlocks.unalerted && cached.attributeBlocks.alerted) return 'weapon';
         if (cached.attributeBlocks.this?.spell) return 'spell';
-        if (cached.attributeBlocks.this?.base_price) return 'treasure';
+        if (cached.attributeBlocks.this?.base_price) {
+          // Check if it's a large treasure
+          if (cached.attributeBlocks.this?.treasure === 'large') return 'large_treasure';
+          return 'treasure';
+        }
         // Add more rules as needed
       }
       // Fallback to heuristic
       return categorizeItemByName(item.name);
+    };
+
+    // Helper to check if item is a large treasure
+    const isLargeTreasure = (item) => {
+      const cached = itemCache[item.name];
+      return cached?.attributeBlocks.this?.treasure === 'large';
     };
 
     // Categorize items for display
@@ -1259,7 +1309,11 @@ export default function SessionPage(props: SessionPageProps = {}) {
       // Equipment: weapons, armor, mounts, lanterns, etc. (not treasure, not spell, not great treasure)
       return cat === 'weapon' || cat === 'armor' || cat === 'mount' || (cat === 'other' && !item.name.toLowerCase().includes('treasure') && !item.name.toLowerCase().includes('spell'));
     });
-    const treasureItems = allItems.filter(item => getItemCategory(item) === 'treasure' && !item.name.toLowerCase().includes('great'));
+    const treasureItems = allItems.filter(item => {
+      const cat = getItemCategory(item);
+      return cat === 'treasure' && !item.name.toLowerCase().includes('great') && !isLargeTreasure(item);
+    });
+    const largeTreasureItems = allItems.filter(item => isLargeTreasure(item));
     const greatTreasureItems = allItems.filter(item => getItemCategory(item) === 'great_treasure' || (getItemCategory(item) === 'treasure' && item.name.toLowerCase().includes('great')));
     const spellItems = allItems.filter(item => getItemCategory(item) === 'spell');
 
@@ -1269,7 +1323,10 @@ export default function SessionPage(props: SessionPageProps = {}) {
         {items.map((item, idx) => (
           <span key={item.name} className={"relative group inline-block text-sm cursor-pointer" + (icon ? ' flex items-center' : '')} onMouseEnter={() => fetchItem(item.name)}>
             {icon && <span className="mr-1">{icon}</span>}
-            {item.name}{idx < items.length - 1 ? ',' : ''}
+            <span className={isLargeTreasure(item) ? 'bg-yellow-200 border border-yellow-400 rounded px-1' : ''}>
+              {item.name}
+            </span>
+            {idx < items.length - 1 ? ',' : ''}
             <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
               {renderEquipmentTooltip(item.name)}
             </div>
@@ -1358,34 +1415,44 @@ export default function SessionPage(props: SessionPageProps = {}) {
         )
         : null;
 
-    // For great treasures, use a simple icon (e.g., 48e) or styled span
+    // For great treasures, use a simple icon (e.g., 💎) or styled span
     const greatTreasureIcon = <span className="font-bold text-yellow-900">💎</span>;
 
     return (
-      <div key={characterName} className={`rounded-lg border-2 p-4 mb-4 shadow-md ${isDead ? 'bg-gray-200 border-gray-400' : 'bg-white border-amber-300'} w-[340px] min-h-[220px] flex flex-col justify-between`}
+      <div key={characterName} className={`rounded-lg border-2 p-4 mb-4 shadow-md ${isDead ? 'bg-gray-200 border-gray-400' : 'bg-white border-amber-300'} w-[340px] min-h-[220px] flex flex-col`}
            onMouseEnter={() => setHoveredCharacter(characterName)}
            onMouseLeave={() => setHoveredCharacter(null)}>
+        {/* Header */}
         <div className="flex items-center mb-2">
           <span className="font-bold text-lg text-amber-800 cursor-pointer hover:underline" onClick={() => handleCharacterClick(characterName)}>{characterName}</span>
           <span className="ml-2 text-sm text-gray-500">({playerName})</span>
           {isDead && <span className="ml-2 text-xs text-red-600 font-bold">DEAD</span>}
         </div>
-        {/* Inventory lines */}
-        <div className="mb-2">
-          {equipmentItems.length > 0 && renderItemLine(equipmentItems)}
-          {treasureItems.length > 0 && renderItemLine(treasureItems, renderTreasureBagIcon())}
-          {greatTreasureItems.length > 0 && renderItemLine(greatTreasureItems, greatTreasureIcon)}
+        {/* Main content: left (items, spells), right (stats) */}
+        <div className="flex flex-row flex-1">
+          {/* Left: Items, treasures, spells */}
+          <div className="flex-1 min-w-0">
+            <div className="mb-2">
+              {equipmentItems.length > 0 && renderItemLine(equipmentItems)}
+              {treasureItems.length > 0 && renderItemLine(treasureItems, renderTreasureBagIcon())}
+              {largeTreasureItems.length > 0 && renderItemLine(largeTreasureItems, renderTreasureBagIcon())}
+              {greatTreasureItems.length > 0 && renderItemLine(greatTreasureItems, greatTreasureIcon)}
+            </div>
+            {/* Spells section */}
+            {renderSpells()}
+          </div>
+          {/* Right: Stats, centered vertically */}
+          <div className="flex flex-col items-end justify-center ml-4 text-xs font-mono text-amber-900 space-y-1">
+            <div><span className="font-bold">gt</span>: {gtCount}</div>
+            <div><span className="font-bold">s</span>: {learnedSpells}</div>
+            <div><span className="font-bold">f</span>: {stats.fame}</div>
+            <div><span className="font-bold">n</span>: {stats.notoriety}</div>
+            <div><span className="font-bold">g</span>: {stats.gold}</div>
+          </div>
         </div>
-        {/* Spells at bottom left */}
-        <div className="absolute left-4 bottom-4">{renderSpells()}</div>
-        <div className="flex flex-col items-end justify-start text-xs font-mono text-amber-900 space-y-1 ml-4 relative">
-          <div><span className="font-bold">gt</span>: {gtCount}</div>
-          <div><span className="font-bold">s</span>: {learnedSpells}</div>
-          <div><span className="font-bold">f</span>: {stats.fame}</div>
-          <div><span className="font-bold">n</span>: {stats.notoriety}</div>
-          <div><span className="font-bold">g</span>: {stats.gold}</div>
-          {/* Final Score positioned at bottom */}
-          <div className="mt-auto pt-4">
+        {/* Final Score on the right bottom */}
+        <div className="flex justify-end mt-2">
+          <div className="relative">
             <div
               className={`text-base font-bold cursor-pointer ${scoreColor}`}
               onMouseEnter={() => setScorePopover(characterName)}
