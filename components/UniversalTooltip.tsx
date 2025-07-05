@@ -34,7 +34,11 @@ export default function UniversalTooltip({
   const [loading, setLoading] = useState(false);
 
   const handleMouseEnter = async (event: React.MouseEvent) => {
-    setPosition({ x: event.clientX, y: event.clientY });
+    // Use cursor position directly for accurate tooltip placement
+    setPosition({ 
+      x: event.clientX, 
+      y: event.clientY 
+    });
     setShowTooltip(true);
 
     if (!tooltipData && !loading) {
@@ -67,7 +71,11 @@ export default function UniversalTooltip({
 
   const handleMouseMove = (event: React.MouseEvent) => {
     if (showTooltip) {
-      setPosition({ x: event.clientX, y: event.clientY });
+      // Use cursor position relative to viewport for more responsive positioning
+      setPosition({ 
+        x: event.clientX, 
+        y: event.clientY 
+      });
     }
   };
 
@@ -153,8 +161,8 @@ export default function UniversalTooltip({
         <div 
           className="fixed z-[9999] bg-[#fff8e1] border-2 border-[#bfa76a] rounded-lg shadow-lg"
           style={{
-            left: position.x + 10,
-            top: position.y + 10,
+            left: Math.min(position.x + 10, window.innerWidth - 320),
+            top: Math.min(position.y + 10, window.innerHeight - 200),
             maxWidth: '300px',
             pointerEvents: 'none'
           }}
