@@ -73,16 +73,16 @@ export default function RulesPanel() {
         >
           <Page
             pageNumber={pageNumber}
-            height={700}
-            renderTextLayer={true}
+            width={500}
+            renderTextLayer={false}
             renderAnnotationLayer={true}
             className="border border-[#bfa76a] rounded shadow bg-white"
           />
           {numPages && pageNumber + 1 <= numPages && (
             <Page
               pageNumber={pageNumber + 1}
-              height={700}
-              renderTextLayer={true}
+              width={500}
+              renderTextLayer={false}
               renderAnnotationLayer={true}
               className="border border-[#bfa76a] rounded shadow bg-white"
             />
