@@ -1,0 +1,130 @@
+{
+  "title": "SHARING INFORMATION AND SPYING",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "This section summarizes the information the characters can learn from one other, as opposed to what they can learn on their own through Search phases."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "4.5.1",
+      "title": "Map Chits: The only time a character can reveal a map chit is when he turns it face up to loot it, when he sells it as a discovery, to exchange it (if it is a substitute chit), or to allow it to summon monsters",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He cannot reveal map chits privately."
+        }
+      ]
+    },
+    {
+      "id": "4.5.2",
+      "title": "Treasure Cards: A character must reveal Treasure cards when he has them active, when he buys them from a native or visitor, and when he sells them to a native or visitor",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He has the option to reveal cards when he loots them, when he has them inactive, when he abandons them and when he trades with other characters. He cannot reveal cards on the map or on the Setup Card."
+        }
+      ]
+    },
+    {
+      "id": "4.5.3",
+      "title": "Recorded Information: A character must reveal his recorded Fame and Notoriety, whether he has found hidden enemies and his trading relationships whenever he is asked",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He reveals his activities only when he does them and his discoveries only when he uses them or sells them. The rest of the information on his sheet is secret until the game ends."
+        }
+      ]
+    },
+    {
+      "id": "4.5.4",
+      "title": "Selling or Sharing Information: Information about the location of secret paths, hidden passages, and treasure sites is transferable",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A character or hired leader can sell or give discoveries to other characters and hired leaders. The recipient then crosses off the discovery on his Personal History Sheet, and he can use it from then on as if he had discovered it himself."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. Both individuals must be in the same clearing with the treasure site, hidden path, or secret passage in order to sell or transfer its location."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. The individual selling or giving the information must have previously discovered the location of the hidden path, secret passage, or treasure site using a Search phase, or have previously received the information from another individual."
+        },
+        {
+          "type": "paragraph",
+          "text": "c. Each discovery can be sold or given separately, and it can be sold or given to some characters and hired leaders and not to others. Exception: When an individual sells or gives a Treasures Within Treasures location, he automatically sells or gives the location of the treasure site where that card has been found. The recipient crosses both the Treasures Within Treasures location and the treasure site off his Discoveries list."
+        },
+        {
+          "type": "paragraph",
+          "text": "d. When an individual sells or gives the location of a face-down Site chit (or a Treasures Within Treasures card within a face-down Site chit), he must turn the Site chit face up for all to see. Then he puts the Site chit in its clearing, face down."
+        },
+        {
+          "type": "paragraph",
+          "text": "e. An individual cannot sell or give away a \"Hidden enemies\" result."
+        },
+        {
+          "type": "paragraph",
+          "text": "f. The characters cannot sell or give recorded spells to other characters."
+        },
+        {
+          "type": "paragraph",
+          "text": "g. An individual can sell or tell others secret information, including his future plans, but he is not allowed to verify it. For example, he could say what the chits were in a tile, but he could not allow others to look at the chits."
+        },
+        {
+          "type": "paragraph",
+          "text": "h. Information can be sold or shared at the same times when characters and hired leaders can normally trade with one another – either at the beginning of phases during Daylight, or at the end of combat in the Evening."
+        },
+        {
+          "type": "paragraph",
+          "text": "i. Individuals who agree to exchange belongings, gold or discoveries must honor the agreement and hand over what they agreed to. When they exchange unverified or secret information, let the buyer beware; the seller is not required to be honest about this information. Note: The requirement to honor agreements only applies to trades in progress, not to promises of future trades."
+        },
+        {
+          "type": "paragraph",
+          "text": "j. If a character is blocked or otherwise cannot trade with other characters, he cannot buy, sell, or share information either."
+        }
+      ]
+    },
+    {
+      "id": "4.5.5",
+      "title": "Spying: When a character or hired leader uses a discovery, other characters and hired leaders can discover it by spying on him",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "a. Characters can spy on each other only when they are in the same clearing. An unhidden character is automatically spied on by everyone in his clearing. A hidden character is spied on by everyone who has found hidden enemies earlier that day."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Finding hidden enemies is not retroactive. A character starts spying on hidden characters at the moment he rolls the result.",
+            "The \"Hidden enemies\" result expires at Midnight of each game day. At the start of each day, no one can spy on hidden characters."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "b. When a character uses a discovery, everyone who is spying on him discovers it and crosses it off their Discoveries list. Spies discover only what he uses – they discover nothing when he just looks at map chits or makes discoveries himself."
+        },
+        {
+          "type": "list",
+          "items": [
+            "If he moves along a hidden path or secret passage, it is discovered by everyone who spies on him in the clearing he leaves and the clearing he enters. Exception: When a character transformed into Mist uses a secret passage or hidden path, the other individuals in the clearing do not discover it, since the character transformed into Mist can use these roadways without discovering them.",
+            "If he loots a treasure site, it is discovered by everyone who is spying on him. When he loots a Treasures Within Treasures card, everyone who is spying on him discovers both the Treasures Within Treasures card and the Site chit that contains that Treasures Within Treasures card.",
+            "When he sells a discovery, everyone who is spying on him discovers it. Note: Spying on the buyer does no good – only those characters who can spy on the seller discover what he is selling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.5.6",
+      "title": "Secrecy: When a character is directed by the rules to keep a piece of information secret, he can tell it to the other players but he is not allowed to show any proof",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This means that he can lie – and he cannot prove whether he is telling the truth. Example: He can tell other characters what his Victory Requirements are, but he cannot show them what he actually recorded until the game ends. Note: The right to lie is limited to the information that the rules classify as secret. The character must speak truthfully when he provides information that the other characters are entitled to have. He must also keep an honest record of his values, and he can never allow his recorded gold to fall below zero."
+        }
+      ]
+    }
+  ]
+} 

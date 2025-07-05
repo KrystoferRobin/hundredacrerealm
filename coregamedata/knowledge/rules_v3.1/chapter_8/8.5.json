@@ -1,0 +1,54 @@
+{
+  "title": "Fatigue and Wounds",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "At the end of each round of combat, during the Fatigue Step, each character must deactivate action chits to pay for the fatigue and wounds he incurred during the round."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "8.5.1",
+      "title": "Fatigue",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each character can normally play Fight and Move chits totaling up to two asterisks per round (some Treasures allow more asterisks to be played). If he plays chits with no asterisks or a total of one asterisk, he does not fatigue. If he played chits with a total of two or more asterisks, he must fatigue by moving chits with asterisks from active status to inactive (fatigued) status. The number of asterisks he must fatigue is equal to the number of asterisks he played, minus one."
+        },
+        {
+          "type": "list",
+          "items": [
+            "He can fatigue any chits with asterisks he has in play, including chits he played this round, as long as they are of the same type as the extra asterisks he played. If he played only Move chits, he must fatigue a Move chit, and if he played only Fight chits, he must fatigue a Fight chit. If he played both Move and Fight chits, he must specify which asterisk does not fatigue, and fatigue asterisks of the same type(s) as the remaining asterisks played. If he fatigues a double-asterisk chit he can bring back a single-asterisk chit of the same type to \"make change\" (see Rule 4.2.5).",
+            "When a character plays no asterisks he does not gain asterisks – he just does not have to fatigue any.",
+            "Normally a character will play no more than two asterisks, but if he uses the Potion of Energy or Girtle of Energy Treasure cards to play more than two asterisks, then the extra asterisks also fatigue. The number of asterisks he fatigues is always one less than the number he played.",
+            "A transmorphized character pays his fatigue costs normally on the round he is transmorphized."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.5.2",
+      "title": "Magic Chits and Color Chits",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Magic chits and color chits that are played during a round of combat do not count towards fatigue at the end of the round. They pay their own fatigue costs by fatiguing automatically: color chits fatigue when they are used, and Magic chits fatigue when the spell ends. Magic chits do count towards the spellcaster's effort limit, but color chits do not."
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: If the Druid plays a Magic II3* to cast a spell and his Move L3* to maneuver in the same round, he does not have to fatigue a Move chit. His Magic II3* will fatigue when the spell expires, paying the fatigue cost of the step. If he plays his Magic II2** he cannot play a Move chit with an asterisk because it would exceed his effort limit."
+        }
+      ]
+    },
+    {
+      "id": "8.5.3",
+      "title": "Wounds",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each character must wound one active chit for each wound that was inflicted on him during this round. He gets one wound for each attack that inflicts Light or heavier harm on him, or Medium or heavier harm on his armor. He is not wounded by attacks that hit his horse. He can wound any action chits he has in play, including chits he played this round (see Rule 4.2.5). A transmorphized character cannot be wounded."
+        }
+      ]
+    }
+  ]
+} 

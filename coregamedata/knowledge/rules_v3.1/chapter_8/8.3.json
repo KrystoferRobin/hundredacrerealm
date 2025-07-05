@@ -1,0 +1,159 @@
+{
+  "title": "Encounter Step",
+  "content": [],
+  "subsections": [
+    {
+      "id": "8.3.1",
+      "title": "At the start of the Encounter Step, all horses belonging to unhired natives are turned \"walking\" side up in clearings where combat is taking place (they will use their \"galloping\" side in the Melee Step). When combat takes place in a woods or mountain clearing, each native must always use his native horse, if he has one. Characters cannot choose to play hired natives without their horses. In cave clearings, horses cannot be used.",
+      "content": []
+    },
+    {
+      "id": "8.3.2",
+      "title": "The character who had the first turn during Daylight on this game day is the \"first character\"; if a hired leader or controlled monster had the first turn, the hiring or controlling character is the first character. During the Encounter Step, when the characters take turns they start with the first character and go to the left, skipping anyone who is not taking part. The turns start with the first character even if he has been killed or is not in the clearing. Note: For Internet games, it may be more convenient to go in the order in which individuals took their turns during Daylight.",
+      "content": []
+    },
+    {
+      "id": "8.3.3",
+      "title": "Uncontrolled and unhired natives and monsters that are already assigned to characters as a result of previous rounds of combat remain assigned to those characters when the new round of combat starts. Red-side-up Tremendous monsters also remain assigned to their targets from one round to the next (see Rule 8.6.1).",
+      "content": []
+    },
+    {
+      "id": "8.3.4",
+      "title": "Luring: Starting with the first character and going to the left, each character in turn can take monsters and unhired natives onto the Melee Section of his Personal History sheet voluntarily, \"luring\" them into attacking him. He can take any or all of the unhired denizens in the clearing, including unhired denizens that are assigned to other characters, and place them in one of the red boxes on his Melee Section. Comment: This tactic is often used in cooperation with other characters: one character takes several monsters and plays his best maneuver, allowing others to play their best attacks against the monsters.",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "A character cannot remove denizens from his Melee Section or put denizens on other Melee Sections – he can only take denizens onto his own sheet.",
+            "A hidden character can lure denizens onto his sheet, but if he does so he instantly becomes unhidden.",
+            "Luring with Hirelings: When he takes his turn to lure, a character can also cause his hirelings to lure. The character can lure denizens with his hirelings even if he himself doesn't lure.",
+            "c.1) Controlled or hired monsters act like hired natives: they can lure attackers, they cannot be lured, and so on. In the following sections, the term \"hireling\" will be used to refer to hired natives, hired monsters, and controlled monsters alike.",
+            "c.2) Each hireling can lure one attacker by taking an unused Melee Section and putting the hireling who is luring in the red \"Charge and Thrust\" box and the lured denizen in the \"Thrust\" attack circle. The hireling who is luring is the defender and owner of the melee sheet, and the denizen who is lured is the attacker.",
+            "c.3) If a hidden hireling lures a denizen, the hireling becomes unhidden.",
+            "Hired natives, hired or controlled monsters, denizens that are assigned to hired natives, and red-side-up Tremendous monsters cannot be lured. A monster or battling native who has been lured by a hireling cannot be lured away by other characters or natives.",
+            "When a character or his hireling lures an unhired native, the unhired native's group begins battling him and his hirelings.",
+            "If a spell prohibits a character from specifying an unhired or uncontrolled denizen as a target, he can still lure it (unless the spell specifies otherwise), and it can be assigned to him randomly. Note: The restriction on the character does not affect his hirelings. They can lure and attack the individual normally.",
+            "A character and his hirelings can lure pacified natives into attacking (which breaks the spell used to pacify them)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.3.5",
+      "title": "Random Assignment: After characters and their hirelings finish luring, all of the remaining unassigned monsters and battling natives in the clearing are assigned to attack unhidden targets in the clearing. Monsters and unhired natives cannot be assigned to a hidden character or hireling.",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Each monster or battling native in the clearing that is unassigned after luring is assigned to a character at random. The players specify which denizen is being assigned; each character rolls two dice and uses the number rolled on the higher die as his result. Characters who tie for high result roll again to break the tie.",
+            "a.1) A character must roll only if he is unhidden and in the clearing, or if he has an unhidden hireling in the clearing. He must roll for a battling native only if it is battling him. A spellcaster who has cast a pacification spell on a denizen does not have to roll for that denizen.",
+            "a.2) Die roll modifiers do modify these rolls, and results greater than \"6\" are allowed – they are not converted to \"6\". Exception: If the character is not in the clearing, his die roll modifiers do not affect his die rolls.",
+            "a.3) The character who rolls highest must assign the attacker to himself, if he is unhidden and in the clearing; otherwise, he must assign it to one of his unhidden hirelings. There is no limit to the number of attackers that can be assigned to a hireling randomly.",
+            "Monsters and battling natives that have no unhidden targets remain unassigned. If all of the characters and hirelings in the clearing are hidden, the denizens remain unassigned and the round of combat continues.",
+            "When a monster or native is assigned to attack a target, put the attacking counter on the target's Melee Section. If the target is a character, put the attacker in one of the red boxes on his Melee Section. If the target is a denizen, give the target an unused Melee Section and put him in the red \"Charge and Thrust\" box, and put the attacker in the \"Thrust\" attack circle."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.3.6",
+      "title": "Deployment and Charging: During this step, characters can assign their unassigned hirelings to attack targets. Hirelings that are left unassigned or that become unassigned after Deployment cannot attack this round. If the character himself is in the clearing, he can also play a Move chit to \"charge\" another character. These actions can be taken in whatever order the character chooses, and hirelings are deployed one at a time.",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Deployment: Starting with the first character and going to the left, each character in turn can assign each of his hirelings that is not already being attacked to attack one character, monster, or native by putting it on its target's Melee Section. Each hired native who has a horse must always be played with his horse (except in caves). He cannot choose to dismount.",
+            "a.1) When a hireling is assigned to attack a character, it is put in a red box on his Melee Section, like a monster, and it limits the action chits the character can play during the Encounter Step.",
+            "a.2) When one denizen is assigned to attack another denizen, the denizen who is being assigned is termed the \"attacker\" and the denizen being attacked is the \"defender.\" The attacker and defender are put on an unused Melee Section to resolve the combat. The defender is the \"owner\" of the Melee Section and is put in the \"Charge and Thrust\" red box. The attacker is put in the \"Thrust\" attack circle. Each Melee Section can have only one owner: each defender gets his own Melee Section.",
+            "a.3) When additional denizens are assigned to attack a defender, they join the attackers on the defender's sheet. Stack the attackers up in order in the \"Thrust\" attack circle so that the last attacker is on top.",
+            "a.4) During Deployment, characters can turn each of their hirelings (including native horses) either side up, as they choose, anytime the hireling is placed as an attacker on another sheet (Exception: Tremendous Monsters, see rule 8.4.7c). Hirelings who are defenders on their own sheets will be positioned either side up later in the round when the hiring character plays his Attacks and Maneuvers.",
+            "a.5) When an attacking denizen is itself attacked by another denizen, the attacking denizen is removed from the sheet it was on and becomes a defender on its own sheet.",
+            "a.6) Special: When the last attacker on a defending denizen's sheet is removed, leaving the denizen alone on its sheet, then the denizen leaves his sheet and becomes the newest attacker on the ex-attacker's sheet. Deployment Example: The Amazon's hired Lancer lures a heavy Troll onto his sheet. During Deployment, the Berserker assigns his hired Rogue to attack the Troll. The Troll becomes the defender on its own sheet and the Rogue is placed either side up as the attacker in the Thrust circle. Now alone on his sheet, the Lancer is moved to the Troll's sheet as the last attacker, and placed on top of the Rogue in the Thrust circle. The Amazon can turn the Lancer and his horse either side up when they move to the new sheet. If the Berserker instead played his Rogue to attack the Lancer, the Lancer would remain on his own sheet and the Troll and the Rogue would both be his attackers; in the Melee Step the Amazon would select one of them as the Lancer's target.",
+            "a.7) A denizen who is being attacked by one or more other denizens must attack one of the denizens who is attacking it. It cannot attack a character, and it cannot attack a denizen who is not on its sheet. Note: This rule does not apply to characters. Characters may defend on their own sheet and simultaneously attack on a target's sheet. Attacks by characters do not affect who the denizen attacks.",
+            "a.8) Tremendous monsters that are red side up do not change targets when they are attacked by other denizens. A red-side-up Tremendous monster can attack a character while it is being attacked by a denizen. If a red-side-up Tremendous monster is assigned to a character when it is attacked by a hireling, the monster is put on its own Melee Section but it picks no target: it continues to attack the character as if it were in the matching red box on his sheet. If all of the attackers leave the monster's sheet, the monster returns to the character's sheet.",
+            "a.9) If a character deploys a hired or controlled denizen against an unhired native, all members of that native group in the clearing battle the character and his hirelings for the rest of the day.",
+            "Charging: A character can charge another character by playing a Move chit and placing his Attention chit on his target's Melee Section. The Attention chit functions like a monster counter, with the move time shown on the Move chit; it restricts the action chits that the target character can play during the Encounter Step. Characters cannot charge denizens. Comment: The most common use of charging is to prevent the target from running away.",
+            "b.1) Charging counts as the character's action for the Encounter Step – he cannot do any other action that Encounter Step. The Move chit counts towards his fatigue and effort limit, and it is subject to the normal restrictions. A character cannot charge if a Tremendous monster is red side up on his sheet. Otherwise, the Move chit he plays is not limited by the denizens on his sheet.",
+            "b.2) Charging specifies the character's target for the round. He cannot change targets during the Melee Step.",
+            "b.3) If a spell prohibits a character from specifying a certain individual as a target, he cannot charge that individual.",
+            "b.4) A character transmorphized into a flying beast, with a Fly chit, or using the Magic Carpet can use his flying values like move values to charge during his Deployment. When he charges, he stays in the clearing. He cannot ride a flying steed to charge.",
+            "Hidden Targets. A character can charge a hidden character only if he has found hidden enemies that day, and a hireling can be deployed against a hidden character only if he is a hired leader who has found hidden enemies that day. Underling and monsters can never be assigned to hidden targets. A hidden character who is charged or has a hired leader deployed against him immediately becomes unhidden; the charging character or deployed leader also becomes unhidden. Example: The Amazon has found hidden enemies. She charges the hidden Druid. She can then deploy her hired Patrol against the unhidden Druid. If the Patrol HQ had found hidden enemies but the Amazon had not, she could deploy the Patrol HQ against the Druid and then charge him after he became unhidden."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.3.7",
+      "title": "Encounter Actions: After all of the denizens have been assigned, starting with the first character and going to the left, each character who did not charge this round can do one action. If he can play the required chit, he can either: 1) play a Fight chit or active Gloves card and turn his active weapon counter over, alerting or unalerting it; 2) play a Move chit, Fly chit, or active Boots card, horse, or Magic Carpet to run or fly away; or 3) play a magic chit (or Artifact/Spell Book) to cast a spell.",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "The monsters, natives, and Move chits (from charging players) on his sheet limit the action chits he can play. Each native who is riding a native horse uses the move time shown on the horse counter, not his own move time. Explanation: Each denizen or charging character's move time defines the time before the denizen or character reaches the character trying to complete the action. If he plays a Move or Fight chit that ties or exceeds (or a Magic chit that exceeds) this time, the charging individual reaches him and interrupts the action before he can complete it.",
+            "a.1) He can play a Fight, Move, or Fly chit, Boots or Gloves card, horse, or Magic Carpet only if its time number is less than the move time of all of the denizens and Move chits on his sheet.",
+            "a.2) He can play a Magic chit only if its time number is less than or equal to the move times of all the denizens and Move chits on his sheet. Alerted Magic chits, Artifacts, and Spell Books have a completion time of \"0\" and cannot be interfered with.",
+            "He can play a Fight chit only if its strength is equal to or greater than the weight of his active weapon.",
+            "He can only play a chit or item to run or fly away if its carrying capacity is sufficient to carry himself and everything he is carrying. Exception: If he is leading a packhorse, the packhorse can carry any of his inactive items that do not exceed the packhorse's carrying capacity. The items the packhorse carries must already have been inactive at the start of the round.",
+            "If he does not charge or play an action chit, the character can either: 1) activate one belonging and/or deactivate one belonging; or 2) abandon any of his belongings in the clearing. Denizens and charging characters do not interfere with these actions.",
+            "Hirelings never do actions. They never run away."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.3.8",
+      "title": "Running or Flying Away",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Running Away: When a character plays a Move chit, Boots card or horse as his action during an Encounter Step, he \"runs away\". The character is not required to play a Boots card or horse, even if it is active; he can play a Move chit instead.",
+            "When a character runs away, he immediately moves onto one of the roadways that leads out of his clearing, taking all of his belongings with him. If he moved into the clearing that day, he must run onto the roadway he used to enter the clearing; if this roadway has vanished or has turned into a hidden roadway he cannot use, he cannot run away that day. If he started the day in the clearing and never left, he can run onto any roadway that he is able to use for movement, including ones that lead to mountain or cave clearings.",
+            "The character takes no further part in combat that day. He removes any denizens that are on his sheet and leaves them behind in the clearing: they are now unassigned and cannot be assigned to new targets until the next round of combat. Note: If the character played a Move chit with two asterisks, he fatigues normally at the end of the round.",
+            "The character ends the day on the roadway, between clearings. While between clearings he cannot block or be blocked, he cannot rearrange or abandon belongings and he cannot trade with other characters.",
+            "d.1) He must start his turn on the next day by moving to one of the clearings at either end of the roadway. He must use a Move phase to move to a clearing, even if he moves back to the clearing he ran out of; if he moves to a mountain clearing he must use two Move phases to move. He does not have to play a Move chit to carry items during this move – the Move chit he played to run away has already paid for what he is carrying.",
+            "d.2) A character who runs out of a cave toward a non-cave clearing can record Sunlight phases on his next turn, as long as he does not enter a cave clearing.",
+            "d.3) If a character is on a roadway when it vanishes or turns into a hidden roadway that he has not discovered, he is put in the forest. He must start his next turn by moving back to the clearing he just ran out of.",
+            "Flying Away: Each character can use his flying values to \"fly away\" (instead of running away) as his action during the Encounter Step.",
+            "e.1) When he flies away, he ignores non-flying move times. The only denizens and Attention chits on his Melee Section that can stop him from flying away are those that fly, and red-side-up Tremendous monsters, which are impossible to run or fly away from (see Rule 8.4.7d2).",
+            "e.2) Instead of moving onto a roadway, his counter is put half in the tile he is in, and half in an adjacent tile of his choice (both tiles can supply color magic to him). He must start his next turn with a Fly phase to fly into either tile and land, even if his flying values vanished at Midnight. He must land, but if he still has flying values he can take off again (assuming he is not blocked).",
+            "Special Movement: A character transmorphized into a beast can run away onto a roadway or into the forest, as he chooses. If he runs into the forest, he must start his next turn with Move phases to move to any clearing in his tile. While in the forest, he is supplied with color magic by the whole tile.",
+            "If a character runs out of a clearing on the same day that he used special movement (flying or walking the woods) to enter that clearing, he can run onto any roadway that enters the clearing.",
+            "A character can run or fly out of his clearing even if no monsters are present. Rounds of combat are done in every clearing that contains characters even if no monsters are present (the rounds will end after two uneventful rounds), and during these rounds the characters can run away or do other actions."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.3.9",
+      "title": "Activating and Casting Spells: During the Encounter Step, spells are cast that later come to life and have their effects during the Melee Step. In addition, Permanent spells can be activated by playing a color chit.",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Activating Permanent Spells: When it is his turn to do an action in the Encounter Step, each character can use his color chits to energize Permanent spells. When a color chit energizes a spell, the chit fatigues and reverts to being a normal Magic chit. He can play any number of color chits at the same time, but each color chit can energize only one spell before it fatigues.",
+            "a.1) The character energizes a spell only if the spell's target is in his clearing and he plays a chit that supplies the color magic required by that spell. If there are several spells requiring that color in his clearing, he can energize any one he wants. He has total control over his color chits: he is never forced to play a chit to energize a spell, even if he is the target. He can energize other spells in the clearing without energizing his own, if he wishes.",
+            "a.2) Playing color chits does not count as his action – he can also charge, run or fly away, activate/deactivate or abandon items, or do an action. Playing a color chit is not limited by Move chits, monsters, or natives on the character's sheet.",
+            "a.3) He can play color chits without energizing spells, if he wishes. Each chit fatigues and reverts to being a Magic chit.",
+            "Casting Spells: As his action during the Encounter Step, each character can play a Magic chit in the presence of the correct color magic to cast one of his recorded spells.",
+            "b.1) The only time that a character can cast spells is during rounds of combat in his clearing. He cannot cast spells at other times of day or when combat is being resolved in other clearings.",
+            "b.2) Each character can cast one spell per round of combat.",
+            "b.3) To cast a spell, a character must play a Magic chit when it is his turn to do an action during the Encounter Step. He puts the Magic chit in the spell box (on his Melee Section) that belongs to the spell. The Magic chit must be the same type as the spell (the Magic chit and spell must show the same Roman numerals) and the spell must be supplied with the color of magic it requires, or the Magic chit cannot be played to cast that spell. A character who plays a Magic chit to cast a spell is referred to as a \"spellcaster\".",
+            "b.4) The time number on the Magic chit is the spell's \"completion time\", the time it takes to complete the spell. Lower numbers mean faster spells. Alerted Magic chits automatically have a time number of zero instead of the number printed on the chit.",
+            "b.5) He can play a Magic chit only if its time number is less than or equal to the move time of every monster, native or Attention chit on his sheet. If the Magic chit is alerted, its time number is \"0\". Red-side-up Tremendous monsters do not automatically stop the playing of Magic chits. A spellcaster can play a Magic chit while a red-side-up monster is on his sheet, as long as the monster's move time is greater than or equal to the Magic chit's time number. Important: Notice that a Magic chit (unlike other action chits) is not stopped by move times that equal its time number.",
+            "b.6) The color magic can be supplied by any of the sources of color, including the map tile, the seventh day of the week, the Chapel or an Enchanted card anywhere in the clearing. The spellcaster can use one of his own color chits to supply the color magic, but he cannot use another character's color chits, even if that other character is willing.",
+            "b.7) A color chit counts only as a source of color magic – the time number and effort asterisks on the chit are ignored. The effort asterisks do not count towards the spellcaster's effort limit.",
+            "Artifacts and Spell Books: As his action during an Encounter Step, a character can play an active Artifact or Spell Book like a Magic chit, and use it to cast one of its awakened spells, with a time number of \"0\". To play the item he puts it and the Spell card it is casting in one of his vacant spell boxes, face up. This counts as his action for that Encounter Step. If he has no vacant spell boxes, he can play the cards anywhere on his sheet. Note: Spell cards that are in treasure site boxes or that are owned by visitors cannot be cast. They can only be learned.",
+            "c.1) He can play only one Artifact or Spell Book per round, and it can cast only one of its Spell cards each time it is played. He can play the item and Spell card only if the item is active, the Spell card is awakened, and both the item and spell card have the same Magic type. Example: The Good Book can be used to cast its two Type I Spell cards, but it cannot cast its two Type VII Spell cards.",
+            "c.2) The spell must be supplied with the proper color magic as explained above, or the Spell card cannot be played.",
+            "c.3) The item and Spell card remain committed to the target(s) until the spell ends. Until then, the item must stay face up, like an Enchanted card, even if it is sold or abandoned. Neither the item nor the Spell card can be played again while they are committed, but the Spell card (and the item's other Spell cards) can be learned by Reading Runes while they are committed.",
+            "c.4) Each Artifact or Spell Book can be used only once per Evening. Once it is played, it cannot be played again that day. When a spell cast by an Artifact or Spell Book ends, the Artifact or Spell Book cannot be used again until the start of the next Evening: if it ends during an Evening the item cannot be used again until the next Evening, but if it ends at Sunset or before, the item can be used during the Evening of that day.",
+            "c.5) The Artifact or Spell Book itself functions as the \"spellcaster\" of the spell. The character who currently owns the item controls the effects of the spell. Important: If no one owns the item, the spell is nullified (but not broken) until another character owns the item or the spell expires. Example: If the spell controls monsters, the owner of the item controls the monster. If no character has the item, the monsters are uncontrolled.",
+            "c.6) The spell cannot be broken by killing the current owner of the item – the item itself is really the spellcaster, and it cannot be killed. A spellbreaking spell used in the item's clearing can break the spell.",
+            "Spells cast by a spellcaster, Artifact, or Spell Book do not go into effect immediately; they go into effect after targets have been selected in the Melee Step."
+          ]
+        }
+      ]
+    }
+  ]
+} 

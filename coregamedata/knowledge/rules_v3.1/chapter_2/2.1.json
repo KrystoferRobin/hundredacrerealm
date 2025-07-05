@@ -1,0 +1,61 @@
+{
+  "title": "THE MAP",
+  "subsections": [
+    {
+      "id": "2.1.1",
+      "title": "Tiles",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The hexagonal Map Tiles (or \"hex tiles\") show the terrain of the Magic Realm. The green side of each tile is the front or \"normal\" side; the varicolored reverse side is the \"enchanted\" side. The \"enchanted\" side stays face down unless the map tile is enchanted during the game (usually by a character in an Enchant phase)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "The hex tiles are put side by side, green side up, to create the map of the Magic Realm. When assembled, the map shows a mountainous forest, dotted with clearings and caves that are interconnected by a network of roadways. Underground caves and tunnels are pictured in black, outlined with white dashes. The various types of terrain are illustrated in the figure following the Table of Contents.",
+            "Most of the game takes place in the circular clearings. The characters start the game in the same clearings with the Dwellings and move from clearing to clearing following the roadways. Each clearing contains a yellow numeral, so it can be identified by it's number and tile. For example, \"Nut Woods 2\" (or the abbreviation \"NW2\") identifies the clearing labeled \"2\" on the Nut Woods tile. There are three types of clearings: black underground clearings are cave clearings or \"caves\"; light brown clearings surrounded by grey mountain ridges are \"mountain\" clearings; and all other clearings are \"woods\" clearings.",
+            "The clearings are connected by four kinds of roadways: black underground \"tunnels\", light brown \"open roads\", dark brown \"hidden paths\" and grey-speckled black \"secret passages\". There are no crossroads or forks between clearings – open roads run over tunnels without connecting to them, and bridges show where one road crosses over another road without connecting to it. Roadways connect from tile to tile. Roadways that run off the map edge are normally not used, except to leave the game (see Rule 9.2.2b). Note: \"Mine openings\" just show where open roads go underground to become tunnels. They do not affect play."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.1.2",
+      "title": "Enchanted Tiles",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When a tile is \"enchanted\" side up, the tile itself automatically supplies an unlimited supply of color magic to everyone on that tile (see Rule 4.6.2e). The green side of the tile does not supply color magic."
+        }
+      ]
+    },
+    {
+      "id": "2.1.3",
+      "title": "Map Chits",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The map chits are put on the tiles face down to secretly define what is in each tile."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Each gold Site chit marks a treasure site. The number on the chit indicates the clearing where the site is located, and the name on the chit identifies the site. Example: The tile containing the \"Hoard 6\" chit contains the Hoard site in clearing \"6\".",
+            "The red Sound chits identify the sounds of the forest (sounds made by monsters) and mark a clearing where monsters can appear. The number on the chit indicates the clearing, and the word on the chit implies which monsters can appear there. The red Lost City and Lost Castle chits signify concentrations of Sound and Site chits. They identify regions thick with monsters and treasure.",
+            "Yellow Warning chits represent other clues that identify nearby monsters or dwellings. The letter on each chit defines the type of tile where it is put: \"V\" for Valley tiles, \"W\" for Woods tiles, \"C\" for tiles with caves, and \"M\" for Mountain tiles (and the mysterious Deep Woods). The Warning chits imply monsters that can appear in any clearing in the tile."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.1.4",
+      "title": "Dwelling Counters",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Dwelling counters represent buildings and campsites inhabited by humans."
+        }
+      ]
+    }
+  ]
+} 

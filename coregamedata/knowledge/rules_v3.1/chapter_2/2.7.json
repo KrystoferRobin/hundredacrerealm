@@ -1,0 +1,191 @@
+{
+  "title": "GAME PIECE ERRATA",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Several game pieces, especially in the first edition of the game, had errors printed on the pieces. Some of these errors can make setup and play confusing. To assist players, below is a list of all the known errata involving game pieces, and how to handle these errata in play."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "2.7.1",
+      "title": "Tremendous Monster Backs",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In the first edition, several of the Tremendous Monsters were printed with their backs (red sides) transposed – the T Flying Dragon has the back of the T Spider, the T Spider has the back of the T Troll, and the T Troll has the back of the T Flying Dragon. Solution: A sheet was originally provided so that players could cut out the correct backs and paste them onto the pieces; however, that sheet may be missing from most sets by now. To fix your game pieces, you can either xerox the correct backs out of the List of Monsters in the rules, cut them out, and paste them on, or try to obtain second edition pieces."
+        }
+      ]
+    },
+    {
+      "id": "2.7.2",
+      "title": "Octopus Move Time",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In the first edition, the Octopus was printed without a move time on the red side. Solution: The correct move time is 3; this can be written onto the piece. Note: The picture of the Octopus in the first and second edition rules List of Monsters is also shown without its move time and should be corrected."
+        }
+      ]
+    },
+    {
+      "id": "2.7.3",
+      "title": "Imp Magic Type",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Imp is shown as having a Type VIII attack. Actually, he has a Type V attack, for his Curse. This normally does not affect play, unless a character absorbs the Imp using Absorb Essence. Solution: If a character absorbs the Imp, he should be considered to have a Type V attack."
+        }
+      ]
+    },
+    {
+      "id": "2.7.4",
+      "title": "Rogue Numbering",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The numbers for R1 and R2 are transposed on the alerted side. Only the numbering is affected as these two rogues are the same type of native and have the same combat values on both sides. However, it could get confusing during combat as they flip over. Solution: Write the correct numbers on the alerted sides or keep track of which is which by using only the numbers on the unalerted side."
+        }
+      ]
+    },
+    {
+      "id": "2.7.5",
+      "title": "Bashkar Pony Numbering",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Several of the Bashkar ponies have incorrect numbers on the alerted side. B3 has the number B4 on the alerted side, B4 has the number B5, and B5 has the number B6. Only the numbers are affected, the combat values can be used as is. Solution: Write the correct numbers on the alerted sides, or keep track of which is which using only the numbers on the unalerted side."
+        }
+      ]
+    },
+    {
+      "id": "2.7.6",
+      "title": "Magician Spell Types",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "On first edition character cards, the Magician has spell types listed for the 2nd and 3rd development levels (Trickster and Illusionist) that don't match the chits available to him at those levels. Solution: Revise the magic chits he receives at each level to match the spell types he is allowed to choose. At the Trickster level, the Magic VIII4* should be replaced by a Magic II3*. At the Illusionist level, the Magic V4** and VI4* chits should be replaced by Magic III3* and VIII4* chits. At the Magician level, the Magic II3* and III3* chits should be replaced with Magic V4** and VI4* chits. This gives him the least powerful spells at lower levels and more powerful spells at higher levels."
+        }
+      ]
+    },
+    {
+      "id": "2.7.7",
+      "title": "Magician VII Chit",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In second edition, the Magician's Type VII4* chit was revised to have two effort asterisks, and became a Type VII4** chit. Most character cards in use are from first edition, and will not show this extra asterisk. Solution: Check your character card and add an extra effort asterisk to the Type VII4 chit if needed."
+        }
+      ]
+    },
+    {
+      "id": "2.7.8",
+      "title": "Order of Special Advantages",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "On many of the character cards, the order in which the Special Advantages are listed does not match the order in which they are described in the rules. This is important for the optional Development Game (see Rule 10.E.5-6), as the characters receive their Special Advantages in the order in which they are listed in the rules, not the order on the card. Solution: Number the Special Advantages on the cards to match the numbers in the rules. This affects the following characters:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Amazon gets Aim before Stamina",
+            "Black Knight gets Aim before Fear",
+            "Captain gets Aim before Reputation",
+            "Dwarf gets Short Legs before Cave Knowledge",
+            "Magician gets Magical Paraphernalia before Knowledge",
+            "Sorceror gets Lore before Aura of Power",
+            "Swordsman gets Barter before Clever",
+            "White Knight gets Health before Honor",
+            "Witch gets Knowledge before Familiar",
+            "Witch King gets Disembodied before Aura of Power",
+            "Wizard gets Lore before Experience"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For players who want to combine the Development Game (Rule 10.E.5) with the character Optional Abilities, suggestions for the stage of development that characters receive their Optional Abilities are included in the Advanced and Optional Rules (see Rule 10.A.6)."
+        }
+      ]
+    },
+    {
+      "id": "2.7.9",
+      "title": "Sword Type",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The White Knight's card lists a \"Bustard Sword\" for the first three development levels. This sword is referred to as a \"Broadsword\" in the Lists and Tables. Solution: Revise the White Knight's card or remember that the two sword types are the same."
+        }
+      ]
+    },
+    {
+      "id": "2.7.10",
+      "title": "Witch King Spells",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "On some second edition Witch King cards, the Witch-King is listed as having \"Two Spells (VI, V, or VI)\" at second level. The correct listing should be \"Two Spells (IV, V, or VI)\". First edition cards do not have this error. Solution: Revise the first \"VI\" to a \"IV\" on the card."
+        }
+      ]
+    },
+    {
+      "id": "2.7.11",
+      "title": "Spell Phases",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In the first and second edition rules, the term \"Spell phases\" was used to describe the Daylight phase in which characters could enchant magic chits or hex tiles. This activity is now called an \"Enchant phase\" in these Third Edition Rules, to make the purpose of the phase more clear. However, the Sorceror and Witch King cards, as well as copies of the First and Second Edition Rules, still refer to these as Spell phases. Solution: Annotate the Sorceror and Witch King cards with the new phase name or simply remember that the two types of phases are the same."
+        }
+      ]
+    },
+    {
+      "id": "2.7.12",
+      "title": "Regent of Jewels",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The treasure card for the Regent of Jewels has a typo, \"Regent or Jewels\". Solution: None needed; can be corrected with whiteout if preferred."
+        }
+      ]
+    },
+    {
+      "id": "2.7.13",
+      "title": "Vial of Healing",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This potion says \"Discard to Chapel\" – what it should actually say is \"Discard to Order\", since the Chapel itself can't own treasures, and the OHQ may or may not be located at the Chapel. Solution: When this card is discarded, place it with the Order's treasures and treat it like the rest of their belongings."
+        }
+      ]
+    },
+    {
+      "id": "2.7.14",
+      "title": "Lost City and Lost Castle",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Lost City and Lost Castle chits were printed with numbers on them; however, these numbers are not used in play. These chits are not placed in specific clearings; they are put in the woods, away from the clearings. Solution: Ignore the numbers on these chits."
+        }
+      ]
+    },
+    {
+      "id": "2.7.15",
+      "title": "H6/T8 Workhorse",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Some workhorses were printed with \"H6*\" on one side, and only an \"8\" on the other side. This counter should have a \"T\" above the horse on the side with the \"8\" to show that it can carry Tremendous weight. Solution: Print a \"T\" on the side of the horse counter with the \"8\"."
+        }
+      ]
+    },
+    {
+      "id": "2.7.16",
+      "title": "Morning Star",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Some early editions of the game have the unalerteded side of the Morning Star weapon with no weapon time. It should have a time of \"6\" on the unalerted side. (The alerted side has a speed of \"3.\") Solution: Add a \"6\" to the unalerted side."
+        }
+      ]
+    }
+  ]
+} 

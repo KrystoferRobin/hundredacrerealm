@@ -35,14 +35,20 @@ interface Chapter {
   }>;
 }
 
+interface ContentItem {
+  type: 'paragraph' | 'list' | 'heading';
+  text?: string;
+  items?: string[];
+}
+
 interface Section {
   id: string;
   title: string;
-  content: string;
-  subsections: Array<{
+  content: ContentItem[] | string;
+  subsections?: Array<{
     id: string;
     title: string;
-    content: string;
+    content: ContentItem[] | string;
   }>;
 }
 
@@ -138,6 +144,25 @@ export default function RulesIframe() {
     }
   };
 
+  const handleSectionClick = async (chapterId: string, sectionId: string) => {
+    // First ensure the correct chapter is loaded
+    if (selectedChapter !== chapterId) {
+      setSelectedChapter(chapterId);
+      // Load the chapter data immediately
+      try {
+        const response = await fetch(`/api/rules/chapter?book=${activeBook}&chapter=${chapterId}`);
+        if (response.ok) {
+          const chapter = await response.json();
+          setChapterData(chapter);
+        }
+      } catch (error) {
+        console.error('Error loading chapter:', error);
+      }
+    }
+    // Then set the section
+    setSelectedSection(sectionId);
+  };
+
   const renderAttribution = () => {
     if (!bookInfo?.attribution) return null;
 
@@ -191,12 +216,12 @@ export default function RulesIframe() {
               >
                 {chapter.id}.0 {chapter.title}
               </button>
-              {selectedChapter === chapter.id && chapterData && (
+              {chapterData && selectedChapter === chapter.id && (
                 <div className="ml-4 mt-1 space-y-1">
                   {chapterData.sections.map((section) => (
                     <button
                       key={section.id}
-                      onClick={() => setSelectedSection(section.id)}
+                      onClick={() => handleSectionClick(chapter.id, section.id)}
                       className={`w-full text-left p-1 rounded text-sm transition-colors ${
                         selectedSection === section.id
                           ? 'bg-[#bfa76a] text-[#fff8e1]'
@@ -230,9 +255,34 @@ export default function RulesIframe() {
         
         {sectionData.content && (
           <div className="mb-6 text-[#6b3e26] leading-relaxed">
-            {sectionData.content.split('\n\n').map((paragraph, index) => (
-              <p key={index} className="mb-4">{paragraph}</p>
-            ))}
+            {Array.isArray(sectionData.content) ? (
+              // New format: array of content objects
+              sectionData.content.map((item, index) => {
+                if (item.type === 'paragraph' && item.text) {
+                  return item.text.split('\n\n').map((paragraph, pIndex) => (
+                    <p key={`${index}-${pIndex}`} className="mb-2">{paragraph}</p>
+                  ));
+                } else if (item.type === 'list' && item.items) {
+                  return (
+                    <ul key={index} className="list-disc list-inside mb-4 space-y-1">
+                      {item.items.map((listItem, lIndex) => (
+                        <li key={lIndex} className="text-[#6b3e26]">{listItem}</li>
+                      ))}
+                    </ul>
+                  );
+                } else if (item.type === 'heading' && item.text) {
+                  return (
+                    <h3 key={index} className="text-lg font-bold text-[#6b3e26] mb-2">{item.text}</h3>
+                  );
+                }
+                return null;
+              })
+            ) : (
+              // Old format: string content
+              sectionData.content.split('\n\n').map((paragraph, index) => (
+                <p key={index} className="mb-4">{paragraph}</p>
+              ))
+            )}
           </div>
         )}
 
@@ -242,9 +292,34 @@ export default function RulesIframe() {
               <div key={subsection.id} className="border-l-4 border-[#bfa76a] pl-4">
                 <h3 className="text-lg font-bold text-[#6b3e26] mb-2">{subsection.title}</h3>
                 <div className="text-[#6b3e26] leading-relaxed">
-                  {subsection.content.split('\n\n').map((paragraph, index) => (
-                    <p key={index} className="mb-2">{paragraph}</p>
-                  ))}
+                  {Array.isArray(subsection.content) ? (
+                    // New format: array of content objects
+                    subsection.content.map((item, index) => {
+                      if (item.type === 'paragraph' && item.text) {
+                        return item.text.split('\n\n').map((paragraph, pIndex) => (
+                          <p key={`${index}-${pIndex}`} className="mb-2">{paragraph}</p>
+                        ));
+                      } else if (item.type === 'list' && item.items) {
+                        return (
+                          <ul key={index} className="list-disc list-inside mb-4 space-y-1">
+                            {item.items.map((listItem, lIndex) => (
+                              <li key={lIndex} className="text-[#6b3e26]">{listItem}</li>
+                            ))}
+                          </ul>
+                        );
+                      } else if (item.type === 'heading' && item.text) {
+                        return (
+                          <h4 key={index} className="text-md font-bold text-[#6b3e26] mb-2">{item.text}</h4>
+                        );
+                      }
+                      return null;
+                    })
+                  ) : (
+                    // Old format: string content
+                    subsection.content.split('\n\n').map((paragraph, index) => (
+                      <p key={index} className="mb-2">{paragraph}</p>
+                    ))
+                  )}
                 </div>
               </div>
             ))}

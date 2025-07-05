@@ -1,0 +1,13 @@
+{
+  "title": "Evening",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "All combat takes place in the Evening, one clearing at a time. When combat takes place in a clearing, monsters and unhired natives can attack the characters spontaneously, the characters can attack natives, monsters, or each other, and the characters can use their hired natives to fight monsters, natives, and other characters. Combat can cause a character to fatigue or wound action chits, it can damage or destroy his armor, it can kill his horse, and it can kill him. During combat, characters can also cast spells; this is the only time when spells can be cast."
+    },
+    {
+      "type": "paragraph",
+      "text": "The characters, natives, and monsters fight by doing \"rounds of combat\", each representing one exchange of blows or spells, including preparations and after effects. Each round consists of an Encounter Step, a Melee Step, and a Fatigue Step. The characters and denizens in the clearing repeat the rounds of combat until there are no characters or hired natives left in the clearing, or until there are two consecutive rounds in which nothing is killed, damaged, destroyed, fatigued or wounded, and no Tremendous monsters are red side up. At the end of the last round, characters in the clearing can rearrange belongings and trade."
+    }
+  ]
+} 

@@ -1,0 +1,91 @@
+{
+  "title": "PLACING MAP CHITS",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "When every player has selected his character and all of the available visitor/mission chits have been set up, the players put the map chits on the tiles to secretly define what is in each tile. The map chits are placed secretly and randomly, and at the start of the game they are face down so that no one knows what is in each tile. The Site chits represent treasure sites, six of the Warning chits are exchanged for Dwellings, and the other Warning and Sound chits identify areas visited by monsters. The Lost City chit represents five secret map chits placed in the Lost City section of the Setup Card, and the Lost Castle represents five secret chits placed in the Lost Castle section. When one of these chits is revealed, its five chits are put in its tile, face up."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "3.5.1",
+      "title": "Preparation: Punch out the map chits and sort them into groups",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "a. Put the red Lost City and Lost Castle chits to one side."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. Put the eight gold-colored Site chits and the 10 red Sound chits in the same group."
+        },
+        {
+          "type": "paragraph",
+          "text": "c. Sort the 20 yellow Warning chits into four groups according to the letter on each chit, so there is one group of \"V\" chits, one group of \"W\" chits, one group of \"C\" chits and one group of \"M\" chits. There will be five chits in each group."
+        }
+      ]
+    },
+    {
+      "id": "3.5.2",
+      "title": "The Lost City and Lost Castle Sections",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Turn the 18 Site and Sound chits blank side up and mix them thoroughly. Then pick 10 chits at random and without looking at them put them on the Appearance Chart. Put five chits in the Lost City section and the other five chits in the Lost Castle section. No boxes are provided for these chits – just put them at the top of each section."
+        }
+      ]
+    },
+    {
+      "id": "3.5.3",
+      "title": "Map Chits: Put the map chits in one group of tiles at a time, in the order outlined below",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Put the chits in each tile on the forest in the tile, away from the clearings. All of the chits are placed secretly, face down, so no one knows exactly which chits are in each tile. When directed to put a chit in a tile, pick the chit at random from the group specified and put it in the tile without looking at it. The players will know which group the chit came from, but not which chit it is."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. Cave tiles (Borderland, Cavern, Caves, High Pass, Ruins): Turn the five \"C\" Warning chits blank side up, mix them together thoroughly, and put one of them in each of these tiles. Pick four of the remaining Sound/Site chits at random without looking at them. Turn the Lost City chit blank side up and mix it in with these chits, and then put one of these chits in each of these tiles. Explanation: The Lost City is located in one of the five Cave tiles."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. Mountain tiles (Cliff, Crag, Deep Woods, Ledges, Mountain): Turn the five \"M\" Warning chits blank side up, mix them together thoroughly, and put one of them in each of these tiles. Turn the Lost Castle chit blank side up and mix it in with the remaining four chits, and then put one of these chits in each one of these tiles. Explanation: The Lost Castle is located in one of the five Mountain tiles."
+        },
+        {
+          "type": "paragraph",
+          "text": "c. Valley tiles (Awful Valley, Bad Valley, Cursed Valley, Dark Valley, Evil Valley): Turn the five \"V\" Warning chits blank side up, mix them together thoroughly, and put one of them in each of these tiles."
+        }
+      ]
+    },
+    {
+      "id": "3.5.4",
+      "title": "Woods tiles (Linden Woods, Maple Woods, Nut Woods, Oak Woods, Pine Woods)",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Turn the five \"W\" Warning chits blank side up, mix them together thoroughly, and put one of them in each of these tiles."
+        }
+      ]
+    },
+    {
+      "id": "3.5.5",
+      "title": "The Map Chits Table summarizes where the map chits are placed",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When they are all in position, they are located as follows:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Five secret Site and/or Sound chits will be in the Lost Castle section of the Appearance Chart.",
+            "Five secret Site and/or Sound chits will be in the Lost City section of the Appearance Chart.",
+            "Each Caves tile will contain two secret chits: one \"C\" Warning chit and one Site chit, Sound chit or the Lost City chit.",
+            "Each Mountain tile will contain two secret chits: one \"M\" Warning chit and one Site chit, Sound chit or the Lost Castle chit.",
+            "Each Valley tile will contain one secret \"V\" Warning chit. Each Woods tile will contain one secret \"W\" Warning chit."
+          ]
+        }
+      ]
+    }
+  ]
+} 

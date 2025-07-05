@@ -1,0 +1,116 @@
+{
+  "title": "Advanced Magic Rules",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The following rules enhance the importance of magic and the capabilities of the magic-using characters"
+    }
+  ],
+  "subsections": [
+    {
+      "id": "10.C.1",
+      "title": "Enhanced Magic",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Spells and Magic chits are not tied up by the casting of a spell, which allows the casting of multiple instances of a single spell."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Casting a spell does not tie up the spell or the Magic chit. The spell is free to be cast on the next round, and the Magic chit fatigues like any other action chit at the end of the round (it must fatigue).",
+            "Similarly, casting a Spell card does not tie up the card, and using an Artifact or Spell Book to cast a Spell card (or spell) does not tie up the item. However, each item can still be used only once per Evening."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.C.2",
+      "title": "Benevolent Spells",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "With this rule, some spells can be cast on your hired natives without causing them to attack you. This is another rule that was intended for the Second Edition."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Certain spells are deemed benevolent and can be cast by a character on his hired natives without constituting \"Treachery\" and causing the natives to rebel (see Rule 8.4.2g). They can also be cast on unhired natives without causing the natives to battle the spellcaster.",
+            "Benevolent spells are all Day spells, all Combat spells, and Peace with Nature. All other spells, including Attack spells and all Permanent spells except Peace with Nature are not benevolent."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.C.3",
+      "title": "Enhanced Artifacts and Spell Books",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This rule allows characters to use Artifacts and Spell Books as extra Magic chits."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Each Artifact and Spell Book can be used exactly like a Magic chit by the character who owns it. It can be enchanted into color magic, it can be used to enchant a map tile, it allows its owner to record spells and it can be played to cast recorded spells. Special: If a character uses an Artifact or Spell Book to record a spell, he can count that spell towards victory only if he has that Artifact or Spell Book at the end of the game.",
+            "Each Artifact and Spell Book's type is defined by the red Roman numeral on its card. It has a time number of zero.",
+            "Each Artifact and Spell Book still can be used only once per Evening.",
+            "The awakened Spell cards that belong to an Artifact or Spell Book can be cast by Magic chits like recorded spells. They also count towards victory at the end of the game, if the owner of the item has the Magic chits to cast them.",
+            "When an Artifact or Spell Book is enchanted to color magic, it ceases to be an Artifact or Spell Book. It can no longer be used to cast spells or read runes, it cannot be the target of an Enchant Artifact spell, and it cannot be bought, sold, or given away. The color magic must be expended – turning it back into an Artifact or Spell Book – before it can again be used for these activities. The color magic can be voluntarily expended at any time, and disappears immediately if the item is dropped or lost.",
+            "An Artifact or Spell Book can only be enchanted to one type of color magic – the color corresponding to the red Roman numeral on the card – even if it contains multiple Magic types.",
+            "If the Enchant Artifact spell is used to add a spell to an Artifact or Spell Book, a red Roman numeral matching that spell's type is also added, and is present whenever the Enchant Artifact spell is energized. The Artifact or Spell Book can be enchanted to color magic matching either this new red Roman numeral or the original printed red Roman numeral. An Artifact or Spell Book may not be enchanted to more than one type of color magic simultaneously.",
+            "If an Artifact or Spell Book is enchanted to color magic using a red Roman numeral provided by an energized Enchant Artifact spell, the color magic will automatically be expended at Midnight (if unused) when the Enchant Artifact spell falls inert.",
+            "When an Artifact or Spell Book that has been enchanted to color magic is used to supply color during combat, it is placed in the \"Used this Round\" box. It cannot be used to cast a spell until the next round of combat. In the following rounds of combat, the Artifact or Spell Book can be used to cast spells normally, once for each Magic type it has. Explanation: Use of an Artifact or Spell Book as a color chit does not count against the daily usage restrictions for Artifacts and Spell Books."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.C.4",
+      "title": "Power of the Pit",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This rule requires the Power of the Pit attack to hit like an attack spell."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Monsters and characters use the same procedure to cast the Power of the Pit spells. The spells are cast during the Encounter Step, even when they are cast by Demons, but they are resolved like Attack spells during the Melee Step. The Imp and the Curse spell are not affected by this rule. They continue to function as explained in the basic rules.",
+            "A Demon's spell comes to life at the start of the Encounter Step like a character's spell, and it cancels any spell that its target has played but not completed. If a character specifies a Demon as his target and his spell comes to life before the Demon's spell, the Demon's spell is cancelled. Example: If he casts Ask Demon with a completion time of zero, the Demon does not cast its spell.",
+            "All Power of the Pit spells are resolved as attacks during the Melee Step. The direction of a Demon's attack is determined as explained in the basic rules. A character puts his Magic chit in an Attack circle to specify the direction of his attack. If the spell hits, it inflicts its effect directly on the target, not on his armor or horses. If the spell fails to hit, it has no effect. Notice that Power of the Pit can cancel its target's spell even if it ultimately misses the target."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.C.5",
+      "title": "Automatic Enchanting",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Certain map tiles flip over automatically at the end of each week, changing many of the roadways and making more color magic available."
+        },
+        {
+          "type": "list",
+          "items": [
+            "On the seventh day of each game week, certain map tiles turn over automatically, without any action by the characters. Only automatic sources of color magic can turn tiles over automatically; color chits cannot be used. Each tile turns over as explained in as explained in Rule 7.10.4. All of the tiles turn over at the very start of the day, immediately after Midnight of the day before.",
+            "The color magic supplied by the seventh day automatically turns certain tiles over. It turns over each tile that contains an Enchanted card or Dwelling that supplies the same color magic, and it turns over all tiles that have that color on their enchanted side (the tiles turn over whether they are enchanted side up or green side up, as long as the enchanted side has the matching color).",
+            "On day 7, White magic will turn over the tiles that contain the Chapel and the Sacred Grail, and Black magic will turn over the tiles that contain the Toadstool Circle and the Cloven Hoof. If optional Rule 10.E.2 (Changing the Game Time) is being used to play a game longer than one month, only Black or White magic (not both at once) will be supplied on the seventh day of each month. If optional Rule 10.D.1 (Seasons and Weather) is being used, the color magic supplied on day 7 will vary according to the current Season. If colors other than White or Black are supplied, tiles will turn over as described below.",
+            "On day 14, the Grey magic turns over the five Valley tiles, the Ruins, the Crag, the Borderland, and the tile that contains the Golden Icon.",
+            "On day 21, the Purple magic turns over the Borderland, Cavern, Caves, Cliff, Crag, High Pass, Ledges and Mountain tiles, and the tile that contains the Dragon Essence card.",
+            "On day 28, the Gold magic turns over the six Woods tiles, the Crag, the Borderland and the tile that contains the Flowers of Rest card.",
+            "An Enchanted card also causes its tile to turn over if the card is in the same clearing with another Enchanted card or Dwelling that supplies the same color, or if it is in a clearing (or roadway) that supplies that color when the tile is enchanted side up (the tile turns over whether it is enchanted side up or green side up, as long as its enchanted side supplies the matching color to the card's clearing or roadway). Note: Enchanted cards cause tiles to turn over only on the seventh day of the week (days 7, 14, 21, and 28).",
+            "If the Chapel and Sacred Grail are in the same clearing, their tile turns over.",
+            "If the Golden Icon is in a clearing or roadway that supplies Grey magic when enchanted, its tile turns over.",
+            "If the Flowers of Rest card is in a clearing or roadway that supplies Gold magic when enchanted, its tile turns over.",
+            "If the Dragon Essence is in a clearing or roadway that supplies Purple magic when enchanted, its tile turns over.",
+            "If the Toadstool Circle and Cloven Hoof are in the same clearing, their tile turns over.",
+            "If an Enchanted card is on a roadway between tiles when it causes a tile to turn over, it causes both tiles to turn over.",
+            "A tile can turn over automatically only once at the end of each week. If several causes make it turn over, it turns over only once."
+          ]
+        }
+      ]
+    }
+  ]
+} 

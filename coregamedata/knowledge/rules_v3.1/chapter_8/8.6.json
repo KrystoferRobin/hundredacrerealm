@@ -1,0 +1,13 @@
+{
+  "title": "Disengagement",
+  "content": [
+    {
+      "type": "list",
+      "items": [
+        "At the end of each round of combat, all red-side-up Tremendous monsters remain assigned to their targets and all monsters and unhired natives who are assigned to characters remain assigned to them. All other denizens, hired or not, become unassigned.",
+        "If a red-side-up Tremendous monster is assigned to a native at the end of a round, at the start of the next round the monster becomes the defender on his own sheet and the native automatically becomes his target. Other natives can be assigned to attack the monster, but the native cannot be attacked by other denizens.",
+        "Uncontrolled denizens remain on their light or dark side as they finished the round."
+      ]
+    }
+  ]
+} 

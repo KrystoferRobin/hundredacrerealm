@@ -1,0 +1,25 @@
+{
+  "title": "The Hide Activity",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A character, hired leader, or controlled monster uses the Hide activity to try to hide. To record a Hide activity, he records \"H\". When he does the Hide activity he rolls the dice and consults the Hide Table to find his result. Important: Once he hides successfully he remains hidden. He does not have to roll for any additional Hide phases he has recorded – he automatically remains hidden."
+    },
+    {
+      "type": "paragraph",
+      "text": "A character's counter is placed tan side up when unhidden and green side up when hidden. A hired or controlled denizen's counter is placed light side up when unhidden and dark side up when hidden."
+    },
+    {
+      "type": "paragraph",
+      "text": "A character, hired leader, or controlled monster who hides successfully remains hidden until he starts his next turn, unless he is revealed by being blocked during Daylight, being targeted in combat, selecting a target in combat (note: see rule 10.A.2 Ambushes), flying, or voluntarily becoming unhidden. He can choose to stop hiding at any time."
+    },
+    {
+      "type": "paragraph",
+      "text": "Characters, hired leaders, and controlled monsters can continue to do activities while they are hidden. They remain hidden as they move, search, trade, hire, etc."
+    },
+    {
+      "type": "paragraph",
+      "text": "Underlings become unhidden at the beginning of the day and can hide only by following a guide who hides successfully."
+    }
+  ]
+} 

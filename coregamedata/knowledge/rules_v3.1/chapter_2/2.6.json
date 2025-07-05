@@ -1,0 +1,57 @@
+{
+  "title": "PERSONAL HISTORY PAD",
+  "subsections": [
+    {
+      "id": "2.6.1",
+      "title": "Overview",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each character takes one sheet of the Personal History Pad and uses it to keep a record of his status throughout the game. As each day is played he records the information for that day on the line for that day."
+        }
+      ]
+    },
+    {
+      "id": "2.6.2",
+      "title": "Front of Sheet",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The front of the sheet contains a large Turn Record area, a Discoveries list and a Victory Requirements box."
+        },
+        {
+          "type": "list",
+          "items": [
+            "At the start of the game he copies his Special Advantages and trading relationships from his Character card, and he records the Victory Points he needs to win the game in his Victory Requirements box. He must record any changes in trading relationships that occur during the game. He must reveal his current trading relationships whenever he is asked. His Victory Requirements are secret and need not be revealed.",
+            "The Turn Record is divided into nine \"Activities\" columns, one \"Find Enemies\" column, two \"Fame\" columns, two \"Notoriety\" columns and two \"Gold\" columns. It is ruled into 56 rows, grouped into two \"lunar months\" of 28 turns each. During the game, the character records each turn in the row for that turn. Note: Each Personal History sheet shows enough turns for two one-month games, or one longer game. All discoveries must be erased between games.",
+            "He records the activities he will do during his turn in the \"Activities\" section of his Turn Record. He records them from left to right in the order he plans to do them. When he does his turn he must do his activities in the order he recorded them.",
+            "Each character has personal Fame, Notoriety and Gold points that he can gain or lose during play. He keeps a record of these values in the Fame, Notoriety, and Gold columns of his Turn Record section.",
+            "His recorded Fame and recorded Notoriety both start at zero. They can increase or decrease without limit, and they can fall below zero – he can record negative Fame points and negative Notoriety points. His Fame represents how much he is admired (negative points show how much he is despised), and his Notoriety represents how much he is feared (negative points show how much he is scorned). These values are not secret: he must reveal his recorded Fame and his recorded Notoriety whenever he is asked.",
+            "His Gold points show the value of the coins and loose jewels he is carrying (there are no game pieces for gold and jewels). Recorded gold never weighs anything (1arge values represent valuable jewels). Each character must keep his recorded gold secret until the end of the game. He starts the game with 10 points of recorded gold, and it can increase without limit. Important: His recorded gold can never fall below zero – he cannot spend gold he does not have (there is no credit in the Magic Realm).",
+            "He records discoveries by crossing them off his Discoveries list, which lists every hidden roadway and treasure site in the game, and in the Find Enemies column of his turn Record.",
+            "Each hidden path and secret passage is identified by the clearings it connects; roadways that are on different sides of the same tile are different roadways that are listed separately. Example: The secret passageway listed as \"Borderland (green) 4-5\" is the secret passageway connecting clearing 4 with clearing 5 on the green side of the Borderland tile. There is also a different \"Borderland (enchanted) 4-5\" secret passageway on the enchanted side of the tile.",
+            "Each Site chit is listed under \"Treasure Locations\". Each Site card is listed under \"Special Cards\".",
+            "On any turn in which a character discovers \"Hidden enemies\" by rolling on a Search Table, he checks the \"Find Enemies\" column."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.6.3",
+      "title": "Back of Sheet",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He uses the back of his sheet for combat and magic. He uses the Melee Section to resolve his attacks and maneuvers during combat."
+        },
+        {
+          "type": "list",
+          "items": [
+            "He records the spells he can use in the \"Spells\" boxes on the back of his Personal History sheet. Each character starts the game with a limited number of spells, and he can obtain more by learning them or buying them from visitors.",
+            "At the start of the game, the Spell cards are set up on the Setup Card to specify where new spells can be acquired. When a character acquires a spell, he records the spell on his sheet and leaves the Spell card for others to find."
+          ]
+        }
+      ]
+    }
+  ]
+} 

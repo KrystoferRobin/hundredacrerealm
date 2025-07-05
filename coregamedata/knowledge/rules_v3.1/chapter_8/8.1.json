@@ -1,0 +1,69 @@
+{
+  "title": "Sunset and Start of Evening",
+  "content": [],
+  "subsections": [
+    {
+      "id": "8.1.1",
+      "title": "Sunset",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "At the beginning of Sunset, all Day spells cast during the Evening of the day before expire, and their associated Magic chits fatigue. Characters put to sleep by the Flowers of Rest awake refreshed, with all their fatigued chits activated."
+        },
+        {
+          "type": "paragraph",
+          "text": "Note: All of the spells that allow monsters to be controlled are Day spells, and expire just before combat begins! Careful planning of Daylight activities is needed if you wish to avoid combat with your previously controlled monsters."
+        }
+      ]
+    },
+    {
+      "id": "8.1.2",
+      "title": "Determining Combat Order",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "During Sunset the players take one Attention chit from each clearing that contains one or more characters or hired leaders and then they mix these chits together blank side up."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Take only one Attention chit per clearing with characters present, regardless of how many characters there are in that clearing.",
+            "Combat takes place in clearings that contain hired leaders even if no characters are present. When taking one Attention chit from each clearing, take a leader's chit if there is no character in the clearing.",
+            "Combat does not take place in clearings that contain only underlings, monsters, and/or unhired natives. No attention chits are taken for these clearings and no Evening activities take place there."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.1.3",
+      "title": "Evening",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "During the Evening, the attention chits that were mixed together during Sunset are picked in random order, and when a clearing's chit is picked the individuals in that clearing do their activities. When all of the chits have been drawn, Evening ends. No evening activities take place in clearings without attention chits."
+        },
+        {
+          "type": "list",
+          "items": [
+            "If there are no monsters, hostile natives, or hostile characters in a clearing when it takes its turn, no fighting takes place, but the characters in the clearing still do at least two rounds of combat in which they can run away, cast spells, activate items, or do nothing. Following these two rounds, characters, hired leaders, and controlled monsters can trade with each other and rearrange their belongings.",
+            "When a clearing's attention chit is chosen, only the characters and denizens in that clearing take part in rounds of combat; play stops in the other clearings, and the characters and denizens in those clearings do nothing. Note: To speed up play, at Sunset the players can agree to do combat in all of the clearings simultaneously, but only if all of the players agree to it. If even one player vetoes it, then combat is done in one clearing at a time.",
+            "Only the characters and denizens who are in the clearing can attack or be attacked. If a character has hired natives in the clearing but is not there himself, he can use his hired natives to fight during combat but he himself cannot attack and he cannot be attacked."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.1.4",
+      "title": "Initial Placement of Denizens",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "At the beginning of combat in a clearing, all unhired natives and monsters in the clearing start with their counters light side up. Tremendous monsters are turned red side down and their heads and clubs are light side up. These counters turn over only during combat, and when combat ends they turn light side up again.",
+            "At the beginning of combat, put hired monsters and natives that are hidden to one side to identify them, since hired denizens can turn dark side up in combat even if unhidden. Hidden denizens are put aside until they enter the battle and become unhidden. At the end of combat, hidden denizen counters will be turned dark side up and unhidden denizen counters will be turned light side up. During combat, hired and controlled monsters fight just like hired natives. Exception: Tremendous monsters (see rule 8.4.7c)."
+          ]
+        }
+      ]
+    }
+  ]
+} 

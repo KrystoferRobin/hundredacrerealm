@@ -1,0 +1,136 @@
+{
+  "title": "The Move Activity",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The game is played in the clearings on the map. The characters move from clearing to clearing by following the roadways, either walking or riding horses. Characters can also use magic to fly or walk the woods to travel between clearings."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "7.3.1",
+      "title": "Normal Movement",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each character, hired leader, or controlled monster uses the Move activity to move from clearing to clearing. He can record several Move phases to move several clearings in the same turn."
+        },
+        {
+          "type": "list",
+          "items": [
+            "He must follow the roadways when he moves, and he must end every move in a clearing. He cannot stop on the road between clearings, and he cannot move off the roads into the forest. Each time he moves he goes onto a roadway out of his clearing and moves along this roadway until he enters another clearing, which completes his Move phase. The roadway can be an open road, tunnel, bridge, secret passage, or hidden path, but it must run from the first clearing to the second without passing through any other clearings.",
+            "He can move along open roads, bridges, and tunnels freely.",
+            "He cannot move along a hidden path or secret passage until he has discovered it using the Search activity or learned its location from other players. Once he has discovered a hidden path or secret passage, he can move along it as if it were an open road for the rest of the game.",
+            "If he comes to a place where his roadway runs over or under another roadway, he must stay on the roadway he is using. He cannot change roadways where a tunnel runs under an open road, and he cannot change roadways where an open road runs under a bridge.",
+            "Leaving the Map: A character can move along a roadway to a map edge in the same way he moves to a clearing (he records \"Edge\" as the clearing he is moving to). When he does the activity he leaves the game (see Rule 9.2.2b).",
+            "When an individual does the Move activity he must move to the clearing he recorded, if it is connected to his clearing by a roadway he can use. If he cannot move to the clearing he recorded, he forfeits this phase.",
+            "Normally, it requires one Move phase to move one clearing, with the exceptions listed below.",
+            "Climbing Mountains: To enter a mountain clearing, he must do two Move activities on consecutive phases of the same day. He does not move at all until he does the second Move, whereupon he moves all the way to the mountain clearing. He must do two Move activities each time he enters a mountain clearing, even when he is moving from another mountain clearing. He needs only one Move phase to move from a mountain clearing to a woods or cave clearing. Note: If playing with the Seasons/Weather optional rule (Rule 10.E.1), the number of Move phases required to move into a mountain clearing may vary by Season.",
+            "Entering Caves: He cannot enter (or be in) a cave clearing on the same day he uses a Sunlight phase. Example: The Black Knight has already used two Basic phases to move to two woods clearings. He cannot move into a cave on his third phase because the third phase would be a Sunlight phase.",
+            "A character can do an extra Move phase that is limited to certain clearings only if he starts the Move in one of those clearings. Example: The Captain can use the extra phase he gets at Dwellings to leave a Dwelling, but he cannot use it to move to a Dwelling.",
+            "Carrying Items: When a character moves out of a clearing, he must have a Move chit active (or an active horse or Boots card), which defines the weight of the items he can carry with him. The character does not have the option to cancel a legal recorded move just because he is forced to abandon something. He must make the move and abandon the item.",
+            "Weapons, armor and Treasure cards are \"items\" that have to be carried. When a character moves from clearing to clearing his horses move with him automatically, but his weapons, armor and Treasure cards move with him only if he has an active Move chit with enough strength to carry them.",
+            "A character may also use an active horse or Boots card in place of a Move chit.",
+            "The strength letter on the Move chit defines the heaviest weight he can carry. He can carry any number of items, as long as each item's weight is less than or equal to this strength. He must abandon all items whose weight exceeds this strength when he moves. The letter on each item defines its weight. Example: If the Black Knight has only \"M\" (Medium) Move chits active, he can carry his \"M\" (Medium) Mace and shield but he must abandon his \"H\" (Heavy) suit of armor. If he has a Heavy Move chit active, he can carry his suit of armor too.",
+            "If he does not have an active Move chit (or horse or Boots card), he can move and he can carry any number of items with \"Negligible\" weight, but he must abandon all heavier items. He does not need to have a Move chit to carry himself, his horses, nor items with Negligible weight.",
+            "A character can own any number of items regardless of their weight, as long as he stays in the same clearing. He must \"carry\" items only when he moves from clearing to clearing.",
+            "Boots cards display the word \"MOVE\", a strength letter and a time number. When a character has a Boots card active, he can use it in place of a Move chit with the strength and time number shown on the card to carry items when he moves.",
+            "A character can have a Boots card active only if its strength equals or exceeds the weight of the character and every item he owns. If he obtains an item whose weight exceeds the card's strength, he must instantly deactivate the Boots card or abandon the item.",
+            "A character can never have more than one Boots card active at a time.",
+            "A hired leader's move strength defines the weight of the items he can carry. Move strengths for natives are listed in the List of Natives. A controlled monster's weight/vulnerability defines the weight of the items it can carry.",
+            "A character or hired leader acting as a guide can use the strength of the underlings who are following him, whether their hiring character approves or not. He can use their move strength to carry items as he moves instead of an active Move chit or Boots card, or in the case of a hired leader, in place of his own move strength.",
+            "Pack Horses: A character, hired leader, or controlled monster can assign inactive items to his inactive horses. The horses carry these items, reducing the weight that the individual has to carry. Inactive horses that are carrying items are \"pack horses\" that automatically follow the individual when he moves.",
+            "Horses are described on the List of Horses. Each horse counter has the strength letter and time number shown on the side of the counter that is face up at the moment.",
+            "A pack horse can carry any number of items, as long as its strength will carry the weight of each item. Items being carried by a pack horse are treated like any other inactive items, except they are put to one side with the horse counter. When an individual rearranges his belongings, he can rearrange the items being carried by his horses.",
+            "When an individual does Move phases, his pack horses automatically follow him, even when he does extra Move phases that exceed the horse's normal movement. Pack horses (and the items they are carrying) are left behind when an individual does a Fly phase. When a pack horse is left behind, or when its owner is killed, the horse and the items it is carrying are abandoned in the clearing normally.",
+            "When a character uses a Move chit to move from clearing to clearing he does not have to carry the items being carried by his pack horses. Similarly, when he activates a horse or Boots card it does not have to carry the items being carried by his pack horses. This allows him to ride a fast, weak horse while a slow, strong horse carries his heavy items. Example: The Swordsman could activate a pony while he uses a warhorse to carry his heavy items. He can use the pony's extra Move phases during his turn and he can use its faster movement in combat, and the warhorse automatically keeps up with him.",
+            "Pack horses can carry items even in caves, as they are always inactive."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7.3.2",
+      "title": "Riding Horses",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When a character has a horse active, he is riding it."
+        },
+        {
+          "type": "list",
+          "items": [
+            "A character can have only one horse active at a time, and he can have a horse active only if its strength letter equals or exceeds his weight and the weight of every item he is carrying (except those items being carried by pack horses). If the horse counter has different strengths on the front and back sides, he may use the strength letter on either side to fulfill this requirement. If he obtains an item whose weight exceeds his horse's strength, he must instantly deactivate the horse or abandon the item. Note: A character can have a Boots card and a horse active at the same time.",
+            "A character cannot have a horse active when he is in a cave. When an active horse enters a cave it is instantly deactivated, and can only be used as a pack horse.",
+            "A character can use an extra Move activity caused by a horse to enter a cave, but the horse is instantly deactivated when it arrives in the cave. The horse cannot be ridden while it is in the caves – the character cannot use it to move out of a cave clearing.",
+            "Certain active horses give their rider extra Move phases. To use these phases, he must have the horse active when he records the extra phase during Birdsong and he must have it already active at the beginning of the phase in which he plans to use it during Daylight. He cannot activate the horse and use its bonus Move in the same phase. Example: A horse's bonus phase cannot be used immediately after leaving a cave, because in order to use a bonus phase the horse must have been active at the start of that phase (prior to the rearranging belongings step where the horse can be activated).",
+            "Warhorses do not give their riders any extra Move phases.",
+            "Workhorses give their riders one extra Move phase per day.",
+            "A pony doubles his rider's movement. For each Move phase he gets from other sources, he can record a second Move phase due to the pony following that Move phase. Each extra Move phase caused by a pony must be preceded by a Move phase that was not caused by the pony. Move phases caused by the pony must alternate with other Move phases, and the pony cannot cause the first Move in the turn. The Move phases need not be consecutive; other phases can intervene.",
+            "When a character is riding a horse, he can use it instead of a Move chit to carry items when he moves, as long as all the items he is carrying are equal to or lower weight than the horse's move strength. Horses do not have to be carried. Whenever a character moves, all of his horses automatically move with him, even when he does an extra move.",
+            "Transmorphized characters cannot ride horses.",
+            "Hired natives cannot ride the round horse counters. They can only ride their own native horses (square horse counters). Controlled monsters cannot ride horses.",
+            "Hired natives receive the same extra Move phases for their own horses as do characters.",
+            "Hired natives and their horses must follow the same rules regarding caves as characters. They cannot ride their horses while in caves. They can ride their horses to enter a cave but not to leave a cave. Hired leaders cannot record extra phases due to their horses while in a cave."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7.3.3",
+      "title": "Flying",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Some monsters have \"flying values\" instead of move values (see the List of Monsters), and characters and other denizens can acquire flying values through magic. Flying values, like move values, consist of a strength letter and a move time. When a character or denizen has a flying strength that will carry him, he can use it to fly."
+        },
+        {
+          "type": "list",
+          "items": [
+            "The Fly activity: When a character has flying ability and wishes to use it, he records and uses the Fly activity rather than the Move activity. When a character or denizen does the Fly activity, he moves from tile to tile without following the roadways or entering the clearings. He must either fly within his own tile without leaving, or move from tile to adjacent tile without skipping over any tiles. He can fly directly from a clearing (even a cave clearing) to his own tile or any adjacent tile.",
+            "To record each Fly activity, he records \"FL\" and the tile he will fly to. He can record \"FL\" and any tile he chooses even if he has no flying values at the moment. When he does the Fly phase, if he is able to do the Fly activity he must fly to the tile he recorded, otherwise he forfeits that phase. His counter is put on the forest in that tile, away from the clearings.",
+            "To do the Fly activity, he must meet both conditions explained below. If he fails either condition, the activity is cancelled. 1) He must have flying strength (a Fly chit, his own transmorphized flying values, a flying steed, or the Magic Carpet) that is able to carry him. 2) He must be in the tile he recorded, or in a tile that is adjacent to the tile he recorded.",
+            "When he flies, he instantly becomes unhidden and he must abandon his untransmorphized horses and any items his flying strength cannot carry. While flying he cannot block or be blocked.",
+            "A follower can follow a flying guide only if the follower is able to fly. Otherwise, he is left behind.",
+            "Individuals can fly in and out of caves freely; it is assumed that they are using chimneys leading to the surface.",
+            "Landing: When an individual stops doing the Fly activity, he must land. He must land before doing any other activity (he cannot do other activities while flying) and he must land at the end of his turn. He cannot land in between consecutive Fly phases (except when he lands after flying away during combat, see 8.3.8e2). Note: The Flying Activities optional rule (Rule 10.A.3) allows certain activities to be done while flying.",
+            "He rolls one die (unmodified) and lands in the last tile he flew to, in the clearing that matches the number he rolled (even if it is a cave). If the tile has no clearing with this number, he keeps rolling until he rolls a clearing on the tile. Special: If he lands in a cave after using a Sunlight phase during his turn, the remaining phases of his turn are cancelled.",
+            "When an individual lands, he can block and be blocked normally.",
+            "A flying character or denizen must land at the end of his last phase during Daylight. He cannot continue flying during the Evening.",
+            "A character or non-flying denizen can gain flying ability in four ways: by using a magical Fly chit created by a spell, by being transmorphized into a flying monster or beast, by riding a flying steed, or by riding the Flying Carpet.",
+            "Certain spells, such as Broomstick, create special Fly chits that allow individuals to fly around the board instead of walking or riding from clearing to clearing.",
+            "When such a spell is cast it has no immediate effect, but it has a delayed effect. The spell's Magic chit becomes a special Fly chit with the flying strength and time number defined by the spell (it has no effort asterisks). The target can play this Fly chit like a Move chit during his turn, and when he plays it he flies. A Fly chit created by a spell remains in existence indefinitely, until it is used. The Fly chit can be used for multiple consecutive Fly phases, but expires as soon as the flier lands.",
+            "When a denizen is the target of the spell, he can use the Fly chit in place of his own move values.",
+            "If the target cannot rearrange belongings at the beginning of a phase, he cannot play the Fly chit that phase.",
+            "If a character is transmorphized into a flying monster or creature, he must use the Fly activity instead of the Move activity. He can move normally only by following a guide who is moving normally.",
+            "Hired or controlled monsters that fly must also use the Fly activity instead of the Move activity when they move. They can move normally only by following guides who are moving normally.",
+            "When a controlled Bat or Flying Dragon follows a character, the character can ride the monster and fly during his turn. He can ride the monster only if its flying strength can carry him. He can also ride a transmorphized character or denizen who is following him, if its flying strength can carry him. A character cannot ride another character who is using a Fly chit to fly.",
+            "Only characters can ride monsters. Hired or controlled denizens cannot ride monsters.",
+            "The only monsters that can be ridden are the Bats and Flying Dragons. The Winged Demon and the other monsters cannot be ridden.",
+            "The flying strength of a monster is the same as its weight/vulnerability, and its speed is the move time shown on the side of the counter that is face up at the moment. The flying values of flying creatures are given in the Transform Table.",
+            "A transmorphized character can ride flying monsters only if he is transmorphized into a Goblin, Ogre, Imp, or Heavy Troll. If he is transmorphized into anything else, he cannot ride flying monsters.",
+            "If his steed stops following him, he and the steed must land (in the same clearing).",
+            "The Flying Carpet is considered to have a permanent flying spell on it, which can be energized using Purple magic. A character who owns the Flying Carpet may use it repeatedly and without limit to fly during the day, as long as he and his belongings do not exceed its weight limit, and as long as it is supplied with Purple magic. If he uses a Purple Magic chit to energize the Flying Carpet, it remains energized for the whole day, regardless of how often he lands."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7.3.4",
+      "title": "Walking the Woods",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When transformed into a beast that \"walks the woods\", a character or denizen can move from clearing to clearing within a tile without following the roadways. He can record and do a Move to any clearing in his tile. He must follow the roadways normally when he moves from one tile to another."
+        },
+        {
+          "type": "list",
+          "items": [
+            "When he moves, his horses move with him.",
+            "When a beast moves from clearing to clearing, a follower can follow it only if he is also a beast or if the clearings are connected by a roadway. If the clearings are joined by a hidden path or secret passage, everyone who is following the beast discovers it."
+          ]
+        }
+      ]
+    }
+  ]
+} 

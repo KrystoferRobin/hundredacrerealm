@@ -1,0 +1,33 @@
+{
+  "title": "End of Phase – Blocking",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Monsters can interrupt each character, hired leader, and controlled monster at the end of each phase as he takes his turn. These interruptions are referred to as 'blocking'. The characters, hired leaders, and controlled monsters can also 'block' the monsters to stop them from prowling, and can block other characters, hired leaders, and controlled monsters. Underlings cannot block or be blocked. Note: An individual can never block himself."
+    },
+    {
+      "type": "paragraph",
+      "text": "Blocking is mutual. A character or denizen who blocks another individual is also blocked. Individuals can block each other only if they are in the same clearing and one of them has just finished a phase of his turn. Similarly, an individual and monster can block each other if they are in the same clearing and the individual has just finished a phase of his turn, or if the monster has just arrived in the clearing at the end of his or another individual's turn. Individuals cannot block nor be blocked while they are following. They can block and be blocked normally as soon as they are put back on the map."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each time an individual ends a phase of his turn, blocking can occur in his clearing. If he is unhidden, he is automatically blocked by all of the monsters in his clearing, and all of the individuals in his clearing have the option to block him. Prowling has no effect on blocking; monsters block regardless of whether they are prowling or dormant. They can block an individual whether he did an activity that phase or not, but if he was doing an activity he finishes it before he can be blocked. Example: If he starts his turn in the same clearing with a monster, he can use his first phase to hide or move away, thus avoiding the block. Clarification: When an individual tries to use two Move phases to move to a mountain clearing, he does not move until he completes the second Move activity. If he is unhidden, all the monsters in his clearing block him at the end of the first Move activity, before he can move."
+    },
+    {
+      "type": "paragraph",
+      "text": "If he is hidden, the monsters cannot block him and only those individuals who have found hidden enemies that day can block him. If he has found hidden enemies that day, he can block any or all of the individuals and monsters in his clearing. If he has not found hidden enemies he can block the monsters and unhidden individuals, but he cannot block hidden individuals. An individual can block while hidden, but becomes instantly unhidden when he blocks. An individual cannot be blocked if he is flying and still in the air at the end of a phase. He can block and be blocked normally when he lands."
+    },
+    {
+      "type": "paragraph",
+      "text": "Blocking can also occur when monsters arrive in a clearing at the end of a turn. When an individual ends his turn, all monsters that move or appear on the map automatically block all of the unhidden individuals in the clearings that they move to. At the same time, the monsters can be blocked by any of the individuals in those clearings. Example: On a day when Goblins prowl, a character ends his turn in Clearing 2 of a caves tile containing the 'Howl 5' chit. Any Goblins already in the tile move to Clearing 2 and block all of the unhidden individuals there, and any Goblins that appear in Clearing 5 block all unhidden individuals in that clearing. At the same time, both the hidden and unhidden individuals in each clearing can block the Goblins as they arrive. The Dwarf and the Elf each defeat their Bats in combat."
+    },
+    {
+      "type": "paragraph",
+      "text": "If an individual blocks or is blocked before the end of his turn, the rest of his turn is cancelled and it ends instantly. If he blocks or is blocked before he takes his turn, he does not get a turn that day (and does not attract prowling monsters). If he blocks or is blocked after he takes his turn, he loses nothing except his 'hidden' status. An individual is instantly unhidden when he is blocked. Once blocked, an individual cannot trade with other individuals as they are taking their turns later in the day. Explanation: He is fully engaged in eluding his blocker or preventing someone else from leaving the clearing. He can still block additional individuals or monsters that may appear in the clearing later in the day."
+    },
+    {
+      "type": "paragraph",
+      "text": "When a denizen blocks or is blocked, it stops prowling and cannot move for the rest of the day. Blocking has no other effects on denizens: natives and visitors who have blocked one character can still trade with others, and dormant monsters can still block. Unhired natives and visitors can block a character or hired leader only when he rolls on the Meeting Table as part of a Trade or Hire phase. They can block him even if he is hidden, and when he is blocked, he becomes unhidden. Characters and hired leaders cannot block unhired natives or visitors."
+    }
+  ]
+} 

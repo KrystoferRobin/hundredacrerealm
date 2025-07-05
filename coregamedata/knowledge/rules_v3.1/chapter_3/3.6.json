@@ -1,0 +1,63 @@
+{
+  "title": "REVEALING DWELLINGS",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "When all of the map chits have been placed, the Warning chits in the Valley tiles are turned face up and four Dwellings and two Ghost counters are put in those tiles."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "3.6.1",
+      "title": "The only chits that are turned face up are the five Warning chits in the five Valley tiles",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The chits in the other tiles remain face down and secret, and are still unknown when the game begins."
+        },
+        {
+          "type": "paragraph",
+          "text": "The players must not turn up the Valley chits until they have finished recording their Victory Requirements, spells, and the Dwellings where they will start the game. They cannot change Dwellings, spells, or change or add to their Victory Requirements once the Valley chits have been revealed."
+        }
+      ]
+    },
+    {
+      "id": "3.6.2",
+      "title": "The \"V\" Warning chit in each Valley tile defines what to put in that tile",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each chit represents a Dwelling or a pair of Ghosts, and when the chit is turned face up it is removed from play and the pieces it represents are put in its tile, in the clearing numbered \"5\". Exception: The players must be able to trace a route along the roadways from the pieces to a clearing on the Borderland tile. The route can be of any length and it can follow any roadways, including hidden paths and secret passages. If clearing \"5\" does not connect to the Borderland by road, put the pieces in clearing \"4\" instead."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. The Dwelling Exchange Chits Table summarizes the pieces that are exchanged for each \"V\" chit. The Stink V chit is exchanged for the Inn, the Smoke V chit is exchanged for the House, the Dank V chit is exchanged for the Chapel, the Ruins V chit is exchanged for the Guard house, and the Bones V chit is exchanged for the pair of Ghosts."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. The Campfires are not put on the map at this time. The Small Campfire will be exchanged for the Smoke W Warning chit and the Large Campfire will be exchanged for the Stink W Warning chit when these chits are revealed during the course of the game."
+        }
+      ]
+    },
+    {
+      "id": "3.6.3",
+      "title": "When a Dwelling counter is put on the map, all natives in that Dwelling's Garrison box are put on the map with it",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Garrison natives start the game at their Dwellings and do not move unless hired."
+        }
+      ]
+    },
+    {
+      "id": "3.6.4",
+      "title": "Finally, the players reveal the Dwellings they recorded as starting locations, and each character is put at the Dwelling he recorded",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "All of the character counters are turned green side up when they are put on the map. Explanation: All of the characters are hidden at the start of the game."
+        }
+      ]
+    }
+  ]
+} 

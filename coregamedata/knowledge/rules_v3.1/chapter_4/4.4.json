@@ -1,0 +1,131 @@
+{
+  "title": "TREASURE CARDS",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Treasure Cards represent a variety of items including weapons, armor, boots, gloves, other clothing, jewelry, potions and more."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "4.4.1",
+      "title": "Before the game the Treasure cards are set up secretly and randomly on the Setup Card",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "a. Before the game the Treasure cards are set up secretly and randomly on the Setup Card. The characters can count the cards in each box, but they cannot look at the faces of the cards and they cannot alter the order that they are stacked in each box."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. When a character owns a Treasure card, he must turn it face up when it is active but he leaves it face down when it is inactive. He can reveal an inactive card if he wishes, but he is not obliged to reveal it."
+        },
+        {
+          "type": "paragraph",
+          "text": "c. Treasure cards remain face down and secret when a character finds them or buys them from characters, and they remain secret when he abandons them or sells them to characters. Treasure cards must be revealed when natives and visitors buy and sell them, but the cards are turned face down when they are put on the Setup Card. Exception: Enchanted cards always remain face up once found; see below."
+        }
+      ]
+    },
+    {
+      "id": "4.4.2",
+      "title": "Enchanted Cards display the name of a color, printed in red, and radiate color magic, as well as having other effects",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When a character finds one of these cards he must turn it face up, and it stays face up for the rest of the game, even if it is put back on the Setup Card or on the map. It cannot be deactivated."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. Enchanted cards are considered found and are activated if they are looted by a character or hired leader, or if a character or hired leader sees them in the course of trading with a native group (even if he does not buy the card). Enchanted cards are not considered found and are not activated if the character receives a Wish for a Vision and sees the card while looking at the treasures at a treasure site. Explanation: A character or hired leader must be physically handling the item to activate the card."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. If the card has a special effect, such as the Cloven Hoof's +1 to die rolls, this effect applies to every character who is in the same clearing with it, whether it is abandoned in the clearing or is being carried by a character, native or visitor. This is true even if a hired native leader owns it, even though his belongings are not accessible for trading. Example: The Captain trades with the Patrol and sees the Dragon Essence, but does not buy it. The Dragon Essence is activated and begins radiating Purple magic (and attracting Dragons). Later, the Captain hires the Patrol. The Dragon Essence still supplies Purple magic to everyone in the PHQ's clearing, and still acts as a Smoke chit, even though it is out of play and unavailable for trading."
+        }
+      ]
+    },
+    {
+      "id": "4.4.3",
+      "title": "Potions display the word Potion at the top of the card",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When a Potion is activated it remains active until the end of the day. At Midnight the Potion and its special effect stops, and the card is put on the Setup Card, face down, in the box named on the card. The Potion can then be bought from that box's owner and used again. Potions can be bought and used any number of times."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. A \"reusable\" Potion can be transferred, sold, or abandoned while active, and it can be used by its new owner."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. A Potion that \"expires when activated\" is immediately used and removed from play when it is activated."
+        },
+        {
+          "type": "paragraph",
+          "text": "c. A Potion that is \"consumed by activation\" is used up by the character who activates it. He keeps the card until Midnight to represent the potion's effect, which cannot be transferred."
+        },
+        {
+          "type": "paragraph",
+          "text": "d. A Potion that is \"applied to a weapon\" is used up on the weapon the character has active when he activates the Potion (his dagger, if he has no other weapon active). The card is put with that weapon until Midnight to represent the potion's effect. The Potion cannot be transferred to any other weapon."
+        }
+      ]
+    },
+    {
+      "id": "4.4.4",
+      "title": "Boots Cards display the word \"MOVE\", a strength letter and a time number",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When a character has a Boots card active, he can use it in place of a Move chit with the strength and time number shown on the card. He can play it to carry items when he moves."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. A character can have a Boots card active only if its strength equals or exceeds the weight of the character and every item he owns. If he obtains an item whose weight exceeds the card's strength, he must instantly deactivate the Boots card or abandon the item."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. A character can never have more than one Boots card active."
+        }
+      ]
+    },
+    {
+      "id": "4.4.5",
+      "title": "Gloves Cards display the word \"FIGHT\", a strength letter and a time number",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He can use his active Gloves card as a Fight chit with the strength and speed shown on the card. A character can never have more than one Gloves card active."
+        }
+      ]
+    },
+    {
+      "id": "4.4.6",
+      "title": "Weapon and Armor Cards",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Weapon and armor cards can be used like normal weapons and armor. These cards have additional special effects listed in the List of Treasures."
+        }
+      ]
+    },
+    {
+      "id": "4.4.7",
+      "title": "Artifacts and Spell Books are identified by a Roman numeral printed on each card in red",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Artifacts have one spell associated with them and Spell Books have four spells each. Artifacts and Spell Books can be used to cast spells of the same type as the Roman numeral on the card once a character reads runes successfully to free the spells. The Spells can also be learned by magic-using characters with the correct types of Magic chits."
+        }
+      ]
+    },
+    {
+      "id": "4.4.8",
+      "title": "Treasures with Spells: The Dragonfang Necklace, Eye of The Moon and Flying Carpet Treasure cards have spells that can be used by their owners",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "These spells cannot be learned or recorded, they can just be used. These spells are explained on the List of Spells and the List of Treasures."
+        }
+      ]
+    }
+  ]
+} 

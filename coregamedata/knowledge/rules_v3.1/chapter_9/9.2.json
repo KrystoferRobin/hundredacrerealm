@@ -1,0 +1,38 @@
+{
+  "title": "Quitting the Game",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The players can agree to end the game at any time (they can play to a set hour, for example). If they all quit together, the game ends as if it were the end of the month. If any players refuse to quit, the game continues."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "9.2.1",
+      "title": "Agreed End",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The players can agree to end the game at any time (they can play to a set hour, for example). If they all quit together, the game ends as if it were the end of the month. If any players refuse to quit, the game continues."
+        }
+      ]
+    },
+    {
+      "id": "9.2.2",
+      "title": "Individual Quitting",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Individual characters can quit the game in two ways:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Suiciding: A player can kill his own character at Midnight of any day. When he suicides, his belongings are abandoned in his clearing. When a player suicides, he must stay out of the game for at least one complete game day. After sitting out a day, he can rejoin the game as explained in Rule 9.1.2 (he loses his recorded values and belongings before re-entering the game).",
+            "Leaving the Map: Characters can move along a roadway to the edge of the map and leave the game early, by recording a \"M EDGE\" phase. When a player moves his character off the map, his belongings are removed from play for the rest of the game, and his score is immediately calculated as if it were the end of the game. Any of his hired natives remaining on the board become unhired."
+          ]
+        }
+      ]
+    }
+  ]
+} 

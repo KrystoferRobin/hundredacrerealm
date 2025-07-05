@@ -1,0 +1,411 @@
+{
+  "title": "MAGIC",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "There are three components to the magical arts: the colors of magic (representing the energies and spirits that cause magic), the Magic chits (representing the rituals that the character uses to establish control over the spirits) and the spells (that force the spirits to do specific tasks)."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "4.6.1",
+      "title": "Colors of Magic: Each appearance of color magic indicates the presence of magical energies or spirits",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The presence of these spirits makes it possible to do magic; magic is possible only where color magic is present."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. There are five colors of magic, each representing a different sort of spirit that causes a different sort of magic: White magic represents Power from on High, working beneficial magic; Grey magic represents Natural Laws, controlling nature; Gold magic represents Woods Sprites, working elvish magic; Purple magic represents Elemental Energies, twisting and reshaping reality; and Black magic represents Demonic power, working infernal magic."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. Each Enchanted card carries the color of magic that is printed in red on the card. There is one Enchanted card for each color of magic. The card always supplies an unlimited supply of this color to everyone in its clearing, even when it is being carried by someone else."
+        },
+        {
+          "type": "list",
+          "items": [
+            "The card does not start supplying color magic until it is turned face up. Once it is turned face up it remains face up for the rest of the game, so characters always know when they are in the same clearing with the color.",
+            "When an Enchanted card is on a roadway between clearings, it supplies color magic to everyone on that roadway but not to the clearings at either end of the roadway."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "c. The Chapel Dwelling automatically supplies an unlimited amount of White magic to everyone in its clearing. The Toadstool Circle Site card, once discovered, automatically supplies an unlimited amount of Black magic to everyone in its clearing."
+        },
+        {
+          "type": "paragraph",
+          "text": "d. On the seventh day of each week, an unlimited supply of color magic is supplied to everyone in the game. The Daily Record identifies the color of magic that is supplied to everyone on these days: both White and Black magic are supplied on Day 7, Grey magic is supplied on Day 14, Purple magic is supplied on Day 21, and Gold magic is supplied on Day 28. Note: When playing with the Seasons/Weather optional rule (see Rule 10.E.1), the color supplied on Day 7 varies with the Season."
+        },
+        {
+          "type": "paragraph",
+          "text": "e. The green side of each map tile is the \"normal\" side. The other side is the \"enchanted\" side that shows the same terrain when it has been enchanted by a character using an Enchant phase. When a tile is \"enchanted\" side up, the tile itself automatically supplies an unlimited supply of color magic to everyone on that tile."
+        },
+        {
+          "type": "list",
+          "items": [
+            "In an enchanted tile, each character or denizen is supplied with the color of magic that is pictured around the clearing where he is located. Grey magic is supplied in the five Valley tiles and the Ruins tile, Gold magic is supplied in the six Woods tiles, and Purple magic is supplied in the Mountain, Ledges, Cliff, High Pass, Caves and Cavern tiles. Grey, Gold and Purple magic are supplied in every clearing of the Crag tile. In the Borderland tile, Grey magic is supplied in Clearing 1, Gold magic is supplied in Clearings 2 and 3, Purple magic is supplied in Clearings 4 and 5, and both Grey and Purple magic are supplied in Clearing 6.",
+            "When an enchanted tile supplies color magic to a clearing, it also supplies color magic to every roadway that runs into that clearing. When a character is on a roadway between two clearings, both clearings supply him with color magic. Example: When a character is on a roadway between an enchanted Valley tile and an enchanted Woods tile, he is supplied with both Grey and Gold magic. Note: This rule does not apply to color magic supplied by the Chapel, Toadstool Circle, and Enchanted cards. Color magic from these sources does not extend into the surrounding roadways."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "f. The characters can also use certain Magic chits to create personal color magic that only they can use (see Rule 4.6.4)."
+        }
+      ]
+    },
+    {
+      "id": "4.6.2",
+      "title": "Magic Chits",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "a. There are eight types of Magic chits, each represented by a different Roman numeral. Each type represents a different sort of magic, and causes a different sort of result. Type I chits are Righteous invocations, Type II chits are Pagan rites, Type III chits are Elvish lore, Type IV chits are Energy-binding alchemy, Type V chits are Diabolic ceremonies, Type VI chits are Conjuring techniques, Type VII chits are Good Luck knacks and Type VIII chits are Malicious tricks."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. Each character's Magic chits represent the types of magic that he has mastered. The Roman numeral on each chit identifies its type, and the time number and effort asterisks define the time and effort needed to do it."
+        },
+        {
+          "type": "paragraph",
+          "text": "c. When a character does the Alert activity, he has the option to alert one of his Magic chits instead of turning over a weapon counter. The alerted chit can be used like any other Magic chit, but it automatically has a time number of \"0\" (zero) instead of the time number printed on the chit. At Midnight, all alerted Magic chits fatigue. Note: The characters cannot start the game with Magic chits alerted."
+        }
+      ]
+    },
+    {
+      "id": "4.6.3",
+      "title": "Color Chits: Type I, II, III, IV and V chits can be enchanted and turned into specific colors of magic using Enchant phases during Daylight",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When a character enchants a Magic chit, the chit is transformed into a specific color of magic. The Magic chit's type defines what color of magic it becomes:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Type I chits become White magic",
+            "Type II chits become Grey magic",
+            "Type III chits become Gold magic",
+            "Type IV chits become Purple magic",
+            "Type V chits become Black magic.",
+            "Type VI, VII and VIII chits cannot be enchanted."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "g. The player turns the enchanted chit symbol side up and leaves it in play. The chit is referred to as a color chit, representing one piece of color magic. It cannot be used as a Magic chit, but it can be used to supply color magic."
+        },
+        {
+          "type": "paragraph",
+          "text": "h. Each color chit remains enchanted indefinitely, until it is used. It can be used only once, for one purpose; when used, it reverts to being a normal Magic chit and fatigues. Each chit is under the control of its owner: he decides when and how it is used."
+        },
+        {
+          "type": "paragraph",
+          "text": "i. Color chits may be voluntarily fatigued without being used, if the character wishes to convert the chit back to a magic chit. Color chits may be fatigued at the beginning of any phase during Daylight, or during the Encounter Step of a round of combat."
+        },
+        {
+          "type": "paragraph",
+          "text": "j. Special: The characters can start the game with their chits enchanted. As each character selects his spells, he can enchant any or all of his enchantable chits by secretly turning them symbol side up. He reveals his chits when the Dwellings are placed."
+        }
+      ]
+    },
+    {
+      "id": "4.6.4",
+      "title": "Spells: The spells cause the controlled color magic to do specific tasks",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each spell is identified by its name. Each spell has a Spell card that summarizes its qualities, and is explained in more detail in the List of Spells."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. Each spell requires a specific color of magic and a specific type of Magic chit; a character can cast a spell only if he plays the required Magic chit and supplies the spell with the required color of magic. Each spell must be cast on a specific sort of target, and it has a specific effect that lasts for a specific amount of time (the duration of the spell)."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. Spells are cast only during rounds of combat in the Evening (See Rule 8.3.9b). Spells may be cast during the Evening even if no other combat or actions are taking place."
+        }
+      ]
+    },
+    {
+      "id": "4.6.5",
+      "title": "Artifacts and Spell Books: Each Artifact contains one Spell card, and each Spell Book contains four Spell cards",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each Artifact and Spell Book card can be used as a Magic chit that is limited to casting the Spell card(s) contained in that Artifact or Book. During the Evening, a character can play an active Artifact or Spell Book like a Magic chit, and use it to cast one of its awakened spells (see Rule 8.3.9c)."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. There is no limit to the number of Artifacts and Spell Books that a character can have active at the same time."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. The red Roman numeral on each card identifies the type of Magic chit it can be used as. Spell books that contain Spells of other Types cannot be used to cast those Spells. Example: The Good Book has a Type I designation. It can be used to cast its two Type I spells, but not its two Type VII spells."
+        },
+        {
+          "type": "paragraph",
+          "text": "c. Spells must be awakened before they can be cast, by Reading Runes during a Search phase. When the spell is awakened, it is taken off the Setup Card and placed with its Artifact or Spell Book."
+        },
+        {
+          "type": "paragraph",
+          "text": "d. The only way that an Artifact or Spell Book can function as a Magic chit is by casting its awakened Spell cards. It cannot be enchanted, it cannot be used to enchant a tile, and it cannot be used to cast other spells or Spell cards. Note: The Enhanced Artifacts and Spell Books optional rule (see Rule 10.C.3) increases the number of ways in which Artifacts and Spell Books can be used."
+        }
+      ]
+    },
+    {
+      "id": "4.6.6",
+      "title": "Varieties of Spells. This section provides an overview of general spell types",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each individual spell is explained further on the List of Spells."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. Each spell's duration defines when it expires and how it is implemented."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. Instant spells, Attack spells, Fly spells and Phase spells have a one-time effect and then expire. The Magic chit that was played to cast the spell is put with the target to represent this effect until it ends. When the spell expires, the effects end and the Magic chit fatigues."
+        },
+        {
+          "type": "paragraph",
+          "text": "c. When an Instant spell comes to life, its effect occurs immediately. As soon as it is resolved, it expires."
+        },
+        {
+          "type": "paragraph",
+          "text": "d. When a character casts an Attack spell, it attacks like a weapon. When it hits, it can hit armor and horses normally, like weapons. All other spells inflict their effects directly on the target, ignoring his armor and horse; they are not stopped by armor or horses. Note: Treasure cards that alter weapons do not affect Attack spells."
+        },
+        {
+          "type": "paragraph",
+          "text": "e. When a Fly spell comes to life it has no immediate effect, but it has a delayed effect. The spell creates a special \"Fly\" chit with the flying strength and time number defined by the spell, with no effort asterisks. Put the Magic chit used to cast the spell on top of any unused action chit to represent the Fly chit, and place the Fly chit with the character's active chits to show that it is available for use. The target can play this Fly chit like a Move chit during his turn or during combat, and when he plays it he flies. Exactly when he can use the Fly chit depends on the spell (see the List of Spells)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "The Fly chit remains in play indefinitely, until it is used (Fly chits cannot be fatigued or wounded). When it is used, the spell expires. If it is used to charge, it expires at the end of the Encounter Step. If it is used to maneuver in combat, it expires at the end of the Melee Step in which it is used. If it is used to fly away in combat or to fly from tile to tile during the day, it expires instantly when its owner lands.",
+            "When a native is the target of the spell, he can use the Fly chit in place of his own move values.",
+            "When the target cannot play action chits due to a spell, he cannot play the Fly chit."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "f. The only Phase spell is Protection from Magic. This spell has no immediate effect, but it has a delayed effect. Its Magic chit is put with the target's inactive items and is handled like an item. Stack the Magic chit on top of an unused chit to distinguish it from fatigued chits. While inactive it has no effect, but the target can activate it exactly as if it were an item."
+        },
+        {
+          "type": "list",
+          "items": [
+            "If he activates the chit at the start of a phase of his turn, the spell affects him until that phase ends; at the end of the phase, the spell expires. If he activates the chit as his action during an Encounter Step, the spell affects him until that round of combat ends; at the end of the round, the spell expires. He cannot do any other action during that step.",
+            "If he cannot rearrange his belongings, he cannot activate the Magic chit."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "g. When a Combat spell or Day spell is cast, its Magic chit is put with the target. This chit remains with the target until the spell ends by expiring or being broken; it represents a continuing effect that affects the target continuously while the spell is in effect. When the spell ends, the effect stops."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Each Combat spell remains in effect for the remainder of the Evening; it expires at Midnight.",
+            "Each Day spell remains in effect until the end of the next Daylight period; it expires at Sunset of the day after it is cast."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "h. Permanent spells never expire, but they do not continuously affect their targets. A Permanent spell affects its target only when it is \"energized\". When it does not affect its target, it is \"inert\"."
+        },
+        {
+          "type": "list",
+          "items": [
+            "When a Permanent spell is cast, its Magic chit is put with the target and remains with the target until the spell is broken, tying up both the spell and its Magic chit until then. The target is continuously bewitched by the spell, but the spell affects the target only when the spell is energized. When the spell is inert, the spell is ignored.",
+            "Each Permanent spell is automatically energized when it is cast. Thereafter, it is instantly re-energized whenever it is re-supplied with the color magic needed to cast it. Each time the spell is energized, it remains energized and affects its target until Midnight (unless it is broken first). At Midnight of each game day, all Permanent spells become inert. Example: The Transform spell can be energized only by Purple magic, the color needed to cast it. Bad Luck can be cast by any color, so it can be energized by any color.",
+            "Enchanted cards, the Chapel or Toadstool Circle, enchanted map tiles, and the seventh day of each week energize Permanent spells automatically, regardless of the wishes of the characters. A Permanent spell is automatically and instantly energized whenever its target is supplied with the required color magic from one of these sources. Example: The Transform spell is instantly energized whenever its target is in the same clearing with the Dragon Essence card, or when he is on an enchanted map tile that supplies Purple magic, or when it is the 21st day of the month.",
+            "Each character can use his color chits to energize Permanent spells. When a color chit energizes a spell, the chit immediately fatigues and reverts to being a normal Magic chit. Each color chit can energize only one spell before it fatigues.",
+            "A character can energize a spell using his color chits only if the spell's target is in his clearing and he plays a chit that supplies the color magic required by that spell. If there are several spells requiring that color in his clearing, he can energize any one he wants, but only one of them. He has total control over his color chits: he is never forced to play a chit to energize a spell, even if he is the target. He can energize other spells in the clearing without energizing his own, if he wishes.",
+            "During Daylight, he can play color chits each time he or anyone else starts a phase of their turn in his clearing. During the Evening, he can play color chits only when it is his turn to do an action during the Encounter Step of a round of combat. He can play any number of color chits at the same time, but each chit can energize only one spell before it fatigues. Playing a color chit does not count as his action, and is not limited by the monsters or natives on his sheet.",
+            "When a hex tile is the target of a Permanent spell, the spell can be energized from anywhere on the tile, including roadways and woods. Once energized, the spell affects the whole tile, even the areas where the energizing color magic is not present."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.6.7",
+      "title": "Curses, Wishes, and Power of the Pit: The Curses, Wishes, and Power of the Pit Tables have special effects that need more explanation than is provided on the tables",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "a. When a character rolls on the Curses Table, he gets a \"Curse\" that limits what he can do in the game until the Curse is removed. Once inflicted, a Curse remains in effect until it is removed (cancelled or broken). If he gets a Curse that he already has, he suffers no additional effects – repetitions of the same Curse have no effect. Additional curses of the same type are considered to be cancelled."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Curses have no effect on monsters or natives. Hired or controlled denizens just ignore Curses.",
+            "A target who is suffering from Eyemist, Ill Health or Squeak can record an activity prohibited by the Curse, but if the Curse is still in effect when he does it, the activity is cancelled. Note: Eyemist prevents the target from Searching on any table, including the Peer Table, but does not affect the Enhanced Peer activity.",
+            "Wither prevents the target from having any action chits with asterisks in play. He must fatigue all of his action chits that have asterisks, including color chits, and he cannot activate them until the Curse is removed. He can Rest to convert wounds to fatigue, but no matter how much he rests, he cannot activate fatigued chits. Special: The Health Wish breaks the Wither Curse.",
+            "Ashes and Disgust do not alter the target's recorded gold and Fame, they just prevent these values from counting. The target can gain recorded gold and Fame normally, but his recorded values do not count until the Curse is removed. Until the Curse is removed, he is considered to have -1 recorded gold or Fame, respectively.",
+            "Removing Curses: At Midnight of each game day, the Chapel automatically removes all Curses in its clearing. If a character is in the same clearing with the Chapel at Midnight, all of his Curses are removed. Curses can also be removed by the Amulet or Remedy spell."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "b. The Wishes and Power of the Pit Tables inflict a one-time effect."
+        },
+        {
+          "type": "list",
+          "items": [
+            "When a character Teleports due to a Wish, he and all of his horses and items (regardless of their weight) instantly move to whatever clearing he chooses. If an individual teleports to the clearing where he is already located, he does not move. When a denizen teleports, it goes to the place where it started the game: a Ghost or Garrison native goes to the clearing where it started the game, and any other monster or native goes to its box on the Appearance Chart. Note: If a hired native is teleported to the Appearance Chart, he instantly becomes unhired.",
+            "When a character gets a Wish for a Vision he looks at all the Treasure cards in one pile, then puts the Treasure cards back exactly as he found them, without turning any of them face up.",
+            "The Tremendous Strength Wish always affects the next Fight chit (or Gloves card) the target plays. He can use this chit to open the Vault or Crypt of the Knight. He can never have more than one Tremendous Strength result ready to use – he cannot accumulate several Tremendous Strength results. An attack using Tremendous Strength as a result of a Wish is not affected or modified by the weapons or chits played – it always inflicts T damage if it hits.",
+            "The Health Wish and the Terror, Blight, and Forget Power of the Pit results alter the current status of the target's action chits without changing how he fatigues and rests thereafter."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.6.8",
+      "title": "Transmorphization Spells. The Absorb Essence and Transform spells \"transmorphize\" an individual into a creature (a monster or lesser beast), and the Melt Into Mist spell transmorphizes him into a cloud of mist",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "a. Unless the spell specifies otherwise, when an individual is transmorphized he moves, blocks and selects targets normally, as if he were not transmorphized."
+        },
+        {
+          "type": "list",
+          "items": [
+            "A transmorphized character still plays like a character: he records and does activities and he is still subject to the rules and spells that affect characters, not those that affect monsters. Denizens recognize him as a character: they appear and move at the end of his turn, combat is resolved in his clearing, natives can battle him, monsters block and attack him automatically, and so on. He continues to record Fame and Notoriety normally and he handles his hired and controlled denizens normally. Example: A Witch King transmorphized into an Eagle must still use Magic Sight to search, and monsters still appear at the end of his turn.",
+            "A transmorphized monster or native continues to function as a monster or native. If it is hired or controlled, its owner continues to direct it. If unhired and uncontrolled, it prowls and moves at the times it normally would. Example: A Lancer who is transmorphized into a Dragon still prowls, blocks and is assigned to targets like a Lancer, not like a Dragon."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "b. Transmorphizing alters the target's ability to carry things."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Unless the spell specifies otherwise, when an individual becomes transmorphized the recorded gold, items and horses he has with him are transmorphized with him. When he reverts to normal they reappear exactly as they were when they disappeared.",
+            "Transmorphized belongings and gold are frozen as they are, and they have no effect on the game: they cannot be used, rearranged, traded or abandoned. They have Negligible weight and move with their owner automatically. Active belongings remain active, but they have no effect. Exception: Enchanted cards continue to radiate their color magic and their effects while transmorphized.",
+            "Each native horse, head counter, and club counter is always transmorphized with its owner. Belongings owned by a native group are not transmorphized when the group's leader is transmorphized. These belongings are handled just as if the leader were not transmorphized. If a character becomes transmorphized while he is riding a flying monster, the flying monster is not transmorphized with him.",
+            "A character, hired leader, or controlled monster that is transmorphized into a monster or beast can carry untransmorphized gold and belongings and trade them with other characters, hired leaders and/or controlled monsters. He must keep the belongings inactive (except for Enchanted cards) while he is transmorphized, and he must carry his items normally, using the creature's move strength (or an untransmorphized horse, if he has one). Individuals transformed into Mist cannot carry untransmorphized gold or belongings."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "c. A transmorphized character, hired leader, or controlled monster still records activities normally, but he must cancel certain activities if he is transmorphized when he tries to do them."
+        },
+        {
+          "type": "list",
+          "items": [
+            "A transmorphized individual can never do the Trade, Hire, Rest, Alert, or Spell activities. He can always Move, Hide, and Follow.",
+            "If he is transmorphized into a monster or beast, he can do the Search activity and he can be followed. If he is transmorphized into mist, he cannot Search and he cannot be followed, nor can he block or be blocked."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "d. In combat, a transmorphized individual uses the combat values defined by the spell instead of his own values. An individual cannot attack or be attacked when it is turned into mist. When a denizen is turned into a creature, it is assigned to its target normally, but it uses the creature's attack values, move values and vulnerability in place of its own (see Rule 8.4.5p)."
+        },
+        {
+          "type": "paragraph",
+          "text": "e. While a character is transmorphized, his action chits are frozen and unusable. They cannot be activated, deactivated or played, and he cannot specify a target for a spell Exception: He can still use his color chits to energize Permanent spells normally, and they fatigue normally when used. While he is transmorphized, a character cannot be wounded, and his chits are not activated or deactivated by spells or the Wither Curse. When the spell falls inert, Curses and other effects apply normally."
+        },
+        {
+          "type": "paragraph",
+          "text": "f. When a transmorphized individual is killed, he reverts to normal and his belongings, Fame points, Notoriety points and Gold points are disposed of normally. His Fame, Notoriety, and Gold bounty values are not affected by the spell."
+        },
+        {
+          "type": "paragraph",
+          "text": "g. If an individual is affected by several transmorphizing spells at once, the strongest one nullifies the others. Melt Into Mist is the strongest transmorphizing spell, Transform is the second strongest, and Absorb Essence is weakest."
+        }
+      ]
+    },
+    {
+      "id": "4.6.9",
+      "title": "Spell Effects and Interactions",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "a. When a spell is activated or energized, its effect is instantaneous. If it alters an individual's combat values, his combat values change instantly. If it forbids him from playing an action chit he has already played, his play is cancelled."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. When a spell stops affecting a target, the effect is instantaneous – the target immediately reverts to normal play. He instantly reverts to his normal combat values, he is free to play chits and pick targets the next time it is his turn, and so on. Stopping the spell's effect does not alter the consequences it has already caused: discoveries it caused remain discovered, targets chosen because of it remain chosen, denizens hired because of it remain hired, chits activated or deactivated by it remain as they are, and so on."
+        },
+        {
+          "type": "paragraph",
+          "text": "c. Altering Magic Chits: When a spell alters Magic chits, the spellcaster can alter only his own active Magic chits: he cannot alter inactive chits, enchanted chits, chits committed to spells, Artifacts, Spell Books or chits owned by other characters. He can choose exactly which of his Magic chits to alter. While the spell is in effect, each altered chit uses only its altered values: its original values are ignored. When the spell ends, the chits revert to their original status."
+        },
+        {
+          "type": "list",
+          "items": [
+            "If the Magic chit's type (Roman numeral) is altered, it uses the altered type to cast spells (when the chit reverts to its original type, any spell it is committed to is broken), to do enchantments (if the chit is enchanted when it reverts, it fatigues), and to record new spells (the spellcaster keeps these spells when the chit reverts to its original type).",
+            "Altered chits can be altered again; the spellcaster must note each chit's current values. Example: Faerie Lights can change a Type III chit to Type II and Witch's Brew can change it from Type II to Type IV."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "d. Stopping, Nullifying, and Ending Spells: Certain spells, Treasure cards and game events have effects that interfere with other spells. They can stop a spell from going into effect, temporarily nullify its effects, release one or more targets from the spell, or break the spell and end its effects. When a spell has several targets, its effect on each target is independent of its effects on the other targets."
+        },
+        {
+          "type": "list",
+          "items": [
+            "When a spell's effect on a target is nullified, the spell and its Magic chit remain committed to the target but the spell does not affect the target at all. If the spell is still in existence when the nullification ends, the spell resumes its normal effects on the target. Nullifying a spell's effect on one target does not nullify its effects on the spell's other targets.",
+            "When a target is released from a spell, he is no longer considered to be a target of that spell. The spell and Magic chit are not committed to him, and he is not affected by the spell. If the spell also had other targets, releasing one target does not break the spell and release its other targets, and they continue to be affected by the spell. If the spell has only one target, or if all of its targets are released, the spell is broken.",
+            "When a spell is broken, all of its targets are released from the spell. The targets are no longer affected by the spell, the spell and its Magic chit are no longer committed to the targets, and the Magic chit returns to its owner and fatigues."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "e. Duplicate Spells: Unless specified otherwise on the List of Spells, a Combat spell, Day spell, or Permanent spell cannot go into effect if it duplicates a spell that is already bewitching the target. If a target is bewitched by one of these spells when a duplicate of the spell goes into effect, the target is released from the second spell. Example: If the target is already bewitched by a Transform spell, another Transform spell cannot go into effect against him."
+        },
+        {
+          "type": "list",
+          "items": [
+            "The second spell is released only if the first spell is bewitching the target at the moment the second spell goes into effect. If the first spell is broken before the second spell goes into effect, the second spell goes into effect normally.",
+            "If duplicate spells with mutually exclusive effects go into effect against the same target simultaneously, they cancel each other out and neither one goes into effect against that target. Example: If two Transform spells go into effect simultaneously which would turn the target into two different creatures, they cancel each other out. If it happens that they would turn the target into the same creature, then the spells go into effect.",
+            "Duplicate Instant, Attack, Move and Phase spells can be cast on the same target without interfering with each other. Example: A target may be attacked by more than one Fiery Blast at the same time."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "f. Conflicting Spells: \"Conflicting\" spells are different spells that inflict mutually exclusive effects on the same target: e.g., Melt Into Mist \"conflicts\" with Transform. If spells cause conflicting effects on the same target at the same time, the stronger effect nullifies the weaker effect until the stronger spell ends. If the spells have equal strength, they nullify each other and neither has any effect. The List of Spells, the Spell Tables and the rules governing each spell define the relative strength of the spells."
+        },
+        {
+          "type": "list",
+          "items": [
+            "When conflicting spells affect different groups of targets, the conflicts are resolved separately for each target – if a target is affected by only one of the spells, there is no conflict over that target and the spell affects it normally.",
+            "One-use effects conflict only when they are used at the same time. When used at different times, each spell has its full effect. Attack spells never conflict with each other, and the only Phase spell does not conflict with duplicates of itself. Instant spells conflict only if they are simultaneous. The spells that affect action chits are all equal in strength: when they inflict conflicting results simultaneously, the results are determined separately for each chit. Example: If Make Whole conflicts with Terror caused by Power of the Pit, the spells nullify each others' effects on the target's Light and Medium chits, so these chits remain unchanged. There is no conflict over his other action chits or his armor, so the Make Whole spell repairs them normally.",
+            "Fly spells conflict only when their Fly chits are played at the same time. The chit with the greater flying strength nullifies the weaker strength. If the chits have equal flying strengths, the Fly chits nullify each other.",
+            "Continuing effects can conflict with other spells whenever they are affecting the same target(s) at the same time. Permanent spells must be energized to nullify other spells – inert spells do not affect their targets, so they do not conflict with other spells.",
+            "Spells that do not have conflicting effects do not interfere with each other. Each spell has its full effect."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "g. Spellbreaking: Certain \"spellbreaking\" spells can release targets from other spells. Note: These spells release targets only from spell effects, not from the effects of Treasure cards. They have no effect on enchantments."
+        },
+        {
+          "type": "list",
+          "items": [
+            "To release targets from a spell, a spellbreaking spell must be cast in the clearing that contains the target or spellcaster of that other spell. If it goes into effect in the clearing that contains the spellcaster, the other spell is broken. If it goes into effect in a clearing that does not contain the spellcaster, all of the spell's targets in that clearing (including the hex tile itself) are released from the spell, but the spell remains in effect against targets in other clearings.",
+            "A spellbreaking spell can release targets from another spell even if the other spell is inert, and even if the targets or spellcaster cannot be named as targets themselves – the spell is a different target from the individual.",
+            "When a spellbreaking spell (or the Amulet) is used against a single spell, it affects only one spell cast by one Magic chit – duplicates of the spell are not affected. Example: If natives who are bewitched by several Persuade spells cast by different characters are released from one of the Persuade spells, the other Persuade spells remain in effect."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "h. Automatic Spellbreaking: Spells are automatically broken at the end of the game, or when the spellcaster or target are killed."
+        },
+        {
+          "type": "list",
+          "items": [
+            "All spells end at the end of the game. No spells are in effect when the characters calculate their scores at the end of the game. Note: Curses do remain in effect at the end of the game.",
+            "A spell that was cast by a Magic chit is broken when the chit's owner is killed. Spells cast by a character using an Artifact or Spell Book remain in effect even when the character is killed.",
+            "When a character or denizen is killed, he is released from all spells that specified him as a target."
+          ]
+        }
+      ]
+    }
+  ]
+} 

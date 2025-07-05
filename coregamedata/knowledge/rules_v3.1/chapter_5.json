@@ -1,0 +1,9 @@
+{
+  "title": "TURN SUMMARY",
+  "sections": [
+    { "id": "5.0", "title": "TURN SUMMARY", "file": "5.0.json" },
+    { "id": "5.1", "title": "DAILY SEQUENCE OF PLAY", "file": "5.1.json" },
+    { "id": "5.2", "title": "RESOLVING COMBAT IN A CLEARING", "file": "5.2.json" },
+    { "id": "5.3", "title": "A ROUND OF COMBAT", "file": "5.3.json" }
+  ]
+} 

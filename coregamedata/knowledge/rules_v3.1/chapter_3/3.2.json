@@ -1,0 +1,74 @@
+{
+  "title": "CONSTRUCTING THE MAP",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Before play begins, the players create a new Magic Realm using the 20 map tiles. The map chits in each tile indicate the special places in that tile, and the game pieces on the Treasure Setup Card define what each special place contains. These chits and pieces are set up secretly, so that no one knows what is in each tile at the start of the game."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "3.2.1",
+      "title": "The players construct the map by placing the hex tiles side by side, green side up",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each player gets a group of tiles to place, and the players take turns placing the tiles, one by one."
+        }
+      ]
+    },
+    {
+      "id": "3.2.2",
+      "title": "Mix all 20 hex tiles together and then deal them out to the players at random",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Deal out all 20 tiles, even if some players get more tiles than others."
+        }
+      ]
+    },
+    {
+      "id": "3.2.3",
+      "title": "The first tile to be placed must be the Borderland",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The player who is dealt the Borderland places it in the middle of the playing surface. Then each player in turn adds one of his hex tiles to the growing map until all twenty tiles have been placed."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. The players play their tiles in turn, going to the left (clockwise) around the map."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. Each time it is a player's turn, he can play only one hex tile. He can play only his own tiles. He can put the tile in any position and rotate it to have any orientation, as long as he obeys all of the following rules:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "The tile must be green side up. Map tiles are always green side up at the start of the game.",
+            "The tile must be put directly on the playing surface. It cannot be put on top of another tile.",
+            "The tile must be adjacent to at least two other tiles. It must be positioned and rotated so that at least two of its edges lie flush against the edges of tiles that have already been placed. The new tile cannot be placed off by itself, and it cannot be placed adjacent to only one tile. Exceptions: The first tile (the Borderland) is obviously played alone. The next tile must be adjacent to the Borderland. Thereafter, each new tile must be adjacent to two or more tiles.",
+            "Each road that runs off one tile where it meets another tile must join a road on that other tile. Road edges must join road edges and non-road edges must join non-road edges wherever tiles meet.",
+            "There must be a route following the roadways from the new tile to one of the clearings on the Borderland. This route can be of any length and it can use all roadways, including secret passages and hidden paths.",
+            "Each player must always play so that the player after him has a legal play. If a player has a tile but cannot play it within the rules, then the last player to play before him must take back the tile he played and make another play."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "c. If a player has no tiles left when it is his turn to play a tile, he chooses the character he will play in the game (see STEP 3). If he has already chosen a character, he sets up one visitor/mission chit (see STEP 4). If all of the visitor/mission chits are already set up, he just skips his turn."
+        }
+      ]
+    },
+    {
+      "id": "3.2.4",
+      "title": "The players continue taking turns until all twenty tiles have been placed",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Every player has a character, and no more visitor/mission chits remain to be set up."
+        }
+      ]
+    }
+  ]
+} 

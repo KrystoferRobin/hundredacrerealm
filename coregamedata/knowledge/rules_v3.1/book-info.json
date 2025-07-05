@@ -18,6 +18,55 @@
       "id": "1",
       "title": "Introduction to the Third Edition Rules",
       "sections": ["1.1", "1.2", "1.3", "1.4", "1.5", "1.6"]
+    },
+    {
+      "id": "2",
+      "title": "A GUIDE TO THE PLAYING PIECES",
+      "sections": ["2.0", "2.1", "2.2", "2.3", "2.4", "2.5", "2.6", "2.7"]
+    },
+    {
+      "id": "3",
+      "title": "PREPARE FOR PLAY",
+      "sections": ["3.0", "3.1", "3.2", "3.3", "3.4", "3.5", "3.6"]
+    },
+    {
+      "id": "4",
+      "title": "GAME MECHANICS",
+      "sections": ["4.0", "4.1", "4.2", "4.3", "4.4", "4.5", "4.6"]
+    },
+    {
+      "id": "5",
+      "title": "TURN SUMMARY",
+      "sections": ["5.0", "5.1", "5.2", "5.3"]
+    },
+    {
+      "id": "6",
+      "title": "BEGINNING A NEW DAY",
+      "sections": ["6.0", "6.1", "6.2", "6.3"]
+    },
+    {
+      "id": "7",
+      "title": "DAYLIGHT",
+      "sections": [
+        "7.0", "7.1", "7.2", "7.3", "7.4", "7.5", "7.6", "7.7", "7.8", "7.9", "7.10", "7.11", "7.12", "7.13"
+      ]
+    },
+    {
+      "id": "8",
+      "title": "EVENING",
+      "sections": [
+        "8.0", "8.1", "8.2", "8.3", "8.4", "8.5", "8.6", "8.7", "8.8", "8.9"
+      ]
+    },
+    {
+      "id": "9",
+      "title": "ENDING THE GAME",
+      "sections": ["9.0", "9.1", "9.2", "9.3"]
+    },
+    {
+      "id": "10",
+      "title": "ADVANCED AND OPTIONAL RULES",
+      "sections": ["10.0", "10.A", "10.B", "10.C", "10.D", "10.E"]
     }
   ]
 } 

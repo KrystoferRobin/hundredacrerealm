@@ -1,0 +1,119 @@
+{
+  "title": "BELONGINGS",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Belongings are the items that characters can obtain, carry, and use throughout the game. They include weapons, armor, horses, and treasure cards."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "4.3.1",
+      "title": "Each character can obtain weapons, armor, horses and Treasure cards by searching and trading",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each player keeps his character's belongings off the map, in front of himself; these belongings are always assumed to be with the character, in the clearing where he is located. Each belonging is either \"active\" or \"inactive\". He puts his active belongings with his active action chits, and his inactive belongings with his inactive chits. Inactive weapons, armor and Treasure cards represent items that are packed away, out of easy reach. Horses are active when they are being ridden, inactive when they are being led."
+        }
+      ]
+    },
+    {
+      "id": "4.3.2",
+      "title": "Whenever a character obtains a belonging he must either activate it, deactivate it, or abandon it, as he chooses",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He does this as soon as he obtains the item, before completing the phase or round of combat, regardless of whether he obtains it by looting, trading, or killing another character. Exception: Enchanted cards immediately activate, regardless of the character's wishes, and remain activated for the rest of the game (see Rule 4.4.2)."
+        }
+      ]
+    },
+    {
+      "id": "4.3.3",
+      "title": "Rearranging Belongings: Each character can rearrange his belongings only at certain times",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When he rearranges his belongings he can activate, deactivate or abandon each belonging he owns, as long as he obeys the rules governing that belonging. The character cannot rearrange his belongings at other times of day or when other characters or clearings are taking their turns."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. Characters can rearrange belongings at the start of each phase of his turn during Daylight and after all rounds of combat are finished in the Evening, and"
+        },
+        {
+          "type": "paragraph",
+          "text": "b. A character can also activate, deactivate, or abandon an item when he first obtains it, as noted above."
+        },
+        {
+          "type": "paragraph",
+          "text": "c. A character can activate and/or deactivate one item when it is his turn to do an action during the Encounter Step of combat, if he does not do another action. He cannot trade items with other characters during or before rounds of combat. Exception: See Optional Rule on Dropping Items (see Rule 10.A.5)."
+        }
+      ]
+    },
+    {
+      "id": "4.3.4",
+      "title": "Abandoning Belongings: When a character abandons a belonging he puts it on the map, in the clearing where he is located",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Pieces that are abandoned in the same clearing must be stacked into one pile; there can be only one pile of abandoned pieces in each clearing. If a character abandons several pieces at once, he must stack them into a pile but he can arrange them in any order he chooses. If the clearing already contains abandoned pieces, he must put the piece(s) he is abandoning under the pieces that are already there. Abandoned pieces are never put on the Setup Card, even if they are abandoned at a treasure site or Dwelling."
+        }
+      ]
+    },
+    {
+      "id": "4.3.5",
+      "title": "Each character owns only those belongings that he has with him",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Anything he abandons is unowned and belongs to whoever finds it. He must reveal his belongings whenever he is asked to. Important Exception: He must reveal his Treasure cards only when they are active! He keeps his inactive Treasure cards face down. He can reveal them if he wishes, but he is not obliged to."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. Each character can use his belongings as trade goods, and he can count them towards victory at the end of the game. He can buy and sell belongings and count them towards victory whether they are active or inactive."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. Most belongings have special functions when they are active; some functions are automatic, while others occur only when their owner wishes. Inactive belongings have no special functions. Exception: Inactive horses can carry items."
+        }
+      ]
+    },
+    {
+      "id": "4.3.6",
+      "title": "Weapons: The characters use the weapons to attack denizens or other characters",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Weapons can be used only if they are active. Important: Each character is limited to one active weapon (counter or card). He can own any number of weapons, but only one at a time can be active. Note: Monsters, natives, and visitors cannot use the weapon counters and cards."
+        }
+      ]
+    },
+    {
+      "id": "4.3.7",
+      "title": "Armor: When a character has armor counters or armor cards (Treasure cards that can be used as armor) active, they represent armor that he is wearing",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A character can own any number of armor cards and counters, but there are limits on the pieces he can have active at the same time. He can have only one of each type of armor counter active: one active helmet, one active breastplate, one active shield and one active suit of armor. He can also have any or all of the four armor cards active at the same time. Example: A character can have one suit of armor, one helmet, one breastplate, one shield and all four armor cards active at the same time, but he can never have two shields active at the same time. Explanation: It is assumed that a breastplate can be attached to reinforce a suit of armor and a battle helmet can be worn over the suit's basinet. Note: Monsters, natives, and visitors cannot use armor counters or cards."
+        }
+      ]
+    },
+    {
+      "id": "4.3.8",
+      "title": "Horses: The round horse counters represent horses that the characters can own and ride if active, or lead if inactive",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "a. When a character has a horse active, he is riding it. He can activate a horse only if the strength letter shown on the face-up side of the horse counter is sufficient to carry him and all of his items. He can have only one horse at a time active. Special: Horses cannot be active in caves."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. A character can play a horse to carry items during his turn whether it is active or not. When inactive, it represents a pack horse. Whenever a character moves, all of his horses automatically move with him."
+        },
+        {
+          "type": "paragraph",
+          "text": "c. When a character's horse is killed, it is removed from play for the rest of the game."
+        }
+      ]
+    }
+  ]
+} 

@@ -1,0 +1,46 @@
+{
+  "title": "ROLLING DICE",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Dice rolling is a fundamental mechanic in Magic Realm, used for determining results on various tables and resolving game events."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "4.1.1",
+      "title": "Whenever a character is directed to roll the dice and consult a table, he rolls two dice and uses the high roll to find his result",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He must identify the table he is using before he rolls and he must roll the dice openly and reveal his result. Example: If he rolls \"2\" and \"5\" his result is \"5\", the higher of the two numbers rolled."
+        }
+      ]
+    },
+    {
+      "id": "4.1.2",
+      "title": "Some Special Advantages, Treasure cards, and spells cause a character to roll one die to find his result, and others add to or subtract from each die roll",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "All such modifications are cumulative. Results greater than \"6\" convert to \"6\", and results less than \"1\" convert to \"1\". Example: If a character with two \"+1\" modifications rolls \"2\" and \"5\", his result is \"7\" (his high roll +l +l), which converts to \"6\"."
+        }
+      ]
+    },
+    {
+      "id": "4.1.3",
+      "title": "When making \"game\" die rolls such as the Monster Roll, simply roll one die and do not modify the result",
+      "content": []
+    },
+    {
+      "id": "4.1.4",
+      "title": "Die roll modifications that apply to a character do not apply to the denizens he controls",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When a hired native or controlled monster uses a table, the die roll is affected only by those modifications that apply to that native or monster. Character Special Advantages do not apply to their hirelings."
+        }
+      ]
+    }
+  ]
+} 

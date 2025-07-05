@@ -1,0 +1,49 @@
+{
+  "title": "The Search Activity (Including Enhanced Peer Activity)",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A character, hired leader, or controlled monster uses the Search activity to search. To record a Search activity, he records \"S\". When he does the activity he states where he is searching and specifies the Search table he will use. Then he uses the table he specified to find his result."
+    },
+    {
+      "type": "paragraph",
+      "text": "The places where the individual can search depend on the clearing that he is in, and what is in that clearing. The table that he can choose depends on where he is searching and what he is searching for. There are eight Search tables: Peer, Locate, Loot, Reading Runes, Magic Sight, and three Treasure Within Treasure Site card tables. Note: Hired leaders and controlled monsters cannot use the Reading Runes and Magic Sight tables."
+    },
+    {
+      "type": "paragraph",
+      "text": "The individual does not have to specify where he is searching and the table he will use until he does the activity, just before he rolls the dice. He can roll the dice only once, on one Search table, per Search activity."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "7.5.1",
+      "title": "Peer and Locate",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The hidden paths, secret passages and treasure sites are considered to be concealed in the clearings where they are located. Individuals must \"discover\" these roadways and sites before they can use them."
+        },
+        {
+          "type": "list",
+          "items": [
+            "He can discover a hidden path, secret passage, or treasure site by searching in the clearing where it is located, using the Peer and Locate search tables. (They can also be discovered by Spying [4.5.6] on characters who use the paths or passages, or loot the site.) Each treasure site can be discovered in the clearing indicated by its Site chit. Each hidden path and secret passage can be discovered in either clearing it runs into; when an individual discovers one end of the roadway he discovers the whole roadway. He can discover only those roadways that are on the side of the tile that is face up.",
+            "The only clearing he can search is the clearing he is in. Important Exception: If he is in a mountain clearing, he can use the Peer Table to search any woods or mountain clearing in his tile or any adjacent tile (he cannot search from a mountain into a cave). He must use the Peer Table, he can search only one clearing and he must specify the clearing before rolling the dice.",
+            "If an individual gets a secret look at map chits through a Clues result, no one else sees them. Finding a Site chit in this way does not \"discover\" the site; the number on the chit just identifies the clearing that contains the site. If he finds a substitute chit, he can either exchange it or put it back without revealing it; if he exchanges the Lost City or Lost Castle for its five chits, he gets a secret look at the five chits.",
+            "When he discovers a roadway or treasure site, he is the only one who discovers it; it remains concealed from others, who must discover it on their own if they wish to use it. He does not have to admit whether he actually discovers a treasure site. He must reveal what he rolled, but he does not have to reveal whether there is a treasure site chit in his clearing.",
+            "Once an individual discovers a hidden path, secret passage or treasure site, he never has to discover it again. He keeps a record of each discovery by crossing it off the Discoveries list on his Personal History sheet.",
+            "Once he has discovered a hidden path or secret passage, he can use it for movement for the rest of the game.",
+            "Once he has discovered a treasure site, he can search it for treasure whenever he is in its clearing.",
+            "The Peer or Locate tables cannot be used to discover Treasures Within Treasures Site cards (the only way to discover a Treasures Within Treasures Site card is by drawing the card while looting or by learning its location from another individual.).",
+            "Finding hidden enemies allows the individual to spy on hidden individuals when they are in the same clearing with him (see 4.5.6 Spying), and to block them. This ability remains in effect for the rest of the day, in each clearing he moves to. When an individual finds hidden enemies, he records this result in the Find Enemies column of his Turn Record.",
+            "Finding hidden enemies is not retroactive. He starts spying on hidden individuals at the moment he rolls the result.",
+            "The \"Hidden enemies\" result expires at Midnight of each game day. At the start of each day, no one can spy on hidden individuals.",
+            "Hired leaders and controlled monsters have their own Personal History sheet, and record their discoveries just like characters, by crossing them off the Discoveries section of their sheets.",
+            "The hiring character looks at any map chits the hired leader or controlled monster finds, but any other discoveries the hired leader or controlled monster makes are crossed off his own list, not the character's. The character cannot use these discoveries until they have been transferred to him, as described in 7.7.2a1.",
+            "When a hired leader or controlled monster finds \"Hidden enemies\", check off the \"Find Enemies\" column on the his own sheet, not the character's. This result cannot be transferred.",
+            "Enhanced Peer Activity: A character can record and do the Enhanced Peer activity only when he is enabled to by a Special Advantage, spell, or Treasure card. The Enhanced Peer activity allows characters to Peer into clearings in other areas of the board. To record an Enhanced Peer activity, he records \"P\" and the clearing he is searching. He identifies the clearing by its number and the tile it is on. When he does the activity he rolls the dice and consults the Peer Table to find his result. He cannot use any other Search table. The Phantasm and Familiar also record (normal) Peer activities using a \"P\", as their Search phases are also limited to Peers."
+          ]
+        }
+      ]
+    }
+  ]
+} 

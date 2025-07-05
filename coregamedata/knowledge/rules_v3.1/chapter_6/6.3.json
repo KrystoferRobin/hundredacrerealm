@@ -1,0 +1,86 @@
+{
+  "title": "SUNRISE",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "At Sunrise, the characters prepare for their turns by revealing who is following whom, rolling the Monster Roll, and mixing their Attention chits together."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "6.3.1",
+      "title": "Before the characters reveal who is following whom, each character can assign his hired underlings to follow guides",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each underling can follow any character or hired leader in his clearing; underlings are not obliged to stay together in groups – they can split up. Each underling is put with his guide's belongings. Underlings that are not assigned will spend the day where they are."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Characters who disagree about who assigns his underlings first mix and pick their Attention chits randomly to determine the order of assignment.",
+            "Hired underlings are automatically unhidden at the beginning of each day. The only way they can hide is by following a character or leader when he hides."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.3.2",
+      "title": "Once underlings are assigned to their guides, each character, hired leader, and controlled monster who recorded the Follow activity must declare that he is following and whom he is following",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "His counter is immediately removed from the map and is put with the active belongings of the character or hired leader he is following."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Each follower keeps his Attention chit and does not mix it in with the others – he will take his turn with the guide, when the guide's chit is picked.",
+            "If a follower is himself being followed by another follower, then he puts his counter with the guide and puts the other follower's counter with his own belongings. When the guide does his turn, both followers will follow what the guide does. Special: Followers who follow each other do nothing that day."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.3.3",
+      "title": "Monster Roll: The monsters, natives, and visitors on the six rows of the Appearance Chart are hidden deep in the forests of the Magic Realm",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "On each game day one of these rows is \"prowling\" and can move (the denizens in the other five rows are \"dormant\" and cannot move that day). At Sunrise the players roll one die and the row that matches the number rolled is prowling; for the rest of that day, all of the denizens in that row are prowling, and all of the denizens in other rows are dormant. The Monster Roll chit is immediately put in the box to the left of the prowling row to identify it."
+        }
+      ]
+    },
+    {
+      "id": "6.3.4",
+      "title": "End of the Week – Denizen Regeneration: On the seventh day of each game week (Day 7, Day 14, Day 21, and Day 28 of each game month), as soon as the Monster Roll chit is put on the Appearance Chart, all of the monsters and unhired natives (and their horses) who are prowling that day are taken off the map and put back in the places where they started the game",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Ghosts (who prowl every day) are put back in the clearing where they started the game, and all of the monsters and unhired natives who have boxes in the prowling row of the Appearance Chart are put back in their boxes. Dormant denizens in other rows stay where they are."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Prowling monsters, natives, and native horses are put back in their starting locations even if they have been killed; they regenerate and are brought back into play. This is the only way that killed denizens are brought back into play. Regenerated denizens represent new arrivals from outside the Magic Realm. The Ghosts regenerate every week. They simply cannot be permanently killed.",
+            "When Row 6 is prowling, visitors, missions, and campaign chits stay where they are, but flip over to the other side, whether they are on the Appearance Chart or the board. Mission and campaign chits in the possession of a character do not flip over.",
+            "Hired and controlled natives and monsters do not regenerate; they stay on the map in their current location. If some of the natives in a group are hired and others are not, the unhired natives and their horses return to their places but the hired natives and their horses do not. Natives that were once hired but have been killed do regenerate, as they are no longer considered hired. Horses that have been killed but belong to natives that are still hired do not regenerate.",
+            "Garrison natives return to their Dwellings when the natives or visitor/mission chits of the same color are prowling at the end of the week. The Rogues (red counters) prowl when the Bashkars prowl, when Row \"5\" is prowling at the end of a week. The Soldiers (brown counters) prowl when the Patrol prowls, when Row \"3\" is prowling at the end of a week. The Guard and Order (gold counters) return to their Dwellings when the visitor/campaign chits prowl, when Row \"6\" is prowling at the end of the week.",
+            "Denizens who regenerate are released from all spells. If all the targets of a spell regenerate, the spell is broken. Note: Hired and controlled monsters do not regenerate and are not released from their spells.",
+            "Regenerated denizens continue to prowl for the rest of the day. They can (re)appear on the map and move normally."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.3.5",
+      "title": "Lastly, the characters, hired leaders, and controlled monsters who are taking turns that day (not following) mix their Attention chits together, blank side up",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "For hired leaders and controlled monsters, use any unused Attention chit. These chits will be used during Daylight to determine the order of play."
+        }
+      ]
+    }
+  ]
+} 

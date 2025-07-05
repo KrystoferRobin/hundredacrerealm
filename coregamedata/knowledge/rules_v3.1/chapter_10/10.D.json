@@ -1,0 +1,97 @@
+{
+  "title": "Extended Game Systems",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The following rules extend the game system, adding texture, increasing the importance of trading with natives, and introducing more uncertainty into the Combat system."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "10.D.1",
+      "title": "Seasons and Weather",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This rule brings the dramatic effects of weather into the game, and allows games to take place in different seasons of the year."
+        },
+        {
+          "type": "list",
+          "items": [
+            "In the Magic Realm, the year is divided into thirteen Seasons, each coinciding with one lunar month. Each game of Magic Realm takes place within one of these Seasons. This rule allows the players to select the Season in which the game takes place.",
+            "The Calendar of Seasons specifies the peculiarities of each Season. The Season in which the game is played defines the number of Victory Points each character must assign to his Victory Requirements, the number of days in each week, the number of phases in each turn, the number of Move phases it takes to enter a mountain clearing, where the mission chits must be taken to collect a reward and what the reward is, and the color magic that is present on the seventh day of the month.",
+            "When a character records his Victory Requirements at the start of the game, he must assign the number of Victory Points defined by the Season instead of the five Victory Points specified in the basic rules.",
+            "Each week consists of the number of days specified by the Season instead of the seven days specified in the basic rules. When a week has fewer than seven days, the lost days are skipped over – no one gets a turn, no denizens appear, no combat takes place, characters who are between clearings remain between clearings, and so on. The days are always lost from the beginning of the week: if the week has four days, the players skip days 1, 2, and 3 and play days 4, 5, 6 and 7. The game lasts for four weeks regardless of the number of days in each week. The game ends on the last day of the fourth week.",
+            "Each individual's turn consists of the Basic, Sunlight and Sheltered phases specified by the Season instead of the two Basic phases and two Sunlight phases specified in the basic rules. Everyone who does a turn gets the number of phases defined by the Season: characters, hired leaders, controlled monsters, familiars and phantasms. The Season does not affect extra phases. Each individual can still do the extra phases to which he is entitled. \"Sheltered\" phases are the exact opposite of Sunlight phases, except that they can be done in buildings. An individual can use a Sheltered phase only if he stays in a cave or at a building throughout his turn; he can move from one cave or building to another, but he cannot fly or enter a building-less woods or mountain clearing in the same turn that he uses a Sheltered phase. The Inn, Chapel, House and Guard house are the only buildings; individuals cannot do Sheltered phases at campfires.",
+            "To enter a mountain clearing, an individual must do the number of Move phases defined by the Season (instead of the two Move phases required in the basic rules). The Move phases must be done consecutively, in the same turn.",
+            "The Escort Party and Food/Ale chits must be taken to the Dwellings defined by the Season instead of the Dwellings specified in the basic rules. When a character delivers them, he collects the reward defined by the Season instead of the normal reward.",
+            "The color magic that is present on day 7 of the month is the color specified by the Season, not the Black and White magic specified in the basic rules.",
+            "The players must agree on the Season to be used before they start to prepare for play. They can set the Season by mutual agreement, or each player can write his choice on a slip of paper and they can pick one of the slips at random to determine the Season.",
+            "WEATHER defines the number of days in the week, the number of phases in each turn, and occasionally inflicts additional penalties. See the Calendar of Seasons. Note: If the players prefer, they can assume that the weather is Clear every week.",
+            "This rule uses the four Weather chits and the six red chits numbered \"1\" to \"6\". These chits cannot be used for other purposes when weather is being used.",
+            "The weather is either Clear, Showers, Storm, or Special. At the start of each week, place a Weather chit on the first day of the week on the Daily Record, face up. The chit defines the weather and remains in effect until the end of the week.",
+            "Each game starts with one week of clear weather. At the start of the game the \"CLEAR\" chit is put in the box for Day 1.",
+            "The weather for subsequent weeks is defined by randomly picking a red numbered chit and rolling one die. The number on the chit is compared to the number on the die, and the higher number defines the weather for the week. The Weather Table shows the weather caused by each number. Important: The chit is picked a week in advance and remains secret until it goes into effect. At the start of the game a random chit is secretly put on Day 8 of the Daily Record. At Midnight of Day 7 the chit is revealed (and a die is rolled) to define the weather for the upcoming week. Then the six chits are mixed together and the next random chit is secretly put in box 15. This continues from week to week until the game ends."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.D.2",
+      "title": "Commerce",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This rule enhances the importance of trading."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Natives now have special prices they use for buying and selling certain treasures. A native group will value some treasures very highly, while others will be worthless, or even repulsive, to them.",
+            "Red and blue natives: For the Rogues, Bashkars and Company, each item's special price is equal to the item's Gold price plus its Notoriety value. Example: To the Rogues, the Beast Pipes have a basic price of 13 (a Gold price of 8 plus 5 for its Notoriety).",
+            "Green and brown natives: For the Woodfolk, Lancers, Soldiers and Patrol, each item's special price is equal to its Gold price plus its Fame and Notoriety values. Example: To the Lancers, the Beast Pipes have a price of 8 (a Gold price of 8 plus 5 for its Notoriety minus 5 for its negative Fame).",
+            "Gold natives: For the Order and Guard, each item's special price is equal to its Gold price plus its Fame value. Example: To Order and Guard, the Beast Pipes have a price of 3 (a Gold price of 8 minus 5 for its negative Fame value).",
+            "A card's Fame price also adds to its special price, but only when trading with the group named on the card. Example: The Sacred Statue is worth an extra 10 Gold points to the Order, but not to anyone else.",
+            "When a character rolls to buy an object that has a negative special price for the selling group, if he rolls any purchase result the native group will give the object to the purchaser and give him the negative gold price (without multiplication) to take the item off their hands. Example: The Dwarf attempts to buy the Black Book from the Order. Its special price is 10 – 15 Fame = -5. The Dwarf rolls Price x4. The Order gives him the Black Book and 5 gold.",
+            "If you use one or more belongings to help pay for an item you are buying, the value of the belongings is their basic price, adjusted by the modifiers given above.",
+            "THE COMMERCE TABLE: When a character (or hired leader) sells belongings to natives and visitors, he must roll on the Commerce Table to set the price he collects. He finds his result in the column that matches his current trading relationship with the leader or visitor, and he can buy drinks to gain one level of friendliness during the roll. The results are indicated on the table. Note: Trade phases used to buy items (and Hire phases) are still rolled on the Meeting Table.",
+            "All treasures and Special Abilities that affect Trade rolls on the Meeting Table also apply to the Commerce Table.",
+            "As in the basic game, a character or native leader can sell any number of belongings at the same time. Any price adjustment from the Commerce Table (positive or negative) applies to the total price of all the items being sold, and not to the price of each individual item."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.D.3",
+      "title": "Optional Combat Rules",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "These rules increase the combat power of all denizens and characters, making the Realm a much deadlier place, and making combat more realistic. They are not recommended for beginners! Alerted Monsters (10.B.2) and Dragon Heads (10.B.3) work much better with these rules than they do with the basic game, but Optional Abilities (10.A.6) should be used with caution, as some of those play balance adjustments may no longer be necessary."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Move actions: When a character plays a Move chit, Boots card, or horse to run away or pick up a dropped belonging, he must roll on the Stumble Table to see if his play works or is cancelled. His move time does not have to be lower than the move times of the attackers (denizens and Action chits) on his sheet, although playing a low move time will increase his chances of success. He still cannot play a Move chit if a Tremendous monster is red side up on his sheet.",
+            "In addition to his normal die roll modifiers, he modifies the die roll by adding the number of attackers on his sheet and subtracting his time advantage over the fastest attacker. His time advantage equals the attacker's move time minus his own move time. If the result is negative, subtracting it adds to the die roll: in effect, he adds his own move time to the die roll and then subtracts the attacker's move time. Example: If he plays a move time of \"2\" when three attackers are on his sheet and the fastest has a move time of \"4\", he adds 3 (for three attackers) plus 2 (his move time) and subtracts 4 (the attacker's move time), for a net adjustment of + 1. If he rolls \"6\" his final result is \"7\".",
+            "If his final result is 6 or less, he completes his action successfully. If it is 7 or more, his play is cancelled.",
+            "A character must also use the Stumble Table when he flies, but only flying attackers count towards altering his die roll.",
+            "RIDING HORSES: When a character has an active horse, it is the only piece he can play to move. He cannot play Move chits or Boots cards to charge or run away, and he must play the horse to do his maneuver. Special: When a character or native uses a horse to maneuver, he can also play a maneuver of his own to provide extra protection against a character who targets him directly (Rule 3.3). A character can play a Move chit or Boots card in any Maneuver square, subject to the normal restrictions. A native is always assumed to be maneuvering with his own counter in addition to his horse (if he has one).",
+            "Characters are able to attack riders without attacking the horses they are riding (inactive horses cannot be attacked). When a character specifies a target who is riding a horse, he must specify whether he is attacking the target or his horse. Denizens continue to attack as explained in the basic rules: they always attack the horse first. If a horse is killed, any subsequent attacks that would also have hit the horse automatically hit the rider instead.",
+            "If he attacks the horse, his Attention chit is put on the horse and the attack is resolved normally, against the horse.",
+            "If he attacks the rider, he must still intercept or undercut the horse's maneuver to hit the rider. If the rider also played a maneuver of his own, it merely alters the harm that the attack inflicts (see rule 3.4.2).",
+            "ATTACKS: When any attack hits, the harm it inflicts is modified by the OPTIONAL COMBAT TABLES. After calculating the harm caused by the attack's harm letter and sharpness, the attacker rolls the dice and consults the appropriate table to adjust the harm. When making a striking attack, he uses the Fumble Table to adjust the harm. When making a missile attack, he uses the Optional Missile Table (instead of the regular Missile Table). The effects are indicated on the tables. Exception: There are two instances in which the Optional Combat Tables are not used: Red-side-up Tremendous monsters automatically kill their target if they hit it; and attackers that have received \"Wish for Strength\" automatically inflict Tremendous final harm if they hit their target",
+            "In addition to the normal modifications to his die roll, he subtracts his attack's time advantage over the target's maneuver time. If his attack did not intercept the direction of the target's maneuver, he also adds 4 to his result (the \"undercut penalty\"). His time advantage equals his target's maneuver time minus his own attack time. If the result is negative, subtracting it adds to the die roll: in effect, he adds his attack time to the die roll and subtracts the target's maneuver time. Example: If his attack time is \"2\" and the target's maneuver time is \"3\" his time advantage is 1, subtracting 1 from the die roll. If his attack fails to intercept the target's direction, he adds \"4\" to make the net adjustment +3; if he rolls a \"6\" it becomes a \"9\".",
+            "If the target played both a horse and a maneuver of his own, the die roll is altered by both the horse's maneuver and the rider's maneuver. The attacker calculates his time advantage over each maneuver and subtracts both advantages from his die roll, and he adds 4 for each maneuver his attack does not intercept. Example: If his attack time of \"3\" hits a horse and rider with move times of \"5\" and \"2\", he subtracts 2 (his advantage over the horse) and adds 1 (his disadvantage over the rider), for a net adjustment of -1. If he intercepts the rider but not the horse (or the horse but not the rider) he adds 4, making his final adjustment + 3. If he had intercepted neither the horse nor the rider, he would add another 4, making his final adjustment +7.",
+            "The attacker uses the normal procedure to determine whether his attack hits; misses are removed without being rolled for. Attacks that hit armor still lose one sharpness star. The die roll is affected by the attacker's modifications, not the defenders. All die roll modifications for an attack are determined at the moment of hit determination. The die roll modifications for an attack never change regardless of what occurs as the attacks are resolved. Example: If a horse is killed early in a round of combat, the horse's move speed and maneuver direction are still used to determine the die roll modifications for any subsequent attacks in that round against its rider.",
+            "If the defender is a character who did not play any maneuver at all (no Move chit, Fly chit, Boots card, or horse), the adjustment is calculated as if he had played a move time of \"8\" without applying the +4 undercut penalty. Example: An attack time of \"1\" would have an advantage of 7, subtracting 7 from the roll.",
+            "Prepared magical attacks have an attack time of \"0\" and roll on the Optional Missile Table. Special: Prepared Fiery Blast or Lightning Bolt attack with an attack time of \"0\", but subtract one sharpness star from their harm, in addition to any sharpness lost due to armor. Comment: This special adjustment for alerted Fiery Blasts and Lightning Bolts was added by the designer Richard Hamblen, for play-balance purposes.",
+            "PENETRATING ARMOR: When a missile attack hits a character's armor, the harm is inflicted on the character but the armor reduces the harm. The armor is not damaged or destroyed. This rule applies to all missile attacks that hit characters. Missile attacks that hit armored denizens and all striking attacks that hit armor continue to inflict harm as explained in the basic rules.",
+            "If the final harm of a missile attack (including any sharpness star that would normally be lost for hitting armor) exceeds Tremendous, it simply ignores the armor – even if the character has multiple pieces of armor blocking the attack – and kills the character. (Explanation: It hits a vital unarmored spot.) Otherwise, the harm is compared to the toughness of the armor. If the armor exceeds the harm, the attack has no effect – the target is not wounded. If the harm equals the armor, and there is no other armor blocking the attack (it hit the character's final piece of armor, if he had more than one activated), the target gets one wound but there is no further effect: he is not killed and the armor is not damaged. If the harm exceeds the armor, the harm drops one level (in addition to the sharpness star it has already lost) and the resulting harm is inflicted on the target as if he were not armored. The armor is not damaged nor destroyed. Example: If Heavy harm hits a Medium piece of armor, the harm drops to Medium and Medium harm is inflicted on the target.",
+            "A missile attack can penetrate several pieces of armor, losing one level for each armor piece it penetrates. If it reaches a piece of armor it cannot penetrate, it stops. Regardless of how many pieces of armor the attack penetrates, only one sharpness star is lost for striking armor. Example: If a Tremendous missile attack hits a shield and breastplate, it drops to Heavy when it penetrates the shield and drops to Medium when it penetrates the breastplate. Medium harm is inflicted on the target."
+          ]
+        }
+      ]
+    }
+  ]
+} 

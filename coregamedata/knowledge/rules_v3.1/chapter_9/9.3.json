@@ -1,0 +1,169 @@
+{
+  "title": "Winning the Game and Scoring",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "At the end of the game, each character must discard those items that exceed the carrying capacity of his strongest in play Move chit, active horse, or active Boots card – he cannot count items he can't carry toward his victory. Then he uses his remaining belongings and his recorded values to calculate his score and compares this score to his requirements."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "9.3.1",
+      "title": "Ending the Game",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "When a character leaves the game, his score is calculated immediately. If he moves off the map before the end of the game, he uses his belongings and recorded values to calculate his score normally. If he is killed or suicides and does not restart, his score is automatically –100. If the player rejoins the game, he uses only his new character to define his score at the end of the game; his previous characters do not count and are ignored.",
+            "All spells are broken at the end of the game. No spells are in effect when the characters calculate their scores. Note: Curses do remain in effect at the end of the game and can affect the scores as described below."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9.3.2",
+      "title": "Scoring",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each character determines what he earned in each category and subtracts the requirement he recorded for that category. The result is his score in that category. Important: If the result for a category is less than zero, multiply it by three as a penalty."
+        },
+        {
+          "type": "list",
+          "items": [
+            "His Great Treasures score is the number of Great Treasures he owns when the game ends, minus the number of Great Treasures needed for his Victory Requirements.",
+            "His Spells score is the number of spells he has learned during the game, minus the number of spells needed for his Victory Requirements. He can count a spell only if he learned it from a Spell card. He cannot count spells he had at the start of the game. If he learns a spell from a Spell card that duplicates one that he had at the start of the game, he can count the duplicate but not the starting spell. Spell cards belonging to Artifacts and Spell Books in his possession do not count toward his score unless he has learned them.",
+            "His Fame score is his recorded Fame plus the Fame value of the belongings he owns at the end of the game, minus the Fame needed for his Victory Requirements. Belongings with negative Fame values subtract from his score. He does not count the Fame reward of belongings he still owns. If he has the Curse of Disgust, his recorded Fame is treated as –1. This negative recorded Fame can be offset by belongings with a positive Fame value.",
+            "His Notoriety score is his recorded Notoriety plus the Notoriety value of the belongings he owns at the end of the game, minus the Notoriety needed for his Victory Requirements. Belongings with negative Notoriety values subtract from his score.",
+            "His Gold score is his recorded gold only, minus the Gold points needed for his Victory Requirements. He does not count the Gold price of the belongings he owns; only recorded gold counts toward victory. If he has the Curse of Ashes, his recorded gold is treated as –1. Special: To adjust for the Gold points that he had available at the start of the game, he must reduce his Gold score by subtracting 10 points, plus the Gold price of all of the weapons and armor he had at the start of the game.",
+            "Basic score: He divides each category by its factor (1 for Great Treasures, 2 for Spells, 10 for Fame, 20 for Notoriety, and 30 for Gold) to convert to Victory Points. Round fractions down, including negative fractions, to his disfavor. The result is his basic score in each category.",
+            "Bonus score: He multiplies his basic score in each category by the number of Victory Points he assigned to that category, and the result is his bonus score in that category. Explanation: The points that a character assigns to each category defines how much he values that category. Excess points are worth more to him if they are in a category he values, and a shortfall in a category hurts him more if it is a category he values.",
+            "Total score: He adds together all of his basic scores and his bonus scores, and the result is his total score.",
+            "Each character who has a total score of zero or more has fulfilled his victory requirements and thus can fairly be said to have won the game. There can be several winners in a game, or none. Notice that a character who falls short in one category can still win by gaining excess points in other categories. This is difficult, however, because the shortfall is tripled.",
+            "The character who has the most points is the most successful. He is the \"victor\". There will be a victor even if nobody \"wins\"!"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Scoring Example: At the beginning of the game, the Wizard selected his Victory Points as shown in the table below."
+        },
+        {
+          "type": "paragraph",
+          "text": "VICTORY REQUIREMENTS"
+        },
+        {
+          "type": "paragraph",
+          "text": "CATEGORY POINTS NEEDED"
+        },
+        {
+          "type": "paragraph",
+          "text": "GREAT TREASURES 1 times 1 1"
+        },
+        {
+          "type": "paragraph",
+          "text": "USABLE SPELLS 2 times 2 4"
+        },
+        {
+          "type": "paragraph",
+          "text": "FAME 1 times 10 10"
+        },
+        {
+          "type": "paragraph",
+          "text": "NOTORIETY 1 times 20 20"
+        },
+        {
+          "type": "paragraph",
+          "text": "GOLD 0 times 30 0"
+        },
+        {
+          "type": "paragraph",
+          "text": "He ended the game with 1 Great Treasure, 16 recorded Fame points, 11 recorded Notoriety points, 8 Spells learned (over and above the two spells he started with), and 43 Gold, but he has an unbroken Ashes curse. His Great Treasure is the Scroll of Alchemy (SoA) with a Fame Value of –10 and a Notoriety Value of 15. He also has the Scroll of Nature (SoN) with 5 Notoriety. At the end of combat on Day 28 he abandoned the Sacred Grail so he wouldn't have to count its –25 Notoriety."
+        },
+        {
+          "type": "paragraph",
+          "text": "His score is calculated as follows:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Great Treasure Score: 1 – 1 (required) = 0"
+        },
+        {
+          "type": "paragraph",
+          "text": "Fame Score: 16 – 10 (SoA) = 6 – 10 (required) = –4 × 3 (penalty) = –12"
+        },
+        {
+          "type": "paragraph",
+          "text": "Notoriety Score: 11 + 15 (SoA) + 5 (SoN) = 31 – 20 (required) = 11"
+        },
+        {
+          "type": "paragraph",
+          "text": "Spells Score: 8 – 4 (required) = 4"
+        },
+        {
+          "type": "paragraph",
+          "text": "Gold Score: –1 (from Ashes) – 11 (for starting Gold and staff) = –12 – 0 (required) = –12 × 3 (penalty) = –36"
+        },
+        {
+          "type": "paragraph",
+          "text": "Basic Score: -2"
+        },
+        {
+          "type": "paragraph",
+          "text": "Great Treasure: 0 ÷ 1 = 0"
+        },
+        {
+          "type": "paragraph",
+          "text": "Fame: –12 ÷ 10 = –2"
+        },
+        {
+          "type": "paragraph",
+          "text": "Notoriety: 11 ÷ 20 = 0"
+        },
+        {
+          "type": "paragraph",
+          "text": "Spells: 4 ÷ 2 = 2"
+        },
+        {
+          "type": "paragraph",
+          "text": "Gold: –36 ÷ 30 = –2"
+        },
+        {
+          "type": "paragraph",
+          "text": "Bonus Score: +2"
+        },
+        {
+          "type": "paragraph",
+          "text": "Great Treasure: 0 × 1 VP = 0"
+        },
+        {
+          "type": "paragraph",
+          "text": "Fame: –2 × 1 VP = –2"
+        },
+        {
+          "type": "paragraph",
+          "text": "Notoriety: 0 × 1VP = 0"
+        },
+        {
+          "type": "paragraph",
+          "text": "Spells: 2 × 2 VP = 4"
+        },
+        {
+          "type": "paragraph",
+          "text": "Gold: –2 × 0 VP = 0"
+        },
+        {
+          "type": "paragraph",
+          "text": "Total score: 0"
+        },
+        {
+          "type": "paragraph",
+          "text": "Basic Score + Bonus Score = –2 + 2 = 0"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Wizard has won the game by fulfilling his Victory Requirements! Another character, the Elf, earns a score of +2, and is the victor."
+        }
+      ]
+    }
+  ]
+} 

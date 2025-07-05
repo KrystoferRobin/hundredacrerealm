@@ -1,0 +1,55 @@
+{
+  "title": "Chapter 8: Evening",
+  "sections": [
+    {
+      "id": "8.0",
+      "title": "Evening",
+      "file": "8.0.json"
+    },
+    {
+      "id": "8.1",
+      "title": "Sunset and Start of Evening",
+      "file": "8.1.json"
+    },
+    {
+      "id": "8.2",
+      "title": "Battling Natives",
+      "file": "8.2.json"
+    },
+    {
+      "id": "8.3",
+      "title": "Encounter Step",
+      "file": "8.3.json"
+    },
+    {
+      "id": "8.4",
+      "title": "Melee Step",
+      "file": "8.4.json"
+    },
+    {
+      "id": "8.5",
+      "title": "Fatigue and Wounds",
+      "file": "8.5.json"
+    },
+    {
+      "id": "8.6",
+      "title": "Disengagement",
+      "file": "8.6.json"
+    },
+    {
+      "id": "8.7",
+      "title": "Spoils of Combat",
+      "file": "8.7.json"
+    },
+    {
+      "id": "8.8",
+      "title": "Ending Combat in a Clearing",
+      "file": "8.8.json"
+    },
+    {
+      "id": "8.9",
+      "title": "Midnight",
+      "file": "8.9.json"
+    }
+  ]
+} 
