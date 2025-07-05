@@ -100,16 +100,8 @@ function getBlockedActionType(result: string) {
   return 'Action';
 }
 
-interface SessionPageProps {
-  sessionId?: string;
-  setSelectedPage?: (page: 'home' | 'characters' | 'monsters' | 'natives' | 'log' | 'games' | 'map' | 'game-logs' | 'session') => void;
-  setSelectedCharacter?: (character: string | null) => void;
-}
-
-export default function SessionPage(props: SessionPageProps) {
-  const { sessionId: sessionIdProp, setSelectedPage, setSelectedCharacter } = props;
-  const params = useParams();
-  const sessionId = sessionIdProp || (params.id as string);
+export default function Page({ params }: { params: { id: string } }) {
+  const sessionId = params.id;
   const [sessionData, setSessionData] = useState<SessionData | null>(null);
   const [loading, setLoading] = useState(true);
   const [itemCache, setItemCache] = useState<Record<string, Item>>({});
@@ -1424,7 +1416,7 @@ export default function SessionPage(props: SessionPageProps) {
            onMouseLeave={() => setHoveredCharacter(null)}>
         {/* Header */}
         <div className="flex items-center mb-2">
-          <span className="font-bold text-lg text-amber-800 cursor-pointer hover:underline" onClick={() => handleCharacterClick(characterName)}>{characterName}</span>
+          <span className="font-bold text-lg text-amber-800 cursor-pointer hover:underline">{characterName}</span>
           <span className="ml-2 text-sm text-gray-500">({playerName})</span>
           {isDead && <span className="ml-2 text-xs text-red-600 font-bold">DEAD</span>}
         </div>
@@ -1528,13 +1520,6 @@ export default function SessionPage(props: SessionPageProps) {
     console.log('Final character icons:', result);
     return result;
   }, [sessionData]);
-
-  const handleCharacterClick = (characterName: string) => {
-    if (setSelectedCharacter && setSelectedPage) {
-      setSelectedCharacter(characterName);
-      setSelectedPage('characters');
-    }
-  };
 
   if (loading) {
     return (
