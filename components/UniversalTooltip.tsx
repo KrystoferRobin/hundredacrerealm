@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
 
 interface TooltipProps {
   type: 'item' | 'spell' | 'character' | 'monster' | 'native';
@@ -156,8 +157,7 @@ export default function UniversalTooltip({
       onMouseLeave={handleMouseLeave}
     >
       {children}
-      
-      {showTooltip && position && (
+      {showTooltip && position && typeof window !== 'undefined' && ReactDOM.createPortal(
         <div 
           className="fixed z-[9999] bg-[#fff8e1] border-2 border-[#bfa76a] rounded-lg shadow-lg"
           style={{
@@ -168,7 +168,8 @@ export default function UniversalTooltip({
           }}
         >
           {renderTooltipContent()}
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );
