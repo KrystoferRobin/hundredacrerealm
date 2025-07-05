@@ -17,7 +17,6 @@ export default function RulesPanel() {
   const [numPages, setNumPages] = useState<number | null>(null);
   const [pageNumber, setPageNumber] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
-  const [searchPage, setSearchPage] = useState<number | null>(null);
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -41,7 +40,6 @@ export default function RulesPanel() {
     const n = Number(searchTerm);
     if (!isNaN(n) && n >= 1 && numPages && n <= numPages) {
       setPageNumber(n % 2 === 0 ? n - 1 : n);
-      setSearchPage(n);
     }
   }
 
@@ -51,22 +49,21 @@ export default function RulesPanel() {
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full bg-[#fff8e1] p-4 rounded-lg shadow-lg border-2 border-[#bfa76a]">
-      <h2 className="text-2xl font-bold text-[#6b3e26] mb-2 font-serif">Game Rules</h2>
-      <form onSubmit={handleSearch} className="mb-2 flex gap-2">
+      {/* Controls Row */}
+      <form onSubmit={handleSearch} className="flex flex-row items-center gap-2 mb-4 w-full justify-center">
         <input
           type="text"
           placeholder="Go to page..."
           value={searchTerm}
           onChange={e => setSearchTerm(e.target.value)}
-          className="border border-[#bfa76a] rounded px-2 py-1 text-[#6b3e26] font-serif"
+          className="border border-[#bfa76a] rounded px-2 py-1 text-[#6b3e26] font-serif w-32"
         />
         <button type="submit" className="bg-[#bfa76a] text-[#fff8e1] px-3 py-1 rounded font-bold">Go</button>
+        <button type="button" onClick={goToPrevSpread} disabled={pageNumber <= 1} className="bg-[#bfa76a] text-[#fff8e1] px-3 py-1 rounded font-bold ml-4">Prev</button>
+        <span className="text-[#6b3e26] font-serif mx-2">Page {pageNumber}{numPages ? `-${Math.min(pageNumber+1, numPages)}` : ''} of {numPages}</span>
+        <button type="button" onClick={goToNextSpread} disabled={numPages ? pageNumber+1 >= numPages : true} className="bg-[#bfa76a] text-[#fff8e1] px-3 py-1 rounded font-bold">Next</button>
       </form>
-      <div className="flex gap-4 mb-2">
-        <button onClick={goToPrevSpread} disabled={pageNumber <= 1} className="bg-[#bfa76a] text-[#fff8e1] px-3 py-1 rounded font-bold">Prev</button>
-        <span className="text-[#6b3e26] font-serif">Page {pageNumber}{numPages ? `-${Math.min(pageNumber+1, numPages)}` : ''} of {numPages}</span>
-        <button onClick={goToNextSpread} disabled={numPages ? pageNumber+1 >= numPages : true} className="bg-[#bfa76a] text-[#fff8e1] px-3 py-1 rounded font-bold">Next</button>
-      </div>
+      {/* PDF Spread */}
       <div className="flex flex-row gap-4 justify-center items-start w-full overflow-x-auto">
         <Document
           file="/knowledge/MR32.pdf"
@@ -76,7 +73,7 @@ export default function RulesPanel() {
         >
           <Page
             pageNumber={pageNumber}
-            width={350}
+            height={700}
             renderTextLayer={true}
             renderAnnotationLayer={true}
             className="border border-[#bfa76a] rounded shadow bg-white"
@@ -84,7 +81,7 @@ export default function RulesPanel() {
           {numPages && pageNumber + 1 <= numPages && (
             <Page
               pageNumber={pageNumber + 1}
-              width={350}
+              height={700}
               renderTextLayer={true}
               renderAnnotationLayer={true}
               className="border border-[#bfa76a] rounded shadow bg-white"
