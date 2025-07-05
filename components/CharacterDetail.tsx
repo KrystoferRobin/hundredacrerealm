@@ -32,9 +32,10 @@ interface CharacterDetailProps {
   characterName: string;
   setSelectedCharacter: (character: string | null) => void;
   setSelectedPage: (page: 'home' | 'characters' | 'monsters' | 'natives' | 'log' | 'games' | 'map' | 'game-logs' | 'session') => void;
+  setSelectedSessionId: (sessionId: string | null) => void;
 }
 
-export default function CharacterDetail({ characterName, setSelectedCharacter, setSelectedPage }: CharacterDetailProps) {
+export default function CharacterDetail({ characterName, setSelectedCharacter, setSelectedPage, setSelectedSessionId }: CharacterDetailProps) {
   const [character, setCharacter] = useState<Character | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -515,7 +516,15 @@ export default function CharacterDetail({ characterName, setSelectedCharacter, s
                           
                           return (
                             <div key={index} className="text-xs">
-                              <span className="text-[#4b3a1e] font-serif">{displayTitle}</span>
+                              <button
+                                onClick={() => {
+                                  setSelectedSessionId(game.sessionId);
+                                  setSelectedPage('session');
+                                }}
+                                className="text-[#4b3a1e] font-serif hover:text-[#bfa76a] hover:underline cursor-pointer transition-colors duration-200"
+                              >
+                                {displayTitle}
+                              </button>
                               <span className="text-[#6b3e26] font-serif ml-2">({game.player})</span>
                             </div>
                           );

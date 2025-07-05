@@ -1006,6 +1006,7 @@ export default function Home() {
               characterName={selectedCharacter}
               setSelectedCharacter={setSelectedCharacter}
               setSelectedPage={setSelectedPage}
+              setSelectedSessionId={setSelectedSessionId}
             />
           </main>
 
