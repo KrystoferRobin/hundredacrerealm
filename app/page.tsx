@@ -1268,11 +1268,7 @@ export default function Home() {
         ) : selectedPage === 'game-logs' ? (
           <iframe src="/game-logs" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Game Logs" />
         ) : selectedPage === 'session' && typeof selectedSessionId === 'string' ? (
-          <SessionPage 
-            sessionId={selectedSessionId}
-            setSelectedPage={setSelectedPage as (page: 'home' | 'characters' | 'monsters' | 'natives' | 'log' | 'games' | 'map' | 'game-logs' | 'session') => void} 
-            setSelectedCharacter={setSelectedCharacter as (character: string | null) => void} 
-          />
+          (() => { window.location.href = `/session/${selectedSessionId}`; return null; })()
         ) : selectedPage === 'map' ? (
           <div className="flex-1 flex flex-col items-center justify-center py-8 px-4">
             <button onClick={() => { setSelectedMapSession(null); setSelectedPage('home'); }} className="mb-4 px-4 py-2 bg-[#bfa76a] text-[#fff8e1] rounded shadow font-bold">Close Map</button>
