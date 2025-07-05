@@ -238,7 +238,7 @@ export default function Page({ params }: { params: { id: string } }) {
 
   useEffect(() => {
     const fetchStats = async () => {
-      if (!sessionId) return;
+      if (!sessionId || !sessionData) return; // Wait for session data first
       
       console.log('SessionPage: Fetching character stats for:', sessionId);
       try {
@@ -258,12 +258,12 @@ export default function Page({ params }: { params: { id: string } }) {
       }
     };
     fetchStats();
-  }, [sessionId]);
+  }, [sessionId, sessionData]);
 
-  // Fetch character inventories
+  // Fetch character inventories (after session data is loaded for map)
   useEffect(() => {
     const fetchInventories = async () => {
-      if (!sessionId) return;
+      if (!sessionId || !sessionData) return; // Wait for session data first
       
       console.log('SessionPage: Fetching character inventories for:', sessionId);
       try {
@@ -283,11 +283,13 @@ export default function Page({ params }: { params: { id: string } }) {
       }
     };
     fetchInventories();
-  }, [sessionId]);
+  }, [sessionId, sessionData]);
 
-  // Fetch final scores
+  // Fetch final scores (after session data is loaded for map)
   useEffect(() => {
     const fetchFinalScores = async () => {
+      if (!sessionId || !sessionData) return; // Wait for session data first
+      
       try {
         const res = await fetch(`/api/session/${sessionId}/final-scores`);
         if (res.ok) {
@@ -297,10 +299,8 @@ export default function Page({ params }: { params: { id: string } }) {
         setFinalScores(null);
       }
     };
-    if (sessionId) {
-      fetchFinalScores();
-    }
-  }, [sessionId]);
+    fetchFinalScores();
+  }, [sessionId, sessionData]);
 
   // Function to fetch item data
   const fetchItem = async (itemName: string): Promise<Item | null> => {
@@ -1205,45 +1205,31 @@ export default function Page({ params }: { params: { id: string } }) {
     return () => { cancelled = true; };
   }, [hoveredCharacter]);
 
-  // Pre-fetch item data for all characters when inventories are loaded
+  // Load item cache for the session
   useEffect(() => {
-    if (!characterInventories) return;
+    if (!sessionId) return;
     
-    const fetchAllItemData = async () => {
-      const allItems = new Set<string>();
-      
-      // Collect all unique item names from all characters
-      Object.values(characterInventories).forEach((charData: any) => {
-        if (charData?.items) {
-          const itemArrays = [
-            charData.items.weapons,
-            charData.items.armor,
-            charData.items.treasures,
-            charData.items.great_treasures,
-            charData.items.spells,
-            charData.items.natives,
-            charData.items.other,
-            charData.items.unknown
-          ];
+    const loadItemCache = async () => {
+      try {
+        console.log('🔄 Loading item cache for session:', sessionId);
+        const response = await fetch(`/api/session/${sessionId}/item-cache`);
+        
+        if (response.ok) {
+          const data = await response.json();
+          console.log(`✅ Item cache loaded: ${Object.keys(data.items).length} items (source: ${data.source})`);
           
-          itemArrays.flat().filter(Boolean).forEach((item: any) => {
-            if (item?.name) {
-              allItems.add(item.name);
-            }
-          });
+          // Update the item cache with all items at once
+          setItemCache(prev => ({ ...prev, ...data.items }));
+        } else {
+          console.warn('⚠️ Failed to load item cache, falling back to individual requests');
         }
-      });
-      
-      // Pre-fetch data for all items
-      for (const itemName of Array.from(allItems)) {
-        if (!itemCache[itemName]) {
-          await fetchItem(itemName);
-        }
+      } catch (error) {
+        console.error('❌ Error loading item cache:', error);
       }
     };
     
-    fetchAllItemData();
-  }, [characterInventories, itemCache]);
+    loadItemCache();
+  }, [sessionId]);
 
   const renderCharacterBox = (characterName: string, playerName: string) => {
     const inventory = characterInventories?.[characterName]?.items;
