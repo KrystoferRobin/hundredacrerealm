@@ -8,13 +8,11 @@ echo "🚀 Starting smart deployment..."
 # Store the current commit hash before pulling
 PREVIOUS_COMMIT=$(git rev-parse HEAD)
 
-# Clean up dynamic content directories before pulling
-echo "🧹 Cleaning up dynamic content directories..."
-rm -rf public/parsed_sessions/ public/stats/ public/images/
-
-# Pull latest changes
+# Pull latest changes, handling dynamic content conflicts gracefully
 echo "📥 Pulling latest changes..."
+git stash push -m "Dynamic content backup" --include-untracked || true
 git pull origin main
+git stash pop || true
 
 # Get the new commit hash
 CURRENT_COMMIT=$(git rev-parse HEAD)
@@ -80,10 +78,6 @@ if [ "$NEEDS_BUILD" = true ]; then
 else
     echo "⚡ Skipping build (only server-side changes detected)"
 fi
-
-# Recreate dynamic content directories if they don't exist
-echo "📁 Recreating dynamic content directories..."
-mkdir -p public/parsed_sessions/ public/stats/ public/images/
 
 # Always restart the application
 echo "🔄 Restarting application..."
