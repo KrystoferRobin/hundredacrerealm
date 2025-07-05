@@ -8,6 +8,7 @@ import { usePathname } from 'next/navigation';
 import CastOfCharacters from '../components/CastOfCharacters';
 import CharacterDetail from '../components/CharacterDetail';
 import SessionPage from './session/[id]/page';
+import RulesPanel from '../components/RulesPanel';
 
 // TypeScript interface for parsed character log
 interface CharacterLog {
@@ -131,7 +132,7 @@ export default function Home() {
   const [totalSessions, setTotalSessions] = useState<number>(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [selectedPage, setSelectedPage] = useState<'home' | 'characters' | 'monsters' | 'natives' | 'log' | 'games' | 'map' | 'game-logs' | 'session' | 'players' | 'items' | 'spells'>("home");
+  const [selectedPage, setSelectedPage] = useState<'home' | 'characters' | 'monsters' | 'natives' | 'log' | 'games' | 'map' | 'game-logs' | 'session' | 'players' | 'items' | 'spells' | 'rules'>("home");
   const [selectedLogUrl, setSelectedLogUrl] = useState<string | null>(null);
   const [selectedMapSession, setSelectedMapSession] = useState<string | null>(null);
   const [selectedSessionId, setSelectedSessionId] = useState<string | null>(null);
@@ -1203,54 +1204,35 @@ export default function Home() {
       <header className="bg-[#6b3e26] text-[#f6ecd6] py-5 shadow-lg border-b-4 border-[#bfa76a] relative">
         {/* Decorative top border */}
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#bfa76a] via-[#fff8e1] to-[#bfa76a]"></div>
-        
-        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between px-4">
-          <div className="text-center sm:text-left">
-            <h1 className="text-3xl md:text-4xl font-bold tracking-wide drop-shadow-lg font-serif text-[#fff8e1] relative">
+        <div className="max-w-5xl mx-auto flex items-center justify-between px-4">
+          {/* Centered Title */}
+          <div className="flex-1 flex justify-center">
+            <h1
+              className="text-3xl md:text-4xl font-bold tracking-wide drop-shadow-lg font-serif text-[#fff8e1] relative cursor-pointer"
+              onClick={() => { setSelectedPage('home'); setSelectedLogUrl(null); }}
+              title="Go to Home"
+            >
               <span className="relative z-10">Hundred Acre Realm</span>
               <div className="absolute inset-0 bg-[#bfa76a] opacity-20 blur-sm rounded-lg"></div>
             </h1>
-            <p className="text-sm text-[#bfa76a] mt-1 font-serif italic">
-              {headerStats ? (
-                <>
-                  {headerStats.totalGold} Gold Pillaged - {headerStats.totalGreatTreasures} Great Treasures Looted - {headerStats.totalMonstersKilled} Beasts Slain - {headerStats.totalCharactersKilled} Heroes Laid To Rest
-                </>
-              ) : (
-                "A Realm of Magic & Adventure"
-              )}
-            </p>
           </div>
-          
-          <nav className="mt-4 sm:mt-0 flex gap-6 text-lg font-semibold">
-            <a 
-              href="#" 
-              className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
-              onClick={e => { e.preventDefault(); setSelectedPage('home'); setSelectedLogUrl(null); }}
+          {/* Right-justified Tome Icon */}
+          <div className="flex items-center justify-end flex-1">
+            <button
+              className="ml-4 p-2 rounded-full hover:bg-[#bfa76a] transition-colors"
+              title="Game Rules"
+              onClick={() => setSelectedPage('rules')}
             >
-              Home
-            </a>
-            <a 
-              href="#" 
-              className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
-              onClick={e => { e.preventDefault(); setSelectedPage('characters'); setSelectedLogUrl(null); }}
-            >
-              Cast of Characters
-            </a>
-            <a 
-              href="#" 
-              className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
-              onClick={e => { e.preventDefault(); setSelectedPage('monsters'); setSelectedLogUrl(null); }}
-            >
-              Monsters
-            </a>
-            <a 
-              href="#" 
-              className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
-              onClick={e => { e.preventDefault(); setSelectedPage('natives'); setSelectedLogUrl(null); }}
-            >
-              Natives
-            </a>
-          </nav>
+              {/* SVG Tome Icon (styled like footer icons) */}
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" className="w-7 h-7 text-[#fff8e1]">
+                <rect x="4" y="6" width="24" height="20" rx="3" fill="#fff8e1" stroke="#bfa76a" strokeWidth="2"/>
+                <rect x="8" y="10" width="16" height="12" rx="1.5" fill="#f6ecd6" stroke="#bfa76a" strokeWidth="1.5"/>
+                <path d="M16 10v12" stroke="#bfa76a" strokeWidth="1.5"/>
+                <path d="M12 14h8" stroke="#bfa76a" strokeWidth="1.2"/>
+                <path d="M12 18h8" stroke="#bfa76a" strokeWidth="1.2"/>
+              </svg>
+            </button>
+          </div>
         </div>
       </header>
 
@@ -1286,6 +1268,10 @@ export default function Home() {
           <div className="flex-1 flex flex-col items-center justify-center py-8 px-4">
             <button onClick={() => { setSelectedMapSession(null); setSelectedPage('home'); }} className="mb-4 px-4 py-2 bg-[#bfa76a] text-[#fff8e1] rounded shadow font-bold">Close Map</button>
             <iframe src={`/map?session=${selectedMapSession}`} className="w-full h-[70vh] border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Game Map" />
+          </div>
+        ) : selectedPage === 'rules' ? (
+          <div className="flex-1 flex flex-col items-center justify-center py-8 px-4">
+            <RulesPanel />
           </div>
         ) : (
           <>
