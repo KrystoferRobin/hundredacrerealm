@@ -4,11 +4,8 @@ import path from 'path';
 
 export async function GET() {
   try {
-    // Change to /app directory to access parsed_sessions (this approach works)
-    const originalCwd = process.cwd();
-    process.chdir('/app');
-    
-    const sessionsDir = 'public/parsed_sessions';
+    // Use current working directory instead of hardcoded Docker path
+    const sessionsDir = path.join(process.cwd(), 'public', 'parsed_sessions');
     
     console.log('🔍 Debug: Checking sessions directory:', sessionsDir);
     console.log('🔍 Debug: Directory exists:', fs.existsSync(sessionsDir));
@@ -50,9 +47,6 @@ export async function GET() {
     }
     
     console.log('🔍 Debug: Final sessions array:', sessions);
-    
-    // Restore original working directory
-    process.chdir(originalCwd);
     
     return NextResponse.json({ sessions, debug: { sessionsDir, sessionFolders } });
   } catch (error) {

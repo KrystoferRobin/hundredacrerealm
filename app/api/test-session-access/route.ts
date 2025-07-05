@@ -141,35 +141,27 @@ export async function GET() {
         
         // Test if we can access from different working directories
         fromApp: (() => {
-          const originalCwd = process.cwd();
           try {
-            process.chdir('/app');
             return {
               cwd: process.cwd(),
-              exists: fs.existsSync('public/parsed_sessions'),
-              contents: fs.existsSync('public/parsed_sessions') ? fs.readdirSync('public/parsed_sessions') : []
+              exists: fs.existsSync(path.join(process.cwd(), 'public', 'parsed_sessions')),
+              contents: fs.existsSync(path.join(process.cwd(), 'public', 'parsed_sessions')) ? fs.readdirSync(path.join(process.cwd(), 'public', 'parsed_sessions')) : []
             };
           } catch (e) {
             return { error: e.message };
-          } finally {
-            process.chdir(originalCwd);
           }
         })(),
         
         // Test if we can access from scripts directory
         fromScripts: (() => {
-          const originalCwd = process.cwd();
           try {
-            process.chdir('/app/scripts');
             return {
               cwd: process.cwd(),
-              exists: fs.existsSync('../public/parsed_sessions'),
-              contents: fs.existsSync('../public/parsed_sessions') ? fs.readdirSync('../public/parsed_sessions') : []
+              exists: fs.existsSync(path.join(process.cwd(), 'scripts', '../public/parsed_sessions')),
+              contents: fs.existsSync(path.join(process.cwd(), 'scripts', '../public/parsed_sessions')) ? fs.readdirSync(path.join(process.cwd(), 'scripts', '../public/parsed_sessions')) : []
             };
           } catch (e) {
             return { error: e.message };
-          } finally {
-            process.chdir(originalCwd);
           }
         })()
       };
@@ -190,7 +182,7 @@ export async function GET() {
       // Check what's in the public directory after trying to create parsed_sessions
       publicDirAfterCreate: (() => {
         try {
-          return fs.readdirSync('/app/public');
+          return fs.readdirSync(path.join(process.cwd(), 'public'));
         } catch (e) {
           return { error: e.message };
         }
@@ -199,7 +191,7 @@ export async function GET() {
       // Check if there are any symlinks in the public directory
       publicDirSymlinks: (() => {
         try {
-          const items = fs.readdirSync('/app/public', { withFileTypes: true });
+          const items = fs.readdirSync(path.join(process.cwd(), 'public'), { withFileTypes: true });
           return items.filter(item => item.isSymbolicLink()).map(item => item.name);
         } catch (e) {
           return { error: e.message };
@@ -208,46 +200,38 @@ export async function GET() {
       
       // Check the actual file system structure
       fileSystemCheck: {
-        '/app': fs.existsSync('/app'),
-        '/app/public': fs.existsSync('/app/public'),
-        '/app/public/parsed_sessions': fs.existsSync('/app/public/parsed_sessions'),
-        '/app/public/uploads': fs.existsSync('/app/public/uploads'),
+        currentDir: fs.existsSync(process.cwd()),
+        publicDir: fs.existsSync(path.join(process.cwd(), 'public')),
+        parsedSessionsDir: fs.existsSync(path.join(process.cwd(), 'public', 'parsed_sessions')),
+        uploadsDir: fs.existsSync(path.join(process.cwd(), 'public', 'uploads')),
       }
     };
     
     // Test the exact same Node.js code that works in the container
     test.nodeTest = {
-      // Test from /app directory
+      // Test from current directory
       fromApp: (() => {
-        const originalCwd = process.cwd();
         try {
-          process.chdir('/app');
           return {
             cwd: process.cwd(),
-            exists: fs.existsSync('public/parsed_sessions'),
-            contents: fs.existsSync('public/parsed_sessions') ? fs.readdirSync('public/parsed_sessions') : []
+            exists: fs.existsSync(path.join(process.cwd(), 'public', 'parsed_sessions')),
+            contents: fs.existsSync(path.join(process.cwd(), 'public', 'parsed_sessions')) ? fs.readdirSync(path.join(process.cwd(), 'public', 'parsed_sessions')) : []
           };
         } catch (e) {
           return { error: e.message };
-        } finally {
-          process.chdir(originalCwd);
         }
       })(),
       
-      // Test from /app/.next/server/app/api directory
+      // Test from .next/server/app/api directory
       fromApi: (() => {
-        const originalCwd = process.cwd();
         try {
-          process.chdir('/app/.next/server/app/api');
           return {
             cwd: process.cwd(),
-            exists: fs.existsSync('../../../../public/parsed_sessions'),
-            contents: fs.existsSync('../../../../public/parsed_sessions') ? fs.readdirSync('../../../../public/parsed_sessions') : []
+            exists: fs.existsSync(path.join(process.cwd(), '.next', 'server', 'app', 'api', '../../../../public/parsed_sessions')),
+            contents: fs.existsSync(path.join(process.cwd(), '.next', 'server', 'app', 'api', '../../../../public/parsed_sessions')) ? fs.readdirSync(path.join(process.cwd(), '.next', 'server', 'app', 'api', '../../../../public/parsed_sessions')) : []
           };
         } catch (e) {
           return { error: e.message };
-        } finally {
-          process.chdir(originalCwd);
         }
       })()
     };
@@ -283,10 +267,8 @@ export async function GET() {
       
       // Check what the init script would see
       initScriptView: (() => {
-        const originalCwd = process.cwd();
         try {
-          process.chdir('/app/scripts');
-          const sessionsDir = '../public/parsed_sessions';
+          const sessionsDir = path.join(process.cwd(), 'scripts', '../public/parsed_sessions');
           if (fs.existsSync(sessionsDir)) {
             const items = fs.readdirSync(sessionsDir, { withFileTypes: true });
             return {
@@ -303,8 +285,6 @@ export async function GET() {
           }
         } catch (e) {
           return { error: e.message };
-        } finally {
-          process.chdir(originalCwd);
         }
       })()
     };
@@ -314,8 +294,8 @@ export async function GET() {
     return NextResponse.json({ 
       error: error.message, 
       stack: error.stack,
-      sessionsDir: '/app/public/parsed_sessions',
-      exists: fs.existsSync('/app/public/parsed_sessions')
+      sessionsDir: path.join(process.cwd(), 'public', 'parsed_sessions'),
+      exists: fs.existsSync(path.join(process.cwd(), 'public', 'parsed_sessions'))
     });
   }
 } 
