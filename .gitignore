@@ -43,3 +43,8 @@ uploads/
 prisma/dev.db
 .env
 *.log
+
+# Dynamic content directories
+/public/parsed_sessions/
+/public/stats/
+/public/images/
