@@ -106,7 +106,7 @@ interface SessionPageProps {
   setSelectedCharacter?: (character: string | null) => void;
 }
 
-export default function SessionPage(props: SessionPageProps = {}) {
+export default function SessionPage(props: SessionPageProps) {
   const { sessionId: sessionIdProp, setSelectedPage, setSelectedCharacter } = props;
   const params = useParams();
   const sessionId = sessionIdProp || (params.id as string);
