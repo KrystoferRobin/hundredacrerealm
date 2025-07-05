@@ -2,6 +2,14 @@ const fs = require('fs');
 const path = require('path');
 const xml2js = require('xml2js');
 
+// Helper to resolve paths for Docker or local
+function resolveAppPath(subPath) {
+  if (process.env.IS_DOCKER === '1') {
+    return `/app/${subPath}`;
+  }
+  return require('path').join(__dirname, '..', subPath);
+}
+
 // Function to find file by name in directory (recursive)
 function findFileByName(dir, itemName) {
   try {
@@ -32,21 +40,21 @@ function findFileByName(dir, itemName) {
 function getItemData(itemName) {
   try {
     // Search in weapon directory
-    const weaponDir = path.join('/app/coregamedata', 'items', 'weapon');
+    const weaponDir = resolveAppPath('coregamedata/items/weapon');
     const weaponPath = findFileByName(weaponDir, itemName);
     if (weaponPath) {
       return { type: 'weapon', data: JSON.parse(fs.readFileSync(weaponPath, 'utf8')) };
     }
     
     // Search in armor directory
-    const armorDir = path.join('/app/coregamedata', 'items', 'armor');
+    const armorDir = resolveAppPath('coregamedata/items/armor');
     const armorPath = findFileByName(armorDir, itemName);
     if (armorPath) {
       return { type: 'armor', data: JSON.parse(fs.readFileSync(armorPath, 'utf8')) };
     }
     
     // Search in treasure directory
-    const treasureDir = path.join('/app/coregamedata', 'items', 'treasure');
+    const treasureDir = resolveAppPath('coregamedata/items/treasure');
     const treasurePath = findFileByName(treasureDir, itemName);
     if (treasurePath) {
       return { type: 'treasure', data: JSON.parse(fs.readFileSync(treasurePath, 'utf8')) };
@@ -62,7 +70,7 @@ function getItemData(itemName) {
 // Function to get spell data from coregamedata
 function getSpellData(spellName) {
   try {
-    const spellsDir = path.join('/app/coregamedata', 'spells');
+    const spellsDir = resolveAppPath('coregamedata/spells');
     const spellPath = findFileByName(spellsDir, spellName);
     if (spellPath) {
       // Extract level from path
@@ -80,7 +88,7 @@ function getSpellData(spellName) {
 // Function to get native data from coregamedata
 function getNativeData(nativeName) {
   try {
-    const nativesDir = path.join('/app/coregamedata', 'natives');
+    const nativesDir = resolveAppPath('coregamedata/natives');
     const nativePath = findFileByName(nativesDir, nativeName);
     if (nativePath) {
       // Extract dwelling type from path

@@ -61,16 +61,39 @@ function buildMasterStats() {
 
   for (const sessionDir of sessionDirs) {
     const sessionPath = path.join(parsedSessionsDir, sessionDir);
-    const parsedSessionFile = path.join(sessionPath, 'parsed_session.json');
+    
+    // Try different possible session data files
+    const possibleFiles = [
+      'parsed_session.json',
+      'session_data.json',
+      'session.json'
+    ];
+    
+    let sessionData = null;
+    let sessionFile = null;
+    
+    for (const filename of possibleFiles) {
+      const filePath = path.join(sessionPath, filename);
+      if (fs.existsSync(filePath)) {
+        try {
+          sessionData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+          sessionFile = filePath;
+          break;
+        } catch (e) {
+          console.log(`Error reading ${filename} for ${sessionDir}:`, e.message);
+        }
+      }
+    }
+    
+    if (!sessionData) continue;
+    
     const finalScoresFile = path.join(sessionPath, 'final_scores.json');
     const sessionTitlesFile = path.join(sessionPath, 'session_titles.json');
     const characterInventoriesFile = path.join(sessionPath, 'character_inventories.json');
 
-    if (!fs.existsSync(parsedSessionFile)) continue;
-
     try {
-      const sessionData = JSON.parse(fs.readFileSync(parsedSessionFile, 'utf8'));
-      const sessionName = sessionData.sessionName;
+      const sessionName = sessionData.sessionTitle || sessionData.sessionName || sessionDir;
+      const sessionId = sessionData.sessionId || sessionDir;
       
       // Get session title
       let sessionTitle = sessionName;
@@ -103,53 +126,159 @@ function buildMasterStats() {
         }
       }
 
+      // --- Find dead characters at end of session ---
+      const deadCharacters = new Set();
+      for (const dayData of Object.values(sessionData.days || {})) {
+        if (dayData.battles) {
+          for (const battle of dayData.battles) {
+            if (battle.rounds) {
+              for (const round of battle.rounds) {
+                if (round.deaths) {
+                  for (const death of round.deaths) {
+                    const match = death.match(/^(.*?) was killed!/);
+                    if (match) {
+                      deadCharacters.add(match[1]);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      // ---
+
       // Add session to master list
+      let sessionCharacters = {};
+      let sessionScores = {};
+      if (sessionData.characterToPlayer && Object.keys(sessionData.characterToPlayer).length > 0) {
+        for (const [character, player] of Object.entries(sessionData.characterToPlayer)) {
+          sessionCharacters[character] = player;
+          let score = 0;
+          let isDead = 0;
+          if (finalScores && finalScores[character] && typeof finalScores[character].totalScore === 'number') {
+            score = finalScores[character].totalScore;
+          }
+          if (deadCharacters.has(character)) {
+            score = -100;
+            isDead = 1;
+          }
+          sessionScores[character] = { totalScore: score, isDead };
+
+          // Initialize character stats if not exists
+          if (!masterStats.characters[character]) {
+            masterStats.characters[character] = {
+              totalPlays: 0,
+              totalDeaths: 0,
+              players: [],
+              games: [],
+              killers: {},
+              killed: {}
+            };
+          }
+
+          // Add player to character's player list if not already there
+          if (!masterStats.characters[character].players.includes(player)) {
+            masterStats.characters[character].players.push(player);
+          }
+
+          // Add game to character's games list (with isDead and penalized score)
+          masterStats.characters[character].games.push({
+            sessionId: sessionId,
+            sessionName: sessionName,
+            sessionTitle: sessionTitle,
+            player: player,
+            score: score,
+            isDead: isDead,
+            dayCount: sessionData.totalDays || 0
+          });
+
+          masterStats.characters[character].totalPlays++;
+        }
+      } else {
+        // Fallback for single character sessions
+        const character = sessionData.character || 'Unknown';
+        const player = sessionData.player || 'Unknown';
+        let score = sessionData.finalScore || 0;
+        let isDead = 0;
+        if (deadCharacters.has(character)) {
+          score = -100;
+          isDead = 1;
+        }
+        sessionCharacters[character] = player;
+        sessionScores[character] = { totalScore: score, isDead };
+
+        if (!masterStats.characters[character]) {
+          masterStats.characters[character] = {
+            totalPlays: 0,
+            totalDeaths: 0,
+            players: [],
+            games: [],
+            killers: {},
+            killed: {}
+          };
+        }
+
+        if (!masterStats.characters[character].players.includes(player)) {
+          masterStats.characters[character].players.push(player);
+        }
+
+        masterStats.characters[character].games.push({
+          sessionId: sessionId,
+          sessionName: sessionName,
+          sessionTitle: sessionTitle,
+          player: player,
+          score: score,
+          isDead: isDead,
+          dayCount: sessionData.totalDays || 0
+        });
+        masterStats.characters[character].totalPlays++;
+      }
+
       masterStats.sessions.push({
-        sessionId: sessionDir,
+        sessionId: sessionId,
         sessionName: sessionName,
         sessionTitle: sessionTitle,
-        dayCount: Object.keys(sessionData.days || {}).length,
-        characters: sessionData.characterToPlayer || {},
-        scores: finalScores
+        dayCount: sessionData.totalDays || 0,
+        characters: sessionCharacters,
+        scores: sessionScores
       });
 
       masterStats.totalSessions++;
 
       // Analyze characters in this session
-      if (sessionData.characterToPlayer) {
-        for (const [characterName, playerName] of Object.entries(sessionData.characterToPlayer)) {
+      const characterName = sessionData.character;
+      const playerName = sessionData.player;
+      
+      if (characterName && playerName) {
           // Initialize character stats if not exists
           if (!masterStats.characters[characterName]) {
             masterStats.characters[characterName] = {
               totalPlays: 0,
               totalDeaths: 0,
-              players: new Set(),
+              players: [],
               games: [],
               killers: {},
-              killed: {},
-              totalScore: 0,
-              averageScore: 0,
-              bestScore: 0,
-              worstScore: null
+              killed: {}
             };
           }
 
           const charStats = masterStats.characters[characterName];
           charStats.totalPlays++;
-          charStats.players.add(playerName);
+          charStats.players.push(playerName);
 
           // Add game to character's list
           charStats.games.push({
-            sessionId: sessionDir,
+            sessionId: sessionId,
             sessionName: sessionName,
             sessionTitle: sessionTitle,
             player: playerName,
-            score: finalScores[characterName]?.totalScore || null,
-            dayCount: Object.keys(sessionData.days || {}).length
+            score: score,
+            isDead: isDead,
+            dayCount: sessionData.totalDays || 0
           });
 
           // Update score statistics
-          const score = finalScores[characterName]?.totalScore || 0;
           charStats.totalScore += score;
           charStats.averageScore = charStats.totalScore / charStats.totalPlays;
           if (score > charStats.bestScore) charStats.bestScore = score;
@@ -157,79 +286,50 @@ function buildMasterStats() {
             charStats.worstScore = score;
           }
 
-          // Analyze battles for deaths and kills
-          for (const [dayKey, dayData] of Object.entries(sessionData.days || {})) {
-            if (dayData.battles) {
-              for (const battle of dayData.battles) {
-                if (battle.rounds) {
-                  for (const round of battle.rounds) {
-                    // Check for deaths
-                    if (round.deaths) {
-                      for (const death of round.deaths) {
-                        // Check if this character died
-                        if (death.includes(characterName) || death.includes(`The ${characterName}`)) {
-                          charStats.totalDeaths++;
-                          
-                          // Try to determine who killed them
-                          if (round.attacks) {
-                            for (const attack of round.attacks) {
-                              if (attack.target && attack.target.includes(characterName)) {
-                                const killer = attack.performer || 'Unknown';
-                                charStats.killers[killer] = (charStats.killers[killer] || 0) + 1;
-                              }
-                            }
-                          }
-                        }
-                        
-                        // Check if this character killed someone
-                        if (round.attacks) {
-                          for (const attack of round.attacks) {
-                            if (attack.performer && 
-                                (attack.performer === characterName || attack.performer === `The ${characterName}`)) {
-                              // Check if this attack resulted in a death
-                              for (const death of round.deaths) {
-                                if (death !== `${characterName} was killed!` && 
-                                    death !== `The ${characterName} was killed!`) {
-                                  // Extract the name of who was killed
-                                  const killedName = death.replace(' was killed!', '');
-                                  charStats.killed[killedName] = (charStats.killed[killedName] || 0) + 1;
-                                  
-                                  // Track monster kills by character
-                                  if (!masterStats.monsters.killedByCharacter[characterName]) {
-                                    masterStats.monsters.killedByCharacter[characterName] = {};
-                                  }
-                                  masterStats.monsters.killedByCharacter[characterName][killedName] = 
-                                    (masterStats.monsters.killedByCharacter[characterName][killedName] || 0) + 1;
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
+          // Analyze combat data from mock data
+          if (sessionData.combat) {
+            // Track deaths (simplified)
+            const defeats = sessionData.combat.battles.filter((battle) => battle.result === 'defeat').length;
+            charStats.totalDeaths += defeats;
 
-            // Track monster spawns
-            if (dayData.monsterSpawns) {
-              for (const spawn of dayData.monsterSpawns) {
-                const monsterName = spawn.monster;
-                masterStats.monsters.spawns[monsterName] = (masterStats.monsters.spawns[monsterName] || 0) + 1;
+            // Track kills
+            for (const battle of sessionData.combat.battles) {
+              if (battle.result === 'victory' && battle.monster) {
+                charStats.killed[battle.monster] = (charStats.killed[battle.monster] || 0) + 1;
                 
-                // Track spawn locations
-                if (!masterStats.monsters.spawnLocations[monsterName]) {
-                  masterStats.monsters.spawnLocations[monsterName] = {};
+                // Track monster kills by character
+                if (!masterStats.monsters.killedByCharacter[characterName]) {
+                  masterStats.monsters.killedByCharacter[characterName] = {};
                 }
-                const location = spawn.location;
-                masterStats.monsters.spawnLocations[monsterName][location] = 
-                  (masterStats.monsters.spawnLocations[monsterName][location] || 0) + 1;
+                masterStats.monsters.killedByCharacter[characterName][battle.monster] = 
+                  (masterStats.monsters.killedByCharacter[characterName][battle.monster] || 0) + 1;
+                
+                // Track global monster kills
+                masterStats.monsters.killed[battle.monster] = (masterStats.monsters.killed[battle.monster] || 0) + 1;
               }
             }
           }
+
+          // Analyze treasure data from mock data
+          if (sessionData.treasure) {
+            for (const treasure of sessionData.treasure.found || []) {
+              const treasureName = treasure.name;
+              
+              // Global treasure found stats
+              masterStats.treasures.found[treasureName] = (masterStats.treasures.found[treasureName] || 0) + 1;
+              
+              // Character-specific treasure found stats
+              if (!masterStats.treasures.byCharacter[characterName]) {
+                masterStats.treasures.byCharacter[characterName] = {
+                  found: {},
+                  sold: {}
+                };
+              }
+              masterStats.treasures.byCharacter[characterName].found[treasureName] = 
+                (masterStats.treasures.byCharacter[characterName].found[treasureName] || 0) + 1;
+            }
+          }
         }
-      }
 
       // Analyze character inventories for treasures
       if (characterInventories) {
@@ -275,7 +375,7 @@ function buildMasterStats() {
         }
       }
 
-      // Track monster deaths globally
+      // Track monster deaths globally and character deaths
       for (const [dayKey, dayData] of Object.entries(sessionData.days || {})) {
         if (dayData.battles) {
           for (const battle of dayData.battles) {
@@ -283,10 +383,28 @@ function buildMasterStats() {
               for (const round of battle.rounds) {
                 if (round.deaths) {
                   for (const death of round.deaths) {
-                    // Extract monster name from death message
-                    const monsterName = death.replace(' was killed!', '');
-                    if (monsterName && !monsterName.includes('The ')) {
-                      masterStats.monsters.killed[monsterName] = (masterStats.monsters.killed[monsterName] || 0) + 1;
+                    // Extract name from death message
+                    const deathName = death.replace(' was killed!', '');
+                    if (deathName && !deathName.includes('The ')) {
+                      // Check if this is a character death by looking at characterToPlayer
+                      if (sessionData.characterToPlayer && sessionData.characterToPlayer[deathName]) {
+                        // This is a character death
+                        if (!masterStats.characters[deathName]) {
+                          masterStats.characters[deathName] = {
+                            totalPlays: 0,
+                            totalDeaths: 0,
+                            players: [],
+                            games: [],
+                            killers: {},
+                            killed: {}
+                          };
+                        }
+                        masterStats.characters[deathName].totalDeaths++;
+                        console.log(`Character death recorded: ${deathName} in session ${sessionDir}`);
+                      } else {
+                        // This is a monster death
+                        masterStats.monsters.killed[deathName] = (masterStats.monsters.killed[deathName] || 0) + 1;
+                      }
                     }
                   }
                 }
@@ -334,12 +452,50 @@ function buildMasterStats() {
       .map(([name, count]) => ({ name, count }))
   };
 
+  // After all sessions processed, calculate headerStats
+  masterStats.headerStats = {
+    totalGold: 0,
+    totalGreatTreasures: 0,
+    totalMonstersKilled: 0,
+    totalCharactersKilled: 0
+  };
+  
+  // Calculate header stats from final scores
+  for (const sessionDir of sessionDirs) {
+    try {
+      const finalScoresPath = path.join(parsedSessionsDir, sessionDir, 'final_scores.json');
+      if (fs.existsSync(finalScoresPath)) {
+        const finalScoresData = fs.readFileSync(finalScoresPath, 'utf8');
+        const finalScores = JSON.parse(finalScoresData);
+        
+        for (const [character, scoreData] of Object.entries(finalScores)) {
+          if (scoreData.categories) {
+            // Add gold from categories.gold.actual
+            if (scoreData.categories.gold && typeof scoreData.categories.gold.actual === 'number') {
+              masterStats.headerStats.totalGold += scoreData.categories.gold.actual;
+            }
+            
+            // Add great treasures from categories.greatTreasures.actual
+            if (scoreData.categories.greatTreasures && typeof scoreData.categories.greatTreasures.actual === 'number') {
+              masterStats.headerStats.totalGreatTreasures += scoreData.categories.greatTreasures.actual;
+            }
+          }
+        }
+      }
+    } catch (error) {
+      console.log(`Error processing final scores for ${sessionDir}:`, error.message);
+    }
+  }
+  
+  masterStats.headerStats.totalMonstersKilled = Object.values(masterStats.monsters.killed).reduce((a, b) => a + b, 0);
+  masterStats.headerStats.totalCharactersKilled = Object.values(masterStats.characters).reduce((sum, char) => sum + (char.totalDeaths || 0), 0);
+
   return masterStats;
 }
 
 // Function to save master stats to file
 function saveMasterStats(stats) {
-  const statsFile = path.join(__dirname, '../data/master_stats.json');
+  const statsFile = path.join(__dirname, '../public/stats/master_stats.json');
   const statsDir = path.dirname(statsFile);
   
   if (!fs.existsSync(statsDir)) {
@@ -352,7 +508,7 @@ function saveMasterStats(stats) {
 
 // Function to load master stats from file
 function loadMasterStats() {
-  const statsFile = path.join(__dirname, '../data/master_stats.json');
+  const statsFile = path.join(__dirname, '../public/stats/master_stats.json');
   
   if (fs.existsSync(statsFile)) {
     try {

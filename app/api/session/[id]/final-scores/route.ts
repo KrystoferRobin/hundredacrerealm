@@ -2,29 +2,46 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
-function getFinalScores(sessionId: string) {
-    const sessionDir = path.join('/app/public/parsed_sessions', sessionId);
-    const finalScoresPath = path.join(sessionDir, 'final_scores.json');
-    
-    if (!fs.existsSync(finalScoresPath)) {
-        throw new Error('Final scores not found. Run the session processing pipeline first.');
-    }
-    
-    const finalScores = JSON.parse(fs.readFileSync(finalScoresPath, 'utf8'));
-    return finalScores;
-}
-
 export async function GET(
-    request: NextRequest,
+    request: Request,
     { params }: { params: { id: string } }
 ) {
     try {
         const sessionId = params.id;
-        const finalScores = getFinalScores(sessionId);
         
-        return NextResponse.json(finalScores);
+        // Try both local and Docker paths
+        const possiblePaths = [
+            path.join(process.cwd(), 'public', 'parsed_sessions'),
+            '/app/public/parsed_sessions'
+        ];
+        const sessionsDir = possiblePaths.find(p => fs.existsSync(p));
+        
+        if (!sessionsDir) {
+            return NextResponse.json(
+                { error: 'Sessions directory not found' },
+                { status: 404 }
+            );
+        }
+        
+        const scoresPath = path.join(sessionsDir, sessionId, 'final_scores.json');
+        
+        if (!fs.existsSync(scoresPath)) {
+            return NextResponse.json(
+                { error: 'Final scores not found' },
+                { status: 404 }
+            );
+        }
+
+        const scoresData = fs.readFileSync(scoresPath, 'utf8');
+        const scores = JSON.parse(scoresData);
+        
+        return NextResponse.json(scores);
+
     } catch (error) {
-        console.error('Error getting final scores:', error);
-        return NextResponse.json({ error: 'Failed to get final scores' }, { status: 500 });
+        console.error('Error reading final scores:', error);
+        return NextResponse.json(
+            { error: 'Failed to get final scores' },
+            { status: 500 }
+        );
     }
 } 

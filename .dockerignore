@@ -94,4 +94,9 @@ public/uploads/
 
 # Exclude test files
 *.rsgame
-*.rslog 
+*.rslog
+
+# Exclude public/parsed_sessions, public/stats, and public/uploads
+public/parsed_sessions
+public/stats
+public/uploads 

@@ -6,11 +6,13 @@ services:
     environment:
       - NODE_ENV=production
       - NEXT_TELEMETRY_DISABLED=1
+      - IS_DOCKER=1
     volumes:
       # Map dynamic content folders for persistence
       # These will be auto-initialized with default content on first run
       - ./public/parsed_sessions:/app/public/parsed_sessions
       - ./public/uploads:/app/public/uploads
+      - ./public/stats:/app/public/stats
       - ./coregamedata:/app/coregamedata
       - ./data:/app/data
       # Map scripts directory to use local changes

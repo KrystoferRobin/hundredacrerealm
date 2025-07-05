@@ -1,0 +1,74 @@
+{
+  "Elf": {
+    "character": "Elf",
+    "items": {
+      "weapons": [],
+      "armor": [],
+      "treasures": [],
+      "great_treasures": [],
+      "spells": [],
+      "natives": [],
+      "other": [
+        {
+          "id": "164",
+          "name": "Light Bow",
+          "type": "unknown",
+          "category": "other"
+        },
+        {
+          "id": "3360",
+          "name": "Persuade",
+          "type": "unknown",
+          "category": "other"
+        },
+        {
+          "id": "3361",
+          "name": "Peace with Nature",
+          "type": "unknown",
+          "category": "other"
+        },
+        {
+          "id": "3362",
+          "name": "Protection from Magic",
+          "type": "unknown",
+          "category": "other"
+        },
+        {
+          "id": "351",
+          "name": "Shielded Lantern",
+          "type": "unknown",
+          "category": "other"
+        },
+        {
+          "id": "374",
+          "name": "Magic Wand",
+          "type": "unknown",
+          "category": "other"
+        },
+        {
+          "id": "361",
+          "name": "Lucky Charm",
+          "type": "unknown",
+          "category": "other"
+        },
+        {
+          "id": "129",
+          "name": "Pony",
+          "type": "unknown",
+          "category": "other"
+        }
+      ],
+      "unknown": []
+    },
+    "raw_contains": [
+      "164",
+      "3360",
+      "3361",
+      "3362",
+      "351",
+      "374",
+      "361",
+      "129"
+    ]
+  }
+}
