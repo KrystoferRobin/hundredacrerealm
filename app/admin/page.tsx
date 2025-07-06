@@ -2,6 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import DiscordWebhookPanel from '../../components/DiscordWebhookPanel';
+import DataManagementPanel from '../../components/DataManagementPanel';
+import CharacterAssignmentPanel from '../../components/CharacterAssignmentPanel';
 
 interface Session {
   sessionId: string;
@@ -240,14 +243,24 @@ export default function AdminPage() {
               User Management
             </button>
             <button
-              onClick={() => setActiveTab('stats')}
+              onClick={() => setActiveTab('data')}
               className={`py-2 px-1 border-b-2 font-medium text-sm ${
-                activeTab === 'stats'
+                activeTab === 'data'
                   ? 'border-indigo-500 text-indigo-600'
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
               }`}
             >
-              Stats Management
+              Data Management
+            </button>
+            <button
+              onClick={() => setActiveTab('characters')}
+              className={`py-2 px-1 border-b-2 font-medium text-sm ${
+                activeTab === 'characters'
+                  ? 'border-indigo-500 text-indigo-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+              }`}
+            >
+              Character Assignments
             </button>
             <button
               onClick={() => setActiveTab('parsers')}
@@ -258,6 +271,16 @@ export default function AdminPage() {
               }`}
             >
               Parsers
+            </button>
+            <button
+              onClick={() => setActiveTab('discord')}
+              className={`py-2 px-1 border-b-2 font-medium text-sm ${
+                activeTab === 'discord'
+                  ? 'border-indigo-500 text-indigo-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+              }`}
+            >
+              Discord Webhooks
             </button>
           </nav>
         </div>
@@ -275,8 +298,10 @@ export default function AdminPage() {
             <UploadTab onUploadComplete={loadSessions} />
           )}
           {activeTab === 'users' && <UsersTab />}
-          {activeTab === 'stats' && <StatsTab />}
+          {activeTab === 'data' && <DataManagementPanel />}
+          {activeTab === 'characters' && <CharacterAssignmentPanel />}
           {activeTab === 'parsers' && <ParsersTab />}
+          {activeTab === 'discord' && <DiscordWebhookPanel />}
         </div>
       </div>
     </div>
@@ -657,18 +682,7 @@ function UsersTab() {
   );
 }
 
-function StatsTab() {
-  return (
-    <div>
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">Stats Management</h2>
-      <div className="bg-white shadow sm:rounded-lg">
-        <div className="px-4 py-5 sm:p-6">
-          <p className="text-gray-600">Stats management features coming soon...</p>
-        </div>
-      </div>
-    </div>
-  );
-}
+
 
 function ParsersTab() {
   const [runningParser, setRunningParser] = useState<string | null>(null);
