@@ -84,22 +84,92 @@ async function processAllSessions() {
         console.log(`Running main session parser with ${mainSrc}...`);
         execSync(`node ${resolveAppPath('scripts/parse_game_session.js')} ${mainSrc}`, { stdio: 'inherit' });
       }
-      console.log('Running detailed log parser...');
-      execSync(`node ${resolveAppPath('scripts/parse_game_log_detailed.js')}`, { stdio: 'inherit' });
-      console.log('Running map parser...');
-      execSync(`node ${resolveAppPath('scripts/parse_map_data.js')}`, { stdio: 'inherit' });
-      console.log('Running character stats extraction...');
-      execSync(`node ${resolveAppPath('scripts/extract_character_stats.js')}`, { stdio: 'inherit' });
-      console.log('Running character inventories extraction...');
-      execSync(`node ${resolveAppPath('scripts/extract_character_inventories.js')}`, { stdio: 'inherit' });
-      console.log('Running scoring calculation...');
-      execSync(`node ${resolveAppPath('scripts/calculate_scoring.js')}`, { stdio: 'inherit' });
-      console.log('Generating session titles...');
-      execSync(`node ${resolveAppPath('scripts/generate_session_titles.js')}`, { stdio: 'inherit' });
-      console.log('Generating map state data...');
-      execSync(`node ${resolveAppPath('scripts/track_map_state.js')}`, { stdio: 'inherit' });
+      
+      // 5. Run detailed log parser (only if .rslog exists)
+      if (fs.existsSync(`${sessionFolderName}.rslog`)) {
+        console.log('Running detailed log parser...');
+        try {
+          execSync(`node ${resolveAppPath('scripts/parse_game_log_detailed.js')}`, { stdio: 'inherit' });
+        } catch (error) {
+          console.log('⚠️  Log parser failed, continuing with other steps...');
+        }
+      } else {
+        console.log('No .rslog file found, skipping log parser');
+      }
+      
+      // 6. Run map parser (only if .rsgame exists)
+      if (fs.existsSync('extracted_game.xml')) {
+        console.log('Running map parser...');
+        try {
+          execSync(`node ${resolveAppPath('scripts/parse_map_data.js')}`, { stdio: 'inherit' });
+        } catch (error) {
+          console.log('⚠️  Map parser failed, continuing with other steps...');
+        }
+      } else {
+        console.log('No extracted_game.xml found, skipping map parser');
+      }
+      
+      // 7. Run character stats extraction (only if .rsgame exists)
+      if (fs.existsSync('extracted_game.xml')) {
+        console.log('Running character stats extraction...');
+        try {
+          execSync(`node ${resolveAppPath('scripts/extract_character_stats.js')}`, { stdio: 'inherit' });
+        } catch (error) {
+          console.log('⚠️  Character stats extraction failed, continuing with other steps...');
+        }
+      } else {
+        console.log('No extracted_game.xml found, skipping character stats extraction');
+      }
+      
+      // 8. Run character inventories extraction (requires both parsed_session.json and extracted_game.xml)
+      if (fs.existsSync('parsed_session.json') && fs.existsSync('extracted_game.xml')) {
+        console.log('Running character inventories extraction...');
+        try {
+          execSync(`node ${resolveAppPath('scripts/extract_character_inventories.js')}`, { stdio: 'inherit' });
+        } catch (error) {
+          console.log('⚠️  Character inventories extraction failed, continuing with other steps...');
+        }
+      } else {
+        console.log('Missing parsed_session.json or extracted_game.xml, skipping character inventories extraction');
+      }
+      
+      // 9. Run scoring calculation (requires character_stats.json, scoring.json, and character_inventories.json)
+      if (fs.existsSync('character_stats.json') && fs.existsSync('scoring.json') && fs.existsSync('character_inventories.json')) {
+        console.log('Running scoring calculation...');
+        try {
+          execSync(`node ${resolveAppPath('scripts/calculate_scoring.js')}`, { stdio: 'inherit' });
+        } catch (error) {
+          console.log('⚠️  Scoring calculation failed, continuing with other steps...');
+        }
+      } else {
+        console.log('Missing required files for scoring calculation');
+      }
+      
+      // 10. Generate session titles (requires parsed_session.json, map_locations.json, and final_scores.json)
+      if (fs.existsSync('parsed_session.json') && fs.existsSync('map_locations.json') && fs.existsSync('final_scores.json')) {
+        console.log('Generating session titles...');
+        try {
+          execSync(`node ${resolveAppPath('scripts/generate_session_titles.js')}`, { stdio: 'inherit' });
+        } catch (error) {
+          console.log('⚠️  Session title generation failed, continuing with other steps...');
+        }
+      } else {
+        console.log('Missing required files for session title generation');
+      }
+      
+      // 11. Generate map state data (requires parsed_session.json and map_locations.json)
+      if (fs.existsSync('parsed_session.json') && fs.existsSync('map_locations.json')) {
+        console.log('Generating map state data...');
+        try {
+          execSync(`node ${resolveAppPath('scripts/track_map_state.js')}`, { stdio: 'inherit' });
+        } catch (error) {
+          console.log('⚠️  Map state generation failed, continuing with other steps...');
+        }
+      } else {
+        console.log('Missing required files for map state generation');
+      }
 
-      // 5. Write metadata file
+      // 12. Write metadata file
       const metadata = {
         originalBaseName: baseName,
         processedAt: new Date().toISOString(),
@@ -116,13 +186,39 @@ async function processAllSessions() {
     }
   }
 
-  // 7. Build master statistics after all sessions are processed
+  // 13. Build master statistics after all sessions are processed
   console.log('\n📊 Building master statistics...');
   try {
     execSync(`node ${resolveAppPath('scripts/build_master_stats.js')}`, { stdio: 'inherit' });
     console.log('✅ Master statistics built successfully!');
   } catch (error) {
     console.error(`❌ Error building master statistics: ${error.message}`);
+  }
+  
+  // 14. Generate session titles for all sessions
+  console.log('\n📝 Generating session titles for all sessions...');
+  try {
+    execSync(`node ${resolveAppPath('scripts/generate_session_titles.js')}`, { stdio: 'inherit' });
+    console.log('✅ Session titles generated successfully!');
+  } catch (error) {
+    console.error(`❌ Error generating session titles: ${error.message}`);
+  }
+  
+  // 15. Clean uploads directory
+  console.log('\n🧹 Cleaning uploads directory...');
+  try {
+    const uploadsDir = resolveAppPath('public/uploads');
+    if (fs.existsSync(uploadsDir)) {
+      const files = fs.readdirSync(uploadsDir);
+      files.forEach(file => {
+        if (file.startsWith('._') || file.startsWith('.DS_Store')) {
+          fs.unlinkSync(path.join(uploadsDir, file));
+        }
+      });
+    }
+    console.log('✅ Uploads directory cleaned!');
+  } catch (error) {
+    console.error(`❌ Error cleaning uploads directory: ${error.message}`);
   }
 }
 

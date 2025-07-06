@@ -88,7 +88,7 @@ function buildMasterStats() {
     if (!sessionData) continue;
     
     const finalScoresFile = path.join(sessionPath, 'final_scores.json');
-    const sessionTitlesFile = path.join(sessionPath, 'session_titles.json');
+    const sessionTitlesFile = path.join(sessionPath, 'public', 'stats', 'session_titles.json');
     const characterInventoriesFile = path.join(sessionPath, 'character_inventories.json');
 
     try {

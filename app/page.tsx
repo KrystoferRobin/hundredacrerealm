@@ -131,7 +131,7 @@ export default function Home() {
   const [totalSessions, setTotalSessions] = useState<number>(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [selectedPage, setSelectedPage] = useState<'home' | 'characters' | 'monsters' | 'natives' | 'log' | 'games' | 'map' | 'game-logs' | 'session' | 'players' | 'items' | 'spells' | 'rules'>("home");
+  const [selectedPage, setSelectedPage] = useState<'home' | 'characters' | 'monsters' | 'natives' | 'log' | 'games' | 'map' | 'game-logs' | 'session' | 'players' | 'items' | 'spells' | 'rules' | 'admin'>("home");
   const [selectedLogUrl, setSelectedLogUrl] = useState<string | null>(null);
   const [selectedMapSession, setSelectedMapSession] = useState<string | null>(null);
   const [selectedSessionId, setSelectedSessionId] = useState<string | null>(null);
@@ -998,6 +998,13 @@ export default function Home() {
                 >
                   Natives
                 </a>
+                <a 
+                  href="#" 
+                  className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
+                  onClick={e => { e.preventDefault(); router.push('/admin'); }}
+                >
+                  Admin
+                </a>
               </nav>
             </div>
           </header>
@@ -1123,6 +1130,13 @@ export default function Home() {
                   onClick={e => { e.preventDefault(); setSelectedPage('natives'); setSelectedLogUrl(null); }}
                 >
                   Natives
+                </a>
+                <a 
+                  href="#" 
+                  className="hover:underline cursor-pointer px-3 py-2 rounded-lg hover:bg-[#bfa76a] hover:text-[#6b3e26] transition-all duration-200 font-serif" 
+                  onClick={e => { e.preventDefault(); router.push('/admin'); }}
+                >
+                  Admin
                 </a>
               </nav>
             </div>
@@ -1264,6 +1278,8 @@ export default function Home() {
           <iframe src="/spells" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Spells" />
         ) : selectedPage === 'rules' ? (
           <iframe src="/rules/iframe" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Rules" />
+        ) : selectedPage === 'admin' ? (
+          <iframe src="/admin" className="flex-1 w-full border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Admin" />
         ) : selectedPage === 'games' ? (
           <iframe src="/games" className="flex-1 w-full h-[70vh] border-2 border-[#bfa76a] rounded-lg shadow-lg bg-white" title="Game Logs" />
         ) : selectedPage === 'game-logs' ? (
@@ -1401,14 +1417,14 @@ export default function Home() {
                   <div className="text-center text-[#4b3a1e] font-serif italic">Loading Hall of Fame...</div>
                 ) : hallOfFame ? (
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {/* Highest Scoring Character */}
+                    {/* Best Character */}
                     <div className="bg-[#f6ecd6] border border-[#bfa76a] rounded-lg p-4">
                       <h3 className="text-lg font-bold text-[#6b3e26] mb-2 font-serif flex items-center">
-                        👑 Highest Scoring Character
+                        👑 Best Character
                       </h3>
                       {hallOfFame.highestScoringCharacter.characters.length > 0 ? (
                         <div>
-                          {hallOfFame.highestScoringCharacter.characters.map((char: { name: string; characterSlug: string; bestScore: number; bestSessionId: string; bestSessionTitle: string; players: string[] }, index) => (
+                          {hallOfFame.highestScoringCharacter.characters.map((char: { name: string; characterSlug: string; bestScore: number; bestSessionId: string; bestSessionTitle: string; players: string[]; totalGames: number }, index) => (
                             <div key={index} className="mb-3">
                               <div className="flex items-center space-x-3 mb-2">
                                 <div className="w-8 h-8 bg-[#bfa76a] rounded-full flex items-center justify-center text-[#6b3e26] font-bold text-sm">
@@ -1425,7 +1441,7 @@ export default function Home() {
                                     {char.name} 👑
                                   </button>
                                   <div className="text-sm text-[#4b3a1e] font-serif italic">
-                                    ({char.players.join(', ')})
+                                    ({char.players.join(', ')}) - {char.totalGames} total games
                                   </div>
                                   <div className="text-xs text-[#6b3e26] font-serif">
                                     Score: <span className={
@@ -1497,10 +1513,10 @@ export default function Home() {
                       )}
                     </div>
 
-                    {/* Player with Highest Scoring Game */}
+                    {/* Best Player */}
                     <div className="bg-[#f6ecd6] border border-[#bfa76a] rounded-lg p-4">
                       <h3 className="text-lg font-bold text-[#6b3e26] mb-2 font-serif flex items-center">
-                        🏅 Player with Highest Scoring Game
+                        🏅 Best Player
                       </h3>
                       {hallOfFame.highestScoringPlayer.players.length > 0 ? (
                         <div>
@@ -1528,7 +1544,7 @@ export default function Home() {
                                         setSelectedPage('session');
                                       }}
                                       className="hover:text-[#bfa76a] hover:underline cursor-pointer transition-colors duration-200"
-                                    >{hofSessionTitles[String(player.sessionId)]?.mainTitle}</button>
+                                    >{hofSessionTitles[String(player.sessionId)]?.mainTitle || player.sessionId}</button>
                                   </div>
                                   <div className="text-xs text-[#6b3e26] font-serif">
                                     Score: <span className={
@@ -1640,61 +1656,20 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#6b3e26] text-[#f6ecd6] py-3 text-sm font-serif flex items-center justify-between px-4 relative border-t-2 border-[#bfa76a]">
-        {/* Far left: Folder icon button for processing local zips */}
-        <div className="flex items-center">
-          <button
-            className="p-2 rounded hover:bg-[#bfa76a] focus:outline-none focus:ring-2 focus:ring-[#bfa76a] transition-colors"
-            title="Process local zip uploads"
-            aria-label="Process local zip uploads"
-            onClick={handleImportSessions}
-            disabled={processingZips}
-          >
-            <FolderIcon className="w-6 h-6 text-[#fff8e1]" />
-          </button>
-          {processingZips && (
-            <span className="ml-2 text-xs text-[#fff8e1]">Processing...</span>
-          )}
-          {processResult && typeof processResult === 'object' && 'message' in processResult && (processResult as any).message && String((processResult as any).message)}
-          {processResult && typeof processResult === 'object' && 'error' in processResult && (processResult as any).error && String((processResult as any).error)}
-        </div>
-        
-        {/* Center: Credits */}
-        <div className="flex-1 text-center flex items-center justify-center space-x-4">
-          <span className="text-[#fff8e1] font-semibold">Inspired by Karim's Redesign - 100% AI coded with Cursor</span>
-          <div className="flex items-center space-x-2">
-            <a 
-              href="https://github.com/krystoferrobin/hundredacrerealm" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-[#fff8e1] hover:text-[#bfa76a] transition-colors duration-200"
-              title="GitHub Repository"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.239 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
-          </a>
-          <a 
-            href="https://cursor.sh" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-[#fff8e1] hover:text-[#bfa76a] transition-colors duration-200"
-            title="Cursor AI"
-          >
-            <img 
-              src="/images/icons/cursor-app-icon.webp" 
-              alt="Cursor AI" 
-              className="w-5 h-5 object-contain"
-            />
-          </a>
-        </div>
-      </div>
-      
-      {/* Far right: Sun icon */}
-      <div className="flex items-center">
-        <SunIcon className="w-6 h-6 text-[#fff8e1]" />
-      </div>
-    </footer>
-  </div>
-);
+      <footer className="w-full flex justify-center items-center gap-4 py-2 bg-[#6b3e26] border-t-2 border-[#bfa76a]">
+        <a href="https://github.com/[your-repo]" target="_blank" rel="noopener noreferrer" title="GitHub">
+          <img src="/images/site-icons/github.png" alt="GitHub" className="w-7 h-7 object-contain" />
+        </a>
+        <a href="https://www.cursor.so/" target="_blank" rel="noopener noreferrer" title="Cursor">
+          <img src="/images/site-icons/cursor.png" alt="Cursor" className="w-7 h-7 object-contain" />
+        </a>
+        <a href="https://boardgamegeek.com/user/KrystoferRobin" target="_blank" rel="noopener noreferrer" title="BoardGameGeek">
+          <img src="/images/site-icons/bgg.svg" alt="BoardGameGeek" className="w-10 h-10 object-contain" />
+        </a>
+        <a href="https://tabletop-creator.com/" target="_blank" rel="noopener noreferrer" title="Tabletop Creator">
+          <img src="/images/site-icons/ttc.svg" alt="Tabletop Creator" className="w-11 h-11 object-contain" />
+        </a>
+      </footer>
+    </div>
+  );
 }

@@ -33,7 +33,7 @@ export async function GET() {
       return NextResponse.json([]);
     }
     
-    const titlesPath = path.join(process.cwd(), 'data', 'session_titles.json');
+    const titlesPath = path.join(process.cwd(), 'public', 'stats', 'session_titles.json');
     let sessionTitles = {};
     if (fs.existsSync(titlesPath)) {
       sessionTitles = JSON.parse(fs.readFileSync(titlesPath, 'utf8'));
@@ -72,15 +72,31 @@ export async function GET() {
       if (sessionData) {
         try {
           // Calculate statistics from session data
-          const totalBattles = sessionData.combat?.totalBattles || 0;
-          const totalDays = sessionData.totalDays || 0;
-          
+          let totalCharacterTurns = 0;
+          let totalBattles = 0;
+          let totalActions = 0;
+          const uniqueCharacters = new Set<string>();
+
+          if (sessionData.days) {
+            Object.values(sessionData.days).forEach((dayData: any) => {
+              totalCharacterTurns += (dayData.characterTurns || []).length;
+              totalBattles += (dayData.battles || []).length;
+              (dayData.characterTurns || []).forEach((turn: any) => {
+                if (turn.character && !turn.character.includes('HQ')) {
+                  uniqueCharacters.add(turn.character);
+                }
+                totalActions += (turn.actions || []).length;
+              });
+            });
+          }
+
           // Get character and player info
           const characters = sessionData.characterToPlayer || {};
           const characterCount = Object.keys(characters).length;
           const playerCount = new Set(Object.values(characters)).size;
-          
+
           // Calculate final day string (e.g. 2m3d)
+          const totalDays = sessionData.days ? Object.keys(sessionData.days).length : 0;
           const finalDayNum = totalDays > 0 ? totalDays - 1 : 0;
           const months = Math.floor(finalDayNum / 28) + 1;
           const dayNum = (finalDayNum % 28) + 1;
@@ -89,28 +105,25 @@ export async function GET() {
           // Get file stats for date
           const stats = fs.statSync(sessionPath!);
 
-          // Find matching fancy title by session name (without timestamp)
+          // Find matching fancy title by exact session ID
           let fancyTitle = undefined;
-          const sessionName = folder.split('_')[0]; // Get base session name without timestamp
-          for (const [titleKey, titleData] of Object.entries(sessionTitles)) {
-            const titleSessionName = titleKey.split('_')[0];
-            if (titleSessionName === sessionName) {
-              fancyTitle = (titleData as any).mainTitle;
-              break;
-            }
+          let fancySubtitle = undefined;
+          if (sessionTitles[folder]) {
+            fancyTitle = sessionTitles[folder].mainTitle;
+            fancySubtitle = sessionTitles[folder].subtitle;
           }
 
           sessions.push({
             id: folder, // Use folder name as session ID
             name: fancyTitle || sessionData.sessionTitle || sessionData.sessionName || folder,
-            totalCharacterTurns: totalDays,
+            totalCharacterTurns,
             totalBattles,
-            totalActions: totalDays * 3, // Estimate
-            uniqueCharacters: characterCount,
+            totalActions,
+            uniqueCharacters: uniqueCharacters.size,
             players: playerCount,
             lastModified: stats.mtime.toISOString(),
             mainTitle: fancyTitle || sessionData.sessionTitle || sessionData.sessionName || folder,
-            subtitle: characterCount > 0 ? `${characterCount} characters, ${playerCount} players` : 'No character data',
+            subtitle: fancySubtitle || (characterCount > 0 ? `${characterCount} characters, ${playerCount} players` : 'No character data'),
             characters: characterCount,
             days: totalDays,
             battles: totalBattles,

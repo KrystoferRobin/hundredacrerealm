@@ -6,8 +6,18 @@ async function generateAllSessionTitles() {
   try {
     console.log('Generating session titles for all sessions...');
     
-    // Read all session data
-    const sessionsDir = path.join('/app/public/parsed_sessions');
+    // Read all session data - try both local and Docker paths
+    const possiblePaths = [
+      path.join(process.cwd(), 'public', 'parsed_sessions'),
+      '/app/public/parsed_sessions'
+    ];
+    const sessionsDir = possiblePaths.find(p => fs.existsSync(p));
+    
+    if (!sessionsDir) {
+      console.error('No sessions directory found');
+      return;
+    }
+    
     const sessionTitles = {};
     
     const sessionFolders = fs.readdirSync(sessionsDir).filter(folder => 
@@ -58,13 +68,13 @@ async function generateAllSessionTitles() {
       console.log(`  Generated: "${sessionName.mainTitle}" - "${sessionName.subtitle}"`);
     }
     
-    // Write session titles to data directory
-    const dataDir = path.join('/app/data');
-    if (!fs.existsSync(dataDir)) {
-      fs.mkdirSync(dataDir, { recursive: true });
+    // Write session titles to stats directory
+    const statsDir = path.join(process.cwd(), 'public', 'stats');
+    if (!fs.existsSync(statsDir)) {
+      fs.mkdirSync(statsDir, { recursive: true });
     }
     
-    const outputPath = path.join(dataDir, 'session_titles.json');
+    const outputPath = path.join(statsDir, 'session_titles.json');
     fs.writeFileSync(outputPath, JSON.stringify(sessionTitles, null, 2));
     
     console.log(`\nGenerated ${Object.keys(sessionTitles).length} session titles`);
@@ -117,7 +127,7 @@ async function generateCurrentSessionTitle() {
       battles: sessionName.battles
     };
     
-    const outputPath = path.join(currentDir, 'session_titles.json');
+    const outputPath = path.join(currentDir, 'public', 'stats', 'session_titles.json');
     fs.writeFileSync(outputPath, JSON.stringify(sessionTitle, null, 2));
     
     console.log(`Generated: "${sessionName.mainTitle}" - "${sessionName.subtitle}"`);

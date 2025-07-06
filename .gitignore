@@ -47,4 +47,8 @@ prisma/dev.db
 # Dynamic content directories
 /public/parsed_sessions/
 /public/stats/
-/public/images/
+/public/uploads/
+!/public/images/
+
+# Admin data (keep in data directory but exclude from git)
+/data/admin-users.json

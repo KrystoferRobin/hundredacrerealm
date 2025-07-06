@@ -32,7 +32,8 @@ export async function GET(request: NextRequest) {
           characterSlug: name,
           bestScore,
           bestGames,
-          players: data.players
+          players: data.players,
+          totalGames: data.totalPlays || validGames.length
         };
       })
       .filter(char => char && char.bestScore !== null && char.bestScore !== undefined);
@@ -52,7 +53,8 @@ export async function GET(request: NextRequest) {
           bestScore: char.bestScore,
           bestSessionId: game.sessionId,
           bestSessionTitle: game.sessionTitle,
-          players: char.players
+          players: char.players,
+          totalGames: char.totalGames
         }))
       );
 

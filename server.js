@@ -162,7 +162,7 @@ app.prepare().then(() => {
   server.get('/api/game-sessions', (req, res) => {
     try {
       const sessionsDir = SESSIONS_DIR;
-      const titlesPath = '/app/data/session_titles.json';
+      const titlesPath = '/app/public/stats/session_titles.json';
       let sessionTitles = {};
       
       if (fs.existsSync(titlesPath)) {

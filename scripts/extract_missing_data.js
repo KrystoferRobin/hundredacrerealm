@@ -7,7 +7,18 @@ const { extractCharacterStats, extractScoringData } = require('./parse_game_sess
 const { generateSessionName } = require('./generate_session_name.js');
 
 async function injectFollowActions(sessionName) {
-    const sessionDir = path.join('/app/public/parsed_sessions', sessionName);
+    // Try both local and Docker paths
+    const possiblePaths = [
+      path.join(process.cwd(), 'public', 'parsed_sessions', sessionName),
+      path.join('/app/public/parsed_sessions', sessionName)
+    ];
+    const sessionDir = possiblePaths.find(p => fs.existsSync(p));
+    
+    if (!sessionDir) {
+        console.log(`[injectFollowActions] Session directory not found for ${sessionName}`);
+        return;
+    }
+    
     const xmlPath = path.join(sessionDir, 'extracted_game.xml');
     const jsonPath = path.join(sessionDir, 'parsed_session.json');
     if (!fs.existsSync(xmlPath) || !fs.existsSync(jsonPath)) {
@@ -74,7 +85,18 @@ async function injectFollowActions(sessionName) {
 }
 
 async function addIdleAndWaitForArrivalActions(sessionName) {
-    const sessionDir = path.join('/app/public/parsed_sessions', sessionName);
+    // Try both local and Docker paths
+    const possiblePaths = [
+      path.join(process.cwd(), 'public', 'parsed_sessions', sessionName),
+      path.join('/app/public/parsed_sessions', sessionName)
+    ];
+    const sessionDir = possiblePaths.find(p => fs.existsSync(p));
+    
+    if (!sessionDir) {
+        console.log(`[addIdleAndWaitForArrivalActions] Session directory not found for ${sessionName}`);
+        return;
+    }
+    
     const jsonPath = path.join(sessionDir, 'parsed_session.json');
     if (!fs.existsSync(jsonPath)) return;
     const sessionData = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
@@ -123,7 +145,18 @@ async function addIdleAndWaitForArrivalActions(sessionName) {
 async function extractMissingData(sessionName) {
     console.log(`Extracting missing data for session: ${sessionName}`);
     
-    const sessionDir = path.join('/app/public/parsed_sessions', sessionName);
+    // Try both local and Docker paths
+    const possiblePaths = [
+      path.join(process.cwd(), 'public', 'parsed_sessions', sessionName),
+      path.join('/app/public/parsed_sessions', sessionName)
+    ];
+    const sessionDir = possiblePaths.find(p => fs.existsSync(p));
+    
+    if (!sessionDir) {
+        console.error(`Session directory not found for ${sessionName}`);
+        return;
+    }
+    
     const xmlPath = path.join(sessionDir, 'extracted_game.xml');
     
     if (!fs.existsSync(xmlPath)) {

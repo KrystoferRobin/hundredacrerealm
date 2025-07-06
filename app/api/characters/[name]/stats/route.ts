@@ -8,7 +8,7 @@ export async function GET(
 ) {
   try {
     const characterName = decodeURIComponent(params.name);
-    const statsFile = path.join(process.cwd(), 'data', 'master_stats.json');
+    const statsFile = path.join(process.cwd(), 'public', 'stats', 'master_stats.json');
     
     if (!fs.existsSync(statsFile)) {
       return NextResponse.json(

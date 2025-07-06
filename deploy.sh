@@ -10,9 +10,31 @@ PREVIOUS_COMMIT=$(git rev-parse HEAD)
 
 # Pull latest changes, handling dynamic content conflicts gracefully
 echo "📥 Pulling latest changes..."
-git stash push -m "Dynamic content backup" --include-untracked || true
+
+# Check if there are any untracked files to stash
+if [ -n "$(git ls-files --others --exclude-standard)" ]; then
+    echo "   📦 Stashing untracked files (dynamic content)..."
+    git stash push -m "Dynamic content backup" --include-untracked
+    STASH_CREATED=true
+else
+    echo "   ✅ No untracked files to stash"
+    STASH_CREATED=false
+fi
+
+# Pull the latest changes
 git pull origin main
-git stash pop || true
+
+# Restore stashed content if we created a stash
+if [ "$STASH_CREATED" = true ]; then
+    echo "   📦 Restoring stashed content..."
+    if ! git stash pop; then
+        echo "   ⚠️  Warning: Could not automatically restore stashed content"
+        echo "   📋 Stash is preserved. You may need to manually restore with: git stash pop"
+        echo "   🔍 Check stash list with: git stash list"
+    else
+        echo "   ✅ Stashed content restored successfully"
+    fi
+fi
 
 # Get the new commit hash
 CURRENT_COMMIT=$(git rev-parse HEAD)

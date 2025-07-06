@@ -11,8 +11,8 @@ export async function GET(
     
     // Try both local and Docker paths for session_titles.json
     const possiblePaths = [
-      path.join(process.cwd(), 'data', 'session_titles.json'),
-      '/app/data/session_titles.json'
+      path.join(process.cwd(), 'public', 'stats', 'session_titles.json'),
+      '/app/public/stats/session_titles.json'
     ];
     const titlesPath = possiblePaths.find(p => fs.existsSync(p));
     
