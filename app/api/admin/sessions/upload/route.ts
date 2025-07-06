@@ -7,6 +7,8 @@ import path from 'path';
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-in-production';
 const SESSIONS_DIR = path.join(process.cwd(), 'public', 'parsed_sessions');
 
+export const dynamic = "force-dynamic";
+
 // Middleware to check authentication
 async function checkAuth(request: NextRequest) {
   const cookieStore = cookies();

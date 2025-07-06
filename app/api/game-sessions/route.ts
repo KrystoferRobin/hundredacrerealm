@@ -20,6 +20,8 @@ interface SessionData {
   finalDay?: string;
 }
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   try {
     // Try both local and Docker paths
