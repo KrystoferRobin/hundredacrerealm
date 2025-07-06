@@ -275,12 +275,12 @@ export async function POST(request: NextRequest) {
         }
         
         const webhook = new DiscordWebhook(webhookSettings.webhookUrl);
-        const sessions = getAllSessions();
+        const sessions = getAllSessions().filter((s): s is NonNullable<typeof s> => s !== null && s !== undefined);
         
         switch (notificationRequest.type) {
           case 'highest-scoring-game':
             const highestScoringSession = sessions.length > 0
-              ? sessions.slice(1).reduce((highest, session) => {
+              ? sessions.reduce((highest, session) => {
                   if (!highest) return session;
                   if (!session) return highest;
                   return session.highestScore > highest.highestScore ? session : highest;
@@ -302,7 +302,7 @@ export async function POST(request: NextRequest) {
             
           case 'latest-session':
             const latestSession = sessions.length > 0
-              ? sessions.slice(1).reduce((latest, session) => {
+              ? sessions.reduce((latest, session) => {
                   if (!latest || !session) return session || latest;
                   if (!('createdAt' in session) || !('createdAt' in latest)) return latest;
                   return new Date(String(session.createdAt)) > new Date(String(latest.createdAt)) ? session : latest;
@@ -323,7 +323,7 @@ export async function POST(request: NextRequest) {
             
           case 'custom-session':
             if (notificationRequest.sessionId) {
-              const session = sessions.find(s => s.id === notificationRequest.sessionId);
+              const session = sessions.find((s) => s && s.id === notificationRequest.sessionId);
               if (session) {
                 const embed = {
                   title: session.name,
@@ -341,10 +341,10 @@ export async function POST(request: NextRequest) {
           case 'site-stats':
             // Calculate site-wide statistics
             const totalSessions = sessions.length;
-            const totalPlayers = new Set(sessions.flatMap(s => s.playerList.split(', '))).size;
-            const totalCharacters = sessions.reduce((sum, s) => sum + s.characters, 0);
-            const totalBattles = sessions.reduce((sum, s) => sum + s.totalBattles, 0);
-            const totalActions = sessions.reduce((sum, s) => sum + s.totalActions, 0);
+            const totalPlayers = new Set(sessions.flatMap(s => (s.playerList || '').split(', '))).size;
+            const totalCharacters = sessions.reduce((sum, s) => sum + (s.characters || 0), 0);
+            const totalBattles = sessions.reduce((sum, s) => sum + (s.totalBattles || 0), 0);
+            const totalActions = sessions.reduce((sum, s) => sum + (s.totalActions || 0), 0);
             
             const embed = {
               title: '📊 Site Statistics',
@@ -384,7 +384,7 @@ export async function POST(request: NextRequest) {
             
           case 'custom-message':
             if (notificationRequest.customTemplate && notificationRequest.sessionId) {
-              const session = sessions.find(s => s.id === notificationRequest.sessionId);
+              const session = sessions.find((s) => s && s.id === notificationRequest.sessionId);
               if (session) {
                 const customMessage = parseCustomTemplate(notificationRequest.customTemplate, session);
                 const customEmbed = {
