@@ -1656,19 +1656,46 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="w-full flex justify-center items-center gap-4 py-2 bg-[#6b3e26] border-t-2 border-[#bfa76a]">
-        <a href="https://github.com/[your-repo]" target="_blank" rel="noopener noreferrer" title="GitHub">
-          <img src="/images/site-icons/github.png" alt="GitHub" className="w-7 h-7 object-contain" />
-        </a>
-        <a href="https://www.cursor.so/" target="_blank" rel="noopener noreferrer" title="Cursor">
-          <img src="/images/site-icons/cursor.png" alt="Cursor" className="w-7 h-7 object-contain" />
-        </a>
-        <a href="https://boardgamegeek.com/user/KrystoferRobin" target="_blank" rel="noopener noreferrer" title="BoardGameGeek">
-          <img src="/images/site-icons/bgg.svg" alt="BoardGameGeek" className="w-10 h-10 object-contain" />
-        </a>
-        <a href="https://tabletop-creator.com/" target="_blank" rel="noopener noreferrer" title="Tabletop Creator">
-          <img src="/images/site-icons/ttc.svg" alt="Tabletop Creator" className="w-11 h-11 object-contain" />
-        </a>
+      <footer className="w-full flex justify-between items-center py-2 bg-[#6b3e26] border-t-2 border-[#bfa76a] px-4">
+        {/* Left side - Folder icon */}
+        <button
+          onClick={handleImportSessions}
+          className="text-[#f6ecd6] hover:text-[#bfa76a] transition-colors duration-200"
+          title="Process All Sessions"
+        >
+          <FolderIcon className="w-7 h-7" />
+        </button>
+
+        {/* Center - Attribution and social links */}
+        <div className="flex items-center gap-4">
+          <span className="text-[#f6ecd6] text-sm font-serif">
+            Inspired by Karim's Redesign - 100% AI coded with Cursor
+          </span>
+          <a href="https://github.com/[your-repo]" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <img src="/images/site-icons/github.png" alt="GitHub" className="w-7 h-7 object-contain" />
+          </a>
+          <a href="https://www.cursor.so/" target="_blank" rel="noopener noreferrer" title="Cursor">
+            <img src="/images/site-icons/cursor.png" alt="Cursor" className="w-7 h-7 object-contain" />
+          </a>
+          <a href="https://boardgamegeek.com/user/KrystoferRobin" target="_blank" rel="noopener noreferrer" title="BoardGameGeek">
+            <img src="/images/site-icons/bgg.svg" alt="BoardGameGeek" className="w-10 h-10 object-contain" />
+          </a>
+          <a href="https://tabletop-creator.com/" target="_blank" rel="noopener noreferrer" title="Tabletop Creator">
+            <img src="/images/site-icons/ttc.svg" alt="Tabletop Creator" className="w-11 h-11 object-contain" />
+          </a>
+        </div>
+
+        {/* Right side - Sun icon */}
+        <button
+          onClick={() => {
+            // Toggle theme or refresh functionality
+            window.location.reload();
+          }}
+          className="text-[#f6ecd6] hover:text-[#bfa76a] transition-colors duration-200"
+          title="Refresh"
+        >
+          <SunIcon className="w-7 h-7" />
+        </button>
       </footer>
     </div>
   );
