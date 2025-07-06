@@ -32,7 +32,7 @@ const parsers = {
   extract_missing_data: 'scripts/extract_missing_data.js'
 };
 
-export async function POST(request: NextRequest) {
+export async function POST(request: NextRequest): Promise<Response> {
   const user = await checkAuth(request);
   
   if (!user || !user.isAdmin) {
@@ -55,7 +55,7 @@ export async function POST(request: NextRequest) {
     const scriptPath = parsers[parserId as keyof typeof parsers];
     const fullPath = path.join(process.cwd(), scriptPath);
 
-    return new Promise((resolve) => {
+    return new Promise<Response>((resolve) => {
       let output = '';
       let errorOutput = '';
 
