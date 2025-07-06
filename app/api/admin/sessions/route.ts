@@ -7,6 +7,15 @@ import path from 'path';
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-in-production';
 const SESSIONS_DIR = path.join(process.cwd(), 'public', 'parsed_sessions');
 
+// Define the session interface
+interface SessionInfo {
+  sessionId: string;
+  name: string;
+  date: string;
+  players: number;
+  lastModified: string;
+}
+
 // Middleware to check authentication
 async function checkAuth(request: NextRequest) {
   const cookieStore = cookies();
@@ -44,7 +53,7 @@ export async function GET(request: NextRequest) {
       .filter(item => item.isDirectory())
       .map(item => item.name);
 
-    const sessions = [];
+    const sessions: SessionInfo[] = [];
     
     for (const folder of sessionFolders) {
       const sessionPath = path.join(SESSIONS_DIR, folder, 'parsed_session.json');
