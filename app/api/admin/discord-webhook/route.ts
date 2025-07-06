@@ -279,12 +279,13 @@ export async function POST(request: NextRequest) {
         
         switch (notificationRequest.type) {
           case 'highest-scoring-game':
-            const highestScoringSession = sessions.reduce((highest, session) => {
-              if (!highest || (session.highestScore > highest.highestScore)) {
-                return session;
-              }
-              return highest;
-            }, null);
+            const highestScoringSession = sessions.length > 0
+              ? sessions.slice(1).reduce((highest, session) => {
+                  if (!highest) return session;
+                  if (!session) return highest;
+                  return session.highestScore > highest.highestScore ? session : highest;
+                }, sessions[0])
+              : null;
             
             if (highestScoringSession) {
               const embed = {
@@ -300,8 +301,14 @@ export async function POST(request: NextRequest) {
             break;
             
           case 'latest-session':
-            if (sessions.length > 0) {
-              const latestSession = sessions[0]; // Assuming sorted by date
+            const latestSession = sessions.length > 0
+              ? sessions.slice(1).reduce((latest, session) => {
+                  if (!latest || !session) return session || latest;
+                  if (!('createdAt' in session) || !('createdAt' in latest)) return latest;
+                  return new Date(String(session.createdAt)) > new Date(String(latest.createdAt)) ? session : latest;
+                }, sessions[0])
+              : null;
+            if (latestSession) {
               const embed = {
                 title: latestSession.name,
                 description: `${latestSession.finalDay} • ${latestSession.totalBattles} battles • ${latestSession.totalActions} actions\n${latestSession.characters} Characters, ${latestSession.playerList}\nHighest Score: **${latestSession.highestCharacter}** (${latestSession.highestPlayer}) - ${latestSession.highestScore} points`,
