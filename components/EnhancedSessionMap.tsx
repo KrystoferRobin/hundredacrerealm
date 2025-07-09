@@ -537,41 +537,77 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
     return { x: 0, y: 0 };
   };
 
-  // Calculate optimal zoom to fit map in display area
-  const calculateOptimalZoom = () => {
-    if (!mapData || containerSize.width === 0 || containerSize.height === 0) return 1;
-    
+  // Calculate SVG dimensions dynamically based on actual tiles
+  const calculateDynamicSVGDimensions = () => {
+    if (!mapData || !mapData.tiles) {
+      return {
+        width: 120, // Single hex width
+        height: 104, // Single hex height
+        viewBox: '0 0 120 104',
+        minPixelX: 0,
+        minPixelY: 0,
+        maxPixelX: 120,
+        maxPixelY: 104
+      };
+    }
+
+    const hexSize = 60;
+    const hexWidth = hexSize * 2;
+    const hexHeight = hexSize * Math.sqrt(3);
+    const PAD_X = hexWidth / 2;
+    const PAD_Y = hexHeight / 2;
+
     // Only consider tiles that are actually in play (not void spaces)
     const actualTiles = mapData.tiles.filter((tile: Tile) => {
       const isValid = tile.objectName && tile.objectName !== 'undefined' && tile.objectName.trim() !== '';
       return isValid;
     });
-    
-    if (actualTiles.length === 0) return 1;
-    
-    const positions = actualTiles.map((tile: Tile) => parsePosition(tile.position));
-    const minX = Math.min(...positions.map(([x, y]: [number, number]) => x));
-    const maxX = Math.max(...positions.map(([x, y]: [number, number]) => x));
-    const minY = Math.min(...positions.map(([x, y]: [number, number]) => y));
-    const maxY = Math.max(...positions.map(([x, y]: [number, number]) => y));
-    
-    const hexSize = 60;
-    const hexWidth = hexSize * 2;
-    const hexHeight = hexSize * Math.sqrt(3);
+
+    if (actualTiles.length === 0) {
+      return {
+        width: hexWidth,
+        height: hexHeight,
+        viewBox: `${-PAD_X} ${-PAD_Y} ${hexWidth + 2 * PAD_X} ${hexHeight + 2 * PAD_Y}`,
+        minPixelX: -PAD_X,
+        minPixelY: -PAD_Y,
+        maxPixelX: hexWidth + PAD_X,
+        maxPixelY: hexHeight + PAD_Y
+      };
+    }
+
+    // Calculate pixel positions for actual tiles only
     const tilePixelPositions = actualTiles.map((tile: Tile) => {
       const [x, y] = parsePosition(tile.position);
       return getHexPosition(x, y);
     });
-    
+
     const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
     const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
     const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
     const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
+
+    const svgWidth = (maxPixelX - minPixelX) + hexWidth + 2 * PAD_X;
+    const svgHeight = (maxPixelY - minPixelY) + hexHeight + 2 * PAD_Y;
+    const viewBox = `${minPixelX - PAD_X} ${minPixelY - PAD_Y} ${svgWidth} ${svgHeight}`;
+
+    return {
+      width: svgWidth,
+      height: svgHeight,
+      viewBox,
+      minPixelX: minPixelX - PAD_X,
+      minPixelY: minPixelY - PAD_Y,
+      maxPixelX: maxPixelX + PAD_X,
+      maxPixelY: maxPixelY + PAD_Y
+    };
+  };
+
+  // Calculate optimal zoom to fit map in display area
+  const calculateOptimalZoom = () => {
+    if (!mapData || containerSize.width === 0 || containerSize.height === 0) return 1;
     
-    const PAD_X = hexWidth / 2;
-    const PAD_Y = hexHeight / 2;
-    const mapWidth = (maxPixelX - minPixelX) + hexWidth + 2 * PAD_X;
-    const mapHeight = (maxPixelY - minPixelY) + hexHeight + 2 * PAD_Y;
+    const dimensions = calculateDynamicSVGDimensions();
+    const mapWidth = dimensions.width;
+    const mapHeight = dimensions.height;
     
     // Calculate zoom to fit with less padding
     const padding = 0.02; // 2% padding
@@ -579,7 +615,16 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
     const zoomY = (containerSize.height * (1 - padding)) / mapHeight;
     
     // Use the maximum zoom that fits either width or height
-    const optimalZoom = Math.max(Math.min(zoomX, 3), Math.min(zoomY, 3), 0.8); // Cap at 3x, min 0.8
+    const optimalZoom = Math.max(Math.min(zoomX, 3), Math.min(zoomY, 3), 0.8);
+    
+    console.log('Dynamic map dimensions:', {
+      mapWidth,
+      mapHeight,
+      containerSize,
+      zoomX,
+      zoomY,
+      optimalZoom
+    });
     
     return optimalZoom;
   };
@@ -594,14 +639,11 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
       
       // Calculate pan to center the map properly
       if (mapData) {
-        const tilePixelPositions = mapData.tiles.map((tile: Tile) => {
-          const [x, y] = parsePosition(tile.position);
-          return getHexPosition(x, y);
-        });
-        const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
-        const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
-        const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
-        const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
+        const dimensions = calculateDynamicSVGDimensions();
+        const minPixelX = dimensions.minPixelX;
+        const maxPixelX = dimensions.maxPixelX;
+        const minPixelY = dimensions.minPixelY;
+        const maxPixelY = dimensions.maxPixelY;
         const centerX = (minPixelX + maxPixelX) / 2;
         const centerY = (minPixelY + maxPixelY) / 2;
         setPan({
@@ -628,18 +670,10 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
       const optimalZoom = calculateOptimalZoom();
       setZoom(optimalZoom);
 
-      // Calculate pixel bounds
-      const tilePixelPositions = mapData.tiles.map((tile: Tile) => {
-        const [x, y] = parsePosition(tile.position);
-        return getHexPosition(x, y);
-      });
-      const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
-      const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
-      const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
-      const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
+      const dimensions = calculateDynamicSVGDimensions();
       // Center of the map in SVG coordinates
-      const centerX = (minPixelX + maxPixelX) / 2;
-      const centerY = (minPixelY + maxPixelY) / 2;
+      const centerX = (dimensions.minPixelX + dimensions.maxPixelX) / 2;
+      const centerY = (dimensions.minPixelY + dimensions.maxPixelY) / 2;
       // Center the map in the container
       setPan({
         x: containerSize.width / 2 - centerX * optimalZoom,
@@ -667,34 +701,13 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
   };
 
   const getTileImage = (tile: Tile): string => {
-    // Map tile names to image filenames
-    const tileNameMap: Record<string, string> = {
-      'Caves': 'caves',
-      'Ledges': 'ledges',
-      'Cavern': 'cavern',
-      'Awful Valley': 'awfulvalley',
-      'Oak Woods': 'oakwoods',
-      'Linden Woods': 'lindenwoods',
-      'Deep Woods': 'deepwoods',
-      'Ruins': 'ruins',
-      'Bad Valley': 'badvalley',
-      'Mountain': 'mountain',
-      'Evil Valley': 'evilvalley',
-      'Borderland': 'borderland',
-      'Cliff': 'cliff',
-      'Curst Valley': 'curstvalley',
-      'Dark Valley': 'darkvalley',
-      'Pine Woods': 'pinewoods',
-      'High Pass': 'highpass',
-      'Crag': 'crag',
-      'Maple Woods': 'maplewoods',
-      'Nut Woods': 'nutwoods'
-    };
-    
-    const baseName = tileNameMap[tile.objectName] || tile.objectName.toLowerCase().replace(/\s+/g, '');
+    // Convert tile name to lowercase, replace spaces with nothing
+    const baseName = tile.objectName.toLowerCase().replace(/\s+/g, '');
     const suffix = tile.isEnchanted ? '-e1' : '1';
     const filename = `${baseName}${suffix}.gif`;
     const imageUrl = `/images/tiles/${filename}`;
+    
+    console.log(`Generated image URL for ${tile.objectName}: ${imageUrl}`);
     return imageUrl;
   };
 
@@ -778,29 +791,13 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
     return <div className="w-full h-full flex items-center justify-center">No map data available</div>;
   }
 
-  // Calculate SVG dimensions
-  const positions = mapData.tiles.map((tile: Tile) => parsePosition(tile.position));
-  const minX = Math.min(...positions.map(([x, y]: [number, number]) => x));
-  const maxX = Math.max(...positions.map(([x, y]: [number, number]) => x));
-  const minY = Math.min(...positions.map(([x, y]: [number, number]) => y));
-  const maxY = Math.max(...positions.map(([x, y]: [number, number]) => y));
+  // Calculate dynamic SVG dimensions
+  const svgDimensions = calculateDynamicSVGDimensions();
+  
+  // Define hex dimensions for rendering
   const hexSize = 60;
   const hexWidth = hexSize * 2;
   const hexHeight = hexSize * Math.sqrt(3);
-  const tilePixelPositions = mapData.tiles.map((tile: Tile) => {
-    const [x, y] = parsePosition(tile.position);
-    return getHexPosition(x, y);
-  });
-  const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
-  const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
-  const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
-  const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
-  // Half-tile padding
-  const PAD_X = hexWidth / 2;
-  const PAD_Y = hexHeight / 2;
-  const svgWidth = (maxPixelX - minPixelX) + hexWidth + 2 * PAD_X;
-  const svgHeight = (maxPixelY - minPixelY) + hexHeight + 2 * PAD_Y;
-  const viewBox = `${minPixelX - PAD_X} ${minPixelY - PAD_Y} ${svgWidth} ${svgHeight}`;
 
   return (
     <div
@@ -842,9 +839,9 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
       {/* SVG container with proper overflow handling */}
       <div className="w-full h-full overflow-hidden">
         <svg
-          width={svgWidth}
-          height={svgHeight}
-          viewBox={viewBox}
+          width={svgDimensions.width}
+          height={svgDimensions.height}
+          viewBox={svgDimensions.viewBox}
           style={{
             display: 'block',
             background: 'none',
@@ -874,8 +871,7 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
                   transform={`rotate(${rotation} ${hexPos.x} ${hexPos.y})`}
                   style={{ imageRendering: 'pixelated' }}
                   onError={(e) => {
-                    console.error(`Failed to load image: ${imageUrl}`);
-                    console.error('Image error details:', e);
+                    console.warn(`Missing tile image: ${imageUrl} for tile: ${tile.objectName}`);
                     const target = e.target as SVGImageElement;
                     target.style.display = 'none';
                   }}

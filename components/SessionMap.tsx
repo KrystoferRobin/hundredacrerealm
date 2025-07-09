@@ -342,33 +342,74 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
     return { x: pixelX, y: pixelY };
   };
 
+  // Calculate SVG dimensions dynamically based on actual tiles
+  const calculateDynamicSVGDimensions = () => {
+    if (!mapData || !mapData.tiles) {
+      return {
+        width: 120, // Single hex width
+        height: 104, // Single hex height
+        viewBox: '0 0 120 104',
+        minPixelX: 0,
+        minPixelY: 0,
+        maxPixelX: 120,
+        maxPixelY: 104
+      };
+    }
+
+    const hexSize = 60;
+    const hexWidth = hexSize * 2;
+    const hexHeight = hexSize * Math.sqrt(3);
+    const PAD_X = hexWidth / 2;
+    const PAD_Y = hexHeight / 2;
+
+    // Only consider tiles that are actually in play (not void spaces)
+    const actualTiles = mapData.tiles.filter((tile: Tile) => {
+      const isValid = tile.objectName && tile.objectName !== 'undefined' && tile.objectName.trim() !== '';
+      return isValid;
+    });
+
+    if (actualTiles.length === 0) {
+      return {
+        width: hexWidth,
+        height: hexHeight,
+        viewBox: `${-PAD_X} ${-PAD_Y} ${hexWidth + 2 * PAD_X} ${hexHeight + 2 * PAD_Y}`,
+        minPixelX: -PAD_X,
+        minPixelY: -PAD_Y,
+        maxPixelX: hexWidth + PAD_X,
+        maxPixelY: hexHeight + PAD_Y
+      };
+    }
+
+    // Calculate pixel positions for actual tiles only
+    const tilePixelPositions = actualTiles.map((tile: Tile) => {
+      const [x, y] = parsePosition(tile.position);
+      return getHexPosition(x, y);
+    });
+
+    const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
+    const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
+    const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
+    const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
+
+    const svgWidth = (maxPixelX - minPixelX) + hexWidth + 2 * PAD_X;
+    const svgHeight = (maxPixelY - minPixelY) + hexHeight + 2 * PAD_Y;
+    const viewBox = `${minPixelX - PAD_X} ${minPixelY - PAD_Y} ${svgWidth} ${svgHeight}`;
+
+    return {
+      width: svgWidth,
+      height: svgHeight,
+      viewBox,
+      minPixelX: minPixelX - PAD_X,
+      minPixelY: minPixelY - PAD_Y,
+      maxPixelX: maxPixelX + PAD_X,
+      maxPixelY: maxPixelY + PAD_Y
+    };
+  };
+
   // Get tile image filename
   const getTileImage = (tile: Tile): string => {
-    // Map tile names to image filenames
-    const tileNameMap: Record<string, string> = {
-      'Caves': 'caves',
-      'Ledges': 'ledges',
-      'Cavern': 'cavern',
-      'Awful Valley': 'awfulvalley',
-      'Oak Woods': 'oakwoods',
-      'Linden Woods': 'lindenwoods',
-      'Deep Woods': 'deepwoods',
-      'Ruins': 'ruins',
-      'Bad Valley': 'badvalley',
-      'Mountain': 'mountain',
-      'Evil Valley': 'evilvalley',
-      'Borderland': 'borderland',
-      'Cliff': 'cliff',
-      'Curst Valley': 'curstvalley',
-      'Dark Valley': 'darkvalley',
-      'Pine Woods': 'pinewoods',
-      'High Pass': 'highpass',
-      'Crag': 'crag',
-      'Maple Woods': 'maplewoods',
-      'Nut Woods': 'nutwoods'
-    };
-    
-    const baseName = tileNameMap[tile.objectName] || tile.objectName.toLowerCase().replace(/\s+/g, '');
+    // Convert tile name to lowercase, replace spaces with nothing
+    const baseName = tile.objectName.toLowerCase().replace(/\s+/g, '');
     const suffix = tile.isEnchanted ? '-e1' : '1';
     const filename = `${baseName}${suffix}.gif`;
     const imageUrl = `/images/tiles/${filename}`;
@@ -463,40 +504,18 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
     return <div className="text-center p-4">No map data available</div>;
   }
 
-  // Calculate map bounds
-  const positions = mapData.tiles.map((tile: Tile) => parsePosition(tile.position));
-  const minX = Math.min(...positions.map(([x, y]: [number, number]) => x));
-  const maxX = Math.max(...positions.map(([x, y]: [number, number]) => x));
-  const minY = Math.min(...positions.map(([x, y]: [number, number]) => y));
-  const maxY = Math.max(...positions.map(([x, y]: [number, number]) => y));
-
-  const hexSize = 60; // Base hex size (not zoomed)
+  // Calculate dynamic SVG dimensions
+  const svgDimensions = calculateDynamicSVGDimensions();
+  
+  // Define hex dimensions for rendering
+  const hexSize = 60;
   const hexWidth = hexSize * 2;
   const hexHeight = hexSize * Math.sqrt(3);
-  const mapWidth = (maxX - minX + 1) * (hexWidth * 0.75) + hexWidth / 2;
-  const mapHeight = (maxY - minY + 1) * hexHeight + hexHeight / 2;
-
-  // Calculate pixel positions for all tiles
-  const tilePixelPositions = mapData.tiles.map((tile: Tile) => {
-    const [x, y] = parsePosition(tile.position);
-    return getHexPosition(x, y);
-  });
-  const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
-  const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
-  const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
-  const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
-
-  // Half-tile padding
-  const PAD_X = hexWidth / 2;
-  const PAD_Y = hexHeight / 2;
-  const svgWidth = (maxPixelX - minPixelX) + hexWidth + 2 * PAD_X;
-  const svgHeight = (maxPixelY - minPixelY) + hexHeight + 2 * PAD_Y;
-  const viewBox = `${minPixelX - PAD_X} ${minPixelY - PAD_Y} ${svgWidth} ${svgHeight}`;
 
   // Center the SVG in the panel
   let initialPanX, initialPanY;
-  initialPanX = (containerSize.width - svgWidth * zoom) / 2;
-  initialPanY = (containerSize.height - svgHeight * zoom) / 2;
+  initialPanX = (containerSize.width - svgDimensions.width * zoom) / 2;
+  initialPanY = (containerSize.height - svgDimensions.height * zoom) / 2;
 
   return (
     <div
@@ -538,9 +557,9 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
       {/* SVG container with proper overflow handling */}
       <div className="w-full h-full overflow-hidden">
         <svg
-          width={svgWidth}
-          height={svgHeight}
-          viewBox={viewBox}
+          width={svgDimensions.width}
+          height={svgDimensions.height}
+          viewBox={svgDimensions.viewBox}
           style={{
             display: 'block',
             background: 'none',
@@ -560,25 +579,24 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
 
           return (
             <g key={index}>
-              {/* Tile image */}
-              <image
-                href={imageUrl}
-                x={hexPos.x - hexWidth / 2}
-                y={hexPos.y - hexHeight / 2}
-                width={hexWidth}
-                height={hexHeight}
-                transform={`rotate(${rotation} ${hexPos.x} ${hexPos.y})`}
-                style={{ imageRendering: 'pixelated' }}
-                onError={(e) => {
-                  console.error(`Failed to load image: ${imageUrl}`);
-                  console.error('Image error details:', e);
-                  const target = e.target as SVGImageElement;
-                  target.style.display = 'none';
-                }}
-                onLoad={() => {
-                  console.log(`Successfully loaded image: ${imageUrl}`);
-                }}
-              />
+                              {/* Tile image */}
+                <image
+                  href={imageUrl}
+                  x={hexPos.x - hexWidth / 2}
+                  y={hexPos.y - hexHeight / 2}
+                  width={hexWidth}
+                  height={hexHeight}
+                  transform={`rotate(${rotation} ${hexPos.x} ${hexPos.y})`}
+                  style={{ imageRendering: 'pixelated' }}
+                  onError={(e) => {
+                    console.warn(`Missing tile image: ${imageUrl} for tile: ${tile.objectName}`);
+                    const target = e.target as SVGImageElement;
+                    target.style.display = 'none';
+                  }}
+                  onLoad={() => {
+                    console.log(`Successfully loaded image: ${imageUrl}`);
+                  }}
+                />
             </g>
           );
         })}
