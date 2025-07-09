@@ -691,22 +691,10 @@ function ParsersTab() {
 
   const parsers = [
     {
-      id: 'build_master_stats',
-      name: 'Build Master Stats',
-      description: 'Rebuild master statistics from all parsed sessions',
-      script: 'scripts/build_master_stats.js'
-    },
-    {
-      id: 'generate_session_titles',
-      name: 'Generate Session Titles',
-      description: 'Generate fancy names for all sessions',
-      script: 'scripts/generate_session_titles.js'
-    },
-    {
-      id: 'process_all_sessions',
-      name: 'Process All Sessions',
-      description: 'Reprocess all uploaded sessions',
-      script: 'scripts/process_all_sessions.js'
+      id: 'extract_missing_data',
+      name: 'Extract Missing Data',
+      description: 'Extract missing data from sessions (run first to ensure all data is available)',
+      script: 'scripts/extract_missing_data.js'
     },
     {
       id: 'reprocess_existing_sessions',
@@ -721,10 +709,28 @@ function ParsersTab() {
       script: 'scripts/add_scoring_to_all_sessions.js'
     },
     {
-      id: 'extract_missing_data',
-      name: 'Extract Missing Data',
-      description: 'Extract missing data from sessions',
-      script: 'scripts/extract_missing_data.js'
+      id: 'generate_session_titles',
+      name: 'Generate Session Titles',
+      description: 'Generate fancy names for all sessions',
+      script: 'scripts/generate_session_titles.js'
+    },
+    {
+      id: 'build_master_stats',
+      name: 'Build Master Stats',
+      description: 'Rebuild master statistics from all parsed sessions',
+      script: 'scripts/build_master_stats.js'
+    },
+    {
+      id: 'update_legacy_sessions',
+      name: 'Update Legacy Sessions',
+      description: 'Update old sessions with new map and movement data format (run last for new features)',
+      script: 'scripts/update_legacy_sessions.js'
+    },
+    {
+      id: 'process_all_sessions',
+      name: 'Process All Sessions',
+      description: 'Reprocess all uploaded sessions (complete pipeline - run when adding new sessions)',
+      script: 'scripts/process_all_sessions.js'
     }
   ];
 
