@@ -4,6 +4,8 @@ const path = require('path');
 // Import the map building and movement tracking functions
 const { parseRsgameMap } = require('./parse_rsgame_map');
 const { generateMapStateData } = require('./track_map_state');
+const { extractMapLocations } = require('./extract_map_locations');
+const { enhanceSessionData } = require('./enhanced_character_parser');
 
 const SESSIONS_DIR = path.join(process.cwd(), 'public', 'parsed_sessions');
 
@@ -53,6 +55,7 @@ async function updateLegacySessions() {
 
         // Check for missing or outdated map data
         const mapDataPath = path.join(sessionPath, 'map_data.json');
+        const mapLocationsPath = path.join(sessionPath, 'map_locations.json');
         if (!fs.existsSync(mapDataPath)) {
           console.log(`  📍 Missing map_data.json - will rebuild`);
           needsUpdate = true;
@@ -73,12 +76,27 @@ async function updateLegacySessions() {
           }
         }
 
+        // Check for missing map_locations.json (needed by map components)
+        if (!fs.existsSync(mapLocationsPath)) {
+          console.log(`  📍 Missing map_locations.json - will rebuild`);
+          needsUpdate = true;
+          updates.push('map_locations.json');
+        }
+
         // Check for missing movement data
         const movementDataPath = path.join(sessionPath, 'movement_data.json');
         if (!fs.existsSync(movementDataPath)) {
           console.log(`  🚶 Missing movement_data.json - will rebuild`);
           needsUpdate = true;
           updates.push('movement_data.json');
+        }
+
+        // Check for missing enhanced session data
+        const enhancedSessionPath = path.join(sessionPath, 'enhanced_session.json');
+        if (!fs.existsSync(enhancedSessionPath)) {
+          console.log(`  🔍 Missing enhanced_session.json - will rebuild`);
+          needsUpdate = true;
+          updates.push('enhanced_session.json');
         }
 
         // Check for missing character inventories (if they exist in session)
@@ -115,6 +133,46 @@ async function updateLegacySessions() {
             }
           } catch (error) {
             console.log(`     ❌ Failed to rebuild map data: ${error.message}`);
+            errorCount++;
+            continue;
+          }
+        }
+
+        // Rebuild map_locations.json if needed
+        if (updates.includes('map_locations.json')) {
+          try {
+            console.log(`     📍 Rebuilding map_locations.json...`);
+            
+            // Check if we have extracted_game.xml
+            const xmlPath = path.join(sessionPath, 'extracted_game.xml');
+            if (fs.existsSync(xmlPath)) {
+              await extractMapLocations(xmlPath, mapLocationsPath);
+              console.log(`     ✅ Map locations rebuilt successfully`);
+            } else {
+              console.log(`     ⚠️  No extracted_game.xml found, skipping map locations rebuild`);
+            }
+          } catch (error) {
+            console.log(`     ❌ Failed to rebuild map locations: ${error.message}`);
+            errorCount++;
+            continue;
+          }
+        }
+
+        // Rebuild enhanced session data if needed
+        if (updates.includes('enhanced_session.json')) {
+          try {
+            console.log(`     🔍 Rebuilding enhanced session data...`);
+            
+            const xmlPath = path.join(sessionPath, 'extracted_game.xml');
+            if (fs.existsSync(xmlPath)) {
+              const enhancedSessionData = enhanceSessionData(sessionData, xmlPath);
+              fs.writeFileSync(enhancedSessionPath, JSON.stringify(enhancedSessionData, null, 2));
+              console.log(`     ✅ Enhanced session data rebuilt successfully`);
+            } else {
+              console.log(`     ⚠️  No extracted_game.xml found, skipping enhanced session data rebuild`);
+            }
+          } catch (error) {
+            console.log(`     ❌ Failed to rebuild enhanced session data: ${error.message}`);
             errorCount++;
             continue;
           }
