@@ -408,8 +408,18 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
 
   // Get tile image filename
   const getTileImage = (tile: Tile): string => {
-    // Convert tile name to lowercase, replace spaces with nothing
-    const baseName = tile.objectName.toLowerCase().replace(/\s+/g, '');
+    // Get the tile data to find the correct image name
+    const tileData = tileDataCache[tile.objectName];
+    let baseName: string;
+    
+    if (tileData && tileData.attributeBlocks?.this?.image) {
+      // Use the image field from the tile data if available
+      baseName = tileData.attributeBlocks.this.image;
+    } else {
+      // Fallback to converting tile name to lowercase, replace spaces with nothing
+      baseName = tile.objectName.toLowerCase().replace(/\s+/g, '');
+    }
+    
     const suffix = tile.isEnchanted ? '-e1' : '1';
     const filename = `${baseName}${suffix}.gif`;
     const imageUrl = `/images/tiles/${filename}`;
