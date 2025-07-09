@@ -247,10 +247,72 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
     const dayData = sessionData.days[selectedDay];
     if (!dayData) return;
     
-    const paths = parseCharacterPaths(dayData);
-    setCharacterPaths(paths);
-    setCurrentStep(0);
-  }, [sessionData, selectedDay]);
+    // Try to use detailed movement data from map state if available
+    if (dynamicMapState && dynamicMapState.detailedMovement) {
+      const paths: CharacterMovementPath[] = [];
+      
+      Object.entries(dynamicMapState.detailedMovement).forEach(([character, movementData]: [string, any]) => {
+        if (movementData.movementPath && movementData.hasEnhancedData) {
+          const positions: Array<{
+            tile: string;
+            clearing: string;
+            step: number;
+            opacity: number;
+          }> = [];
+          
+          const lines: Array<{
+            from: { x: number; y: number };
+            to: { x: number; y: number };
+            opacity: number;
+          }> = [];
+          
+          // Parse each location in the movement path
+          movementData.movementPath.forEach((location: string, index: number) => {
+            const match = location.match(/^(.+?) (\d+)$/);
+            if (match) {
+              const tileName = match[1];
+              const clearing = match[2];
+              const step = index;
+              const opacity = 0.5 + (step / (movementData.movementPath.length - 1)) * 0.5; // 50% to 100%
+              
+              positions.push({
+                tile: tileName,
+                clearing,
+                step,
+                opacity
+              });
+              
+              // Add line from previous position
+              if (positions.length > 1) {
+                const prevPos = positions[positions.length - 2];
+                lines.push({
+                  from: { x: 0, y: 0 }, // Will be calculated later
+                  to: { x: 0, y: 0 }, // Will be calculated later
+                  opacity: prevPos.opacity
+                });
+              }
+            }
+          });
+          
+          if (positions.length > 0) {
+            paths.push({
+              character,
+              positions,
+              lines
+            });
+          }
+        }
+      });
+      
+      setCharacterPaths(paths);
+      setCurrentStep(0);
+    } else {
+      // Fall back to parsing from session data
+      const paths = parseCharacterPaths(dayData);
+      setCharacterPaths(paths);
+      setCurrentStep(0);
+    }
+  }, [sessionData, selectedDay, dynamicMapState]);
 
   // Calculate line positions when map data or paths change
   useEffect(() => {

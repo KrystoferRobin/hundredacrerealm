@@ -50,6 +50,8 @@ export async function GET(
     
     // Extract character positions for this day
     const characterPositions: { [key: string]: any } = {};
+    const detailedMovement: { [key: string]: any } = {};
+    
     Object.entries(mapStateData.characterPositions).forEach(([character, positions]) => {
       const dayPosition = (positions as any[]).find((pos: any) => pos.day === day);
       if (dayPosition) {
@@ -57,17 +59,30 @@ export async function GET(
           endLocation: dayPosition.endLocation,
           startLocation: dayPosition.startLocation
         };
+        
+        // Include detailed movement data if available
+        if (dayPosition.movementPath && dayPosition.hasEnhancedData) {
+          detailedMovement[character] = {
+            movementPath: dayPosition.movementPath,
+            hasEnhancedData: dayPosition.hasEnhancedData
+          };
+        }
       }
     });
     
     // Create the response
-    const response = {
+    const response: any = {
       day: day,
       tiles: dayMapState.tiles,
       characterPositions: characterPositions,
       battles: battles,
       enchantmentEvents: mapStateData.enchantmentEvents.filter((event: any) => event.day === day)
     };
+    
+    // Add detailed movement data if available
+    if (Object.keys(detailedMovement).length > 0) {
+      response.detailedMovement = detailedMovement;
+    }
     
     return NextResponse.json(response);
     

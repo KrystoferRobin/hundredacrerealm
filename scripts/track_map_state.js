@@ -52,13 +52,29 @@ function parseCharacterPositions(parsedSession) {
                 characterPositions[turn.character] = [];
             }
             
+            // Use enhanced actions if available for detailed movement tracking
+            const actions = turn.enhancedActions || turn.actions;
+            const movementPath = [];
+            
+            // Extract movement actions from enhanced actions
+            if (turn.enhancedActions) {
+                turn.enhancedActions.forEach(action => {
+                    if (action.action.startsWith('Moved to ')) {
+                        const location = action.action.replace('Moved to ', '');
+                        movementPath.push(location);
+                    }
+                });
+            }
+            
             characterPositions[turn.character].push({
                 day: dayKey,
                 month: month,
                 dayNumber: day,
                 startLocation: turn.startLocation,
                 endLocation: turn.endLocation,
-                character: turn.character
+                character: turn.character,
+                movementPath: movementPath.length > 0 ? movementPath : null,
+                hasEnhancedData: !!turn.enhancedActions
             });
         });
     });
@@ -153,6 +169,24 @@ function createMapStateTracker(parsedSession, mapData) {
             enchantmentEvents: enchantmentEvents.filter(event => event.day === targetDay)
         };
         
+        // Add detailed movement data if available
+        const dayCharacterPositions = characterPositions[targetDay] || [];
+        const detailedMovement = {};
+        
+        Object.entries(characterPositions).forEach(([character, positions]) => {
+            const dayPosition = positions.find(pos => pos.day === targetDay);
+            if (dayPosition && dayPosition.movementPath) {
+                detailedMovement[character] = {
+                    movementPath: dayPosition.movementPath,
+                    hasEnhancedData: dayPosition.hasEnhancedData
+                };
+            }
+        });
+        
+        if (Object.keys(detailedMovement).length > 0) {
+            mapState.detailedMovement = detailedMovement;
+        }
+        
         return mapState;
     }
     
@@ -172,7 +206,8 @@ function createMapStateTracker(parsedSession, mapData) {
 function generateMapStateData(sessionDir) {
     console.log('🔍 Analyzing map state for session...');
     
-    // Read parsed session data
+    // Read enhanced session data if available, otherwise fall back to regular session data
+    const enhancedSessionPath = path.join(sessionDir, 'enhanced_session.json');
     const parsedSessionPath = path.join(sessionDir, 'parsed_session.json');
     const mapDataPath = path.join(sessionDir, 'map_data.json');
     
@@ -186,7 +221,16 @@ function generateMapStateData(sessionDir) {
         return null;
     }
     
-    const parsedSession = JSON.parse(fs.readFileSync(parsedSessionPath, 'utf8'));
+    // Use enhanced session data if available
+    let sessionDataPath = parsedSessionPath;
+    if (fs.existsSync(enhancedSessionPath)) {
+        sessionDataPath = enhancedSessionPath;
+        console.log('Using enhanced session data for detailed movement tracking');
+    } else {
+        console.log('Using regular session data (enhanced data not available)');
+    }
+    
+    const parsedSession = JSON.parse(fs.readFileSync(sessionDataPath, 'utf8'));
     const mapData = JSON.parse(fs.readFileSync(mapDataPath, 'utf8'));
     
     // Create the map state tracker
