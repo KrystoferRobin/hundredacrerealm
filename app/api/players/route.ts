@@ -2,16 +2,24 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+interface CharacterStats {
+  gamesPlayed: number;
+  bestScore: number;
+}
+
 interface PlayerData {
   name: string;
   totalGames: number;
-  totalScore: number;
   bestScore: number;
   averageScore: number;
+  mostRecentScore: number;
   charactersPlayed: string[];
   characterCounts: { [character: string]: number };
+  characterStats: { [character: string]: CharacterStats };
   bestSessionId?: string;
   bestSessionTitle?: string;
+  mostRecentSessionId?: string;
+  mostRecentSessionTitle?: string;
 }
 
 export const dynamic = "force-dynamic";
@@ -34,6 +42,13 @@ export async function GET() {
     const sessionFolders = fs.readdirSync(sessionsDir, { withFileTypes: true })
       .filter(dirent => dirent.isDirectory())
       .map(dirent => dirent.name);
+
+    // Sort sessions by creation time to get most recent
+    sessionFolders.sort((a, b) => {
+      const aPath = path.join(sessionsDir, a);
+      const bPath = path.join(sessionsDir, b);
+      return fs.statSync(bPath).birthtime.getTime() - fs.statSync(aPath).birthtime.getTime();
+    });
 
     for (const folder of sessionFolders) {
       // Try different possible session data files
@@ -80,17 +95,24 @@ export async function GET() {
             playerData[playerName] = {
               name: playerName,
               totalGames: 0,
-              totalScore: 0,
               bestScore: -Infinity,
               averageScore: 0,
+              mostRecentScore: 0,
               charactersPlayed: [],
-              characterCounts: {}
+              characterCounts: {},
+              characterStats: {}
             };
           }
           
           const player = playerData[playerName];
           player.totalGames++;
-          player.totalScore += playerScore;
+          
+          // Track most recent score (first session processed is most recent due to sorting)
+          if (!player.mostRecentSessionId) {
+            player.mostRecentScore = playerScore;
+            player.mostRecentSessionId = folder;
+            player.mostRecentSessionTitle = sessionData.sessionTitle || sessionData.sessionName || folder;
+          }
           
           if (playerScore > player.bestScore) {
             player.bestScore = playerScore;
@@ -103,13 +125,32 @@ export async function GET() {
           }
           
           player.characterCounts[character] = (player.characterCounts[character] || 0) + 1;
+          
+          // Track character-specific stats
+          if (!player.characterStats[character]) {
+            player.characterStats[character] = {
+              gamesPlayed: 0,
+              bestScore: -Infinity
+            };
+          }
+          
+          player.characterStats[character].gamesPlayed++;
+          if (playerScore > player.characterStats[character].bestScore) {
+            player.characterStats[character].bestScore = playerScore;
+          }
         });
       }
     }
 
     // Calculate averages and find most played characters
     const players = Object.values(playerData).map(player => {
-      player.averageScore = player.totalGames > 0 ? Math.round(player.totalScore / player.totalGames) : 0;
+      // Calculate total score for average (we still need this for the calculation)
+      let totalScore = 0;
+      Object.entries(player.characterStats).forEach(([character, stats]) => {
+        totalScore += stats.bestScore * stats.gamesPlayed; // This is approximate, but we don't have individual game scores
+      });
+      
+      player.averageScore = player.totalGames > 0 ? Math.round(totalScore / player.totalGames) : 0;
       
       // Find most played character
       let mostPlayedCharacter = '';

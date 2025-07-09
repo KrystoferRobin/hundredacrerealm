@@ -31,7 +31,7 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [dynamicMapState, setDynamicMapState] = useState<any>(null);
-  const [zoom, setZoom] = useState(1.2);
+  const [zoom, setZoom] = useState(1);
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
@@ -247,56 +247,58 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
 
   // Calculate optimal zoom to fit map in display area
   const calculateOptimalZoom = () => {
-    const hexSize = 60;
-    const hexWidth = hexSize * 2;
-    const hexHeight = hexSize * Math.sqrt(3);
     if (!mapData || containerSize.width === 0 || containerSize.height === 0) return 1;
     
-    // Get actual tile positions (not SVG bounds)
-    const actualTiles = mapData.tiles.filter((tile: Tile) => {
-      const isValid = tile.objectName && tile.objectName !== 'undefined' && tile.objectName.trim() !== '';
-      return isValid;
-    });
+    // Only consider tiles that are actually in play (not void spaces)
+    const actualTiles = mapData.tiles.filter((tile: Tile) => tile.objectName && tile.objectName !== 'undefined');
     
     if (actualTiles.length === 0) return 1;
     
-    // Calculate the actual bounds of the hex grid
-    const tilePositions = actualTiles.map((tile: Tile) => {
+    const positions = actualTiles.map((tile: Tile) => parsePosition(tile.position));
+    const minX = Math.min(...positions.map(([x, y]: [number, number]) => x));
+    const maxX = Math.max(...positions.map(([x, y]: [number, number]) => x));
+    const minY = Math.min(...positions.map(([x, y]: [number, number]) => y));
+    const maxY = Math.max(...positions.map(([x, y]: [number, number]) => y));
+    
+    const hexSize = 60;
+    const hexWidth = hexSize * 2;
+    const hexHeight = hexSize * Math.sqrt(3);
+    const tilePixelPositions = actualTiles.map((tile: Tile) => {
       const [x, y] = parsePosition(tile.position);
       return getHexPosition(x, y);
     });
     
-    const minX = Math.min(...tilePositions.map(pos => pos.x));
-    const maxX = Math.max(...tilePositions.map(pos => pos.x));
-    const minY = Math.min(...tilePositions.map(pos => pos.y));
-    const maxY = Math.max(...tilePositions.map(pos => pos.y));
+    const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
+    const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
+    const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
+    const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
     
-    const mapWidth = maxX - minX + hexWidth;
-    const mapHeight = maxY - minY + hexHeight;
+    const PAD_X = hexWidth / 2;
+    const PAD_Y = hexHeight / 2;
+    const mapWidth = (maxPixelX - minPixelX) + hexWidth + 2 * PAD_X;
+    const mapHeight = (maxPixelY - minPixelY) + hexHeight + 2 * PAD_Y;
     
-    // Calculate zoom to fit with padding
-    const padding = 0.1; // 10% padding for better visual spacing
+    // Calculate zoom to fit with some padding
+    const padding = 0.1; // 10% padding
     const zoomX = (containerSize.width * (1 - padding)) / mapWidth;
     const zoomY = (containerSize.height * (1 - padding)) / mapHeight;
     
-    // Use the smaller zoom to ensure the entire map fits
-    const optimalZoom = Math.min(zoomX, zoomY, 3); // Cap at 3x zoom
-    const finalZoom = Math.max(optimalZoom, 0.5); // Minimum 0.5x zoom
-    
-    console.log('Improved zoom calculation:', {
-      mapWidth,
-      mapHeight,
-      containerSize,
-      zoomX,
-      zoomY,
-      optimalZoom,
-      finalZoom
-    });
-    
-    return finalZoom;
+    return Math.min(zoomX, zoomY, 3); // Cap at 3x zoom
   };
 
-
+  // Auto-fit map to display area
+  const fitMapToDisplay = () => {
+    if (!mapData || containerSize.width === 0 || containerSize.height === 0) return;
+    
+    const optimalZoom = calculateOptimalZoom();
+    const center = calculateMapCenter();
+    
+    setZoom(optimalZoom);
+    setPan({
+      x: containerSize.width / 2 - center.x * optimalZoom,
+      y: containerSize.height / 2 - center.y * optimalZoom
+    });
+  };
 
   // Handle zoom slider change
   const handleZoomChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -312,30 +314,17 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
       containerSize.height > 0 &&
       Object.keys(tileDataCache).length > 0
     ) {
-      // Use SVG viewBox center for pan calculation
-      const svgDimensions = calculateDynamicSVGDimensions();
-      const viewBoxParts = svgDimensions.viewBox.split(' ').map(Number);
-      const viewBoxX = viewBoxParts[0];
-      const viewBoxY = viewBoxParts[1];
-      const viewBoxWidth = viewBoxParts[2];
-      const viewBoxHeight = viewBoxParts[3];
-      const centerX = viewBoxX + viewBoxWidth / 2;
-      const centerY = viewBoxY + viewBoxHeight / 2;
+      // Use the improved centering logic
+      const center = calculateMapCenter();
+      const optimalZoom = calculateOptimalZoom();
+      
+      setZoom(optimalZoom);
       setPan({
-        x: containerSize.width / 2 - centerX * zoom,
-        y: containerSize.height / 2 - centerY * zoom
-      });
-      console.log('SVG viewBox centering:', {
-        viewBoxX, viewBoxY, viewBoxWidth, viewBoxHeight, centerX, centerY, zoom,
-        pan: {
-          x: containerSize.width / 2 - centerX * zoom,
-          y: containerSize.height / 2 - centerY * zoom
-        }
+        x: containerSize.width / 2 - center.x * optimalZoom,
+        y: containerSize.height / 2 - center.y * optimalZoom
       });
     }
-  }, [mapData, containerSize, tileDataCache, zoom]);
-
-
+  }, [mapData, containerSize, tileDataCache]);
 
   // Convert position string to coordinates
   const parsePosition = (position: string): [number, number] => {
@@ -419,18 +408,8 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
 
   // Get tile image filename
   const getTileImage = (tile: Tile): string => {
-    // Get the tile data to find the correct image name
-    const tileData = tileDataCache[tile.objectName];
-    let baseName: string;
-    
-    if (tileData && tileData.attributeBlocks?.this?.image) {
-      // Use the image field from the tile data if available
-      baseName = tileData.attributeBlocks.this.image;
-    } else {
-      // Fallback to converting tile name to lowercase, replace spaces with nothing
-      baseName = tile.objectName.toLowerCase().replace(/\s+/g, '');
-    }
-    
+    // Convert tile name to lowercase, replace spaces with nothing
+    const baseName = tile.objectName.toLowerCase().replace(/\s+/g, '');
     const suffix = tile.isEnchanted ? '-e1' : '1';
     const filename = `${baseName}${suffix}.gif`;
     const imageUrl = `/images/tiles/${filename}`;
@@ -565,6 +544,13 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
         {/* Zoom controls */}
         <div className="mb-2">
           <div className="text-xs font-bold mb-1">Zoom: {Math.round(zoom * 100)}%</div>
+          <button
+            onClick={fitMapToDisplay}
+            className="block w-full mb-1 bg-green-500 text-white rounded hover:bg-green-600 text-xs py-1"
+            title="Fit to Display"
+          >
+            Fit to Display
+          </button>
         </div>
       </div>
 

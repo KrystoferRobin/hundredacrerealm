@@ -169,18 +169,6 @@ async function processAllSessions() {
         console.log('Missing parsed_session.json or extracted_game.xml, skipping enhanced character parser');
       }
       
-      // 11.5. Ensure map_locations.json exists (required by map components)
-      if (fs.existsSync('extracted_game.xml') && !fs.existsSync('map_locations.json')) {
-        console.log('Creating map_locations.json for map components...');
-        try {
-          const { extractMapLocations } = require(resolveAppPath('scripts/extract_map_locations.js'));
-          await extractMapLocations('extracted_game.xml', 'map_locations.json');
-          console.log('✅ map_locations.json created successfully');
-        } catch (error) {
-          console.log('⚠️  Failed to create map_locations.json, continuing with other steps...');
-        }
-      }
-      
       // 12. Generate map state data (requires parsed_session.json and map_locations.json)
       if (fs.existsSync('parsed_session.json') && fs.existsSync('map_locations.json')) {
         console.log('Generating map state data...');

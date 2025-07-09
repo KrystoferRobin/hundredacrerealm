@@ -31,8 +31,7 @@ const parsers = {
   process_all_sessions: 'scripts/process_all_sessions.js',
   reprocess_existing_sessions: 'scripts/reprocess_existing_sessions.js',
   add_scoring_to_all_sessions: 'scripts/add_scoring_to_all_sessions.js',
-  extract_missing_data: 'scripts/extract_missing_data.js',
-  update_legacy_sessions: 'scripts/update_legacy_sessions.js'
+  extract_missing_data: 'scripts/extract_missing_data.js'
 };
 
 export async function POST(request: NextRequest): Promise<Response> {

@@ -1,17 +1,26 @@
 "use client";
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
+
+interface CharacterStats {
+  gamesPlayed: number;
+  bestScore: number;
+}
 
 interface Player {
   name: string;
   totalGames: number;
-  totalScore: number;
   bestScore: number;
   averageScore: number;
+  mostRecentScore: number;
   charactersPlayed: string[];
+  characterStats: { [character: string]: CharacterStats };
   mostPlayedCharacter: string;
   mostPlayedCharacterCount: number;
   bestSessionId?: string;
   bestSessionTitle?: string;
+  mostRecentSessionId?: string;
+  mostRecentSessionTitle?: string;
 }
 
 export default function PlayersPage() {
@@ -143,17 +152,17 @@ export default function PlayersPage() {
                       </p>
                     </div>
                     <div className="bg-[#f6ecd6] p-3 rounded border border-[#bfa76a]">
-                      <p className="text-xs font-semibold text-[#6b3e26] font-serif mb-1">Total Score</p>
+                      <p className="text-xs font-semibold text-[#6b3e26] font-serif mb-1">Most Recent Score</p>
                       <p className={`font-serif font-bold ${
-                        typeof player.totalScore === 'number' 
-                          ? player.totalScore < 0 
+                        typeof player.mostRecentScore === 'number' 
+                          ? player.mostRecentScore < 0 
                             ? 'text-red-600' 
-                            : player.totalScore > 0 
+                            : player.mostRecentScore > 0 
                               ? 'text-green-600' 
                               : 'text-black'
                           : 'text-black'
                       }`}>
-                        {player.totalScore}
+                        {player.mostRecentScore}
                       </p>
                     </div>
                   </div>
@@ -161,26 +170,41 @@ export default function PlayersPage() {
                   {/* Most Played Character */}
                   <div className="bg-[#f6ecd6] p-3 rounded border border-[#bfa76a]">
                     <p className="text-xs font-semibold text-[#6b3e26] font-serif mb-1">Most Played Character</p>
-                    <p className="text-[#4b3a1e] font-serif">
+                    <Link 
+                      href={`/characters/${encodeURIComponent(player.mostPlayedCharacter)}`}
+                      className="text-[#4b3e26] font-serif hover:text-[#bfa76a] transition-colors duration-200 underline"
+                    >
                       {player.mostPlayedCharacter} ({player.mostPlayedCharacterCount} times)
-                    </p>
+                    </Link>
                   </div>
 
                   {/* Characters Played */}
                   {player.charactersPlayed.length > 0 && (
                     <div className="bg-[#f6ecd6] p-3 rounded border border-[#bfa76a]">
                       <p className="text-xs font-semibold text-[#6b3e26] font-serif mb-1">Characters Played</p>
-                      <div className="flex flex-wrap gap-1">
-                        {player.charactersPlayed.slice(0, 5).map((character, index) => (
-                          <span key={index} className="text-xs bg-[#bfa76a] text-[#6b3e26] px-2 py-1 rounded">
-                            {character}
-                          </span>
-                        ))}
-                        {player.charactersPlayed.length > 5 && (
-                          <span className="text-xs text-[#6b3e26] font-serif">
-                            +{player.charactersPlayed.length - 5} more
-                          </span>
-                        )}
+                      <div className="space-y-1">
+                        {player.charactersPlayed.map((character, index) => {
+                          const stats = player.characterStats[character];
+                          const hasPositiveScore = stats && stats.bestScore > 0;
+                          
+                          return (
+                            <div key={index} className="flex items-center justify-between">
+                              <Link 
+                                href={`/characters/${encodeURIComponent(character)}`}
+                                className="text-xs hover:text-[#bfa76a] transition-colors duration-200 underline"
+                              >
+                                {character}
+                              </Link>
+                              <span className={`text-xs px-2 py-1 rounded ${
+                                hasPositiveScore 
+                                  ? 'bg-green-200 text-green-800 border border-green-300' 
+                                  : 'bg-[#bfa76a] text-[#6b3e26]'
+                              }`}>
+                                ({stats?.gamesPlayed || 0} games - {stats?.bestScore || 0})
+                              </span>
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
                   )}
