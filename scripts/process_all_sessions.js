@@ -157,7 +157,19 @@ async function processAllSessions() {
         console.log('Missing required files for session title generation');
       }
       
-      // 11. Generate map state data (requires parsed_session.json and map_locations.json)
+      // 11. Run enhanced character parser (requires parsed_session.json and extracted_game.xml)
+      if (fs.existsSync('parsed_session.json') && fs.existsSync('extracted_game.xml')) {
+        console.log('Running enhanced character parser...');
+        try {
+          execSync(`node ${resolveAppPath('scripts/enhanced_character_parser.js')}`, { stdio: 'inherit' });
+        } catch (error) {
+          console.log('⚠️  Enhanced character parser failed, continuing with other steps...');
+        }
+      } else {
+        console.log('Missing parsed_session.json or extracted_game.xml, skipping enhanced character parser');
+      }
+      
+      // 12. Generate map state data (requires parsed_session.json and map_locations.json)
       if (fs.existsSync('parsed_session.json') && fs.existsSync('map_locations.json')) {
         console.log('Generating map state data...');
         try {

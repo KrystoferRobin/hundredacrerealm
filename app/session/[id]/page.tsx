@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useParams } from 'next/navigation';
 import SessionMap from '../../../components/SessionMap';
+import EnhancedSessionMap from '../../../components/EnhancedSessionMap';
 import Image from 'next/image';
 
 interface Action {
@@ -37,6 +38,11 @@ interface CharacterTurn {
   actions: Array<{
     action: string;
     result: string;
+  }>;
+  enhancedActions?: Array<{
+    action: string;
+    result: string;
+    rawAction: string;
   }>;
   endLocation: string;
   player: string;
@@ -705,7 +711,8 @@ export default function Page({ params }: { params: { id: string } }) {
     );
   };
 
-  const renderCombat = (combat: Combat, combatIndex: number) => {
+  // Combat component with round navigation
+  const CombatWithNavigation = ({ combat, combatIndex }: { combat: Combat; combatIndex: number }) => {
     const meaningfulRounds = combat.rounds.filter(round => {
       return round.actions.length > 0 || round.attacks.length > 0 || 
              round.damage.length > 0 || round.deaths.length > 0 ||
@@ -715,19 +722,73 @@ export default function Page({ params }: { params: { id: string } }) {
 
     if (meaningfulRounds.length === 0) return null;
 
+    const [currentRoundIndex, setCurrentRoundIndex] = useState(0);
+
+    const goToPreviousRound = () => {
+      if (currentRoundIndex > 0) {
+        setCurrentRoundIndex(currentRoundIndex - 1);
+      }
+    };
+
+    const goToNextRound = () => {
+      if (currentRoundIndex < meaningfulRounds.length - 1) {
+        setCurrentRoundIndex(currentRoundIndex + 1);
+      }
+    };
+
+    const currentRound = meaningfulRounds[currentRoundIndex];
+    const canGoPrevious = currentRoundIndex > 0;
+    const canGoNext = currentRoundIndex < meaningfulRounds.length - 1;
+
     return (
       <div key={`${combat.location}-${combatIndex}`} className="mb-6 p-4 bg-red-50 border-2 border-red-200 rounded-lg">
-        <h3 className="text-lg font-bold text-red-800 mb-3">
-          ⚔️ Battle at {combat.location}
-        </h3>
+        <div className="flex items-center justify-between mb-3">
+          <button
+            onClick={goToPreviousRound}
+            disabled={!canGoPrevious}
+            className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
+              canGoPrevious 
+                ? 'bg-red-200 hover:bg-red-300 text-red-800' 
+                : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+            }`}
+          >
+            ←
+          </button>
+          
+          <h3 className="text-lg font-bold text-red-800 flex-1 text-center">
+            ⚔️ Battle at {combat.location}
+          </h3>
+          
+          <button
+            onClick={goToNextRound}
+            disabled={!canGoNext}
+            className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
+              canGoNext 
+                ? 'bg-red-200 hover:bg-red-300 text-red-800' 
+                : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+            }`}
+          >
+            →
+          </button>
+        </div>
+        
         {combat.participants.length > 0 && (
           <div className="mb-3 text-sm text-red-700">
             <span className="font-semibold">Participants:</span> {combat.participants.join(', ')}
           </div>
         )}
-        {meaningfulRounds.map(renderCombatRound)}
+        
+        <div className="mb-2 text-sm text-red-600 text-center">
+          Round {currentRound.round} of {meaningfulRounds.length}
+        </div>
+        
+        {renderCombatRound(currentRound)}
       </div>
     );
+  };
+
+  const renderCombat = (combat: Combat, combatIndex: number) => {
+    return <CombatWithNavigation key={`${combat.location}-${combatIndex}`} combat={combat} combatIndex={combatIndex} />;
   };
 
   // Helper function to check if combat has meaningful actions
@@ -1008,13 +1069,17 @@ export default function Page({ params }: { params: { id: string } }) {
                   <span className="font-semibold">Start:</span> {turn.startLocation} | 
                   <span className="font-semibold ml-2">End:</span> {turn.endLocation}
                 </div>
-                {turn.actions.length > 0 && (
+                {(turn.actions.length > 0 || turn.enhancedActions) && (
                   <div>
                     <h5 className="font-semibold text-amber-700 mb-1">Actions:</h5>
                     {(() => {
                       let blockedFound = false;
                       let hideSucceeded = false;
-                      return turn.actions.map((action, actionIndex) => {
+                      
+                      // Use enhanced actions if available, otherwise fall back to regular actions
+                      const actionsToRender = turn.enhancedActions || turn.actions;
+                      
+                      return actionsToRender.map((action, actionIndex) => {
                         if (blockedFound) return null;
                         // BLOCKED logic
                         if (action.action === 'BLOCKED' && action.result && action.result.startsWith('Cannot perform action')) {
@@ -1491,7 +1556,7 @@ export default function Page({ params }: { params: { id: string } }) {
         }
       }
     }
-    // Build icon array
+    // Build icon array with enhanced position data
     const result = allCharacters.map(character => {
       const loc = charLastLoc[character];
       const isDead = deadCharacters.has(character);
@@ -1501,8 +1566,11 @@ export default function Page({ params }: { params: { id: string } }) {
         tile: loc.tile,
         clearing: loc.clearing,
         isDead,
+        opacity: 1.0, // Full opacity for static display
+        step: 0,
+        totalSteps: 0
       } : null;
-    }).filter((x): x is { character: string; tile: string; clearing: string; isDead: boolean } => Boolean(x));
+    }).filter((x): x is { character: string; tile: string; clearing: string; isDead: boolean; opacity: number; step: number; totalSteps: number } => Boolean(x));
     console.log('Final character icons:', result);
     return result;
   }, [sessionData]);
@@ -1612,7 +1680,13 @@ export default function Page({ params }: { params: { id: string } }) {
           <div className="bg-white border-2 border-amber-300 rounded-lg shadow-lg p-4 w-full">
             <h2 className="text-xl font-bold text-amber-800 mb-4">🗺️ Game Map</h2>
             <div className="aspect-square w-full overflow-hidden">
-              <SessionMap sessionId={sessionId} characterIcons={characterIcons} selectedDay={selectedDay} />
+              <EnhancedSessionMap 
+                sessionId={sessionId} 
+                characterIcons={characterIcons} 
+                selectedDay={selectedDay}
+                isAutoAdvancing={isAutoAdvancing}
+                sessionData={sessionData}
+              />
             </div>
           </div>
         </div>

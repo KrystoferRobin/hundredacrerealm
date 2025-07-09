@@ -20,9 +20,16 @@ export async function GET(
       return NextResponse.json({ error: 'Sessions directory not found' }, { status: 404 });
     }
     
-    const sessionPath = path.join(sessionsDir, params.id, 'parsed_session.json');
+    // Check for enhanced session data first, fall back to regular session data
+    const enhancedSessionPath = path.join(sessionsDir, params.id, 'enhanced_session.json');
+    const regularSessionPath = path.join(sessionsDir, params.id, 'parsed_session.json');
     
-    if (!fs.existsSync(sessionPath)) {
+    let sessionPath;
+    if (fs.existsSync(enhancedSessionPath)) {
+      sessionPath = enhancedSessionPath;
+    } else if (fs.existsSync(regularSessionPath)) {
+      sessionPath = regularSessionPath;
+    } else {
       return NextResponse.json({ error: 'Session not found' }, { status: 404 });
     }
 
