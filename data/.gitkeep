@@ -1,0 +1,2 @@
+# This file ensures the data directory is tracked by git
+# The actual data files (discord_webhook_settings.json, admin-users.json) are ignored 
