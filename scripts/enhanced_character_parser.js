@@ -133,39 +133,34 @@ function decodeDetailedAction(actionCode, visibilityResults = []) {
 
 function parseCharacterXML(xmlPath, characterId) {
   if (!fs.existsSync(xmlPath)) {
-    console.error('XML file not found:', xmlPath);
+    console.log(`XML file not found: ${xmlPath}`);
     return null;
   }
-  
+
   const xmlContent = fs.readFileSync(xmlPath, 'utf8');
   
-  // Find the specific character by ID
-  const characterRegex = new RegExp(`<GameObject id="${characterId}"[^>]*>([\\s\\S]*?)</GameObject>`, 'g');
-  const characterMatch = characterRegex.exec(xmlContent);
+  // Find the character's GameObject by ID
+  const charRegex = new RegExp(`<GameObject id="${characterId}"[\\s\\S]*?</GameObject>`, 'g');
+  const charMatch = charRegex.exec(xmlContent);
   
-  if (!characterMatch) {
-    console.error(`Character with ID ${characterId} not found in XML`);
+  if (!charMatch) {
+    console.log(`Character with ID ${characterId} not found in XML`);
     return null;
   }
   
-  const characterXml = characterMatch[1];
+  const charBlock = charMatch[0];
   
-  // Parse attribute blocks
+  // Parse all AttributeBlocks for this character
   const blocks = {};
-  
-  // Parse attribute blocks
   const blockRegex = /<AttributeBlock blockName="([^"]+)">([\s\S]*?)<\/AttributeBlock>/g;
   let blockMatch;
   
-  while ((blockMatch = blockRegex.exec(characterXml)) !== null) {
+  while ((blockMatch = blockRegex.exec(charBlock)) !== null) {
     const blockName = blockMatch[1];
     const blockContent = blockMatch[2];
+    blocks[blockName] = { attributes: {}, attributeLists: {} };
     
-    if (!blocks[blockName]) {
-      blocks[blockName] = { attributes: {}, attributeLists: {} };
-    }
-    
-    // Parse attributes
+    // Parse individual attributes
     const attrRegex = /<attribute ([^>]+)\/>/g;
     let attrMatch;
     while ((attrMatch = attrRegex.exec(blockContent)) !== null) {
@@ -203,11 +198,60 @@ function parseCharacterXML(xmlPath, characterId) {
     }
   }
   
-  // Extract detailed timeline data from RS_PB__ block's attributeLists
+  // Extract detailed timeline data from RS_PB__ block's _m_hist__ attributeList
   const timeline = {};
   const rsPbBlock = blocks['RS_PB__'];
   if (rsPbBlock && rsPbBlock.attributeLists) {
-    // Find all day keys (e.g., month_1_day_1, month_1_day_2, ...)
+    // First, try to parse the _m_hist__ timeline (for month 1)
+    if (rsPbBlock.attributeLists['_m_hist__']) {
+      const historyData = rsPbBlock.attributeLists['_m_hist__'];
+      
+      // Get all action codes in order
+      const sortedKeys = Object.keys(historyData).sort((a, b) => {
+        const aNum = parseInt(a.substring(1));
+        const bNum = parseInt(b.substring(1));
+        return aNum - bNum;
+      });
+      
+      // Split timeline into days based on _DAY_ markers
+      let currentDay = 1;
+      let currentMonth = 1;
+      let dayActions = [];
+      
+      sortedKeys.forEach((key, index) => {
+        const actionCode = historyData[key];
+        
+        if (actionCode === '_DAY_') {
+          // End of day - save current day's actions
+          if (dayActions.length > 0) {
+            const dayKey = `${currentMonth}_${currentDay}`;
+            timeline[dayKey] = dayActions;
+            console.log(`Parsed day ${dayKey} with ${dayActions.length} actions`);
+          }
+          
+          // Start new day
+          currentDay++;
+          dayActions = [];
+        } else if (actionCode && actionCode !== '_DAY_') {
+          // Regular action - add to current day
+          const decodedAction = decodeDetailedAction(actionCode);
+          dayActions.push({
+            action: decodedAction,
+            rawAction: actionCode,
+            visibilityResult: null // We don't have visibility data in this format
+          });
+        }
+      });
+      
+      // Don't forget the last day if it has actions
+      if (dayActions.length > 0) {
+        const dayKey = `${currentMonth}_${currentDay}`;
+        timeline[dayKey] = dayActions;
+        console.log(`Parsed final day ${dayKey} with ${dayActions.length} actions`);
+      }
+    }
+    
+    // Now look for separate day-specific attribute lists (for month 2 and beyond)
     const dayKeys = Object.keys(rsPbBlock.attributeLists).filter(key => key.match(/^month_\d+_day_\d+$/));
     dayKeys.forEach(dayKey => {
       const dayActions = rsPbBlock.attributeLists[dayKey];
@@ -215,12 +259,14 @@ function parseCharacterXML(xmlPath, characterId) {
       const visibilityKey = `${dayKey}v`;
       const visibilityResults = rsPbBlock.attributeLists[visibilityKey] ? 
         Object.values(rsPbBlock.attributeLists[visibilityKey]) : [];
+      
       // Sort by N0, N1, N2, etc. to get actions in order
       const sortedKeys = Object.keys(dayActions).sort((a, b) => {
         const aNum = parseInt(a.substring(1));
         const bNum = parseInt(b.substring(1));
         return aNum - bNum;
       });
+      
       const actions = [];
       sortedKeys.forEach((key, index) => {
         const actionCode = dayActions[key];
@@ -235,8 +281,11 @@ function parseCharacterXML(xmlPath, characterId) {
           });
         }
       });
+      
       if (actions.length > 0) {
-        timeline[dayKey.replace('month_', '').replace('_day_', '_')] = actions;
+        const timelineKey = dayKey.replace('month_', '').replace('_day_', '_');
+        timeline[timelineKey] = actions;
+        console.log(`Parsed separate day ${timelineKey} with ${actions.length} actions`);
       }
     });
   }
@@ -308,6 +357,10 @@ function enhanceSessionData(sessionData, xmlPath) {
             console.log(`Enhanced actions for ${turn.character}:`, enhancedActions);
           } else {
             console.log(`No detailed timeline found for ${turn.character} on ${dayKey}`);
+            // Check what days are available in the timeline
+            if (detailedTimeline) {
+              console.log(`Available days in timeline:`, Object.keys(detailedTimeline));
+            }
           }
         } else {
           console.log(`No character ID found for ${turn.character}`);

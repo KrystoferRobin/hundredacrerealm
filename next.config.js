@@ -10,6 +10,16 @@ const nextConfig = {
   experimental: {
     serverComponentsExternalPackages: [],
   },
+  // Suppress EventEmitter warnings in development
+  webpack: (config, { dev }) => {
+    if (dev) {
+      // Suppress EventEmitter memory leak warnings
+      config.infrastructureLogging = {
+        level: 'error',
+      };
+    }
+    return config;
+  },
   // output: 'standalone', // Disabled to fix file system isolation issues
   // output: 'export', // Removed to enable SSR
 }

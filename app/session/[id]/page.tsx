@@ -1675,10 +1675,10 @@ export default function Page({ params }: { params: { id: string } }) {
       </div>
       {/* Main Content - Map and Log */}
       <div className="w-full px-4 sm:px-6 flex flex-col lg:flex-row gap-4 lg:gap-6">
-        {/* Map Panel - Square, positioned on the left */}
-        <div className="w-full lg:w-1/2 xl:w-3/5">
-          <div className="bg-white border-2 border-amber-300 rounded-lg shadow-lg p-4 w-full">
-            <h2 className="text-xl font-bold text-amber-800 mb-4">🗺️ Game Map</h2>
+        {/* Map Panel - Larger, positioned on the left */}
+        <div className="w-full lg:w-2/3 xl:w-3/4">
+          <div className="bg-white border-2 border-amber-300 rounded-lg shadow-lg p-2 w-full">
+            <h2 className="text-xl font-bold text-amber-800 mb-2">🗺️ Game Map</h2>
             <div className="aspect-square w-full overflow-hidden">
               <EnhancedSessionMap 
                 sessionId={sessionId} 
@@ -1692,7 +1692,7 @@ export default function Page({ params }: { params: { id: string } }) {
         </div>
         
         {/* Session Log - Takes remaining space */}
-        <div className="w-full lg:w-1/2 xl:w-2/5">
+        <div className="w-full lg:w-1/3 xl:w-1/4">
           {renderCalendar()}
         </div>
       </div>

@@ -54,6 +54,7 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
   isAutoAdvancing = false,
   sessionData
 }) => {
+  
   const [mapData, setMapData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -159,7 +160,6 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
 
   // Calculate positions for lines
   const calculateLinePositions = (paths: CharacterMovementPath[]) => {
-    console.log('Calculating line positions for paths:', paths.length);
     return paths.map(path => {
       const updatedLines = path.lines.map((line, index) => {
         const fromPos = path.positions[index];
@@ -170,9 +170,6 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
         // Find tiles and calculate positions
         const fromTile = mapData?.tiles.find((t: Tile) => t.objectName === fromPos.tile);
         const toTile = mapData?.tiles.find((t: Tile) => t.objectName === toPos.tile);
-        
-        console.log(`Calculating line ${index}: ${fromPos.tile} ${fromPos.clearing} -> ${toPos.tile} ${toPos.clearing}`);
-        console.log(`Found tiles: fromTile=${!!fromTile}, toTile=${!!toTile}`);
         
         if (!fromTile || !toTile) return line;
         
@@ -218,32 +215,25 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
 
   // Clear character paths immediately when selectedDay changes
   useEffect(() => {
-    console.log('Selected day changed to:', selectedDay);
-    console.log('Clearing character paths');
     setCharacterPaths([]);
   }, [selectedDay]);
 
   // Update character paths when day changes
   useEffect(() => {
-    console.log('Updating character paths for day:', selectedDay);
-    console.log('Current dynamicMapState:', dynamicMapState);
     
     if (!sessionData || !selectedDay) {
-      console.log('Clearing character paths - no session data or selected day');
       setCharacterPaths([]);
       return;
     }
     
     const dayData = sessionData.days[selectedDay];
     if (!dayData) {
-      console.log('Clearing character paths - no day data');
       setCharacterPaths([]);
       return;
     }
     
     // Try to use detailed movement data from map state if available
     if (dynamicMapState && dynamicMapState.detailedMovement) {
-      console.log('Using detailed movement data from map state:', dynamicMapState.detailedMovement);
       const paths: CharacterMovementPath[] = [];
       
       Object.entries(dynamicMapState.detailedMovement).forEach(([character, movementData]: [string, any]) => {
@@ -262,7 +252,6 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
           }> = [];
           
           // Parse each location in the movement path
-          console.log('Parsing movement path:', movementData.movementPath);
           movementData.movementPath.forEach((location: string, index: number) => {
             const match = location.match(/^(.+?) (\d+)$/);
             if (match) {
@@ -270,8 +259,6 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
               const clearing = match[2];
               const step = index;
               const opacity = 0.5 + (step / (movementData.movementPath.length - 1)) * 0.5; // 50% to 100%
-              
-              console.log(`Adding position ${index}: ${tileName} ${clearing}, opacity: ${opacity}`);
               
               positions.push({
                 tile: tileName,
@@ -302,10 +289,8 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
         }
       });
       
-      console.log('Setting character paths from map state:', paths.length, 'paths');
       // Calculate line positions immediately if map data is available
       if (mapData && paths.length > 0) {
-        console.log('Calculating line positions immediately');
         const updatedPaths = calculateLinePositions(paths);
         setCharacterPaths(updatedPaths);
       } else {
@@ -314,10 +299,8 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
     } else {
       // Fall back to parsing from session data
       const paths = parseCharacterPaths(dayData);
-      console.log('Setting character paths from session data:', paths.length, 'paths');
       // Calculate line positions immediately if map data is available
       if (mapData && paths.length > 0) {
-        console.log('Calculating line positions immediately');
         const updatedPaths = calculateLinePositions(paths);
         setCharacterPaths(updatedPaths);
       } else {
@@ -329,7 +312,6 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
   // Calculate line positions when map data changes (fallback for when map data loads after character paths)
   useEffect(() => {
     if (mapData && characterPaths.length > 0) {
-      console.log('Calculating line positions for', characterPaths.length, 'paths (fallback)');
       const updatedPaths = calculateLinePositions(characterPaths);
       setCharacterPaths(updatedPaths);
     }
@@ -399,13 +381,11 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
   useEffect(() => {
     const loadDynamicMapState = async () => {
       if (!selectedDay) {
-        console.log('No selected day, clearing dynamic map state');
         setDynamicMapState(null);
         return;
       }
 
       try {
-        console.log(`Loading map state for day ${selectedDay}`);
         const response = await fetch(`/api/session/${sessionId}/map-state/${selectedDay}`);
         if (!response.ok) {
           console.warn(`Failed to load map state for day ${selectedDay}`);
@@ -413,8 +393,6 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
           return;
         }
         const data = await response.json();
-        console.log(`Loaded map state for day ${selectedDay}:`, data);
-        console.log(`Detailed movement data:`, data.detailedMovement);
         setDynamicMapState(data);
       } catch (err) {
         console.warn(`Error loading map state for day ${selectedDay}:`, err);
@@ -462,63 +440,213 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
     };
   }, []);
 
-  // Effect to center map on initial load
+  // Effect to check container ref and force resize calculation
+  useEffect(() => {
+    if (containerRef.current) {
+      const rect = containerRef.current.getBoundingClientRect();
+      setContainerSize({ width: rect.width, height: rect.height });
+    } else {
+      // Try again after a short delay
+      const timeoutId = setTimeout(() => {
+        if (containerRef.current) {
+          const rect = containerRef.current.getBoundingClientRect();
+          setContainerSize({ width: rect.width, height: rect.height });
+        }
+      }, 100);
+      
+      return () => clearTimeout(timeoutId);
+    }
+  }, []);
+
+  // Calculate the true center of the map using all clearing positions
+  const calculateMapCenter = () => {
+    if (!mapData || !tileDataCache) return { x: 0, y: 0 };
+    
+    const allClearingPositions: { x: number; y: number }[] = [];
+    
+    // Only consider tiles that are actually in play (not void spaces)
+    const actualTiles = mapData.tiles.filter((tile: Tile) => tile.objectName && tile.objectName !== 'undefined');
+    
+    // Collect all clearing positions from actual tiles
+    actualTiles.forEach((tile: Tile) => {
+      const tileData = tileDataCache[tile.objectName];
+      if (!tileData) {
+        return;
+      }
+      
+      const block = tile.isEnchanted ? tileData.attributeBlocks.enchanted : tileData.attributeBlocks.normal;
+      if (!block) {
+        return;
+      }
+      
+      // Get all clearing coordinates for this tile
+      Object.keys(block).forEach(key => {
+        if (key.startsWith('clearing_') && key.endsWith('_xy')) {
+          const coords = block[key];
+          if (coords) {
+            const [xPercent, yPercent] = coords.split(',').map(Number);
+            
+            // Convert to pixel coordinates within the hex
+            const hexSize = 60;
+            const hexWidth = hexSize * 2;
+            const hexHeight = hexSize * Math.sqrt(3);
+            
+            // Scale from 100x100 to hex dimensions
+            const clearingX = (xPercent / 100) * hexWidth - hexWidth / 2;
+            const clearingY = (yPercent / 100) * hexHeight - hexHeight / 2;
+            
+            // Get tile position
+            const [tileX, tileY] = parsePosition(tile.position);
+            const hexPos = getHexPosition(tileX, tileY);
+            
+            // Apply tile rotation
+            const rotation = getTileRotation(tile.rotation);
+            const rad = (rotation * Math.PI) / 180;
+            const rotatedX = clearingX * Math.cos(rad) - clearingY * Math.sin(rad);
+            const rotatedY = clearingX * Math.sin(rad) + clearingY * Math.cos(rad);
+            
+            // Add to collection
+            allClearingPositions.push({
+              x: hexPos.x + rotatedX,
+              y: hexPos.y + rotatedY
+            });
+          }
+        }
+      });
+    });
+    
+    // Calculate center of all clearing positions
+    if (allClearingPositions.length > 0) {
+      const avgX = allClearingPositions.reduce((sum, pos) => sum + pos.x, 0) / allClearingPositions.length;
+      const avgY = allClearingPositions.reduce((sum, pos) => sum + pos.y, 0) / allClearingPositions.length;
+      return { x: avgX, y: avgY };
+    }
+    
+    // Fallback to tile centers if no clearing data
+    const tilePixelPositions = actualTiles.map((tile: Tile) => {
+      const [x, y] = parsePosition(tile.position);
+      return getHexPosition(x, y);
+    });
+    
+    if (tilePixelPositions.length > 0) {
+      const avgX = tilePixelPositions.reduce((sum, pos) => sum + pos.x, 0) / tilePixelPositions.length;
+      const avgY = tilePixelPositions.reduce((sum, pos) => sum + pos.y, 0) / tilePixelPositions.length;
+      return { x: avgX, y: avgY };
+    }
+    
+    return { x: 0, y: 0 };
+  };
+
+  // Calculate optimal zoom to fit map in display area
+  const calculateOptimalZoom = () => {
+    if (!mapData || containerSize.width === 0 || containerSize.height === 0) return 1;
+    
+    // Only consider tiles that are actually in play (not void spaces)
+    const actualTiles = mapData.tiles.filter((tile: Tile) => {
+      const isValid = tile.objectName && tile.objectName !== 'undefined' && tile.objectName.trim() !== '';
+      return isValid;
+    });
+    
+    if (actualTiles.length === 0) return 1;
+    
+    const positions = actualTiles.map((tile: Tile) => parsePosition(tile.position));
+    const minX = Math.min(...positions.map(([x, y]: [number, number]) => x));
+    const maxX = Math.max(...positions.map(([x, y]: [number, number]) => x));
+    const minY = Math.min(...positions.map(([x, y]: [number, number]) => y));
+    const maxY = Math.max(...positions.map(([x, y]: [number, number]) => y));
+    
+    const hexSize = 60;
+    const hexWidth = hexSize * 2;
+    const hexHeight = hexSize * Math.sqrt(3);
+    const tilePixelPositions = actualTiles.map((tile: Tile) => {
+      const [x, y] = parsePosition(tile.position);
+      return getHexPosition(x, y);
+    });
+    
+    const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
+    const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
+    const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
+    const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
+    
+    const PAD_X = hexWidth / 2;
+    const PAD_Y = hexHeight / 2;
+    const mapWidth = (maxPixelX - minPixelX) + hexWidth + 2 * PAD_X;
+    const mapHeight = (maxPixelY - minPixelY) + hexHeight + 2 * PAD_Y;
+    
+    // Calculate zoom to fit with less padding
+    const padding = 0.02; // 2% padding
+    const zoomX = (containerSize.width * (1 - padding)) / mapWidth;
+    const zoomY = (containerSize.height * (1 - padding)) / mapHeight;
+    
+    // Use the maximum zoom that fits either width or height
+    const optimalZoom = Math.max(Math.min(zoomX, 3), Math.min(zoomY, 3), 0.8); // Cap at 3x, min 0.8
+    
+    return optimalZoom;
+  };
+
+      // Auto-fit map to display area
+    const fitMapToDisplay = () => {
+      const optimalZoom = calculateOptimalZoom();
+      
+      if (optimalZoom > 0) {
+        setZoom(optimalZoom);
+      }
+      
+      // Calculate pan to center the map properly
+      if (mapData) {
+        const tilePixelPositions = mapData.tiles.map((tile: Tile) => {
+          const [x, y] = parsePosition(tile.position);
+          return getHexPosition(x, y);
+        });
+        const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
+        const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
+        const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
+        const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
+        const centerX = (minPixelX + maxPixelX) / 2;
+        const centerY = (minPixelY + maxPixelY) / 2;
+        setPan({
+          x: containerSize.width / 2 - centerX * optimalZoom,
+          y: containerSize.height / 2 - centerY * optimalZoom
+        });
+      }
+    };
+
+  // Handle zoom slider change
+  const handleZoomChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newZoom = parseFloat(e.target.value);
+    setZoom(newZoom);
+  };
+
+  // Effect to center map on initial load with improved centering
   useEffect(() => {
     if (
       mapData &&
       containerSize.width > 0 &&
-      containerSize.height > 0
+      containerSize.height > 0 &&
+      Object.keys(tileDataCache).length > 0
     ) {
-      // Calculate map bounds and svg size
-      const positions = mapData.tiles.map((tile: Tile) => parsePosition(tile.position));
-      const minX = Math.min(...positions.map(([x, y]: [number, number]) => x));
-      const maxX = Math.max(...positions.map(([x, y]: [number, number]) => x));
-      const minY = Math.min(...positions.map(([x, y]: [number, number]) => y));
-      const maxY = Math.max(...positions.map(([x, y]: [number, number]) => y));
-      const hexSize = 60;
-      const hexWidth = hexSize * 2;
-      const hexHeight = hexSize * Math.sqrt(3);
+      const optimalZoom = calculateOptimalZoom();
+      setZoom(optimalZoom);
+
+      // Calculate pixel bounds
       const tilePixelPositions = mapData.tiles.map((tile: Tile) => {
         const [x, y] = parsePosition(tile.position);
         return getHexPosition(x, y);
       });
       const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
-      const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
       const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
+      const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
       const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
-      // Half-tile padding
-      const PAD_X = hexWidth / 2;
-      const PAD_Y = hexHeight / 2;
-      const svgWidth = (maxPixelX - minPixelX) + hexWidth + 2 * PAD_X;
-      const svgHeight = (maxPixelY - minPixelY) + hexHeight + 2 * PAD_Y;
-      // Calculate centroid of all tile pixel positions
-      if (tilePixelPositions.length > 0) {
-        const avgX = tilePixelPositions.reduce((sum, pos) => sum + pos.x, 0) / tilePixelPositions.length;
-        const avgY = tilePixelPositions.reduce((sum, pos) => sum + pos.y, 0) / tilePixelPositions.length;
-        // Find the tile closest to the centroid
-        let minDist = Infinity;
-        let centerX = tilePixelPositions[0].x;
-        let centerY = tilePixelPositions[0].y;
-        for (let i = 0; i < tilePixelPositions.length; i++) {
-          const dx = tilePixelPositions[i].x - avgX;
-          const dy = tilePixelPositions[i].y - avgY;
-          const dist = dx * dx + dy * dy;
-          if (dist < minDist) {
-            minDist = dist;
-            centerX = tilePixelPositions[i].x;
-            centerY = tilePixelPositions[i].y;
-          }
-        }
-        const initialPanX = containerSize.width / 2 - centerX * zoom;
-        const initialPanY = containerSize.height / 2 - centerY * zoom;
-        setZoom(1);
-        setPan({ x: initialPanX, y: initialPanY });
-      } else {
-        const initialPanX = (containerSize.width - svgWidth * zoom) / 2;
-        const initialPanY = (containerSize.height - svgHeight * zoom) / 2;
-      }
+      // Center of the map in SVG coordinates
+      const centerX = (minPixelX + maxPixelX) / 2;
+      const centerY = (minPixelY + maxPixelY) / 2;
+      // Center the map in the container
+      setPan({
+        x: containerSize.width / 2 - centerX * optimalZoom,
+        y: containerSize.height / 2 - centerY * optimalZoom
+      });
     }
-  }, [mapData, containerSize, zoom]);
+  }, [mapData, containerSize, tileDataCache]);
 
   const parsePosition = (position: string): [number, number] => {
     const [x, y] = position.split(',').map(Number);
@@ -567,7 +695,6 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
     const suffix = tile.isEnchanted ? '-e1' : '1';
     const filename = `${baseName}${suffix}.gif`;
     const imageUrl = `/images/tiles/${filename}`;
-    console.log(`Generated image URL for ${tile.objectName}: ${imageUrl}`);
     return imageUrl;
   };
 
@@ -700,75 +827,16 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
         <label className="block text-xs mb-1"><input type="checkbox" checked={showLivingCharacters} onChange={e => setShowLivingCharacters(e.target.checked)} /> Living Characters</label>
         <label className="block text-xs mb-2"><input type="checkbox" checked={showDeadCharacters} onChange={e => setShowDeadCharacters(e.target.checked)} /> Dead Characters</label>
         {/* Zoom controls */}
-        <button
-          onClick={() => setZoom(Math.min(zoom + 0.1, 3))}
-          className="block w-8 h-8 mb-1 bg-blue-500 text-white rounded hover:bg-blue-600"
-        >
-          +
-        </button>
-        <button
-          onClick={() => setZoom(Math.max(zoom - 0.1, 0.3))}
-          className="block w-8 h-8 mb-1 bg-blue-500 text-white rounded hover:bg-blue-600"
-        >
-          -
-        </button>
-        <button
-          onClick={() => {
-            if (mapData && containerSize.width > 0 && containerSize.height > 0) {
-              const positions = mapData.tiles.map((tile: Tile) => parsePosition(tile.position));
-              const minX = Math.min(...positions.map(([x, y]: [number, number]) => x));
-              const maxX = Math.max(...positions.map(([x, y]: [number, number]) => x));
-              const minY = Math.min(...positions.map(([x, y]: [number, number]) => y));
-              const maxY = Math.max(...positions.map(([x, y]: [number, number]) => y));
-              const hexSize = 60;
-              const hexWidth = hexSize * 2;
-              const hexHeight = hexSize * Math.sqrt(3);
-              const tilePixelPositions = mapData.tiles.map((tile: Tile) => {
-                const [x, y] = parsePosition(tile.position);
-                return getHexPosition(x, y);
-              });
-              const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
-              const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
-              const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
-              const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
-              // Half-tile padding
-              const PAD_X = hexWidth / 2;
-              const PAD_Y = hexHeight / 2;
-              const svgWidth = (maxPixelX - minPixelX) + hexWidth + 2 * PAD_X;
-              const svgHeight = (maxPixelY - minPixelY) + hexHeight + 2 * PAD_Y;
-              // Calculate centroid of all tile pixel positions
-              if (tilePixelPositions.length > 0) {
-                const avgX = tilePixelPositions.reduce((sum, pos) => sum + pos.x, 0) / tilePixelPositions.length;
-                const avgY = tilePixelPositions.reduce((sum, pos) => sum + pos.y, 0) / tilePixelPositions.length;
-                // Find the tile closest to the centroid
-                let minDist = Infinity;
-                let centerX = tilePixelPositions[0].x;
-                let centerY = tilePixelPositions[0].y;
-                for (let i = 0; i < tilePixelPositions.length; i++) {
-                  const dx = tilePixelPositions[i].x - avgX;
-                  const dy = tilePixelPositions[i].y - avgY;
-                  const dist = dx * dx + dy * dy;
-                  if (dist < minDist) {
-                    minDist = dist;
-                    centerX = tilePixelPositions[i].x;
-                    centerY = tilePixelPositions[i].y;
-                  }
-                }
-                const initialPanX = containerSize.width / 2 - centerX * zoom;
-                const initialPanY = containerSize.height / 2 - centerY * zoom;
-                setZoom(1);
-                setPan({ x: initialPanX, y: initialPanY });
-              } else {
-                const initialPanX = (containerSize.width - svgWidth * zoom) / 2;
-                const initialPanY = (containerSize.height - svgHeight * zoom) / 2;
-              }
-            }
-          }}
-          className="block w-8 h-8 bg-green-500 text-white rounded hover:bg-green-600 text-xs"
-          title="Reset View"
-        >
-          ↺
-        </button>
+        <div className="mb-2">
+          <div className="text-xs font-bold mb-1">Zoom: {Math.round(zoom * 100)}%</div>
+          <button
+            onClick={fitMapToDisplay}
+            className="block w-full mb-1 bg-green-500 text-white rounded hover:bg-green-600 text-xs py-1"
+            title="Fit to Display"
+          >
+            Fit to Display
+          </button>
+        </div>
       </div>
 
       {/* SVG container with proper overflow handling */}
@@ -944,16 +1012,10 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
           })}
 
           {/* Character movement paths and icons - rendered last so they're on top */}
-          {console.log('Rendering character paths:', characterPaths.length, 'paths:', characterPaths)}
           {characterPaths.map((path, pathIndex) => {
             // Always show all positions and lines (no stepping)
             const visiblePositions = path.positions;
             const visibleLines = path.lines;
-
-            console.log(`Rendering path ${pathIndex} for character ${path.character}:`, {
-              positions: visiblePositions.length,
-              lines: visibleLines.length
-            });
 
             return (
               <g key={`path-${pathIndex}`}>
@@ -1143,8 +1205,6 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
                     
                     const iconUrl = `/images/charsymbol/${icon.character}_symbol.png`;
                     
-                    console.log(`Loading character icon: ${icon.character} -> ${iconUrl}, dead=${icon.isDead}`);
-                    
                     // Check if character is in combat at this position
                     const isInCombat = dynamicMapState?.battles?.some((battle: any) => {
                       const { tileName, clearing } = parseLocation(battle.location);
@@ -1326,6 +1386,39 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
             );
           })}
         </svg>
+      </div>
+      
+      {/* Zoom Slider at the bottom */}
+      <div className="absolute bottom-4 left-4 right-4 z-10">
+        <div className="bg-white rounded-lg shadow-lg p-3">
+          <div className="flex items-center justify-between mb-2">
+            <span className="text-sm font-bold text-gray-700">Zoom</span>
+            <span className="text-sm text-gray-600">{Math.round(zoom * 100)}%</span>
+          </div>
+          <input
+            type="range"
+            min="0.3"
+            max="3"
+            step="0.1"
+            value={zoom}
+            onChange={handleZoomChange}
+            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+            style={{
+              background: `linear-gradient(to right, #3b82f6 0%, #3b82f6 ${((zoom - 0.3) / 2.7) * 100}%, #e5e7eb ${((zoom - 0.3) / 2.7) * 100}%, #e5e7eb 100%)`
+            }}
+          />
+          <div className="flex justify-between text-xs text-gray-500 mt-1">
+            <span>30%</span>
+            <span>100%</span>
+            <span>300%</span>
+          </div>
+          <button
+            onClick={fitMapToDisplay}
+            className="mt-2 w-full bg-blue-500 hover:bg-blue-600 text-white text-xs py-1 px-2 rounded"
+          >
+            Fit to Display
+          </button>
+        </div>
       </div>
 
       {/* CSS for marching ants animation */}
