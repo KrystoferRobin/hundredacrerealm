@@ -31,7 +31,7 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [dynamicMapState, setDynamicMapState] = useState<any>(null);
-  const [zoom, setZoom] = useState(1);
+  const [zoom, setZoom] = useState(1.2);
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
@@ -247,6 +247,9 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
 
   // Calculate optimal zoom to fit map in display area
   const calculateOptimalZoom = () => {
+    const hexSize = 60;
+    const hexWidth = hexSize * 2;
+    const hexHeight = hexSize * Math.sqrt(3);
     if (!mapData || containerSize.width === 0 || containerSize.height === 0) return 1;
     
     // Get actual tile positions (not SVG bounds)
@@ -268,9 +271,6 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
     const minY = Math.min(...tilePositions.map(pos => pos.y));
     const maxY = Math.max(...tilePositions.map(pos => pos.y));
     
-    const hexSize = 60;
-    const hexWidth = hexSize * 2;
-    const hexHeight = hexSize * Math.sqrt(3);
     const mapWidth = maxX - minX + hexWidth;
     const mapHeight = maxY - minY + hexHeight;
     
@@ -296,43 +296,7 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
     return finalZoom;
   };
 
-  // Auto-fit map to display area
-  const fitMapToDisplay = () => {
-    if (!mapData || containerSize.width === 0 || containerSize.height === 0) return;
-    
-    const optimalZoom = calculateOptimalZoom();
-    
-    if (optimalZoom > 0) {
-      setZoom(optimalZoom);
-    }
-    
-    // Calculate pan to center the map properly
-    const actualTiles = mapData.tiles.filter((tile: Tile) => {
-      const isValid = tile.objectName && tile.objectName !== 'undefined' && tile.objectName.trim() !== '';
-      return isValid;
-    });
-    
-    if (actualTiles.length > 0) {
-      const tilePositions = actualTiles.map((tile: Tile) => {
-        const [x, y] = parsePosition(tile.position);
-        return getHexPosition(x, y);
-      });
-      
-      const minX = Math.min(...tilePositions.map(pos => pos.x));
-      const maxX = Math.max(...tilePositions.map(pos => pos.x));
-      const minY = Math.min(...tilePositions.map(pos => pos.y));
-      const maxY = Math.max(...tilePositions.map(pos => pos.y));
-      
-      // Calculate the visual center of the hex grid
-      const centerX = (minX + maxX) / 2;
-      const centerY = (minY + maxY) / 2;
-      
-      setPan({
-        x: containerSize.width / 2 - centerX * optimalZoom,
-        y: containerSize.height / 2 - centerY * optimalZoom
-      });
-    }
-  };
+
 
   // Handle zoom slider change
   const handleZoomChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -348,49 +312,30 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
       containerSize.height > 0 &&
       Object.keys(tileDataCache).length > 0
     ) {
-      const optimalZoom = calculateOptimalZoom();
-      setZoom(optimalZoom);
-
-      // Calculate the actual center of the hex grid
-      const actualTiles = mapData.tiles.filter((tile: Tile) => {
-        const isValid = tile.objectName && tile.objectName !== 'undefined' && tile.objectName.trim() !== '';
-        return isValid;
+      // Use SVG viewBox center for pan calculation
+      const svgDimensions = calculateDynamicSVGDimensions();
+      const viewBoxParts = svgDimensions.viewBox.split(' ').map(Number);
+      const viewBoxX = viewBoxParts[0];
+      const viewBoxY = viewBoxParts[1];
+      const viewBoxWidth = viewBoxParts[2];
+      const viewBoxHeight = viewBoxParts[3];
+      const centerX = viewBoxX + viewBoxWidth / 2;
+      const centerY = viewBoxY + viewBoxHeight / 2;
+      setPan({
+        x: containerSize.width / 2 - centerX * zoom,
+        y: containerSize.height / 2 - centerY * zoom
       });
-      
-      if (actualTiles.length > 0) {
-        const tilePositions = actualTiles.map((tile: Tile) => {
-          const [x, y] = parsePosition(tile.position);
-          return getHexPosition(x, y);
-        });
-        
-        const minX = Math.min(...tilePositions.map(pos => pos.x));
-        const maxX = Math.max(...tilePositions.map(pos => pos.x));
-        const minY = Math.min(...tilePositions.map(pos => pos.y));
-        const maxY = Math.max(...tilePositions.map(pos => pos.y));
-        
-        // Calculate the visual center of the hex grid
-        const centerX = (minX + maxX) / 2;
-        const centerY = (minY + maxY) / 2;
-        
-        // Center the map in the container
-        setPan({
-          x: containerSize.width / 2 - centerX * optimalZoom,
-          y: containerSize.height / 2 - centerY * optimalZoom
-        });
-        
-        console.log('Improved centering:', {
-          minX, maxX, minY, maxY,
-          centerX, centerY,
-          containerSize,
-          optimalZoom,
-          pan: {
-            x: containerSize.width / 2 - centerX * optimalZoom,
-            y: containerSize.height / 2 - centerY * optimalZoom
-          }
-        });
-      }
+      console.log('SVG viewBox centering:', {
+        viewBoxX, viewBoxY, viewBoxWidth, viewBoxHeight, centerX, centerY, zoom,
+        pan: {
+          x: containerSize.width / 2 - centerX * zoom,
+          y: containerSize.height / 2 - centerY * zoom
+        }
+      });
     }
-  }, [mapData, containerSize, tileDataCache]);
+  }, [mapData, containerSize, tileDataCache, zoom]);
+
+
 
   // Convert position string to coordinates
   const parsePosition = (position: string): [number, number] => {
@@ -620,13 +565,6 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
         {/* Zoom controls */}
         <div className="mb-2">
           <div className="text-xs font-bold mb-1">Zoom: {Math.round(zoom * 100)}%</div>
-          <button
-            onClick={fitMapToDisplay}
-            className="block w-full mb-1 bg-green-500 text-white rounded hover:bg-green-600 text-xs py-1"
-            title="Fit to Display"
-          >
-            Fit to Display
-          </button>
         </div>
       </div>
 
