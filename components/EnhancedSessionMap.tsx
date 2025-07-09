@@ -605,28 +605,48 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
   const calculateOptimalZoom = () => {
     if (!mapData || containerSize.width === 0 || containerSize.height === 0) return 1;
     
-    const dimensions = calculateDynamicSVGDimensions();
-    const mapWidth = dimensions.width;
-    const mapHeight = dimensions.height;
+    // Get actual tile positions (not SVG bounds)
+    const actualTiles = mapData.tiles.filter((tile: Tile) => {
+      const isValid = tile.objectName && tile.objectName !== 'undefined' && tile.objectName.trim() !== '';
+      return isValid;
+    });
     
-    // Calculate zoom to fit with less padding
-    const padding = 0.02; // 2% padding
+    if (actualTiles.length === 0) return 1;
+    
+    // Calculate the actual bounds of the hex grid
+    const tilePositions = actualTiles.map((tile: Tile) => {
+      const [x, y] = parsePosition(tile.position);
+      return getHexPosition(x, y);
+    });
+    
+    const minX = Math.min(...tilePositions.map(pos => pos.x));
+    const maxX = Math.max(...tilePositions.map(pos => pos.x));
+    const minY = Math.min(...tilePositions.map(pos => pos.y));
+    const maxY = Math.max(...tilePositions.map(pos => pos.y));
+    
+    const mapWidth = maxX - minX + hexWidth;
+    const mapHeight = maxY - minY + hexHeight;
+    
+    // Calculate zoom to fit with padding
+    const padding = 0.1; // 10% padding for better visual spacing
     const zoomX = (containerSize.width * (1 - padding)) / mapWidth;
     const zoomY = (containerSize.height * (1 - padding)) / mapHeight;
     
-    // Use the maximum zoom that fits either width or height
-    const optimalZoom = Math.max(Math.min(zoomX, 3), Math.min(zoomY, 3), 0.8);
+    // Use the smaller zoom to ensure the entire map fits
+    const optimalZoom = Math.min(zoomX, zoomY, 3); // Cap at 3x zoom
+    const finalZoom = Math.max(optimalZoom, 0.5); // Minimum 0.5x zoom
     
-    console.log('Dynamic map dimensions:', {
+    console.log('Improved zoom calculation:', {
       mapWidth,
       mapHeight,
       containerSize,
       zoomX,
       zoomY,
-      optimalZoom
+      optimalZoom,
+      finalZoom
     });
     
-    return optimalZoom;
+    return finalZoom;
   };
 
       // Auto-fit map to display area
@@ -639,17 +659,31 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
       
       // Calculate pan to center the map properly
       if (mapData) {
-        const dimensions = calculateDynamicSVGDimensions();
-        const minPixelX = dimensions.minPixelX;
-        const maxPixelX = dimensions.maxPixelX;
-        const minPixelY = dimensions.minPixelY;
-        const maxPixelY = dimensions.maxPixelY;
-        const centerX = (minPixelX + maxPixelX) / 2;
-        const centerY = (minPixelY + maxPixelY) / 2;
-        setPan({
-          x: containerSize.width / 2 - centerX * optimalZoom,
-          y: containerSize.height / 2 - centerY * optimalZoom
+        const actualTiles = mapData.tiles.filter((tile: Tile) => {
+          const isValid = tile.objectName && tile.objectName !== 'undefined' && tile.objectName.trim() !== '';
+          return isValid;
         });
+        
+        if (actualTiles.length > 0) {
+          const tilePositions = actualTiles.map((tile: Tile) => {
+            const [x, y] = parsePosition(tile.position);
+            return getHexPosition(x, y);
+          });
+          
+          const minX = Math.min(...tilePositions.map(pos => pos.x));
+          const maxX = Math.max(...tilePositions.map(pos => pos.x));
+          const minY = Math.min(...tilePositions.map(pos => pos.y));
+          const maxY = Math.max(...tilePositions.map(pos => pos.y));
+          
+          // Calculate the visual center of the hex grid
+          const centerX = (minX + maxX) / 2;
+          const centerY = (minY + maxY) / 2;
+          
+          setPan({
+            x: containerSize.width / 2 - centerX * optimalZoom,
+            y: containerSize.height / 2 - centerY * optimalZoom
+          });
+        }
       }
     };
 
@@ -670,15 +704,44 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
       const optimalZoom = calculateOptimalZoom();
       setZoom(optimalZoom);
 
-      const dimensions = calculateDynamicSVGDimensions();
-      // Center of the map in SVG coordinates
-      const centerX = (dimensions.minPixelX + dimensions.maxPixelX) / 2;
-      const centerY = (dimensions.minPixelY + dimensions.maxPixelY) / 2;
-      // Center the map in the container
-      setPan({
-        x: containerSize.width / 2 - centerX * optimalZoom,
-        y: containerSize.height / 2 - centerY * optimalZoom
+      // Calculate the actual center of the hex grid
+      const actualTiles = mapData.tiles.filter((tile: Tile) => {
+        const isValid = tile.objectName && tile.objectName !== 'undefined' && tile.objectName.trim() !== '';
+        return isValid;
       });
+      
+      if (actualTiles.length > 0) {
+        const tilePositions = actualTiles.map((tile: Tile) => {
+          const [x, y] = parsePosition(tile.position);
+          return getHexPosition(x, y);
+        });
+        
+        const minX = Math.min(...tilePositions.map(pos => pos.x));
+        const maxX = Math.max(...tilePositions.map(pos => pos.x));
+        const minY = Math.min(...tilePositions.map(pos => pos.y));
+        const maxY = Math.max(...tilePositions.map(pos => pos.y));
+        
+        // Calculate the visual center of the hex grid
+        const centerX = (minX + maxX) / 2;
+        const centerY = (minY + maxY) / 2;
+        
+        // Center the map in the container
+        setPan({
+          x: containerSize.width / 2 - centerX * optimalZoom,
+          y: containerSize.height / 2 - centerY * optimalZoom
+        });
+        
+        console.log('Improved centering:', {
+          minX, maxX, minY, maxY,
+          centerX, centerY,
+          containerSize,
+          optimalZoom,
+          pan: {
+            x: containerSize.width / 2 - centerX * optimalZoom,
+            y: containerSize.height / 2 - centerY * optimalZoom
+          }
+        });
+      }
     }
   }, [mapData, containerSize, tileDataCache]);
 

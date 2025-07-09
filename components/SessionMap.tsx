@@ -249,41 +249,51 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
   const calculateOptimalZoom = () => {
     if (!mapData || containerSize.width === 0 || containerSize.height === 0) return 1;
     
-    // Only consider tiles that are actually in play (not void spaces)
-    const actualTiles = mapData.tiles.filter((tile: Tile) => tile.objectName && tile.objectName !== 'undefined');
+    // Get actual tile positions (not SVG bounds)
+    const actualTiles = mapData.tiles.filter((tile: Tile) => {
+      const isValid = tile.objectName && tile.objectName !== 'undefined' && tile.objectName.trim() !== '';
+      return isValid;
+    });
     
     if (actualTiles.length === 0) return 1;
     
-    const positions = actualTiles.map((tile: Tile) => parsePosition(tile.position));
-    const minX = Math.min(...positions.map(([x, y]: [number, number]) => x));
-    const maxX = Math.max(...positions.map(([x, y]: [number, number]) => x));
-    const minY = Math.min(...positions.map(([x, y]: [number, number]) => y));
-    const maxY = Math.max(...positions.map(([x, y]: [number, number]) => y));
-    
-    const hexSize = 60;
-    const hexWidth = hexSize * 2;
-    const hexHeight = hexSize * Math.sqrt(3);
-    const tilePixelPositions = actualTiles.map((tile: Tile) => {
+    // Calculate the actual bounds of the hex grid
+    const tilePositions = actualTiles.map((tile: Tile) => {
       const [x, y] = parsePosition(tile.position);
       return getHexPosition(x, y);
     });
     
-    const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
-    const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
-    const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
-    const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
+    const minX = Math.min(...tilePositions.map(pos => pos.x));
+    const maxX = Math.max(...tilePositions.map(pos => pos.x));
+    const minY = Math.min(...tilePositions.map(pos => pos.y));
+    const maxY = Math.max(...tilePositions.map(pos => pos.y));
     
-    const PAD_X = hexWidth / 2;
-    const PAD_Y = hexHeight / 2;
-    const mapWidth = (maxPixelX - minPixelX) + hexWidth + 2 * PAD_X;
-    const mapHeight = (maxPixelY - minPixelY) + hexHeight + 2 * PAD_Y;
+    const hexSize = 60;
+    const hexWidth = hexSize * 2;
+    const hexHeight = hexSize * Math.sqrt(3);
+    const mapWidth = maxX - minX + hexWidth;
+    const mapHeight = maxY - minY + hexHeight;
     
-    // Calculate zoom to fit with some padding
-    const padding = 0.1; // 10% padding
+    // Calculate zoom to fit with padding
+    const padding = 0.1; // 10% padding for better visual spacing
     const zoomX = (containerSize.width * (1 - padding)) / mapWidth;
     const zoomY = (containerSize.height * (1 - padding)) / mapHeight;
     
-    return Math.min(zoomX, zoomY, 3); // Cap at 3x zoom
+    // Use the smaller zoom to ensure the entire map fits
+    const optimalZoom = Math.min(zoomX, zoomY, 3); // Cap at 3x zoom
+    const finalZoom = Math.max(optimalZoom, 0.5); // Minimum 0.5x zoom
+    
+    console.log('Improved zoom calculation:', {
+      mapWidth,
+      mapHeight,
+      containerSize,
+      zoomX,
+      zoomY,
+      optimalZoom,
+      finalZoom
+    });
+    
+    return finalZoom;
   };
 
   // Auto-fit map to display area
@@ -291,13 +301,37 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
     if (!mapData || containerSize.width === 0 || containerSize.height === 0) return;
     
     const optimalZoom = calculateOptimalZoom();
-    const center = calculateMapCenter();
     
-    setZoom(optimalZoom);
-    setPan({
-      x: containerSize.width / 2 - center.x * optimalZoom,
-      y: containerSize.height / 2 - center.y * optimalZoom
+    if (optimalZoom > 0) {
+      setZoom(optimalZoom);
+    }
+    
+    // Calculate pan to center the map properly
+    const actualTiles = mapData.tiles.filter((tile: Tile) => {
+      const isValid = tile.objectName && tile.objectName !== 'undefined' && tile.objectName.trim() !== '';
+      return isValid;
     });
+    
+    if (actualTiles.length > 0) {
+      const tilePositions = actualTiles.map((tile: Tile) => {
+        const [x, y] = parsePosition(tile.position);
+        return getHexPosition(x, y);
+      });
+      
+      const minX = Math.min(...tilePositions.map(pos => pos.x));
+      const maxX = Math.max(...tilePositions.map(pos => pos.x));
+      const minY = Math.min(...tilePositions.map(pos => pos.y));
+      const maxY = Math.max(...tilePositions.map(pos => pos.y));
+      
+      // Calculate the visual center of the hex grid
+      const centerX = (minX + maxX) / 2;
+      const centerY = (minY + maxY) / 2;
+      
+      setPan({
+        x: containerSize.width / 2 - centerX * optimalZoom,
+        y: containerSize.height / 2 - centerY * optimalZoom
+      });
+    }
   };
 
   // Handle zoom slider change
@@ -314,15 +348,47 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
       containerSize.height > 0 &&
       Object.keys(tileDataCache).length > 0
     ) {
-      // Use the improved centering logic
-      const center = calculateMapCenter();
       const optimalZoom = calculateOptimalZoom();
-      
       setZoom(optimalZoom);
-      setPan({
-        x: containerSize.width / 2 - center.x * optimalZoom,
-        y: containerSize.height / 2 - center.y * optimalZoom
+
+      // Calculate the actual center of the hex grid
+      const actualTiles = mapData.tiles.filter((tile: Tile) => {
+        const isValid = tile.objectName && tile.objectName !== 'undefined' && tile.objectName.trim() !== '';
+        return isValid;
       });
+      
+      if (actualTiles.length > 0) {
+        const tilePositions = actualTiles.map((tile: Tile) => {
+          const [x, y] = parsePosition(tile.position);
+          return getHexPosition(x, y);
+        });
+        
+        const minX = Math.min(...tilePositions.map(pos => pos.x));
+        const maxX = Math.max(...tilePositions.map(pos => pos.x));
+        const minY = Math.min(...tilePositions.map(pos => pos.y));
+        const maxY = Math.max(...tilePositions.map(pos => pos.y));
+        
+        // Calculate the visual center of the hex grid
+        const centerX = (minX + maxX) / 2;
+        const centerY = (minY + maxY) / 2;
+        
+        // Center the map in the container
+        setPan({
+          x: containerSize.width / 2 - centerX * optimalZoom,
+          y: containerSize.height / 2 - centerY * optimalZoom
+        });
+        
+        console.log('Improved centering:', {
+          minX, maxX, minY, maxY,
+          centerX, centerY,
+          containerSize,
+          optimalZoom,
+          pan: {
+            x: containerSize.width / 2 - centerX * optimalZoom,
+            y: containerSize.height / 2 - centerY * optimalZoom
+          }
+        });
+      }
     }
   }, [mapData, containerSize, tileDataCache]);
 
