@@ -66,8 +66,6 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
   const [containerSize, setContainerSize] = useState({ width: 400, height: 400 });
   const [tileDataCache, setTileDataCache] = useState<Record<string, any>>({});
   const [characterPaths, setCharacterPaths] = useState<CharacterMovementPath[]>([]);
-  const [currentStep, setCurrentStep] = useState(0);
-  const [maxSteps, setMaxSteps] = useState(0);
   
   // Overlay toggles
   const [showDwellings, setShowDwellings] = useState(true);
@@ -161,6 +159,7 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
 
   // Calculate positions for lines
   const calculateLinePositions = (paths: CharacterMovementPath[]) => {
+    console.log('Calculating line positions for paths:', paths.length);
     return paths.map(path => {
       const updatedLines = path.lines.map((line, index) => {
         const fromPos = path.positions[index];
@@ -171,6 +170,9 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
         // Find tiles and calculate positions
         const fromTile = mapData?.tiles.find((t: Tile) => t.objectName === fromPos.tile);
         const toTile = mapData?.tiles.find((t: Tile) => t.objectName === toPos.tile);
+        
+        console.log(`Calculating line ${index}: ${fromPos.tile} ${fromPos.clearing} -> ${toPos.tile} ${toPos.clearing}`);
+        console.log(`Found tiles: fromTile=${!!fromTile}, toTile=${!!toTile}`);
         
         if (!fromTile || !toTile) return line;
         
@@ -214,41 +216,34 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
     });
   };
 
-  // Auto-advance through character steps
+  // Clear character paths immediately when selectedDay changes
   useEffect(() => {
-    if (!isAutoAdvancing || characterPaths.length === 0) return;
-    
-    const maxStepsInPaths = Math.max(...characterPaths.map(path => 
-      Math.max(...path.positions.map(pos => pos.step))
-    ));
-    
-    setMaxSteps(maxStepsInPaths);
-    
-    const interval = setInterval(() => {
-      setCurrentStep(prev => {
-        if (prev >= maxStepsInPaths) {
-          return 0; // Reset to start
-        }
-        return prev + 1;
-      });
-    }, 1000); // 1 second per step
-    
-    return () => clearInterval(interval);
-  }, [isAutoAdvancing, characterPaths]);
+    console.log('Selected day changed to:', selectedDay);
+    console.log('Clearing character paths');
+    setCharacterPaths([]);
+  }, [selectedDay]);
 
   // Update character paths when day changes
   useEffect(() => {
+    console.log('Updating character paths for day:', selectedDay);
+    console.log('Current dynamicMapState:', dynamicMapState);
+    
     if (!sessionData || !selectedDay) {
+      console.log('Clearing character paths - no session data or selected day');
       setCharacterPaths([]);
-      setCurrentStep(0);
       return;
     }
     
     const dayData = sessionData.days[selectedDay];
-    if (!dayData) return;
+    if (!dayData) {
+      console.log('Clearing character paths - no day data');
+      setCharacterPaths([]);
+      return;
+    }
     
     // Try to use detailed movement data from map state if available
     if (dynamicMapState && dynamicMapState.detailedMovement) {
+      console.log('Using detailed movement data from map state:', dynamicMapState.detailedMovement);
       const paths: CharacterMovementPath[] = [];
       
       Object.entries(dynamicMapState.detailedMovement).forEach(([character, movementData]: [string, any]) => {
@@ -267,6 +262,7 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
           }> = [];
           
           // Parse each location in the movement path
+          console.log('Parsing movement path:', movementData.movementPath);
           movementData.movementPath.forEach((location: string, index: number) => {
             const match = location.match(/^(.+?) (\d+)$/);
             if (match) {
@@ -274,6 +270,8 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
               const clearing = match[2];
               const step = index;
               const opacity = 0.5 + (step / (movementData.movementPath.length - 1)) * 0.5; // 50% to 100%
+              
+              console.log(`Adding position ${index}: ${tileName} ${clearing}, opacity: ${opacity}`);
               
               positions.push({
                 tile: tileName,
@@ -304,23 +302,38 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
         }
       });
       
-      setCharacterPaths(paths);
-      setCurrentStep(0);
+      console.log('Setting character paths from map state:', paths.length, 'paths');
+      // Calculate line positions immediately if map data is available
+      if (mapData && paths.length > 0) {
+        console.log('Calculating line positions immediately');
+        const updatedPaths = calculateLinePositions(paths);
+        setCharacterPaths(updatedPaths);
+      } else {
+        setCharacterPaths(paths);
+      }
     } else {
       // Fall back to parsing from session data
       const paths = parseCharacterPaths(dayData);
-      setCharacterPaths(paths);
-      setCurrentStep(0);
+      console.log('Setting character paths from session data:', paths.length, 'paths');
+      // Calculate line positions immediately if map data is available
+      if (mapData && paths.length > 0) {
+        console.log('Calculating line positions immediately');
+        const updatedPaths = calculateLinePositions(paths);
+        setCharacterPaths(updatedPaths);
+      } else {
+        setCharacterPaths(paths);
+      }
     }
-  }, [sessionData, selectedDay, dynamicMapState]);
+  }, [sessionData, selectedDay, dynamicMapState, mapData]);
 
-  // Calculate line positions when map data or paths change
+  // Calculate line positions when map data changes (fallback for when map data loads after character paths)
   useEffect(() => {
     if (mapData && characterPaths.length > 0) {
+      console.log('Calculating line positions for', characterPaths.length, 'paths (fallback)');
       const updatedPaths = calculateLinePositions(characterPaths);
       setCharacterPaths(updatedPaths);
     }
-  }, [mapData, characterPaths]);
+  }, [mapData]); // Only depend on mapData, not characterPaths
 
   useEffect(() => {
     const loadMapData = async () => {
@@ -386,11 +399,13 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
   useEffect(() => {
     const loadDynamicMapState = async () => {
       if (!selectedDay) {
+        console.log('No selected day, clearing dynamic map state');
         setDynamicMapState(null);
         return;
       }
 
       try {
+        console.log(`Loading map state for day ${selectedDay}`);
         const response = await fetch(`/api/session/${sessionId}/map-state/${selectedDay}`);
         if (!response.ok) {
           console.warn(`Failed to load map state for day ${selectedDay}`);
@@ -398,6 +413,8 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
           return;
         }
         const data = await response.json();
+        console.log(`Loaded map state for day ${selectedDay}:`, data);
+        console.log(`Detailed movement data:`, data.detailedMovement);
         setDynamicMapState(data);
       } catch (err) {
         console.warn(`Error loading map state for day ${selectedDay}:`, err);
@@ -802,16 +819,141 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
             );
           })}
 
-          {/* Render character movement paths */}
-          {characterPaths.map((path, pathIndex) => {
-            // Filter positions based on auto-advance state
-            const visiblePositions = isAutoAdvancing 
-              ? path.positions.filter(pos => pos.step <= currentStep)
-              : path.positions;
+          {/* Dwellings Overlay */}
+          {showDwellings && mapLocations && mapLocations.dwellings.map((item: any, idx: number) => {
+            const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === item.tile);
+            if (tileIdx === -1) return null;
+            const tile = mapData.tiles[tileIdx];
+            const [x, y] = parsePosition(tile.position);
+            const hexPos = getHexPosition(x, y);
+            const clearingPos = item.clearing ? getClearingPosition(tile, item.clearing) : { x: 0, y: 0 };
+            if (!clearingPos) return null;
+            const rotation = getTileRotation(tile.rotation);
+            const rad = (rotation * Math.PI) / 180;
+            const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
+            const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
+            const px = hexPos.x + rotatedX;
+            const py = hexPos.y + rotatedY;
+            return (
+              <g key={idx} className="dwelling-overlay">
+                <rect x={px-10} y={py-10} width={20} height={20} fill="#ffe4b5" stroke="#b8860b" strokeWidth={2} rx={4} />
+                <text x={px} y={py+5} textAnchor="middle" fontSize={12} fill="#b8860b" fontWeight="bold">🏠</text>
+                <title>{item.name} ({item.tile}{item.clearing ? ` clearing ${item.clearing}` : ''})</title>
+              </g>
+            );
+          })}
+
+          {/* Sound Overlay */}
+          {showSound && mapLocations && mapLocations.sound.map((item: any, idx: number) => {
+            const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === item.tile);
+            if (tileIdx === -1) return null;
+            const tile = mapData.tiles[tileIdx];
+            const [x, y] = parsePosition(tile.position);
+            const hexPos = getHexPosition(x, y);
+            const clearingPos = item.clearing ? getClearingPosition(tile, item.clearing) : { x: 0, y: 0 };
+            if (!clearingPos) return null;
+            const rotation = getTileRotation(tile.rotation);
+            const rad = (rotation * Math.PI) / 180;
+            const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
+            const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
+            const px = hexPos.x + rotatedX;
+            const py = hexPos.y + rotatedY;
+            return (
+              <g key={idx} className="sound-overlay">
+                <circle cx={px} cy={py} r={10} fill="#e0f7fa" stroke="#00796b" strokeWidth={2} />
+                <text x={px} y={py+5} textAnchor="middle" fontSize={12} fill="#00796b" fontWeight="bold">🔊</text>
+                <title>{item.name} ({item.tile}{item.clearing ? ` clearing ${item.clearing}` : ''})</title>
+              </g>
+            );
+          })}
+
+          {/* Warning Overlay */}
+          {showWarning && mapLocations && mapLocations.warning.map((item: any, idx: number) => {
+            const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === item.tile);
+            if (tileIdx === -1) return null;
+            const tile = mapData.tiles[tileIdx];
+            const [x, y] = parsePosition(tile.position);
+            const hexPos = getHexPosition(x, y);
             
-            const visibleLines = isAutoAdvancing
-              ? path.lines.filter((line, index) => index < currentStep)
-              : path.lines;
+            // Get tile data to find clear areas
+            const tileData = tileDataCache[tile.objectName];
+            let px = hexPos.x;
+            let py = hexPos.y;
+            
+            if (tileData) {
+              const block = tile.isEnchanted ? tileData.attributeBlocks.enchanted : tileData.attributeBlocks.normal;
+              if (block && block.offroad_xy) {
+                // Use offroad coordinates as a reference point for clear areas
+                const [offroadXPercent, offroadYPercent] = block.offroad_xy.split(',').map(Number);
+                
+                // Convert to pixel coordinates within the hex
+                const hexSize = 60;
+                const hexWidth = hexSize * 2;
+                const hexHeight = hexSize * Math.sqrt(3);
+                
+                // Scale from 100x100 to hex dimensions
+                const offroadX = (offroadXPercent / 100) * hexWidth - hexWidth / 2;
+                const offroadY = (offroadYPercent / 100) * hexHeight - hexHeight / 2;
+                
+                // Apply tile rotation
+                const rotation = getTileRotation(tile.rotation);
+                const rad = (rotation * Math.PI) / 180;
+                const rotatedX = offroadX * Math.cos(rad) - offroadY * Math.sin(rad);
+                const rotatedY = offroadX * Math.sin(rad) + offroadY * Math.cos(rad);
+                
+                px = hexPos.x + rotatedX;
+                py = hexPos.y + rotatedY;
+              }
+            }
+            
+            // Make warning chits 40% smaller (15 * 0.6 = 9)
+            const radius = 9;
+            const fontSize = 8; // Reduced from 14
+            
+            return (
+              <g key={idx} className="warning-overlay">
+                <circle cx={px} cy={py} r={radius} fill="#fff3e0" stroke="#f57c00" strokeWidth={2} />
+                <text x={px} y={py+3} textAnchor="middle" fontSize={fontSize} fill="#f57c00" fontWeight="bold">⚠️</text>
+                <title>{item.name} ({item.tile})</title>
+              </g>
+            );
+          })}
+
+          {/* Treasure Overlay */}
+          {showTreasure && mapLocations && mapLocations.treasure.map((item: any, idx: number) => {
+            const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === item.tile);
+            if (tileIdx === -1) return null;
+            const tile = mapData.tiles[tileIdx];
+            const [x, y] = parsePosition(tile.position);
+            const hexPos = getHexPosition(x, y);
+            const clearingPos = item.clearing ? getClearingPosition(tile, item.clearing) : { x: 0, y: 0 };
+            if (!clearingPos) return null;
+            const rotation = getTileRotation(tile.rotation);
+            const rad = (rotation * Math.PI) / 180;
+            const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
+            const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
+            const px = hexPos.x + rotatedX;
+            const py = hexPos.y + rotatedY;
+            return (
+              <g key={idx} className="treasure-overlay">
+                <circle cx={px} cy={py} r={10} fill="#fff3e0" stroke="#ff8f00" strokeWidth={2} />
+                <text x={px} y={py+5} textAnchor="middle" fontSize={12} fill="#ff8f00" fontWeight="bold">💰</text>
+                <title>{item.name} ({item.tile}{item.clearing ? ` clearing ${item.clearing}` : ''})</title>
+              </g>
+            );
+          })}
+
+          {/* Character movement paths and icons - rendered last so they're on top */}
+          {console.log('Rendering character paths:', characterPaths.length, 'paths:', characterPaths)}
+          {characterPaths.map((path, pathIndex) => {
+            // Always show all positions and lines (no stepping)
+            const visiblePositions = path.positions;
+            const visibleLines = path.lines;
+
+            console.log(`Rendering path ${pathIndex} for character ${path.character}:`, {
+              positions: visiblePositions.length,
+              lines: visibleLines.length
+            });
 
             return (
               <g key={`path-${pathIndex}`}>
@@ -869,6 +1011,40 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
                   const iconUrl = `/images/charsymbol/${path.character}_symbol.png`;
                   const iconSize = 13;
 
+                  // Check if character is in combat at this position
+                  const isInCombat = dynamicMapState?.battles?.some((battle: any) => {
+                    const { tileName, clearing } = parseLocation(battle.location);
+                    return tileName === pos.tile && clearing === pos.clearing;
+                  }) || false;
+
+                  // Check if character is hidden by looking at their enhanced actions
+                  const isHidden = (() => {
+                    if (!sessionData || !selectedDay) return false;
+                    const dayData = sessionData.days[selectedDay];
+                    if (!dayData) return false;
+                    
+                    // Find the character's turn for this day
+                    const characterTurn = dayData.characterTurns.find((turn: any) => turn.character === path.character);
+                    if (!characterTurn || !characterTurn.enhancedActions) return false;
+                    
+                    // Find the index of the hide action
+                    const hideActionIndex = characterTurn.enhancedActions.findIndex((action: any) => 
+                      action.action === 'Hide' && action.result === 'Success'
+                    );
+                    
+                    if (hideActionIndex === -1) return false; // No hide action
+                    
+                    // Check if this position occurs after the hide action
+                    // For movement positions, the step index corresponds to the action index
+                    if (pos.step > hideActionIndex) return true;
+                    
+                    // If this is the last position and they hid after their last move, show as hidden
+                    const isLastPosition = pos.step === path.positions.length - 1;
+                    const isLastAction = hideActionIndex === characterTurn.enhancedActions.length - 1;
+                    
+                    return isLastPosition && isLastAction;
+                  })();
+
                   return (
                     <g key={`pos-${posIndex}`}>
                       {/* Background circle */}
@@ -876,9 +1052,9 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
                         cx={px}
                         cy={py}
                         r={iconSize / 2 + 2}
-                        fill="#ffffff"
-                        stroke="#000000"
-                        strokeWidth="1"
+                        fill={isHidden ? "#000000" : "#ffffff"}
+                        stroke={isInCombat ? "#ff0000" : "#000000"}
+                        strokeWidth={isInCombat ? "2" : "1"}
                         opacity={pos.opacity}
                       />
                       {/* Character icon */}
@@ -889,7 +1065,9 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
                         width={iconSize}
                         height={iconSize}
                         opacity={pos.opacity}
-                        style={{ filter: 'brightness(1.2) contrast(1.3)' }}
+                        style={{ 
+                          filter: isHidden ? 'invert(1) brightness(1.2) contrast(1.3)' : 'brightness(1.2) contrast(1.3)' 
+                        }}
                         onError={(e) => {
                           console.error(`Failed to load character icon: ${iconUrl}`);
                           const target = e.target as SVGImageElement;
@@ -914,126 +1092,8 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
             );
           })}
 
-          {/* Dwellings Overlay */}
-          {showDwellings && mapLocations && mapLocations.dwellings.map((item: any, idx: number) => {
-            const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === item.tile);
-            if (tileIdx === -1) return null;
-            const tile = mapData.tiles[tileIdx];
-            const [x, y] = parsePosition(tile.position);
-            const hexPos = getHexPosition(x, y);
-            const clearingPos = item.clearing ? getClearingPosition(tile, item.clearing) : { x: 0, y: 0 };
-            if (!clearingPos) return null;
-            const rotation = getTileRotation(tile.rotation);
-            const rad = (rotation * Math.PI) / 180;
-            const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
-            const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
-            const px = hexPos.x + rotatedX;
-            const py = hexPos.y + rotatedY;
-            return (
-              <g key={idx} className="dwelling-overlay">
-                <rect x={px-10} y={py-10} width={20} height={20} fill="#ffe4b5" stroke="#b8860b" strokeWidth={2} rx={4} />
-                <text x={px} y={py+5} textAnchor="middle" fontSize={12} fill="#b8860b" fontWeight="bold">🏠</text>
-                <title>{item.name} ({item.tile}{item.clearing ? ` clearing ${item.clearing}` : ''})</title>
-              </g>
-            );
-          })}
-
-          {/* Sound Overlay */}
-          {showSound && mapLocations && mapLocations.sound.map((item: any, idx: number) => {
-            const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === item.tile);
-            if (tileIdx === -1) return null;
-            const tile = mapData.tiles[tileIdx];
-            const [x, y] = parsePosition(tile.position);
-            const hexPos = getHexPosition(x, y);
-            const clearingPos = item.clearing ? getClearingPosition(tile, item.clearing) : { x: 0, y: 0 };
-            if (!clearingPos) return null;
-            const rotation = getTileRotation(tile.rotation);
-            const rad = (rotation * Math.PI) / 180;
-            const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
-            const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
-            const px = hexPos.x + rotatedX;
-            const py = hexPos.y + rotatedY;
-            return (
-              <g key={idx} className="sound-overlay">
-                <circle cx={px} cy={py} r={10} fill="#e0f7fa" stroke="#00796b" strokeWidth={2} />
-                <text x={px} y={py+5} textAnchor="middle" fontSize={12} fill="#00796b" fontWeight="bold">🔊</text>
-                <title>{item.name} ({item.tile}{item.clearing ? ` clearing ${item.clearing}` : ''})</title>
-              </g>
-            );
-          })}
-
-          {/* Warning Overlay */}
-          {showWarning && mapLocations && mapLocations.warning.map((item: any, idx: number) => {
-            const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === item.tile);
-            if (tileIdx === -1) return null;
-            const tile = mapData.tiles[tileIdx];
-            const [x, y] = parsePosition(tile.position);
-            const hexPos = getHexPosition(x, y);
-            // Warning chits are for the whole tile, not a clearing
-            const px = hexPos.x;
-            const py = hexPos.y;
-            return (
-              <g key={idx} className="warning-overlay">
-                <circle cx={px} cy={py} r={15} fill="#fff3e0" stroke="#f57c00" strokeWidth={2} />
-                <text x={px} y={py+5} textAnchor="middle" fontSize={14} fill="#f57c00" fontWeight="bold">⚠️</text>
-                <title>{item.name} ({item.tile})</title>
-              </g>
-            );
-          })}
-
-          {/* Treasure Overlay */}
-          {showTreasure && mapLocations && mapLocations.treasure.map((item: any, idx: number) => {
-            const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === item.tile);
-            if (tileIdx === -1) return null;
-            const tile = mapData.tiles[tileIdx];
-            const [x, y] = parsePosition(tile.position);
-            const hexPos = getHexPosition(x, y);
-            const clearingPos = item.clearing ? getClearingPosition(tile, item.clearing) : { x: 0, y: 0 };
-            if (!clearingPos) return null;
-            const rotation = getTileRotation(tile.rotation);
-            const rad = (rotation * Math.PI) / 180;
-            const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
-            const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
-            const px = hexPos.x + rotatedX;
-            const py = hexPos.y + rotatedY;
-            return (
-              <g key={idx} className="treasure-overlay">
-                <circle cx={px} cy={py} r={12} fill="#fff8e1" stroke="#ff8f00" strokeWidth={2} />
-                <text x={px} y={py+5} textAnchor="middle" fontSize={12} fill="#ff8f00" fontWeight="bold">💰</text>
-                <title>{item.name} ({item.tile}{item.clearing ? ` clearing ${item.clearing}` : ''})</title>
-              </g>
-            );
-          })}
-
-          {/* Combat indicators */}
-          {dynamicMapState && dynamicMapState.battles && dynamicMapState.battles.map((battle: any, idx: number) => {
-            const { tileName, clearing } = parseLocation(battle.location);
-            const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === tileName);
-            if (tileIdx === -1) return null;
-            const tile = mapData.tiles[tileIdx];
-            const [x, y] = parsePosition(tile.position);
-            const hexPos = getHexPosition(x, y);
-            const clearingPos = clearing ? getClearingPosition(tile, clearing) : { x: 0, y: 0 };
-            if (!clearingPos) return null;
-            
-            const rotation = getTileRotation(tile.rotation);
-            const rad = (rotation * Math.PI) / 180;
-            const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
-            const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
-            const px = hexPos.x + rotatedX;
-            const py = hexPos.y + rotatedY;
-            
-            return (
-              <g key={`battle-${idx}`} className="combat-indicator">
-                <circle cx={px} cy={py} r={12} fill="#ffebee" stroke="#d32f2f" strokeWidth={2} />
-                <text x={px} y={py+4} textAnchor="middle" fontSize={14} fill="#d32f2f" fontWeight="bold">⚔️</text>
-                <title>Combat at {battle.location}</title>
-              </g>
-            );
-          })}
-
           {/* Character Icon Overlay (with toggles for living/dead) */}
-          {(showCharacterIcons && characterIcons.length > 0 && !dynamicMapState) && (
+          {(showCharacterIcons && characterIcons.length > 0 && characterPaths.length === 0) && (
             <g className="character-icon-overlay">
               {(() => {
                 const locationGroups: Record<string, CharacterPosition[]> = {};
@@ -1085,6 +1145,34 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
                     
                     console.log(`Loading character icon: ${icon.character} -> ${iconUrl}, dead=${icon.isDead}`);
                     
+                    // Check if character is in combat at this position
+                    const isInCombat = dynamicMapState?.battles?.some((battle: any) => {
+                      const { tileName, clearing } = parseLocation(battle.location);
+                      return tileName === icon.tile && clearing === icon.clearing;
+                    }) || false;
+
+                    // Check if character is hidden by looking at their enhanced actions
+                    const isHidden = (() => {
+                      if (!sessionData || !selectedDay) return false;
+                      const dayData = sessionData.days[selectedDay];
+                      if (!dayData) return false;
+                      
+                      // Find the character's turn for this day
+                      const characterTurn = dayData.characterTurns.find((turn: any) => turn.character === icon.character);
+                      if (!characterTurn || !characterTurn.enhancedActions) return false;
+                      
+                      // Find the index of the hide action
+                      const hideActionIndex = characterTurn.enhancedActions.findIndex((action: any) => 
+                        action.action === 'Hide' && action.result === 'Success'
+                      );
+                      
+                      if (hideActionIndex === -1) return false; // No hide action
+                      
+                      // For static icons, we show hidden if they hid at any point during their turn
+                      // since static icons represent the final position
+                      return true;
+                    })();
+                    
                     return (
                       <g key={icon.character}>
                         {/* Background circle for better visibility */}
@@ -1092,9 +1180,9 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
                           cx={px}
                           cy={py}
                           r={iconSize / 2 + 2}
-                          fill={icon.isDead ? "#2d1b1b" : "#ffffff"}
-                          stroke={icon.isDead ? "#8b0000" : "#000000"}
-                          strokeWidth="1"
+                          fill={icon.isDead ? "#2d1b1b" : (isHidden ? "#000000" : "#ffffff")}
+                          stroke={icon.isDead ? "#8b0000" : (isInCombat ? "#ff0000" : "#000000")}
+                          strokeWidth={icon.isDead ? "1" : (isInCombat ? "2" : "1")}
                           opacity="0.9"
                         />
                         
@@ -1138,7 +1226,10 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
                           y={py - iconSize/2}
                           width={iconSize}
                           height={iconSize}
-                          style={{ filter: 'brightness(1.2) contrast(1.3)' }}
+                          style={{ 
+                            filter: icon.isDead ? 'brightness(1.2) contrast(1.3)' : 
+                                   (isHidden ? 'invert(1) brightness(1.2) contrast(1.3)' : 'brightness(1.2) contrast(1.3)')
+                          }}
                           onError={(e) => {
                             console.error(`Failed to load character icon: ${iconUrl}`);
                             const target = e.target as SVGImageElement;
@@ -1155,8 +1246,8 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
             </g>
           )}
 
-          {/* Dynamic Character Positions */}
-          {dynamicMapState && dynamicMapState.characterPositions && Object.entries(dynamicMapState.characterPositions).map(([character, position]: [string, any]) => {
+          {/* Dynamic Character Positions - only show when there are no character paths */}
+          {dynamicMapState && dynamicMapState.characterPositions && characterPaths.length === 0 && Object.entries(dynamicMapState.characterPositions).map(([character, position]: [string, any]) => {
             const { tileName, clearing } = parseLocation(position.endLocation);
             const tileIdx = (dynamicMapState.tiles || mapData.tiles).findIndex((t: Tile) => t.objectName === tileName);
             if (tileIdx === -1) return null;
@@ -1176,15 +1267,43 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
             const iconUrl = `/images/charsymbol/${character}_symbol.png`;
             const iconSize = 13;
             
+            // Check if character is in combat at this position
+            const isInCombat = dynamicMapState?.battles?.some((battle: any) => {
+              const { tileName: battleTile, clearing: battleClearing } = parseLocation(battle.location);
+              return battleTile === tileName && battleClearing === clearing;
+            }) || false;
+
+            // Check if character is hidden by looking at their enhanced actions
+            const isHidden = (() => {
+              if (!sessionData || !selectedDay) return false;
+              const dayData = sessionData.days[selectedDay];
+              if (!dayData) return false;
+              
+              // Find the character's turn for this day
+              const characterTurn = dayData.characterTurns.find((turn: any) => turn.character === character);
+              if (!characterTurn || !characterTurn.enhancedActions) return false;
+              
+              // Find the index of the hide action
+              const hideActionIndex = characterTurn.enhancedActions.findIndex((action: any) => 
+                action.action === 'Hide' && action.result === 'Success'
+              );
+              
+              if (hideActionIndex === -1) return false; // No hide action
+              
+              // For dynamic positions, we show hidden if they hid at any point during their turn
+              // since dynamic positions represent the final position
+              return true;
+            })();
+            
             return (
               <g key={`dynamic-${character}`} className="dynamic-character">
                 <circle
                   cx={px}
                   cy={py}
                   r={iconSize / 2 + 2}
-                  fill="#ffffff"
-                  stroke="#000000"
-                  strokeWidth="1"
+                  fill={isHidden ? "#000000" : "#ffffff"}
+                  stroke={isInCombat ? "#ff0000" : "#000000"}
+                  strokeWidth={isInCombat ? "2" : "1"}
                   opacity="0.9"
                 />
                 <image
@@ -1193,7 +1312,9 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
                   y={py - iconSize/2}
                   width={iconSize}
                   height={iconSize}
-                  style={{ filter: 'brightness(1.2) contrast(1.3)' }}
+                  style={{ 
+                    filter: isHidden ? 'invert(1) brightness(1.2) contrast(1.3)' : 'brightness(1.2) contrast(1.3)' 
+                  }}
                   onError={(e) => {
                     console.error(`Failed to load character icon: ${iconUrl}`);
                     const target = e.target as SVGImageElement;

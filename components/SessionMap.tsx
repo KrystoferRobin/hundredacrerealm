@@ -597,11 +597,46 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
           const tile = mapData.tiles[tileIdx];
           const [x, y] = parsePosition(tile.position);
           const hexPos = getHexPosition(x, y);
-          // Warning chits are for the whole tile, not a clearing
+          
+          // Get tile data to find clear areas
+          const tileData = tileDataCache[tile.objectName];
+          let px = hexPos.x;
+          let py = hexPos.y;
+          
+          if (tileData) {
+            const block = tile.isEnchanted ? tileData.attributeBlocks.enchanted : tileData.attributeBlocks.normal;
+            if (block && block.offroad_xy) {
+              // Use offroad coordinates as a reference point for clear areas
+              const [offroadXPercent, offroadYPercent] = block.offroad_xy.split(',').map(Number);
+              
+              // Convert to pixel coordinates within the hex
+              const hexSize = 60;
+              const hexWidth = hexSize * 2;
+              const hexHeight = hexSize * Math.sqrt(3);
+              
+              // Scale from 100x100 to hex dimensions
+              const offroadX = (offroadXPercent / 100) * hexWidth - hexWidth / 2;
+              const offroadY = (offroadYPercent / 100) * hexHeight - hexHeight / 2;
+              
+              // Apply tile rotation
+              const rotation = getTileRotation(tile.rotation);
+              const rad = (rotation * Math.PI) / 180;
+              const rotatedX = offroadX * Math.cos(rad) - offroadY * Math.sin(rad);
+              const rotatedY = offroadX * Math.sin(rad) + offroadY * Math.cos(rad);
+              
+              px = hexPos.x + rotatedX;
+              py = hexPos.y + rotatedY;
+            }
+          }
+          
+          // Make warning chits 40% smaller (12 * 0.6 = 7.2, rounded to 7)
+          const size = 7;
+          const fontSize = 8; // Reduced from 14
+          
           return (
             <g key={idx} className="warning-overlay">
-              <rect x={hexPos.x-12} y={hexPos.y-12} width={24} height={24} fill="#fff3cd" stroke="#856404" strokeWidth={2} rx={6} />
-              <text x={hexPos.x} y={hexPos.y+6} textAnchor="middle" fontSize={14} fill="#856404" fontWeight="bold">⚠️</text>
+              <rect x={px-size} y={py-size} width={size*2} height={size*2} fill="#fff3cd" stroke="#856404" strokeWidth={2} rx={3} />
+              <text x={px} y={py+3} textAnchor="middle" fontSize={fontSize} fill="#856404" fontWeight="bold">⚠️</text>
               <title>{item.name} ({item.tile})</title>
             </g>
           );
