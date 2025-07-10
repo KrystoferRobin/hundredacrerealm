@@ -333,13 +333,14 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
   };
 
   // Calculate hex grid position using standard axial hex grid formula
-  const getHexPosition = (x: number, y: number) => {
+  const getHexPosition = (q: number, r: number) => {
     const hexSize = 60;
     const hexWidth = hexSize * 2;
     const hexHeight = hexSize * Math.sqrt(3);
-    const pixelX = x * (hexWidth * 0.75);
-    const pixelY = y * hexHeight + x * (hexHeight / 2);
-    return { x: pixelX, y: pixelY };
+    return {
+      x: hexWidth * (3/4) * q,
+      y: hexHeight * (r + q/2)
+    };
   };
 
   // Calculate SVG dimensions dynamically based on actual tiles

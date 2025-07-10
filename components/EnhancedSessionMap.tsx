@@ -232,64 +232,68 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
       return;
     }
     
-    // Try to use detailed movement data from map state if available
+    // Use detailed movement data from map state if available
     if (dynamicMapState && dynamicMapState.detailedMovement) {
       const paths: CharacterMovementPath[] = [];
-      
       Object.entries(dynamicMapState.detailedMovement).forEach(([character, movementData]: [string, any]) => {
         if (movementData.movementPath && movementData.hasEnhancedData) {
-          const positions: Array<{
-            tile: string;
-            clearing: string;
-            step: number;
-            opacity: number;
-          }> = [];
-          
-          const lines: Array<{
-            from: { x: number; y: number };
-            to: { x: number; y: number };
-            opacity: number;
-          }> = [];
-          
-          // Parse each location in the movement path
+          const positions: Array<{ tile: string; clearing: string; step: number; opacity: number; }> = [];
+          const lines: Array<{ from: { x: number; y: number }; to: { x: number; y: number }; opacity: number; }> = [];
+          // Start with startLocation if available
+          const charPos = dynamicMapState.characterPositions[character];
+          let step = 0;
+          if (charPos && charPos.startLocation) {
+            const match = charPos.startLocation.match(/^(.+?) (\d+)$/);
+            if (match) {
+              positions.push({
+                tile: match[1],
+                clearing: match[2],
+                step: step++,
+                opacity: 0.5
+              });
+            }
+          }
+          // Add each movement step
           movementData.movementPath.forEach((location: string, index: number) => {
             const match = location.match(/^(.+?) (\d+)$/);
             if (match) {
-              const tileName = match[1];
-              const clearing = match[2];
-              const step = index;
-              const opacity = 0.5 + (step / (movementData.movementPath.length - 1)) * 0.5; // 50% to 100%
-              
               positions.push({
-                tile: tileName,
-                clearing,
-                step,
-                opacity
+                tile: match[1],
+                clearing: match[2],
+                step: step++,
+                opacity: 0.5 + (step / (movementData.movementPath.length + 1)) * 0.5
               });
-              
-              // Add line from previous position
-              if (positions.length > 1) {
-                const prevPos = positions[positions.length - 2];
-                lines.push({
-                  from: { x: 0, y: 0 }, // Will be calculated later
-                  to: { x: 0, y: 0 }, // Will be calculated later
-                  opacity: prevPos.opacity
+            }
+          });
+          // Optionally, add endLocation if not already last
+          if (charPos && charPos.endLocation) {
+            const match = charPos.endLocation.match(/^(.+?) (\d+)$/);
+            if (match) {
+              const last = positions[positions.length - 1];
+              if (!last || last.tile !== match[1] || last.clearing !== match[2]) {
+                positions.push({
+                  tile: match[1],
+                  clearing: match[2],
+                  step: step++,
+                  opacity: 1
                 });
               }
             }
-          });
-          
-          if (positions.length > 0) {
-            paths.push({
-              character,
-              positions,
-              lines
+          }
+          // Add lines between each step
+          for (let i = 1; i < positions.length; i++) {
+            lines.push({
+              from: { x: 0, y: 0 },
+              to: { x: 0, y: 0 },
+              opacity: positions[i - 1].opacity
             });
+          }
+          if (positions.length > 0) {
+            paths.push({ character, positions, lines });
           }
         }
       });
-      
-      // Calculate line positions immediately if map data is available
+      // Calculate line positions if map data is available
       if (mapData && paths.length > 0) {
         const updatedPaths = calculateLinePositions(paths);
         setCharacterPaths(updatedPaths);
@@ -297,9 +301,8 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
         setCharacterPaths(paths);
       }
     } else {
-      // Fall back to parsing from session data
+      // Fallback to parsing from session data
       const paths = parseCharacterPaths(dayData);
-      // Calculate line positions immediately if map data is available
       if (mapData && paths.length > 0) {
         const updatedPaths = calculateLinePositions(paths);
         setCharacterPaths(updatedPaths);
@@ -687,16 +690,13 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
     return [x, y];
   };
 
-  const getHexPosition = (x: number, y: number) => {
+  const getHexPosition = (q: number, r: number) => {
     const hexSize = 60;
     const hexWidth = hexSize * 2;
     const hexHeight = hexSize * Math.sqrt(3);
-    const PAD_X = hexWidth / 2;
-    const PAD_Y = hexHeight / 2;
-    
     return {
-      x: x * (hexWidth * 0.75) + PAD_X,
-      y: y * hexHeight + (x % 2) * (hexHeight / 2) + PAD_Y
+      x: hexWidth * (3/4) * q,
+      y: hexHeight * (r + q/2)
     };
   };
 
