@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 interface CharacterStats {
   gamesPlayed: number;
@@ -27,6 +27,7 @@ export default function PlayersPage() {
   const [players, setPlayers] = useState<Player[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const router = useRouter();
 
   useEffect(() => {
     const fetchPlayers = async () => {
@@ -46,6 +47,11 @@ export default function PlayersPage() {
 
     fetchPlayers();
   }, []);
+
+  const handleCharacterClick = (characterName: string) => {
+    // Navigate to home page with character selected
+    router.push(`/?page=characters&character=${encodeURIComponent(characterName)}`);
+  };
 
   if (loading) {
     return (
@@ -170,39 +176,40 @@ export default function PlayersPage() {
                   {/* Most Played Character */}
                   <div className="bg-[#f6ecd6] p-3 rounded border border-[#bfa76a]">
                     <p className="text-xs font-semibold text-[#6b3e26] font-serif mb-1">Most Played Character</p>
-                    <Link 
-                      href={`/characters/${encodeURIComponent(player.mostPlayedCharacter)}`}
-                      className="text-[#4b3e26] font-serif hover:text-[#bfa76a] transition-colors duration-200 underline"
+                    <button 
+                      onClick={() => handleCharacterClick(player.mostPlayedCharacter)}
+                      className="text-[#4b3e26] font-serif hover:text-[#bfa76a] transition-colors duration-200 underline text-left"
                     >
                       {player.mostPlayedCharacter} ({player.mostPlayedCharacterCount} times)
-                    </Link>
+                    </button>
                   </div>
 
                   {/* Characters Played */}
                   {player.charactersPlayed.length > 0 && (
                     <div className="bg-[#f6ecd6] p-3 rounded border border-[#bfa76a]">
                       <p className="text-xs font-semibold text-[#6b3e26] font-serif mb-1">Characters Played</p>
-                      <div className="space-y-1">
-                        {player.charactersPlayed.map((character, index) => {
+                      <div className="flex flex-wrap gap-1">
+                        {player.charactersPlayed.sort().map((character, index) => {
                           const stats = player.characterStats[character];
-                          const hasPositiveScore = stats && stats.bestScore > 0;
+                          const bestScore = stats?.bestScore || 0;
+                          const gamesPlayed = stats?.gamesPlayed || 0;
+                          
+                          // Determine background color based on score
+                          let bgColor = 'bg-[#bfa76a]'; // default brown for 0
+                          if (bestScore > 0) {
+                            bgColor = 'bg-green-200 border border-green-300'; // green for positive
+                          } else if (bestScore < 0) {
+                            bgColor = 'bg-gray-200 border border-gray-300'; // light grey for negative
+                          }
                           
                           return (
-                            <div key={index} className="flex items-center justify-between">
-                              <Link 
-                                href={`/characters/${encodeURIComponent(character)}`}
-                                className="text-xs hover:text-[#bfa76a] transition-colors duration-200 underline"
-                              >
-                                {character}
-                              </Link>
-                              <span className={`text-xs px-2 py-1 rounded ${
-                                hasPositiveScore 
-                                  ? 'bg-green-200 text-green-800 border border-green-300' 
-                                  : 'bg-[#bfa76a] text-[#6b3e26]'
-                              }`}>
-                                ({stats?.gamesPlayed || 0} games - {stats?.bestScore || 0})
-                              </span>
-                            </div>
+                            <button 
+                              key={index}
+                              onClick={() => handleCharacterClick(character)}
+                              className={`text-xs px-2 py-1 rounded ${bgColor} text-[#6b3e26] hover:opacity-80 transition-opacity duration-200 cursor-pointer`}
+                            >
+                              {character} ({bestScore}) x{gamesPlayed}
+                            </button>
                           );
                         })}
                       </div>
