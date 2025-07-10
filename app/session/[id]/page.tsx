@@ -227,7 +227,7 @@ export default function Page({ params }: { params: { id: string } }) {
         
         setAutoAdvanceInterval(interval);
       } else {
-        // Reached the end, stop auto-advancing
+        // Reached the end, stop auto-advance
         setIsAutoAdvancing(false);
       }
     } else if (autoAdvanceInterval) {
@@ -1296,6 +1296,33 @@ export default function Page({ params }: { params: { id: string } }) {
     loadItemCache();
   }, [sessionId]);
 
+  // Prefetch all items and spells for all characters when inventories are loaded
+  useEffect(() => {
+    if (!characterInventories) return;
+    const allNames = new Set();
+    Object.values(characterInventories).forEach((char: any) => {
+      if (!char.items) return;
+      [
+        char.items.weapons,
+        char.items.armor,
+        char.items.treasures,
+        char.items.great_treasures,
+        char.items.spells,
+        char.items.natives,
+        char.items.other,
+        char.items.unknown
+      ].forEach(arr => {
+        if (Array.isArray(arr)) {
+          arr.forEach(item => {
+            if (item && item.name) allNames.add(item.name);
+          });
+        }
+      });
+    });
+    const uniqueNames = Array.from(allNames);
+    uniqueNames.forEach(name => { fetchItem(String(name)); });
+  }, [characterInventories]);
+
   const renderCharacterBox = (characterName: string, playerName: string) => {
     const inventory = characterInventories?.[characterName]?.items;
     const isDead = deadCharacters.has(characterName);
@@ -1363,18 +1390,23 @@ export default function Page({ params }: { params: { id: string } }) {
     // Render helpers for each line
     const renderItemLine = (items: any[], icon: React.ReactNode = null, extraClass = '') => (
       <div className={`flex flex-wrap items-center gap-x-2 gap-y-1 ${extraClass}`}>
-        {items.map((item, idx) => (
-          <span key={item.name} className={"relative group inline-block text-sm cursor-pointer" + (icon ? ' flex items-center' : '')} onMouseEnter={() => fetchItem(item.name)}>
-            {icon && <span className="mr-1">{icon}</span>}
-            <span className={isLargeTreasure(item) ? 'bg-yellow-200 border border-yellow-400 rounded px-1' : ''}>
-              {item.name}
+        {items.map((item, idx) => {
+          const cached = itemCache[item.name];
+          const isSpell = cached?.attributeBlocks?.this?.spell;
+          const isLargeTreasure = cached?.attributeBlocks?.this?.treasure === 'large';
+          return (
+            <span key={item.name} className={"relative group inline-block text-sm cursor-pointer" + (icon ? ' flex items-center' : '')}>
+              {icon && <span className="mr-1">{icon}</span>}
+              <span className={isLargeTreasure ? 'bg-yellow-200 border border-yellow-400 rounded px-1' : ''} style={isSpell ? { color: '#2563eb', fontWeight: 600 } : {}}>
+                {item.name}
+              </span>
+              {idx < items.length - 1 ? ',' : ''}
+              <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
+                {renderEquipmentTooltip(item.name)}
+              </div>
             </span>
-            {idx < items.length - 1 ? ',' : ''}
-            <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
-              {renderEquipmentTooltip(item.name)}
-            </div>
-          </span>
-        ))}
+          );
+        })}
       </div>
     );
 
@@ -1384,14 +1416,17 @@ export default function Page({ params }: { params: { id: string } }) {
         <div className="mt-2">
           <span className="text-blue-700 font-semibold text-xs">Spells: </span>
           <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-            {spellItems.map((item, idx) => (
-              <span key={item.name} className="relative group inline-block text-xs cursor-pointer text-blue-700" onMouseEnter={() => fetchItem(item.name)}>
-                {item.name}{idx < spellItems.length - 1 ? ',' : ''}
-                <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
-                  {renderEquipmentTooltip(item.name)}
-                </div>
-              </span>
-            ))}
+            {spellItems.map((item, idx) => {
+              const cached = itemCache[item.name];
+              return (
+                <span key={item.name} className="relative group inline-block text-xs cursor-pointer text-blue-700 font-semibold">
+                  {item.name}{idx < spellItems.length - 1 ? ',' : ''}
+                  <div className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
+                    {renderEquipmentTooltip(item.name)}
+                  </div>
+                </span>
+              );
+            })}
           </div>
         </div>
       )

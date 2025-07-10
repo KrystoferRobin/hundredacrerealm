@@ -106,6 +106,13 @@ export default function CharacterDetail({ characterName, setSelectedCharacter, s
     }
   }, [characterName]);
 
+  // Pre-load all equipment and spell items when character data is available
+  useEffect(() => {
+    if (character) {
+      preloadItems();
+    }
+  }, [character]);
+
   // Function to get the character portrait path
   const getCharacterPortraitPath = (characterName: string) => {
     // Handle special case for Sorceror/Sorcerer spelling inconsistency
@@ -207,6 +214,31 @@ export default function CharacterDetail({ characterName, setSelectedCharacter, s
       console.error(`Failed to fetch item ${itemName}:`, error);
       return null;
     }
+  };
+
+  // Function to pre-load all equipment and spell items
+  const preloadItems = async () => {
+    if (!character) return;
+
+    const allItems: string[] = [];
+    
+    // Collect all equipment and spell names from all levels
+    Object.keys(character.attributeBlocks).forEach(levelKey => {
+      if (levelKey.startsWith('level_')) {
+        const levelInfo = getLevelInfo(levelKey);
+        if (levelInfo) {
+          allItems.push(...levelInfo.equipment);
+          allItems.push(...levelInfo.spells);
+        }
+      }
+    });
+
+    // Remove duplicates
+    const uniqueItems = Array.from(new Set(allItems));
+    
+    // Pre-load all items
+    const promises = uniqueItems.map(itemName => fetchItem(itemName));
+    await Promise.all(promises);
   };
 
   // Function to get chit color as CSS color
