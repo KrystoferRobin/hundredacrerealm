@@ -43,6 +43,7 @@ export default function CharacterDetail({ characterName, setSelectedCharacter, s
   const [characterStats, setCharacterStats] = useState<any>(null);
   const [statsLoading, setStatsLoading] = useState(true);
   const [sessionTitles, setSessionTitles] = useState<Record<string, { mainTitle: string; subtitle: string }>>({});
+  const [showAllGames, setShowAllGames] = useState(false);
 
   useEffect(() => {
     const fetchCharacter = async () => {
@@ -510,7 +511,7 @@ export default function CharacterDetail({ characterName, setSelectedCharacter, s
                     <div className="mt-3 pt-3 border-t border-[#bfa76a]">
                       <p className="text-xs font-semibold text-[#6b3e26] font-serif mb-2">Recent Games</p>
                       <div className="space-y-1 max-h-32 overflow-y-auto">
-                        {characterStats.games.slice(0, 5).map((game: any, index: number) => {
+                        {characterStats.games.slice(0, showAllGames ? characterStats.games.length : 5).map((game: any, index: number) => {
                           const sessionTitle = sessionTitles[game.sessionId];
                           const displayTitle = sessionTitle ? sessionTitle.mainTitle : (game.sessionTitle || game.sessionId);
                           
@@ -526,10 +527,37 @@ export default function CharacterDetail({ characterName, setSelectedCharacter, s
                                 {displayTitle}
                               </button>
                               <span className="text-[#6b3e26] font-serif ml-2">({game.player})</span>
+                              <span className={`font-serif ml-2 ${
+                                typeof game.score === 'number' 
+                                  ? game.score < 0 
+                                    ? 'text-red-600' 
+                                    : game.score > 0 
+                                      ? 'text-green-600' 
+                                      : 'text-black'
+                                  : 'text-black'
+                              }`}>
+                                Score: {game.score}
+                              </span>
                             </div>
                           );
                         })}
                       </div>
+                      {characterStats.games.length > 5 && (
+                        <button
+                          onClick={() => setShowAllGames(!showAllGames)}
+                          className="mt-2 text-xs text-[#6b3e26] font-serif hover:text-[#bfa76a] hover:underline cursor-pointer transition-colors duration-200 flex items-center"
+                        >
+                          {showAllGames ? (
+                            <>
+                              <span className="mr-1">↑</span> Show Less
+                            </>
+                          ) : (
+                            <>
+                              <span className="mr-1">↓</span> Show All ({characterStats.games.length} games)
+                            </>
+                          )}
+                        </button>
+                      )}
                     </div>
                   )}
                 </div>

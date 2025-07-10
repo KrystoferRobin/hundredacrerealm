@@ -29,6 +29,16 @@ export async function GET(
       );
     }
 
+    // Calculate best score and average score from games data
+    let bestScore = 0;
+    let averageScore = 0;
+    
+    if (characterStats.games && characterStats.games.length > 0) {
+      const scores = characterStats.games.map((game: any) => game.score || 0);
+      bestScore = Math.max(...scores);
+      averageScore = scores.reduce((sum: number, score: number) => sum + score, 0) / scores.length;
+    }
+
     // Get top killers and killed for this character
     const topKillers = Object.entries(characterStats.killers || {})
       .sort(([,a], [,b]) => (b as number) - (a as number))
@@ -49,6 +59,8 @@ export async function GET(
     const response = {
       characterName,
       ...characterStats,
+      bestScore,
+      averageScore,
       topKillers,
       topKilled,
       treasureStats,
