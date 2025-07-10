@@ -518,7 +518,18 @@ export default function CharacterDetail({ characterName, setSelectedCharacter, s
                           return (
                             <div key={index} className="text-xs">
                               <button
-                                onClick={() => {
+                                onClick={async () => {
+                                  try {
+                                    // Process the session first to ensure enhanced data is available
+                                    const response = await fetch(`/api/sessions/${game.sessionId}/process`, {
+                                      method: 'POST'
+                                    });
+                                    if (!response.ok) {
+                                      console.warn('Session processing failed, but continuing to view session');
+                                    }
+                                  } catch (error) {
+                                    console.warn('Session processing error:', error);
+                                  }
                                   setSelectedSessionId(game.sessionId);
                                   setSelectedPage('session');
                                 }}

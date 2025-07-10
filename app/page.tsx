@@ -1459,7 +1459,18 @@ export default function Home() {
                               {String(char.bestSessionId) in hofSessionTitles && (
                                 <div className="ml-11">
                                   <button
-                                    onClick={() => {
+                                    onClick={async () => {
+                                      try {
+                                        // Process the session first to ensure enhanced data is available
+                                        const response = await fetch(`/api/sessions/${char.bestSessionId}/process`, {
+                                          method: 'POST'
+                                        });
+                                        if (!response.ok) {
+                                          console.warn('Session processing failed, but continuing to view session');
+                                        }
+                                      } catch (error) {
+                                        console.warn('Session processing error:', error);
+                                      }
                                       setSelectedSessionId(char.bestSessionId);
                                       setSelectedPage('session');
                                     }}
@@ -1539,7 +1550,18 @@ export default function Home() {
                                       className="hover:text-[#bfa76a] hover:underline cursor-pointer transition-colors duration-200"
                                     >{player.characterSlug}</button> in 
                                     <button
-                                      onClick={() => {
+                                      onClick={async () => {
+                                        try {
+                                          // Process the session first to ensure enhanced data is available
+                                          const response = await fetch(`/api/sessions/${player.sessionId}/process`, {
+                                            method: 'POST'
+                                          });
+                                          if (!response.ok) {
+                                            console.warn('Session processing failed, but continuing to view session');
+                                          }
+                                        } catch (error) {
+                                          console.warn('Session processing error:', error);
+                                        }
                                         setSelectedSessionId(player.sessionId);
                                         setSelectedPage('session');
                                       }}
@@ -1639,7 +1661,21 @@ export default function Home() {
                             </span>
                           </div>
                           <button
-                            onClick={() => { setSelectedSessionId(session.id); setSelectedPage('session'); }}
+                            onClick={async () => { 
+                              try {
+                                // Process the session first to ensure enhanced data is available
+                                const response = await fetch(`/api/sessions/${session.id}/process`, {
+                                  method: 'POST'
+                                });
+                                if (!response.ok) {
+                                  console.warn('Session processing failed, but continuing to view session');
+                                }
+                              } catch (error) {
+                                console.warn('Session processing error:', error);
+                              }
+                              setSelectedSessionId(session.id); 
+                              setSelectedPage('session'); 
+                            }}
                             className="text-[#6b3e26] hover:text-[#bfa76a] hover:underline cursor-pointer text-xs font-semibold text-right ml-2 font-serif transition-colors duration-200"
                           >
                             View
