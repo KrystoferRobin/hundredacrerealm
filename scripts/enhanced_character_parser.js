@@ -294,76 +294,93 @@ function parseCharacterXML(xmlPath, characterId) {
 }
 
 function enhanceSessionData(sessionData, xmlPath) {
-  // Get character IDs from the session data
-  const characterIds = {};
-  
-  // Extract character names from the session data
+  // Get character names from the session data
+  const sessionCharacters = new Set();
   Object.values(sessionData.days).forEach(dayData => {
     dayData.characterTurns.forEach(turn => {
-      if (!characterIds[turn.character]) {
-        // We'll need to map character names to IDs
-        // For now, we'll use a simple mapping based on the XML structure
-        characterIds[turn.character] = null;
-      }
+      sessionCharacters.add(turn.character);
     });
   });
   
-  // Parse XML to get character IDs and detailed actions
+  console.log(`Characters in session: ${Array.from(sessionCharacters).join(', ')}`);
+  
+  // Parse XML to get detailed actions for each character
   if (fs.existsSync(xmlPath)) {
     const xmlContent = fs.readFileSync(xmlPath, 'utf8');
     
-    // Extract character information from XML
-    const characterRegex = /<GameObject id="(\d+)" name="([^"]+)"/g;
-    let charMatch;
+    // For each character in the session, find their GameObject blocks
+    const characterData = {};
     
-    while ((charMatch = characterRegex.exec(xmlContent)) !== null) {
-      const charId = charMatch[1];
-      const charName = charMatch[2];
+    sessionCharacters.forEach(characterName => {
+      console.log(`\nSearching for character: ${characterName}`);
       
-      // Map character names to IDs - only for actual characters (not chits or other objects)
-      if (characterIds.hasOwnProperty(charName)) {
-        characterIds[charName] = charId;
-        console.log(`Mapped character "${charName}" to ID ${charId}`);
+      // Find all GameObject blocks for this character
+      const characterBlocks = [];
+      const charRegex = new RegExp(`<GameObject id="(\\d+)"[^>]*name="${characterName}"[^>]*>([\\s\\S]*?)</GameObject>`, 'g');
+      let charMatch;
+      
+      while ((charMatch = charRegex.exec(xmlContent)) !== null) {
+        const charId = charMatch[1];
+        const charBlock = charMatch[2];
+        characterBlocks.push({ id: charId, content: charBlock });
+        console.log(`Found GameObject ${charId} for ${characterName}`);
       }
-    }
+      
+      // Find the block with RS_PB__ data (movement history)
+      let bestBlock = null;
+      let bestBlockId = null;
+      
+      characterBlocks.forEach(block => {
+        if (block.content.includes('<AttributeBlock blockName="RS_PB__">')) {
+          console.log(`Found RS_PB__ block in GameObject ${block.id} for ${characterName}`);
+          bestBlock = block.content;
+          bestBlockId = block.id;
+        }
+      });
+      
+      if (bestBlock) {
+        // Parse the RS_PB__ block for movement data
+        const timeline = parseCharacterXML(xmlPath, bestBlockId);
+        if (timeline && Object.keys(timeline).length > 0) {
+          characterData[characterName] = {
+            gameObjectId: bestBlockId,
+            timeline: timeline
+          };
+          console.log(`Successfully parsed timeline for ${characterName} with ${Object.keys(timeline).length} days`);
+        } else {
+          console.log(`No timeline data found for ${characterName}`);
+        }
+      } else {
+        console.log(`No RS_PB__ block found for ${characterName}`);
+      }
+    });
     
     // Now enhance each day's character turns with detailed actions
     Object.keys(sessionData.days).forEach(dayKey => {
       const dayData = sessionData.days[dayKey];
       
       dayData.characterTurns.forEach(turn => {
-        const charId = characterIds[turn.character];
+        const characterName = turn.character;
+        const charData = characterData[characterName];
         
-        if (charId) {
-          console.log(`Processing enhanced actions for ${turn.character} (ID: ${charId}) on day ${dayKey}`);
-          // Parse detailed actions for this character
-          const detailedTimeline = parseCharacterXML(xmlPath, charId);
+        if (charData && charData.timeline) {
+          // Find the timeline for this specific day
+          const dayTimeline = charData.timeline[dayKey];
           
-          if (detailedTimeline && detailedTimeline[dayKey]) {
-            // Replace generic actions with detailed ones
-            const detailedActions = detailedTimeline[dayKey];
-            console.log(`Found ${detailedActions.length} detailed actions for ${turn.character} on ${dayKey}:`, detailedActions);
-            
-            // Create enhanced actions array
-            const enhancedActions = detailedActions.map(detailedAction => ({
-              action: detailedAction.action,
-              result: detailedAction.visibilityResult === 'T' ? 'Success' : 
-                     detailedAction.visibilityResult === 'F' ? 'No result' : 'Completed',
-              rawAction: detailedAction.rawAction
+          if (dayTimeline && dayTimeline.length > 0) {
+            // Add detailed actions to the turn
+            turn.enhancedActions = dayTimeline.map(action => ({
+              action: action.action,
+              result: action.visibilityResult === 'T' ? 'Success' : 
+                     action.visibilityResult === 'F' ? 'No result' : 'Completed',
+              rawAction: action.rawAction
             }));
             
-            // Update the turn with enhanced actions
-            turn.enhancedActions = enhancedActions;
-            console.log(`Enhanced actions for ${turn.character}:`, enhancedActions);
+            console.log(`Enhanced ${characterName} on ${dayKey} with ${dayTimeline.length} detailed actions`);
           } else {
-            console.log(`No detailed timeline found for ${turn.character} on ${dayKey}`);
-            // Check what days are available in the timeline
-            if (detailedTimeline) {
-              console.log(`Available days in timeline:`, Object.keys(detailedTimeline));
-            }
+            console.log(`No detailed timeline found for ${characterName} on ${dayKey}`);
+            console.log(`Available days in timeline: ${Object.keys(charData.timeline)}`);
           }
-        } else {
-          console.log(`No character ID found for ${turn.character}`);
         }
       });
     });
