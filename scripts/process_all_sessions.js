@@ -89,22 +89,16 @@ async function processAllSessions() {
         console.log('No .rslog file found, skipping log parser');
       }
       
-      // 6. Run map parsers (only if .rsgame exists)
+      // 6. RealmSpeak-aligned save extraction (map_data, map_locations, game_state)
       if (fs.existsSync('extracted_game.xml')) {
-        console.log('Running map tile parser (map_data.json)...');
+        console.log('Running RealmSpeak save extractor...');
         try {
-          execSync(`node ${resolveAppPath('scripts/parse_map_data.js')}`, { stdio: 'inherit' });
+          execSync(`node ${resolveAppPath('scripts/extract_realmspeak_save.js')}`, { stdio: 'inherit' });
         } catch (error) {
-          console.log('⚠️  Map tile parser failed, continuing with other steps...');
-        }
-        console.log('Running map setup parser (map_locations.json — chits on tiles)...');
-        try {
-          execSync(`node ${resolveAppPath('scripts/extract_map_locations_cli.js')} extracted_game.xml map_locations.json`, { stdio: 'inherit' });
-        } catch (error) {
-          console.log('⚠️  Map locations parser failed, continuing with other steps...');
+          console.log('⚠️  RealmSpeak save extraction failed, continuing with other steps...');
         }
       } else {
-        console.log('No extracted_game.xml found, skipping map parsers');
+        console.log('No extracted_game.xml found, skipping RealmSpeak save extraction');
       }
       
       // 7. Run character stats extraction (only if .rsgame exists)

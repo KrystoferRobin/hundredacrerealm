@@ -12,11 +12,11 @@ try {
 }
 
 // Import our parsers with error handling
-let extractRsgameXml, extractMapLocations, extractCharacterStats;
+let extractRsgameXml, extractCharacterStats, realmspeakExtract;
 try {
     extractRsgameXml = require('./parse_rsgame_map.js').extractRsgameXml;
-    extractMapLocations = require('./extract_map_locations.js').extractMapLocations;
     extractCharacterStats = require('./extract_character_stats.js').extractCharacterStats;
+    realmspeakExtract = require('./realmspeak');
 } catch (error) {
     console.error('Error loading parser modules:', error.message);
     process.exit(1);
@@ -195,11 +195,16 @@ const processGameSession = async (sessionNameOrFile) => {
         console.log('No .rsgame file found');
     }
     
-    // Step 2: Extract map locations if XML exists
+    // Step 2: RealmSpeak-aligned map + game state (map_data, map_locations, game_state)
     if (xmlPath && fs.existsSync(xmlPath)) {
-        const mapLocPath = path.join(outputDir, 'map_locations.json');
-        await extractMapLocations(xmlPath, mapLocPath);
-        
+        try {
+            const extracted = realmspeakExtract.extractFromXml(xmlPath);
+            realmspeakExtract.writeSessionOutputs(outputDir, extracted);
+            console.log(`✓ RealmSpeak extraction: ${extracted.mapData.tileCount} tiles, setup card holders: ${extracted.setupCard.holderCount}`);
+        } catch (error) {
+            console.error(`✗ RealmSpeak extraction failed: ${error.message}`);
+        }
+
         // Step 3: Extract character stats if XML exists
         const statsPath = path.join(outputDir, 'character_stats.json');
         try {
