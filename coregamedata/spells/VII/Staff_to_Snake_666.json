@@ -27,7 +27,11 @@
       "chit_color": "lightblue",
       "icon_type": "serpent",
       "icon_folder": "monsters",
-      "length": "0"
+      "icon_type_alt": "add-ons-War_of_Legends-images-units-steelhive-steel_serpent",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "icon_size_alt": "0.9",
+      "length": "0",
+      "serpent": ""
     }
   },
   "parts": []

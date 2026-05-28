@@ -1,0 +1,27 @@
+{
+  "id": "2236",
+  "name": "Luck",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "phase",
+      "target": "character",
+      "text": "You may re-roll a table result you just made.",
+      "magic_color": "white",
+      "host_okay": "",
+      "benevolent": "",
+      "super_realm": "",
+      "super_realm_spell": ""
+    },
+    "phase_chit": {
+      "phase_chit": "",
+      "text": "Luck",
+      "cannot_be_activated": ""
+    },
+    "phase_chit_effects": {
+      "luck": ""
+    }
+  },
+  "parts": []
+}

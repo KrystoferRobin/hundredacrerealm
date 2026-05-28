@@ -1,0 +1,18 @@
+{
+  "id": "2429",
+  "name": "Psychic Fight L4",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "strength": "L",
+      "speed": "4",
+      "character_level": "1",
+      "stage": "3",
+      "level": "1",
+      "icon_folder": "characters",
+      "icon_type": "psychic",
+      "super_realm": ""
+    }
+  }
+}

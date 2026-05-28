@@ -13,7 +13,8 @@
       "icon_folder": "wesnoth/units/monsters",
       "icon_size": "1",
       "icon_type": "horse",
-      "horse_holder": "Bashkar Dwelling"
+      "horse_holder": "Bashkar Dwelling",
+      "steed_survives_caves": ""
     },
     "trot": {
       "move_speed": "4",

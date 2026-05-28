@@ -1,0 +1,18 @@
+{
+  "id": "2480",
+  "name": "Thief Fight L4",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "speed": "4",
+      "strength": "L",
+      "character_level": "2",
+      "stage": "4",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "druid",
+      "rw_expansion_1": ""
+    }
+  }
+}

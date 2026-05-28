@@ -17,7 +17,7 @@
       "fighter": "",
       "icon_folder": "characters",
       "creator": "Richard Hamblen",
-      "artcredit": "Aethmud / DALL-E",
+      "artcredit": "Chris White",
       "meaning": "Opposition",
       "rw_expansion_1": ""
     },
@@ -58,6 +58,19 @@
       "scholar": "1",
       "woodfolk": "-1",
       "bashkars": "-1"
+    },
+    "optional_2": {
+      "optkey": "OptCharDwarf",
+      "advantages": {
+        "N0": "SHORT LEGS:  You can only record 2 MOVE actions per turn.  Each REST action is worth double."
+      },
+      "replace": {
+        "N0": "advantages"
+      },
+      "extra_actions": {
+        "N0": "!M",
+        "N1": "!M"
+      }
     }
   },
   "parts": [

@@ -13,7 +13,8 @@
       "folder": "sr_tiles_legendary",
       "stile": "",
       "water_source_clearing": "1",
-      "anchor_tile": ""
+      "anchor_tile": "",
+      "water": ""
     },
     "normal": {
       "offroad_xy": "69.5,88.3",

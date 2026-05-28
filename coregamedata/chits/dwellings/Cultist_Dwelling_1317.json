@@ -45,25 +45,26 @@
           "needs_init": "",
           "icon_size": "0.9",
           "no_change_tactics": "",
-          "change_tactics_after_casting": "",
-          "fast_caster": "",
           "native_name": "Caster",
-          "roving_native": ""
+          "roving_native": "",
+          "cast_only_in_first_round": "",
+          "fast_caster": ""
         },
         "light": {
           "move_speed": "5",
           "attack_speed": "3",
           "length": "9",
-          "chit_color": "paleyellow",
+          "chit_color": "yellow",
           "magic_type": "V",
-          "attack_spell": "Summon Demon"
+          "attack_spell": "Summon Demon",
+          "change_tactics_for_non_spell_attack": ""
         },
         "dark": {
           "move_speed": "4",
           "attack_speed": "4",
           "strength": "M",
           "length": "9",
-          "chit_color": "yellow"
+          "chit_color": "darkyellow"
         }
       }
     },
@@ -88,25 +89,26 @@
           "denizen": "",
           "icon_size": "0.9",
           "no_change_tactics": "",
-          "change_tactics_after_casting": "",
-          "fast_caster": "",
           "native_name": "Caster",
-          "roving_native": ""
+          "roving_native": "",
+          "cast_only_in_first_round": "",
+          "fast_caster": ""
         },
         "light": {
           "move_speed": "5",
           "attack_speed": "3",
           "length": "9",
-          "chit_color": "paleyellow",
+          "chit_color": "yellow",
           "magic_type": "V",
-          "attack_spell": "Summon Demon"
+          "attack_spell": "Summon Demon",
+          "change_tactics_for_non_spell_attack": ""
         },
         "dark": {
           "move_speed": "4",
           "attack_speed": "4",
           "strength": "M",
           "length": "9",
-          "chit_color": "yellow"
+          "chit_color": "darkyellow"
         }
       }
     },
@@ -131,25 +133,26 @@
           "denizen": "",
           "icon_size": "0.9",
           "no_change_tactics": "",
-          "change_tactics_after_casting": "",
-          "fast_caster": "",
           "native_name": "Caster",
-          "roving_native": ""
+          "roving_native": "",
+          "cast_only_in_first_round": "",
+          "fast_caster": ""
         },
         "light": {
           "move_speed": "5",
           "attack_speed": "3",
           "length": "9",
-          "chit_color": "paleyellow",
+          "chit_color": "yellow",
           "magic_type": "V",
-          "attack_spell": "Summon Demon"
+          "attack_spell": "Summon Demon",
+          "change_tactics_for_non_spell_attack": ""
         },
         "dark": {
           "move_speed": "4",
           "attack_speed": "4",
           "strength": "M",
           "length": "9",
-          "chit_color": "yellow"
+          "chit_color": "darkyellow"
         }
       }
     },
@@ -175,25 +178,26 @@
           "denizen": "",
           "icon_size": "0.9",
           "no_change_tactics": "",
-          "change_tactics_after_casting": "",
-          "fast_caster": "",
           "native_name": "Caster",
-          "roving_native": ""
+          "roving_native": "",
+          "cast_only_in_first_round": "",
+          "fast_caster": ""
         },
         "light": {
           "move_speed": "5",
           "attack_speed": "2",
           "length": "9",
-          "chit_color": "paleyellow",
+          "chit_color": "yellow",
           "magic_type": "V",
-          "attack_spell": "Summon Demon"
+          "attack_spell": "Summon Demon",
+          "change_tactics_for_non_spell_attack": ""
         },
         "dark": {
           "move_speed": "4",
           "attack_speed": "4",
           "strength": "M",
           "length": "9",
-          "chit_color": "yellow"
+          "chit_color": "darkyellow"
         }
       }
     },

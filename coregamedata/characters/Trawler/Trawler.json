@@ -1,0 +1,295 @@
+{
+  "ids": [
+    "2439"
+  ],
+  "name": "Trawler",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "trawler",
+      "character": "",
+      "vulnerability": "L",
+      "start": "Inn,Cottage,Hut",
+      "facing": "dark",
+      "pronoun": "he",
+      "icon_folder": "characters",
+      "creator": "Anomalous Host",
+      "artcredit": "East Paladin Gallery / Gemini",
+      "super_realm": "",
+      "potrait_folder": "characterdetail_sr",
+      "potrait_file": "trawler_sr",
+      "fighter": ""
+    },
+    "level_1": {
+      "name": "Fisherman",
+      "weapon": "Short Sword"
+    },
+    "level_2": {
+      "name": "Sailor",
+      "weapon": "Short Sword",
+      "seafaring": "",
+      "advantages": {
+        "N0": "SEAFARING:  Advantages in river hex tiles and water clearings."
+      },
+      "diemod": {
+        "N0": "1d:meeting,commerce:'water"
+      }
+    },
+    "level_3": {
+      "name": "Pirate",
+      "weapon": "Thrusting Sword"
+    },
+    "level_4": {
+      "name": "Trawler",
+      "weapon": "Thrusting Sword",
+      "fit": {
+        "N0": "1"
+      },
+      "advantages": {
+        "N0": "FIT:  When playing a FIGHT chit in the 'Thrust' attack during the Melee step, it forces increases one leve. Thid does apply to treasures that act as FIGHT chits (Deft Gloves). Does not allow to wield a weapon with a weight greater than the FIGHT chit itself."
+      }
+    },
+    "relationship": {
+      "lancers": "2",
+      "bashkars": "1",
+      "hunters": "1",
+      "mercenaries": "1",
+      "merchant": "1",
+      "aborigines": "-1",
+      "pagans": "-1",
+      "summoners": "-1",
+      "soldiers": "-2",
+      "bandits": "-2",
+      "dwarves": "-2",
+      "elves": "-2",
+      "cultists": "-2"
+    }
+  },
+  "parts": [
+    {
+      "id": "2440",
+      "name": "Trawler Move L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "3",
+          "character_level": "1",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "trawler",
+          "super_realm": "",
+          "effort": "1"
+        }
+      }
+    },
+    {
+      "id": "2441",
+      "name": "Trawler Move L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "L",
+          "speed": "4",
+          "character_level": "1",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "trawler",
+          "super_realm": ""
+        }
+      }
+    },
+    {
+      "id": "2442",
+      "name": "Trawler Fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "character_level": "1",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "trawler",
+          "super_realm": "",
+          "effort": "1"
+        }
+      }
+    },
+    {
+      "id": "2443",
+      "name": "Trawler Move L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "2",
+          "character_level": "2",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "trawler",
+          "super_realm": "",
+          "strength": "L",
+          "effort": "2"
+        }
+      }
+    },
+    {
+      "id": "2444",
+      "name": "Trawler Move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "character_level": "2",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "trawler",
+          "super_realm": "",
+          "effort": "1",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "2445",
+      "name": "Trawler Fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "3",
+          "character_level": "2",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "trawler",
+          "super_realm": "",
+          "effort": "2",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "2446",
+      "name": "Trawler Move M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "3",
+          "character_level": "3",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "trawler",
+          "super_realm": "",
+          "effort": "2",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "2447",
+      "name": "Trawler Fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "character_level": "3",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "trawler",
+          "super_realm": "",
+          "effort": "1",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "2448",
+      "name": "Trawler Fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_level": "3",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "trawler",
+          "super_realm": "",
+          "effort": "1"
+        }
+      }
+    },
+    {
+      "id": "2449",
+      "name": "Trawler Fight M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "5",
+          "character_level": "4",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "trawler",
+          "super_realm": "",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "2450",
+      "name": "Trawler Fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "3",
+          "character_level": "4",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "trawler",
+          "super_realm": "",
+          "effort": "2",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "2451",
+      "name": "Trawler Fight L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "character_level": "4",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "trawler",
+          "super_realm": "",
+          "strength": "L"
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

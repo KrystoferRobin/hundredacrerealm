@@ -14,7 +14,9 @@
       "facing": "face_dn",
       "nosecret": "",
       "item": "",
-      "super_realm": ""
+      "super_realm": "",
+      "tile_type_clearing_watercave": "",
+      "tile_type_fallback": "M"
     }
   },
   "parts": []

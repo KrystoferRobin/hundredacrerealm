@@ -1,0 +1,25 @@
+{
+  "id": "2468",
+  "name": "Demon Leash",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "18",
+      "text": "Hit demon with this item (speed 2) to control - fatigue one magic chit/turn",
+      "rw_expansion_1": "",
+      "strength": "N",
+      "length": "11",
+      "facing": "face_dn",
+      "attack": "",
+      "author": "Expansion 1",
+      "item": "",
+      "fame": "-8",
+      "notoriety": "12",
+      "weight": "L",
+      "demon_control": "",
+      "demon_control_speed": "2",
+      "weapon": ""
+    }
+  },
+  "parts": []
+}

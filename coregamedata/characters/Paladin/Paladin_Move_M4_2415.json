@@ -1,0 +1,19 @@
+{
+  "id": "2415",
+  "name": "Paladin Move M4*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "strength": "M",
+      "speed": "4",
+      "character_level": "1",
+      "stage": "2",
+      "level": "1",
+      "icon_folder": "characters",
+      "icon_type": "paladin",
+      "super_realm": "",
+      "effort": "1"
+    }
+  }
+}

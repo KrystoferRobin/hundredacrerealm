@@ -1,0 +1,18 @@
+{
+  "id": "2458",
+  "name": "Wanderer Fight M5",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "speed": "5",
+      "character_level": "2",
+      "stage": "6",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "wanderer",
+      "super_realm": "",
+      "strength": "M"
+    }
+  }
+}

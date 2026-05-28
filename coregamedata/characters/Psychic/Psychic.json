@@ -1,0 +1,307 @@
+{
+  "ids": [
+    "2426"
+  ],
+  "name": "Psychic",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "psychic",
+      "character": "",
+      "vulnerability": "M",
+      "start": "Inn,Hamlet,Settlement",
+      "facing": "dark",
+      "pronoun": "she",
+      "icon_folder": "characters",
+      "creator": "Anomalous Host",
+      "artcredit": "East Paladin Gallery / Gemini",
+      "super_realm": "",
+      "potrait_folder": "characterdetail_sr",
+      "potrait_file": "psychic_sr",
+      "magicuser": ""
+    },
+    "level_1": {
+      "name": "Apprentice",
+      "weapon": "Staff"
+    },
+    "level_2": {
+      "name": "Intellectual",
+      "weapon": "Staff",
+      "spellcount": "1",
+      "foresight": "",
+      "advantages": {
+        "N0": "FORESIGHT:  After making a table roll, you may cancel your current Daylight activity."
+      },
+      "spelltypes": {
+        "N0": "II",
+        "N1": "IV"
+      }
+    },
+    "level_3": {
+      "name": "Oracle",
+      "weapon": "Staff",
+      "spellcount": "2",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "IV",
+        "N2": "VII"
+      }
+    },
+    "level_4": {
+      "name": "Psychic",
+      "weapon": "Mace",
+      "spellcount": "2",
+      "advantages": {
+        "N0": "VISION:  Get one extra SARCH phase every day"
+      },
+      "spelltypes": {
+        "N0": "I",
+        "N1": "IV",
+        "N2": "VII"
+      },
+      "extra_actions": {
+        "N0": "S"
+      }
+    },
+    "relationship": {
+      "conjurors": "2",
+      "coven": "1",
+      "enchanters": "1",
+      "peasants": "1",
+      "mages": "-1",
+      "shaman": "-1",
+      "pagans": "-2",
+      "summoners": "-2",
+      "bandits": "-2",
+      "dwarves": "-2",
+      "elves": "-2",
+      "cultists": "-2"
+    }
+  },
+  "parts": [
+    {
+      "id": "2427",
+      "name": "Psychic Move M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_level": "1",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "psychic",
+          "super_realm": ""
+        }
+      }
+    },
+    {
+      "id": "2428",
+      "name": "Psychic Move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "1",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "psychic",
+          "super_realm": "",
+          "effort": "1"
+        }
+      }
+    },
+    {
+      "id": "2429",
+      "name": "Psychic Fight L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "character_level": "1",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "psychic",
+          "super_realm": ""
+        }
+      }
+    },
+    {
+      "id": "2430",
+      "name": "Psychic Figth M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "5",
+          "character_level": "2",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "psychic",
+          "super_realm": "",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "2431",
+      "name": "Psychic Magic IV4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "character_level": "2",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "psychic",
+          "super_realm": "",
+          "effort": "2",
+          "magic": "IV"
+        }
+      }
+    },
+    {
+      "id": "2432",
+      "name": "Psychic Magic II4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "character_level": "2",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "psychic",
+          "super_realm": "",
+          "effort": "1",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "2433",
+      "name": "Psychic Magic VII4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "character_level": "3",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "psychic",
+          "super_realm": "",
+          "effort": "1",
+          "magic": "VII"
+        }
+      }
+    },
+    {
+      "id": "2434",
+      "name": "Psychic Magic II3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "character_level": "3",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "psychic",
+          "super_realm": "",
+          "effort": "1",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "2435",
+      "name": "Psychic Move M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_level": "3",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "psychic",
+          "super_realm": ""
+        }
+      }
+    },
+    {
+      "id": "2436",
+      "name": "Psychic Fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "character_level": "4",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "psychic",
+          "super_realm": "",
+          "effort": "1",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "2437",
+      "name": "Psychic Magic VII2*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "2",
+          "character_level": "4",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "psychic",
+          "super_realm": "",
+          "effort": "1",
+          "magic": "VII"
+        }
+      }
+    },
+    {
+      "id": "2438",
+      "name": "Psychic Magic II2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "2",
+          "character_level": "4",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "psychic",
+          "super_realm": "",
+          "effort": "2",
+          "magic": "II"
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "2448",
+  "name": "Trawler Fight L3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "strength": "M",
+      "speed": "3",
+      "character_level": "3",
+      "stage": "9",
+      "level": "3",
+      "icon_folder": "characters",
+      "icon_type": "trawler",
+      "super_realm": "",
+      "effort": "1"
+    }
+  }
+}

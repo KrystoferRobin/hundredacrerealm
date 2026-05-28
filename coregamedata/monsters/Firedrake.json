@@ -22,8 +22,7 @@
       "drake": "",
       "icon_type_alt": "fireDragon",
       "icon_folder_alt": "wesnoth/units",
-      "icon_size_alt": "0.4",
-      "icon_y_offset_alt": "4"
+      "icon_size_alt": "0.4"
     },
     "light": {
       "move_speed": "5",

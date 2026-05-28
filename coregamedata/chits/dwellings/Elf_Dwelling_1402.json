@@ -54,7 +54,7 @@
         "light": {
           "move_speed": "2",
           "attack_speed": "0",
-          "chit_color": "paleyellow",
+          "chit_color": "yellow",
           "magic_type": "VII"
         },
         "dark": {
@@ -62,7 +62,7 @@
           "attack_speed": "1",
           "strength": "L",
           "length": "14",
-          "chit_color": "yellow",
+          "chit_color": "darkyellow",
           "sharpness": "2",
           "missile": ""
         }
@@ -97,7 +97,7 @@
         "light": {
           "move_speed": "2",
           "attack_speed": "0",
-          "chit_color": "paleyellow",
+          "chit_color": "yellow",
           "magic_type": "VII"
         },
         "dark": {
@@ -105,7 +105,7 @@
           "attack_speed": "1",
           "strength": "L",
           "length": "14",
-          "chit_color": "yellow",
+          "chit_color": "darkyellow",
           "sharpness": "2",
           "missile": ""
         }
@@ -140,7 +140,7 @@
         "light": {
           "move_speed": "2",
           "attack_speed": "0",
-          "chit_color": "paleyellow",
+          "chit_color": "yellow",
           "magic_type": "VII"
         },
         "dark": {
@@ -148,7 +148,7 @@
           "attack_speed": "1",
           "strength": "L",
           "length": "14",
-          "chit_color": "yellow",
+          "chit_color": "darkyellow",
           "sharpness": "2",
           "missile": ""
         }
@@ -183,7 +183,7 @@
         "light": {
           "move_speed": "2",
           "attack_speed": "0",
-          "chit_color": "paleyellow",
+          "chit_color": "yellow",
           "magic_type": "VII"
         },
         "dark": {
@@ -191,7 +191,7 @@
           "attack_speed": "1",
           "strength": "L",
           "length": "14",
-          "chit_color": "yellow",
+          "chit_color": "darkyellow",
           "sharpness": "2",
           "missile": ""
         }
@@ -226,7 +226,7 @@
         "light": {
           "move_speed": "2",
           "attack_speed": "0",
-          "chit_color": "paleyellow",
+          "chit_color": "yellow",
           "magic_type": "VII"
         },
         "dark": {
@@ -234,7 +234,7 @@
           "attack_speed": "1",
           "strength": "L",
           "length": "14",
-          "chit_color": "yellow",
+          "chit_color": "darkyellow",
           "sharpness": "2",
           "missile": ""
         }
@@ -270,7 +270,7 @@
         "light": {
           "move_speed": "2",
           "attack_speed": "0",
-          "chit_color": "paleyellow",
+          "chit_color": "yellow",
           "magic_type": "VII"
         },
         "dark": {
@@ -278,7 +278,7 @@
           "attack_speed": "1",
           "strength": "M",
           "length": "16",
-          "chit_color": "yellow",
+          "chit_color": "darkyellow",
           "sharpness": "2",
           "missile": ""
         }

@@ -7,7 +7,7 @@
       "spell": "VI",
       "duration": "permanent",
       "target": "individual",
-      "text": "Can only MOVE T4 (no fight)",
+      "text": "Can only MOVE T4, even paths and passages (no fight, T vulnerable non-armored)",
       "magic_color": "purple",
       "transmorph": "mist",
       "disengage": "ALL",
@@ -18,7 +18,8 @@
       "super_realm": "",
       "benevolent_for_leaders": "",
       "benevolent_for_monsters": "",
-      "only_move": ""
+      "only_move": "",
+      "keep_inventory": ""
     },
     "mist": {
       "vulnerability": "T",

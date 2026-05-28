@@ -1,0 +1,19 @@
+{
+  "id": "2475",
+  "name": "Redirect",
+  "spellLevel": "I",
+  "attributeBlocks": {
+    "this": {
+      "spell": "I",
+      "duration": "instant",
+      "target": "bewitched",
+      "text": "Target is no longer bewitched by a spell instead the spell now bewitches the second target.",
+      "magic_color": "purple",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "redirect": ""
+    }
+  },
+  "parts": []
+}

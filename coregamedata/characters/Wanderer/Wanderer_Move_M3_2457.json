@@ -1,0 +1,19 @@
+{
+  "id": "2457",
+  "name": "Wanderer Move M3**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "speed": "3",
+      "character_level": "2",
+      "stage": "5",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "wanderer",
+      "super_realm": "",
+      "effort": "2",
+      "strength": "M"
+    }
+  }
+}

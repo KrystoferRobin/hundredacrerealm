@@ -14,7 +14,8 @@
       "host_okay": "",
       "author": "Expansion 1",
       "benevolent": "",
-      "learnable": ""
+      "learnable": "",
+      "non_treasure_weapon": ""
     },
     "attribute_add": {
       "alerted_weapon": ""

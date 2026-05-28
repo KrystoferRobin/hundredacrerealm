@@ -1,0 +1,19 @@
+{
+  "id": "2443",
+  "name": "Trawler Move L2**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "speed": "2",
+      "character_level": "2",
+      "stage": "4",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "trawler",
+      "super_realm": "",
+      "strength": "L",
+      "effort": "2"
+    }
+  }
+}

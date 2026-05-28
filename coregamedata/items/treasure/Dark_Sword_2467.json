@@ -1,0 +1,26 @@
+{
+  "id": "2467",
+  "name": "Dark Sword",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "12",
+      "text": "Monsters are killed permanently.",
+      "rw_expansion_1": "",
+      "strength": "M",
+      "sharpness": "1",
+      "length": "7",
+      "facing": "face_dn",
+      "attack": "",
+      "author": "Expansion 1",
+      "item": "",
+      "fame": "-60",
+      "notoriety": "20",
+      "great": "",
+      "weight": "H",
+      "kill_monsters_permanently": "",
+      "weapon": ""
+    }
+  },
+  "parts": []
+}

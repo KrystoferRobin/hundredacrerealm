@@ -1,0 +1,19 @@
+{
+  "id": "2463",
+  "name": "Wanderer Fight M3**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "speed": "3",
+      "character_level": "4",
+      "stage": "11",
+      "level": "4",
+      "icon_folder": "characters",
+      "icon_type": "wanderer",
+      "super_realm": "",
+      "effort": "2",
+      "strength": "M"
+    }
+  }
+}

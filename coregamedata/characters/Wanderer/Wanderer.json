@@ -1,0 +1,308 @@
+{
+  "ids": [
+    "2452"
+  ],
+  "name": "Wanderer",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "wanderer",
+      "character": "",
+      "vulnerability": "M",
+      "start": "Inn,Cottage",
+      "facing": "dark",
+      "pronoun": "he",
+      "icon_folder": "characters",
+      "creator": "Anomalous Host",
+      "artcredit": "East Paladin Gallery / Gemini",
+      "super_realm": "",
+      "potrait_folder": "characterdetail_sr",
+      "potrait_file": "wanderer_sr",
+      "magicuser": ""
+    },
+    "level_1": {
+      "name": "Orphan",
+      "weapon": "Spear",
+      "armor": "Breastplate"
+    },
+    "level_2": {
+      "name": "Animalist",
+      "weapon": "Short Sword",
+      "cragsman": "",
+      "armor": "Helmet,Breastplate,Shield",
+      "spellcount": "1",
+      "advantages": {
+        "N0": "CRAGSMAN:  Can 'walk the woods' when moving to or from a mountain clearing."
+      },
+      "spelltypes": {
+        "N0": "II"
+      }
+    },
+    "level_3": {
+      "name": "Traveler",
+      "weapon": "Thrusting Sword",
+      "armor": "Helmet,Breastplate,Shield",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "II"
+      }
+    },
+    "level_4": {
+      "name": "Wanderer",
+      "weapon": "Broadsword",
+      "armor": "Helmet,Breastplate,Shield",
+      "spellcount": "1",
+      "advantages": {
+        "N0": "FRONTIERSMAN:  Roll one die instead of two while in a mountain clearing on the Meeting Table, the Hide table, and any Search table."
+      },
+      "diemod": {
+        "N0": "1d:meeting,commerce,hide,locate,loot,peer:&gt;mountain"
+      },
+      "spelltypes": {
+        "N0": "II"
+      }
+    },
+    "relationship": {
+      "summoners": "2",
+      "aborigines": "1",
+      "conjurors": "1",
+      "patrols": "1",
+      "company": "-1",
+      "mercenaries": "-1",
+      "pagans": "-1",
+      "crone": "-1",
+      "hunters": "-2",
+      "bandits": "-2",
+      "dwarves": "-2",
+      "elves": "-2",
+      "cultists": "-2"
+    }
+  },
+  "parts": [
+    {
+      "id": "2453",
+      "name": "Wanderer Move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "1",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "wanderer",
+          "super_realm": "",
+          "effort": "1"
+        }
+      }
+    },
+    {
+      "id": "2454",
+      "name": "Wanderer Move M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_level": "1",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "wanderer",
+          "super_realm": ""
+        }
+      }
+    },
+    {
+      "id": "2455",
+      "name": "Wanderer Fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "1",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "wanderer",
+          "super_realm": "",
+          "effort": "1"
+        }
+      }
+    },
+    {
+      "id": "2456",
+      "name": "Wanderer Magic II3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "3",
+          "character_level": "2",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "wanderer",
+          "super_realm": "",
+          "effort": "1",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "2457",
+      "name": "Wanderer Move M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "3",
+          "character_level": "2",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "wanderer",
+          "super_realm": "",
+          "effort": "2",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "2458",
+      "name": "Wanderer Fight M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "5",
+          "character_level": "2",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "wanderer",
+          "super_realm": "",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "2459",
+      "name": "Wanderer Fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "3",
+          "character_level": "3",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "wanderer",
+          "super_realm": "",
+          "effort": "2",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "2460",
+      "name": "Wanderer Move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "4",
+          "character_level": "3",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "wanderer",
+          "super_realm": "",
+          "effort": "1",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "2461",
+      "name": "Wanderer Fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "H",
+          "speed": "5",
+          "character_level": "3",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "wanderer",
+          "super_realm": "",
+          "effort": "1"
+        }
+      }
+    },
+    {
+      "id": "2462",
+      "name": "Wanderer Fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "4",
+          "character_level": "4",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "wanderer",
+          "super_realm": "",
+          "strength": "M",
+          "effort": "1"
+        }
+      }
+    },
+    {
+      "id": "2463",
+      "name": "Wanderer Fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "3",
+          "character_level": "4",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "wanderer",
+          "super_realm": "",
+          "effort": "2",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "2464",
+      "name": "Trawler Fight H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "6",
+          "character_level": "4",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "wanderer",
+          "super_realm": "",
+          "strength": "H"
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

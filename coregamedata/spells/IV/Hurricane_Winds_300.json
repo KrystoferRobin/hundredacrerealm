@@ -15,7 +15,8 @@
       "alt_monsters1_game": "",
       "host_okay": "",
       "rw_expansion_1": "",
-      "learnable": ""
+      "learnable": "",
+      "opens_treasure_locations": "T"
     }
   },
   "parts": []

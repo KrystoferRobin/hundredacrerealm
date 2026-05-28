@@ -11,7 +11,7 @@
       "rank": "HQ",
       "icon_type": "shadowmatriarch",
       "setup_start": "Enchanter Dwelling",
-      "hire_type": "group",
+      "hire_type": "single",
       "icon_folder": "wesnoth/units/tharis-magi",
       "commerce": "F,N",
       "denizen": "",

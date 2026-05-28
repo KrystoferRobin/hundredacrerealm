@@ -41,7 +41,8 @@
           "icon_folder": "wesnoth/units",
           "icon_size": "1",
           "icon_type": "royalBeast",
-          "horse_holder": "Chapel"
+          "horse_holder": "Chapel",
+          "steed_survives_caves": ""
         },
         "trot": {
           "move_speed": "5",

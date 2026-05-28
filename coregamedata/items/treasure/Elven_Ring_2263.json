@@ -17,8 +17,8 @@
       "speed": "0",
       "action": "magic",
       "scholar_price": "20",
-      "schaman_price": "20",
-      "merchant_price": "20"
+      "merchant_price": "20",
+      "shaman_price": "20"
     }
   },
   "parts": []

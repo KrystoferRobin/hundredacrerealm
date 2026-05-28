@@ -57,7 +57,9 @@
           "icon_type": "ipoten",
           "undead": "",
           "skeleton": "",
-          "transmorph_immunity": ""
+          "transmorph_immunity": "",
+          "cannot_be_abandoned": "",
+          "regenerates_immediately": ""
         },
         "trot": {
           "move_speed": "6",

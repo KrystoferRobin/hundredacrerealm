@@ -88,7 +88,11 @@
       "path_6_from": "clearing_5",
       "path_6_to": "SW",
       "path_6_type": "normal",
-      "path_6_arc": "20.3,65.9"
+      "path_6_arc": "20.3,65.9",
+      "path_7_from": "clearing_4",
+      "path_7_to": "N",
+      "path_7_type": "normal",
+      "path_7_arc": "49.1,6.7"
     }
   },
   "parts": []

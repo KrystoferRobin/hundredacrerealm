@@ -1,0 +1,18 @@
+{
+  "id": "2430",
+  "name": "Psychic Figth M5",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "speed": "5",
+      "character_level": "2",
+      "stage": "4",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "psychic",
+      "super_realm": "",
+      "strength": "M"
+    }
+  }
+}

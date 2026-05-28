@@ -14,7 +14,8 @@
       "ts_size": "HCARD",
       "ts_color": "brown",
       "icon_type": "minotaurKing",
-      "icon_folder": "wesnoth/units"
+      "icon_folder": "wesnoth/units",
+      "maze": ""
     }
   },
   "parts": []

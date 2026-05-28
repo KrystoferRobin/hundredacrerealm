@@ -43,7 +43,8 @@
           "icon_folder": "wesnoth/units",
           "icon_size": "1",
           "icon_type": "nobleBeast",
-          "horse_holder": "Inn"
+          "horse_holder": "Inn",
+          "steed_survives_caves": ""
         },
         "trot": {
           "move_speed": "6",

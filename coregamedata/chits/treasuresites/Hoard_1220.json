@@ -15,7 +15,8 @@
       "ts_color": "red",
       "icon_type": "fireDragon",
       "icon_folder": "wesnoth/units",
-      "icon_size": "0.4"
+      "icon_size": "0.4",
+      "icon_size_override": "0.5"
     }
   },
   "parts": []

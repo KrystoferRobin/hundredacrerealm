@@ -1,0 +1,19 @@
+{
+  "id": "2471",
+  "name": "Fools Gold",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "50",
+      "text": "Once sold, roll versus running to see if caught.",
+      "rw_expansion_1": "",
+      "facing": "face_dn",
+      "author": "Expansion 1",
+      "item": "",
+      "weight": "L",
+      "notoriety": "1",
+      "fools_gold": ""
+    }
+  },
+  "parts": []
+}

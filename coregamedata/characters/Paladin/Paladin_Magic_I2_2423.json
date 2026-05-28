@@ -1,0 +1,19 @@
+{
+  "id": "2423",
+  "name": "Paladin Magic I2**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "2",
+      "character_level": "4",
+      "stage": "10",
+      "level": "4",
+      "icon_folder": "characters",
+      "icon_type": "paladin",
+      "super_realm": "",
+      "effort": "2",
+      "magic": "I"
+    }
+  }
+}

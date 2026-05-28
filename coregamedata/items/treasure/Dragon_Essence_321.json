@@ -16,7 +16,8 @@
       "facing": "face_dn",
       "nosecret": "",
       "rw_expansion_1": "",
-      "item": ""
+      "item": "",
+      "tile_type_fallback": "none"
     }
   },
   "parts": []

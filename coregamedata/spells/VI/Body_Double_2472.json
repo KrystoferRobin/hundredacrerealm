@@ -1,0 +1,20 @@
+{
+  "id": "2472",
+  "name": "Body Double",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "combat",
+      "target": "character",
+      "text": "Character is hit wiht only a 50% chance.",
+      "magic_color": "gray",
+      "rw_expansion_1": "",
+      "author": "Expansion 1",
+      "learnable": "",
+      "body_double": "",
+      "host_okay": ""
+    }
+  },
+  "parts": []
+}

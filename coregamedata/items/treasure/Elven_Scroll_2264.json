@@ -6,7 +6,7 @@
       "treasure": "small",
       "base_price": "5",
       "notoriety": "5",
-      "magic": "II",
+      "magic": "III",
       "book": "",
       "print": "",
       "scholar_price": "30",
@@ -17,7 +17,7 @@
       "scroll": "",
       "super_realm": "",
       "super_realm_treasure": "",
-      "magic_other": "III",
+      "magic_other": "II",
       "shaman_price": "30",
       "merchant_price": "20"
     }

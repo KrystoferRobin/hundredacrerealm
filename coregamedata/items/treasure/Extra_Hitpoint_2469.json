@@ -1,0 +1,38 @@
+{
+  "id": "2469",
+  "name": "Extra Hitpoint",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "14",
+      "text": "Fatigue, wound and rest as if it was a chit.",
+      "rw_expansion_1": "",
+      "facing": "face_dn",
+      "author": "Expansion 1",
+      "item": "",
+      "add_chit": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "2470",
+      "name": "Extra Hitpoint",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "hitpoint",
+          "effort": "1",
+          "character_level": "1",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "monsters2",
+          "icon_type": "unknown",
+          "rw_expansion_1": "",
+          "add_chit": "Extra Hitpoint",
+          "chitearned": "",
+          "treasure_chit": ""
+        }
+      }
+    }
+  ]
+}

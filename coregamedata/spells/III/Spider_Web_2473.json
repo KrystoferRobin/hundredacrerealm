@@ -1,0 +1,22 @@
+{
+  "id": "2473",
+  "name": "Spider Web",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "attack",
+      "target": "individual",
+      "text": "Opponent remains tied in combat box for entire evening.",
+      "magic_color": "gold",
+      "rw_expansion_1": "",
+      "author": "Expansion 1",
+      "learnable": "",
+      "spider_web": "",
+      "length": "18",
+      "strength": "N",
+      "host_okay": ""
+    }
+  },
+  "parts": []
+}

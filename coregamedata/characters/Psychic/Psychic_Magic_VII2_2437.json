@@ -1,0 +1,19 @@
+{
+  "id": "2437",
+  "name": "Psychic Magic VII2*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "2",
+      "character_level": "4",
+      "stage": "11",
+      "level": "4",
+      "icon_folder": "characters",
+      "icon_type": "psychic",
+      "super_realm": "",
+      "effort": "1",
+      "magic": "VII"
+    }
+  }
+}

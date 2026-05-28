@@ -1,0 +1,321 @@
+{
+  "ids": [
+    "2413"
+  ],
+  "name": "Paladin",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "paladin",
+      "character": "",
+      "vulnerability": "M",
+      "start": "Inn,Chapel,Hamlet",
+      "facing": "dark",
+      "pronoun": "he",
+      "icon_folder": "characters",
+      "creator": "Anomalous Host",
+      "artcredit": "East Paladin Gallery / Gemini",
+      "super_realm": "",
+      "potrait_folder": "characterdetail_sr",
+      "potrait_file": "paladin_sr",
+      "magicuser": ""
+    },
+    "level_1": {
+      "name": "Scholar",
+      "armor": "Helmet,Breastplate"
+    },
+    "level_2": {
+      "name": "Zealot",
+      "weapon": "Short Sword",
+      "armor": "Breastplate,Shield",
+      "spellcount": "1",
+      "advantages": {
+        "N0": "EXPLORER:  Rolls one die when making a Treasures Within Treasures table roll."
+      },
+      "spelltypes": {
+        "N0": "I"
+      },
+      "diemod": {
+        "N0": "1d:twt:all"
+      }
+    },
+    "level_3": {
+      "name": "Adventurer",
+      "weapon": "Short Sword",
+      "armor": "Helmet,Breastplate,Shield",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "I",
+        "N1": "VII"
+      }
+    },
+    "level_4": {
+      "name": "Paladin",
+      "weapon": "Mace",
+      "armor": "Helmet,Breastplate,Shield",
+      "spellcount": "2",
+      "comrade": "",
+      "advantages": {
+        "N0": "COMRADE:  Can record an extra phase if a character or hired leader is following."
+      },
+      "spelltypes": {
+        "N0": "I",
+        "N1": "IV",
+        "N2": "VII"
+      }
+    },
+    "relationship": {
+      "zealots": "2",
+      "order": "1",
+      "peasants": "1",
+      "priest": "1",
+      "aborigines": "-1",
+      "coven": "-1",
+      "pagans": "-1",
+      "woodfolk": "-1",
+      "bandits": "-2",
+      "dwarves": "-2",
+      "elves": "-2",
+      "cultists": "-2"
+    },
+    "optional_4": {
+      "optkey": "OptCharPaladin",
+      "extra_actions": {
+        "N0": "R"
+      },
+      "advantages": {
+        "N0": "COMRADE:  Get one extra REST phase every day."
+      },
+      "replace": {
+        "N0": "advantages",
+        "N1": "comrade"
+      }
+    }
+  },
+  "parts": [
+    {
+      "id": "2414",
+      "name": "Paladin Move M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_level": "1",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "paladin",
+          "super_realm": ""
+        }
+      }
+    },
+    {
+      "id": "2415",
+      "name": "Paladin Move M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "1",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "paladin",
+          "super_realm": "",
+          "effort": "1"
+        }
+      }
+    },
+    {
+      "id": "2416",
+      "name": "Paladin Fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "1",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "characters",
+          "icon_type": "paladin",
+          "super_realm": "",
+          "effort": "1"
+        }
+      }
+    },
+    {
+      "id": "2417",
+      "name": "Paladin Magic I4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "character_level": "2",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "paladin",
+          "super_realm": "",
+          "effort": "1",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "2418",
+      "name": "Paladin Fight M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_level": "2",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "paladin",
+          "super_realm": ""
+        }
+      }
+    },
+    {
+      "id": "2419",
+      "name": "Paladin Fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_level": "2",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "characters",
+          "icon_type": "paladin",
+          "super_realm": "",
+          "effort": "2"
+        }
+      }
+    },
+    {
+      "id": "2420",
+      "name": "Paladin Magic VII6*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "6",
+          "character_level": "3",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "paladin",
+          "super_realm": "",
+          "effort": "1",
+          "magic": "VII"
+        }
+      }
+    },
+    {
+      "id": "2421",
+      "name": "Paladin Move M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "speed": "3",
+          "character_level": "3",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "paladin",
+          "super_realm": "",
+          "effort": "2",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "2422",
+      "name": "Paladin Move H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "H",
+          "speed": "6",
+          "character_level": "3",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "characters",
+          "icon_type": "paladin",
+          "super_realm": ""
+        }
+      }
+    },
+    {
+      "id": "2423",
+      "name": "Paladin Magic I2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "2",
+          "character_level": "4",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "paladin",
+          "super_realm": "",
+          "effort": "2",
+          "magic": "I"
+        }
+      }
+    },
+    {
+      "id": "2424",
+      "name": "Paladin Magic IV4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "4",
+          "character_level": "4",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "paladin",
+          "super_realm": "",
+          "effort": "1",
+          "magic": "IV"
+        }
+      }
+    },
+    {
+      "id": "2425",
+      "name": "Paladin Fight H6",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "speed": "6",
+          "character_level": "4",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "characters",
+          "icon_type": "paladin",
+          "super_realm": "",
+          "strength": "H"
+        }
+      }
+    }
+  ],
+  "source": "xml"
+}

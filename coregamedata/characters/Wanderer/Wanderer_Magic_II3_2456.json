@@ -1,0 +1,19 @@
+{
+  "id": "2456",
+  "name": "Wanderer Magic II3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "3",
+      "character_level": "2",
+      "stage": "4",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "wanderer",
+      "super_realm": "",
+      "effort": "1",
+      "magic": "II"
+    }
+  }
+}

@@ -11,7 +11,7 @@
       "rank": "1",
       "icon_type": "masterofdarkness-magic1",
       "setup_start": "Enchanter Dwelling",
-      "hire_type": "group",
+      "hire_type": "single",
       "icon_folder": "wesnoth/units/tharis-magi",
       "denizen": "",
       "super_realm": "",

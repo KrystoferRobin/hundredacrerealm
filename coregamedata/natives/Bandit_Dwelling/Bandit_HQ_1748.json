@@ -27,7 +27,7 @@
       "move_speed": "4",
       "attack_speed": "3",
       "strength": "M",
-      "chit_color": "paleyellow",
+      "chit_color": "yellow",
       "sharpness": "1",
       "length": "3"
     },
@@ -36,7 +36,7 @@
       "attack_speed": "4",
       "strength": "L",
       "length": "3",
-      "chit_color": "yellow",
+      "chit_color": "darkyellow",
       "sharpness": "1"
     }
   },

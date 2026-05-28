@@ -18,7 +18,7 @@
       "denizen": "",
       "super_realm": "",
       "icon_size": "0.4",
-      "icon_y_offset": "4",
+      "icon_size_override": "0.5",
       "dragon": "",
       "box_num": "3"
     },

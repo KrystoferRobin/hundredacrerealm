@@ -11,7 +11,8 @@
       "facing": "light",
       "code": "RR",
       "folder": "sr_tiles_legendary",
-      "stile": ""
+      "stile": "",
+      "water": ""
     },
     "normal": {
       "offroad_xy": "40.7,82.5",

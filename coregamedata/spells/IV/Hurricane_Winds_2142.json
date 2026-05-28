@@ -13,7 +13,8 @@
       "blows_target": "",
       "host_okay": "",
       "learnable": "",
-      "super_realm": ""
+      "super_realm": "",
+      "opens_treasure_locations": "T"
     }
   },
   "parts": []

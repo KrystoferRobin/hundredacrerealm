@@ -1,0 +1,19 @@
+{
+  "id": "2431",
+  "name": "Psychic Magic IV4**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "4",
+      "character_level": "2",
+      "stage": "5",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "psychic",
+      "super_realm": "",
+      "effort": "2",
+      "magic": "IV"
+    }
+  }
+}

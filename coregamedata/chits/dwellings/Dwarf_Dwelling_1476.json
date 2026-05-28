@@ -52,7 +52,7 @@
           "move_speed": "6",
           "attack_speed": "4",
           "strength": "H",
-          "chit_color": "paleyellow",
+          "chit_color": "yellow",
           "sharpness": "1",
           "length": "5"
         },
@@ -61,7 +61,7 @@
           "attack_speed": "6",
           "strength": "T",
           "length": "5",
-          "chit_color": "yellow",
+          "chit_color": "darkyellow",
           "sharpness": "1",
           "move_speed_bonus_combat_box3": "1"
         }
@@ -96,7 +96,7 @@
           "move_speed": "5",
           "attack_speed": "6",
           "strength": "T",
-          "chit_color": "paleyellow",
+          "chit_color": "yellow",
           "sharpness": "1",
           "length": "5"
         },
@@ -105,7 +105,7 @@
           "attack_speed": "5",
           "strength": "H",
           "length": "5",
-          "chit_color": "yellow",
+          "chit_color": "darkyellow",
           "sharpness": "1",
           "move_speed_bonus_combat_box3": "1"
         }
@@ -140,7 +140,7 @@
           "move_speed": "6",
           "attack_speed": "5",
           "strength": "T",
-          "chit_color": "paleyellow",
+          "chit_color": "yellow",
           "sharpness": "1",
           "length": "5"
         },
@@ -149,7 +149,7 @@
           "attack_speed": "4",
           "strength": "H",
           "length": "5",
-          "chit_color": "yellow",
+          "chit_color": "darkyellow",
           "sharpness": "1",
           "move_speed_bonus_combat_box3": "1"
         }
@@ -184,7 +184,7 @@
           "move_speed": "5",
           "attack_speed": "6",
           "strength": "H",
-          "chit_color": "paleyellow",
+          "chit_color": "yellow",
           "sharpness": "1",
           "length": "5"
         },
@@ -193,7 +193,7 @@
           "attack_speed": "6",
           "strength": "T",
           "length": "5",
-          "chit_color": "yellow",
+          "chit_color": "darkyellow",
           "sharpness": "1",
           "move_speed_bonus_combat_box3": "1"
         }
@@ -228,7 +228,7 @@
           "move_speed": "6",
           "attack_speed": "4",
           "strength": "H",
-          "chit_color": "paleyellow",
+          "chit_color": "yellow",
           "sharpness": "1",
           "length": "5"
         },
@@ -237,7 +237,7 @@
           "attack_speed": "5",
           "strength": "H",
           "length": "5",
-          "chit_color": "yellow",
+          "chit_color": "darkyellow",
           "sharpness": "1",
           "move_speed_bonus_combat_box3": "1"
         }
@@ -274,7 +274,7 @@
           "move_speed": "5",
           "attack_speed": "6",
           "strength": "T",
-          "chit_color": "paleyellow",
+          "chit_color": "yellow",
           "sharpness": "1",
           "length": "5"
         },
@@ -283,7 +283,7 @@
           "attack_speed": "6",
           "strength": "T",
           "length": "5",
-          "chit_color": "yellow",
+          "chit_color": "darkyellow",
           "sharpness": "1",
           "move_speed_bonus_combat_box3": "1"
         }

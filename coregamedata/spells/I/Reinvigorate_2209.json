@@ -11,9 +11,8 @@
       "magic_color": "white",
       "host_okay": "",
       "learnable": "",
-      "super_realm": "",
-      "super_realm_spell": "",
-      "spell_extra_action": "R"
+      "spell_extra_action": "R",
+      "rw_expansion_1": ""
     }
   },
   "parts": []

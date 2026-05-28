@@ -17,7 +17,8 @@
       "denizen": "",
       "icon_size": "1.1",
       "wraith": "",
-      "box_num": "4"
+      "box_num": "4",
+      "undead": ""
     },
     "light": {
       "move_speed": "3",

@@ -34,7 +34,8 @@
           "ghost": "",
           "icon_folder_alt": "wesnoth/units",
           "icon_type_alt": "ghost",
-          "icon_size_alt": "1.2"
+          "icon_size_alt": "1.2",
+          "undead": ""
         },
         "light": {
           "move_speed": "4",
@@ -71,7 +72,8 @@
           "ghost": "",
           "icon_folder_alt": "wesnoth/units",
           "icon_type_alt": "ghost",
-          "icon_size_alt": "1.2"
+          "icon_size_alt": "1.2",
+          "undead": ""
         },
         "light": {
           "move_speed": "4",
