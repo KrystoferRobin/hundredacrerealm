@@ -56,4 +56,8 @@ prisma/dev.db
 /_reference/RealmSpeak-src/
 ../RealmSpeak/
 ../RealmSpeak-src/
+
+# realm-export tool build artifacts
+/tools/realm-export/build/
+/tools/realm-export/test-out/
 ../realmspeak/
