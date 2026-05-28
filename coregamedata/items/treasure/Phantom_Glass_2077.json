@@ -1,0 +1,18 @@
+{
+  "id": "2077",
+  "name": "Phantom Glass",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "8",
+      "notoriety": "2",
+      "text": "Use MAGIC SIGHT",
+      "weight": "L",
+      "magic_sight": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,290 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Ogre Hero",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn",
+      "pronoun": "he",
+      "creator": "JYPE",
+      "artcredit": "East  Paladin Gallery / Midjourney",
+      "meaning": "Battle Axe",
+      "vulnerability": "H",
+      "icon_type": "ogre hero",
+      "icon_folder": "custom/characters",
+      "extra_notes": "The Ogre Hero has gone a long way since being the village joke. Little Daddy and Big Momma are very proud of their son."
+    },
+    "level_1": {
+      "name": "Half Breed"
+    },
+    "level_2": {
+      "name": "Tribal Hunter",
+      "weapon": "Light Bow",
+      "armor": "",
+      "badge_icon": "Ogre_Herobadge2",
+      "mountain_move_adj": "-1",
+      "advantages": {
+        "N0": "MOUNTAIN FOLK: -1 mountain move cost"
+      }
+    },
+    "level_3": {
+      "name": "Tribal Warrior",
+      "weapon": "Great Axe",
+      "badge_icon": "Ogre_Herobadge3",
+      "monster_control_duration": "0",
+      "monster_control_enhanced": "",
+      "advantages": {
+        "N0": "OGRE COMMAND: Inspires Other Ogres - Lead and Command Ogres"
+      },
+      "monster_control": {
+        "N0": "Ogre"
+      }
+    },
+    "level_4": {
+      "name": "Ogre Hero",
+      "weapon": "Great Axe",
+      "badge_icon": "Ogre_Herobadge4",
+      "advantages": {
+        "N0": "HERO OF THE PEOPLE: Immunity to humanoids"
+      },
+      "monster_immunity": {
+        "N0": "Sword Orc",
+        "N1": "Axe Goblin",
+        "N2": "Ogre",
+        "N3": "H Troll",
+        "N4": "T Troll",
+        "N5": "Giant",
+        "N6": "Spear Goblin",
+        "N7": "Orc Archer",
+        "N8": "Sword Goblin"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "fight H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "ogre hero",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "ogre hero",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "MOVE H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "ogre hero",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "move H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "ogre hero",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "ogre hero",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "fight H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "ogre hero",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "ogre hero",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "ogre hero",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight T5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "T",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "ogre hero",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "move T6*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "T",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "ogre hero",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "fight T6*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "T",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "ogre hero",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "fight T4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "T",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "ogre hero",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

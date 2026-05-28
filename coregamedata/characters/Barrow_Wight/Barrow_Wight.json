@@ -1,0 +1,332 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Barrow Wight",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn,Ghost",
+      "pronoun": "he",
+      "creator": "Roberto Ullfig",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Unknown Terror",
+      "vulnerability": "M",
+      "icon_type": "barrow wight",
+      "icon_folder": "custom/characters",
+      "magicuser": "",
+      "extra_notes": ""
+    },
+    "level_1": {
+      "name": "Remnant",
+      "spellcount": "1",
+      "weapon": "Short Sword",
+      "badge_icon": "Barrow_Wightbadge1",
+      "spelltypes": {
+        "N0": "VI",
+        "N1": "VII"
+      },
+      "advantages": {
+        "N0": "CREEPY: Adds one to all rolls on the COMMERCE, TRADE, HIRE, and MEETING tables. [Level 1]"
+      },
+      "diemod": {
+        "N0": "+1:commerce,trade,hire,meeting:all"
+      }
+    },
+    "level_2": {
+      "name": "Lurker",
+      "spellcount": "1",
+      "weapon": "Short Sword",
+      "badge_icon": "Barrow_Wightbadge2",
+      "spelltypes": {
+        "N0": "V",
+        "N1": "VI",
+        "N2": "VII"
+      },
+      "advantages": {
+        "N0": "CONCEALMENT: Rolls 1 die instead of 2 for all rolls on the HIDE table. [Level 2]"
+      },
+      "diemod": {
+        "N0": "1d:hide:all"
+      }
+    },
+    "level_3": {
+      "name": "Prowler",
+      "spellcount": "1",
+      "armor": "Shield",
+      "badge_icon": "Barrow_Wightbadge3",
+      "walk_woods": "7th",
+      "weapon": "Short Sword",
+      "spelltypes": {
+        "N0": "V",
+        "N1": "VI",
+        "N2": "VII"
+      },
+      "advantages": {
+        "N0": "PROWLER: Can Walk Woods on 7th day of every week. [Level 3]"
+      }
+    },
+    "level_4": {
+      "name": "Barrow Wight",
+      "spellcount": "2",
+      "armor": "Breastplate",
+      "badge_icon": "Barrow_Wightbadge4",
+      "extra_cave_phase": "",
+      "weapon": "Short Sword",
+      "spelltypes": {
+        "N0": "V",
+        "N1": "VI",
+        "N2": "VII"
+      },
+      "advantages": {
+        "N0": "NIGHT VISION: Extra Phase in Caves [Level 4]"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "guard": "-2",
+      "order": "-2",
+      "soldiers": "-2",
+      "lancers": "-2",
+      "crone": "2",
+      "patrol": "-1",
+      "rogues": "-1",
+      "company": "-1",
+      "woodfolk": "-1"
+    },
+    "relationship": {
+      "guard": "-2",
+      "order": "-2",
+      "soldiers": "-2",
+      "lancers": "-2",
+      "crone": "2",
+      "patrol": "-1",
+      "rogues": "-1",
+      "company": "-1",
+      "woodfolk": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "barrow wight",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "magic VI4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "barrow wight",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VI"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "magic VII4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "barrow wight",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "move M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "barrow wight",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "fight M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "barrow wight",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "magic V5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "barrow wight",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "V"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "barrow wight",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "barrow wight",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "barrow wight",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "barrow wight",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "barrow wight",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "barrow wight",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

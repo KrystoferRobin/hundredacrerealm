@@ -1,0 +1,21 @@
+{
+  "id": "503",
+  "name": "Black Knight Move M4*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "speed": "4",
+      "character_level": "2",
+      "strength": "M",
+      "effort": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "5",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "black_knight",
+      "rw_expansion_1": ""
+    }
+  }
+}

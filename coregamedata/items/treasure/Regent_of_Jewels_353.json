@@ -1,0 +1,22 @@
+{
+  "id": "353",
+  "name": "Regent of Jewels",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "67",
+      "weight": "L",
+      "text": "Extra TRADE",
+      "great": "",
+      "fame": "10",
+      "notoriety": "10",
+      "native": "Soldiers",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

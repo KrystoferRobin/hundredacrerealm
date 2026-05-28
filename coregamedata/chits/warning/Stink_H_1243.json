@@ -1,0 +1,33 @@
+{
+  "id": "1243",
+  "name": "Stink H",
+  "attributeBlocks": {
+    "this": {
+      "warning": "stink",
+      "tile_type": "H",
+      "super_realm": "",
+      "chit": "",
+      "ts_section": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1288",
+      "name": "Cottage",
+      "attributeBlocks": {
+        "this": {
+          "dwelling": "cottage",
+          "warning": "stink",
+          "tile_type": "H",
+          "super_realm": "",
+          "print": "",
+          "icon_type": "human",
+          "ts_section": "dwellings",
+          "ts_color": "tan",
+          "icon_folder": "wesnoth/buildings",
+          "quest_target": ""
+        }
+      }
+    }
+  ]
+}

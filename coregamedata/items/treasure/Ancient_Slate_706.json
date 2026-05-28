@@ -1,0 +1,23 @@
+{
+  "id": "706",
+  "name": "Ancient Slate",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "(4 random spells)",
+      "rw_expansion_1": "",
+      "base_price": "8",
+      "notoriety": "5",
+      "weight": "M",
+      "facing": "face_dn",
+      "fame": "-5",
+      "book": "",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "print": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

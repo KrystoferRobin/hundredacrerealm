@@ -1,0 +1,267 @@
+{
+  "id": "1888",
+  "name": "Conjuror Dwelling",
+  "attributeBlocks": {
+    "this": {
+      "native": "Conjurors",
+      "dwelling": "hamlet,settlement,s_camp",
+      "print": "",
+      "ts_section": "clan 4",
+      "ts_size": "T",
+      "ts_color": "purple",
+      "ts_count": "4",
+      "icon_type": "druid",
+      "icon_folder": "wesnoth/units/quenoth",
+      "virtual_dwelling": "",
+      "super_realm": "",
+      "native_die": "5",
+      "clan": "4",
+      "icon_size": "0.9",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1889",
+      "name": "Conjuror 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Conjurors",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "3",
+          "vulnerability": "M",
+          "rank": "1",
+          "icon_type": "druid",
+          "setup_start": "Conjuror Dwelling",
+          "hire_type": "single",
+          "icon_folder": "wesnoth/units/quenoth",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "5",
+          "clan": "4",
+          "armored": "",
+          "icon_size": "0.9",
+          "no_change_tactics": "",
+          "transmorph_immunity": "",
+          "change_tactics_after_casting": "",
+          "attack_after_casting": "",
+          "spell_targets_self": "",
+          "fast_caster": "",
+          "native_name": "Caster"
+        },
+        "light": {
+          "move_speed": "5",
+          "chit_color": "lightorange",
+          "attack_speed": "0",
+          "length": "9",
+          "magic_type": "VI",
+          "attack_spell": "transform"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1890",
+      "name": "Conjuror 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Conjurors",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "3",
+          "vulnerability": "M",
+          "rank": "2",
+          "icon_type": "druid",
+          "setup_start": "Conjuror Dwelling",
+          "hire_type": "single",
+          "icon_folder": "wesnoth/units/quenoth",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "5",
+          "clan": "4",
+          "armored": "",
+          "icon_size": "0.9",
+          "no_change_tactics": "",
+          "transmorph_immunity": "",
+          "change_tactics_after_casting": "",
+          "attack_after_casting": "",
+          "spell_targets_self": "",
+          "fast_caster": "",
+          "native_name": "Caster"
+        },
+        "light": {
+          "move_speed": "5",
+          "chit_color": "lightorange",
+          "attack_speed": "0",
+          "length": "9",
+          "magic_type": "VI",
+          "attack_spell": "transform"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1891",
+      "name": "Conjuror 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Conjurors",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "3",
+          "vulnerability": "M",
+          "rank": "3",
+          "icon_type": "druid",
+          "setup_start": "Conjuror Dwelling",
+          "hire_type": "single",
+          "icon_folder": "wesnoth/units/quenoth",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "5",
+          "clan": "4",
+          "armored": "",
+          "icon_size": "0.9",
+          "no_change_tactics": "",
+          "transmorph_immunity": "",
+          "change_tactics_after_casting": "",
+          "attack_after_casting": "",
+          "spell_targets_self": "",
+          "fast_caster": "",
+          "native_name": "Caster"
+        },
+        "light": {
+          "move_speed": "5",
+          "chit_color": "lightorange",
+          "attack_speed": "0",
+          "length": "9",
+          "magic_type": "VI",
+          "attack_spell": "transform"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1892",
+      "name": "Conjuror HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Conjurors",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "3",
+          "vulnerability": "M",
+          "rank": "HQ",
+          "icon_type": "druid",
+          "setup_start": "Conjuror Dwelling",
+          "hire_type": "single",
+          "icon_folder": "wesnoth/units/quenoth",
+          "commerce": "N",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "5",
+          "clan": "4",
+          "armored": "",
+          "icon_size": "0.9",
+          "no_change_tactics": "",
+          "transmorph_immunity": "",
+          "change_tactics_after_casting": "",
+          "attack_after_casting": "",
+          "spell_targets_self": "",
+          "fast_caster": "",
+          "native_name": "Caster"
+        },
+        "light": {
+          "move_speed": "5",
+          "chit_color": "lightorange",
+          "attack_speed": "0",
+          "length": "9",
+          "magic_type": "VI",
+          "attack_spell": "transform"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1988",
+      "name": "Breastplate",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "armor_swing": "",
+          "armor_thrust": "",
+          "armor": "",
+          "icon_type": "breastplate",
+          "facing": "dark",
+          "armor_row": "2",
+          "ret_dw": "Guard",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "breastplate": ""
+        },
+        "intact": {
+          "base_price": "9",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "6",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "1993",
+      "name": "Helmet",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "armor_smash": "",
+          "armor": "",
+          "icon_type": "helmet",
+          "facing": "dark",
+          "armor_row": "2",
+          "ret_dw": "House",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "helmet": ""
+        },
+        "intact": {
+          "base_price": "5",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "3",
+          "chit_color": "white"
+        }
+      }
+    }
+  ]
+}

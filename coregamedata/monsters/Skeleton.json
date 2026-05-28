@@ -1,0 +1,39 @@
+{
+  "id": "919",
+  "name": "Skeleton",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "1",
+      "notoriety": "1",
+      "icon_type": "skull",
+      "setup_start": "Skeleton Box",
+      "monster_die": "2",
+      "base_price": "1",
+      "icon_folder": "monsters2",
+      "rw_expansion_1": "",
+      "box_num": "1",
+      "undead": "",
+      "denizen": "",
+      "weapon_use": "",
+      "skeleton": "",
+      "icon_type_alt": "skeleton",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "L",
+      "chit_color": "white"
+    },
+    "dark": {
+      "move_speed": "6",
+      "attack_speed": "2",
+      "strength": "L",
+      "chit_color": "gray"
+    }
+  },
+  "parts": []
+}

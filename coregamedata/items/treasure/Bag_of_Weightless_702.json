@@ -1,0 +1,18 @@
+{
+  "id": "702",
+  "name": "Bag of Weightless",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Heaviest inactive treasure is ignored for weight restrictions",
+      "rw_expansion_1": "",
+      "base_price": "8",
+      "great": "",
+      "facing": "face_dn",
+      "reduce_weight": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

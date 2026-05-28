@@ -1,0 +1,35 @@
+{
+  "title": "The Rest Activity",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Each character can use the Rest activity to return his inactive action chits to play. A guide can record this activity for the benefit of his followers. He records \"R\" to record each Rest activity."
+    },
+    {
+      "type": "paragraph",
+      "text": "When he does the activity, he can bring fatigued or wounded chits back into play or convert a wounded chit to a fatigued chit."
+    },
+    {
+      "type": "list",
+      "items": [
+        "He can Rest using any one of the following options:",
+        "he can place a fatigued one-asterisk chit or a wounded chit that has no asterisks back into play;",
+        "he can put into play a fatigued two-asterisk chit and \"make change\" by fatiguing an active one-asterisk chit;",
+        "he can convert a wounded one-asterisk chit into a fatigued chit;",
+        "or he can convert a wounded two-asterisk chit into a fatigued chit and \"make change\" by fatiguing an active one-asterisk chit."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "When a character \"makes change\", he must fatigue an active chit; he cannot make change by converting a fatigued or active chit into a wound. The chit can be of any type as long as it shows the right number of asterisks. Example: He could activate or convert a Move chit and use a Magic chit to make change."
+    },
+    {
+      "type": "paragraph",
+      "text": "When a character converts a wounded chit into a fatigued chit, he turns it face up but leaves it out of play."
+    },
+    {
+      "type": "paragraph",
+      "text": "When all of a character's chits are fatigued, wounded, and/or committed to spells, he can do only the Rest activity. Any other recorded activities are cancelled and he must rest at the next opportunity. If he cannot do the Rest activity (due to the Ill Health Curse or because all his chits are still committed to spells), he is killed."
+    }
+  ]
+} 

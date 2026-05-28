@@ -1,0 +1,28 @@
+{
+  "id": "344",
+  "name": "Good Book",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "10",
+      "notoriety": "5",
+      "weight": "L",
+      "magic": "I",
+      "fame": "5",
+      "original_game": "",
+      "book": "",
+      "print": "",
+      "alt_monsters1_game": "",
+      "scholar_price": "50",
+      "magic_other": "VII",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "rw_expansion_1": "",
+      "item": "",
+      "merchant_price": "20",
+      "priest_price": "50"
+    }
+  },
+  "parts": []
+}

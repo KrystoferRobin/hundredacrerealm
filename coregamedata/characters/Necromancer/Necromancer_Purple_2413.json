@@ -1,0 +1,18 @@
+{
+  "id": "2413",
+  "name": "Necromancer Purple",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "color",
+      "character_level": "3",
+      "stage": "9",
+      "level": "3",
+      "icon_folder": "characters",
+      "icon_type": "necromancer",
+      "super_realm": "",
+      "magic": "IV",
+      "chit_state": "CP"
+    }
+  }
+}

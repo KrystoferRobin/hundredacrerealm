@@ -1,0 +1,18 @@
+{
+  "id": "9",
+  "name": "fight M5",
+  "attributeBlocks": {
+    "this": {
+      "action": "fight",
+      "strength": "M",
+      "speed": "5",
+      "character_chit": "",
+      "icon_type": "rogue archer",
+      "icon_folder": "custom/characters",
+      "stage": "9",
+      "level": "3",
+      "effort": "0",
+      "facing": "dark"
+    }
+  }
+}

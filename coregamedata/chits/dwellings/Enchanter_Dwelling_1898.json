@@ -1,0 +1,212 @@
+{
+  "id": "1898",
+  "name": "Enchanter Dwelling",
+  "attributeBlocks": {
+    "this": {
+      "native": "Enchanters",
+      "dwelling": "guard,house,settlement",
+      "print": "",
+      "ts_section": "clan 4",
+      "ts_size": "T",
+      "ts_color": "purple",
+      "ts_count": "3",
+      "icon_type": "greatwarlock",
+      "icon_folder": "wesnoth/units/tharis-magi",
+      "virtual_dwelling": "",
+      "super_realm": "",
+      "native_die": "6",
+      "clan": "4",
+      "icon_size": "0.9",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1899",
+      "name": "Enchanter 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Enchanters",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "3",
+          "vulnerability": "L",
+          "rank": "1",
+          "icon_type": "masterofdarkness-magic1",
+          "setup_start": "Enchanter Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/tharis-magi",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "6",
+          "clan": "4",
+          "armored": "",
+          "icon_size": "0.9",
+          "no_change_tactics": "",
+          "spell_targets_self": "",
+          "fast_caster": "",
+          "native_name": "Caster"
+        },
+        "light": {
+          "move_speed": "4",
+          "chit_color": "gold",
+          "attack_speed": "0",
+          "length": "9",
+          "magic_type": "VI",
+          "attack_spell": "melt into mist"
+        },
+        "dark": {
+          "move_speed": "3",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "orange"
+        }
+      }
+    },
+    {
+      "id": "1900",
+      "name": "Enchanter 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Enchanters",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "3",
+          "vulnerability": "L",
+          "rank": "2",
+          "icon_type": "masterofdarkness-magic2",
+          "setup_start": "Enchanter Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/tharis-magi",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "6",
+          "clan": "4",
+          "armored": "",
+          "icon_size": "0.9",
+          "no_change_tactics": "",
+          "spell_targets_self": "",
+          "fast_caster": "",
+          "native_name": "Caster"
+        },
+        "light": {
+          "move_speed": "4",
+          "chit_color": "gold",
+          "attack_speed": "0",
+          "length": "9",
+          "magic_type": "VI",
+          "attack_spell": "melt into mist"
+        },
+        "dark": {
+          "move_speed": "3",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "orange"
+        }
+      }
+    },
+    {
+      "id": "1901",
+      "name": "Enchanter HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Enchanters",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "3",
+          "vulnerability": "L",
+          "rank": "HQ",
+          "icon_type": "shadowmatriarch",
+          "setup_start": "Enchanter Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/tharis-magi",
+          "commerce": "F,N",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "6",
+          "clan": "4",
+          "armored": "",
+          "icon_size": "0.9",
+          "no_change_tactics": "",
+          "spell_targets_self": "",
+          "fast_caster": "",
+          "native_name": "Caster"
+        },
+        "light": {
+          "move_speed": "4",
+          "chit_color": "gold",
+          "attack_speed": "0",
+          "length": "9",
+          "magic_type": "VI",
+          "attack_spell": "melt into mist"
+        },
+        "dark": {
+          "move_speed": "3",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "orange"
+        }
+      }
+    },
+    {
+      "id": "1985",
+      "name": "Shield",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "shield": "",
+          "armor_choice": "",
+          "armor": "",
+          "icon_type": "shield",
+          "facing": "dark",
+          "armor_row": "1",
+          "ret_dw": "House",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": ""
+        },
+        "intact": {
+          "base_price": "7",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "5",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "1989",
+      "name": "Breastplate",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "armor_swing": "",
+          "armor_thrust": "",
+          "armor": "",
+          "icon_type": "breastplate",
+          "facing": "dark",
+          "armor_row": "2",
+          "ret_dw": "Guard",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "breastplate": ""
+        },
+        "intact": {
+          "base_price": "9",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "6",
+          "chit_color": "white"
+        }
+      }
+    }
+  ]
+}

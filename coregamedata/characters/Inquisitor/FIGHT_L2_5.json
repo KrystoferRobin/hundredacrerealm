@@ -1,0 +1,18 @@
+{
+  "id": "5",
+  "name": "FIGHT L2**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "5",
+      "level": "2",
+      "action": "FIGHT",
+      "strength": "L",
+      "speed": "2",
+      "effort": "2",
+      "facing": "dark",
+      "icon_type": "inquisitor"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "1116",
+  "name": "Blazing Light X",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "permanent",
+      "target": "character",
+      "text": "Extra phase until you end a phase in sunlight",
+      "magic_color": "purple",
+      "clearing_req": "C",
+      "torch_bearer": "",
+      "always_active": "",
+      "ends_in_sunlight": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "benevolent": "",
+      "upg_day_spells": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

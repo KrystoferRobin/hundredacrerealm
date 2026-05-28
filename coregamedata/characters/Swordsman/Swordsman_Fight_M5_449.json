@@ -1,0 +1,20 @@
+{
+  "id": "449",
+  "name": "Swordsman Fight M5",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "strength": "M",
+      "speed": "5",
+      "character_level": "4",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "11",
+      "level": "4",
+      "icon_folder": "characters",
+      "icon_type": "swordsman",
+      "rw_expansion_1": ""
+    }
+  }
+}

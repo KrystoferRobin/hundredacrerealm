@@ -1,0 +1,22 @@
+{
+  "id": "7",
+  "name": "move H4**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "speed": "4",
+      "strength": "H",
+      "effort": "2",
+      "character_level": "3",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "7",
+      "level": "3",
+      "icon_folder": "custom/characters",
+      "icon_type": "templar",
+      "rw_expansion_1": "",
+      "facing": "dark"
+    }
+  }
+}

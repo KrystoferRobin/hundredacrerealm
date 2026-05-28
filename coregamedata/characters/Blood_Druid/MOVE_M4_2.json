@@ -1,0 +1,18 @@
+{
+  "id": "2",
+  "name": "MOVE M4",
+  "attributeBlocks": {
+    "this": {
+      "action": "MOVE",
+      "strength": "M",
+      "speed": "4",
+      "character_chit": "",
+      "icon_type": "blood druid",
+      "icon_folder": "custom/characters",
+      "stage": "2",
+      "level": "1",
+      "effort": "0",
+      "facing": "dark"
+    }
+  }
+}

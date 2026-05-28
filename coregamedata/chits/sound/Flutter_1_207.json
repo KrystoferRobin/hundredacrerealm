@@ -1,0 +1,15 @@
+{
+  "id": "207",
+  "name": "Flutter 1",
+  "attributeBlocks": {
+    "this": {
+      "sound": "flutter",
+      "clearing": "1",
+      "original_game": "",
+      "chit": "",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": ""
+    }
+  },
+  "parts": []
+}

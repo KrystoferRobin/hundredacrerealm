@@ -1,0 +1,18 @@
+{
+  "id": "12",
+  "name": "FIGHT M2**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "12",
+      "level": "4",
+      "action": "FIGHT",
+      "strength": "M",
+      "speed": "2",
+      "effort": "2",
+      "facing": "dark",
+      "icon_type": "blood witch"
+    }
+  }
+}

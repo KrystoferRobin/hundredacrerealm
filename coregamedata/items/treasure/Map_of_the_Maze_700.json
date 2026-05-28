@@ -1,0 +1,17 @@
+{
+  "id": "700",
+  "name": "Map of the Maze",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Use to exit MAZE without discovering it",
+      "rw_expansion_1": "",
+      "base_price": "5",
+      "facing": "face_dn",
+      "map": "maze",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

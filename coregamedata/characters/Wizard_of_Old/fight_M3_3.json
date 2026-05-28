@@ -1,0 +1,18 @@
+{
+  "id": "3",
+  "name": "fight M3*",
+  "attributeBlocks": {
+    "this": {
+      "action": "fight",
+      "strength": "M",
+      "speed": "3",
+      "character_chit": "",
+      "icon_type": "wizard of old",
+      "icon_folder": "custom/characters",
+      "stage": "3",
+      "level": "1",
+      "effort": "1",
+      "facing": "dark"
+    }
+  }
+}

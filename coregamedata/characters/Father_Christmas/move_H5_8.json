@@ -1,0 +1,18 @@
+{
+  "id": "8",
+  "name": "move H5*",
+  "attributeBlocks": {
+    "this": {
+      "action": "move",
+      "strength": "H",
+      "speed": "5",
+      "character_chit": "",
+      "icon_type": "father christmas",
+      "icon_folder": "custom/characters",
+      "stage": "8",
+      "level": "3",
+      "effort": "1",
+      "facing": "dark"
+    }
+  }
+}

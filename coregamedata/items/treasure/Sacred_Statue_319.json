@@ -1,0 +1,29 @@
+{
+  "id": "319",
+  "name": "Sacred Statue",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "magic": "I",
+      "native": "Order",
+      "fame": "10",
+      "weight": "L",
+      "notoriety": "-5",
+      "great": "",
+      "base_price": "10",
+      "original_game": "",
+      "artifact": "",
+      "print": "",
+      "alt_monsters1_game": "",
+      "scholar_price": "20",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "rw_expansion_1": "",
+      "item": "",
+      "merchant_price": "20",
+      "priest_price": "20"
+    }
+  },
+  "parts": []
+}

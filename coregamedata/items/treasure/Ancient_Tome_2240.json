@@ -1,0 +1,19 @@
+{
+  "id": "2240",
+  "name": "Ancient Tome",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "18",
+      "weight": "L",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "text": "-1 on Reading Runes Table rolls.",
+      "notoriety": "7"
+    }
+  },
+  "parts": []
+}

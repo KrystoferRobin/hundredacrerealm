@@ -1,0 +1,45 @@
+{
+  "id": "98",
+  "name": "Rogue HQ",
+  "attributeBlocks": {
+    "this": {
+      "native": "Rogues",
+      "fame": "0",
+      "notoriety": "2",
+      "base_price": "1",
+      "vulnerability": "M",
+      "rank": "HQ",
+      "original_game": "",
+      "icon_type": "assassin",
+      "setup_start": "Inn",
+      "hire_type": "single",
+      "monster_die": "5",
+      "garrison": "",
+      "icon_folder": "natives",
+      "alt_monsters1_game": "",
+      "commerce": "N",
+      "rw_expansion_1": "",
+      "denizen": "",
+      "icon_folder_alt": "wesnoth/units/dunefolk",
+      "icon_type_alt": "scorcher",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "M",
+      "length": "3",
+      "sharpness": "1",
+      "chit_color": "lightorange"
+    },
+    "dark": {
+      "move_speed": "2",
+      "attack_speed": "4",
+      "strength": "L",
+      "length": "3",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

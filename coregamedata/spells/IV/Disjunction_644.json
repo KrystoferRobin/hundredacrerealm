@@ -1,0 +1,24 @@
+{
+  "id": "644",
+  "name": "Disjunction",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "permanent",
+      "target": "character",
+      "text": "Cannot be affected by weather or terrain fatigue/wounds",
+      "magic_color": "purple",
+      "rw_expansion_1": "",
+      "attribute_add": "",
+      "host_okay": "",
+      "author": "Expansion 1",
+      "learnable": ""
+    },
+    "attribute_add": {
+      "no_w_fat": "",
+      "no_ter_harm": ""
+    }
+  },
+  "parts": []
+}

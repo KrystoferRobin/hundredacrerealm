@@ -1,0 +1,22 @@
+{
+  "id": "324",
+  "name": "Power Gauntlets",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "fame": "3",
+      "notoriety": "4",
+      "text": "FIGHT H4",
+      "base_price": "7",
+      "attack_speed": "4",
+      "strength": "H",
+      "original_game": "",
+      "gloves": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

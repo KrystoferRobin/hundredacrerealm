@@ -1,0 +1,21 @@
+{
+  "id": "350",
+  "name": "Imperial Tabard",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "17",
+      "great": "",
+      "fame": "20",
+      "notoriety": "-10",
+      "weight": "M",
+      "native": "Guard",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

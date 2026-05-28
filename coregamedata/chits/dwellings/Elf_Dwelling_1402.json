@@ -1,0 +1,346 @@
+{
+  "id": "1402",
+  "name": "Elf Dwelling",
+  "attributeBlocks": {
+    "this": {
+      "super_realm": "",
+      "native": "Elves",
+      "dwelling": "Elves",
+      "monster_die": "3",
+      "monster_die2": "4",
+      "print": "",
+      "ts_section": "lost palace",
+      "ts_size": "M",
+      "ts_color": "yellow",
+      "ts_count": "6",
+      "icon_type": "archer",
+      "icon_folder": "wesnoth/units/elves-wood",
+      "virtual_dwelling": "",
+      "ts_sort": "3",
+      "icon_size": "0.9",
+      "roving_native": "",
+      "summon": "Patter F, Patter ST, Lost Palace",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1403",
+      "name": "Elf 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Elves",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "1",
+          "super_realm": "",
+          "icon_type": "archer",
+          "monster_die": "3",
+          "monster_die2": "4",
+          "setup_start": "Elf Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/elves-wood",
+          "denizen": "",
+          "needs_init": "",
+          "magic_protection": "",
+          "missile": "",
+          "icon_size": "0.9",
+          "archer": "",
+          "native_name": "Archer",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "2",
+          "attack_speed": "0",
+          "chit_color": "paleyellow",
+          "magic_type": "VII"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "1",
+          "strength": "L",
+          "length": "14",
+          "chit_color": "yellow",
+          "sharpness": "2",
+          "missile": ""
+        }
+      }
+    },
+    {
+      "id": "1404",
+      "name": "Elf 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Elves",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "2",
+          "super_realm": "",
+          "icon_type": "archer+female",
+          "monster_die": "3",
+          "monster_die2": "4",
+          "setup_start": "Elf Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/elves-wood",
+          "denizen": "",
+          "magic_protection": "",
+          "missile": "",
+          "icon_size": "0.9",
+          "archer": "",
+          "native_name": "Archer",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "2",
+          "attack_speed": "0",
+          "chit_color": "paleyellow",
+          "magic_type": "VII"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "1",
+          "strength": "L",
+          "length": "14",
+          "chit_color": "yellow",
+          "sharpness": "2",
+          "missile": ""
+        }
+      }
+    },
+    {
+      "id": "1405",
+      "name": "Elf 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Elves",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "3",
+          "super_realm": "",
+          "icon_type": "archer-bow",
+          "monster_die": "3",
+          "monster_die2": "4",
+          "setup_start": "Elf Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/elves-wood",
+          "denizen": "",
+          "magic_protection": "",
+          "missile": "",
+          "icon_size": "0.9",
+          "archer": "",
+          "native_name": "Archer",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "2",
+          "attack_speed": "0",
+          "chit_color": "paleyellow",
+          "magic_type": "VII"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "1",
+          "strength": "L",
+          "length": "14",
+          "chit_color": "yellow",
+          "sharpness": "2",
+          "missile": ""
+        }
+      }
+    },
+    {
+      "id": "1406",
+      "name": "Elf 4",
+      "attributeBlocks": {
+        "this": {
+          "native": "Elves",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "4",
+          "super_realm": "",
+          "icon_type": "archer+female-bow",
+          "monster_die": "3",
+          "monster_die2": "4",
+          "setup_start": "Elf Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/elves-wood",
+          "denizen": "",
+          "magic_protection": "",
+          "missile": "",
+          "icon_size": "0.9",
+          "archer": "",
+          "native_name": "Archer",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "2",
+          "attack_speed": "0",
+          "chit_color": "paleyellow",
+          "magic_type": "VII"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "1",
+          "strength": "L",
+          "length": "14",
+          "chit_color": "yellow",
+          "sharpness": "2",
+          "missile": ""
+        }
+      }
+    },
+    {
+      "id": "1407",
+      "name": "Elf 5",
+      "attributeBlocks": {
+        "this": {
+          "native": "Elves",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "5",
+          "super_realm": "",
+          "icon_type": "archer",
+          "monster_die": "3",
+          "monster_die2": "4",
+          "setup_start": "Elf Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/elves-wood",
+          "denizen": "",
+          "magic_protection": "",
+          "missile": "",
+          "icon_size": "0.9",
+          "archer": "",
+          "native_name": "Archer",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "2",
+          "attack_speed": "0",
+          "chit_color": "paleyellow",
+          "magic_type": "VII"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "1",
+          "strength": "L",
+          "length": "14",
+          "chit_color": "yellow",
+          "sharpness": "2",
+          "missile": ""
+        }
+      }
+    },
+    {
+      "id": "1408",
+      "name": "Elf HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Elves",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "HQ",
+          "super_realm": "",
+          "icon_type": "marksman",
+          "monster_die": "3",
+          "monster_die2": "4",
+          "setup_start": "Elf Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/elves-wood",
+          "commerce": "N",
+          "denizen": "",
+          "magic_protection": "",
+          "missile": "",
+          "icon_size": "0.9",
+          "archer": "",
+          "native_name": "Archer",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "2",
+          "attack_speed": "0",
+          "chit_color": "paleyellow",
+          "magic_type": "VII"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "1",
+          "strength": "M",
+          "length": "16",
+          "chit_color": "yellow",
+          "sharpness": "2",
+          "missile": ""
+        }
+      }
+    },
+    {
+      "id": "1995",
+      "name": "Medium Bow",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "16",
+          "base_price": "8",
+          "missile": "",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "medium_bow",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": "",
+          "bow": ""
+        },
+        "unalerted": {
+          "strength": "M",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "attack_speed": "1",
+          "strength": "M",
+          "sharpness": "2",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1997",
+      "name": "Light Bow",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "14",
+          "base_price": "6",
+          "missile": "",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "light_bow",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": "",
+          "bow": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "attack_speed": "1",
+          "strength": "L",
+          "sharpness": "2",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

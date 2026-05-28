@@ -1,0 +1,16 @@
+{
+  "id": "2049",
+  "name": "Lost Keys",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Opens Chest, Crypt, Abbey, Library, Tomb, Vault and Conjuror's Remains",
+      "base_price": "5",
+      "key": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

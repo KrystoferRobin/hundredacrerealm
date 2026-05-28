@@ -1,0 +1,22 @@
+{
+  "id": "1179",
+  "name": "Wall of Force",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "attack",
+      "target": "none",
+      "text": "All attacks of one combat box of own sheet are defended",
+      "magic_color": "gray",
+      "wall_of_force": "",
+      "strength": "N",
+      "length": "17",
+      "host_okay": "",
+      "new_spells_2": "",
+      "learnable": "",
+      "author": "Expansion 1"
+    }
+  },
+  "parts": []
+}

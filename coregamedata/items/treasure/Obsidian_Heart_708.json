@@ -1,0 +1,20 @@
+{
+  "id": "708",
+  "name": "Obsidian Heart",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "All WHITE magic in clearing becomes BLACK magic",
+      "rw_expansion_1": "",
+      "base_price": "12",
+      "notoriety": "35",
+      "fame": "-20",
+      "facing": "face_dn",
+      "cursed": "",
+      "color_mod": "1.5",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

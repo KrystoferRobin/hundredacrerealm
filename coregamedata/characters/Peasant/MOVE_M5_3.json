@@ -1,0 +1,18 @@
+{
+  "id": "3",
+  "name": "MOVE M5",
+  "attributeBlocks": {
+    "this": {
+      "action": "MOVE",
+      "strength": "M",
+      "speed": "5",
+      "character_chit": "",
+      "icon_type": "peasant",
+      "icon_folder": "custom/characters",
+      "stage": "3",
+      "level": "1",
+      "effort": "0",
+      "facing": "dark"
+    }
+  }
+}

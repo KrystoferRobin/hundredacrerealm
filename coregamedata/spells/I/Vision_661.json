@@ -1,0 +1,20 @@
+{
+  "id": "661",
+  "name": "Vision",
+  "spellLevel": "I",
+  "attributeBlocks": {
+    "this": {
+      "spell": "I",
+      "duration": "instant",
+      "target": "character",
+      "text": "Immediately discover every path and passage in current clearing",
+      "magic_color": "white",
+      "rw_expansion_1": "",
+      "discover_road": "",
+      "host_okay": "",
+      "author": "Expansion 1",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,68 @@
+{
+  "id": "2247",
+  "name": "Circle of Stones",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "circle_of_stones",
+      "treasure": "large",
+      "text": "Extra REST",
+      "cannot_move": "",
+      "treasure_within_treasure": "10",
+      "print": "",
+      "discovery": "",
+      "color_source": "gray",
+      "facing": "face_dn",
+      "ts_section": "twt",
+      "ts_color": "lightblue",
+      "nosecret": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "extra_actions_clearing": "R"
+    },
+    "table": {
+      "roll_1": "bow",
+      "roll_2": "treasure",
+      "roll_3": "teleport_mountain",
+      "roll_4": "teleport_ruins",
+      "roll_5": "curse",
+      "roll_6": "nothing"
+    }
+  },
+  "parts": [
+    {
+      "id": "2022",
+      "name": "Moon Bow",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "16",
+          "base_price": "25",
+          "missile": "",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "medium_bow",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": "",
+          "notoriety": "10",
+          "fame": "3",
+          "magic": "",
+          "magic_color_bonus": "purple",
+          "bow": "",
+          "super_realm_treasure": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "attack_speed": "1",
+          "strength": "L",
+          "sharpness": "2",
+          "chit_color": "red",
+          "magic_color_bonus_sharpness": "1"
+        }
+      }
+    }
+  ]
+}

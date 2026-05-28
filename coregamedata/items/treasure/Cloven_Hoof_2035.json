@@ -1,0 +1,21 @@
+{
+  "id": "2035",
+  "name": "Cloven Hoof",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "fame": "-20",
+      "notoriety": "40",
+      "great": "",
+      "text": "Add one to all rolls",
+      "base_price": "4",
+      "plus_one": "Clearing",
+      "color_source": "black",
+      "facing": "face_dn",
+      "nosecret": "",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

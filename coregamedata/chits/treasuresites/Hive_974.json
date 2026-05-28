@@ -1,0 +1,25 @@
+{
+  "id": "974",
+  "name": "Hive",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "hive",
+      "clearing": "2",
+      "monster_die": "3",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "gold",
+      "icon_type": "wasp",
+      "icon_folder": "monsters2",
+      "rw_expansion_1": "",
+      "generator": "2d2",
+      "susceptibleto": "generator_flamed",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_type_alt": "creepers"
+    }
+  },
+  "parts": []
+}

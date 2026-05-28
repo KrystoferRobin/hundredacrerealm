@@ -1,0 +1,21 @@
+{
+  "id": "2225",
+  "name": "Alter Object",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "day",
+      "target": "active item",
+      "text": "Alter object's weight. Roll on corresponding table.",
+      "magic_color": "purple",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "benevolent": "",
+      "alter_weight": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,40 @@
+{
+  "title": "PREPARE FOR PLAY",
+  "sections": [
+    {
+      "id": "3.0",
+      "title": "PREPARE FOR PLAY",
+      "file": "3.0.json"
+    },
+    {
+      "id": "3.1",
+      "title": "SETTING UP THE TREASURE SETUP CARD",
+      "file": "3.1.json"
+    },
+    {
+      "id": "3.2",
+      "title": "CONSTRUCTING THE MAP",
+      "file": "3.2.json"
+    },
+    {
+      "id": "3.3",
+      "title": "SELECTING CHARACTERS",
+      "file": "3.3.json"
+    },
+    {
+      "id": "3.4",
+      "title": "PLACING VISITOR/MISSION CHITS",
+      "file": "3.4.json"
+    },
+    {
+      "id": "3.5",
+      "title": "PLACING MAP CHITS",
+      "file": "3.5.json"
+    },
+    {
+      "id": "3.6",
+      "title": "REVEALING DWELLINGS",
+      "file": "3.6.json"
+    }
+  ]
+} 

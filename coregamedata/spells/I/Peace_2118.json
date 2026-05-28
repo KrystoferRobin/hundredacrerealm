@@ -1,0 +1,20 @@
+{
+  "id": "2118",
+  "name": "Peace",
+  "spellLevel": "I",
+  "attributeBlocks": {
+    "this": {
+      "spell": "I",
+      "duration": "combat",
+      "target": "attacker",
+      "text": "Cannot attack until attacked",
+      "magic_color": "white",
+      "sp_peace": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

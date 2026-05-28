@@ -1,0 +1,27 @@
+{
+  "id": "723",
+  "name": "Archeological Dig",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "text": "Learn about the Realm",
+      "rw_expansion_1": "",
+      "facing": "face_dn",
+      "cannot_move": "",
+      "nosecret": "",
+      "discovery": "",
+      "treasure_location": "dig",
+      "author": "Expansion 1",
+      "item": ""
+    },
+    "table": {
+      "roll_1": "random_tl",
+      "roll_2": "clues_chosen",
+      "roll_3": "clues_random",
+      "roll_4": "gold",
+      "roll_5": "collapse",
+      "roll_6": "nothing"
+    }
+  },
+  "parts": []
+}

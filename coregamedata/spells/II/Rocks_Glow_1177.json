@@ -1,0 +1,20 @@
+{
+  "id": "1177",
+  "name": "Rocks Glow",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "day",
+      "target": "clearing",
+      "text": "May perform daylight phases in affected clearing",
+      "magic_color": "gold",
+      "light_effect": "",
+      "host_okay": "",
+      "new_spells_2": "",
+      "learnable": "",
+      "author": "Expansion 1"
+    }
+  },
+  "parts": []
+}

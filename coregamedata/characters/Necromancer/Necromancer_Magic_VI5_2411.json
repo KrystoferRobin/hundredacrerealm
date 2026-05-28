@@ -1,0 +1,19 @@
+{
+  "id": "2411",
+  "name": "Necromancer Magic VI5**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "5",
+      "character_level": "3",
+      "stage": "7",
+      "level": "3",
+      "icon_folder": "characters",
+      "icon_type": "necromancer",
+      "super_realm": "",
+      "effort": "2",
+      "magic": "VI"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "9",
+  "name": "jihad M2**",
+  "attributeBlocks": {
+    "this": {
+      "action": "jihad",
+      "strength": "M",
+      "speed": "2",
+      "character_chit": "",
+      "icon_type": "saracen",
+      "icon_folder": "custom/characters",
+      "stage": "9",
+      "level": "3",
+      "effort": "2",
+      "facing": "dark",
+      "move_lock": "",
+      "box_constraint": "1"
+    }
+  }
+}

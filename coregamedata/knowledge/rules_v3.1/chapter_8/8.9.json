@@ -1,0 +1,21 @@
+{
+  "title": "Midnight",
+  "content": [
+    {
+      "type": "list",
+      "items": [
+        "At Midnight the game day ends. If it is the 28th game day, the game ends and the players determine who won.",
+        "If the game is not over, various effects automatically take place:",
+        "Each Potion that was activated that day expires and is returned, face down, to the box named on the card. The Potion can then be bought from that box's owner and used again. Potions can be bought and used any number of times.",
+        "All weapon counters are turned unalerted side up.",
+        "All alerted Magic chits fatigue.",
+        "All Permanent spells become inert, unless they are supplied with a continuous supply of color magic.",
+        "All Combat spells expire.",
+        "Curses are removed on any character in the same clearing with the Chapel.",
+        "A native automatically becomes unhired at Midnight of the last day in his term of hire.",
+        "A character can suicide at Midnight of any day.",
+        "Lastly, all face-up map chits (except the Lost City and Lost Castle) are turned face down, and play proceeds to the next day."
+      ]
+    }
+  ]
+} 

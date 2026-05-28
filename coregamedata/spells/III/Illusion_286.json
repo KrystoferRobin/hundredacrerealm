@@ -1,0 +1,20 @@
+{
+  "id": "286",
+  "name": "Illusion",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "permanent",
+      "target": "character, tile",
+      "text": "Add one to all SEARCH die rolls",
+      "magic_color": "gold",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

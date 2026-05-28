@@ -1,0 +1,20 @@
+{
+  "id": "646",
+  "name": "Repair Armor",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "instant",
+      "target": "caster armor",
+      "text": "Repairs damaged (not destroyed) armor",
+      "magic_color": "gray",
+      "rw_expansion_1": "",
+      "repair_one": "",
+      "host_okay": "",
+      "author": "Expansion 1",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

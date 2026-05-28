@@ -1,0 +1,18 @@
+{
+  "id": "8",
+  "name": "MAGIC IV2**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "dark elf",
+      "icon_folder": "custom/characters",
+      "stage": "8",
+      "level": "3",
+      "action": "MAGIC",
+      "speed": "2",
+      "effort": "2",
+      "facing": "dark",
+      "magic": "IV",
+      "icon_type": "dark elf"
+    }
+  }
+}

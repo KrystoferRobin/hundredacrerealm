@@ -1,0 +1,21 @@
+{
+  "id": "275",
+  "name": "Talk to Wise Bird",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "instant",
+      "target": "character",
+      "text": "Immediate PEER in any hex",
+      "magic_color": "gold",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "instant_peer": "",
+      "target_client": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

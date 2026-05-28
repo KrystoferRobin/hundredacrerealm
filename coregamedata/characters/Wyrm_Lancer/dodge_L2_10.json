@@ -1,0 +1,20 @@
+{
+  "id": "10",
+  "name": "dodge L2**",
+  "attributeBlocks": {
+    "this": {
+      "action": "dodge",
+      "strength": "L",
+      "speed": "2",
+      "character_chit": "",
+      "icon_type": "wyrm lancer",
+      "icon_folder": "custom/characters",
+      "stage": "10",
+      "level": "4",
+      "effort": "2",
+      "facing": "dark",
+      "move_lock": "",
+      "box_constraint": "2"
+    }
+  }
+}

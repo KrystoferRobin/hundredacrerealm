@@ -1,0 +1,27 @@
+{
+  "id": "2218",
+  "name": "Blinding Light",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "phase",
+      "target": "character",
+      "text": "Target cannot be blocked and can play any action chit during Action Step.",
+      "magic_color": "purple",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "cannot_be_blocked": ""
+    },
+    "phase_chit": {
+      "phase_chit": "",
+      "text": "Blinding Light"
+    },
+    "phase_chit_effects": {
+      "blinding_light": ""
+    }
+  },
+  "parts": []
+}

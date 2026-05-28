@@ -1,0 +1,547 @@
+{
+  "id": "227",
+  "name": "House",
+  "attributeBlocks": {
+    "this": {
+      "dwelling": "house",
+      "warning": "smoke",
+      "tile_type": "V",
+      "original_game": "",
+      "print": "",
+      "icon_type": "house",
+      "alt_monsters1_game": "",
+      "ts_section": "dwellings",
+      "ts_color": "tan",
+      "icon_folder": "dwellings",
+      "rw_expansion_1": "",
+      "icon_folder_alt": "wesnoth/buildings",
+      "icon_type_alt": "log-cabin4"
+    }
+  },
+  "parts": [
+    {
+      "id": "99",
+      "name": "Soldier 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Soldiers",
+          "fame": "0",
+          "notoriety": "3",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "1",
+          "armored": "",
+          "original_game": "",
+          "icon_type": "pikeman",
+          "setup_start": "House",
+          "hire_type": "group",
+          "monster_die": "3",
+          "garrison": "",
+          "icon_folder": "natives",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "denizen": "",
+          "icon_folder_alt": "wesnoth/units/human-loyalists",
+          "icon_type_alt": "halberdier",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "6",
+          "strength": "H",
+          "length": "10",
+          "sharpness": "1",
+          "chit_color": "peach"
+        },
+        "dark": {
+          "move_speed": "5",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "10",
+          "sharpness": "1",
+          "chit_color": "brown"
+        }
+      }
+    },
+    {
+      "id": "100",
+      "name": "Soldier 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Soldiers",
+          "fame": "0",
+          "notoriety": "3",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "2",
+          "armored": "",
+          "original_game": "",
+          "icon_type": "pikeman",
+          "setup_start": "House",
+          "hire_type": "group",
+          "monster_die": "3",
+          "garrison": "",
+          "icon_folder": "natives",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "denizen": "",
+          "icon_folder_alt": "wesnoth/units/human-loyalists",
+          "icon_type_alt": "halberdier",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "6",
+          "strength": "H",
+          "length": "10",
+          "sharpness": "1",
+          "chit_color": "peach"
+        },
+        "dark": {
+          "move_speed": "5",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "10",
+          "sharpness": "1",
+          "chit_color": "brown"
+        }
+      }
+    },
+    {
+      "id": "101",
+      "name": "Soldier 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Soldiers",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "3",
+          "armored": "",
+          "original_game": "",
+          "icon_type": "crossbowman",
+          "setup_start": "House",
+          "missile": "",
+          "hire_type": "group",
+          "monster_die": "3",
+          "garrison": "",
+          "icon_folder": "natives",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "denizen": "",
+          "icon_folder_alt": "wesnoth/units/human-loyalists",
+          "icon_type_alt": "marshal-crossbow",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "6",
+          "strength": "H",
+          "length": "12",
+          "missile": "",
+          "chit_color": "peach"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "1",
+          "strength": "H",
+          "length": "12",
+          "missile": "",
+          "chit_color": "brown"
+        }
+      }
+    },
+    {
+      "id": "102",
+      "name": "Soldier HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Soldiers",
+          "fame": "0",
+          "notoriety": "6",
+          "base_price": "4",
+          "vulnerability": "H",
+          "rank": "HQ",
+          "armored": "",
+          "original_game": "",
+          "icon_type": "great_swordsman",
+          "setup_start": "House",
+          "hire_type": "group",
+          "monster_die": "3",
+          "garrison": "",
+          "icon_folder": "natives",
+          "alt_monsters1_game": "",
+          "commerce": "F,N",
+          "rw_expansion_1": "",
+          "denizen": "",
+          "icon_folder_alt": "wesnoth/units/human-loyalists",
+          "icon_type_alt": "royalguard",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "6",
+          "attack_speed": "4",
+          "strength": "T",
+          "length": "8",
+          "sharpness": "1",
+          "chit_color": "peach"
+        },
+        "dark": {
+          "move_speed": "5",
+          "attack_speed": "5",
+          "strength": "H",
+          "length": "8",
+          "sharpness": "1",
+          "chit_color": "brown"
+        }
+      }
+    },
+    {
+      "id": "143",
+      "name": "Helmet",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "armor_smash": "",
+          "armor": "",
+          "original_game": "",
+          "icon_type": "helmet",
+          "facing": "dark",
+          "armor_row": "2",
+          "alt_monsters1_game": "",
+          "ret_dw": "House",
+          "icon_folder": "armor",
+          "rw_expansion_1": "",
+          "item": "",
+          "helmet": ""
+        },
+        "intact": {
+          "base_price": "5",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "3",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "144",
+      "name": "Helmet",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "armor_smash": "",
+          "armor": "",
+          "original_game": "",
+          "icon_type": "helmet",
+          "facing": "dark",
+          "armor_row": "2",
+          "alt_monsters1_game": "",
+          "ret_dw": "House",
+          "icon_folder": "armor",
+          "rw_expansion_1": "",
+          "item": "",
+          "helmet": ""
+        },
+        "intact": {
+          "base_price": "5",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "3",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "145",
+      "name": "Helmet",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "armor_smash": "",
+          "armor": "",
+          "original_game": "",
+          "icon_type": "helmet",
+          "facing": "dark",
+          "armor_row": "2",
+          "alt_monsters1_game": "",
+          "ret_dw": "House",
+          "icon_folder": "armor",
+          "rw_expansion_1": "",
+          "item": "",
+          "helmet": ""
+        },
+        "intact": {
+          "base_price": "5",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "3",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "149",
+      "name": "Shield",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "shield": "",
+          "armor_choice": "",
+          "armor": "",
+          "original_game": "",
+          "icon_type": "shield",
+          "facing": "dark",
+          "armor_row": "1",
+          "alt_monsters1_game": "",
+          "ret_dw": "House",
+          "icon_folder": "armor",
+          "rw_expansion_1": "",
+          "item": ""
+        },
+        "intact": {
+          "base_price": "7",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "5",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "150",
+      "name": "Shield",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "shield": "",
+          "armor_choice": "",
+          "armor": "",
+          "original_game": "",
+          "icon_type": "shield",
+          "facing": "dark",
+          "armor_row": "1",
+          "alt_monsters1_game": "",
+          "ret_dw": "House",
+          "icon_folder": "armor",
+          "rw_expansion_1": "",
+          "item": ""
+        },
+        "intact": {
+          "base_price": "7",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "5",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "167",
+      "name": "Staff",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "9",
+          "base_price": "1",
+          "two_handed": "",
+          "weapon": "",
+          "original_game": "",
+          "icon_type": "staff",
+          "alt_monsters1_game": "",
+          "icon_folder": "weapons",
+          "rw_expansion_1": "",
+          "item": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "L",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "168",
+      "name": "Staff",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "9",
+          "base_price": "1",
+          "two_handed": "",
+          "weapon": "",
+          "original_game": "",
+          "icon_type": "staff",
+          "alt_monsters1_game": "",
+          "icon_folder": "weapons",
+          "rw_expansion_1": "",
+          "item": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "L",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "174",
+      "name": "Thrusting Sword",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "4",
+          "base_price": "6",
+          "weapon": "",
+          "original_game": "",
+          "icon_type": "thrusting_sword",
+          "alt_monsters1_game": "",
+          "icon_folder": "weapons",
+          "rw_expansion_1": "",
+          "item": ""
+        },
+        "unalerted": {
+          "attack_speed": "4",
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "175",
+      "name": "Thrusting Sword",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "4",
+          "base_price": "6",
+          "weapon": "",
+          "original_game": "",
+          "icon_type": "thrusting_sword",
+          "alt_monsters1_game": "",
+          "icon_folder": "weapons",
+          "rw_expansion_1": "",
+          "item": ""
+        },
+        "unalerted": {
+          "attack_speed": "4",
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "176",
+      "name": "Short Sword",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "3",
+          "base_price": "4",
+          "weapon": "",
+          "original_game": "",
+          "icon_type": "short_sword",
+          "alt_monsters1_game": "",
+          "icon_folder": "weapons",
+          "rw_expansion_1": "",
+          "item": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "177",
+      "name": "Short Sword",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "3",
+          "base_price": "4",
+          "weapon": "",
+          "original_game": "",
+          "icon_type": "short_sword",
+          "alt_monsters1_game": "",
+          "icon_folder": "weapons",
+          "rw_expansion_1": "",
+          "item": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "178",
+      "name": "Short Sword",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "3",
+          "base_price": "4",
+          "weapon": "",
+          "original_game": "",
+          "icon_type": "short_sword",
+          "alt_monsters1_game": "",
+          "icon_folder": "weapons",
+          "rw_expansion_1": "",
+          "item": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

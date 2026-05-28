@@ -1,0 +1,24 @@
+{
+  "id": "633",
+  "name": "Slow Monster",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "combat",
+      "target": "monster",
+      "text": "Increase attack and movement speed by 1",
+      "magic_color": "gold",
+      "rw_expansion_1": "",
+      "attribute_add": "",
+      "host_okay": "",
+      "author": "Expansion 1",
+      "benevolent": "",
+      "learnable": ""
+    },
+    "attribute_add": {
+      "slowed": ""
+    }
+  },
+  "parts": []
+}

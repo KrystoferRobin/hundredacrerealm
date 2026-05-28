@@ -1,0 +1,20 @@
+{
+  "id": "357",
+  "name": "Amulet",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Cancels one spell or curse (discard to shaman)",
+      "base_price": "5",
+      "discard": "shaman",
+      "potion": "",
+      "original_game": "",
+      "cancel_spell": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

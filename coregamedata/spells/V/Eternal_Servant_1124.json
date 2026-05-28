@@ -1,0 +1,21 @@
+{
+  "id": "1124",
+  "name": "Eternal Servant",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "permanent",
+      "target": "caster item",
+      "text": "Item has negligible weight",
+      "magic_color": "black",
+      "alt_monsters1_game": "",
+      "upg_day_spells": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": "",
+      "no_weight": ""
+    }
+  },
+  "parts": []
+}

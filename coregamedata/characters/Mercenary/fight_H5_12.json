@@ -1,0 +1,22 @@
+{
+  "id": "12",
+  "name": "fight H5*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "speed": "5",
+      "effort": "1",
+      "character_level": "4",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "12",
+      "level": "4",
+      "icon_folder": "custom/characters",
+      "icon_type": "mercenary",
+      "rw_expansion_1": "",
+      "facing": "dark",
+      "strength": "H"
+    }
+  }
+}

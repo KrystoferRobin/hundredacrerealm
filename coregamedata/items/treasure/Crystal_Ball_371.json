@@ -1,0 +1,19 @@
+{
+  "id": "371",
+  "name": "Crystal Ball",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "20",
+      "text": "PEER or SPELL in any hex",
+      "notoriety": "5",
+      "weight": "M",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

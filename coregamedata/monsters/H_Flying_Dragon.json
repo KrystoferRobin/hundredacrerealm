@@ -1,0 +1,38 @@
+{
+  "id": "1488",
+  "name": "H Flying Dragon",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "armored": "",
+      "vulnerability": "H",
+      "fame": "5",
+      "notoriety": "5",
+      "icon_type": "redDragon",
+      "setup_start": "H Flying Dragons Box",
+      "monster_die": "1",
+      "flying": "",
+      "base_price": "5",
+      "icon_folder": "wesnoth/units",
+      "denizen": "",
+      "super_realm": "",
+      "icon_size": "0.7",
+      "icon_y_offset": "4",
+      "dragon": "",
+      "box_num": "2"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "H",
+      "chit_color": "lightblue"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "strength": "L",
+      "chit_color": "blue"
+    }
+  },
+  "parts": []
+}

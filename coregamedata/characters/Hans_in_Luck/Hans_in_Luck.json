@@ -1,0 +1,318 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Hans in Luck",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn",
+      "pronoun": "he",
+      "creator": "Stephan Valkyser",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Luck",
+      "vulnerability": "L",
+      "icon_type": "hans in luck",
+      "icon_folder": "custom/characters",
+      "extra_notes": "Like a Fairy Tale",
+      "fighter": "",
+      "no_invert_icon": ""
+    },
+    "level_1": {
+      "name": "Apprentice",
+      "badge_icon": "Hans_in_Luckbadge1",
+      "bonus_inv": "",
+      "armor": "Cap",
+      "advantages": {
+        "N0": "LUCKY MAN: Starts with Lucky Charm in inventory."
+      }
+    },
+    "level_2": {
+      "name": "Journeyman",
+      "armor": "Cap"
+    },
+    "level_3": {
+      "name": "Wanderer",
+      "armor": "Cap"
+    },
+    "level_4": {
+      "name": "Hans in Luck",
+      "armor": "Cap",
+      "badge_icon": "Hans_in_Luckbadge4",
+      "advantages": {
+        "N0": "WANDERLUST: Gets an extra MOVE phase."
+      },
+      "extra_actions": {
+        "N0": "M"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "bonus_invlevel_1": {
+      "_gobm_xx_name": "Lucky Charm"
+    },
+    "bonus_invlevel_1this": {
+      "_gobm_xx_treasure": "large",
+      "_gobm_xx_text": "Roll 1 die all rolls",
+      "_gobm_xx_original_game": "",
+      "_gobm_xx_alt_monsters1_game": "",
+      "_gobm_xx_facing": "face_up",
+      "_gobm_xx_rw_expansion_1": "",
+      "_gobm_xx_item": "",
+      "_gobm_xx__lkt_": "level_1",
+      "_gobm_xx_diemod": {
+        "N0": "1d:all:all"
+      }
+    },
+    "gamerel": {
+      "bashkars": "-1",
+      "soldiers": "1",
+      "woodfolk": "1",
+      "guard": "1",
+      "order": "1",
+      "lancers": "1",
+      "company": "1",
+      "warlock": "-1",
+      "shaman": "-1",
+      "scholar": "-1",
+      "crone": "-1",
+      "rogues": "-1"
+    },
+    "relationship": {
+      "bashkars": "-1",
+      "soldiers": "1",
+      "woodfolk": "1",
+      "guard": "1",
+      "order": "1",
+      "lancers": "1",
+      "company": "1",
+      "warlock": "-1",
+      "shaman": "-1",
+      "scholar": "-1",
+      "crone": "-1",
+      "rogues": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "FIGHT L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "hans in luck",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "hans in luck",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "move L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "hans in luck",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "strength": "L"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "FIGHT L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "hans in luck",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "MOVE L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "hans in luck",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "hans in luck",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "FIGHT M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "hans in luck",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "hans in luck",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "hans in luck",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "hans in luck",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "strength": "L"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "MOVE L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "hans in luck",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "hans in luck",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

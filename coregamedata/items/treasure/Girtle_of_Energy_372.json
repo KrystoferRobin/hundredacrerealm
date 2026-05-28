@@ -1,0 +1,20 @@
+{
+  "id": "372",
+  "name": "Girtle of Energy",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "13",
+      "text": "Effort limit is 3*/round",
+      "notoriety": "4",
+      "fame": "2",
+      "original_game": "",
+      "effort_limit": "1",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "2234",
+  "name": "Blunt",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "day",
+      "target": "weapon, native, monster",
+      "text": "Target loses one sharpness star.",
+      "magic_color": "gray",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "remove_sharpness": ""
+    }
+  },
+  "parts": []
+}

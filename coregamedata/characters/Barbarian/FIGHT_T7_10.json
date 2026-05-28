@@ -1,0 +1,18 @@
+{
+  "id": "10",
+  "name": "FIGHT T7",
+  "attributeBlocks": {
+    "this": {
+      "action": "FIGHT",
+      "strength": "T",
+      "speed": "7",
+      "character_chit": "",
+      "icon_type": "barbarian",
+      "icon_folder": "custom/characters",
+      "stage": "10",
+      "level": "4",
+      "effort": "0",
+      "facing": "dark"
+    }
+  }
+}

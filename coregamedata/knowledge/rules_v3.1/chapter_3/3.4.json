@@ -1,0 +1,41 @@
+{
+  "title": "PLACING VISITOR/MISSION CHITS",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "If a player has already selected a character when it is his turn to play a tile, he takes one of the six visitor/mission chits and puts it in one of the small boxes in the bottom row of the Dwellings section."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "3.4.1",
+      "title": "The player can take any available visitor/mission chit that has not already been put in a box",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "All six visitor/mission chits are used, and they can be placed either side up."
+        }
+      ]
+    },
+    {
+      "id": "3.4.2",
+      "title": "The player can put the chit in any empty box he chooses in the bottom row of the Dwelling section",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He cannot put it in a box that already contains a chit (each box can hold only one chit)."
+        }
+      ]
+    },
+    {
+      "id": "3.4.3",
+      "title": "Once placed in a box, the chit remains in that box until it moves to the map during the game",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The chit stays in its assigned box until it is moved to the map during gameplay."
+        }
+      ]
+    }
+  ]
+} 

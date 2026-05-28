@@ -1,0 +1,18 @@
+{
+  "id": "1110",
+  "name": "Net",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "4",
+      "text": "Subtract one on all CAPTURE rolls",
+      "rw_expansion_1": "",
+      "notoriety": "4",
+      "weight": "L",
+      "facing": "face_dn",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

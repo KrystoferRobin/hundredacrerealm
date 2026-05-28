@@ -1,0 +1,18 @@
+{
+  "id": "2060",
+  "name": "Reflecting Grease",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Any armor stops wounds (discard to crone)",
+      "base_price": "3",
+      "discard": "crone",
+      "potion": "",
+      "stop_wounds": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

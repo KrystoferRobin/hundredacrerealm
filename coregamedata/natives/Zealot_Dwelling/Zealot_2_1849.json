@@ -1,0 +1,73 @@
+{
+  "id": "1849",
+  "name": "Zealot 2",
+  "attributeBlocks": {
+    "this": {
+      "native": "Zealots",
+      "fame": "0",
+      "notoriety": "12",
+      "base_price": "8",
+      "vulnerability": "T",
+      "rank": "2",
+      "armored": "",
+      "icon_type": "goldenmage-combat0",
+      "setup_start": "Zealot Dwelling",
+      "hire_type": "group",
+      "icon_folder": "wesnoth/units/skykingdom-magi",
+      "denizen": "",
+      "super_realm": "",
+      "clan": "1",
+      "native_die": "1",
+      "icon_size": "0.9",
+      "native_name": "Knight"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "6",
+      "strength": "H",
+      "length": "7",
+      "sharpness": "1",
+      "chit_color": "peach"
+    },
+    "dark": {
+      "move_speed": "6",
+      "attack_speed": "4",
+      "strength": "T",
+      "length": "7",
+      "sharpness": "1",
+      "chit_color": "brown"
+    }
+  },
+  "parts": [
+    {
+      "id": "1853",
+      "name": "Warhorse 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Zealots",
+          "horse": "horse",
+          "move_bonus": "extra",
+          "vulnerability": "H",
+          "activated": "",
+          "super_realm": "",
+          "clan": "1",
+          "native_die": "3",
+          "armored": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "royalBeast"
+        },
+        "trot": {
+          "move_speed": "6",
+          "strength": "M",
+          "chit_color": "peach"
+        },
+        "gallop": {
+          "move_speed": "6",
+          "strength": "H",
+          "chit_color": "brown"
+        }
+      }
+    }
+  ]
+}

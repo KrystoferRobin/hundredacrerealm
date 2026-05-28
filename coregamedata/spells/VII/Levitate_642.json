@@ -1,0 +1,22 @@
+{
+  "id": "642",
+  "name": "Levitate",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "day",
+      "target": "caster item",
+      "text": "Targeted object has negligable weight",
+      "magic_color": "purple",
+      "rw_expansion_1": "",
+      "no_weight": "",
+      "host_okay": "",
+      "author": "Expansion 1",
+      "benevolent": "",
+      "learnable": "",
+      "upg_swap_out": ""
+    }
+  },
+  "parts": []
+}

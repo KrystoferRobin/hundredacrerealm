@@ -1,0 +1,35 @@
+{
+  "id": "2152",
+  "name": "Melt Into Mist",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "permanent",
+      "target": "individual",
+      "text": "Can only MOVE T4 (no fight)",
+      "magic_color": "purple",
+      "transmorph": "mist",
+      "disengage": "ALL",
+      "host_okay": "",
+      "nullify": "",
+      "spell_strength": "3",
+      "learnable": "",
+      "super_realm": "",
+      "benevolent_for_leaders": "",
+      "benevolent_for_monsters": "",
+      "only_move": ""
+    },
+    "mist": {
+      "vulnerability": "T",
+      "move_speed": "4",
+      "light_color": "gray",
+      "dark_color": "darkgray",
+      "icon_type": "mist",
+      "mist_like": "",
+      "name": "Mist",
+      "icon_folder": "monsters"
+    }
+  },
+  "parts": []
+}

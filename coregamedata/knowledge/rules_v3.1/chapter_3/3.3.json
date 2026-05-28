@@ -1,0 +1,135 @@
+{
+  "title": "SELECTING CHARACTERS",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Each player plays the part of one character in the game. He controls that character's pieces and uses that character's character counter to represent him on the map. The List of Characters explains each character, and his Character card summarizes his qualities. This information is common knowledge – anyone can examine the Character cards and list at any time."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "3.3.1",
+      "title": "If a player has no hex tiles left when it is his turn to play, then instead of playing a tile he chooses the character he will play in the game",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He can choose any character who has not yet been taken by another player. He takes his character's Character card, his character counter, his Attention chit and all 12 of his action chits."
+        }
+      ]
+    },
+    {
+      "id": "3.3.2",
+      "title": "He also takes the weapon and armor counters listed under the 4th stage of Development on his Character card",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He gets only those counters listed for his 4th (final) stage, at the bottom of his Development section. He takes each item from the native group that has it; if several groups have an item, he can choose who to take it from. Example: The Black Knight must take a Mace from the Guard and a suit of armor from the Order. He also takes his shield from the Company, Patrol, or Soldiers. He cannot take the Crossbow or the other armor listed for his earlier stages."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. All weapon counters are turned unalerted side up at the start of the game. All armor counters are placed on their undamaged (intact) side."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. The player also takes a Personal History sheet and records his character's Special Advantages and trading relations on the sheet. He also records his starting gold of 10 Gold."
+        }
+      ]
+    },
+    {
+      "id": "3.3.3",
+      "title": "Each player gets the number and types of spells specified in the 4th stage of his Development section",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He gets none of the spells listed for earlier stages; if no spells are listed, he gets no spells. He secretly records the spells he chooses in the spell boxes on the back of his Personal History sheet."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. Each spell requires a specific color of magic and a specific type of Magic chit; the List of Spells explains each spell in detail, and the spell's Spell card summarizes its qualities. Characters can only choose starting spells that are of the type(s) listed on their Character card."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. He chooses each spell from the List of Spells and notes in its box that it is one of his starting spells. He can record the same spell more than once, but each duplicate counts against the number of spells he can record. He does not keep the Spell cards for these spells."
+        }
+      ]
+    },
+    {
+      "id": "3.3.4",
+      "title": "When magic-using characters select their starting spells, they can also \"enchant\" their Magic chits to create color chits",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "As each character selects his spells, he can enchant any or all of his enchantable chits (Magic types I-V) by secretly turning them symbol side up. He reveals his chits when the Dwellings are placed in Step 6."
+        }
+      ]
+    },
+    {
+      "id": "3.3.5",
+      "title": "The player secretly chooses the Dwelling where he will start the game",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He can start the game at any of the Dwellings listed for him on the List of Characters (none of the characters can start at the Large or Small Campfires). He secretly records the Dwelling on his sheet, and when the Dwelling is put on the map his character counter is put with it."
+        }
+      ]
+    },
+    {
+      "id": "3.3.6",
+      "title": "The player records the requirements he needs to win the game in his Victory Requirements box",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The characters compete in accumulating Great Treasures, Fame points, Notoriety points, Gold points, and Spell points. Before the start of play, each character records the number of points he needs in each category to win the game. He gains these points by owning or selling weapons, armor, horses and Treasure cards, by learning spells from treasure locations and Artifacts, or by killing monsters, natives or other characters. He records his requirements for each category in the row for that category. He must keep his Victory Requirements section secret until the end of the game."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. First he assigns from zero to five Victory Points to each category and records the points in the Points column for that category. He cannot assign fractions or negative numbers. He must assign a total of five Victory Points to all of the categories combined. Note: When playing with the Seasons/Weather optional rules (see Rule 10.E.1), the Season affects the number of Victory Points that must be recorded."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. Then he multiplies the points assigned to each category by the factor shown for that category and records the product in the Needed column. This result is the number of points he needs to gain in that category."
+        },
+        {
+          "type": "list",
+          "items": [
+            "The factor in the Great Treasures category is 1. Each point he assigns to Great Treasures commits him to having one Great Treasure at the end of the game.",
+            "The factor in the Spells category is 2. Each Victory Point he assigns to Spells commits him to learning two new spells over and above those that he started the game with.",
+            "The factor in the Fame category is 10. Each Victory Point he assigns to Fame commits him to gaining 10 Fame points.",
+            "The factor in the Notoriety category is 20. Each Victory Point he assigns to Notoriety commits him to gaining 20 Notoriety points.",
+            "The factor in the Gold category is 30. Each Victory Point he assigns to Gold commits him to gaining 30 Gold points, in addition to his starting gold and the value of his starting equipment. The value of each character's starting gold and equipment is listed below; characters will normally use the \"4th Level\" column unless using the Development Rules."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "c. When a character owns a belonging, he can count its Fame and Notoriety values towards his score. He does not record these values on his sheet – the belonging itself serves as the record. If he sells or loses the belonging, he no longer gets its values. He does not count the item's Gold price; he counts only his recorded Gold points, although he may increase his recorded Gold points by selling the item to a native group, visitor, or other character."
+        },
+        {
+          "type": "paragraph",
+          "text": "d. If the belonging is a Great Treasure, he can also count it towards his Great Treasures score. Cards with red dots are Great Treasures. Note: Ignore the gold dots on the Treasure cards. The gold dots are used only when the game is being set up."
+        },
+        {
+          "type": "paragraph",
+          "text": "e. Each character also has personal Fame, Notoriety and Gold points that are not attached to any item. He keeps a record of these points on his Turn Record. When he spends or loses points he subtracts them from his recorded points, and when he gains points he adds them."
+        },
+        {
+          "type": "paragraph",
+          "text": "f. When a character sells a belonging, he adds its Gold price to his recorded gold. The Treasure Counters list shows the values of the treasure counters, the Price Lists show the Gold prices of the ordinary counters, and each Treasure card displays its own values. If a Treasure card also has a Fame reward and he sells it to the active group named on the card, he also adds its Fame reward to his recorded Fame. He does not get credit for these values while he holds the belonging – he must sell it to gain its prices. Note: A Fame value is not the same as a Fame reward. A character gets a Fame value when he holds the item; he gets a Fame reward when he sells it to the indicated native leader."
+        },
+        {
+          "type": "paragraph",
+          "text": "g. Only spells learned and recorded during the course of the game count toward the Spells Victory Requirements. A character's starting spells are not counted. Note: If a character learns a spell that duplicates one of his starting spells, that spell can be counted towards the Spells Victory Requirement. Only recorded spells count towards the Victory Requirement. Spell cards belonging to Artifacts and Spell Books do not count."
+        }
+      ]
+    },
+    {
+      "id": "3.3.7",
+      "title": "The player's turn ends as soon as he takes his pieces",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He does not have to finish choosing his Victory Requirements, spells, enchanted chits, and the Dwelling where he will start until just before the Dwellings are put on the map in Step 6; he can continue to think about his choices while the other players take their turns and while the map chits are being put on the map in Step 5."
+        }
+      ]
+    }
+  ]
+} 

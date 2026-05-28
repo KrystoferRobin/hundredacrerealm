@@ -1,0 +1,23 @@
+{
+  "id": "312",
+  "name": "Blend Into Background",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "day",
+      "target": "leader",
+      "text": "Extra HIDE phase",
+      "magic_color": "gray",
+      "original_game": "",
+      "spell_extra_action": "H",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "upg_swap_out": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

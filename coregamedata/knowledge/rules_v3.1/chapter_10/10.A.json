@@ -1,0 +1,135 @@
+{
+  "title": "Extended Character Capabilities",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The following rules affect the capabilities of the characters."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "10.A.1",
+      "title": "Serious Wounds",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This rule gives characters a chance to survive harm that exactly matches their vulnerability."
+        },
+        {
+          "type": "paragraph",
+          "text": "When a character suffers harm exactly equal to his vulnerability, he suffers a \"serious wound\" instead of being killed. He rolls two dice and suffers a number of wounds equal to the number rolled on the higher die (the die roll is modified normally by treasures and spells)."
+        }
+      ]
+    },
+    {
+      "id": "10.A.2",
+      "title": "Ambushes",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Characters can use missile weapons or spells while hidden and possibly retain their hidden status."
+        },
+        {
+          "type": "paragraph",
+          "text": "When a hidden character who is using a missile weapon specifies a target, he rolls on the Hide Table (normal modifications apply). If he rolls a Hide! result he remains hidden. If he fails to roll a Hide! result, he becomes unhidden. Once he becomes unhidden, he remains unhidden normally. Native archers still become unhidden when they are assigned to targets."
+        },
+        {
+          "type": "paragraph",
+          "text": "This rule also applies to a hidden character when he casts a spell on a single individual including himself: when he specifies his target, he rolls on the Hide Table and becomes unhidden only if he fails to roll a Hide! result. If he attacks multiple targets, he must become unhidden. Example: If he specifies one target for Fiery Blast, he can remain hidden. If he specifies several targets, he is unhidden."
+        }
+      ]
+    },
+    {
+      "id": "10.A.3",
+      "title": "Flying Activities",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Flying characters can inspect the tiles they fly over and do the Alert activity."
+        },
+        {
+          "type": "paragraph",
+          "text": "When an individual is flying, he can do the Alert and Enhanced Peer activities without landing. He must still land before doing any other activities, and when his turn ends. Special: When an individual is flying, he can use his Basic and Sunlight phases to record and do the Enhanced Peer activity. He can search any mountain or woods clearing in his tile or any adjacent tile; he must record the clearing when he records the activity. He cannot search cave clearings."
+        }
+      ]
+    },
+    {
+      "id": "10.A.4",
+      "title": "Caching (The Optional Cache Activity)",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This rule and the next rule create alternatives to abandoning items that are too heavy for a character to carry."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Any character can use the Cache activity to store belongings in a clearing while he moves on; in effect, he creates a private treasure site that only he knows about. He can store belongings and recorded gold in this cache, but while they are in the cache he cannot use them and they do not count towards his VICTORY REQUIREMENTS. All characters, hired leaders and controlled monsters can do the Cache activity.",
+            "To record the Cache activity, an individual records \"C\". When he does the activity, he can either create a new cache or \"open\" a cache that he already has in the clearing. He can create or open only one cache per Cache phase.",
+            "To start a new cache, he puts an unused chit in his clearing to represent the cache, and he records the chit and the gold and belongings he is storing. He puts the belongings in a pile (in any order he chooses) to one side, and he subtracts the gold from his recorded gold.",
+            "The cache can contain any amount of recorded gold and any number of horses and/or items (stored horses are assumed to be penned up in a concealed corral with forage available). The cache must contain at least one belonging or gold point – it cannot be totally empty. The gold and Treasure cards in the cache are secret (except for Enchanted cards).",
+            "An individual can create any number of caches, in the same clearing or in different clearings. If he runs out of unused chits he can use anything that is small and unique to mark his caches: coins, pieces from other games, and so on. He puts each cache's belongings in a separate pile. He can create only one cache per Cache phase.",
+            "When an individual opens an existing cache, he can add and remove gold and belongings freely. An individual can open only those caches that he himself has created, and he can open only one cache per Cache phase.",
+            "Individuals can discover and loot caches as if they were sites. Each individual keeps a record of the caches he has discovered.",
+            "When an individual \"Discovers Site chit(s),\" he discovers all caches in his clearing. A cache can be transferred like any other discovery: it can be sold; it can be discovered by spying on someone when he creates, opens, or loots it, and so on.",
+            "When an individual is in the same clearing with a cache he has discovered, he can loot it like a treasure site. Special: The top treasure in the cache's \"pile\" is always the cache chit itself, representing the gold stored at the cache. When a looter is directed to take the \"top treasure\", he takes the cache's gold; if it has no gold, he gets nothing. Note: The cache chit is neither a counter nor a Treasure card – it cannot be taken by Magic Sight.",
+            "When a hired or controlled denizen creates a cache, the hiring/controlling character cannot open the cache. If the denizen does not transfer the discovery to him, he must discover and loot it like anyone else.",
+            "The player who creates a cache is responsible for keeping a record of what it currently contains, adding and subtracting gold and belongings as they are added or removed. When all of the belongings and gold are removed from a cache, it vanishes and its chit is removed from the map.",
+            "Once an individual creates a cache, the cache remains on the map until it is emptied, even if the individual is killed."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.A.5",
+      "title": "Dropping (and Losing) Belongings",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "With this rule, characters have a choice of dropping an item in plain sight (where anyone can find it), or throwing it away (so it can only be found by searching)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "There are two ways a belonging can be abandoned: it can be \"lost\" in the forest, or it can be \"dropped\" out in the open.",
+            "When an individual abandons a belonging involuntarily, either because he is killed or because he becomes unhired or uncontrolled, he must lose the belonging. Lost belongings are handled in exactly the same way that abandoned belongings are handled under the basic rules. They are put in a pile and the only way to obtain them is to loot the pile.",
+            "When an individual abandons a belonging voluntarily, he can either lose it or drop it, as he chooses. He must specify his choice when he abandons it. Exception: If he abandons it while he is flying, it must be lost in the clearing where it lands.",
+            "When an individual drops a belonging, he puts it in front of himself to one side; if it is a Treasure card, he turns it face up. He no longer owns the belonging. When he leaves the clearing, the belongings he has dropped are put in the clearing on the map (Treasure cards remain face up). Dropped belongings should be put in a separate pile from any lost belongings in the clearing.",
+            "An individual can pick up dropped belongings simply by being in the same clearing with them, but he can pick them up only at certain times. When a hidden individual picks up a belonging that is in front of himself, he remains hidden. He must become unhidden before he can pick up dropped belongings that are not in front of himself. He can choose to become unhidden for this purpose.",
+            "During Daylight, an individual can pick up dropped belongings at the start and end of each phase of his turn. He can pick up any number of belongings, one at a time, until he is blocked. At the start of each phase he cannot be blocked, but he can pick up only the belongings that are in front of himself. At the end of each phase he can pick up any dropped belongings in his clearing, but each time he starts to pick up a belonging individuals who are able to block him can block him before he picks up the belonging.",
+            "Denizens cannot pick up dropped belongings during combat. Each character can pick up one dropped belonging per Encounter Step. This counts as his action – if he picks up a belonging he cannot charge or do any other action that Encounter Step.",
+            "He can pick up a dropped belonging that is in front of himself automatically, without playing an action chit.",
+            "To pick up a dropped belonging that is not in front of himself he must play a Move chit, subject to the restrictions governing Move chits: its move time must undercut the move times on his sheet, and there cannot be a red-side-up Tremendous monster on his sheet.",
+            "When combat ends in a clearing, each individual in that clearing can pick up the dropped belongings that are in front of him. If any belongings remain unclaimed, the individuals take turns claiming them, one at a time, starting with the first character and going to the left. When it is a character's turn, each individual he has in the clearing can pick up one belonging."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.A.6",
+      "title": "Optional Abilities",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This rule describes ways to modify certain characters for play balance purposes. Suggestions for combining Optional Abilities with the Development Game, if desired, are also provided below."
+        },
+        {
+          "type": "paragraph",
+          "text": "Certain characters are intended to operate in teams, where they can combine their strengths to offset their weaknesses. When diplomacy is absent from the game due to a lack of cooperative players, these characters are at a serious disadvantage. This rule modifies these characters to make them more competitive when they operate independently. Note: The players are not obliged to modify all of the characters listed. They should agree on which characters will be modified before selecting their characters."
+        },
+        {
+          "type": "list",
+          "items": [
+            "CAPTAIN: Due to his reputation for victory, the Captain rolls one die instead of two whenever he does the Hire activity. He rolls two dice normally when trading or rolling for battling natives. He receives this additional ability at 3rd Level.",
+            "DRUID: The Druid gains two advantages. First, at 4th Level his Peace with Nature extends to Site chits: when he ends his turn, the Site chits in his tile do not summon monsters from the Appearance Chart. Second, he is immune to Curses – no Curses can take effect on him. This added ability is gained at 3rd Level.",
+            "MAGICIAN: The Magician's alerted Magic chits do not fatigue at Midnight. Instead, they merely become unprepared. This optional ability is granted as an extension of the Magician's normal Magical Paraphernalia ability, at 2nd Level.",
+            "WIZARD: The Wizard is modified in two ways. First, treat his 2nd level \"MOVE M5\" chit as a \"MAGIC III2*\" chit. Second, he can do enchantments on every Enchant phase of his turn; he is not obliged to do the \"EM\" activity before doing \"E\" activities. He receives this ability at 3rd level of development.",
+            "WOODS GIRL: Beginning at 2nd level, the Woods Girl's tracking skills extend to all woods clearings except those on the Ruins and Valley tiles. When in a woods clearing (any non-cave and non-mountain clearing) in any other tile, she uses one die for all Hide, Search, and Meeting rolls.",
+            "ELF: The Elf is a special case. His abilities are intended to antagonize other characters, putting him at a disadvantage during diplomacy, but if there is no diplomacy his abilities just give him too big an advantage. To compensate for this, when a player selects the Elf at the beginning of the game he must choose to be either a Light Elf or a Great Elf. If he is a Light Elf, he cannot play his Medium strength Fight and Move chits during the game. If he is a Great Elf, he cannot play his \"MOVE L2*\" chit. He can use his unplayable chit(s) to pay for fatigue and wounds he incurs during combat, but he cannot play them for any purpose.",
+            "THE KNIGHTS: The White Knight and Black Knight have unique trading advantages that give them an excellent chance of gaining a boon from their allies. In many cases this allows them to gain overwhelming equipment or hired native advantages at the beginning of the game. To limit their advantage, their trading relationship with their allies is reduced; the White Knight is \"Friendly\" with the Order and the Black Knight is \"Friendly\" with the Company, beginning at 3rd Level."
+          ]
+        }
+      ]
+    }
+  ]
+} 

@@ -1,0 +1,36 @@
+{
+  "id": "2022",
+  "name": "Moon Bow",
+  "attributeBlocks": {
+    "this": {
+      "weight": "L",
+      "length": "16",
+      "base_price": "25",
+      "missile": "",
+      "two_handed": "",
+      "weapon": "",
+      "icon_type": "medium_bow",
+      "icon_folder": "weapons",
+      "item": "",
+      "super_realm": "",
+      "notoriety": "10",
+      "fame": "3",
+      "magic": "",
+      "magic_color_bonus": "purple",
+      "bow": "",
+      "super_realm_treasure": ""
+    },
+    "unalerted": {
+      "strength": "L",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "attack_speed": "1",
+      "strength": "L",
+      "sharpness": "2",
+      "chit_color": "red",
+      "magic_color_bonus_sharpness": "1"
+    }
+  },
+  "parts": []
+}

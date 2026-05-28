@@ -1,0 +1,18 @@
+{
+  "id": "2094",
+  "name": "Battle Bracelets",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "12",
+      "notoriety": "4",
+      "text": "Replace FIGHT (enemy over 4)",
+      "fame": "2",
+      "replace_fight": "4",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

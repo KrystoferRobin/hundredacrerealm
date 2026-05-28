@@ -1,0 +1,42 @@
+{
+  "id": "1027",
+  "name": "Dragonman HQ",
+  "attributeBlocks": {
+    "this": {
+      "native": "Dragonmen",
+      "fame": "0",
+      "notoriety": "10",
+      "base_price": "6",
+      "vulnerability": "H",
+      "rank": "HQ",
+      "icon_type": "dragonman",
+      "monster_die": "6",
+      "setup_start": "Dragonmen Dwelling",
+      "hire_type": "single",
+      "icon_folder": "natives2",
+      "rw_expansion_1": "",
+      "commerce": "F,N",
+      "flying": "",
+      "denizen": "",
+      "icon_folder_alt": "wesnoth/units/drakes",
+      "icon_type_alt": "flameheart",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "3",
+      "strength": "H",
+      "length": "9",
+      "chit_color": "lightgreen"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "4",
+      "strength": "H",
+      "length": "9",
+      "sharpness": "1",
+      "chit_color": "limegreen"
+    }
+  },
+  "parts": []
+}

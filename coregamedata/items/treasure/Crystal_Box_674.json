@@ -1,0 +1,20 @@
+{
+  "id": "674",
+  "name": "Crystal Box",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "5",
+      "text": "Capture one charge of color magic from any permanent source",
+      "notoriety": "2",
+      "rw_expansion_1": "",
+      "fame": "10",
+      "native": "Magic Guild",
+      "facing": "face_dn",
+      "color_capture": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

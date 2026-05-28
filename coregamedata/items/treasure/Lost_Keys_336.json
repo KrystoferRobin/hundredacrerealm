@@ -1,0 +1,18 @@
+{
+  "id": "336",
+  "name": "Lost Keys",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Opens Chest, Crypt, and Vault",
+      "base_price": "5",
+      "original_game": "",
+      "key": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

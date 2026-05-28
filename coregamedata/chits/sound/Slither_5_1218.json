@@ -1,0 +1,13 @@
+{
+  "id": "1218",
+  "name": "Slither 5",
+  "attributeBlocks": {
+    "this": {
+      "super_realm": "",
+      "chit": "",
+      "sound": "slither",
+      "clearing": "5"
+    }
+  },
+  "parts": []
+}

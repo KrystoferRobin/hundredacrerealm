@@ -1,0 +1,19 @@
+{
+  "id": "712",
+  "name": "Horn of the Valkyrie",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "4",
+      "text": "All monsters in the clearing return to setup card (discard to shaman)",
+      "rw_expansion_1": "",
+      "potion": "",
+      "discard": "shaman",
+      "facing": "face_dn",
+      "beast_away": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

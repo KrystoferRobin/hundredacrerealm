@@ -1,0 +1,22 @@
+{
+  "id": "276",
+  "name": "Peace",
+  "spellLevel": "I",
+  "attributeBlocks": {
+    "this": {
+      "spell": "I",
+      "duration": "combat",
+      "target": "attacker",
+      "text": "Cannot attack until attacked",
+      "magic_color": "white",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "sp_peace": "",
+      "host_okay": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "1259",
+  "name": "Smoke R",
+  "attributeBlocks": {
+    "this": {
+      "warning": "smoke",
+      "tile_type": "R",
+      "super_realm": "",
+      "chit": "",
+      "ts_section": ""
+    }
+  },
+  "parts": []
+}

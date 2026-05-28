@@ -1,0 +1,19 @@
+{
+  "id": "680",
+  "name": "Flaming Oil",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "1",
+      "text": "Destroys Pond or Hive (discard to warlock)",
+      "rw_expansion_1": "",
+      "potion": "",
+      "discard": "warlock",
+      "facing": "face_dn",
+      "author": "Expansion 1",
+      "generator_flamed": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

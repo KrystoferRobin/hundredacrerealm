@@ -1,0 +1,30 @@
+{
+  "id": "1996",
+  "name": "Medium Bow",
+  "attributeBlocks": {
+    "this": {
+      "weight": "M",
+      "length": "16",
+      "base_price": "8",
+      "missile": "",
+      "two_handed": "",
+      "weapon": "",
+      "icon_type": "medium_bow",
+      "icon_folder": "weapons",
+      "item": "",
+      "super_realm": "",
+      "bow": ""
+    },
+    "unalerted": {
+      "strength": "M",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "attack_speed": "1",
+      "strength": "M",
+      "sharpness": "2",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

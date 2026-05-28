@@ -1,0 +1,246 @@
+{
+  "id": "1847",
+  "name": "Zealot Dwelling",
+  "attributeBlocks": {
+    "this": {
+      "native": "Zealots",
+      "dwelling": "chapel,guard,hamlet,l_camp",
+      "print": "",
+      "ts_section": "clan 1",
+      "ts_size": "T",
+      "ts_color": "blue",
+      "ts_count": "4",
+      "icon_type": "architect",
+      "icon_folder": "wesnoth/units/skykingdom-magi",
+      "virtual_dwelling": "",
+      "super_realm": "",
+      "clan": "1",
+      "native_die": "1",
+      "icon_size": "0.9",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1848",
+      "name": "Zealot 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Zealots",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "1",
+          "icon_type": "architect",
+          "setup_start": "Zealot Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/skykingdom-magi",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "1",
+          "native_die": "1",
+          "icon_size": "0.9",
+          "native_name": "Caster",
+          "spell_pre_battle": "Holy Shield",
+          "spell_targets_self": ""
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "peach"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "brown"
+        }
+      }
+    },
+    {
+      "id": "1849",
+      "name": "Zealot 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Zealots",
+          "fame": "0",
+          "notoriety": "12",
+          "base_price": "8",
+          "vulnerability": "T",
+          "rank": "2",
+          "armored": "",
+          "icon_type": "goldenmage-combat0",
+          "setup_start": "Zealot Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/skykingdom-magi",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "1",
+          "native_die": "1",
+          "icon_size": "0.9",
+          "native_name": "Knight"
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "6",
+          "strength": "H",
+          "length": "7",
+          "sharpness": "1",
+          "chit_color": "peach"
+        },
+        "dark": {
+          "move_speed": "6",
+          "attack_speed": "4",
+          "strength": "T",
+          "length": "7",
+          "sharpness": "1",
+          "chit_color": "brown"
+        }
+      }
+    },
+    {
+      "id": "1850",
+      "name": "Zealot 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Zealots",
+          "fame": "0",
+          "notoriety": "12",
+          "base_price": "8",
+          "vulnerability": "T",
+          "rank": "3",
+          "armored": "",
+          "icon_type": "goldenmage-combat0",
+          "setup_start": "Zealot Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/skykingdom-magi",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "1",
+          "native_die": "1",
+          "icon_size": "0.9",
+          "native_name": "Knight"
+        },
+        "light": {
+          "move_speed": "6",
+          "attack_speed": "4",
+          "strength": "H",
+          "length": "7",
+          "sharpness": "1",
+          "chit_color": "peach"
+        },
+        "dark": {
+          "move_speed": "5",
+          "attack_speed": "5",
+          "strength": "T",
+          "length": "7",
+          "sharpness": "1",
+          "chit_color": "brown"
+        }
+      }
+    },
+    {
+      "id": "1851",
+      "name": "Zealot HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Zealots",
+          "fame": "0",
+          "notoriety": "3",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "HQ",
+          "icon_type": "architect",
+          "setup_start": "Zealot Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/skykingdom-magi",
+          "commerce": "F",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "1",
+          "native_die": "1",
+          "icon_size": "0.9",
+          "native_name": "Caster",
+          "spell_pre_battle": "Holy Shield",
+          "spell_targets_self": ""
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "peach"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "brown"
+        }
+      }
+    },
+    {
+      "id": "1932",
+      "name": "Warhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "warhorse",
+          "vulnerability": "T",
+          "armored": "",
+          "base_price": "20",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "royalBeast",
+          "horse_holder": "Chapel"
+        },
+        "trot": {
+          "move_speed": "7",
+          "strength": "T",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "4",
+          "strength": "H",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1981",
+      "name": "Armor",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "H",
+          "weight": "H",
+          "armor_thrust": "",
+          "armor_swing": "",
+          "armor_smash": "",
+          "armor": "",
+          "icon_type": "suitofarmor",
+          "facing": "dark",
+          "armor_row": "3",
+          "ret_dw": "Chapel",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "suitofarmor": ""
+        },
+        "intact": {
+          "base_price": "17",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "12",
+          "chit_color": "white"
+        }
+      }
+    }
+  ]
+}

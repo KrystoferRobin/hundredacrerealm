@@ -1,0 +1,379 @@
+{
+  "id": "1476",
+  "name": "Dwarf Dwelling",
+  "attributeBlocks": {
+    "this": {
+      "super_realm": "",
+      "native": "Dwarves",
+      "dwelling": "Dwarves",
+      "monster_die": "5",
+      "monster_die2": "6",
+      "print": "",
+      "ts_section": "lost city",
+      "ts_size": "M",
+      "ts_color": "yellow",
+      "ts_count": "6",
+      "icon_type": "steelclad",
+      "icon_folder": "wesnoth/units/dwarves",
+      "virtual_dwelling": "",
+      "icon_size": "0.9",
+      "roving_native": "",
+      "summon": "Patter C, Patter V, Lost City",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1477",
+      "name": "Dwarf 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Dwarves",
+          "fame": "0",
+          "notoriety": "6",
+          "base_price": "4",
+          "vulnerability": "M",
+          "rank": "1",
+          "super_realm": "",
+          "icon_type": "steelclad",
+          "monster_die": "5",
+          "monster_die2": "6",
+          "setup_start": "Dwarf Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/dwarves",
+          "denizen": "",
+          "needs_init": "",
+          "armored": "",
+          "icon_size": "0.9",
+          "native_name": "Axeman",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "6",
+          "attack_speed": "4",
+          "strength": "H",
+          "chit_color": "paleyellow",
+          "sharpness": "1",
+          "length": "5"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "6",
+          "strength": "T",
+          "length": "5",
+          "chit_color": "yellow",
+          "sharpness": "1",
+          "move_speed_bonus_combat_box3": "1"
+        }
+      }
+    },
+    {
+      "id": "1478",
+      "name": "Dwarf 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Dwarves",
+          "fame": "0",
+          "notoriety": "6",
+          "base_price": "4",
+          "vulnerability": "M",
+          "rank": "2",
+          "super_realm": "",
+          "icon_type": "steelclad",
+          "monster_die": "5",
+          "monster_die2": "6",
+          "setup_start": "Dwarf Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/dwarves",
+          "denizen": "",
+          "needs_init": "",
+          "armored": "",
+          "icon_size": "0.9",
+          "native_name": "Axeman",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "6",
+          "strength": "T",
+          "chit_color": "paleyellow",
+          "sharpness": "1",
+          "length": "5"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "5",
+          "strength": "H",
+          "length": "5",
+          "chit_color": "yellow",
+          "sharpness": "1",
+          "move_speed_bonus_combat_box3": "1"
+        }
+      }
+    },
+    {
+      "id": "1479",
+      "name": "Dwarf 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Dwarves",
+          "fame": "0",
+          "notoriety": "6",
+          "base_price": "4",
+          "vulnerability": "M",
+          "rank": "3",
+          "super_realm": "",
+          "icon_type": "steelclad",
+          "monster_die": "5",
+          "monster_die2": "6",
+          "setup_start": "Dwarf Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/dwarves",
+          "denizen": "",
+          "needs_init": "",
+          "armored": "",
+          "icon_size": "0.9",
+          "native_name": "Axeman",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "6",
+          "attack_speed": "5",
+          "strength": "T",
+          "chit_color": "paleyellow",
+          "sharpness": "1",
+          "length": "5"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "H",
+          "length": "5",
+          "chit_color": "yellow",
+          "sharpness": "1",
+          "move_speed_bonus_combat_box3": "1"
+        }
+      }
+    },
+    {
+      "id": "1480",
+      "name": "Dwarf 4",
+      "attributeBlocks": {
+        "this": {
+          "native": "Dwarves",
+          "fame": "0",
+          "notoriety": "6",
+          "base_price": "4",
+          "vulnerability": "M",
+          "rank": "4",
+          "super_realm": "",
+          "icon_type": "steelclad",
+          "monster_die": "5",
+          "monster_die2": "6",
+          "setup_start": "Dwarf Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/dwarves",
+          "denizen": "",
+          "needs_init": "",
+          "armored": "",
+          "icon_size": "0.9",
+          "native_name": "Axeman",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "6",
+          "strength": "H",
+          "chit_color": "paleyellow",
+          "sharpness": "1",
+          "length": "5"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "6",
+          "strength": "T",
+          "length": "5",
+          "chit_color": "yellow",
+          "sharpness": "1",
+          "move_speed_bonus_combat_box3": "1"
+        }
+      }
+    },
+    {
+      "id": "1481",
+      "name": "Dwarf 5",
+      "attributeBlocks": {
+        "this": {
+          "native": "Dwarves",
+          "fame": "0",
+          "notoriety": "6",
+          "base_price": "4",
+          "vulnerability": "M",
+          "rank": "5",
+          "super_realm": "",
+          "icon_type": "steelclad",
+          "monster_die": "5",
+          "monster_die2": "6",
+          "setup_start": "Dwarf Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/dwarves",
+          "denizen": "",
+          "needs_init": "",
+          "armored": "",
+          "icon_size": "0.9",
+          "native_name": "Axeman",
+          "roving_native": ""
+        },
+        "light": {
+          "move_speed": "6",
+          "attack_speed": "4",
+          "strength": "H",
+          "chit_color": "paleyellow",
+          "sharpness": "1",
+          "length": "5"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "5",
+          "strength": "H",
+          "length": "5",
+          "chit_color": "yellow",
+          "sharpness": "1",
+          "move_speed_bonus_combat_box3": "1"
+        }
+      }
+    },
+    {
+      "id": "1482",
+      "name": "Dwarf HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Dwarves",
+          "fame": "0",
+          "notoriety": "6",
+          "base_price": "4",
+          "vulnerability": "M",
+          "rank": "HQ",
+          "super_realm": "",
+          "icon_type": "lord",
+          "monster_die": "5",
+          "monster_die2": "6",
+          "setup_start": "Dwarf Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/dwarves",
+          "commerce": "N",
+          "denizen": "",
+          "needs_init": "",
+          "armored": "",
+          "icon_size": "0.9",
+          "native_name": "Axeman",
+          "roving_native": "",
+          "no_sunlight": ""
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "6",
+          "strength": "T",
+          "chit_color": "paleyellow",
+          "sharpness": "1",
+          "length": "5"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "6",
+          "strength": "T",
+          "length": "5",
+          "chit_color": "yellow",
+          "sharpness": "1",
+          "move_speed_bonus_combat_box3": "1"
+        }
+      }
+    },
+    {
+      "id": "1992",
+      "name": "Helmet",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "armor_smash": "",
+          "armor": "",
+          "icon_type": "helmet",
+          "facing": "dark",
+          "armor_row": "2",
+          "ret_dw": "House",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "helmet": ""
+        },
+        "intact": {
+          "base_price": "5",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "3",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "2005",
+      "name": "Great Axe",
+      "attributeBlocks": {
+        "this": {
+          "weight": "H",
+          "length": "5",
+          "base_price": "8",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "great_axe",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "strength": "H",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "attack_speed": "4",
+          "strength": "H",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1982",
+      "name": "Armor",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "H",
+          "weight": "H",
+          "armor_thrust": "",
+          "armor_swing": "",
+          "armor_smash": "",
+          "armor": "",
+          "icon_type": "suitofarmor",
+          "facing": "dark",
+          "armor_row": "3",
+          "ret_dw": "Chapel",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "suitofarmor": ""
+        },
+        "intact": {
+          "base_price": "17",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "12",
+          "chit_color": "white"
+        }
+      }
+    }
+  ]
+}

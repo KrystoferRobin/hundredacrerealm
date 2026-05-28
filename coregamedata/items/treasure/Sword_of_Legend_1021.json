@@ -1,0 +1,33 @@
+{
+  "id": "1021",
+  "name": "Sword of Legend",
+  "attributeBlocks": {
+    "this": {
+      "weight": "M",
+      "length": "8",
+      "fame": "8",
+      "notoriety": "20",
+      "base_price": "35",
+      "magic": "",
+      "weapon": "",
+      "icon_type": "broadsword",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "alt_name": "Legend",
+      "item": ""
+    },
+    "unalerted": {
+      "attack_speed": "2",
+      "strength": "M",
+      "sharpness": "1",
+      "chit_color": "yellow"
+    },
+    "alerted": {
+      "attack_speed": "3",
+      "strength": "M",
+      "sharpness": "3",
+      "chit_color": "gold"
+    }
+  },
+  "parts": []
+}

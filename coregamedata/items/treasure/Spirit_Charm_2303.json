@@ -1,0 +1,19 @@
+{
+  "id": "2303",
+  "name": "Spirit Charm",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "9",
+      "text": "Ghosts and Wraiths cannot block you.",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "spirit_charm": "",
+      "fame": "2",
+      "weight": "L"
+    }
+  },
+  "parts": []
+}

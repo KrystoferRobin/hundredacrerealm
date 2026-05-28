@@ -1,0 +1,300 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Elf Outcast",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn",
+      "pronoun": "he",
+      "creator": "JYPE",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Constant Wind",
+      "vulnerability": "L",
+      "icon_type": "elf outcast",
+      "icon_folder": "custom/characters",
+      "extra_notes": "Every once in a while, a crazy elf is born. The tribe does what it can to help, but most of the time madness leads to crime and crime leads to banishment."
+    },
+    "level_1": {
+      "name": "Twisted Stripling",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "III",
+        "N1": "IV"
+      }
+    },
+    "level_2": {
+      "name": "Crazy Faerie",
+      "badge_icon": "Elf_Outcastbadge2",
+      "spellcount": "1",
+      "weapon": "Light Bow",
+      "advantages": {
+        "N0": "MARKSMAN: Roll 1 die on Missile table"
+      },
+      "diemod": {
+        "N0": "1d:missile:all"
+      },
+      "spelltypes": {
+        "N0": "III",
+        "N1": "IV"
+      }
+    },
+    "level_3": {
+      "name": "Mad Elf",
+      "weapon": "Light Bow",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "III",
+        "N1": "IV"
+      }
+    },
+    "level_4": {
+      "name": "Elf Outcast",
+      "weapon": "Light Bow",
+      "badge_icon": "Elf_Outcastbadge4",
+      "picks_locks": "",
+      "spellcount": "1",
+      "advantages": {
+        "N0": "LOCKPICKING: Can open chest, crypt and vault"
+      },
+      "spelltypes": {
+        "N0": "III",
+        "N1": "IV"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "woodfolk": "-2",
+      "rogues": "2"
+    },
+    "relationship": {
+      "woodfolk": "-2",
+      "rogues": "2"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "magic III3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "elf outcast",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "magic III3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "elf outcast",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "magic IV2*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "elf outcast",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "IV"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "FIGHT L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "elf outcast",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "elf outcast",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "MOVE L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "elf outcast",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "elf outcast",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "fight L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "elf outcast",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "elf outcast",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "move M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "elf outcast",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "elf outcast",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "elf outcast",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

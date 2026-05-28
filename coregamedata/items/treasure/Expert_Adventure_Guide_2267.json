@@ -1,0 +1,20 @@
+{
+  "id": "2267",
+  "name": "Expert Adventure Guide",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "24",
+      "fame": "10",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "text": "Roll 1 die for PEER",
+      "native": "Peasants",
+      "weight": "L"
+    }
+  },
+  "parts": []
+}

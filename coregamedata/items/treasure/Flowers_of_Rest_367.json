@@ -1,0 +1,20 @@
+{
+  "id": "367",
+  "name": "Flowers of Rest",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "2",
+      "text": "Lose turn - rest fatigue",
+      "original_game": "",
+      "color_source": "gold",
+      "sleep": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "nosecret": "",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

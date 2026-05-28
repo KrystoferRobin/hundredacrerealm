@@ -1,0 +1,22 @@
+{
+  "id": "1169",
+  "name": "Duel",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "combat",
+      "target": "monsters",
+      "text": "Monsters fight each other in the current combat round",
+      "magic_color": "any",
+      "duel": "",
+      "min_targets": "2",
+      "max_targets": "2",
+      "host_okay": "",
+      "new_spells_2": "",
+      "learnable": "",
+      "author": "Expansion 1"
+    }
+  },
+  "parts": []
+}

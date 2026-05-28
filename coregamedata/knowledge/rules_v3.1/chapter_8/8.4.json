@@ -1,0 +1,238 @@
+{
+  "title": "Melee Step",
+  "content": [],
+  "subsections": [
+    {
+      "id": "8.4.1",
+      "title": "Native Horses",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "At the start of the Melee Step, all native horses being ridden by unhired natives turn dark side up, and all native horses being ridden by hired natives turn over. Native horses keep this new side face up throughout the rest of the combat round."
+        }
+      ]
+    },
+    {
+      "id": "8.4.2",
+      "title": "Selection of Targets",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Next, targets for uncontrolled denizens are determined, and the characters select targets for their own attacks and spells. Unhired natives and monsters cannot target each other, and the visitors cannot attack nor be attacked."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Uncontrolled Denizens: A monster or unhired native on its own sheet (a defender being attacked) automatically attacks the denizen who was most recently put on its sheet: as each attacker is put on its sheet it is stacked in the 'Thrust' attack circle, with the most recent attacker on top. The only attackers on its sheet at this point are hirelings previously assigned during Deployment. At the start of the Melee Step the attacker on top of the stack becomes the defender's target. The defending denizen is put in the red 'Charge and Thrust' box and its head, club or horse is put in the red 'Dodge and Swing' box. The targeted attacker is placed in the area of the Maneuver boxes, and the remaining attackers stay in the 'Thrust' attack circle (the attackers will be repositioned by their controlling characters later in the round).",
+            "Characters: The characters in the clearing (including hidden characters) and the characters with hirelings in the clearing mix their Attention chits together blank side up. The chits are picked randomly, one at a time, and when a chit is picked its owner takes his turn. He selects the target for each of his hirelings who is on its own sheet, and if he is in the clearing he puts his Attention chit on his own target. The character also positions his hirelings who are on Melee Sections owned by uncontrolled denizens.",
+            "If a character is not in the clearing but is taking part in combat because of his hirelings, he picks no target for himself.",
+            "When a hidden character or hireling specifies a target or is specified as a target of an attack or a spell, he and his target are instantly unhidden. Note: See Ambush optional Rule 10.A.2 for exceptions.",
+            "A character is not obliged to pick a target; he can leave his chit unplayed if he wishes, but if he does so he cannot attack a target that round. If a hidden character leaves his chit unplayed, he remains hidden.",
+            "If a character charged this round, the only target he can attack is the character he charged.",
+            "A character can select a hidden target only if he has found hidden enemies that day. Note: Characters and hired natives can stop hiding voluntarily at any time.",
+            "A character may select a target that is on another sheet, even if there are attackers on his sheet.",
+            "If a spell prohibits a character from specifying a certain individual as a target, he cannot specify that individual as the target of an attack or spell. Note: The restriction on the character does not affect his hirelings. They can lure and attack the individual normally.",
+            "If a character is attacking with a weapon, when his Attention chit is picked he puts it on the denizen or character he is attacking. To specify another character as his target, the character puts his Attention chit on the target's Melee Section, by the Attack circles. To specify a monster or native as his target, he puts his chit on the target's counter. He can put his chit on any denizen or character in the clearing, including denizens and monsters that are unassigned or that are assigned to other characters. Being named as a target does not affect the denizen – it is not re-assigned to attack the character that is attacking it. Note: When there is no possibility of confusion, the players may simply announce their targets.",
+            "If a character has cast a spell in the Encounter Step, when his Attention chit is picked he puts it on the appropriate target for the spell. If his spell has multiple targets, he announces all the targets and places his Attention chit on one of them. He must specify the sort of target required by his spell, or the spell is broken before it goes into effect. The various sorts of targets are outlined below, and are described more precisely on the List of Spells.",
+            "When he specifies characters, denizens and items as targets, the spellcaster is limited to targets that are in his clearing. A 'character' target can be any character, including the spellcaster himself. A 'monster' or 'Demon' is the monster specified in the spell. An 'individual' can be any character, native, or monster, unless specified otherwise by the spell.",
+            "A 'multiple' target is any assortment of characters, natives and/or monsters that the spellcaster chooses. A 'human group' is either one native group, or all of the Giants in the spellcaster's clearing, or all of the Ogres in his clearing. A 'Goblins' target must include all of the uncontrolled Goblins in his clearing, and a 'Bats' target must include all of the uncontrolled Bats in his clearing.",
+            "A 'clearing' target must be the spellcaster's clearing (the spell affects everyone in the clearing), a 'hex' target must be his hex tile (the spell affects everyone in that tile), and a 'hex/human' target can be either his hex tile or a character or hired leader in his clearing. A 'one Sound' target can be any face-up Sound chit anywhere on the map.",
+            "A 'weapon' target can be any active or inactive weapon counter owned by anyone in the spellcaster's clearing, or any native, Goblin, Ogre, or club counter in his clearing. An 'artifact' target must be an Artifact or Spell Book the spellcaster owns and has active. A 'Magic chits' target can be any or all of the spellcaster's own active Magic chits (only the chits he specifies are affected by the spell).",
+            "A 'spell' target can be any spell whose spellcaster or target is in the spellcaster's clearing (including spells in effect in his tile generally). The target spell must already be in effect – it cannot be a spell that is being cast in the current round.",
+            "When a spellcaster specifies a character or denizen as his target, he and his target are instantly unhidden; if he specifies anything else as his target (such as a weapon, spell, Magic chit, hex tile, etc.), he remains hidden. He can specify a hidden target only if he has found hidden enemies that day. Exception: He can always cast a spell on himself, even if he is hidden and has not found hidden enemies; however, he still becomes unhidden when the spell is cast. Note: See the Ambush optional Rule 10.A.2 for circumstances under which a spellcaster may cast a spell and remain hidden.",
+            "When a spellcaster specifies an unhired native as the target of any spell, that native's group instantly starts battling him (see Rule 8.2.3). When the spellcaster specifies one of his hired natives as the target of any spell, all of his hired natives belonging to that native group instantly rebel (see Rule 8.4.2g). Exception: The Benevolent Spells optional Rule 10.C.2 allows some spells to be cast on hirelings without causing them to rebel.",
+            "When his Attention chit is chosen, each character chooses targets for his hirelings who are on their own Melee Sections. A hireling who is being attacked by denizens must choose a target from among the attackers on his sheet; if there are no denizens on his sheet, he does not choose a target. He cannot choose not to attack, choose a target on another sheet, or attack a character (even if the character has targeted him). The character puts the hireling's target in the Maneuver boxes and puts the other attackers in the Attack circles. He will secretly position his hireling in one of the red squares later in the round when he plays his Attacks and Maneuvers.",
+            "At the same time that a character selects targets for himself and his hirelings, he also positions his hirelings who are on Melee Sections owned by uncontrolled denizens. He cannot turn any counters over. The defending denizen is in the red 'Charge and Thrust' box with its head/club/horse in the 'Dodge and Swing' box. Its target can be put in any Maneuver square, and the remaining attackers can be put in any Attack circles; they do not have to fill all the circles. Each native horse can be put in the same circle or square with its rider, or a different one. Each character positions only his own hirelings. He does not position hirelings who are on Melee Sections owned by other characters or their hirelings.",
+            "Treachery: When a character specifies one of his own hired natives as a target for himself or one of his hirelings, all members of the target's group that are currently under hire to that character instantly 'rebel', no matter where they are on the map. Hirelings also rebel if they are chosen as the target of any spell (Exception: Benevolent Spells optional Rule 10.C.2). Natives hired by other characters and natives in other groups are not affected. The rebels instantly become unhired and the character loses Fame points equal to the Notoriety bounty of each rebel.",
+            "Rebels cannot attack nor be attacked by monsters and unhired natives. All such attacks are instantly cancelled.",
+            "Rebels are automatically battling all characters and hirelings who are attacking them or who they are attacking.",
+            "Breaking Pacification Spells: A spell that pacifies or controls a group of denizens is instantly broken when the spellcaster specifies one of the spell's targets as a target for himself or one of his hirelings. When the spell is broken, all of the targets revert to normal behavior.",
+            "If any of the spellcaster's hirelings are assigned to attack any of the spell's targets at the moment when the spell goes into effect, then the spell is stopped from going into effect. The spell is cancelled.",
+            "When the spellcaster assigns a hireling to attack one of the spell's targets, or when he specifies one of the spell's targets as his own target for a spell or attack, then the spell is broken."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.4.3",
+      "title": "Spell Activation and Cancellation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When all of the characters have specified their targets, the spells that have been played come to life and start working in the order defined by their completion times (lower time numbers first). All spells with a completion time of zero come to life first, then all spells with a completion time of '1', and so on. Spells with equal time numbers start working simultaneously. All of the spells start working before the characters play their attacks and maneuvers."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Each spell's completion time is equal to the time number on the Magic chit that was played to cast it; alerted Magic chits automatically have a time number of zero instead of the number printed on the chit. A Spell card cast by an Artifact or Spell Book also has a completion time of zero.",
+            "Important: When characters cast spells on each other, faster spells interrupt and cancel slower spells. When a spellcaster casts a spell on a character who is casting a slower spell, the spellcaster's spell stops the target from completing his spell. When the spellcaster's spell starts working he compares the completion time of his spell to the completion time of his target's spell. If the spellcaster's completion time is lower, the target's spell is cancelled. If the times are equal or the target's time number is lower, the target's spell is not cancelled.",
+            "The target's spell is cancelled only if he himself was named as one of the spellcaster's targets. For example, spells aimed at a clearing cannot interrupt characters in that clearing, and spells aimed at a spell cannot interrupt the character on whom that spell is cast.",
+            "The target's spell is cancelled regardless of the effect caused by the spellcaster's spell. Any spell that is aimed at a character stops him from completing a slower spell. Exception: The Demons and Imp cast their spells as attacks during the Melee Step, not as actions in the Encounter Step. Their spells cannot stop a character's spell and his spell cannot stop theirs. Note: The Power of the Pit optional Rule 10.C.4 modifies this exception.",
+            "The characters must be careful to implement their spells in the order of their completion times. If the spellcaster's spell is itself cancelled by someone else before it starts working, it cannot cancel his target's spell.",
+            "If a character's spell is cancelled before it goes into effect, the Magic chit he played fatigues. Its effort asterisks still count towards his effort limit for the round. He leaves his Attention chit on his target – he can still attack with a weapon if he chooses, but he cannot change targets.",
+            "The spell remains on its target(s) until it ends by expiring or being broken. Until then, both the spell and its Magic chit remain committed to the target it is affecting. The spell cannot be cast again and the Magic chit cannot be used in any way until the spell ends. When a spell is committed to a target, it is said to be 'bewitching' that target. Note: The Enhanced Magic optional Rule 10.C.1 modifies this rule.",
+            "The Magic chit that was played to cast the spell is used to symbolize the spell's effects. When the spell goes into effect, the spellcaster takes back his Attention chit and puts the Magic chit on the target to represent the effect of the spell. When the spell ends, the Magic chit returns to its owner and fatigues. If the spell was cast by an Artifact or Spell Book, the Spell card is put on the target (in place of a Magic chit) to represent the effect of the spell, and it returns to the Artifact or Spell Book when the spell ends. Alternatively, any unused chit may be placed on the target instead of the Spell card to represent the effects of the spell.",
+            "The spellcaster notes the targets of the spell in its spell box. While the spell remains in effect, he cannot use the spell box (nor erase its spell). When the spell ends, he crosses off the note and he can use the box again. If he has duplicates of the spell in other boxes, each duplicate is treated as a separate spell: the duplicates can be cast separately by playing separate Magic chits in separate rounds of combat.",
+            "Unless the spell's description specifies otherwise, the spellcaster does not have the option to break his spell arbitrarily. He cannot simply take back his Magic chit and end the spell."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.4.4",
+      "title": "Spell Effects in Combat",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When a spell starts working, its special effects start affecting the target(s). The List of Spells indicates the effects caused by each spell. Certain spells affect combat in special ways, described below."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Attack Spells: Most spells take effect immediately. However, when a character casts an Attack spell, it attacks like a weapon, and must hit by undercutting or matching directions as would a weapon. When Attack spells hit, they hit armor and horses normally, like weapons. All other spells inflict their effects directly on the target, ignoring his armor and horse; they are not stopped by armor or horses. Damage from Attack spells occurs at the same time as damage from normal weapons. When all of the attacks have been resolved, the spell expires. An Attack spell must attack in the same round it is cast. It cannot be saved and used in a later round. If not used, it expires at the end of the Melee Step.",
+            "Pacification spells: Pacification spells cause denizens to act like unhired natives who are not battling the spellcaster: they stop attacking and blocking him and his hirelings, but they continue to block and attack other characters normally. When the spell goes into effect, all of its targets who are assigned to attack the spellcaster or his hirelings become unassigned. The spellcaster does not roll to see if they battle him. Special: Different spellcasters can cast duplicates of the same spell to pacify the same denizens at the same time. Note: If any of the spellcaster's hirelings are assigned to attack any of the spell's targets at the moment when the spell goes into effect, then the spell is stopped from going into effect. The spell is cancelled.",
+            "Controlling Monsters: When a spell that controls monsters goes into effect, it can control only those monsters who are not already controlled. Monsters that are already controlled remain under their owner's control. When the spell goes into effect, the spellcaster can cancel the assignments of any or all of the target monsters. He cannot assign the monsters to new targets until the next round. Note: Leaving a monster assigned to one of his hired natives constitutes 'treachery' against the native (see Rule 8.4.2g).",
+            "Preventing Attacks: If a spell prohibits a character from specifying a target, and he has already played a charge against that target, his charge is cancelled. If he has already specified that individual as his target, his specification of that target is cancelled and he cannot specify a new target until the next round (if he also had other targets, he keeps them). Note: The restriction on the character does not affect his hirelings. They can continue to attack the individual normally.",
+            "If the spell forbids a denizen from attacking a target it is already assigned to, the denizen becomes unassigned and it cannot be assigned to a new target until the next round. If it is a Tremendous monster, it turns red side down."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.4.5",
+      "title": "Playing Attacks and Maneuvers",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "After all of the spells have started working or have been cancelled, the characters secretly play their attacks and maneuvers to resolve weapon attacks and Attack spells by comparing attack direction and speed with maneuver direction and speed."
+        },
+        {
+          "type": "list",
+          "items": [
+            "A character cannot attack with a weapon or Fight chit in the same round that he successfully casts a spell. He can play a maneuver normally. If a character's spell was cancelled before it started working, he can play a normal attack. The only target he can attack is the target where his Attention chit is located. If this target is not a character or denizen, he cannot attack.",
+            "An attack represents a single blow that is coming at the target from a specific direction. Each attack has a direction and a time number (or attack time). There are three attack directions: Thrust (straight ahead), Swing (from side to side) and Smash (downwards). The attack time defines the amount of time before the blow hits; lower numbers represent faster attacks.",
+            "A maneuver represents a move in one direction to evade attacks that are coming from the other directions. Each maneuver has a direction and a maneuver time. The three maneuver directions are Charge (straight ahead), Dodge (sideways) and Duck (downwards). The maneuver time defines the amount of time before the target completes his maneuver; lower numbers mean faster maneuvers.",
+            "During the Melee Step each character can make one attack against one other character or denizen, and each denizen makes one attack against one character or another denizen. (Exception: Attack spells can attack multiple characters or denizens.) Each character and denizen can also do a defensive maneuver to avoid enemy attacks.",
+            "Character Attacks and Maneuvers: Each character can play an attack, a maneuver and his armor, if he has armor active. He can choose not to play an attack or maneuver if he wishes, but if he has a shield or other armor active he must play it. All of the characters make their plays secretly, concealing their Melee Sections from each other. When they have finished they reveal their plays simultaneously. The plays cannot be changed once they are revealed.",
+            "To attack with a weapon, a character puts his active weapon and a Fight chit in one of the Attack circles on his Melee Sheet. His attack is always directed against the target he placed his Attention chit on at the beginning of the Melee Step. The circle he chooses defines his attack direction: each circle names the direction it represents and the maneuver it intercepts. His attack time equals the time number printed on his weapon; if his weapon has no time number, his attack time equals the time number on the Fight chit.",
+            "To play a maneuver, a character puts a Move chit in one of his Maneuver squares. The square he chooses defines his maneuver direction: each square names the direction it represents. His maneuver time equals the time number on the Move chit.",
+            "Once the plays have been revealed, a character's weapon counter and attack chit may be moved onto his target's melee sheet to assist in resolving combat accurately.",
+            "There are limits on the action chits that a character can play during combat. However, the monsters or natives on his sheet do not restrict what chits he can play during the Melee Step.",
+            "One Use: Each action chit can be played only once per round. At the end of each Encounter Step and Melee Step, each character puts the action chits he played in the Used This Round box on his Melee Section. These chits stay in the Used This Round box until the end of the round, when he gets them back to use in the next round of combat.",
+            "Effort Limit: Each character can play no more than a total of two effort asterisks per round of combat. If he plays a chit that causes his asterisks for the round to total more than two, then the play is cancelled. Example: If the White Knight plays his Move H4** chit to maneuver, he cannot play his Fight T5* chit to attack. Magic chits are also subject to the effort limit: if the Druid plays his Magic II3* chit to cast a spell, he cannot play a Move L2** chit to maneuver.",
+            "Strength Restrictions: The character's items limit the action chits he can play. He can play a Fight chit only if its strength equals or exceeds the weight of his active weapon. He can play a Move chit only if its strength equals or exceeds the weight of every item he is carrying (this does not include inactive items being carried by a pack horse). If he plays a chit that has insufficient strength, he must cancel the play – during the Melee Step he does not have the option of abandoning the over-weight item(s). Example: The Black Knight cannot use his Move M4 chit to maneuver as long as he has his Heavy armor (even if inactive). To use his Medium Move chits to maneuver in the Melee Step, he would have to abandon his armor and any other Heavy items he was carrying during the Encounter Step.",
+            "Illegal plays are cancelled and have no effect, and the chits that were played are put in their owner's Used This Round box. They cannot be played again that round and their effort asterisks do count towards their owner's effort limit and fatigue.",
+            "Weapons: Weapons can be used only if they are active. Important: Each character is limited to one active weapon (counter or card). He can own any number of weapons, but only one at a time can be active. Monsters and other denizens cannot use the weapon counters and cards. He can use his active weapon whether it is alerted or unalerted (alerted weapons usually have better combat values). When a character has a weapon active when he plays a Fight chit to attack, he must play the weapon in the attack. Combat characteristics of alerted and unalerted weapons are shown in the List of Weapons.",
+            "If his weapon has a time number, this number must define his attack time – he does not have the option to use the chit's time number instead. If his weapon has no time number, then the time number on his Fight chit defines his attack time.",
+            "Each time a weapon hits in combat, it must be turned unalerted side up. Each time it attacks and misses, it must be turned alerted side up. In place of an attack, a character can play a Fight chit during the Melee Step without specifying a target; if he does so, he can turn his weapon either side up at the end of the round. This is normally done to alert a weapon for a later round of combat.",
+            "If he does not have an active weapon, he can attack with a Fight chit alone. Explanation: He is assumed to own a dagger that he uses when no better weapon is available. The dagger does Negligible harm with one sharpness star and no time number. He cannot use this dagger when he has a weapon active – he must play the weapon."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.4.6",
+      "title": "Repositioning Denizens and Changing Tactics",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "After playing his own attacks and maneuvers, the character rolls the dice to position the denizens on his sheet randomly. At the same time he rolls the dice to position the attacking denizens on the sheet of any of his hirelings that are on their own Melee Sheets. Any player can roll to reposition the denizens on the sheet of a monster or unhired native. Each monster and native also has two sets of 'tactics' in combat which are represented by the different values on the two sides of their counter. One is typically a stronger but slower attack and the other is a weaker and faster attack. The rolls to 'change tactics' that are made throughout combat represent a random chance for denizens to switch from one set to the other."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Character's Sheet: After revealing his plays, the character randomly determines the final positions of the denizens he placed on his own sheet. He rolls one die, and the denizen counters on his Melee Sheet move among the red boxes as indicated by the result. This roll is not affected by modifiers. The results of each die roll are shown in the Repositioning Denizens Table.",
+            "Each denizen's final placement defines its attack and maneuver. Its attack time is the attack time printed on the counter, its maneuver time is the move time on the counter, and the denizen's red box defines its attack and maneuver direction: each box names the directions it represents. Example: Monsters in the top left box are doing the Thrust attack and the Charge maneuver. A native in the middle box with its horse in the bottom right box is attacking in the Swing direction and maneuvering in the Duck direction.",
+            "After the denizen counters have been repositioned, the character randomly determines whether they turn over. He specifies one of the red boxes, rolls two dice (die roll modifiers do not affect these die rolls) and consults the Change Tactics Table: if either die rolls a '6', all of the denizens in that box turn over. He rolls separately for each red box that contains denizens, and the results apply only to the counters in that box. Once a counter turns over, it keeps its new side face up until it 'changes tactics' again. Whether hired or not, native horses never turn over randomly. They never change tactics. Tremendous monsters also do not change tactics (see Rule 8.4.7c).",
+            "Denizen's Sheets: A denizen (including a hireling) on his own sheet is the 'defender' and is positioned in one of the red boxes on an unused Melee Section. After the plays are revealed, the attackers on each sheet (including the defender's target) can change positions and change tactics randomly. Roll separately for each sheet. Die roll modifiers do not affect these die rolls.",
+            "Roll once to reposition the defender's target in the maneuver squares and once more to reposition all the extra attackers in the attack circles. The counters move as shown on the appropriate Repositioning Denizens Table. When changing tactics, roll for each circle or square that contains denizens (except for the horse counters and Tremendous monsters, who never change tactics).",
+            "If the sheet's defender is an uncontrolled denizen, it can also change positions and change tactics: roll separately for him.",
+            "If the defender is a hireling, he remains as he was placed: he cannot be repositioned and he does not change tactics."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.4.7",
+      "title": "Special Monsters",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Spear-Carrying Goblins do not attack when they are light side up. They are assigned normally and interfere with their target's ability to play action chits during the Encounter Step, but they do not attack. They attack normally when dark side up. Denizens transformed into Birds, Frogs, or Squirrels behave similarly – they do not attack but are assigned normally and interfere with their target's ability to play action chits.",
+            "Demon, Winged Demon, and Imp: One side of these counters shows a Roman numeral in place of a harm letter. These Roman numerals signify magic: when the Roman numeral side of the monster counter hits, instead of inflicting harm the attack causes the target to roll on a spell table. When he has rolled and applied the results, the attack ends. These attacks ignore the target character's armor and horses and hit the character himself. The monster makes this attack only when it is red side down; when it is red side up it makes a striking attack with a weapon length of '0' (tooth/claw). Both Demons are Tremendous monsters and flip over only as described in the next section. The Imp changes tactics normally.",
+            "Tremendous monsters do not change tactics and turn over like other monsters. The only time a Tremendous monster turns red side up is when it hits its target in combat; when the monster (or its head or club) hits its target, it turns red side up at the end of that round of combat (but its head or club, if it has one, stays on the side it is on). Once it turns red side up, it stays red side up until it is killed or its target is killed. When its target is killed, the Tremendous monster turns red side down again. Controlled or hired Tremendous monsters must be played red side down by the hiring character; their head or club can be played either side up. Controlled or hired Tremendous monsters turn red side up if they (or their head or club) hit and behave just as uncontrolled red-side-up Tremendous monsters do.",
+            "When a Tremendous monster is red side up, it has picked up its target and is trying to tear him apart. The monster's attack time is in a circle (instead of with a harm letter) to signify that the monster is holding his target. When the monster hits its target, instead of inflicting harm it just kills the target outright. If the target is a character, the attack is not affected by armor or horses, and it does not affect armor or horses: the character is just killed without hurting his armor or horses.",
+            "When a Tremendous monster is red side up, it cannot change targets. It cannot be lured away by other characters or hired natives.",
+            "When a red-side-up Tremendous monster is on a character's Melee Section, it restricts the action chits he can play. During the Encounter Step, the character cannot play Move chits, Fly chits, Boots cards, or horses to run or fly away. He can play Fight chits and Gloves cards to turn over his weapon counter, and he can do other actions. During the Melee Step, the character cannot play a horse. He can play an attack normally, and he can play a Move chit or Boots card to do a maneuver; in terms of the game, he is wriggling around in hopes of delaying the final, fatal attack.",
+            "When a Tremendous monster or its head or club hits a native (or his horse) without killing the native, the monster turns red side up and stays assigned to him until the monster or native is killed. If the native's horse survives, he continues to play it; the monster picks it up, too. When a red-side-up Tremendous monster hits a native (or his horse), the native and his horse are both killed.",
+            "Combat cannot end in a clearing while a Tremendous monster is red side up. Special: Use of the Elusive Cloak can cause an 'infinite loop' where neither the character nor the Tremendous monster can be killed, and combat extends indefinitely. If there is no chance for the Tremendous monster to be killed by either the character or anyone else in the clearing (or the other characters decline to help), then the character is killed. Explanation: It is assumed that the character will tire before the monster does.",
+            "Head and Club Counters: Each head or club counter is assigned with the monster it belongs to. When the monster is assigned to a character, its head or club is automatically assigned to the same character. Each head or club makes a separate attack against the target, using its own weapon length, harm letter, and sharpness stars. A head or club cannot be put in the same red box with the monster it belongs to. When a character positions the monster counters in the red boxes, he must put the monster and its head or club in different boxes. Head and club counters can be repositioned and can change tactics just like other monster counters (even though they are red on the flip side). When a head or club counter hits, the Tremendous monster is considered to have hit, and the Tremendous-sized monster counter representing its body turns over to its red side. However, the head or club counter stays on its current side and continues to change tactics normally. Head and club counters cannot be attacked. The only way to destroy them is to kill the monster they belong to.",
+            "Characters Transmorphized into Tremendous Monsters. Characters transmorphized into Tremendous monsters follow many of the same rules in combat as untransmorphized Tremendous monsters. They must be played red-side-down initially, and flip red-side-up if their body, head, or club hit. Unless otherwise specified, while red-side up they stay assigned to their target until either they or their target are killed."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.4.8",
+      "title": "Resolving Attacks",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "After the denizens are randomized and change tactics, compare each attack with its target's maneuver to see if the attack misses. Attacks that hit do not go into effect yet – they can still be stopped by killing the attacker before his attack hits."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Compare the attack time of each attack to its target's maneuver time. If the attack time is lower, the attack will hit the target by 'undercutting' the target's maneuver time.",
+            "If the attack did not undercut, compare the direction of the attack to the direction of its target's maneuver. If the attack direction matches the target's maneuver direction, the attack will hit the target by 'intercepting' the target's maneuver. The arrows on the Melee Section illustrate which attack directions intercept which maneuver directions.",
+            "The grey arrows show which red box is hit by each Attack circle. Follow the grey arrow from the circle containing the attack until it comes to a red box. If the target is in this box or in a matching box on another sheet, the attack intercepts and hits. Note: The attack cannot hit other denizens in the box. The only denizen that can be hit is the designated target. Example: If a character has played his Fight chit in the Smash Attack circle, he intercepts his target if it is in any 'Duck and Smash' box on any sheet.",
+            "The red arrows show which Maneuver square is hit by each red box. If a red box contains denizens, follow the red arrow from that box until it comes to a Maneuver square (after passing through the armor ovals). If this square contains the target's maneuver, all of the denizens in that red box intercept the maneuver and hit. Special: If a character does not play a maneuver, all of the denizen counters on his sheet intercept and hit him.",
+            "When one character attacks another, his Attention chit attacks with the combat values defined by the weapon and Fight chit he played. His chit attacks from the red box on the target's sheet that matches the direction of the attack. Example: If he plays a Swing attack, he attacks from the 'Dodge and Swing' box on his target's sheet. If the targeted character has played his Move counter, Boots card, or horse in the 'Dodge' maneuver box, he is intercepted.",
+            "If a character attacks a target on a denizen's Melee Sheet, his attack circle intercepts the matching circle on that Melee Sheet, the red box that this circle points to, and the Maneuver square that this red box points to. Example: If he plays a Smash attack, he intercepts his target if it is in the 'Smash' circle, the 'Duck and Smash' box , or the 'Duck' square.",
+            "On a denizen's sheet, each attacker in an Attack circle intercepts the red box his circle points to, the owner intercepts the Maneuver square that his red box points to, and the attacker in the Maneuver square intercepts the red box that points to his square.",
+            "Whether or not an Attack spell hits is determined in exactly the same manner as a weapon. It must either undercut (based on the spell's completion time) or intercept the target(s) to hit.",
+            "If an attack neither undercuts nor intercepts its target, it misses. Explanation: The target completes his maneuver and gets out of the way of the attack. When a character misses, he removes his attack from its circle and turns his active weapon alerted side up. When a denizen misses, it is left on the sheet if it is the target of anyone else's attack. If it is not the target of any attacks, it is placed at the top of the target's Melee Section to indicate that it is still engaged with its target even though it has missed this round."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.4.9",
+      "title": "Inflicting Harm",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Attacks that hit go into effect one at a time, in the order defined by their weapon length and attack times."
+        },
+        {
+          "type": "list",
+          "items": [
+            "On the first round of combat in each clearing each day, attacks hit in the order defined by their weapon length, longer weapons before shorter. If attacks have the same weapon length, the attack with the faster attack time hits first.",
+            "In all subsequent rounds of combat in that clearing that day, attacks hit in the order defined by their attack times, faster attack times before slower. If attacks have the same attack time, the attack with the greater weapon length hits first. Note: If two or more attacks have both the same time and the same weapon length, they are simultaneous and inflict damage at the same time (see Rule 8.4.9m).",
+            "Hits inflict harm one by one, in the order defined by their length and attack time. When a hit inflicts harm the results go into effect instantly, before the next hit inflicts harm: if the hit changes the situation then the next hit inflicts harm in accordance with the new situation. Note: Wounded action chits are not removed from play until the Fatigue Step. A character who has received a wound which will cause death does not actually die until the Fatigue Step, and his attack that round is not cancelled.",
+            "When a denizen or character is killed, all attacks that are waiting to inflict harm are cancelled. Any weapons making the cancelled attacks turn alerted side up.",
+            "If a character or denizen is killed before his attack inflicts harm, his attack is cancelled and has no effect. Example: If a character and monster play killing attacks against each other, the one whose attack is resolved first survives.",
+            "When a character's attack hits (if it is not cancelled before it can take effect), his weapon becomes unalerted.",
+            "When an attack hits, it inflicts harm on its target. Harm is measured in the same levels as weight: 'T' for Tremendous, 'H' for Heavy, 'M' for Medium and 'L' for Light. The harm that a weapon or monster counter inflicts is equal to the harm letter on the attacking counter, plus levels for any sharpness stars on the counter.",
+            "If the attack does not hit armor, each sharpness star increases the harm one level.",
+            "If the attack does hit armor, one of the sharpness stars does not add to the harm (the star is not lost permanently, it just does not count in the current attack), but each additional star increases the harm one level. Example: A counter with an 'M' (Medium) harm letter and two sharpness stars inflicts Tremendous harm normally, but only Heavy harm when it hits armor.",
+            "If the attacking piece has no sharpness stars, the harm it inflicts is not affected by armor. Example: A Heavy counter with no sharpness stars inflicts Heavy harm whether it hits armor or not.",
+            "Armored Monsters: When an attack hits a monster, the attack hits armor only if the monster is a Dragon, Troll, or Serpent (including Vipers).",
+            "Armored Natives: Each Knight, Great Swordsman, Pikeman, Short Swordsman, and Crossbowman is protected by armor in all directions, as are all warhorses (no other natives have armor). Every attack that hits one of these natives hits armor and is reduced by one sharpness star.",
+            "The method of attack of the character's weapon can modify the harm he inflicts.",
+            "If he hits with a missile weapon, he must roll on the Missile Table and adjust the harm level as indicated by his result.",
+            "If he plays a striking weapon with a Fight chit whose strength exceeds the weight of the weapon, the harm increases one level. The harm increases only one level no matter how much extra strength the Fight chit has. Example: If he plays a Medium, Heavy or Tremendous Fight chit with a Light striking weapon, the harm increases one level (to Medium, plus any sharpness).",
+            "Special: A 'dagger' (a Fight chit played alone) is a 'Negligible' striking weapon with one sharpness star. It always gains a level for excess Fight strength, so it inflicts Medium harm when it misses armor, Light harm when it hits armor.",
+            "Bowmen: The Archers and Crossbowmen fire missile weapons, so the harm they inflict is modified by the Missile Table. When an Archer or Crossbowman hits, one of the players rolls for him on the Missile Table and the result modifies the harm he inflicts.",
+            "The player's die roll modifiers do not affect this roll – he is rolling for the native, not for himself. Any player can roll. The Archers have their own die roll modifier: when a player rolls on the Missile Table for an Archer's attack, he rolls only one die. This does not apply to the Crossbowmen, who roll two dice. Note: When light side up (the side with no attack values), an Archer counter cannot attack.",
+            "When the target is a denizen, compare the final harm inflicted by the attack to the denizen's vulnerability. Monsters' vulnerabilities are defined by counter size. Natives' vulnerabilities are defined in the List of Natives, and horses' vulnerabilities (belonging to both characters and natives) are shown in the List of Horses. If the harm equals or exceeds its vulnerability, the denizen is killed. If the harm is less than the vulnerability, the harm has no effect. After the hit takes effect, the attacking weapon counter is turned unalerted side up.",
+            "Native Horses: If a native is riding a horse, his own counter defines his attack direction but each attack aimed at him is resolved against his horse: the attack is compared to the maneuver time and direction of the horse counter to see if it hits, and if it hits it inflicts harm on the horse, not the rider. If the horse is killed before all of the hits against it have taken effect, the remaining hits inflict harm on the rider; the hits and misses previously defined by the horse's maneuver remain in effect for the rest of the Melee Step. Example: Two Thrust attacks with different attack times intercept a horse doing the Charge maneuver. The first one kills the horse. The second Thrust inflicts harm on the rider, regardless of what maneuver he used.",
+            "When the target is a character, determine whether the attack harms his horse, his armor or himself.",
+            "If the character played a horse to maneuver in the Melee Step, then the attack hits the horse and no harm is inflicted on the character or his armor. Compare the final harm level to the horse's vulnerability (see the Horses list). If the harm equals or exceeds the horse's vulnerability, the horse is killed and is removed from play for the rest of the game. If the harm is less than the vulnerability, the horse is not affected. Note: If the horse is a warhorse, the attack strikes armor and is reduced by one sharpness star."
+          ]
+        }
+      ]
+    }
+  ]
+} 

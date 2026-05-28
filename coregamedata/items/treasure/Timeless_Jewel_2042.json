@@ -1,0 +1,21 @@
+{
+  "id": "2042",
+  "name": "Timeless Jewel",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "notoriety": "7",
+      "text": "Don't write move",
+      "base_price": "34",
+      "fame": "5",
+      "native": "Soldiers",
+      "weight": "L",
+      "daytime_actions": "",
+      "facing": "face_dn",
+      "must_deactivate": "",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

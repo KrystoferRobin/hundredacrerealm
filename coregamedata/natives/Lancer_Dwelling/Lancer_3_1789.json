@@ -1,0 +1,70 @@
+{
+  "id": "1789",
+  "name": "Lancer 3",
+  "attributeBlocks": {
+    "this": {
+      "native": "Lancers",
+      "fame": "0",
+      "notoriety": "4",
+      "base_price": "2",
+      "vulnerability": "L",
+      "rank": "3",
+      "icon_type": "spearman",
+      "setup_start": "Lancer Dwelling",
+      "hire_type": "group",
+      "icon_folder": "wesnoth/units/human-loyalists",
+      "denizen": "",
+      "super_realm": "",
+      "clan": "2",
+      "native_die": "6",
+      "icon_size": "0.9",
+      "icon_type_rider": "horseman",
+      "native_name": "Spearman"
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "4",
+      "strength": "H",
+      "length": "10",
+      "sharpness": "1",
+      "chit_color": "lightgreen"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "M",
+      "length": "10",
+      "sharpness": "1",
+      "chit_color": "forestgreen"
+    }
+  },
+  "parts": [
+    {
+      "id": "1794",
+      "name": "Pony 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Lancers",
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "activated": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units/monsters",
+          "icon_size": "1",
+          "icon_type": "horse"
+        },
+        "trot": {
+          "move_speed": "5",
+          "strength": "M",
+          "chit_color": "lightgreen"
+        },
+        "gallop": {
+          "move_speed": "3",
+          "strength": "M",
+          "chit_color": "limegreen"
+        }
+      }
+    }
+  ]
+}

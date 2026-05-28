@@ -1,0 +1,43 @@
+{
+  "id": "94",
+  "name": "Rogue 4",
+  "attributeBlocks": {
+    "this": {
+      "native": "Rogues",
+      "fame": "0",
+      "notoriety": "4",
+      "base_price": "2",
+      "vulnerability": "M",
+      "rank": "4",
+      "original_game": "",
+      "icon_type": "archer",
+      "setup_start": "Inn",
+      "missile": "",
+      "hire_type": "single",
+      "monster_die": "5",
+      "garrison": "",
+      "icon_folder": "natives",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "denizen": "",
+      "archer": "",
+      "icon_folder_alt": "wesnoth/units/dunefolk",
+      "icon_type_alt": "firetrooper",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "2",
+      "chit_color": "lightorange"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "1",
+      "strength": "L",
+      "length": "14",
+      "sharpness": "2",
+      "missile": "",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,71 @@
+{
+  "id": "766",
+  "name": "Frost Giant",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "armored": "",
+      "vulnerability": "T",
+      "fame": "10",
+      "notoriety": "10",
+      "icon_type": "frostgiant",
+      "setup_start": "Frost Giant Box",
+      "monster_die": "4",
+      "base_price": "10",
+      "icon_folder": "monsters1",
+      "alt_monsters1_game": "",
+      "denizen": "",
+      "weapon_use_chit": "",
+      "icon_type_alt": "yeti",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "icon_size_alt": "0.8"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "5",
+      "strength": "T",
+      "chit_color": "white"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "4",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "767",
+      "name": "Frost Giant Axe",
+      "attributeBlocks": {
+        "this": {
+          "monster": "",
+          "part": "",
+          "icon_type": "frostgiant_axe",
+          "icon_folder": "monsters1",
+          "alt_monsters1_game": "",
+          "monster_die": "4",
+          "icon_type_alt": "icestrike",
+          "icon_folder_alt": "wesnoth/icons/attacks",
+          "icon_size_alt": "0.6",
+          "monster_weapon": "",
+          "giant_axe": "",
+          "frost_giant": ""
+        },
+        "light": {
+          "attack_speed": "4",
+          "strength": "H",
+          "length": "8",
+          "chit_color": "white"
+        },
+        "dark": {
+          "attack_speed": "5",
+          "strength": "T",
+          "length": "8",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

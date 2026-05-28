@@ -1,0 +1,18 @@
+{
+  "id": "8",
+  "name": "FIGHT M4**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "8",
+      "level": "3",
+      "action": "FIGHT",
+      "speed": "4",
+      "effort": "2",
+      "facing": "dark",
+      "strength": "M",
+      "icon_type": "inquisitor"
+    }
+  }
+}

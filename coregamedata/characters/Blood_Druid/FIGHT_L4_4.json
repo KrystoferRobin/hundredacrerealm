@@ -1,0 +1,18 @@
+{
+  "id": "4",
+  "name": "FIGHT L4",
+  "attributeBlocks": {
+    "this": {
+      "action": "FIGHT",
+      "strength": "L",
+      "speed": "4",
+      "character_chit": "",
+      "icon_type": "blood druid",
+      "icon_folder": "custom/characters",
+      "stage": "4",
+      "level": "2",
+      "effort": "0",
+      "facing": "dark"
+    }
+  }
+}

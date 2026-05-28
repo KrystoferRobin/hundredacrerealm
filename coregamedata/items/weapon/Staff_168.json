@@ -1,0 +1,28 @@
+{
+  "id": "168",
+  "name": "Staff",
+  "attributeBlocks": {
+    "this": {
+      "weight": "L",
+      "length": "9",
+      "base_price": "1",
+      "two_handed": "",
+      "weapon": "",
+      "original_game": "",
+      "icon_type": "staff",
+      "alt_monsters1_game": "",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "unalerted": {
+      "strength": "L",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "strength": "L",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

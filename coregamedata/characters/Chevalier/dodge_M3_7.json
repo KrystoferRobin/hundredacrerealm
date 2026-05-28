@@ -1,0 +1,20 @@
+{
+  "id": "7",
+  "name": "dodge M3*",
+  "attributeBlocks": {
+    "this": {
+      "action": "dodge",
+      "strength": "M",
+      "speed": "3",
+      "character_chit": "",
+      "icon_type": "chevalier",
+      "icon_folder": "custom/characters",
+      "stage": "7",
+      "level": "3",
+      "effort": "1",
+      "facing": "dark",
+      "move_lock": "",
+      "box_constraint": "2"
+    }
+  }
+}

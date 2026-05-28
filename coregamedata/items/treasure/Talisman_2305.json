@@ -1,0 +1,21 @@
+{
+  "id": "2305",
+  "name": "Talisman",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "17",
+      "text": "You do not fatigue color chits when enchanting tiles.",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "weight": "L",
+      "notoriety": "15",
+      "fame": "-5",
+      "talisman": "",
+      "great": ""
+    }
+  },
+  "parts": []
+}

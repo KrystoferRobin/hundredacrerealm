@@ -1,0 +1,19 @@
+{
+  "id": "655",
+  "name": "Hop",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "instant",
+      "target": "caster",
+      "text": "Character transports to a random clearing in same tile",
+      "magic_color": "gold",
+      "rw_expansion_1": "",
+      "teleport": "RandomClearing",
+      "author": "Expansion 1",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

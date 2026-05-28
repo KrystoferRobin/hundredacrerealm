@@ -1,0 +1,18 @@
+{
+  "id": "2",
+  "name": "MAGIC VI3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "2",
+      "level": "1",
+      "action": "MAGIC",
+      "speed": "3",
+      "effort": "1",
+      "facing": "dark",
+      "magic": "VI",
+      "icon_type": "beggar king"
+    }
+  }
+}

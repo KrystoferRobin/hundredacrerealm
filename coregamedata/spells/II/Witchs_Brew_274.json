@@ -1,0 +1,24 @@
+{
+  "id": "274",
+  "name": "Witch's Brew",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "day",
+      "target": "magic(II,VIII)",
+      "text": "Change MAGIC II to IV and VIII to III",
+      "magic_color": "gray",
+      "original_game": "",
+      "ii": "IV",
+      "viii": "III",
+      "magic_change": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "2230",
+  "name": "Charm Snake",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "day",
+      "target": "uncontrolled monster",
+      "text": "Control a viper or serpent in the clearing.",
+      "magic_color": "gray",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "targeted_monsters": "viper, serpent",
+      "control": "",
+      "benevolent": ""
+    }
+  },
+  "parts": []
+}

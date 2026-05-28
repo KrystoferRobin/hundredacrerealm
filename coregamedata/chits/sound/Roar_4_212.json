@@ -1,0 +1,15 @@
+{
+  "id": "212",
+  "name": "Roar 4",
+  "attributeBlocks": {
+    "this": {
+      "sound": "roar",
+      "clearing": "4",
+      "original_game": "",
+      "chit": "",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": ""
+    }
+  },
+  "parts": []
+}

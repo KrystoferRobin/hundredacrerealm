@@ -1,0 +1,28 @@
+{
+  "id": "354",
+  "name": "Enchanter's Skull",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "17",
+      "weight": "L",
+      "great": "",
+      "fame": "-10",
+      "notoriety": "10",
+      "magic": "IV",
+      "original_game": "",
+      "artifact": "",
+      "print": "",
+      "alt_monsters1_game": "",
+      "scholar_price": "20",
+      "warlock_price": "20",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "rw_expansion_1": "",
+      "item": "",
+      "merchant_price": "20"
+    }
+  },
+  "parts": []
+}

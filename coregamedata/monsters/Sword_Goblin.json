@@ -1,0 +1,40 @@
+{
+  "id": "1462",
+  "name": "Sword Goblin",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "1",
+      "notoriety": "1",
+      "icon_type": "goblinSwordsman",
+      "setup_start": "Sword Goblins Box",
+      "monster_die": "3",
+      "base_price": "1",
+      "icon_folder": "wesnoth/units",
+      "denizen": "",
+      "super_realm": "",
+      "icon_size": "1",
+      "goblin": "",
+      "weapon_use": "",
+      "box_num": "3"
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "6",
+      "strength": "H",
+      "sharpness": "1",
+      "length": "8",
+      "chit_color": "pink"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "5",
+      "strength": "T",
+      "sharpness": "1",
+      "length": "8",
+      "chit_color": "purple"
+    }
+  },
+  "parts": []
+}

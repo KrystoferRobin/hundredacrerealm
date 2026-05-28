@@ -1,0 +1,18 @@
+{
+  "id": "714",
+  "name": "Magnum Opus of War",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "10",
+      "text": "Can do FORTIFY phases ",
+      "rw_expansion_1": "",
+      "weight": "L",
+      "facing": "face_dn",
+      "book": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

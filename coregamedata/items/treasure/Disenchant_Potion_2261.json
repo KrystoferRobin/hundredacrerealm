@@ -1,0 +1,21 @@
+{
+  "id": "2261",
+  "name": "Disenchant Potion",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "6",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "text": "For the phase/round, all spells are nullified and no spell can be cast from or onto the character.",
+      "discard": "priest",
+      "potion": "",
+      "disenchant": "",
+      "oneshot": ""
+    }
+  },
+  "parts": []
+}

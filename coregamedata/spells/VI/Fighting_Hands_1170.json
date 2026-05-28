@@ -1,0 +1,23 @@
+{
+  "id": "1170",
+  "name": "Fighting Hands",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "combat",
+      "target": "character",
+      "text": "Can FIGHT H3 in combat",
+      "magic_color": "gray",
+      "host_okay": "",
+      "new_spells_2": "",
+      "learnable": "",
+      "author": "Expansion 1"
+    },
+    "fight_chit": {
+      "strength": "H",
+      "speed": "3"
+    }
+  },
+  "parts": []
+}

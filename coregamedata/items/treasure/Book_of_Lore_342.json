@@ -1,0 +1,27 @@
+{
+  "id": "342",
+  "name": "Book of Lore",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "10",
+      "fame": "-5",
+      "notoriety": "10",
+      "weight": "L",
+      "magic": "IV",
+      "original_game": "",
+      "book": "",
+      "print": "",
+      "alt_monsters1_game": "",
+      "scholar_price": "50",
+      "warlock_price": "50",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "rw_expansion_1": "",
+      "item": "",
+      "merchant_price": "20"
+    }
+  },
+  "parts": []
+}

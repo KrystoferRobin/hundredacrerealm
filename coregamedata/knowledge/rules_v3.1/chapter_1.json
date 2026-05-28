@@ -1,0 +1,37 @@
+{
+  "id": "1",
+  "title": "INTRODUCTION TO THE THIRD EDITION RULES",
+  "content": "",
+  "sections": [
+    {
+      "id": "1.1",
+      "title": "PURPOSE OF THE THIRD EDITION RULES",
+      "file": "1.1.json"
+    },
+    {
+      "id": "1.2", 
+      "title": "ORGANIZATION OF THE RULES",
+      "file": "1.2.json"
+    },
+    {
+      "id": "1.3",
+      "title": "ADVICE TO BEGINNERS", 
+      "file": "1.3.json"
+    },
+    {
+      "id": "1.4",
+      "title": "GAME SUMMARY",
+      "file": "1.4.json"
+    },
+    {
+      "id": "1.5",
+      "title": "WHERE TO FIND OUT MORE ABOUT MAGIC REALM",
+      "file": "1.5.json"
+    },
+    {
+      "id": "1.6",
+      "title": "DEFINITIONS",
+      "file": "1.6.json"
+    }
+  ]
+} 

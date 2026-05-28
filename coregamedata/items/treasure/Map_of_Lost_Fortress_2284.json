@@ -1,0 +1,16 @@
+{
+  "id": "2284",
+  "name": "Map of Lost Fortress",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "3",
+      "text": "-1 to LOCATE rolls in Lost Fotress",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": ""
+    }
+  },
+  "parts": []
+}

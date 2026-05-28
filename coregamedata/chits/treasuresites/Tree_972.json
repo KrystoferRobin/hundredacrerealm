@@ -1,0 +1,23 @@
+{
+  "id": "972",
+  "name": "Tree",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "tree",
+      "clearing": "1",
+      "monster_die": "6",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "gold",
+      "icon_type": "harpy",
+      "icon_folder": "monsters2",
+      "rw_expansion_1": "",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_type_alt": "harpy"
+    }
+  },
+  "parts": []
+}

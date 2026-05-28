@@ -1,0 +1,19 @@
+{
+  "id": "1085",
+  "name": "Talisman of Fury",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "50",
+      "text": "Replace FIGHT (any speed) (discard to none)",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "traveler_item": "",
+      "potion": "",
+      "discard": "none",
+      "replace_fight": "1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

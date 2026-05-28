@@ -1,0 +1,30 @@
+{
+  "id": "171",
+  "name": "Morning Star",
+  "attributeBlocks": {
+    "this": {
+      "weight": "H",
+      "length": "6",
+      "base_price": "8",
+      "two_handed": "",
+      "weapon": "",
+      "original_game": "",
+      "icon_type": "morning_star",
+      "alt_monsters1_game": "",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "unalerted": {
+      "strength": "H",
+      "chit_color": "white",
+      "attack_speed": "6"
+    },
+    "alerted": {
+      "attack_speed": "3",
+      "strength": "H",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

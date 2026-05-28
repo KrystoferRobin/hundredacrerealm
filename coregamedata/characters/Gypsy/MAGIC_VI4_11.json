@@ -1,0 +1,18 @@
+{
+  "id": "11",
+  "name": "MAGIC VI4*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "11",
+      "level": "4",
+      "action": "MAGIC",
+      "speed": "4",
+      "effort": "1",
+      "facing": "dark",
+      "magic": "VI",
+      "icon_type": "gypsy"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "1829",
+  "name": "Peasant HQ",
+  "attributeBlocks": {
+    "this": {
+      "native": "Peasants",
+      "fame": "0",
+      "notoriety": "1",
+      "base_price": "1",
+      "vulnerability": "M",
+      "rank": "HQ",
+      "icon_type": "peasant",
+      "setup_start": "Hamlet",
+      "hire_type": "single",
+      "garrison": "",
+      "icon_folder": "wesnoth/units/human-peasants",
+      "commerce": "F",
+      "denizen": "",
+      "super_realm": "",
+      "native_die": "2",
+      "clan": "1",
+      "icon_size": "0.9",
+      "native_name": "Peasant"
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "4",
+      "strength": "M",
+      "length": "9",
+      "chit_color": "peach"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "3",
+      "strength": "L",
+      "length": "9",
+      "chit_color": "brown"
+    }
+  },
+  "parts": []
+}

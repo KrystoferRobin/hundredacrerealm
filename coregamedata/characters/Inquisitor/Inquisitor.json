@@ -1,0 +1,316 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Inquisitor",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn,Chapel",
+      "pronoun": "he",
+      "creator": "Grant Walker",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Invocation Cross",
+      "vulnerability": "L",
+      "icon_type": "inquisitor",
+      "icon_folder": "custom/characters"
+    },
+    "level_1": {
+      "name": "Noviate",
+      "weapon": "Staff"
+    },
+    "level_2": {
+      "name": "Supplicant",
+      "weapon": "Staff",
+      "badge_icon": "Inquisitorbadge2",
+      "advantages": {
+        "N0": "HOLY SPIRIT: Demonic Immunity"
+      },
+      "monster_immunity": {
+        "N0": "Demon",
+        "N1": "Imp",
+        "N2": "Winged Demon"
+      }
+    },
+    "level_3": {
+      "name": "Priest",
+      "badge_icon": "Inquisitorbadge3",
+      "weapon": "Staff",
+      "spellcount": "1",
+      "advantages": {
+        "N0": "ANCIENT SCRIPTURE: 1 die on Read Runes table"
+      },
+      "diemod": {
+        "N0": "1d:readrunes:all"
+      },
+      "spelltypes": {
+        "N0": "I",
+        "N1": "VII"
+      }
+    },
+    "level_4": {
+      "name": "Inquisitor",
+      "badge_icon": "Inquisitorbadge4",
+      "curse_immunity": "",
+      "weapon": "Thrusting Sword",
+      "spellcount": "2",
+      "advantages": {
+        "N0": "IN GOD'S NAME: Immunity to curses."
+      },
+      "spelltypes": {
+        "N0": "I",
+        "N1": "V",
+        "N2": "VII"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "lancers": "-1",
+      "bashkars": "-2",
+      "woodfolk": "-2",
+      "crone": "-1",
+      "shaman": "-1",
+      "warlock": "-2",
+      "scholar": "2",
+      "order": "2",
+      "guard": "1",
+      "patrol": "1"
+    },
+    "relationship": {
+      "lancers": "-1",
+      "bashkars": "-2",
+      "woodfolk": "-2",
+      "crone": "-1",
+      "shaman": "-1",
+      "warlock": "-2",
+      "scholar": "2",
+      "order": "2",
+      "guard": "1",
+      "patrol": "1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "GameObject",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "4",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "inquisitor"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "FIGHT L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "3",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "inquisitor"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "inquisitor"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "MOVE M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "5",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "inquisitor"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "FIGHT L2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "2",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "inquisitor"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "MAGIC I4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "action": "MAGIC",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "I",
+          "icon_type": "inquisitor"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "MAGIC I6*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "action": "MAGIC",
+          "speed": "6",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "I",
+          "icon_type": "inquisitor"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "FIGHT M4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "action": "FIGHT",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark",
+          "strength": "M",
+          "icon_type": "inquisitor"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "MAGIC VII6*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "action": "MAGIC",
+          "speed": "6",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII",
+          "icon_type": "inquisitor"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "MAGIC V8**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "action": "MAGIC",
+          "speed": "8",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "V",
+          "icon_type": "inquisitor"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "inquisitor"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "FIGHT L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "4",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "inquisitor"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

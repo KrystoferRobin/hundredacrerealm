@@ -1,0 +1,40 @@
+{
+  "id": "762",
+  "name": "Lizardman",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "L",
+      "fame": "1",
+      "notoriety": "1",
+      "icon_type": "lizardman",
+      "setup_start": "Lizardman Box",
+      "monster_die": "2",
+      "base_price": "1",
+      "icon_folder": "monsters1",
+      "alt_monsters1_game": "",
+      "armored": "",
+      "denizen": "",
+      "weapon_use": "",
+      "icon_type_alt": "skirmisher",
+      "icon_folder_alt": "wesnoth/units/saurians",
+      "icon_size_alt": "1"
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "6",
+      "strength": "M",
+      "chit_color": "white",
+      "length": "5"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "3",
+      "strength": "M",
+      "chit_color": "gray",
+      "length": "5",
+      "sharpness": "1"
+    }
+  },
+  "parts": []
+}

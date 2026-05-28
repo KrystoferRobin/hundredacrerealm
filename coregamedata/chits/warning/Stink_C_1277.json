@@ -1,0 +1,13 @@
+{
+  "id": "1277",
+  "name": "Stink C",
+  "attributeBlocks": {
+    "this": {
+      "warning": "stink",
+      "tile_type": "C",
+      "super_realm": "",
+      "chit": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "697",
+  "name": "Hilt of Legend",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "text": "Combine with Blade and Gem for Sword",
+      "rw_expansion_1": "",
+      "base_price": "30",
+      "notoriety": "5",
+      "weight": "M",
+      "facing": "face_dn",
+      "legend": "2",
+      "combine": "Sword of Legend",
+      "combine_count": "3",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

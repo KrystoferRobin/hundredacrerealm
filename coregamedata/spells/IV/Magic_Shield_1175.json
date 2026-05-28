@@ -1,0 +1,29 @@
+{
+  "id": "1175",
+  "name": "Magic Shield",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "combat",
+      "target": "character",
+      "text": "Functions like a shield with tremendous vulnerability and light weight",
+      "magic_color": "purple",
+      "host_okay": "",
+      "new_spells_2": "",
+      "learnable": "",
+      "author": "Expansion 1"
+    },
+    "magic_shield": {
+      "vulnerability": "T",
+      "weight": "L",
+      "magic": "",
+      "icon_type": "shield",
+      "facing": "dark",
+      "armor_row": "1",
+      "icon_folder": "armor",
+      "shield": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "491",
+  "name": "Magician Magic II3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "3",
+      "character_level": "2",
+      "effort": "1",
+      "magic": "II",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "5",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "magician",
+      "rw_expansion_1": ""
+    }
+  }
+}

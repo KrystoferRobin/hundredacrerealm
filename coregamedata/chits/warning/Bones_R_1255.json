@@ -1,0 +1,14 @@
+{
+  "id": "1255",
+  "name": "Bones R",
+  "attributeBlocks": {
+    "this": {
+      "warning": "bones",
+      "tile_type": "R",
+      "super_realm": "",
+      "chit": "",
+      "ts_section": ""
+    }
+  },
+  "parts": []
+}

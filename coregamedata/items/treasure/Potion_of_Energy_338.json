@@ -1,0 +1,20 @@
+{
+  "id": "338",
+  "name": "Potion of Energy",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "No combat limit to effort * (discard to warlock)",
+      "base_price": "5",
+      "discard": "warlock",
+      "potion": "",
+      "original_game": "",
+      "effort_limit": "1000",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

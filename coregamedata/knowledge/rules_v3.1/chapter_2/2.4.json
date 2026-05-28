@@ -1,0 +1,74 @@
+{
+  "title": "THE TREASURE SETUP CARD",
+  "subsections": [
+    {
+      "id": "2.4.1",
+      "title": "Overview",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Setup Card is used to hold pieces that are hidden somewhere on the map or that are just too bulky to keep on the map. Most of the denizens and items start the game on the Setup Card and move to the map during play. The Appearance Chart contains denizens that can appear on the map. The Treasure Locations and Treasures Within Treasures sections contain treasures hidden at the Site chits; the characters can obtain these treasure by discovering and looting the Site chits. The Dwellings, Garrisons and Visitors sections contain items and horses owned by the natives and visitors; the characters can obtain these by going to the natives and visitors and trading with them."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Each box in the Lost Castle and Lost City sections holds the type of monster pictured in the box. The large number in the box indicates the number of monsters in the box; boxes that contain no number contain only one monster.",
+            "Each box in the Treasure Locations section holds the treasure cards and Spell cards listed in the box, plus the monster pictured in the box. These treasures, spells and monsters are all hidden in clearings on the map.",
+            "Each pair of boxes in the Dwellings section holds the native group named in the rectangle, plus all of the items owned by that group. The natives (and any horses they are riding) are put in the square box; the large number in the box shows how many natives there are in the group. Any items owned by the group (including round horse counters) are put in the rectangular box.",
+            "The seven small boxes in the bottom row of the Dwelling section are used to hold the visitor/mission chits."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.4.2",
+      "title": "Garrisons",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each box in the Garrisons section holds the items owned by the native group named on the box. The native group itself is on the map, at the Dwelling pictured in the box."
+        }
+      ]
+    },
+    {
+      "id": "2.4.3",
+      "title": "Visitors",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each box in the Visitors section holds the items and spells owned by the visitor named on the box."
+        }
+      ]
+    },
+    {
+      "id": "2.4.4",
+      "title": "Artifacts and Spell Books",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The boxes in the Artifacts and Spell Books section hold Spell cards that have been inscribed on items and books."
+        }
+      ]
+    },
+    {
+      "id": "2.4.5",
+      "title": "Treasures Within Treasures",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each box in the Treasures Within Treasures section holds extra treasures that are hidden within one of the Treasure Locations boxes."
+        }
+      ]
+    },
+    {
+      "id": "2.4.6",
+      "title": "Day (Turn) Chit",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Day (Turn) chit is put on the Daily Record track to identify the turn that is in progress. Note: If the optional Seasons/Weather rules are being used (see Rule 10.D.1), one of the four Weather chits and one of the six red number chits are also put on this track to keep track of the weather."
+        }
+      ]
+    }
+  ]
+} 

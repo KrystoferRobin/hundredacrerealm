@@ -1,0 +1,41 @@
+{
+  "id": "1034",
+  "name": "Murker 1",
+  "attributeBlocks": {
+    "this": {
+      "native": "Murker",
+      "fame": "0",
+      "notoriety": "2",
+      "base_price": "1",
+      "vulnerability": "M",
+      "rank": "5",
+      "icon_type": "assassin",
+      "setup_start": "Murker Dwelling",
+      "hire_type": "group",
+      "monster_die": "5",
+      "icon_folder": "natives",
+      "rw_expansion_1": "",
+      "denizen": "",
+      "icon_folder_alt": "wesnoth/units/kharos-sun",
+      "icon_type_alt": "goldenwarrior",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "M",
+      "length": "3",
+      "sharpness": "1",
+      "chit_color": "pink"
+    },
+    "dark": {
+      "move_speed": "2",
+      "attack_speed": "4",
+      "strength": "L",
+      "length": "3",
+      "sharpness": "1",
+      "chit_color": "purple"
+    }
+  },
+  "parts": []
+}

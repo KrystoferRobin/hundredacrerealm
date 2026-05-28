@@ -1,0 +1,22 @@
+{
+  "id": "675",
+  "name": "Paladin's Aegis",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "40",
+      "text": "Unaffected by any curse",
+      "notoriety": "15",
+      "rw_expansion_1": "",
+      "great": "",
+      "weight": "H",
+      "fame": "10",
+      "native": "Order",
+      "facing": "face_dn",
+      "curse_immunity": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

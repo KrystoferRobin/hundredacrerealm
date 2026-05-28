@@ -1,0 +1,28 @@
+{
+  "id": "2009",
+  "name": "Spear",
+  "attributeBlocks": {
+    "this": {
+      "weight": "M",
+      "length": "10",
+      "base_price": "6",
+      "two_handed": "",
+      "throwable": "",
+      "weapon": "",
+      "icon_type": "spear",
+      "icon_folder": "weapons",
+      "item": "",
+      "super_realm": ""
+    },
+    "unalerted": {
+      "attack_speed": "6",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "strength": "M",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

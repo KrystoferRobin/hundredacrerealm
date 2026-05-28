@@ -1,0 +1,21 @@
+{
+  "id": "498",
+  "name": "Magician Magic IV3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "3",
+      "character_level": "4",
+      "effort": "1",
+      "magic": "IV",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "12",
+      "level": "4",
+      "icon_folder": "characters",
+      "icon_type": "magician",
+      "rw_expansion_1": ""
+    }
+  }
+}

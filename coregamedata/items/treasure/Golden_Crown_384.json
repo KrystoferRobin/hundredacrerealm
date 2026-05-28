@@ -1,0 +1,29 @@
+{
+  "id": "384",
+  "name": "Golden Crown",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "50",
+      "notoriety": "-15",
+      "weight": "H",
+      "fame": "20",
+      "native": "Guard",
+      "great": "",
+      "text": "M armor versus SMASH",
+      "original_game": "",
+      "armor": "special",
+      "armor_box": "3",
+      "vulnerability": "M",
+      "armor_row": "1",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "destroyed": {
+      "base_price": "46"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,298 @@
+{
+  "id": "1786",
+  "name": "Lancer Dwelling",
+  "attributeBlocks": {
+    "this": {
+      "native": "Lancers",
+      "dwelling": "chapel,cottage,l_fire,s_fire",
+      "print": "",
+      "ts_section": "clan 2",
+      "ts_size": "T",
+      "ts_color": "green",
+      "ts_count": "4",
+      "icon_type": "horseman",
+      "icon_folder": "wesnoth/units/human-loyalists",
+      "virtual_dwelling": "",
+      "super_realm": "",
+      "clan": "2",
+      "native_die": "6",
+      "icon_size": "0.9",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1787",
+      "name": "Lancer 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Lancers",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "L",
+          "rank": "1",
+          "icon_type": "spearman",
+          "setup_start": "Lancer Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/human-loyalists",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "2",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "icon_type_rider": "horseman",
+          "native_name": "Spearman"
+        },
+        "light": {
+          "move_speed": "2",
+          "attack_speed": "6",
+          "strength": "H",
+          "length": "10",
+          "sharpness": "1",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "10",
+          "sharpness": "1",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "1788",
+      "name": "Lancer 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Lancers",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "L",
+          "rank": "2",
+          "icon_type": "spearman",
+          "setup_start": "Lancer Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/human-loyalists",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "2",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "icon_type_rider": "horseman",
+          "native_name": "Spearman"
+        },
+        "light": {
+          "move_speed": "3",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "10",
+          "sharpness": "1",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "H",
+          "length": "10",
+          "sharpness": "1",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "1789",
+      "name": "Lancer 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Lancers",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "L",
+          "rank": "3",
+          "icon_type": "spearman",
+          "setup_start": "Lancer Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/human-loyalists",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "2",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "icon_type_rider": "horseman",
+          "native_name": "Spearman"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "4",
+          "strength": "H",
+          "length": "10",
+          "sharpness": "1",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "10",
+          "sharpness": "1",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "1790",
+      "name": "Lancer HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Lancers",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "L",
+          "rank": "HQ",
+          "icon_type": "javelineer",
+          "setup_start": "Lancer Dwelling",
+          "hire_type": "group",
+          "icon_folder": "wesnoth/units/human-loyalists",
+          "commerce": "F,N",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "2",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "icon_type_rider": "lancer",
+          "native_name": "Spearman"
+        },
+        "light": {
+          "move_speed": "3",
+          "attack_speed": "5",
+          "strength": "H",
+          "length": "10",
+          "sharpness": "1",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "10",
+          "sharpness": "1",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "1977",
+      "name": "Spear",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "10",
+          "base_price": "6",
+          "two_handed": "",
+          "throwable": "",
+          "weapon": "",
+          "icon_type": "spear",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "6",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1978",
+      "name": "Spear",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "10",
+          "base_price": "6",
+          "two_handed": "",
+          "throwable": "",
+          "weapon": "",
+          "icon_type": "spear",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "6",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1979",
+      "name": "Spear",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "10",
+          "base_price": "6",
+          "two_handed": "",
+          "throwable": "",
+          "weapon": "",
+          "icon_type": "spear",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "6",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1980",
+      "name": "Spear",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "10",
+          "base_price": "6",
+          "two_handed": "",
+          "throwable": "",
+          "weapon": "",
+          "icon_type": "spear",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "6",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "M",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

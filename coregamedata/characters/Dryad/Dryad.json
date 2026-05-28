@@ -1,0 +1,303 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Dryad",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn,House",
+      "pronoun": "she",
+      "creator": "Deric Page",
+      "artcredit": "East Paldin Gallery / Midjourney",
+      "meaning": "Woods",
+      "vulnerability": "L",
+      "icon_type": "dryad",
+      "icon_folder": "custom/characters",
+      "magicuser": "",
+      "extra_notes": ""
+    },
+    "level_1": {
+      "name": "Pixie",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "III"
+      }
+    },
+    "level_2": {
+      "name": "Brownie",
+      "spellcount": "1",
+      "badge_icon": "Dryadbadge2",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "III"
+      },
+      "advantages": {
+        "N0": "TRACKING SKILLS: As WOODS GIRL"
+      },
+      "diemod": {
+        "N0": "1d:magicsight,readrunes,locate,hide,peer,meeting,loot:% woods"
+      }
+    },
+    "level_3": {
+      "name": "Nymph",
+      "spellcount": "2",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "III"
+      }
+    },
+    "level_4": {
+      "name": "Dryad",
+      "spellcount": "2",
+      "badge_icon": "Dryadbadge4",
+      "peace_with_nature": "",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "III"
+      },
+      "advantages": {
+        "N0": "PEACE WITH NATURE: As DRUID"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "woodfolk": "2",
+      "lancers": "1",
+      "company": "-1",
+      "crone": "-1",
+      "bashkars": "-2"
+    },
+    "gamerel": {
+      "woodfolk": "2",
+      "lancers": "1",
+      "company": "-1",
+      "crone": "-1",
+      "bashkars": "-2"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "magic II4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "dryad",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "magic III4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "dryad",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "magic III4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "dryad",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "FIGHT L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "dryad",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "MOVE L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "dryad",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "dryad",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "magic II4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "dryad",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "magic II3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "dryad",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic III3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "dryad",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "FIGHT L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "dryad",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "dryad",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "MOVE L2**",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "dryad",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

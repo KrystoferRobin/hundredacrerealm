@@ -1,0 +1,22 @@
+{
+  "id": "278",
+  "name": "Prophecy",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "day",
+      "target": "character",
+      "text": "Do not write move in advance",
+      "magic_color": "purple",
+      "original_game": "",
+      "daytime_actions": "",
+      "host_okay": "",
+      "alt_monsters1_game": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

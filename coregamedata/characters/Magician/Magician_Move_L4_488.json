@@ -1,0 +1,20 @@
+{
+  "id": "488",
+  "name": "Magician Move L4",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "strength": "L",
+      "speed": "4",
+      "character_level": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "2",
+      "level": "1",
+      "icon_folder": "characters",
+      "icon_type": "magician",
+      "rw_expansion_1": ""
+    }
+  }
+}

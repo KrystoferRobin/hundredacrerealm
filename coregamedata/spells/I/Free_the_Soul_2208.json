@@ -1,0 +1,20 @@
+{
+  "id": "2208",
+  "name": "Free the Soul",
+  "spellLevel": "I",
+  "attributeBlocks": {
+    "this": {
+      "spell": "I",
+      "duration": "instant",
+      "target": "clearing",
+      "text": "Roll for every Ghost, Ghoul, Skeleton, Undead and Wraith in the clearing, killed on a result &lt;6",
+      "magic_color": "white",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "free_soul": ""
+    }
+  },
+  "parts": []
+}

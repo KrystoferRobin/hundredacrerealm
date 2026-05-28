@@ -1,0 +1,20 @@
+{
+  "title": "A GUIDE TO THE PLAYING PIECES",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "This guide provides a quick reference to the information on the playing pieces. It is not necessary to memorize this information."
+    },
+    {
+      "type": "paragraph",
+      "text": "Notes:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The very large cardboard hexagons are referred to as \"hex tiles\" or \"map tiles\". The smallest cardboard squares are referred to as \"chits\". All other cardboard pieces are referred to as \"counters\".",
+        "The round counters represent the characters and the items they can own. The square counters represent dwellings, monsters, and natives (and the personal mounts of the natives)."
+      ]
+    }
+  ]
+} 

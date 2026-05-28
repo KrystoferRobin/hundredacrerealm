@@ -1,0 +1,25 @@
+{
+  "title": "Ending the Game",
+  "sections": [
+    {
+      "id": "9.0",
+      "title": "Ending the Game",
+      "file": "chapter_9/9.0.json"
+    },
+    {
+      "id": "9.1",
+      "title": "Character Deaths and Restarts",
+      "file": "chapter_9/9.1.json"
+    },
+    {
+      "id": "9.2",
+      "title": "Quitting the Game",
+      "file": "chapter_9/9.2.json"
+    },
+    {
+      "id": "9.3",
+      "title": "Winning the Game and Scoring",
+      "file": "chapter_9/9.3.json"
+    }
+  ]
+} 

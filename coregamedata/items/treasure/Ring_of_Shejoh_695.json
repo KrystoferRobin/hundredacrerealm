@@ -1,0 +1,42 @@
+{
+  "id": "695",
+  "name": "Ring of Shejoh",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Change any two chits to Magic V2*",
+      "rw_expansion_1": "",
+      "base_price": "14",
+      "notoriety": "10",
+      "great": "",
+      "facing": "face_dn",
+      "fame": "-10",
+      "cursed": "",
+      "author": "Expansion 1",
+      "item": ""
+    },
+    "chit1": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "2",
+      "magic": "V",
+      "effort": "1",
+      "character_level": "0",
+      "stage": "0",
+      "level": "0",
+      "chitearned": ""
+    },
+    "chit2": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "2",
+      "magic": "V",
+      "effort": "1",
+      "character_level": "0",
+      "stage": "0",
+      "level": "0",
+      "chitearned": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,133 @@
+{
+  "title": "BELONGINGS AND SPELL CARDS",
+  "subsections": [
+    {
+      "id": "2.3.1",
+      "title": "Overview",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The weapon counters, armor counters, Treasure cards and round horse counters are \"belongings\" that the characters can own; the weapons, armor and Treasure cards are \"items\" that must be carried. Spell cards represent information that can be learned."
+        }
+      ]
+    },
+    {
+      "id": "2.3.2",
+      "title": "Active and Inactive Items",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Belongings carried by a character must be either \"active\" or \"inactive\". Active items are available for immediate use by the character; inactive items must be activated before they can be used. Active and inactive items should be kept apart."
+        }
+      ]
+    },
+    {
+      "id": "2.3.3",
+      "title": "Horses",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each horse counter represents the horse pictured on it. There are three types of horses: ponies, workhorses and warhorses as shown on the List of Horses. When a character has a horse active, he is riding it. Inactive horses are being led and represent pack horses. Each horse counter has the strength letter and time number shown on the side of the counter that is face up at the moment."
+        },
+        {
+          "type": "list",
+          "items": [
+            "The round horse counters are mounts that the characters can obtain and ride during the game. Hired natives can never use the round horse counters. They can use only their own native horses. The square horse counters are the personal mounts of the natives and cannot be used by the characters.",
+            "Each native horse belongs to the native with the matching ID code.",
+            "The letter on each horse counter defines its strength, and the number defines the time it takes to move. Each side of the counter shows different values; the side showing an asterisk is turned up when the horse is \"galloping\", and the side without an asterisk is turned up when the horse is \"walking\". The horse always has the values that are face up at the moment.",
+            "Each native and native horse counter is always light side up except during combat or when it is hired."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.3.4",
+      "title": "Weapons",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each weapon counter is identified by the silhouette on the counter. The List of Weapons identifies each weapon and defines its weapon length and its method of attack. Certain treasure cards also function as weapons, and their attributes are listed on the card or in the List of Treasures."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Each weapon has a length value from 0 to 18 (these numbers are not indicated on the counters; they are listed in the List of Weapons). Larger numbers indicate longer weapons.",
+            "The letters, numbers, and symbols printed on the weapons define how they function in combat.",
+            "The number on a weapon is its attack time, which defines how much time it takes the weapon to complete an attack (lower numbers mean faster attacks).",
+            "The letter on the weapon defines the weight of the weapon and also defines the harm it inflicts when it hits, measured in the same levels as weight (\"L\" for Light, and so on). Special: When unalerted side up (with no letter), a Spear inflicts Negligible harm. It still has Medium weight.",
+            "Each sharpness star on the weapon adds one level of harm, but when the weapon hits armor one of the sharpness stars does not count (additional stars increase the damage normally). Example: A Light weapon with two sharpness stars inflicts Heavy damage normally, Medium damage against armor.",
+            "There are two methods of attacking: by striking (\"striking weapons\") and by missile (\"missile weapons\"). The weapon's method of attack modifies the harm it inflicts: missile weapons must roll on the Missile Table to adjust the harm level, and striking weapons gain one harm level when they are played with excessive Fight strength. The method of attack is listed on the List of Weapons.",
+            "A weapon counter is \"alerted\" when the red side of the counter that shows an asterisk is face up. When the other side is face up, it is \"unalerted\". Each counter uses the values that are face up at the moment. Only active weapons can be alerted; when inactive or unowned, a weapon must have its unalerted side face up. Weapons can attack with either side up, but most weapons are more effective when the alerted side is face up. Note: Weapon cards cannot be alerted. Weapon cards stay face up whenever they are active and always have the values shown on the card.",
+            "Weapon counters are placed unalerted side up just before the start of each day. They remain unalerted side up unless they are alerted during the day using an Alert phase or at certain times during combat. Whichever side is face up, it must keep that side face up until the counter is turned over again in an Alert phase or by hitting or missing in combat."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.3.5",
+      "title": "Armor",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each armor counter represents the armor pictured on it. There are four kinds of armor: helmets, breastplates, shields, and suits of armor."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Each armor card and counter displays a letter that defines the armor's weight and toughness. This toughness defines the amount of harm needed to affect the armor – the armor ignores attacks that inflict less harm. Example: A Medium shield is unaffected by Light harm.",
+            "Each armor counter is turned \"intact\" side up at the start of the game. When damaged it is turned \"Damaged\" side up, and it remains damaged side up until it is repaired or destroyed. While damaged, it protects its owner normally."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.3.6",
+      "title": "Treasure Counters",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The four gold weapon counters (the Bane, Truesteel, Living, and Devil Swords) and the four gold armor counters labeled Gold Helmet, Silver Breastplate, Jade Shield and \"T\" Armor) are valuable \"treasure counters\"; the other weapons and armor counters are ordinary items. The pony labeled \"L2\" on one side and \"L4\" on the other, and the war horse labeled \"T3\" on one side and \"T5\" on the other are also treated as treasure counters; the other horses are ordinary."
+        }
+      ]
+    },
+    {
+      "id": "2.3.7",
+      "title": "Treasure Cards",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Treasure cards represent a variety of items including weapons, armor, boots, gloves, other clothing, jewelry, potions and more. Each Treasure card represents the item named on the card. Cards with a gold dot are \"Large Treasures\" with obvious value; cards with no gold dot are \"Small Treasures\" that are less valuable (or less obvious about their value). Cards with a red dot are \"Great Treasures\"."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Each Treasure card has a letter that defines its weight and a number that defines its Gold price. The phrase in the center of the card indicates what it can be used for in the game. The List of Treasures explains how each Treasure card is used, and the Table of Treasures provides statistics for each Treasure card, such as Fame, Notoriety, Gold price, weight, spell type, Magic type, large and Great Treasures, and other information found on the Treasure card.",
+            "Some Treasure cards also have a Notoriety value and a Fame value or Fame reward. A Fame value is identified by the word \"FAME:\" followed by a number. A Fame reward is identified by the name of a native group, a number and \"F\", all within parentheses.",
+            "Colors and Roman numerals printed in red signify Enchanted cards with color magic or cards with Magic types that function in a limited way like a Magic chit. Each Enchanted card supplies the color named on it (in red), to every character in its clearing. The characters can use cards with a Magic type printed on them to cast spells.",
+            "The six cards labeled \"P1\" to \"P6\" in red are Treasures Within Treasures cards (or \"TWT\" cards) that contain other treasures. The Chest (P1) is an item, but the Remains of Thief and Mouldy Skeleton are exchanged for items, while Toadstool Circle, Crypt of the Knight, and Enchanted Meadow are \"Site cards\" – places where treasures are located."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.3.8",
+      "title": "Spells",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Spell cards signify magic spells. Each Spell card displays the name of the spell and summarizes its qualities. It identifies the Magic type and color magic needed to cast the spell and specifies the target(s) it can be cast on, and it summarizes the spell's effect and its duration (how long it remains in effect). The List of Spells explains each spell in detail."
+        }
+      ]
+    },
+    {
+      "id": "2.3.9",
+      "title": "Artifacts and Spell Books",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each Artifact contains one Spell card, and each Spell Book contains four Spell cards. Each Artifact and Spell Book card can be used as a Magic chit that is limited to casting the Spell card(s) contained in that Artifact or Book. The red Roman numeral on each card identifies the type of Magic chit it can be used as."
+        }
+      ]
+    }
+  ]
+} 

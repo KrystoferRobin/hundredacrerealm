@@ -1,0 +1,41 @@
+{
+  "id": "1035",
+  "name": "Murker 2",
+  "attributeBlocks": {
+    "this": {
+      "native": "Murker",
+      "fame": "0",
+      "notoriety": "4",
+      "base_price": "2",
+      "vulnerability": "L",
+      "rank": "2",
+      "icon_type": "lancer",
+      "monster_die": "5",
+      "setup_start": "Murker Dwelling",
+      "hire_type": "group",
+      "icon_folder": "natives",
+      "rw_expansion_1": "",
+      "denizen": "",
+      "icon_folder_alt": "wesnoth/units/kharos-sun",
+      "icon_type_alt": "goldenwarrior",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "2",
+      "attack_speed": "6",
+      "strength": "H",
+      "length": "10",
+      "sharpness": "1",
+      "chit_color": "pink"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "M",
+      "length": "10",
+      "sharpness": "1",
+      "chit_color": "purple"
+    }
+  },
+  "parts": []
+}

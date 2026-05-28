@@ -1,0 +1,18 @@
+{
+  "id": "9",
+  "name": "fight H5**",
+  "attributeBlocks": {
+    "this": {
+      "action": "fight",
+      "strength": "H",
+      "speed": "5",
+      "character_chit": "",
+      "icon_type": "beast master",
+      "icon_folder": "custom/characters",
+      "stage": "9",
+      "level": "3",
+      "effort": "2",
+      "facing": "dark"
+    }
+  }
+}

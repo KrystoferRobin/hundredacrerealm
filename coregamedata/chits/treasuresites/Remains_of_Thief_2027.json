@@ -1,0 +1,55 @@
+{
+  "id": "2027",
+  "name": "Remains of Thief",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "thief",
+      "gold_reward": "20",
+      "treasure": "large",
+      "text": "Get CURSE, treasures",
+      "treasure_within_treasure": "2",
+      "print": "",
+      "no_loot": "",
+      "curse": "",
+      "remove_from_play": "",
+      "facing": "face_dn",
+      "ts_section": "twt",
+      "ts_color": "lightblue",
+      "nosecret": "",
+      "super_realm": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1956",
+      "name": "Living Sword",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "4",
+          "fame": "3",
+          "notoriety": "9",
+          "base_price": "25",
+          "magic": "",
+          "weapon": "",
+          "icon_type": "thrusting_sword",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "3",
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "yellow"
+        },
+        "alerted": {
+          "attack_speed": "2",
+          "strength": "L",
+          "sharpness": "1",
+          "chit_color": "gold"
+        }
+      }
+    }
+  ]
+}

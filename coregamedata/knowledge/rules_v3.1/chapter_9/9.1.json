@@ -1,0 +1,43 @@
+{
+  "title": "Character Deaths and Restarts",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Characters may be killed by monsters, natives, other characters, or Power of the Pit spell results. Characters may also be killed by wounds or fatigue, or by suiciding."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "9.1.1",
+      "title": "Character Deaths",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Characters can be killed outright by taking a direct blow in combat that has an attack strength equal to or greater than their vulnerability. Note: Under the Serious Wounds optional Rule 10.A.1, blows equal to their vulnerability may result in multiple wounds rather than death.",
+            "Characters can also be wounded to death in combat by multiple blows or by wounds received due to involuntary fatiguing when all chits are already fatigued. As soon as all of a character's chits become wounded or committed to spells, he is killed. When determining which chits to wound, players must first wound all of their unenchanted in-play chits, then their enchanted in-play chits, then any fatigued chits. This is the only time that fatigued chits can be wounded. Chits dedicated to spells cannot be wounded and do not count when determining whether all chits have been wounded (see Rule 4.2.5).",
+            "When all of a character's chits are fatigued, wounded, or dedicated to spells, the only activity he can record and carry out is a Rest phase. If the character cannot do a Rest phase on the next Daylight phase (for example, due to the Ill Health curse), he is killed. Note: Certain types of weather in the Seasons/Weather optional Rules 10.E.1 require involuntary fatiguing of chits, and can eventually result in death. See the Seasons/Weather rules for details.",
+            "If the character is killed his items are abandoned in the clearing, and his recorded Fame, Notoriety, gold, spells, and discoveries are lost. The dying character determines the order that the abandoned items are stacked."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9.1.2",
+      "title": "Fresh Starts",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When a character is killed, he can start over on the next day. The new character is considered to be a completely different individual from the one who was just killed. A relative, perhaps."
+        },
+        {
+          "type": "list",
+          "items": [
+            "When a player's character is killed, he can pick any character that is not in use (including the one just killed) and re-enter the game at the start of the next game day. He takes a fresh Personal History sheet, records new Victory Requirements and proceeds as if it were the start of the game. If he cannot get his starting weapons and armor from the natives, he takes them from the abandoned items on the map; if they are not on the map, he must do without them (he cannot take any substitutes), but he collects the Gold price for each item he cannot get. Important: He must start at the Inn. Note: New players can join the game in progress by following the same procedure.",
+            "If two players lose characters on the same day, the player who lost his character first picks a new one first. If the old characters were killed simultaneously, each player rolls one die and the high roll gets first pick."
+          ]
+        }
+      ]
+    }
+  ]
+} 

@@ -1,0 +1,22 @@
+{
+  "id": "333",
+  "name": "Quick Boots",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "MOVE M3",
+      "base_price": "8",
+      "notoriety": "2",
+      "fame": "1",
+      "move_speed": "3",
+      "strength": "M",
+      "original_game": "",
+      "boots": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

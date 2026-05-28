@@ -1,0 +1,17 @@
+{
+  "title": "The Alert Activity",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A character can use the Alert activity to alert (or unalert) his weapon during his turn, or to prepare magic spells for use during combat. A guide (including a hired leader) can record this activity for the benefit of his followers. To record the Alert activity, he records \"A\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "When a character uses the Alert activity with a weapon, he can turn his active weapon either side up, as he wishes. All alerted weapons turn unalerted (light) side up at Midnight."
+    },
+    {
+      "type": "paragraph",
+      "text": "When a character does the Alert activity, he has the option to alert one of his Magic chits instead of turning over a weapon counter. The alerted chit can be used like any other Magic chit, but it automatically has a time number of \"0\" (zero) instead of the time number printed on the chit. At Midnight, all alerted Magic chits fatigue. Note: The characters cannot start the game with Magic chits alerted."
+    }
+  ]
+} 

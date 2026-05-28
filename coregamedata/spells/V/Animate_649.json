@@ -1,0 +1,21 @@
+{
+  "id": "649",
+  "name": "Animate",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "day",
+      "target": "dead monster",
+      "text": "Targeted monster is revived at MOVE/FIGHT plus one",
+      "magic_color": "black",
+      "rw_expansion_1": "",
+      "animate": "",
+      "host_okay": "",
+      "author": "Expansion 1",
+      "benevolent": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

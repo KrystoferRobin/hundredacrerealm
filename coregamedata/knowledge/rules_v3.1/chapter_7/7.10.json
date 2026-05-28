@@ -1,0 +1,77 @@
+{
+  "title": "The Enchant Activity (formerly the Spell Activity)",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Note: This activity has been renamed to the Enchant activity to better reflect its purpose, and to prevent confusion regarding the casting of spells, which can only be done in the Evening."
+    },
+    {
+      "type": "paragraph",
+      "text": "Characters who have Type I, II, III, IV, or V Magic chits can use the Enchant activity to do \"enchantments\". Each character can do nothing on the first Enchant phase he does each day; he is considered to be \"meditating\" in preparation for the enchantment, and records \"EM\" for this phase. On each subsequent Enchant phase he does that day, he can do one \"enchantment\" – he can either 1) enchant a Magic chit or 2) enchant the map tile where he is located. He records \"E\" for each of these subsequent Enchant phases."
+    },
+    {
+      "type": "list",
+      "items": [
+        "The character can do only one enchantment per \"E\" phase. He can specify and use only one Magic chit. He can do as many of these phases as he likes on the same day without recording another EM phase; only one EM phase is required per day.",
+        "The character cannot voluntarily cancel the activity. If he has an active chit of the required type, he must do the activity."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "When he does the activity, he must specify one of his Type I, Type II, Type III, Type IV, or Type V Magic chits which he is enchanting or using to enchant the tile where he is located. He can do the Enchant activity only if he has an active Magic chit that is Type I, Type II, Type III, Type IV, or Type V. If he does not have one of these chits active when he does the Enchant activity, then the activity is cancelled. Type VI, VII, and VIII chits cannot do enchantments."
+    },
+    {
+      "type": "paragraph",
+      "text": "When a character enchants a Magic chit, the chit is transformed into a specific color of magic. The Magic chit's type defines what color of magic it becomes: Type I chits always become White magic, Type II chits always become Grey magic, Type III become Gold magic, Type IV become Purple magic, and Type V become Black magic. Characters can enchant only one Magic chit per Enchant phase."
+    },
+    {
+      "type": "list",
+      "items": [
+        "The character turns the enchanted chit symbol side up and leaves it in play. The chit is referred to as a color chit, representing one piece of color magic. It cannot be used as a Magic chit, but it can be used to supply color magic.",
+        "Each color chit remains enchanted indefinitely, until it is used. It can be used only once, for one purpose; when used, it reverts to being a normal Magic chit and fatigues. Each chit is under the control of its owner: he decides when and how it is used."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To enchant a map tile, the specified Magic chit must be supplied with a specific color of magic. If there is no source of that color magic in the clearing, the character can use a color chit of the proper type (the color chit immediately fatigues and reverts to being a Magic chit). The Magic chit used to enchant the tile does not fatigue, but remains in play. If he cannot supply the proper color magic, then he cannot enchant the tile; he must enchant the Magic chit instead. Note: The map tile itself can supply the color magic, if it supplies the proper color of magic and is enchanted side up. Color can also be supplied by the day or by an Enchanted card or site radiating color magic in the clearing."
+    },
+    {
+      "type": "list",
+      "items": [
+        "The color magic that is required to enchant a tile depends on the Magic chit that was specified:",
+        "A Type I Magic chit requires White magic.",
+        "A Type II Magic chit requires Grey magic.",
+        "A Type III Magic chit requires Gold magic.",
+        "A Type IV Magic chit requires Purple magic.",
+        "A Type V Magic chit requires Black magic."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the Magic chit is supplied with the proper color magic, then the tile where the character is located is turned over and put back in place with its other side face up. The tile turns over regardless of which side is currently face up – if the tile is green side up it turns enchanted side up, and if it is enchanted side up then it turns green side up. Important: When putting the tile back, orient it so that the name of the tile is along the same edge that it occupied before it was turned over. This will ensure that the roadways match up with the surrounding tiles."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before turning the tile over, remove all of the pieces that are on the tile and note the number of the clearing where each piece was located. After turning the tile over put each piece back on the tile, in the clearing that has the same number as the clearing that the piece was removed from. If a character is on a roadway between two clearings when the tile turns over, then after the tile turns over he is put on the roadway that connects the same two clearings."
+    },
+    {
+      "type": "paragraph",
+      "text": "On some tiles, the roadways change when the tile turns over. If the roads change so as to make a character's recorded Move activity illegal before he does it, then the Move is cancelled. Reminder: The hidden paths and secret passages on the \"enchanted\" side of the tile are different from those on the green side. They are listed separately on the Discoveries list, and they must be discovered separately. Example: If a character discovers the secret passage on the Borderland when the tile is green side up, he crosses off only the \"Borderland (green) 4-5\" secret passage. He cannot use the secret passage when the tile is enchanted side up."
+    },
+    {
+      "type": "list",
+      "items": [
+        "On the day a character enters a clearing, the only roadway he can run away onto is the roadway he used to enter the clearing. If this roadway has vanished or has turned into a hidden roadway he cannot use, he cannot run away that day.",
+        "If a character is on a roadway when it vanishes or turns into a hidden path or secret passage that he has not discovered, he is put in the forest. He must start his next turn by moving back to the clearing he just ran out of."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The Remote Enchant Activity: The remote Enchant activity is an \"enhanced activity\" that a character can do only as a result of a Treasure card or a spell. To record the remote Enchant activity, a character records \"RE\" and the clearing (tile and clearing number) where he will do the activity. When he does the activity, he does it exactly as if he were doing a normal Enchant activity in that clearing – he can either enchant one of his Magic chits or use it to enchant the tile that contains the clearing he recorded, and he must record an earlier \"EM\" phase. If the character enchants the tile, he can use color magic that is supplied in his own clearing, or he can use color magic that is supplied in the clearing that he recorded."
+    },
+    {
+      "type": "paragraph",
+      "text": "Artifacts and Spell Books cannot be enchanted into color magic, nor can they be used to enchant a tile. (Exception: See optional rule 10.C.3 Enhanced Artifacts and Spell Books.)"
+    }
+  ]
+} 

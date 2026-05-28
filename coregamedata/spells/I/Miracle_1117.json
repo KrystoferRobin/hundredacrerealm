@@ -1,0 +1,22 @@
+{
+  "id": "1117",
+  "name": "Miracle",
+  "spellLevel": "I",
+  "attributeBlocks": {
+    "this": {
+      "spell": "I",
+      "duration": "day",
+      "target": "human group",
+      "text": "Bring a dead native back to life. If you do, group becomes FRIENDLY for the rest of the game.",
+      "magic_color": "white",
+      "miracle": "",
+      "host_okay": "",
+      "alt_monsters1_game": "",
+      "benevolent": "",
+      "no_battle": "",
+      "new_spells_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

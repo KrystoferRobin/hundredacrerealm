@@ -1,0 +1,20 @@
+{
+  "id": "2038",
+  "name": "Handy Gloves",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "fame": "1",
+      "notoriety": "2",
+      "text": "FIGHT M3",
+      "base_price": "6",
+      "attack_speed": "3",
+      "strength": "M",
+      "gloves": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

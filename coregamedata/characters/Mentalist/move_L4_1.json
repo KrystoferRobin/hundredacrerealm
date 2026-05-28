@@ -1,0 +1,18 @@
+{
+  "id": "1",
+  "name": "move L4",
+  "attributeBlocks": {
+    "this": {
+      "action": "move",
+      "strength": "L",
+      "speed": "4",
+      "character_chit": "",
+      "icon_type": "mentalist",
+      "icon_folder": "custom/characters",
+      "stage": "1",
+      "level": "1",
+      "effort": "0",
+      "facing": "dark"
+    }
+  }
+}

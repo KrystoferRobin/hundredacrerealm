@@ -1,0 +1,23 @@
+{
+  "id": "2228",
+  "name": "Grow Wings",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "day",
+      "target": "creature, horse, hound",
+      "text": "Target can now FLY. Substract 1 from move to minimum of 2.",
+      "magic_color": "purple",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "benevolent": "",
+      "non_flying_targets": "",
+      "non_maximum_targets": "",
+      "can_fly": ""
+    }
+  },
+  "parts": []
+}

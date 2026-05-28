@@ -1,0 +1,21 @@
+{
+  "id": "2131",
+  "name": "Control Bats",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "day",
+      "target": "uncontrolled monsters",
+      "targeted_monsters": "bat",
+      "text": "MOVE and FIGHT with bats",
+      "magic_color": "any",
+      "control": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

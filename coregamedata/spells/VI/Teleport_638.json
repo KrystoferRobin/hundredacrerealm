@@ -1,0 +1,19 @@
+{
+  "id": "638",
+  "name": "Teleport",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "instant",
+      "target": "caster",
+      "text": "Teleport up to 2 hexes",
+      "magic_color": "purple",
+      "rw_expansion_1": "",
+      "author": "Deric Page",
+      "teleport": "ChooseTileTwo",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

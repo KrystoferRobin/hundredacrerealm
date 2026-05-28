@@ -1,0 +1,73 @@
+{
+  "title": "CHARACTER PIECES",
+  "subsections": [
+    {
+      "id": "2.5.1",
+      "title": "Overview",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each character has one Character card, one character counter, one Attention chit and 12 action chits."
+        }
+      ]
+    },
+    {
+      "id": "2.5.2",
+      "title": "Character Card",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The character card provides a quick reference to the character. The front of the card names and pictures him, and shows the symbol that identifies all of his personal pieces. The back summarizes his qualities and lists the items he starts the game with. Each character is explained in detail in the List of Characters."
+        },
+        {
+          "type": "list",
+          "items": [
+            "His Weight/Vulnerability defines his weight and vulnerability. His Special Advantages are special rules that apply only to him.",
+            "The Development section outlines the four stages he went through to become what he is. It shows the name, weapons, armor and spells he had at each stage, and the action chits he gained at each stage. The character is already at his fourth stage when the game begins. The earlier stages are used only with the optional Development Game rules (see Rule 10.E.5-6).",
+            "The bottom of the card shows the trading relationships that affect how he trades with visitors and native leaders."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.5.3",
+      "title": "Character Counter",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The character's character counter is the round counter that shows his symbol. It is colored green on one side, tan on the other. A character's counter is turned green side up when he is hidden, tan side up when he is not hidden."
+        }
+      ]
+    },
+    {
+      "id": "2.5.4",
+      "title": "Attention Chit",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The character's Attention chit is the chit that shows his symbol on one side and is blank on the other."
+        }
+      ]
+    },
+    {
+      "id": "2.5.5",
+      "title": "Action Chits",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The character's action chits are the twelve chits that show his symbol on one side and either Move, Fight, Duck, Berserk, or Magic on the other side. He plays these chits to do actions in the game. The values on each chit define its qualities."
+        },
+        {
+          "type": "list",
+          "items": [
+            "The word on each chit defines what actions it can do. Move and Duck chits are used to move and maneuver, Fight chits are used to attack, Magic chits are used to cast spells and do enchantments, and the Berserk chit causes a fighting frenzy.",
+            "The number on each chit defines the time needed to do that action; lower numbers mean faster actions.",
+            "The asterisks on each chit show the extra effort needed to do that action; two asterisks show twice as much effort as one asterisk, and chits with no asterisks require no extra effort at all.",
+            "The letter on each Move, Fight, Duck and Berserk chit defines its strength. Magic chits have no strength.",
+            "The Roman numeral on each Magic chit defines its magic type. The eight types of Magic chits are used along with the colors of magic to cast spells."
+          ]
+        }
+      ]
+    }
+  ]
+} 

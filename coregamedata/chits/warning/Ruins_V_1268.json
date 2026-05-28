@@ -1,0 +1,32 @@
+{
+  "id": "1268",
+  "name": "Ruins V",
+  "attributeBlocks": {
+    "this": {
+      "warning": "ruins",
+      "tile_type": "V",
+      "super_realm": "",
+      "chit": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1283",
+      "name": "Guard",
+      "attributeBlocks": {
+        "this": {
+          "dwelling": "guard",
+          "warning": "ruins",
+          "tile_type": "V",
+          "super_realm": "",
+          "print": "",
+          "icon_type": "drake5",
+          "ts_section": "dwellings",
+          "ts_color": "tan",
+          "icon_folder": "wesnoth/buildings",
+          "quest_target": ""
+        }
+      }
+    }
+  ]
+}

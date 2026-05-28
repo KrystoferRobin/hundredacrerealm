@@ -1,0 +1,302 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Gypsy",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn,House",
+      "pronoun": "she",
+      "creator": "Teresa Michelsen",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Wicca",
+      "vulnerability": "L",
+      "icon_type": "gypsy",
+      "icon_folder": "custom/characters",
+      "magicuser": ""
+    },
+    "level_1": {
+      "name": "Traveler"
+    },
+    "level_2": {
+      "name": "Seer",
+      "badge_icon": "Gypsybadge2",
+      "spellcount": "1",
+      "advantages": {
+        "N0": "CRYSTAL BALL: Can peer in any clearing."
+      },
+      "spelltypes": {
+        "N0": "II"
+      },
+      "special_action": {
+        "N0": "ENHANCED_PEER"
+      }
+    },
+    "level_3": {
+      "name": "Soothsayer",
+      "spellcount": "2",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "VIII"
+      }
+    },
+    "level_4": {
+      "name": "Gypsy",
+      "badge_icon": "Gypsybadge4",
+      "daytime_actions": "",
+      "spellcount": "2",
+      "advantages": {
+        "N0": "DIVINATION: A skilled tarot reader and crystal ball gazer, the Gypsy need not record her turns in advance. She has an uncanny ability to predict the movements of denizens and adventurers in the Realm and can react to events as they unfold."
+      },
+      "spelltypes": {
+        "N0": "II",
+        "N1": "IV",
+        "N2": "VI",
+        "N3": "VIII"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "crone": "2",
+      "warlock": "1",
+      "soldiers": "-1",
+      "rogues": "1",
+      "order": "-2",
+      "bashkars": "1",
+      "guard": "-1"
+    },
+    "relationship": {
+      "crone": "2",
+      "warlock": "1",
+      "soldiers": "-1",
+      "rogues": "1",
+      "order": "-2",
+      "bashkars": "1",
+      "guard": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "GameObject",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "4",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "gypsy"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "gypsy"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "gypsy"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "MOVE L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "4",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "gypsy"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "FIGHT L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "4",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "gypsy"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "MAGIC II4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "action": "MAGIC",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II",
+          "icon_type": "gypsy"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "MAGIC II3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "action": "MAGIC",
+          "speed": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II",
+          "icon_type": "gypsy"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "gypsy"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "MAGIC VIII4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "action": "MAGIC",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VIII",
+          "icon_type": "gypsy"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "MOVE L3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "action": "MOVE",
+          "strength": "L",
+          "speed": "3",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "gypsy"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "MAGIC VI4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "action": "MAGIC",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VI",
+          "icon_type": "gypsy"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "MAGIC IV3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "action": "MAGIC",
+          "speed": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "IV",
+          "icon_type": "gypsy"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

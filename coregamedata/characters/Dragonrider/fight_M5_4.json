@@ -1,0 +1,22 @@
+{
+  "id": "4",
+  "name": "fight M5",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "strength": "M",
+      "effort": "0",
+      "character_level": "2",
+      "original_game": "",
+      "speed": "5",
+      "alt_monsters1_game": "",
+      "stage": "4",
+      "level": "2",
+      "icon_folder": "custom/characters",
+      "icon_type": "dragonrider",
+      "rw_expansion_1": "",
+      "facing": "dark"
+    }
+  }
+}

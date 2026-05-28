@@ -1,0 +1,39 @@
+{
+  "id": "191",
+  "name": "Dank V",
+  "attributeBlocks": {
+    "this": {
+      "warning": "dank",
+      "tile_type": "V",
+      "original_game": "",
+      "chit": "",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "229",
+      "name": "Chapel",
+      "attributeBlocks": {
+        "this": {
+          "dwelling": "chapel",
+          "warning": "dank",
+          "tile_type": "V",
+          "original_game": "",
+          "print": "",
+          "icon_type": "chapel",
+          "color_source": "white",
+          "alt_monsters1_game": "",
+          "ts_section": "dwellings",
+          "ts_color": "tan",
+          "icon_folder": "dwellings",
+          "rw_expansion_1": "",
+          "remove_curses": "",
+          "icon_folder_alt": "wesnoth/buildings",
+          "icon_type_alt": "elven2"
+        }
+      }
+    }
+  ]
+}

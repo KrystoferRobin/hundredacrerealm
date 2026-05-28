@@ -1,0 +1,21 @@
+{
+  "id": "495",
+  "name": "Magician Magic VII4**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "4",
+      "character_level": "3",
+      "effort": "2",
+      "magic": "VII",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "9",
+      "level": "3",
+      "icon_folder": "characters",
+      "icon_type": "magician",
+      "rw_expansion_1": ""
+    }
+  }
+}

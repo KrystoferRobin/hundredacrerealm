@@ -1,0 +1,27 @@
+{
+  "id": "2300",
+  "name": "Scroll of Allure",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "5",
+      "notoriety": "5",
+      "magic": "I",
+      "book": "",
+      "print": "",
+      "scholar_price": "30",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "item": "",
+      "scroll": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "magic_other": "VII",
+      "merchant_price": "20",
+      "fame": "5",
+      "priest_price": "30"
+    }
+  },
+  "parts": []
+}

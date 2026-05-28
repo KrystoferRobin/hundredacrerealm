@@ -1,0 +1,18 @@
+{
+  "id": "10",
+  "name": "fight M4**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_type": "vizier",
+      "icon_folder": "custom/characters",
+      "stage": "10",
+      "level": "4",
+      "action": "fight",
+      "strength": "M",
+      "speed": "4",
+      "effort": "2",
+      "facing": "dark"
+    }
+  }
+}

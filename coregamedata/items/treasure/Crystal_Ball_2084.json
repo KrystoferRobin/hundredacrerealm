@@ -1,0 +1,19 @@
+{
+  "id": "2084",
+  "name": "Crystal Ball",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "20",
+      "text": "PEER or SPELL in any hex",
+      "notoriety": "5",
+      "weight": "M",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "fame": "12",
+      "native": "Enchanters"
+    }
+  },
+  "parts": []
+}

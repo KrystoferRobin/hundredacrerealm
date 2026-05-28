@@ -1,0 +1,53 @@
+{
+  "title": "Battling Natives",
+  "content": [],
+  "subsections": [
+    {
+      "id": "8.2.1",
+      "title": "During combat, characters and their hirelings can attack unhired natives and the unhired natives can also initiate an attack spontaneously. Unhired natives that are fighting characters and their hirelings are said to be \"battling\" those characters and hirelings.",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Natives do not start fighting automatically – they start fighting only when something causes them to start fighting: when they are lured or attacked, when they are chosen as the target of any spell, or when they roll to battle a character at the beginning of combat.",
+            "Unhired natives fight as groups: when one unhired native starts fighting, all of the unhired natives of his group in that clearing also start fighting. Important: A hired native does not count as part of his group. When he starts fighting, his group does not start fighting, and he is not obliged to start fighting when his group starts fighting. Hired natives fight only as directed by the character who hired them.",
+            "Each unhired native group fights specific characters: it might battle all of the characters in its clearing, but more often it will battle some characters and not others. Whether a group is battling a character is defined separately for each group and character: different groups can battle different characters at the same time in the same clearing. Each character is attacked by only those groups that are battling him in that clearing that evening.",
+            "Once a group starts battling a character, it keeps battling him until combat ends in the clearing. Battling does not carry over from day to day – when combat ends, the group stops battling until something happens to make it start battling again on another day."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.2.2",
+      "title": "When combat begins in a clearing, each character in that clearing must roll on the Meeting Table to see if the unhired native groups in that clearing will battle him. He must roll even if he is hidden. He must also roll if he has hirelings in that clearing, even if he is not present himself. Note: No combat takes place in clearings with only monsters, unhired natives and underlings. However, if combat starts in a clearing because other characters or hired leaders are present, characters who have only underlings in that clearing still must roll for battling natives.",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "The character rolls once for each group that has any unhired natives in the clearing. He finds his result in the Meeting Table that matches his trading relationship with the group using any of the character's die-roll modifiers that apply to the Meeting Table. If he is in the clearing, he can \"buy drinks\" before rolling to make the group one level friendlier.",
+            "If he rolls \"Block/Battle\" for a group, or if he rolls \"Insult\" or \"Challenge\" and does not pay the penalty points, then that group battles him and his hirelings for the rest of the evening. If he rolls any other result, the group is not battling him (and the result has no other effect). His result applies only to that group. He rolls only once per group per day, at the very start of combat. Note: Meeting Table \"Block/Battle\" rolls start battles only during the Evening. Rolls during Daylight cause blocking, not battles."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.2.3",
+      "title": "A character or his hirelings can cause a group to start battling him in other ways:",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "When a character specifies an unhired native as a target of a weapon attack or any spell, lures an unhired native into attacking, or assigns a hireling to lure or attack an unhired native, then that native's group starts battling him. Note: The native's group starts battling only if the native being lured or attacked is unhired.",
+            "Natives that are battling a character will also attack his hired and controlled natives and monsters, even if the character is not in the clearing himself. Battling does not carry over from clearing to clearing: a group that is battling a character and his hirelings in one clearing does not automatically battle him in other clearings.",
+            "Battling natives fight like monsters, except that they attack only those characters and hirelings that they are battling."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.2.4",
+      "title": "Characters never roll for battling natives once rounds of combat begin in a clearing. If hired natives become unhired in the middle of combat (due to treachery or the death of their hiring character), the characters in the clearing do not have to roll to see if they are battled by the newly unhired natives.",
+      "content": []
+    }
+  ]
+} 

@@ -1,0 +1,22 @@
+{
+  "id": "6",
+  "name": "fight T6*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "speed": "6",
+      "strength": "T",
+      "effort": "1",
+      "character_level": "2",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "6",
+      "level": "2",
+      "icon_folder": "custom/characters",
+      "icon_type": "templar",
+      "rw_expansion_1": "",
+      "facing": "dark"
+    }
+  }
+}

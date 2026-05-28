@@ -1,0 +1,30 @@
+{
+  "id": "1986",
+  "name": "Breastplate",
+  "attributeBlocks": {
+    "this": {
+      "vulnerability": "M",
+      "weight": "M",
+      "armor_swing": "",
+      "armor_thrust": "",
+      "armor": "",
+      "icon_type": "breastplate",
+      "facing": "dark",
+      "armor_row": "2",
+      "ret_dw": "Guard",
+      "icon_folder": "armor",
+      "item": "",
+      "super_realm": "",
+      "breastplate": ""
+    },
+    "intact": {
+      "base_price": "9",
+      "chit_color": "gray"
+    },
+    "damaged": {
+      "base_price": "6",
+      "chit_color": "white"
+    }
+  },
+  "parts": []
+}

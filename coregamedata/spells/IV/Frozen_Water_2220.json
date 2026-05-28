@@ -1,0 +1,22 @@
+{
+  "id": "2220",
+  "name": "Frozen Water",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "day",
+      "target": "tile",
+      "text": "All water clearings in target hey and each adjacent hex become wood clearings.",
+      "magic_color": "purple",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "target_clearings": "river",
+      "target_adjacent_tiles": "",
+      "freeze_river": ""
+    }
+  },
+  "parts": []
+}

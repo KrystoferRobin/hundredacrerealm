@@ -1,0 +1,22 @@
+{
+  "id": "643",
+  "name": "Summon Animal",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "day",
+      "target": "caster",
+      "text": "Roll once on Summon Animal table to see which animal joins",
+      "magic_color": "gray",
+      "rw_expansion_1": "",
+      "author": "Deric Page",
+      "summoning": "animal",
+      "host_okay": "",
+      "table": "summonanimal",
+      "benevolent": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

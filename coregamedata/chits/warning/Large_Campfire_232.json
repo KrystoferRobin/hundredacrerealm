@@ -1,0 +1,21 @@
+{
+  "id": "232",
+  "name": "Large Campfire",
+  "attributeBlocks": {
+    "this": {
+      "dwelling": "l_fire",
+      "warning": "stink",
+      "tile_type": "W",
+      "original_game": "",
+      "icon_type": "large_fire",
+      "alt_monsters1_game": "",
+      "icon_folder": "dwellings",
+      "rw_expansion_1": "",
+      "general_dwelling": "",
+      "no_shelter": "",
+      "icon_folder_alt": "wesnoth/buildings",
+      "icon_type_alt": "fire1"
+    }
+  },
+  "parts": []
+}

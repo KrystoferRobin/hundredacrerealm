@@ -1,0 +1,18 @@
+{
+  "id": "2145",
+  "name": "Bad Luck",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "permanent",
+      "target": "character",
+      "text": "Add one to all die rolls",
+      "magic_color": "any",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

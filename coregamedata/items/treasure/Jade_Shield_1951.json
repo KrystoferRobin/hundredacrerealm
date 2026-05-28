@@ -1,0 +1,35 @@
+{
+  "id": "1951",
+  "name": "Jade Shield",
+  "attributeBlocks": {
+    "this": {
+      "vulnerability": "H",
+      "weight": "H",
+      "shield": "",
+      "armor_choice": "",
+      "magic": "Jade",
+      "fame": "4",
+      "notoriety": "4",
+      "armor": "",
+      "icon_type": "shield",
+      "facing": "dark",
+      "pile_position": "3",
+      "armor_row": "1",
+      "icon_folder": "armor",
+      "item": "",
+      "super_realm": ""
+    },
+    "intact": {
+      "base_price": "20",
+      "chit_color": "gold"
+    },
+    "damaged": {
+      "base_price": "16",
+      "chit_color": "yellow"
+    },
+    "destroyed": {
+      "base_price": "10"
+    }
+  },
+  "parts": []
+}

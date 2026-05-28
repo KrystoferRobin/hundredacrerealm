@@ -1,0 +1,19 @@
+{
+  "id": "2161",
+  "name": "Mesmerize",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "target": "character",
+      "text": "Spellcaster rolls for Mesmerize, applies result to target.",
+      "magic_color": "black",
+      "learnable": "",
+      "super_realm": "",
+      "duration": "instant",
+      "mesmerize": "",
+      "super_realm_spell": ""
+    }
+  },
+  "parts": []
+}

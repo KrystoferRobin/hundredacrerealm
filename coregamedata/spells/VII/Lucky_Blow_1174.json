@@ -1,0 +1,20 @@
+{
+  "id": "1174",
+  "name": "Lucky Blow",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "move",
+      "target": "FIGHT chit",
+      "text": "One FIGHT chit inflicts T harm until use",
+      "magic_color": "gray",
+      "host_okay": "",
+      "final_chit_harm": "T",
+      "new_spells_2": "",
+      "learnable": "",
+      "author": "Expansion 1"
+    }
+  },
+  "parts": []
+}

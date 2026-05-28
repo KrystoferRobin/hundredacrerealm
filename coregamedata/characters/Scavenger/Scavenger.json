@@ -1,0 +1,295 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Scavenger",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn",
+      "pronoun": "he",
+      "creator": "Vincent",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Search",
+      "vulnerability": "M",
+      "icon_type": "scavenger",
+      "icon_folder": "custom/characters"
+    },
+    "level_1": {
+      "name": "Brat"
+    },
+    "level_2": {
+      "name": "Urchin",
+      "badge_icon": "Scavengerbadge2",
+      "advantages": {
+        "N0": "SCROUNGING.: Has developed a knack for finding what other people leave behind.  Subtracts one from all rolls on the LOOT table."
+      },
+      "diemod": {
+        "N0": "-1:loot:all"
+      }
+    },
+    "level_3": {
+      "name": "Snoop",
+      "weapon": "Short Sword"
+    },
+    "level_4": {
+      "name": "Scavenger",
+      "weapon": "Broadsword",
+      "armor": "Shield",
+      "badge_icon": "Scavengerbadge4",
+      "advantages": {
+        "N0": "KEEN EYE: Developed the ability to see where someone may have hidden something.  Rolls 1 die instead of 2 for all rolls on the LOCATE table."
+      },
+      "diemod": {
+        "N0": "1d:locate:all"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "crone": "1",
+      "scholar": "1",
+      "shaman": "-1",
+      "warlock": "-1",
+      "woodfolk": "-1",
+      "order": "-1",
+      "guard": "-1",
+      "company": "1",
+      "bashkars": "1"
+    },
+    "gamerel": {
+      "crone": "1",
+      "scholar": "1",
+      "shaman": "-1",
+      "warlock": "-1",
+      "woodfolk": "-1",
+      "order": "-1",
+      "guard": "-1",
+      "company": "1",
+      "bashkars": "1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "FIGHT L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "scavenger",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "scavenger",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "MOVE M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "scavenger",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "FIGHT L3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "scavenger",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "fight M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "scavenger",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "MOVE M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "scavenger",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "FIGHT M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "scavenger",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "MOVE M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "scavenger",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "scavenger",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "FIGHT H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "scavenger",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "scavenger",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "MOVE H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "scavenger",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

@@ -1,0 +1,462 @@
+{
+  "id": "1289",
+  "name": "Hamlet",
+  "attributeBlocks": {
+    "this": {
+      "dwelling": "hamlet",
+      "warning": "bones",
+      "tile_type": "V",
+      "super_realm": "",
+      "print": "",
+      "icon_type": "human-city",
+      "ts_section": "dwellings",
+      "ts_color": "tan",
+      "icon_folder": "wesnoth/buildings",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1823",
+      "name": "Peasant 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Peasants",
+          "fame": "0",
+          "notoriety": "1",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "1",
+          "icon_type": "peasant",
+          "setup_start": "Hamlet",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/human-peasants",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "2",
+          "clan": "1",
+          "icon_size": "0.9",
+          "native_name": "Peasant"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "3",
+          "strength": "L",
+          "length": "9",
+          "chit_color": "peach"
+        },
+        "dark": {
+          "move_speed": "3",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "brown"
+        }
+      }
+    },
+    {
+      "id": "1824",
+      "name": "Peasant 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Peasants",
+          "fame": "0",
+          "notoriety": "1",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "2",
+          "icon_type": "peasant",
+          "setup_start": "Hamlet",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/human-peasants",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "2",
+          "clan": "1",
+          "icon_size": "0.9",
+          "native_name": "Peasant"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "peach"
+        },
+        "dark": {
+          "move_speed": "3",
+          "attack_speed": "4",
+          "strength": "L",
+          "length": "9",
+          "chit_color": "brown"
+        }
+      }
+    },
+    {
+      "id": "1825",
+      "name": "Peasant 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Peasants",
+          "fame": "0",
+          "notoriety": "1",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "3",
+          "icon_type": "peasant",
+          "setup_start": "Hamlet",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/human-peasants",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "2",
+          "clan": "1",
+          "icon_size": "0.9",
+          "native_name": "Peasant"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "peach"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "L",
+          "length": "9",
+          "chit_color": "brown"
+        }
+      }
+    },
+    {
+      "id": "1826",
+      "name": "Peasant 4",
+      "attributeBlocks": {
+        "this": {
+          "native": "Peasants",
+          "fame": "0",
+          "notoriety": "1",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "4",
+          "icon_type": "peasant",
+          "setup_start": "Hamlet",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/human-peasants",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "2",
+          "clan": "1",
+          "icon_size": "0.9",
+          "native_name": "Peasant"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "3",
+          "strength": "L",
+          "length": "9",
+          "chit_color": "peach"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "brown"
+        }
+      }
+    },
+    {
+      "id": "1827",
+      "name": "Peasant 5",
+      "attributeBlocks": {
+        "this": {
+          "native": "Peasants",
+          "fame": "0",
+          "notoriety": "1",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "5",
+          "icon_type": "peasant",
+          "setup_start": "Hamlet",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/human-peasants",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "2",
+          "clan": "1",
+          "icon_size": "0.9",
+          "native_name": "Peasant"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "peach"
+        },
+        "dark": {
+          "move_speed": "3",
+          "attack_speed": "3",
+          "strength": "L",
+          "length": "9",
+          "chit_color": "brown"
+        }
+      }
+    },
+    {
+      "id": "1828",
+      "name": "Peasant 6",
+      "attributeBlocks": {
+        "this": {
+          "native": "Peasants",
+          "fame": "0",
+          "notoriety": "1",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "6",
+          "icon_type": "peasant",
+          "setup_start": "Hamlet",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/human-peasants",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "2",
+          "clan": "1",
+          "icon_size": "0.9",
+          "native_name": "Peasant"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "peach"
+        },
+        "dark": {
+          "move_speed": "3",
+          "attack_speed": "4",
+          "strength": "L",
+          "length": "9",
+          "chit_color": "brown"
+        }
+      }
+    },
+    {
+      "id": "1829",
+      "name": "Peasant HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Peasants",
+          "fame": "0",
+          "notoriety": "1",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "HQ",
+          "icon_type": "peasant",
+          "setup_start": "Hamlet",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/human-peasants",
+          "commerce": "F",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "2",
+          "clan": "1",
+          "icon_size": "0.9",
+          "native_name": "Peasant"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "peach"
+        },
+        "dark": {
+          "move_speed": "3",
+          "attack_speed": "3",
+          "strength": "L",
+          "length": "9",
+          "chit_color": "brown"
+        }
+      }
+    },
+    {
+      "id": "1922",
+      "name": "Pony",
+      "attributeBlocks": {
+        "this": {
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "base_price": "12",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units/monsters",
+          "icon_size": "1",
+          "icon_type": "horse",
+          "horse_holder": "Bashkar Dwelling"
+        },
+        "trot": {
+          "move_speed": "5",
+          "strength": "M",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "3",
+          "strength": "L",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1923",
+      "name": "Pony",
+      "attributeBlocks": {
+        "this": {
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "base_price": "14",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units/monsters",
+          "icon_size": "1",
+          "icon_type": "horse",
+          "horse_holder": "Bashkar Dwelling"
+        },
+        "trot": {
+          "move_speed": "5",
+          "strength": "M",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "3",
+          "strength": "M",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1924",
+      "name": "Pony",
+      "attributeBlocks": {
+        "this": {
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "base_price": "14",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units/monsters",
+          "icon_size": "1",
+          "icon_type": "horse",
+          "horse_holder": "Bashkar Dwelling"
+        },
+        "trot": {
+          "move_speed": "4",
+          "strength": "M",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "3",
+          "strength": "L",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1925",
+      "name": "Workhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "horse",
+          "move_bonus": "extra",
+          "vulnerability": "H",
+          "base_price": "8",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "nobleBeast",
+          "horse_holder": "Inn"
+        },
+        "trot": {
+          "move_speed": "5",
+          "strength": "L",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "4",
+          "strength": "L",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1926",
+      "name": "Workhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "horse",
+          "move_bonus": "extra",
+          "vulnerability": "H",
+          "base_price": "10",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "nobleBeast",
+          "horse_holder": "Inn"
+        },
+        "trot": {
+          "move_speed": "6",
+          "strength": "M",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "5",
+          "strength": "M",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1927",
+      "name": "Workhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "horse",
+          "move_bonus": "extra",
+          "vulnerability": "H",
+          "base_price": "11",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "nobleBeast",
+          "horse_holder": "Inn"
+        },
+        "trot": {
+          "move_speed": "7",
+          "strength": "H",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "6",
+          "strength": "H",
+          "chit_color": "tan"
+        }
+      }
+    }
+  ]
+}

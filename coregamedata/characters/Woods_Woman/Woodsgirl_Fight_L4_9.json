@@ -1,0 +1,21 @@
+{
+  "id": "9",
+  "name": "Woodsgirl Fight L4",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "strength": "L",
+      "speed": "4",
+      "character_level": "3",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "9",
+      "level": "3",
+      "icon_folder": "custom/characters",
+      "icon_type": "woods woman",
+      "rw_expansion_1": "",
+      "facing": "dark"
+    }
+  }
+}

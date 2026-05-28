@@ -1,0 +1,22 @@
+{
+  "id": "1236",
+  "name": "Tomb",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "tomb",
+      "clearing": "4",
+      "super_realm": "",
+      "monster_die": "4",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "darkgray",
+      "icon_type": "draug",
+      "icon_folder": "wesnoth/units/undead-skeletal",
+      "needs_open": "fatigue_t,key"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "157",
+  "name": "Jade Shield",
+  "attributeBlocks": {
+    "this": {
+      "vulnerability": "H",
+      "weight": "H",
+      "shield": "",
+      "armor_choice": "",
+      "magic": "Jade",
+      "fame": "4",
+      "notoriety": "4",
+      "armor": "",
+      "original_game": "",
+      "icon_type": "shield",
+      "facing": "dark",
+      "pile_position": "3",
+      "armor_row": "1",
+      "alt_monsters1_game": "",
+      "icon_folder": "armor",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "intact": {
+      "base_price": "20",
+      "chit_color": "gold"
+    },
+    "damaged": {
+      "base_price": "16",
+      "chit_color": "yellow"
+    },
+    "destroyed": {
+      "base_price": "10"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9",
+  "name": "magic V4*",
+  "attributeBlocks": {
+    "this": {
+      "action": "magic",
+      "speed": "4",
+      "character_chit": "",
+      "icon_type": "ogre queen",
+      "icon_folder": "custom/characters",
+      "stage": "9",
+      "level": "3",
+      "effort": "1",
+      "facing": "dark",
+      "magic": "V"
+    }
+  }
+}

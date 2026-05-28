@@ -1,0 +1,39 @@
+{
+  "id": "912",
+  "name": "Wasp Queen",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "T",
+      "fame": "6",
+      "notoriety": "6",
+      "icon_type": "wasp",
+      "setup_start": "Hive",
+      "monster_die": "3",
+      "base_price": "6",
+      "icon_folder": "monsters2",
+      "needs_init": "",
+      "rw_expansion_1": "",
+      "flying": "",
+      "denizen": "",
+      "icon_type_alt": "wasp",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_size_alt": "1"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "5",
+      "strength": "M",
+      "chit_color": "yellow",
+      "sharpness": "1"
+    },
+    "dark": {
+      "move_speed": "6",
+      "attack_speed": "5",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": ""
+    }
+  },
+  "parts": []
+}

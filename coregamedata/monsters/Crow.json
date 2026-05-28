@@ -1,0 +1,36 @@
+{
+  "id": "751",
+  "name": "Crow",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "L",
+      "fame": "0",
+      "notoriety": "1",
+      "icon_type": "crow",
+      "setup_start": "Crow Box",
+      "monster_die": "5",
+      "base_price": "1",
+      "icon_folder": "monsters1",
+      "alt_monsters1_game": "",
+      "flying": "",
+      "denizen": "",
+      "icon_type_alt": "crow",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_size_alt": "0.8"
+    },
+    "light": {
+      "move_speed": "2",
+      "chit_color": "white",
+      "attack_speed": "2",
+      "strength": "L"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "1",
+      "strength": "L",
+      "chit_color": "gray"
+    }
+  },
+  "parts": []
+}

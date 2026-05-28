@@ -1,0 +1,22 @@
+{
+  "id": "358",
+  "name": "Ointment of Steel",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Counts like T armor, any blow (discard to shaman)",
+      "base_price": "4",
+      "discard": "shaman",
+      "potion": "",
+      "original_game": "",
+      "armor_row": "3",
+      "vulnerability": "T",
+      "armor": "special",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

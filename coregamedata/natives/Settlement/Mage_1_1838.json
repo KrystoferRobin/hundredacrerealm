@@ -1,0 +1,70 @@
+{
+  "id": "1838",
+  "name": "Mage 1",
+  "attributeBlocks": {
+    "this": {
+      "native": "Mages",
+      "fame": "0",
+      "notoriety": "5",
+      "base_price": "4",
+      "vulnerability": "M",
+      "rank": "1",
+      "icon_type": "elementalist-idle-air3",
+      "setup_start": "Settlement",
+      "hire_type": "single",
+      "garrison": "",
+      "icon_folder": "wesnoth/units/skykingdom-elementalists",
+      "denizen": "",
+      "super_realm": "",
+      "native_die": "3",
+      "clan": "4",
+      "armored": "",
+      "icon_size": "0.9",
+      "native_name": "Caster"
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "2",
+      "length": "13",
+      "chit_color": "lightorange",
+      "magic_type": "IV",
+      "attack_spell": "Ice Bolt"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "M",
+      "length": "9",
+      "chit_color": "red"
+    }
+  },
+  "parts": [
+    {
+      "id": "1842",
+      "name": "Pony 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Mages",
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "activated": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units/monsters",
+          "icon_size": "1",
+          "icon_type": "horse"
+        },
+        "trot": {
+          "move_speed": "5",
+          "strength": "M",
+          "chit_color": "pink"
+        },
+        "gallop": {
+          "move_speed": "4",
+          "strength": "M",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

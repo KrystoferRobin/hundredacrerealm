@@ -1,0 +1,21 @@
+{
+  "id": "1114",
+  "name": "Serpent Tongue",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "day",
+      "target": "serpents",
+      "text": "MOVE and FIGHT with serpents/vipers",
+      "magic_color": "any",
+      "control": "",
+      "host_okay": "",
+      "alt_monsters1_game": "",
+      "benevolent": "",
+      "new_spells_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

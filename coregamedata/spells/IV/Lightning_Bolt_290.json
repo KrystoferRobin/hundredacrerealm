@@ -1,0 +1,25 @@
+{
+  "id": "290",
+  "name": "Lightning Bolt",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "attack",
+      "target": "attacker",
+      "text": "MISSILE attack mountain only",
+      "magic_color": "purple",
+      "sharpness": "3",
+      "strength": "M",
+      "original_game": "",
+      "length": "18",
+      "clearing_req": "M",
+      "missile": "magic",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

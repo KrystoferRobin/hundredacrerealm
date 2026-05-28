@@ -1,0 +1,94 @@
+{
+  "title": "ACTION CHITS",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Action chits are the core resource that characters use to perform actions in the game. They represent the character's physical and magical capabilities."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "4.2.1",
+      "title": "Each character's action chits represent actions that he is able to do",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Action chits can be either \"active\" or \"inactive\". Active chits, including Magic chits enchanted to color chits, are in play and can be used to do actions. Inactive chits are out of play and cannot be used. Action chits are removed from play as a result of fatigue or wounds, and they can be returned to play by resting. A Magic chit is also out of play if it is dedicated to a spell, and can only be returned to play when the spell expires or is broken. When asked, the character must specify which of his chits are currently in play, and which are fatigued, wounded, or dedicated to spells."
+        }
+      ]
+    },
+    {
+      "id": "4.2.2",
+      "title": "Each character can play only his own active chits",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "During the Daylight segment of a turn, he can play Move chits to carry items when he moves, he can play a Berserk chit to increase his vulnerability to Tremendous, he can play chits with asterisks to search certain treasure sites, and he can play Magic chits in the presence of the appropriate color magic to enchant the board tile he is in. In the evening, Fight chits are used in combat to alert or attack with a weapon, Move chits are used to run away or maneuver in combat, and Magic chits are used to cast spells."
+        }
+      ]
+    },
+    {
+      "id": "4.2.3",
+      "title": "Each player keeps his character's action chits off the map, in front of himself",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He keeps his inactive chits to one side or in a separate container, out of play, with his fatigued chits face up (lettered side up) and his wounded chits face down (symbol side up). Enchanted color chits are placed with the in play chits, but are turned face down (symbol side up) to distinguish them from other Magic chits."
+        }
+      ]
+    },
+    {
+      "id": "4.2.4",
+      "title": "Fatigue: Asterisks on an action chit represent extra effort needed to do that action",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "These chits can become \"fatigued\" when the character does strenuous actions, such as searching certain treasure sites, or combat maneuvers requiring extra strength or speed. Fatigued chits are removed from play but are left face up. Fatigue is measured by the effort asterisks on the chits."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. When a character is directed to \"fatigue one asterisk\", he must remove one effort asterisk from play. He can either fatigue a chit that shows one asterisk, or fatigue a two-asterisk chit and \"make change\" by activating a fatigued one-asterisk chit of the same type (e.g., if he fatigues a two-asterisk Fight chit he must activate a one-asterisk Fight chit to make change). If he cannot do either of these he must fatigue a two-asterisk chit and lose the extra asterisk. Note: For the purposes of making change, the \"Berserk\" chit is considered a Fight chit, and the \"Duck\" chit is considered a Move chit."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. When a character is directed to fatigue two asterisks, he can fatigue one two-asterisk chit or two one-asterisk chits."
+        },
+        {
+          "type": "paragraph",
+          "text": "c. Chits that have no asterisks cannot be fatigued."
+        },
+        {
+          "type": "paragraph",
+          "text": "d. A character cannot carry out an action that would require him to fatigue a chit (such as looting the Cairns) if he has no unenchanted chits with asterisks in play. If he cannot do anything else that phase, the phase is treated as a blank phase and the character does nothing."
+        },
+        {
+          "type": "paragraph",
+          "text": "e. If a character is forced to fatigue asterisks (e.g., under Seasons/Weather rules) and has no other chits with asterisks in play, a character may fatigue color chits, and if he has no chits in play at all, he must wound chits that are fatigued Characters may not fatigue Magic chits that are dedicated to spells."
+        }
+      ]
+    },
+    {
+      "id": "4.2.5",
+      "title": "Wounds: When a character is directed to \"wound\" one chit, he must remove one of his action chits from play and turn it face down to show it is a wound",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "a. He can choose any action chit he has in play, subject to the following restrictions:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "If he has any chits in play that are not wounded, fatigued, enchanted to color, or dedicated to spells, he must wound these chits first.",
+            "If he has no remaining chits as described in a.1), Magic chits enchanted to color chits may be wounded.",
+            "If a character has no chits in play at all, he can wound chits that are fatigued.",
+            "Magic chits that are committed to spells (including Fly chits) cannot be wounded, and chits that are already wounded cannot be wounded again."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "b. As soon as all of a character's chits become wounded or committed to spells, the character dies. This can occur either as a result of receiving a wound, or if a character uses his last unwounded chit to cast a spell, committing that chit to the spell. Exception: Casting an Instant spell does not cause death because the Magic chit instantly fatigues, becoming available to take a wound. This exception applies only to Instant spells – if he uses his last unwounded, uncommitted chit to cast any other type of spell, he dies as soon as the spell takes effect."
+        }
+      ]
+    }
+  ]
+} 

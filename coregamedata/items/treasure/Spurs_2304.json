@@ -1,0 +1,19 @@
+{
+  "id": "2304",
+  "name": "Spurs",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "9",
+      "text": "-1 to horse speed (minimum of 2)",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "weight": "L",
+      "notoriety": "2",
+      "spurs": ""
+    }
+  },
+  "parts": []
+}

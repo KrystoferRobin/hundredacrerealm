@@ -1,0 +1,37 @@
+{
+  "id": "1493",
+  "name": "Viper",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "1",
+      "notoriety": "2",
+      "armored": "",
+      "icon_type": "viper",
+      "setup_start": "Vipers Box",
+      "monster_die": "2",
+      "base_price": "2",
+      "icon_folder": "wesnoth/units",
+      "denizen": "",
+      "super_realm": "",
+      "icon_size": "1.1",
+      "icon_y_offset": "-7",
+      "viper": ""
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "M",
+      "sharpness": "2",
+      "chit_color": "lightgreen"
+    },
+    "dark": {
+      "move_speed": "2",
+      "attack_speed": "2",
+      "strength": "L",
+      "chit_color": "forestgreen"
+    }
+  },
+  "parts": []
+}

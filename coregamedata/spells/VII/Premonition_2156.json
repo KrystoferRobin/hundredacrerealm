@@ -1,0 +1,20 @@
+{
+  "id": "2156",
+  "name": "Premonition",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "day",
+      "target": "character",
+      "text": "Choose when your written move is executed",
+      "magic_color": "gray",
+      "choose_turn": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

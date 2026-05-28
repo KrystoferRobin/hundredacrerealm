@@ -1,0 +1,244 @@
+{
+  "id": "234",
+  "name": "Woodfolk Dwelling",
+  "attributeBlocks": {
+    "this": {
+      "original_game": "",
+      "native": "Woodfolk",
+      "dwelling": "house,s_fire",
+      "monster_die": "2",
+      "print": "",
+      "ts_section": "natives",
+      "ts_size": "T",
+      "ts_color": "gray",
+      "ts_count": "3",
+      "icon_type": "archer",
+      "icon_folder": "natives",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "virtual_dwelling": "",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "icon_type_alt": "bowman",
+      "icon_size_alt": "0.9"
+    }
+  },
+  "parts": [
+    {
+      "id": "103",
+      "name": "Woodsfolk 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Woodfolk",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "1",
+          "original_game": "",
+          "icon_type": "archer",
+          "monster_die": "2",
+          "setup_start": "Woodfolk Dwelling",
+          "missile": "",
+          "hire_type": "group",
+          "icon_folder": "natives",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "denizen": "",
+          "archer": "",
+          "icon_folder_alt": "wesnoth/units/human-loyalists",
+          "icon_type_alt": "bowman",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "2",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "1",
+          "strength": "L",
+          "length": "14",
+          "sharpness": "2",
+          "missile": "",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "104",
+      "name": "Woodsfolk 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Woodfolk",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "2",
+          "original_game": "",
+          "icon_type": "archer",
+          "monster_die": "2",
+          "setup_start": "Woodfolk Dwelling",
+          "missile": "",
+          "hire_type": "group",
+          "icon_folder": "natives",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "denizen": "",
+          "archer": "",
+          "icon_folder_alt": "wesnoth/units/human-loyalists",
+          "icon_type_alt": "bowman-bow",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "2",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "1",
+          "strength": "L",
+          "length": "14",
+          "sharpness": "2",
+          "missile": "",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "105",
+      "name": "Woodsfolk HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Woodfolk",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "HQ",
+          "original_game": "",
+          "icon_type": "archer",
+          "monster_die": "2",
+          "setup_start": "Woodfolk Dwelling",
+          "missile": "",
+          "hire_type": "group",
+          "icon_folder": "natives",
+          "alt_monsters1_game": "",
+          "commerce": "F,N",
+          "rw_expansion_1": "",
+          "denizen": "",
+          "archer": "",
+          "icon_folder_alt": "wesnoth/units/human-loyalists",
+          "icon_type_alt": "bowman",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "2",
+          "chit_color": "lightgreen"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "1",
+          "strength": "M",
+          "length": "16",
+          "sharpness": "2",
+          "missile": "",
+          "chit_color": "forestgreen"
+        }
+      }
+    },
+    {
+      "id": "163",
+      "name": "Medium Bow",
+      "attributeBlocks": {
+        "this": {
+          "weight": "M",
+          "length": "16",
+          "base_price": "8",
+          "missile": "",
+          "two_handed": "",
+          "weapon": "",
+          "original_game": "",
+          "icon_type": "medium_bow",
+          "alt_monsters1_game": "",
+          "icon_folder": "weapons",
+          "rw_expansion_1": "",
+          "item": "",
+          "bow": ""
+        },
+        "unalerted": {
+          "strength": "M",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "attack_speed": "1",
+          "strength": "M",
+          "sharpness": "2",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "164",
+      "name": "Light Bow",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "14",
+          "base_price": "6",
+          "missile": "",
+          "two_handed": "",
+          "weapon": "",
+          "original_game": "",
+          "icon_type": "light_bow",
+          "alt_monsters1_game": "",
+          "icon_folder": "weapons",
+          "rw_expansion_1": "",
+          "item": "",
+          "bow": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "attack_speed": "1",
+          "strength": "L",
+          "sharpness": "2",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "165",
+      "name": "Light Bow",
+      "attributeBlocks": {
+        "this": {
+          "weight": "L",
+          "length": "14",
+          "base_price": "6",
+          "missile": "",
+          "two_handed": "",
+          "weapon": "",
+          "original_game": "",
+          "icon_type": "light_bow",
+          "alt_monsters1_game": "",
+          "icon_folder": "weapons",
+          "rw_expansion_1": "",
+          "item": "",
+          "bow": ""
+        },
+        "unalerted": {
+          "strength": "L",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "attack_speed": "1",
+          "strength": "L",
+          "sharpness": "2",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

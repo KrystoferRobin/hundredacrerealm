@@ -1,0 +1,21 @@
+{
+  "id": "485",
+  "name": "Wizard Magic III3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "3",
+      "character_level": "4",
+      "effort": "1",
+      "magic": "III",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "11",
+      "level": "4",
+      "icon_folder": "characters",
+      "icon_type": "wizard",
+      "rw_expansion_1": ""
+    }
+  }
+}

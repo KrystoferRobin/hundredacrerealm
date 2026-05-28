@@ -1,0 +1,13 @@
+{
+  "title": "Daylight",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The characters take their turns in random order each day."
+    },
+    {
+      "type": "paragraph",
+      "text": "During Daylight the chits are picked one at a time, and when a character's chit is picked he does the activities he recorded for his phases that day. When all characters have made their moves, Daylight ends at Sunset."
+    }
+  ]
+} 

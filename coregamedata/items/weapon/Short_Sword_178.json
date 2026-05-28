@@ -1,0 +1,29 @@
+{
+  "id": "178",
+  "name": "Short Sword",
+  "attributeBlocks": {
+    "this": {
+      "weight": "L",
+      "length": "3",
+      "base_price": "4",
+      "weapon": "",
+      "original_game": "",
+      "icon_type": "short_sword",
+      "alt_monsters1_game": "",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "unalerted": {
+      "strength": "L",
+      "sharpness": "1",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "strength": "L",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

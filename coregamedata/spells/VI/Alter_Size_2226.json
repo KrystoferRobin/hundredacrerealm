@@ -1,0 +1,21 @@
+{
+  "id": "2226",
+  "name": "Alter Size",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "day",
+      "target": "individual, horse, hound",
+      "text": "Alter object's size. Roll on corresponding table.",
+      "magic_color": "purple",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "benevolent": "",
+      "alter_size": ""
+    }
+  },
+  "parts": []
+}

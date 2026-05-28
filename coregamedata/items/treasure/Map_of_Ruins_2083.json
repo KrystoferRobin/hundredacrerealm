@@ -1,0 +1,17 @@
+{
+  "id": "2083",
+  "name": "Map of Ruins",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "3",
+      "text": "-1 to LOCATE rolls in any RUINS clearing",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "fame": "5",
+      "native": "Peasants"
+    }
+  },
+  "parts": []
+}

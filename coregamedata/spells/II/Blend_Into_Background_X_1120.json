@@ -1,0 +1,22 @@
+{
+  "id": "1120",
+  "name": "Blend Into Background X",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "permanent",
+      "target": "character",
+      "text": "Extra HIDE phase until you fail to hide",
+      "magic_color": "gray",
+      "blending": "",
+      "always_active": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "benevolent": "",
+      "upg_day_spells": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

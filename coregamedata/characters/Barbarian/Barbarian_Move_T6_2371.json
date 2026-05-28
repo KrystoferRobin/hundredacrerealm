@@ -1,0 +1,19 @@
+{
+  "id": "2371",
+  "name": "Barbarian Move T6*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "strength": "T",
+      "speed": "6",
+      "character_level": "2",
+      "stage": "6",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "barbarian",
+      "super_realm": "",
+      "effort": "1"
+    }
+  }
+}

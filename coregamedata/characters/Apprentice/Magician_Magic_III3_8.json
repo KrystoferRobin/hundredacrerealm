@@ -1,0 +1,22 @@
+{
+  "id": "8",
+  "name": "Magician Magic III3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "3",
+      "character_level": "3",
+      "effort": "1",
+      "magic": "III",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "8",
+      "level": "3",
+      "icon_folder": "custom/characters",
+      "icon_type": "apprentice",
+      "rw_expansion_1": "",
+      "facing": "dark"
+    }
+  }
+}

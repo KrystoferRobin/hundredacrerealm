@@ -1,0 +1,35 @@
+{
+  "id": "159",
+  "name": "Bane Sword",
+  "attributeBlocks": {
+    "this": {
+      "weight": "T",
+      "length": "8",
+      "fame": "6",
+      "notoriety": "3",
+      "base_price": "20",
+      "magic": "",
+      "two_handed": "",
+      "weapon": "",
+      "original_game": "",
+      "icon_type": "great_sword",
+      "alt_monsters1_game": "",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "unalerted": {
+      "attack_speed": "8",
+      "strength": "T",
+      "sharpness": "1",
+      "chit_color": "yellow"
+    },
+    "alerted": {
+      "attack_speed": "2",
+      "strength": "T",
+      "sharpness": "1",
+      "chit_color": "gold"
+    }
+  },
+  "parts": []
+}

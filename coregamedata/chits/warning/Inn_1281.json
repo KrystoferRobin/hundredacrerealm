@@ -1,0 +1,599 @@
+{
+  "id": "1281",
+  "name": "Inn",
+  "attributeBlocks": {
+    "this": {
+      "dwelling": "inn",
+      "warning": "stink",
+      "tile_type": "V",
+      "super_realm": "",
+      "print": "",
+      "icon_type": "log-cabin3",
+      "ts_section": "dwellings",
+      "ts_color": "tan",
+      "icon_folder": "wesnoth/buildings",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1813",
+      "name": "Rogue 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Rogues",
+          "fame": "0",
+          "notoriety": "6",
+          "base_price": "4",
+          "vulnerability": "H",
+          "rank": "1",
+          "icon_type": "explorer",
+          "setup_start": "Inn",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/dunefolk",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "3",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "native_name": "G.Axeman"
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "5",
+          "strength": "H",
+          "length": "5",
+          "sharpness": "1",
+          "chit_color": "lightorange"
+        },
+        "dark": {
+          "move_speed": "5",
+          "attack_speed": "3",
+          "strength": "T",
+          "length": "5",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1814",
+      "name": "Rogue 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Rogues",
+          "fame": "0",
+          "notoriety": "6",
+          "base_price": "4",
+          "vulnerability": "H",
+          "rank": "2",
+          "icon_type": "explorer",
+          "setup_start": "Inn",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/dunefolk",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "3",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "native_name": "G.Axeman"
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "5",
+          "strength": "H",
+          "length": "5",
+          "sharpness": "1",
+          "chit_color": "lightorange"
+        },
+        "dark": {
+          "move_speed": "5",
+          "attack_speed": "3",
+          "strength": "T",
+          "length": "5",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1815",
+      "name": "Rogue 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Rogues",
+          "fame": "0",
+          "notoriety": "3",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "3",
+          "armored": "",
+          "icon_type": "captain",
+          "setup_start": "Inn",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/dunefolk",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "3",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "native_name": "S.Swordsman"
+        },
+        "light": {
+          "move_speed": "3",
+          "attack_speed": "5",
+          "strength": "M",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "lightorange"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "L",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1816",
+      "name": "Rogue 4",
+      "attributeBlocks": {
+        "this": {
+          "native": "Rogues",
+          "fame": "0",
+          "notoriety": "3",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "4",
+          "armored": "",
+          "icon_type": "captain",
+          "setup_start": "Inn",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/dunefolk",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "3",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "native_name": "S.Swordsman"
+        },
+        "light": {
+          "move_speed": "3",
+          "attack_speed": "4",
+          "strength": "L",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "lightorange"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "4",
+          "strength": "M",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1817",
+      "name": "Rogue 5",
+      "attributeBlocks": {
+        "this": {
+          "native": "Rogues",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "5",
+          "icon_type": "firetrooper",
+          "setup_start": "Inn",
+          "missile": "",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/dunefolk",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "3",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "archer": "",
+          "native_name": "Archer"
+        },
+        "light": {
+          "move_speed": "2",
+          "chit_color": "lightorange"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "1",
+          "strength": "L",
+          "length": "14",
+          "sharpness": "2",
+          "missile": "",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1818",
+      "name": "Rogue 6",
+      "attributeBlocks": {
+        "this": {
+          "native": "Rogues",
+          "fame": "0",
+          "notoriety": "4",
+          "base_price": "2",
+          "vulnerability": "M",
+          "rank": "6",
+          "icon_type": "firetrooper",
+          "setup_start": "Inn",
+          "missile": "",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/dunefolk",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "3",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "archer": "",
+          "native_name": "Archer"
+        },
+        "light": {
+          "move_speed": "2",
+          "chit_color": "lightorange"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "1",
+          "strength": "L",
+          "length": "14",
+          "sharpness": "2",
+          "missile": "",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1819",
+      "name": "Rogue 7",
+      "attributeBlocks": {
+        "this": {
+          "native": "Rogues",
+          "fame": "0",
+          "notoriety": "2",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "7",
+          "icon_type": "scorcher",
+          "setup_start": "Inn",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/dunefolk",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "3",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "native_name": "Assassin"
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "lightorange"
+        },
+        "dark": {
+          "move_speed": "2",
+          "attack_speed": "4",
+          "strength": "L",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1820",
+      "name": "Rogue 8",
+      "attributeBlocks": {
+        "this": {
+          "native": "Rogues",
+          "fame": "0",
+          "notoriety": "2",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "8",
+          "icon_type": "blademaster",
+          "setup_start": "Inn",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/dunefolk",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "3",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "native_name": "Swordsman"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "4",
+          "sharpness": "1",
+          "chit_color": "lightorange"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "L",
+          "length": "4",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1821",
+      "name": "Rogue 9",
+      "attributeBlocks": {
+        "this": {
+          "native": "Rogues",
+          "fame": "0",
+          "notoriety": "2",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "9",
+          "icon_type": "paragon",
+          "setup_start": "Inn",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/dunefolk",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "3",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "native_name": "Swordsman"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "4",
+          "sharpness": "1",
+          "chit_color": "lightorange"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "L",
+          "length": "4",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1822",
+      "name": "Rogue HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Rogues",
+          "fame": "0",
+          "notoriety": "2",
+          "base_price": "1",
+          "vulnerability": "M",
+          "rank": "HQ",
+          "icon_type": "scorcher",
+          "setup_start": "Inn",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/dunefolk",
+          "commerce": "N",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "3",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "native_name": "Assassin"
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "lightorange"
+        },
+        "dark": {
+          "move_speed": "2",
+          "attack_speed": "4",
+          "strength": "L",
+          "length": "3",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1916",
+      "name": "Workhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "horse",
+          "move_bonus": "extra",
+          "vulnerability": "H",
+          "base_price": "12",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "nobleBeast",
+          "horse_holder": "Inn"
+        },
+        "trot": {
+          "move_speed": "8",
+          "strength": "T",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "6",
+          "strength": "H",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1917",
+      "name": "Workhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "horse",
+          "move_bonus": "extra",
+          "vulnerability": "H",
+          "base_price": "11",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "nobleBeast",
+          "horse_holder": "Inn"
+        },
+        "trot": {
+          "move_speed": "7",
+          "strength": "H",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "6",
+          "strength": "H",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1918",
+      "name": "Workhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "horse",
+          "move_bonus": "extra",
+          "vulnerability": "H",
+          "base_price": "11",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "nobleBeast",
+          "horse_holder": "Inn"
+        },
+        "trot": {
+          "move_speed": "7",
+          "strength": "H",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "5",
+          "strength": "M",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1919",
+      "name": "Workhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "horse",
+          "move_bonus": "extra",
+          "vulnerability": "H",
+          "base_price": "10",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "nobleBeast",
+          "horse_holder": "Inn"
+        },
+        "trot": {
+          "move_speed": "6",
+          "strength": "M",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "5",
+          "strength": "M",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1920",
+      "name": "Workhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "horse",
+          "move_bonus": "extra",
+          "vulnerability": "H",
+          "base_price": "9",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "nobleBeast",
+          "horse_holder": "Inn"
+        },
+        "trot": {
+          "move_speed": "6",
+          "strength": "M",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "4",
+          "strength": "L",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1921",
+      "name": "Workhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "horse",
+          "move_bonus": "extra",
+          "vulnerability": "H",
+          "base_price": "8",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "nobleBeast",
+          "horse_holder": "Inn"
+        },
+        "trot": {
+          "move_speed": "5",
+          "strength": "L",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "4",
+          "strength": "L",
+          "chit_color": "tan"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Gnome",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn,Guard",
+      "pronoun": "he",
+      "creator": "Roberto Ullfig",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Mining",
+      "vulnerability": "M",
+      "icon_type": "gnome",
+      "icon_folder": "custom/characters",
+      "extra_notes": "This character requires Robin's Productive Dwarf optional rule."
+    },
+    "level_1": {
+      "name": "Hob",
+      "armor": "Helmet",
+      "weapon": "Axe",
+      "badge_icon": "Gnomebadge1",
+      "noncave_move_disadavantage": "",
+      "advantages": {
+        "N0": "SHORT LEGS: Must spend one extra MOVE phase to enter a non-Cave clearing."
+      }
+    },
+    "level_2": {
+      "name": "Nob",
+      "weapon": "Axe",
+      "armor": "Helmet",
+      "badge_icon": "Gnomebadge2",
+      "extra_cave_phase": "",
+      "advantages": {
+        "N0": "NIGHT VISION: Extra Phase in Caves"
+      }
+    },
+    "level_3": {
+      "name": "Bogart",
+      "spellcount": "1",
+      "weapon": "Axe",
+      "armor": "Helmet",
+      "badge_icon": "Gnomebadge3",
+      "spelltypes": {
+        "N0": "IV"
+      },
+      "advantages": {
+        "N0": "MISER: Gets an extra CACHE phase."
+      },
+      "extra_actions": {
+        "N0": "C"
+      }
+    },
+    "level_4": {
+      "name": "Gnome",
+      "spellcount": "1",
+      "weapon": "Axe",
+      "armor": "Helmet",
+      "badge_icon": "Gnomebadge4",
+      "spelltypes": {
+        "N0": "IV",
+        "N1": "VIII"
+      },
+      "advantages": {
+        "N0": "CAVE KNOWLEDGE: Rolls 1 die instead of 2 for all rolls on the SEARCH, HIDE, and MEETING tables in Caves."
+      },
+      "diemod": {
+        "N0": "1d:magicsight,commerce,trade,hire,readrunes,locate,hide,peer,meeting,loot:&gt;caves"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "guard": "1",
+      "warlock": "1",
+      "patrol": "1",
+      "woodfolk": "-1",
+      "lancers": "-1"
+    },
+    "relationship": {
+      "guard": "1",
+      "warlock": "1",
+      "patrol": "1",
+      "woodfolk": "-1",
+      "lancers": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "gnome",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "gnome",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "gnome",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "move M5",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "gnome",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "gnome",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "magic IV4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "gnome",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "IV"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "gnome",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "gnome",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark",
+          "strength": "M"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic IV4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "gnome",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "IV"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "FIGHT H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "gnome",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic VIII3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "gnome",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VIII"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic IV3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "gnome",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "IV"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

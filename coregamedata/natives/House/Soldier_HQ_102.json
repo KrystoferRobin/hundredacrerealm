@@ -1,0 +1,46 @@
+{
+  "id": "102",
+  "name": "Soldier HQ",
+  "attributeBlocks": {
+    "this": {
+      "native": "Soldiers",
+      "fame": "0",
+      "notoriety": "6",
+      "base_price": "4",
+      "vulnerability": "H",
+      "rank": "HQ",
+      "armored": "",
+      "original_game": "",
+      "icon_type": "great_swordsman",
+      "setup_start": "House",
+      "hire_type": "group",
+      "monster_die": "3",
+      "garrison": "",
+      "icon_folder": "natives",
+      "alt_monsters1_game": "",
+      "commerce": "F,N",
+      "rw_expansion_1": "",
+      "denizen": "",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "icon_type_alt": "royalguard",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "6",
+      "attack_speed": "4",
+      "strength": "T",
+      "length": "8",
+      "sharpness": "1",
+      "chit_color": "peach"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "5",
+      "strength": "H",
+      "length": "8",
+      "sharpness": "1",
+      "chit_color": "brown"
+    }
+  },
+  "parts": []
+}

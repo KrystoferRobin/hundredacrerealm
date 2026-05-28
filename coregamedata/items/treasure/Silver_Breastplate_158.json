@@ -1,0 +1,38 @@
+{
+  "id": "158",
+  "name": "Silver Breastplate",
+  "attributeBlocks": {
+    "this": {
+      "vulnerability": "H",
+      "weight": "H",
+      "armor_swing": "",
+      "armor_thrust": "",
+      "magic": "Silver",
+      "fame": "4",
+      "notoriety": "4",
+      "armor": "",
+      "original_game": "",
+      "icon_type": "breastplate",
+      "facing": "dark",
+      "pile_position": "2",
+      "armor_row": "2",
+      "alt_monsters1_game": "",
+      "icon_folder": "armor",
+      "rw_expansion_1": "",
+      "item": "",
+      "breastplate": ""
+    },
+    "intact": {
+      "base_price": "25",
+      "chit_color": "gold"
+    },
+    "damaged": {
+      "base_price": "21",
+      "chit_color": "yellow"
+    },
+    "destroyed": {
+      "base_price": "15"
+    }
+  },
+  "parts": []
+}

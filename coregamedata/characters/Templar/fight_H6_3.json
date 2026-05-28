@@ -1,0 +1,22 @@
+{
+  "id": "3",
+  "name": "fight H6",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "speed": "6",
+      "strength": "H",
+      "effort": "0",
+      "character_level": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "3",
+      "level": "1",
+      "icon_folder": "custom/characters",
+      "icon_type": "templar",
+      "rw_expansion_1": "",
+      "facing": "dark"
+    }
+  }
+}

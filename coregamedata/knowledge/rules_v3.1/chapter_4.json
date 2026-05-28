@@ -1,0 +1,40 @@
+{
+  "title": "GAME MECHANICS",
+  "sections": [
+    {
+      "id": "4.0",
+      "title": "GAME MECHANICS",
+      "file": "4.0.json"
+    },
+    {
+      "id": "4.1",
+      "title": "ROLLING DICE",
+      "file": "4.1.json"
+    },
+    {
+      "id": "4.2",
+      "title": "ACTION CHITS",
+      "file": "4.2.json"
+    },
+    {
+      "id": "4.3",
+      "title": "BELONGINGS",
+      "file": "4.3.json"
+    },
+    {
+      "id": "4.4",
+      "title": "TREASURE CARDS",
+      "file": "4.4.json"
+    },
+    {
+      "id": "4.5",
+      "title": "SHARING INFORMATION AND SPYING",
+      "file": "4.5.json"
+    },
+    {
+      "id": "4.6",
+      "title": "MAGIC",
+      "file": "4.6.json"
+    }
+  ]
+} 

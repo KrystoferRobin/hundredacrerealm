@@ -1,0 +1,26 @@
+{
+  "id": "1962",
+  "name": "Staff",
+  "attributeBlocks": {
+    "this": {
+      "weight": "L",
+      "length": "9",
+      "base_price": "1",
+      "two_handed": "",
+      "weapon": "",
+      "icon_type": "staff",
+      "icon_folder": "weapons",
+      "item": "",
+      "super_realm": ""
+    },
+    "unalerted": {
+      "strength": "L",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "strength": "L",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

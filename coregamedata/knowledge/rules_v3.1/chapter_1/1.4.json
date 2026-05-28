@@ -1,0 +1,32 @@
+{
+  "id": "1.4",
+  "title": "GAME SUMMARY",
+  "content": "Note: This section provides a summary of more detailed and complete rules to be found in Sections 2-9. If there are any inconsistencies between this and later sections, use the more detailed rules found in later sections.",
+  "subsections": [
+    {
+      "id": "1.4.1",
+      "title": "Each player plays the part of one character in the game",
+      "content": "Each player plays the part of one character in the game. He controls that character's pieces and uses that character's counter to represent him on the map. The characters compete in accumulating Great Treasures, Usable Spells, Fame points, Notoriety points, and Gold. Before the start of play, each character records the number of points he needs in each category to win the game. He gains these points by owning or selling weapons, armor, horses, and Treasure cards, by reading runes at treasure sites or on magical Artifacts and Spell Books to learn new spells, or by fighting and killing monsters, natives, or other characters."
+    },
+    {
+      "id": "1.4.2", 
+      "title": "The game is played in the clearings on the map",
+      "content": "The game is played in the clearings on the map. The characters start the game in the same clearings with the Dwellings and move from clearing to clearing by following the roadways. Each character shows where he is currently located by putting his character counter in that clearing."
+    },
+    {
+      "id": "1.4.3",
+      "title": "Also on the board, but turned face down at the beginning of the game",
+      "content": "Also on the board, but turned face down at the beginning of the game, are chits representing treasure sites and sounds and warnings of monsters that may arrive on the map. When characters end a turn in the hex, these chits are revealed. As characters move around the board, more and more of these chits will be revealed, letting the players know where monsters and treasures are to be found.\n\na. In some clearings on the board the characters can find treasure sites, represented by the gold site chits, which they can loot to take treasures (represented by treasure cards) or, at some sites, read runes to learn the spells on the Spell cards there.\n\nb. Hex tiles also have monster warnings (represented by the yellow Bones, Ruins, Smoke, Stink, and Dank chits) and sounds (represented by the red Howl, Flutter, Roar, Patter, and Slither chits). When characters enter a hex tile and reveal these chits, prowling monsters (as determined by the Monster Roll each day) may arrive on the board at the end of their turn and, in the evening, battle with the characters. Prowling monsters already on the board will move to a character's clearing and block unhidden characters from continuing their turn.\n\nc. Combat occurs at the end of each day. During Combat characters may be able to run away from or avoid the monsters, or they may be able to kill them and earn Fame and Notoriety points toward their Victory Requirements. On the other hand, the monsters may kill the character, forcing the player to start over at the Inn as the same or different character, forfeiting all his possessions, Fame, Notoriety, Gold, and discoveries. Characters with magical abilities or items may also cast spells during rounds of combat in the evening.\n\nd. At the Dwellings in the Valley or Woods tiles the characters will find groups of natives that they can trade with to sell treasures for gold or to buy the treasures and items kept by the group's leader. They may also attempt to hire the natives to help them search for treasure and battle monsters, characters, or other natives. The characters can battle with the natives, hoping to kill them and earn Notoriety points and Gold, and loot their abandoned possessions. On the other hand, characters may be killed by the battling natives, losing everything and having to start over. Natives that are not friendly or allied may block and battle a character unexpectedly.\n\ne. Accompanying the native groups or at certain treasure sites, the characters may find chits representing visitors, individuals who have treasure or spells for sale and will buy items from characters for gold, missions that the characters can carry out for gold, and campaigns that the characters can undertake with various native groups as their allies."
+    },
+    {
+      "id": "1.4.4",
+      "title": "Characters may cooperate with other characters",
+      "content": "Characters may cooperate with other characters to increase their chances of finding useful treasures and gaining Fame and Notoriety by battling monsters and natives. But beware! Characters may also attack and kill other characters to gain Notoriety and steal their gold and possessions."
+    },
+    {
+      "id": "1.4.5",
+      "title": "At the end of the game, Victory Points are calculated",
+      "content": "At the end of the game, Victory Points are calculated by comparing the characters' Fame, Notoriety, Gold, Great Treasures, and Usable Spells with the Victory Requirements recorded at the beginning of the game. Characters who have achieved their requirements or earned a positive score have won the game. The character who has achieved the most Points above his Requirements is the victor."
+    }
+  ]
+} 

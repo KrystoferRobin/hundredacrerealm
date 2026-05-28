@@ -1,0 +1,23 @@
+{
+  "id": "2133",
+  "name": "Fiery Blast",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "attack",
+      "target": "multiple",
+      "text": "MISSILE attack on each target",
+      "magic_color": "purple",
+      "sharpness": "3",
+      "strength": "L",
+      "length": "13",
+      "missile": "magic",
+      "host_okay": "",
+      "table": "magicmissil",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

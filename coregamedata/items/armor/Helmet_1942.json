@@ -1,0 +1,29 @@
+{
+  "id": "1942",
+  "name": "Helmet",
+  "attributeBlocks": {
+    "this": {
+      "vulnerability": "M",
+      "weight": "M",
+      "armor_smash": "",
+      "armor": "",
+      "icon_type": "helmet",
+      "facing": "dark",
+      "armor_row": "2",
+      "ret_dw": "House",
+      "icon_folder": "armor",
+      "item": "",
+      "super_realm": "",
+      "helmet": ""
+    },
+    "intact": {
+      "base_price": "5",
+      "chit_color": "gray"
+    },
+    "damaged": {
+      "base_price": "3",
+      "chit_color": "white"
+    }
+  },
+  "parts": []
+}

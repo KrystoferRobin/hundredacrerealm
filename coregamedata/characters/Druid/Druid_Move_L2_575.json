@@ -1,0 +1,21 @@
+{
+  "id": "575",
+  "name": "Druid Move L2**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "speed": "2",
+      "strength": "L",
+      "effort": "2",
+      "character_level": "2",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "5",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "druid",
+      "rw_expansion_1": ""
+    }
+  }
+}

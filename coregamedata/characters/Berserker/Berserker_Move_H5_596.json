@@ -1,0 +1,21 @@
+{
+  "id": "596",
+  "name": "Berserker Move H5*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "strength": "H",
+      "speed": "5",
+      "effort": "1",
+      "character_level": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "2",
+      "level": "1",
+      "icon_folder": "characters",
+      "icon_type": "berserker",
+      "rw_expansion_1": ""
+    }
+  }
+}

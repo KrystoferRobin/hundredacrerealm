@@ -1,0 +1,22 @@
+{
+  "id": "299",
+  "name": "Violent Storm",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "day",
+      "target": "tile",
+      "text": "Roll to see number of phases lost",
+      "magic_color": "purple",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "sp_stormy": "",
+      "host_okay": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

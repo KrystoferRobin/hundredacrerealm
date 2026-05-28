@@ -1,0 +1,73 @@
+{
+  "id": "1752",
+  "name": "Patrol 2",
+  "attributeBlocks": {
+    "this": {
+      "native": "Patrol",
+      "fame": "0",
+      "notoriety": "3",
+      "base_price": "2",
+      "vulnerability": "M",
+      "rank": "2",
+      "armored": "",
+      "icon_type": "swordsman-idle-4",
+      "setup_start": "Patrol Dwelling",
+      "hire_type": "group",
+      "icon_folder": "wesnoth/units/human-loyalists",
+      "denizen": "",
+      "super_realm": "",
+      "clan": "1",
+      "native_die": "3",
+      "icon_size": "0.9",
+      "icon_type_rider": "cavalryman",
+      "native_name": "S.Swordsman"
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "5",
+      "strength": "M",
+      "length": "3",
+      "sharpness": "1",
+      "chit_color": "peach"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "strength": "L",
+      "length": "3",
+      "sharpness": "1",
+      "chit_color": "brown"
+    }
+  },
+  "parts": [
+    {
+      "id": "1756",
+      "name": "Workhorse 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Patrol",
+          "horse": "horse",
+          "move_bonus": "extra",
+          "vulnerability": "H",
+          "activated": "",
+          "super_realm": "",
+          "clan": "1",
+          "native_die": "3",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "nobleBeast"
+        },
+        "trot": {
+          "move_speed": "6",
+          "strength": "M",
+          "chit_color": "peach"
+        },
+        "gallop": {
+          "move_speed": "6",
+          "strength": "H",
+          "chit_color": "brown"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "2106",
+  "name": "Oil of Poison",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Add sharpness to weapon (discard to crone)",
+      "base_price": "3",
+      "discard": "crone",
+      "potion": "",
+      "add_sharpness": "1",
+      "sticks_weapon": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": ""
+    }
+  },
+  "parts": []
+}

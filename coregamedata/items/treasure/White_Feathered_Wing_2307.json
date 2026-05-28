@@ -1,0 +1,46 @@
+{
+  "id": "2307",
+  "name": "White Feathered Wing",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "11",
+      "text": "-1 to all die rolls",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "weight": "M",
+      "notoriety": "-15",
+      "native": "Order",
+      "fame": "30",
+      "great": "",
+      "cast_spell_on_init": "",
+      "magic_color": "white"
+    }
+  },
+  "parts": [
+    {
+      "id": "2308",
+      "name": "White Feathered Wing Spell",
+      "attributeBlocks": {
+        "this": {
+          "duration": "permanent",
+          "target": "spells item",
+          "text": "-1 to all die rolls",
+          "magic_color": "white",
+          "host_okay": "",
+          "spell": "*",
+          "awakened": "",
+          "no_cancel": "",
+          "benevolent": "",
+          "super_realm": "",
+          "no_expire": "",
+          "no_incantation_tie": "",
+          "super_realm_treasure": ""
+        },
+        "diemod": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "2259",
+  "name": "Diamond Ring",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "10",
+      "notoriety": "5",
+      "fame": "5",
+      "print": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "text": "Can be used once per day to cast a VII spell.",
+      "ring": "",
+      "magic": "VII",
+      "speed": "0",
+      "action": "magic",
+      "scholar_price": "20",
+      "merchant_price": "20",
+      "priest_price": "20"
+    }
+  },
+  "parts": []
+}

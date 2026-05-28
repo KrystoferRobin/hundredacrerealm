@@ -1,0 +1,36 @@
+{
+  "id": "930",
+  "name": "Carnoplant",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "H",
+      "fame": "0",
+      "notoriety": "1",
+      "icon_type": "carnoplant",
+      "setup_start": "Carnoplant Box",
+      "monster_die": "3",
+      "base_price": "1",
+      "icon_folder": "monsters2",
+      "rw_expansion_1": "",
+      "box_num": "3",
+      "denizen": "",
+      "icon_type_alt": "carnivorePlant",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_size_alt": "1.2"
+    },
+    "light": {
+      "move_speed": "6",
+      "attack_speed": "3",
+      "strength": "H",
+      "chit_color": "lightgreen"
+    },
+    "dark": {
+      "move_speed": "6",
+      "attack_speed": "2",
+      "strength": "M",
+      "chit_color": "limegreen"
+    }
+  },
+  "parts": []
+}

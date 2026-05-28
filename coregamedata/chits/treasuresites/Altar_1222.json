@@ -1,0 +1,22 @@
+{
+  "id": "1222",
+  "name": "Altar",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "altar",
+      "clearing": "1",
+      "super_realm": "",
+      "monster_die": "2",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "green",
+      "icon_type": "yuureDreamweaver",
+      "icon_folder": "wesnoth/units",
+      "spell_site": ""
+    }
+  },
+  "parts": []
+}

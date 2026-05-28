@@ -1,0 +1,24 @@
+{
+  "id": "651",
+  "name": "Sword Song",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "combat",
+      "target": "active sword",
+      "text": "Sword is alerted for entire combat",
+      "magic_color": "gray",
+      "rw_expansion_1": "",
+      "attribute_add": "",
+      "host_okay": "",
+      "author": "Expansion 1",
+      "benevolent": "",
+      "learnable": ""
+    },
+    "attribute_add": {
+      "alerted_weapon": ""
+    }
+  },
+  "parts": []
+}

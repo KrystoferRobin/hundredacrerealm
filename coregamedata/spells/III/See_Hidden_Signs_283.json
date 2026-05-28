@@ -1,0 +1,23 @@
+{
+  "id": "283",
+  "name": "See Hidden Signs",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "day",
+      "target": "character",
+      "text": "Extra SEARCH phase",
+      "magic_color": "gold",
+      "original_game": "",
+      "spell_extra_action": "S",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "upg_swap_out": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": "1830",
+  "name": "Summoner 1",
+  "attributeBlocks": {
+    "this": {
+      "native": "Summoners",
+      "fame": "0",
+      "notoriety": "3",
+      "base_price": "2",
+      "vulnerability": "M",
+      "rank": "1",
+      "icon_type": "zerker",
+      "setup_start": "Cottage",
+      "hire_type": "single",
+      "garrison": "",
+      "icon_folder": "wesnoth/units",
+      "denizen": "",
+      "super_realm": "",
+      "native_die": "1",
+      "clan": "2",
+      "icon_size": "0.9",
+      "native_name": "Caster",
+      "spell_pre_battle": "Elven Grace",
+      "spell_targets_self": ""
+    },
+    "light": {
+      "move_speed": "2",
+      "attack_speed": "5",
+      "strength": "M",
+      "length": "9",
+      "chit_color": "lightgreen"
+    },
+    "dark": {
+      "move_speed": "2",
+      "attack_speed": "4",
+      "strength": "M",
+      "length": "9",
+      "chit_color": "forestgreen"
+    }
+  },
+  "parts": []
+}

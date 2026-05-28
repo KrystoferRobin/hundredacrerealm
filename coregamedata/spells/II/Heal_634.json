@@ -1,0 +1,21 @@
+{
+  "id": "634",
+  "name": "Heal",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "instant",
+      "target": "hurt chits",
+      "text": "Move targeted fatigued or wounded chits (up to 4) to active",
+      "magic_color": "gray",
+      "rw_expansion_1": "",
+      "heal_chit": "",
+      "host_okay": "",
+      "author": "Expansion 1",
+      "max_targets": "4",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

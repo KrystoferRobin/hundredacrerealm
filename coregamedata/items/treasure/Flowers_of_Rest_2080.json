@@ -1,0 +1,18 @@
+{
+  "id": "2080",
+  "name": "Flowers of Rest",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "2",
+      "text": "Lose turn - rest fatigue",
+      "color_source": "gold",
+      "sleep": "",
+      "facing": "face_dn",
+      "nosecret": "",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

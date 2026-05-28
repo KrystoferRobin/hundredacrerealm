@@ -1,0 +1,24 @@
+{
+  "id": "292",
+  "name": "Blazing Light",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "day",
+      "target": "clearing",
+      "text": "Extra phase (cave only)",
+      "magic_color": "purple",
+      "original_game": "",
+      "clearing_req": "C",
+      "extra_cave_phase": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "upg_swap_out": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

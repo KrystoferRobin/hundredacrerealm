@@ -1,0 +1,290 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Red Knight",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "fighter": "",
+      "facing": "dark",
+      "start": "Inn",
+      "pronoun": "he",
+      "creator": "Roberto Ullfig",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Wheel Cross",
+      "vulnerability": "H",
+      "icon_type": "red knight",
+      "icon_folder": "custom/characters"
+    },
+    "level_1": {
+      "name": "Blood Lord",
+      "armor": "Breastplate,Helmet",
+      "weapon": "Broadsword"
+    },
+    "level_2": {
+      "name": "Crimson Captain",
+      "weapon": "Broadsword",
+      "armor": "Breastplate,Helmet",
+      "badge_icon": "Red_Knightbadge2",
+      "advantages": {
+        "N0": "SQUIRE: Has a Sword Orc companion as a permanent hireling.  If the companion is killed, it is lost for the remainder of the game, or until you achieve a new level (development rules)."
+      },
+      "companion_name": {
+        "N0": "Sword Orc"
+      }
+    },
+    "level_3": {
+      "name": "Knight of the Rose",
+      "weapon": "Broadsword",
+      "armor": "Armor"
+    },
+    "level_4": {
+      "name": "Red Knight",
+      "weapon": "Great Sword",
+      "armor": "Armor",
+      "badge_icon": "Red_Knightbadge4",
+      "replace_fight": "4",
+      "advantages": {
+        "N0": "SUPERIOR SWORDSMAN: When all of the maneuver speeds of targets you are attacking are greater than 4, you can shift your attack to any Attack Circle you choose before battle resolution."
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "bashkars": "2",
+      "order": "-2",
+      "rogues": "1",
+      "company": "-1",
+      "warlock": "1"
+    },
+    "gamerel": {
+      "bashkars": "2",
+      "order": "-2",
+      "rogues": "1",
+      "company": "-1",
+      "warlock": "1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "red knight",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "red knight",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "red knight",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "move H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "red knight",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "fight H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "red knight",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "fight H6",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "H",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "red knight",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move H4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "red knight",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "move H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "H",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "red knight",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "fight H5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "red knight",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "strength": "H"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "move T6*",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "T",
+          "speed": "6",
+          "character_chit": "",
+          "icon_type": "red knight",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "fight T4**",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "T",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "red knight",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "fight T5*",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "T",
+          "speed": "5",
+          "character_chit": "",
+          "icon_type": "red knight",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

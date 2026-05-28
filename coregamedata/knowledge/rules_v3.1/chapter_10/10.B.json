@@ -1,0 +1,139 @@
+{
+  "title": "Denizen Optional Rules",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "As difficult as it is to believe for a beginning player struggling to survive for a month in the Realm, experienced players often find the denizens, particularly the natives, to be too weak to adequately defend themselves. The following rules generally increase the uncertainty, aggressiveness, and danger of the denizens."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "10.B.1",
+      "title": "Quiet Monsters",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This rule makes the monsters less aggressive, if desired by beginning players."
+        },
+        {
+          "type": "list",
+          "items": [
+            "If a character is hidden when he ends his turn, he does not turn up the map chits in his tile and monsters cannot move to his tile from the Appearance Chart. If he is unhidden, he turns up the map chits and monsters appear normally. Monsters already in his tile move normally and natives and visitors appear normally.",
+            "This rule has two important effects: as long as the characters remain hidden, the map chits remain face down and the monsters cannot appear. Careful characters can keep away from monsters longer, and they can keep the identity of the Site chits secret longer.",
+            "Site chits must still be revealed when they are looted, as explained in Rule 7.5.5b.2.",
+            "This rule also applies to hired and controlled denizens. When hidden, they do not turn up map chits or summon monsters.",
+            "In combat, the attackers on a character's sheet do not have to be put in as many red boxes as possible. Each head, club and native horse must still be put in a different box from its owner, but otherwise the character can group the attacking denizens as he wishes (so he can always leave at least one red box vacant). This rule also applies when he positions attackers on sheets owned by his hired or controlled denizens. Note: This rule can be used by itself or with the rest of optional Rule 10.B.1."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.B.2",
+      "title": "Alerted Monsters",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This rule makes denizens fight more aggressively against unhidden attackers."
+        },
+        {
+          "type": "paragraph",
+          "text": "When combat starts in a clearing that contains any unhidden characters or any unhidden hired or controlled denizens, all of the unhired and uncontrolled denizens in that clearing (and their heads and clubs) turn dark side up (Tremendous monsters remain red side down). They change tactics normally during combat. If all of the characters and hired or controlled denizens are hidden when combat starts, the unhired and uncontrolled denizens turn light side up as usual."
+        },
+        {
+          "type": "paragraph",
+          "text": "Variant: Alerted Monsters is sometimes not satisfactory because characters, by remaining unhidden, can deliberately make the monsters slower and easier to run away from. To make the monsters more unpredictable, roll two dice for \"Change Tactics\" for each medium or heavy monster, club, or head when combat begins in the clearing – regardless of whether characters are hidden or unhidden. If a \"6\" is rolled on either die, the monster begins combat on its dark side. Otherwise the monster begins on its light side."
+        }
+      ]
+    },
+    {
+      "id": "10.B.3",
+      "title": "Dragon Heads",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Tremendous Dragons become fire-breathing. This rule makes the Dragons less dangerous in the regular game, but more dangerous with the Optional Combat Rules (10.D.3)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Instead of striking, Dragon head counters \"breathe fire\" and attack like missile weapons. When a head counter hits, the target rolls on the Missile Table for the attack (the die roll is not modified). Tremendous Dragon heads have a weapon length of 15, and the Tremendous Flying Dragon's head has a length of 13."
+        }
+      ]
+    },
+    {
+      "id": "10.B.4",
+      "title": "Watchful Natives",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This rule makes the natives less vulnerable to attacks by characters. It was intended to be part of the Second Edition Rules, but was left out because of space limitations."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Unhired natives that are unassigned at the end of random assignment, or become unassigned when they are left behind by a character who runs away, are termed to be \"watchful\" against surprise attack. When an unhired native is assigned to a Melee Section (either his own or someone else's), he immediately stops being watchful. Monsters and hired natives are never watchful.",
+            "If a watchful native is targeted by a character in the Melee Step, the attacked native and all other watchful natives from the same native group as the target are immediately put on the character's sheet and attack normally in that round. The natives are light side up and their horses are galloping side up. Exception: If the character remains hidden by making his Hide roll under optional Rule 10.A.2 (Ambushes), the natives of that group remain unassigned and watchful.",
+            "If a character deploys a minion (hired native or hired or controlled monster) against a watchful native, all other watchful natives of the target's group are immediately assigned to attack the character. The character finishes deploying his minions before the watchful natives are assigned. Those unhired natives who have a minion deployed against them are assigned to fight the deployed minion and stop being watchful.",
+            "In 4.2 and 4.3 above, if the character is hidden or is not in the clearing, all the watchful natives will be assigned to any unhidden minions the character has in the clearing as in Random Assignment (Rule 8.3.5). If the attacking character and all his minions are hidden (for example if the character attacks from Ambush and passes his hide roll) the watchful natives remain unassigned and watchful.",
+            "It is possible for some members of a native group to be watchful and others not to be. Example: Berserker lures one Soldier. Amazon lures the other three and runs away. The three Soldiers that the Amazon lured are watchful. If another character targets one of them, all three attack that character in the same round. On the other hand, the Soldier that is assigned to the Berserker is not watchful. If the Berserker or any other character targets the Soldier on his sheet, the three watchful Soldiers who were lured by the Amazon don't attack him.",
+            "Natives are watchful of all characters, not just those that are battling them.",
+            "The Watchful Natives Optional Rule does not affect Rule 8.3.4e: if a character lures or targets an unhired native or has one of his hired natives lure or deploy against an unhired native, the target native's group is battling that character for the rest of the day. Example: Berserker is not battling the Soldiers. Soldiers are unassigned and watchful at the end of random assignment. In the Melee Step he attacks one of the Soldiers. He is now battling the Soldiers for the rest of the day. In addition, his target and all the other Soldiers are put on his sheet and counterattack him in the same round."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.B.5",
+      "title": "Extended Treachery",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Ordering a hired native to attack another member of his group now counts as treachery."
+        },
+        {
+          "type": "list",
+          "items": [
+            "If a character causes one of his hired natives to lure or be deployed against an unhired native of the same native group, the character has committed treachery against the native group, triggering all the consequences of Rule 8.4.2g.",
+            "The hired native and all other hired natives from the same group immediately rebel and become unhired. Those attacking unhired natives or monsters are immediately unassigned. Those assigned to other characters or their hired natives are battling for the rest of the day.",
+            "The hiring character loses Notoriety equivalent to the Notoriety of his rebels."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.B.6",
+      "title": "Grudges and Gratitude",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Natives now remember a character who does them a good turn... or a bad one."
+        },
+        {
+          "type": "paragraph",
+          "text": "Events during the game can permanently change a character's trading relationships. If a relationship goes above Ally he still uses the Ally column but he keeps track of the extra levels of friendship and counts them against levels he loses later in the game. Similarly, if his relationship goes below Enemy he uses the Enemy column but he keeps track of the extra levels and counts them against any levels he gains later. Example: If he buys drinks for a leader who is worse than an enemy, he still uses the Enemy column."
+        },
+        {
+          "type": "list",
+          "items": [
+            "When a character (or one of his hired or controlled denizens) kills an unhired native who is currently a friend, the native's group instantly becomes two levels less friendly. When he kills an unhired native who is currently an Ally, the native's group becomes four levels less friendly. If he commits treachery against a group (see Rule 8.4.2g), the group becomes five levels less friendly towards him.",
+            "There is no penalty when a character kills a native hired by some other player, or an unhired native who is neutral, unfriendly, or an enemy.",
+            "When a character (or one of his hired leaders) sells a card with a Fame price to the group named on the card, he gains one level of friendliness with that group. If he buys the card from the group, the group becomes one level less friendly."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.B.7",
+      "title": "Extended Grudges and Gratitude",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Killing natives that are not your friends makes them like you even less."
+        },
+        {
+          "type": "paragraph",
+          "text": "Killing an unhired neutral, unfriendly or enemy native reduces one's friendship level with the native's group one level for the rest of the game."
+        }
+      ]
+    }
+  ]
+} 

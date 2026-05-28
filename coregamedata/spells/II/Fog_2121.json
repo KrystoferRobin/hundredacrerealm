@@ -1,0 +1,20 @@
+{
+  "id": "2121",
+  "name": "Fog",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "day",
+      "target": "tile",
+      "text": "Cannot PEER normally in hex",
+      "magic_color": "gray",
+      "sp_no_peer": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

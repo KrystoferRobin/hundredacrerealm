@@ -1,0 +1,18 @@
+{
+  "id": "12",
+  "name": "fight H4**",
+  "attributeBlocks": {
+    "this": {
+      "action": "fight",
+      "strength": "H",
+      "speed": "4",
+      "character_chit": "",
+      "icon_type": "angel",
+      "icon_folder": "custom/characters",
+      "stage": "12",
+      "level": "4",
+      "effort": "2",
+      "facing": "dark"
+    }
+  }
+}

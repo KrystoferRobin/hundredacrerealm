@@ -1,0 +1,25 @@
+{
+  "id": "2155",
+  "name": "Broomstick",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "move",
+      "target": "character",
+      "text": "Can FLY L1 in encounter combat and movement",
+      "magic_color": "black",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "broomstick": ""
+    },
+    "fly_chit": {
+      "strength": "L",
+      "speed": "1",
+      "fly_chit": "",
+      "broomstick": ""
+    }
+  },
+  "parts": []
+}

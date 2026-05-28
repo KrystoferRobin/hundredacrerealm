@@ -1,0 +1,15 @@
+{
+  "id": "213",
+  "name": "Howl 5",
+  "attributeBlocks": {
+    "this": {
+      "sound": "howl",
+      "clearing": "5",
+      "original_game": "",
+      "chit": "",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "641",
+  "name": "Elven Sight",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "day",
+      "target": "individual",
+      "text": "The target rolls 1 die instead of 2 on all Peer, Locate &amp; Reading Runes rolls.  ",
+      "magic_color": "gold",
+      "rw_expansion_1": "",
+      "host_okay": "",
+      "author": "Deric Page",
+      "benevolent": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

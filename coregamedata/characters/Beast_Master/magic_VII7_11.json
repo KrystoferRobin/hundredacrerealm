@@ -1,0 +1,18 @@
+{
+  "id": "11",
+  "name": "magic VII7*",
+  "attributeBlocks": {
+    "this": {
+      "action": "magic",
+      "speed": "7",
+      "character_chit": "",
+      "icon_type": "beast master",
+      "icon_folder": "custom/characters",
+      "stage": "11",
+      "level": "4",
+      "effort": "1",
+      "facing": "dark",
+      "magic": "VII"
+    }
+  }
+}

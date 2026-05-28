@@ -1,0 +1,32 @@
+{
+  "title": "A ROUND OF COMBAT",
+  "content": [
+    {
+      "type": "list",
+      "items": [
+        "ENCOUNTER STEP: Only the characters, monsters, and natives in the clearing take part in combat.",
+        "All unhired native horses turn 'walking' side up.",
+        "LURING: Each character can assign any number of unhired/uncontrolled denizens to himself and one to each of his minions.",
+        "RANDOM ASSIGNMENT: Unhired/uncontrolled denizens who remain unassigned are assigned randomly to attack unhidden characters and their minions in the clearing.",
+        "DEPLOYMENT: Each character gets a turn for Deployment in which he can assign any of his currently unassigned minions to their targets. If he is in the clearing himself, he can charge another character in the clearing. Denizens who are unassigned after Deployment do not attack this round.",
+        "ACTIONS: Each character in the clearing can play his color chits to energize Permanent spells, and if he did not charge he can do one action: alert a weapon, run or fly away, or cast a spell. Characters who run or fly away leave the clearing immediately, and denizens attacking them become unassigned until the next round. A character who did not charge, run away, or do any other action can activate and/or deactivate one item, or abandon any number of items.",
+        "MELEE STEP: All native horses turn over. Character's horses that were played on their galloping side in the Encounter Step also turn over. Each uncontrolled denizen that is on its own sheet is assigned to attack the minion most recently put on its sheet.",
+        "SELECTING TARGETS: The characters mix and pick their Attention chits randomly, and when a character's chit is picked he selects targets for himself and for his minions who are on their own sheets.",
+        "SPELL EFFECTS: All spells that were played this round come to life in the order defined by their completion times, lower times first.",
+        "When a spell comes to life it prevents its target from completing his spell (if he has not already done so).",
+        "If a spell stops an individual from attacking, he cannot choose a new target until the next round.",
+        "ATTACKS/MANEUVERS: Each character secretly plays the attacks and maneuvers for himself (if he is in the clearing) and his minions who are on their own sheet. Players also distribute all denizens on their character's own sheets and denizens on the sheets of their minions, filling as many boxes as possible. They position their minions who are on the sheets of unhired denizens. The characters reveal their plays simultaneously.",
+        "If a character played a spell that came to life this round, he cannot make a normal attack.",
+        "If a character cast an Attack spell this round, he plays his Attention chit in an Attack circle and it attacks like a weapon.",
+        "RANDOMIZING ATTACKS: Die rolls are made to randomize the attack/maneuver direction for all denizens except hired or controlled denizens on their own sheet. Each box of denizens also rolls to see if they change tactics, except hired or controlled denizens on their own sheet, who do not move or change tactics.",
+        "RESOLVING ATTACKS: Each attack is examined to see if it hits by matching directions with the target or by undercutting speed. Misses are removed, and weapons counters played by characters who miss are turned alerted side up.",
+        "INFLICTING HARM: Hits inflict harm in the order defined by their attack time and length.",
+        "In Round 1, longer weapons hit first and weapon speed breaks ties; in subsequent rounds, faster weapons hit first and length breaks ties.",
+        "Individuals and horses are removed instantly when they are killed, and armor is removed instantly when it is destroyed. An attack on or by an individual or denizen who is killed is cancelled.",
+        "Weapon counters used in attacks that hit and are not cancelled turn unalerted side up after harm has been inflicted.",
+        "FATIGUE STEP: Each character pays for his fatigue and wounds. Denizens on a sheet whose owner was killed become unassigned; unassigned Tremendous monsters turn red side down. Tremendous monsters who hit targets that are still alive turn red side up.",
+        "DISENGAGEMENT: Unhired/uncontrolled denizens remain light or dark side up as they finished the round. All unhired/uncontrolled denizens who are assigned to characters remain assigned. Other than that, all denizens become unassigned, except red-side-up Tremendous monsters and those who are being attacked by red-side-up Tremendous monsters."
+      ]
+    }
+  ]
+} 

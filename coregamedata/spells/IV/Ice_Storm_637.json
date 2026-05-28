@@ -1,0 +1,26 @@
+{
+  "id": "637",
+  "name": "Ice Storm",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "attack",
+      "target": "clearing",
+      "text": "All attacked SWING (mountain only)",
+      "magic_color": "purple",
+      "rw_expansion_1": "",
+      "sharpness": "2",
+      "strength": "L",
+      "attack_speed": "3",
+      "length": "18",
+      "clearing_req": "M",
+      "box_req": "2",
+      "host_okay": "",
+      "nobattle": "",
+      "author": "Expansion 1",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

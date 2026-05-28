@@ -1,0 +1,21 @@
+{
+  "id": "461",
+  "name": "Amazon Fight M3**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "strength": "M",
+      "speed": "3",
+      "character_level": "4",
+      "effort": "2",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "11",
+      "level": "4",
+      "icon_folder": "characters",
+      "icon_type": "amazon",
+      "rw_expansion_1": ""
+    }
+  }
+}

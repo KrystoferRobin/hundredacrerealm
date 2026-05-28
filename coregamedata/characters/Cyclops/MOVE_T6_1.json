@@ -1,0 +1,18 @@
+{
+  "id": "1",
+  "name": "MOVE T6",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "1",
+      "level": "1",
+      "action": "MOVE",
+      "strength": "T",
+      "speed": "6",
+      "effort": "0",
+      "facing": "dark",
+      "icon_type": "cyclops"
+    }
+  }
+}

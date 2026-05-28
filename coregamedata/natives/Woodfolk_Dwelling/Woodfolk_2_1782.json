@@ -1,0 +1,40 @@
+{
+  "id": "1782",
+  "name": "Woodfolk 2",
+  "attributeBlocks": {
+    "this": {
+      "native": "Woodfolk",
+      "fame": "0",
+      "notoriety": "4",
+      "base_price": "2",
+      "vulnerability": "M",
+      "rank": "2",
+      "icon_type": "bowman-bow",
+      "setup_start": "Woodfolk Dwelling",
+      "missile": "",
+      "hire_type": "group",
+      "icon_folder": "wesnoth/units/human-loyalists",
+      "denizen": "",
+      "super_realm": "",
+      "native_die": "5",
+      "clan": "2",
+      "icon_size": "0.9",
+      "archer": "",
+      "native_name": "Archer"
+    },
+    "light": {
+      "move_speed": "2",
+      "chit_color": "lightgreen"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "1",
+      "strength": "L",
+      "length": "14",
+      "sharpness": "2",
+      "missile": "",
+      "chit_color": "forestgreen"
+    }
+  },
+  "parts": []
+}

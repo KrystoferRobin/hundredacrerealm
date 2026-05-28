@@ -1,0 +1,20 @@
+{
+  "id": "379",
+  "name": "Belt of Strength",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "16",
+      "notoriety": "6",
+      "fame": "3",
+      "text": "*'s determine force, **=T, *=H, zero=M",
+      "original_game": "",
+      "chit_strength": "M,H,T",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

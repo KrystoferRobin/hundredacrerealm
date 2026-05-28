@@ -1,0 +1,40 @@
+{
+  "id": "1475",
+  "name": "T Troll",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "armored": "",
+      "vulnerability": "T",
+      "fame": "8",
+      "notoriety": "8",
+      "icon_type": "trollWarrior",
+      "setup_start": "T Troll Box",
+      "monster_die": "4",
+      "base_price": "8",
+      "icon_folder": "wesnoth/units",
+      "denizen": "",
+      "super_realm": "",
+      "icon_size": "1",
+      "icon_y_offset": "5",
+      "troll": "",
+      "box_num": "3"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "H",
+      "chit_color": "purple"
+    },
+    "dark": {
+      "move_speed": "6",
+      "attack_speed": "2",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": "",
+      "kills_horse": "",
+      "destroys_armor": ""
+    }
+  },
+  "parts": []
+}

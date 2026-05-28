@@ -1,0 +1,27 @@
+{
+  "id": "2223",
+  "name": "Dark Favor",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "phase",
+      "target": "character",
+      "text": "Make a table roll, fatigue that many effort asteriks, then roll only one die for table rolls.",
+      "magic_color": "black",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "dark_favor": ""
+    },
+    "phase_chit": {
+      "phase_chit": "",
+      "text": "Dark Favor"
+    },
+    "phase_chit_effects": {
+      "dark_favor": ""
+    }
+  },
+  "parts": []
+}

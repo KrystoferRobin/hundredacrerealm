@@ -1,0 +1,27 @@
+{
+  "id": "2032",
+  "name": "Sacred Statue",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "magic": "I",
+      "native": "Order",
+      "fame": "10",
+      "weight": "L",
+      "notoriety": "-5",
+      "great": "",
+      "base_price": "10",
+      "artifact": "",
+      "print": "",
+      "scholar_price": "20",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "item": "",
+      "super_realm": "",
+      "merchant_price": "20",
+      "priest_price": "20"
+    }
+  },
+  "parts": []
+}

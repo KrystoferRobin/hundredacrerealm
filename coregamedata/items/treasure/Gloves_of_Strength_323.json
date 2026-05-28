@@ -1,0 +1,23 @@
+{
+  "id": "323",
+  "name": "Gloves of Strength",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "fame": "5",
+      "notoriety": "6",
+      "text": "FIGHT T5",
+      "base_price": "8",
+      "native": "Order",
+      "attack_speed": "5",
+      "strength": "T",
+      "original_game": "",
+      "gloves": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

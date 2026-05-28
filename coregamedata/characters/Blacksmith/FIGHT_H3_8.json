@@ -1,0 +1,18 @@
+{
+  "id": "8",
+  "name": "FIGHT H3***",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "8",
+      "level": "3",
+      "action": "FIGHT",
+      "strength": "H",
+      "speed": "3",
+      "effort": "3",
+      "facing": "dark",
+      "icon_type": "blacksmith"
+    }
+  }
+}

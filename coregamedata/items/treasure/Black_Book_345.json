@@ -1,0 +1,29 @@
+{
+  "id": "345",
+  "name": "Black Book",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "10",
+      "notoriety": "15",
+      "weight": "L",
+      "magic": "V",
+      "fame": "-15",
+      "great": "",
+      "original_game": "",
+      "book": "",
+      "print": "",
+      "alt_monsters1_game": "",
+      "scholar_price": "50",
+      "crone_price": "50",
+      "magic_other": "VIII",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "rw_expansion_1": "",
+      "item": "",
+      "merchant_price": "20"
+    }
+  },
+  "parts": []
+}

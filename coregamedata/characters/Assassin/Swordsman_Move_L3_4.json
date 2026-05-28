@@ -1,0 +1,22 @@
+{
+  "id": "4",
+  "name": "Swordsman Move L3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "strength": "L",
+      "speed": "3",
+      "character_level": "2",
+      "effort": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "4",
+      "level": "2",
+      "icon_folder": "custom/characters",
+      "icon_type": "assassin",
+      "rw_expansion_1": "",
+      "facing": "dark"
+    }
+  }
+}

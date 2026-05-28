@@ -1,0 +1,34 @@
+{
+  "title": "DAILY SEQUENCE OF PLAY",
+  "content": [
+    {
+      "type": "list",
+      "items": [
+        "Beginning a new DAY:",
+        "If it is the seventh day of a week, the day starts supplying its color magic everywhere on the map, energizing Permanent spells that require that color.",
+        "Optional: If it is the start of a week and the Seasons/Weather optional rules are being used, the Weather chit for the week is determined.",
+        "BIRDSONG: Each character records turns for himself, his hired leaders, and his controlled monsters.",
+        "SUNRISE:",
+        "Each character assigns his hired underlings and hired monsters to the guides they will follow. Then each character, hired leader, and controlled monster who is doing the Follow activity is assigned to the guide he is following.",
+        "Characters, hired leaders, and controlled monsters who are not following mix their Attention chits together, blank side up. A die is rolled to determine which denizens are prowling; on the seventh day of the week, prowling monsters and natives return to where they started the game and prowling visitor chits turn over.",
+        "DAYLIGHT: The Attention chits are picked at random, one at a time. When a chit belonging to a character, hired leader, or controlled monster is picked, he and his followers take their turns. When everyone has had a turn, Daylight ends.",
+        "If a character owns the first chit picked, he is the 'first character' for the day. If a hired leader or controlled monster owns the first chit picked, the hiring or controlling character is the 'first character'.",
+        "When his Attention chit is selected, a character, hired leader, or controlled monster becomes unhidden and he and his followers do the phases he recorded. Whenever a character, hired leader, or controlled monster becomes unhidden, his followers also become unhidden.",
+        "On each phase he and his followers do the following, in order:",
+        "He and his followers can rearrange their belongings and trade with each other and with other characters, hired leaders and controlled monsters in the clearing. He and his followers can also use color chits to energize Permanent spells in the clearing, and pick up mission or campaign chits in the clearing.",
+        "He and his followers do the activity he recorded for this phase, playing action chits as required by the activity.",
+        "At the start of the activity each follower can choose to stop following. When a follower stops following, his turn ends; if he is a character, hired leader, or controlled monster, at the end of the phase he can block and be blocked, and he causes denizens to appear, move, and block.",
+        "If the activity is his last Fly activity (i.e. if it is the last activity of his turn or his next activity is not Fly), then he and his followers must land at the end of the activity.",
+        "At the end of the phase, the individual who is taking his turn can block and be blocked by characters, hired leaders, controlled monsters, and unhired and uncontrolled monsters in his clearing. If he is unhidden, unhired/uncontrolled monsters in the clearing automatically block him. Monsters already in the clearing block only the individual that is moving, not other individuals in the clearing. All individuals blocking or blocked become unhidden and end their turns (or lose them if they have not taken them yet).",
+        "When a character's, hired leader's, or controlled monster's turn ends, the following things happen, in order:",
+        "Each unhired, uncontrolled monster that is prowling in his tile moves to his clearing (monsters that are hired or controlled do not move). Then he turns all of the map chits in his tile face up, exchanges any substitute chits, and the game pieces in his tile can summon new denizens from the Appearance Chart. Each monster that moves to or appears in his clearing automatically blocks any unhidden hired leaders, characters, and controlled monsters in his clearing, and it can be blocked by any of the characters, hired leaders, and controlled monsters in that clearing.",
+        "Anyone who is following him stops following and is put in his clearing. Characters, hired leaders, and controlled monsters among the followers can block and be blocked, and they cause monsters to move and block as described above.",
+        "SUNSET: All Day spells expire. Characters put to sleep by the Flowers of Rest wake up. One Attention chit is taken from each clearing that contains a character, hired leader, or controlled monster. The chits are mixed together, face down.",
+        "EVENING: The Attention chits are picked randomly one at a time. When a chit is picked, combat is resolved in its owner's clearing. When combat is finished in a clearing, characters, hired leaders, and controlled monsters can trade and rearrange belongings. When combat is finished in all of the clearings, Evening ends.",
+        "MIDNIGHT: Map chits turn face down, weapon counters become unalerted, and Curses are removed at the Chapel. Active Potions expire, Combat spells expire, Permanent spells fall inert, terms of hire expire, and mission and campaign chits expire.",
+        "If it is the end of the seventh day of the week, the day stops supplying its color magic.",
+        "If this is the last day in the game, the game ends."
+      ]
+    }
+  ]
+} 

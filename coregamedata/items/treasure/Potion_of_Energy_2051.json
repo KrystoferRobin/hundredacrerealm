@@ -1,0 +1,18 @@
+{
+  "id": "2051",
+  "name": "Potion of Energy",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "No combat limit to effort * (discard to warlock)",
+      "base_price": "5",
+      "discard": "warlock",
+      "potion": "",
+      "effort_limit": "1000",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "1002",
+  "name": "Howl 5",
+  "attributeBlocks": {
+    "this": {
+      "rw_expansion_1": "",
+      "chit": "",
+      "sound": "howl",
+      "clearing": "5"
+    }
+  },
+  "parts": []
+}

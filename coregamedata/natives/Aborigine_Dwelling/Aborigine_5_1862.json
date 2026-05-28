@@ -1,0 +1,41 @@
+{
+  "id": "1862",
+  "name": "Aborigine 5",
+  "attributeBlocks": {
+    "this": {
+      "native": "Aborigines",
+      "fame": "0",
+      "notoriety": "2",
+      "base_price": "1",
+      "vulnerability": "M",
+      "rank": "5",
+      "icon_type": "Rashy_Era-vixens-smasher",
+      "setup_start": "Aborigine Dwelling",
+      "hire_type": "group",
+      "icon_folder": "wesnoth/units/addons",
+      "denizen": "",
+      "super_realm": "",
+      "native_die": "2",
+      "clan": "2",
+      "icon_size": "0.9",
+      "native_name": "Axeman"
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "5",
+      "strength": "M",
+      "length": "2",
+      "chit_color": "lightgreen",
+      "sharpness": "1"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "M",
+      "length": "2",
+      "chit_color": "forestgreen",
+      "sharpness": "1"
+    }
+  },
+  "parts": []
+}

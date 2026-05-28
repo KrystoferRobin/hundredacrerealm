@@ -1,0 +1,21 @@
+{
+  "id": "528",
+  "name": "Elf Magic III2*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "2",
+      "magic": "III",
+      "effort": "1",
+      "character_level": "2",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "6",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "elf",
+      "rw_expansion_1": ""
+    }
+  }
+}

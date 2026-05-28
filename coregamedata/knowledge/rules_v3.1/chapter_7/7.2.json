@@ -1,0 +1,111 @@
+{
+  "title": "Beginning of a Phase",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "At the beginning of every phase, certain actions can be taken before he does his recorded activity. These actions can be done in any order."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "7.2.1",
+      "title": "Trading with Other Characters, Hired Leaders, and Controlled Monsters",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each character, hired leader, and controlled monster can trade with other characters, hired leaders, and controlled monsters at the start of any of his phases. The other characters, hired leaders, and controlled monsters in his clearing can trade with him but they cannot trade with each other during his turn. He can also trade with them at the beginning of one of their phases."
+        },
+        {
+          "type": "list",
+          "items": [
+            "They can trade with each other only when they are in the same clearing. They can give away or exchange belongings, gold, and information for whatever price they agree on (they are not bound by the Gold prices on the items). They cannot exchange recorded Fame or recorded Notoriety.",
+            "Individuals can trade with each other even if some or all of them are hidden. They do not have to have found hidden enemies to trade with hidden individuals. Hidden individuals can trade without becoming unhidden.",
+            "Characters, hired leaders, or controlled monsters that are following may also trade with other characters, hired leaders, or controlled monsters in the clearing whenever the guide they are following begins a phase.",
+            "Individuals cannot trade while flying or walking the woods, or while on a roadway. Individuals also cannot trade or exchange information while blocked."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7.2.2",
+      "title": "Rearranging Belongings",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each character, hired leader, and controlled monster can rearrange his belongings at the start of each phase of his turn."
+        },
+        {
+          "type": "list",
+          "items": [
+            "When a character rearranges his belongings he can activate, deactivate, or abandon each belonging he owns, as long as he obeys the rules governing that belonging.",
+            "Hired leaders and controlled monsters can abandon belongings, but cannot activate or deactivate them. Exception: Enchanted cards remain activated when they are carried by hired leaders and controlled monsters.",
+            "Any characters, hired leaders, or controlled monsters that are following may also rearrange their belongings whenever the guide they are following begins a phase.",
+            "Individuals who are flying cannot rearrange their belongings, except that they can abandon items. To determine where the abandoned item lands, the player rolls one die (unmodified) for the tile he is in at the start of his phase, and the item lands in the clearing that matches the number he rolled (even if it is a cave). If the tile has no clearing with this number, he keeps rolling until he rolls a number matching a clearing on the tile.",
+            "Individuals cannot rearrange belongings while walking the woods, or while on a roadway. They also cannot rearrange their belongings if they are blocked.",
+            "Individuals cannot rearrange their belongings at other times of day or when other individuals or clearings are taking their turns."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7.2.3",
+      "title": "Activating Spells",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each character can activate certain types of spells at the beginning of any phase, subject to the restrictions below."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Protection from Magic creates a special chit for later use, which is put with the target's inactive items and is handled like an item. While inactive it has no effect, but the target can activate it exactly as if it were an item.",
+            "If he activates the chit at the start of a phase of his turn, the spell affects him until that phase ends; at the end of the phase, the spell expires.",
+            "If a character cannot rearrange belongings, he cannot activate the chit.",
+            "At the start of any phase, each character can use his color chits to energize Permanent spells. Once a color chit is used to energize a spell, it immediately reverts to being a normal magic chit and fatigues. He can play as many color chits as he chooses, but each color chit can energize only one spell before it fatigues (see Rule 4.6.7h).",
+            "He can play color chits without energizing spells, if he wishes. Each chit reverts to being a magic chit and fatigues.",
+            "He cannot play a color chit if he is on a roadway, in the woods, or flying at the start of the phase."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7.2.4",
+      "title": "Picking Up Mission and Campaign Chits",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each time a character starts a phase of his turn, he can take any mission and campaign chits that are in his clearing, subject to the rules governing each chit. He puts it with his active belongings. Hired leaders and controlled monsters cannot take these chits."
+        },
+        {
+          "type": "list",
+          "items": [
+            "A character can have no more than one campaign chit at a time. A character can have one or both of the mission chits (Food/Ale and Escort Party) whether he has a campaign chit or not.",
+            "When a character takes a mission or campaign chit, he must pay a certain cost in recorded Fame and/or Notoriety, and he commits himself to complete a task within a certain time limit. When the time limit runs out, or the character completes the task, or he is killed, the chit is put in his clearing and can be taken again by anyone. The character must keep the chit until then, unless he abandons it according to Rule 7.2.4j.",
+            "When a character takes a chit, he must immediately subtract its cost from his recorded values. Important: He cannot take a chit if he has negative Fame or Notoriety points, or if paying for the chit would cause him to have negative Fame or Notoriety points.",
+            "If the character completes the task within the time limit, he regains the Fame and Notoriety points he paid to take the chit (he gets back the chit's cost). If he fails to complete the task within the time limit, or if he fails to complete the task before the game ends, then he gets no points back and he must pay the chit's cost again, as a penalty for failing.",
+            "The mission chits (Food/Ale and Escort Party) represent bands of hapless travelers who are going to a specific Dwelling and who will pay for an escort.",
+            "Each mission chit costs 5 Notoriety points. When a character takes a mission chit, his task is to deliver it to a particular Dwelling within 14 days. When he takes the chit, he counts the number of clearings along the shortest route from his clearing to the Dwelling, using any roadways. When he delivers the chit, he collects 2 Gold points for each clearing he counted as his reward. He must count along the shortest route to define the price he is paid, including hidden paths and secret passages if they shorten the route, but he is not obliged to follow this route when he moves. Special: If, when he picks up the chit, there is currently no legal route to the Dwelling it must be delivered to (or the Dwelling is not yet on the board), he collects 30 Gold points as his reward once he delivers it.",
+            "When a character picks up the Food/Ale chit anywhere except at the Inn, his task is to take it to the Inn. When a character picks up the Food/Ale chit at the Inn, his task is to take it to the House.",
+            "When a character picks up the Escort Party chit anywhere except at the Chapel, his task is to take it to the Chapel. When a character picks up the Escort Party chit at the Chapel his task is to take it to the Guard house.",
+            "To complete his task, he must move into the Dwelling's clearing while he is carrying the chit; when he enters the clearing the task is instantly completed, he collects his reward and regains the Notoriety points he paid, and the chit is put at the Dwelling. Note: Destinations for the mission chits and the reward for delivery vary by Season if playing with Seasons/Weather.",
+            "The campaign chits represent troublesome individuals who are trying to foment a military campaign in the Magic Realm. The cost and time limit of the campaign chits vary from chit to chit. When a character takes a campaign chit, certain native groups become his \"partners\" while other groups become his \"foes\". His task is to kill all of his foes.",
+            "The time limit for the War, Conquer, Quest, and Revolt chits is the end of the game. Note: In a game lasting more than one month, the time limit for these chits is 28 days.",
+            "The time limit for the Pillage and Raid chits is 14 days, counting the day that the character takes the chit as the first day. The character has until Midnight of the fourteenth day to complete the task, or the end of the game, whichever comes first.",
+            "The Quest chit costs 20 Notoriety points. When a character takes the Quest chit, his partners are the Order and his task is to kill all of the Dragons and Flying Dragons, of all sizes, in the game (including Dragons that are transmorphized into other beings, but not other beings that are transmorphized into Dragons).",
+            "The Pillage chit costs 10 Notoriety points. When a character takes the Pillage chit, his partners are the Bashkars and his foes are the Patrol and the Soldiers.",
+            "The Raid chit costs 8 Fame points. When a character takes the Raid chit, his partners are the Lancers and the Woodfolk, and his foes are the Bashkars and Rogues.",
+            "The Revolt chit costs 35 Notoriety points. When a character takes the Revolt chit, his partners are the Lancers, Woodfolk, Bashkars, and Rogues, and his foes are the Soldiers, Guard, Patrol, and Company.",
+            "The War chit costs 10 Fame points and 15 Notoriety points. When a character takes the War chit, his partners are the Soldiers, Guard, and Patrol, and his foes are the Company, Bashkars, and Rogues.",
+            "The Conquer chit costs 40 Notoriety points. When a character takes the Conquer chit, his partners are the Soldiers, Guard, Patrol, and Company, and his foes are the Woodfolk, Lancers, Bashkars, and Rogues.",
+            "A character can take a campaign chit only if one or more of its foes are on the map. He cannot take a campaign chit when all of its foes are out of play or are on the Setup Card. Note: Natives in the Garrisons boxes always count as being on the map (not the Setup Card).",
+            "When a character takes a campaign chit, it modifies his trading relationships with his partners and foes. The chit adds two levels of friendliness to his trading relationship with each group of partners, and he must always use the Enemy column when he rolls on the Meeting Table for his foes (he cannot buy drinks for foes).",
+            "If a campaign chit raises a character's trading relationship above the Ally level, he keeps track of the extra levels but they do not affect his die rolls. Example: When an Ally of the Order takes the Quest chit, he still uses the Ally column to trade with them. The extra levels of friendliness only allow him to accept extra boons from the Order.",
+            "These modifications last only while the character is carrying the campaign chit. When he puts the chit back on the map, he subtracts two levels of friendliness from his ex-partners and his foes revert to their normal relationships.",
+            "A character's campaign is complete when all of his foes are killed at the same time, whether he killed them himself or they were killed by others. His task is complete only if he has no foes on the map or on the Setup Card. Note: If his foes regenerate, he has to kill them again in order to complete his campaign.",
+            "A character has the option to abandon a campaign any time that none of his foes are on the map (for example, if native foes have regenerated and returned to the Setup Card). He can abandon his campaign while some foes are still alive, as long as they are all on the Setup Card. When he abandons his campaign he does not get back the cost of the chit, but he does not have to pay the cost again. He just puts the campaign chit in his clearing."
+          ]
+        }
+      ]
+    }
+  ]
+} 

@@ -1,0 +1,38 @@
+{
+  "id": "1305",
+  "name": "Octopus",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "T",
+      "fame": "8",
+      "notoriety": "8",
+      "super_realm": "",
+      "icon_type": "kraken",
+      "setup_start": "Pool",
+      "monster_die": "3",
+      "base_price": "8",
+      "icon_folder": "wesnoth/units",
+      "needs_init": "",
+      "denizen": "",
+      "icon_size": "1",
+      "octopus": ""
+    },
+    "light": {
+      "move_speed": "2",
+      "attack_speed": "4",
+      "strength": "L",
+      "chit_color": "purple"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": "",
+      "kills_horse": "",
+      "destroys_armor": ""
+    }
+  },
+  "parts": []
+}

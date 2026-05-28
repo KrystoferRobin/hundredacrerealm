@@ -1,0 +1,41 @@
+{
+  "id": "1817",
+  "name": "Rogue 5",
+  "attributeBlocks": {
+    "this": {
+      "native": "Rogues",
+      "fame": "0",
+      "notoriety": "4",
+      "base_price": "2",
+      "vulnerability": "M",
+      "rank": "5",
+      "icon_type": "firetrooper",
+      "setup_start": "Inn",
+      "missile": "",
+      "hire_type": "single",
+      "garrison": "",
+      "icon_folder": "wesnoth/units/dunefolk",
+      "denizen": "",
+      "super_realm": "",
+      "clan": "3",
+      "native_die": "6",
+      "icon_size": "0.9",
+      "archer": "",
+      "native_name": "Archer"
+    },
+    "light": {
+      "move_speed": "2",
+      "chit_color": "lightorange"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "1",
+      "strength": "L",
+      "length": "14",
+      "sharpness": "2",
+      "missile": "",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

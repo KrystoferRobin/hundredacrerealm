@@ -1,0 +1,15 @@
+{
+  "id": "200",
+  "name": "Smoke C",
+  "attributeBlocks": {
+    "this": {
+      "warning": "smoke",
+      "tile_type": "C",
+      "original_game": "",
+      "chit": "",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": ""
+    }
+  },
+  "parts": []
+}

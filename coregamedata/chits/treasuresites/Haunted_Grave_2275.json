@@ -1,0 +1,64 @@
+{
+  "id": "2275",
+  "name": "Haunted Grave",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "grave",
+      "treasure": "large",
+      "text": "",
+      "cannot_move": "",
+      "treasure_within_treasure": "9",
+      "print": "",
+      "discovery": "",
+      "facing": "face_dn",
+      "ts_section": "twt",
+      "ts_color": "lightblue",
+      "nosecret": "",
+      "super_realm": "",
+      "super_realm_treasure": ""
+    },
+    "table": {
+      "roll_1": "axe",
+      "roll_2": "treasure",
+      "roll_3": "spell",
+      "roll_4": "notoriety",
+      "roll_5": "summon_demon",
+      "roll_6": "unhide"
+    }
+  },
+  "parts": [
+    {
+      "id": "2025",
+      "name": "Golden Axe",
+      "attributeBlocks": {
+        "this": {
+          "weight": "T",
+          "length": "6",
+          "base_price": "20",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "great_axe",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": "",
+          "notoriety": "3",
+          "fame": "6",
+          "magic": "",
+          "super_realm_treasure": "",
+          "axe": ""
+        },
+        "unalerted": {
+          "strength": "T",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "attack_speed": "3",
+          "strength": "T",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

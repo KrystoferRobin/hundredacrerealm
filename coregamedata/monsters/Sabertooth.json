@@ -1,0 +1,35 @@
+{
+  "id": "771",
+  "name": "Sabertooth",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "H",
+      "fame": "4",
+      "notoriety": "4",
+      "icon_type": "sabertooth",
+      "setup_start": "Sabertooth Box",
+      "monster_die": "3",
+      "base_price": "4",
+      "icon_folder": "monsters1",
+      "alt_monsters1_game": "",
+      "denizen": "",
+      "icon_type_alt": "add-ons-Animals_Age-images-units-legendary-bagira",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "icon_size_alt": "0.7"
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "5",
+      "strength": "M",
+      "chit_color": "white"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "3",
+      "strength": "H",
+      "chit_color": "gray"
+    }
+  },
+  "parts": []
+}

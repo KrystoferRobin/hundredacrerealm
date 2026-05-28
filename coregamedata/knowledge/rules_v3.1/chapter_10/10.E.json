@@ -1,0 +1,178 @@
+{
+  "title": "Expanding the Realm",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "These rules explain how to change the size of the Magic Realm, increasing or decreasing the number of characters, changing the length of the game and combining games to create a larger Magic Realm. Additions and subtractions to the number of Victory Points that a character must record are cumulative: if one rule increases his Victory Points by two and another rule reduces them by one, he must record one extra Victory Point."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "10.E.1",
+      "title": "Solitaire Play",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "This section explains how a player can play Magic Realm by himself, with no other players.",
+            "The player sets up the game secretly as explained under 3.0 PREPARE FOR PLAY, except as explained below.",
+            "To construct the map, he puts the Borderland down as the first tile and shuffles the remaining tiles and puts them in a pile. Then he takes each tile in turn from the top of the pile and adds it to the map as explained in step 2 under PREPARE FOR PLAY.",
+            "He must always take the top tile in the pile and add it to the map, if it can be placed within the restrictions explained under step 2 of PREPARE FOR PLAY. Special: If it is a Woods or Valley tile, he cannot put it next to another Woods or Valley tile if any other placement is possible. If no other placement is possible, he can put it next to another Woods or Valley tile.",
+            "If he cannot place the tile legally, he puts it at the bottom of the pile and takes the next tile.",
+            "If the last tile cannot be placed, the player picks up the map and starts all over again.",
+            "When all twenty tiles have been placed he selects his character, places the visitor/mission chits and selects his Victory Requirements normally. He must meet his victory requirements normally to win the game.",
+            "One of the most interesting aspects of solitaire play is working out the style of play that best suits each character. Different characters have very different styles of play, and it takes several playings to learn their subtleties. Note: Some characters rely on advantages in diplomacy that vanish in solitaire play. It is recommended that these characters be given the optional abilities explained in optional Rule 10.A.6.",
+            "The player can take several characters as explained in as explained in optional Rule 10.E.4 below, but all of his characters must win for him to win.",
+            "The player does not turn up the chits in the Valley tiles. These chits remain face down and secret at the start of a solitaire game. The Dwellings and Ghosts in the Valley tiles will appear like campfires, when their chits are turned up during the game.",
+            "The player starts the game by moving onto the map along any road that runs from the edge of the map to the Borderland. His first activity must be a Move activity to enter the map. Note: If the player starts a new character after his old character is killed, the new character enters the map along the same roadway that the original character used.",
+            "The player plays the game normally, except that two rows of denizens are prowling each day, and both rows can appear and move on the map. At Sunrise the player rolls twice and puts a Monster Roll chit in each row he rolls (using an extra chit to represent the second Monster Roll chit). If he rolls doubles, he puts both chits in the same row and that is the only row that prowls.",
+            "The optional rules are highly recommended for solitaire players who are familiar with the game. These rules add diversity that enhances a solitaire game. In particular, the optional combat rules add a charming uncertainty to individual battles."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.E.2",
+      "title": "Changing the Game Time",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "A game can begin on the first day of any week and it can last for any number of weeks. It cannot start or end part way through a week. The players must agree on the starting day and length of the game before starting to set it up.",
+            "The game's length defines the number of Victory Points that each character must assign to his Victory Requirements. He must assign one basic point, plus one point for each week in the game. Example: In an eight-week game, he must assign nine Victory Points.",
+            "In games longer than one month, instead of supplying Black and White magic, the seventh day of each month alternates between White and Black from month to month. On the first month it is White magic, on the second month it is Black magic, and so on.",
+            "When characters use optional Rule 10.D.1 (Seasons and Weather) in games that run from Season to Season, the Seasons in the game define the number of Victory Points each character must assign to his Victory Requirements.",
+            "The Calendar of Seasons lists the number of points that must be assigned for each Season. If the game includes a fraction of a Season, multiply the fraction by the Season's points (rounding up) to calculate the points that must be assigned for that Season. Example: The characters must record three Victory Points to play half (two weeks) of MIDSUMMER.",
+            "The seventh day of each Season supplies the color magic specified for the Season instead of the normal Black or White magic.",
+            "JOINING A GAME IN PROGRESS: If a new player wishes to join a game that is already in progress, the number of weeks remaining in the game defines the number of Victory Points he must assign. If he joins part way through a week, he counts it as a whole week.",
+            "EXTENDING PLAY: If the players wish to continue playing at the end of the agreed time, they can agree on extension and add the corresponding number of Victory Points to their Victory Requirements. They cannot rearrange the points they have already assigned."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.E.3",
+      "title": "Sudden Death Game",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Instead of ending on a specific day, the game continues until one character has fulfilled all of his Victory Requirements. When the game ends, the characters calculate their scores normally. Comment: This was the standard rule in the original Magic Realm rulebook, but occasionally it causes the game to end before it really gets started. The rule was changed to give the other characters a chance to catch up, but the old version is included here as an option for those who prefer it. Scoring calculations can be avoided by declaring the player who ends the game to be the winner.",
+            "A character can end the game only if he has a total score of zero or better in each category at Midnight of any game day. He cannot have a minus score in any category, regardless of his score in the other categories. He can end the game at Midnight of any day, but only at Midnight. He is not required to end the game – he can keep silent and allow play to continue, if he wishes.",
+            "Recommended: A player can only end the game if he is in the clearing where he started the game.",
+            "This rule usually shortens the game: a typical game lasts from three to five weeks. The players can adjust the length of the game by changing the number of Victory Points they assign. Each additional point adds roughly a week to the game."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.E.4",
+      "title": "Multiple Characters",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Each player can control more than one character. The players can all have the same number of characters, or different players can have different numbers of characters. Before starting, the players must agree on how many characters each player is to have.",
+            "The players select their characters when the map is being set up. When a player is out of tiles, each time it is his turn he can pick one of his characters. He can select only one character per turn. When he has all of his characters, on his next turn he places a visitor/mission chit normally.",
+            "Each player records separate Victory Requirements for each of his characters. Important: Each additional character must record an extra Victory Point in his Victory Requirements. The first character a player takes must record five Victory Points, the second character must record six Victory Points, the third character must record seven Victory Points, and so on.",
+            "Each player treats his characters as separate beings. He keeps their belongings separate, he uses a separate Personal History sheet for each character, and so on. When a character's Attention chit is picked, only that character takes his turn.",
+            "During combat, when it is a player's turn to lure attackers all of his characters in the clearing can lure attackers. When it is his turn to do actions, all of his characters in the clearing can do actions. The players go in turn, starting with the player whose character had the first turn that day and going to the left.",
+            "At the end of the game, each player averages the scores of all of the characters he had in the game. He totals the scores of all of his characters and divides by the number of characters he had at the start of the game, and the result is the player's score. If his total is zero or greater, he wins. The player with the largest average score is the victor.",
+            "If a player's character is killed, he can start a new character to replace him, using the same number of Victory Requirements as the killed character. At the end of the game he gets no points for the killed character, but he can count the new character's points instead. Whether he takes a new character or not, at the end of the game he must divide his total score by the total number of characters he had at the start of the game."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.E.5",
+      "title": "Development",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Each character has four stages of development, outlined in the Development section on the back of his Character card. The levels are listed in order, with the earliest (first) level at the top and the last (fourth) level at the bottom. Each level lists the name and the weapon, armor or spell(s) the character has at that level and the three action chits he gains at that level.",
+            "Each character can start the game at an earlier stage of development than the fourth. He gets the weapon, armor and/or spells listed for the level he starts at, plus all of the action chits listed for that level and all previous levels (his other action chits are removed from play).",
+            "Each character gets his Special Advantages at his second and fourth levels. His Special Advantages are numbered \"1\", and \"2\" on the List of Characters; when he starts at (or reaches) second or third level he gets the Advantage numbered \"1\", and when he starts at (or reaches) fourth level he gets both Special Advantages. When he starts at first level, he has no Special Advantages. Example: At first level, the Dwarf does not get the Short Legs and Cave Knowledge advantages (his youthful energy offsets his short legs).",
+            "Each character gets his trading relationships at his third level – he gets these trading relationships only if he starts the game at his third or fourth level. If he starts at first or second level, all of the natives and visitors start the game Neutral to him.",
+            "When a player records the Dwelling where his character will start the game, he also records his character's starting level. When he puts his character counter on the map, he announces his character's level. Reducing his character's level reduces the number of Victory Points he assigns to his Victory Requirements. Each level is worth one Victory Point (regardless of the length of the game), so if he starts two levels lower than normal he records two fewer Victory Points at the start of the game. Exception: A character must always record at least two Victory Points, regardless of the level he starts at or the length of the game.",
+            "A character's development can increase during the game (particularly if the game is a long one). Each time he gains a certain number of points towards fulfilling his Victory Requirements, he gains one of the action chits listed for his next development level. He can choose which chit to take. When he has obtained all three of the chits that belong to his next level, he advances to that level.",
+            "The number of points a character must obtain to gain a chit depends on his current level. At first level, he gains a chit each time he gains one Victory Point. At second level, he must gain two Victory Points for each chit, and so on.",
+            "The character's Great Treasures, and the Fame and Notoriety values of his belongings, count towards his development. He gains a Victory Point only when his Victory Point total increases: if he loses points, he must regain the lost points before he can progress towards his next chit. A Victory Point counts towards his development only if it counts towards his Victory Requirements. Example: If he assigns 3 points to Gold, only the first 90 Gold points he gets counts towards his development.",
+            "Once a character gains a chit, he keeps it and can use it normally in the game thereafter. When he completes his second level he gains his first Special Advantage, and when he completes his fourth level he gains his second Special Advantage. Gaining levels does not change his weapons, armor, spells and trading advantages; these change only as a result of the normal events of the game."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.E.6",
+      "title": "Extended Development",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The following rules, published by Richard Hamblen in the Avalon-Hill General magazine, allow a player to keep a character from game to game and develop his strength. Some options suggested by on-line playtesting are noted. A link to alternate rules for a continuous Extended Development game that have been developed and play-tested extensively by the online community is given in Section 1.5."
+        },
+        {
+          "type": "list",
+          "items": [
+            "The Development section on the back of each character card is used. The first time a character is used he starts at his first stage of development, with the appropriate combat counters, Spells and equipment.",
+            "During each game, each character must record and acquire a number of Victory Points equal to the next stage in his development. Thus, if a character was at his first stage of development he must record and acquire two Victory Points; a fourth-stage character would have to acquire five Victory Points. (Players who prefer longer games can agree to double or triple these numbers if they wish.)",
+            "When a character fulfills his victory requirements, he wins and the game is over. Option: Alternatively, the game may be played to a fixed number of days and scoring calculated as Section 9.3. Six weeks (42 days) is recommended as a game length since lower stage characters accumulate Victory Points slowly.",
+            "Each character who has survived without being killed gains one action chit (in addition to any gained during the game as in optional Rule E.5.4). He gains one of the chits listed in the next stage after his current stage, and can use it in the next game.",
+            "A character who is at first stage and who has two extra chits is still at first stage.",
+            "When a character gets all three of the chits of a stage, the next game he starts at that new stage with the appropriate spells and equipment.",
+            "The character who won the game jumps a full stage in the next game. If he were first stage with one extra chit, the next game he would be second stage with one extra chit. Option: Players may find that advancing the winning character one entire stage gives him too much advantage in the next game. The winner may be given only one extra chit in addition to the chit for surviving the game, or no extra chit at all, since he will most probably have gained chits during the game from Rule E.5.4.",
+            "A character who is killed drops a full stage (three chits) for the next game.",
+            "If the revival rule is being used and a character is killed, he loses three chits before he is revived – and if he is killed again he loses another stage.",
+            "A character can never be lower than first stage; he can never have less than three chits.",
+            "When a character reaches fourth stage he should continue to keep track of the stages and chits he has earned even though he cannot get additional chits.",
+            "Instead of extra chits, a character gains certain advantages for each full stage he has earned above the fourth (he gains nothing for chits that do not complete a stage). He takes these items when he places his first hex tile.",
+            "Fifth stage and above: 15 extra gold.",
+            "Sixth stage and above: Take one random Treasure card from any native group.",
+            "Seventh stage and above: 10 Notoriety and 5 Fame.",
+            "Eighth Stage and above: Take one horse from any native group.",
+            "Ninth stage and above: Gets bonus phase every day.",
+            "Tenth stage: Take one weapon or armor counter from any native group; or record one extra spell of any type.",
+            "Eleventh stage: The character should be declared an \"immortal\" and retired, and his owner should start over with a new (and preferably different) character. Over the really long haul the players can compete to see who can reach \"immortal\" status with the most characters.",
+            "A character must record and acquire extra Victory Points for his excess stages of development, so a seventh-stage character needs eight points to win.",
+            "The players will find that games can end quickly when some of the players are at low stages; when a game ends too quickly the characters can leave the board setup, move to the start of the next lunar month and start the next game from there.",
+            "Option: Because it is difficult for lower stage characters to acquire Victory Points, Extended Development games may be played where the characters are not required to select Victory Requirements at the beginning of the game. Victory Points of any kind acquired during the game entitle the character to earn an extra chit as in Rule E.5.4. Any Victory Points lost will have to be regained before a character can qualify for the next extra chit, and negative Victory Points (negative Fame or Notoriety divided by 10 or 20 and rounded down – no x3 penalty) must be compensated for by a greater number of positive Victory Points to earn a chit. The winner of each game is the character who has gained the most extra chits at the end of the agreed-upon game length. A longer-term goal can also be established, such as the first character to reach 5th level, regardless of the number of games required to reach that goal."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.E.7",
+      "title": "Combining Realms",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "The players can combine games of Magic Realm to expand the size and ferocity of the game. To simply combine games, set up and play normally except as explained below.",
+            "Pieces that belong to the same game should be marked with the same identifying symbol. Each game should have its own distinctive symbol, so pieces from one game will show a different symbol from other games.",
+            "Each game's symbol is put on its Treasure Set Up Card and on each map chit, Dwelling, denizen, visitor/mission chit, ordinary armor counter, Treasures Within Treasures card, Lost Keys card, Potion, Artifact, Spell Book, Spell card, each Treasure card that has a Fame price, and on all of the character pieces (cards, counters and action chits) that belong to the game. Map tiles and other cards and counters need not be marked.",
+            "On cards, the symbol is put only on the face of the card; on chits, the symbol is put only on the non-blank side of the chit.",
+            "When setting up the Set Up Cards, set up the Treasure cards without discriminating between games – mix all of the Large treasures together and place them on all of the Set Up Cards at random, and so on.",
+            "Put the proper armor, weapon and horse counters in each Treasures Within Treasures section, and put the proper number of Spears and armor counters in each native box.",
+            "Mix the Light weapons together and put seven at random on each Set Up Card. Distribute Medium weapons, Heavy weapons, Bows and horses similarly, so that natives from different games will have different assortments of counters.",
+            "All denizens and Spell cards must set up on their game's card.",
+            "Mix all of the map tiles together and deal all of them out. The first Borderland dealt is the starting tile, and all of the remaining tiles are added to the map normally. Other Borderland tiles are added to the map just like any other tile.",
+            "Put the map chits on the map without discriminating between games. Mix chits from different games together before placing them, and so on. The chits in each Lost City and Lost Castle section can come from any game(s).",
+            "Characters can be chosen from any of the games. Each character gets only those pieces that belong to his own game; his trading relationships apply to all of the natives in all of the games, and his Special Advantages apply to all of the games. He can take his starting weapons and armor from any game. He must start the game at a Dwelling that belongs to his game.",
+            "Each game's Garrison natives set up at that game's Dwellings.",
+            "Only one Monster Roll is made each day, and all of the Monster Roll chits are adjusted accordingly. Alternative: The players can make a separate Monster Roll for each Set Up Card, if they wish. Doing so is more exciting – but it also makes the game more difficult.",
+            "Each game piece can summon denizens only from its own Set Up Card. Regenerating denizens return to their own game's Set Up Card or Dwellings.",
+            "If optional Rule 10.D.1 (Seasons and Weather) is used, only one Weather chit is picked and it affects the whole map.",
+            "When an individual loots a site, he takes his loot from the Set Up Card that belongs to his site's game. When he exchanges a substitute card, the treasures that enter play come from the substitute's Set Up Card. Each Lost Keys card opens only the Chest, Vault, and Crypt on its own Set Up Card.",
+            "Natives from different games are treated as separate groups: they must be traded with and hired separately.",
+            "Each native leader and visitor owns only the box that is on his own Set Up Card.",
+            "Gold prices remain the same from game to game. A card is worth its Fame price only to those natives who belong to its game.",
+            "A mission chit can be delivered to a Dwelling only if the Dwelling and chit belong to the same game.",
+            "A campaign chit affects only those denizens that belong to its game. Example: When a character takes a game's QUEST chit, only the Knights that belong to that game become friendlier and he must kill only the Dragons that belong to that game.",
+            "When a Potion expires or an ordinary armor counter is destroyed, it returns to its game's Set Up Card.",
+            "A game's Artifacts and Spell Books contain only the Spell cards that are on that game's Set Up Card."
+          ]
+        }
+      ]
+    }
+  ]
+} 

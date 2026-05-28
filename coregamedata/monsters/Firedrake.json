@@ -1,0 +1,75 @@
+{
+  "id": "728",
+  "name": "Firedrake",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "armored": "",
+      "vulnerability": "T",
+      "fame": "15",
+      "notoriety": "15",
+      "icon_type": "firedrake",
+      "setup_start": "Hoard",
+      "monster_die": "1",
+      "flying": "",
+      "base_price": "12",
+      "icon_folder": "monsters1",
+      "alt_monsters1_game": "",
+      "setup_start_tilereq": "C",
+      "needs_init": "",
+      "denizen": "",
+      "firedrake": "",
+      "drake": "",
+      "icon_type_alt": "fireDragon",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_size_alt": "0.4",
+      "icon_y_offset_alt": "4"
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "3",
+      "strength": "M",
+      "chit_color": "white"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "5",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "729",
+      "name": "Firedrake Head",
+      "attributeBlocks": {
+        "this": {
+          "monster": "",
+          "part": "",
+          "icon_type": "firedrake_head",
+          "dragon_missile": "",
+          "icon_folder": "monsters1",
+          "alt_monsters1_game": "",
+          "icon_type_alt": "fire-breath-drake",
+          "icon_folder_alt": "wesnoth/icons/attacks",
+          "icon_size_alt": "0.6"
+        },
+        "light": {
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "7",
+          "chit_color": "white",
+          "dragon_length": "13"
+        },
+        "dark": {
+          "attack_speed": "3",
+          "strength": "T",
+          "length": "14",
+          "chit_color": "red",
+          "dragon_length": "13"
+        }
+      }
+    }
+  ]
+}

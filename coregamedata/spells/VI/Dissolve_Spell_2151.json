@@ -1,0 +1,19 @@
+{
+  "id": "2151",
+  "name": "Dissolve Spell",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "instant",
+      "target": "spell",
+      "text": "Cancel spell",
+      "magic_color": "purple",
+      "cancel": "",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "1998",
+  "name": "Light Bow",
+  "attributeBlocks": {
+    "this": {
+      "weight": "L",
+      "length": "14",
+      "base_price": "6",
+      "missile": "",
+      "two_handed": "",
+      "weapon": "",
+      "icon_type": "light_bow",
+      "icon_folder": "weapons",
+      "item": "",
+      "super_realm": "",
+      "bow": ""
+    },
+    "unalerted": {
+      "strength": "L",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "attack_speed": "1",
+      "strength": "L",
+      "sharpness": "2",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

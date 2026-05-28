@@ -1,0 +1,22 @@
+{
+  "id": "12",
+  "name": "Amazon Move M3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "strength": "M",
+      "speed": "3",
+      "character_level": "4",
+      "effort": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "12",
+      "level": "4",
+      "icon_folder": "custom/characters",
+      "icon_type": "monk",
+      "rw_expansion_1": "",
+      "facing": "dark"
+    }
+  }
+}

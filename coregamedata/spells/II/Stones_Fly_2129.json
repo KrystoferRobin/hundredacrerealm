@@ -1,0 +1,24 @@
+{
+  "id": "2129",
+  "name": "Stones Fly",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "attack",
+      "target": "multiple",
+      "text": "MISSILE attack on each target (specify)",
+      "magic_color": "gray",
+      "sharpness": "1",
+      "strength": "L",
+      "length": "15",
+      "missile": "magic",
+      "min_targets": "4",
+      "host_okay": "",
+      "table": "magicmissil",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

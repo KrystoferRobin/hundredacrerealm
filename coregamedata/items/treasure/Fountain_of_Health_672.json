@@ -1,0 +1,27 @@
+{
+  "id": "672",
+  "name": "Fountain of Health",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "cannot_move": "",
+      "rw_expansion_1": "",
+      "text": "Roll on fountain table once per SEARCH action",
+      "facing": "face_dn",
+      "nosecret": "",
+      "discovery": "",
+      "treasure_location": "fountain",
+      "author": "Expansion 1",
+      "item": ""
+    },
+    "table": {
+      "roll_1": "heal",
+      "roll_2": "rest_4",
+      "roll_3": "rest_2",
+      "roll_4": "remove_curse",
+      "roll_5": "poison",
+      "roll_6": "nothing"
+    }
+  },
+  "parts": []
+}

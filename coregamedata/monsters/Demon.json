@@ -1,0 +1,40 @@
+{
+  "id": "1302",
+  "name": "Demon",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "T",
+      "fame": "8",
+      "notoriety": "8",
+      "demon": "",
+      "super_realm": "",
+      "icon_type": "yuureDreamweaver",
+      "setup_start": "Altar",
+      "monster_die": "2",
+      "base_price": "8",
+      "icon_folder": "wesnoth/units",
+      "needs_init": "",
+      "denizen": "",
+      "icon_size": "0.9"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "2",
+      "magic_type": "V",
+      "length": "17",
+      "chit_color": "gray",
+      "attack_spell": "powerofthepit"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": "",
+      "kills_horse": "",
+      "destroys_armor": ""
+    }
+  },
+  "parts": []
+}

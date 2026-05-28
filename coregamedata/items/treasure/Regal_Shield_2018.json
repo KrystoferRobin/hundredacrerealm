@@ -1,0 +1,38 @@
+{
+  "id": "2018",
+  "name": "Regal Shield",
+  "attributeBlocks": {
+    "this": {
+      "vulnerability": "L",
+      "weight": "L",
+      "shield": "",
+      "armor_choice": "",
+      "fame": "2",
+      "notoriety": "2",
+      "armor": "",
+      "icon_type": "shield",
+      "facing": "dark",
+      "pile_position": "3",
+      "armor_row": "1",
+      "icon_folder": "armor",
+      "item": "",
+      "super_realm": "",
+      "magic": "",
+      "magic_color_bonus": "purple",
+      "magic_color_bonus_armor": "H",
+      "super_realm_treasure": ""
+    },
+    "intact": {
+      "base_price": "14",
+      "chit_color": "gold"
+    },
+    "damaged": {
+      "base_price": "7",
+      "chit_color": "yellow"
+    },
+    "destroyed": {
+      "base_price": "5"
+    }
+  },
+  "parts": []
+}

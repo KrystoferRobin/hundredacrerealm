@@ -1,0 +1,21 @@
+{
+  "id": "479",
+  "name": "Wizard Move M5",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "strength": "M",
+      "speed": "5",
+      "character_level": "2",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "optional": "remove",
+      "stage": "5",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "wizard",
+      "rw_expansion_1": ""
+    }
+  }
+}

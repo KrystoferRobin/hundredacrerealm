@@ -1,0 +1,21 @@
+{
+  "id": "652",
+  "name": "Reverse Power",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "day",
+      "target": "color",
+      "text": "Swap color:  White/Black  Purple/Gray",
+      "magic_color": "any",
+      "rw_expansion_1": "",
+      "author": "Deric Page",
+      "host_okay": "",
+      "color_mod": "1.5;5.1;2.4;4.2",
+      "benevolent": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "1975",
+  "name": "Mace",
+  "attributeBlocks": {
+    "this": {
+      "weight": "M",
+      "length": "1",
+      "base_price": "6",
+      "weapon": "",
+      "icon_type": "mace",
+      "icon_folder": "weapons",
+      "item": "",
+      "super_realm": ""
+    },
+    "unalerted": {
+      "strength": "M",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "attack_speed": "3",
+      "strength": "M",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

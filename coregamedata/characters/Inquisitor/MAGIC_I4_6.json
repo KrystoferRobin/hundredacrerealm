@@ -1,0 +1,18 @@
+{
+  "id": "6",
+  "name": "MAGIC I4**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "6",
+      "level": "2",
+      "action": "MAGIC",
+      "speed": "4",
+      "effort": "2",
+      "facing": "dark",
+      "magic": "I",
+      "icon_type": "inquisitor"
+    }
+  }
+}

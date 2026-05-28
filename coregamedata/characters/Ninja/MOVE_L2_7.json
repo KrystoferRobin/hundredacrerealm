@@ -1,0 +1,18 @@
+{
+  "id": "7",
+  "name": "MOVE L2**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "7",
+      "level": "3",
+      "action": "MOVE",
+      "strength": "L",
+      "speed": "2",
+      "effort": "2",
+      "facing": "dark",
+      "icon_type": "ninja"
+    }
+  }
+}

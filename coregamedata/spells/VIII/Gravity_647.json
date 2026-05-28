@@ -1,0 +1,21 @@
+{
+  "id": "647",
+  "name": "Gravity",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "combat",
+      "target": "clearing",
+      "text": "All weapons increase weight by one",
+      "magic_color": "gray",
+      "rw_expansion_1": "",
+      "author": "Deric Page",
+      "c_spell_effect": "heavied",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

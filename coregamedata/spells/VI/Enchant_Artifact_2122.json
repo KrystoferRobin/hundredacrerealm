@@ -1,0 +1,19 @@
+{
+  "id": "2122",
+  "name": "Enchant Artifact",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "permanent",
+      "target": "artifact",
+      "text": "Add spell and MAGIC chit to artifact",
+      "magic_color": "purple",
+      "enchant": "",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

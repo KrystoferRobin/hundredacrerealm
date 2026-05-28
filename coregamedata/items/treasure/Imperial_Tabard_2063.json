@@ -1,0 +1,19 @@
+{
+  "id": "2063",
+  "name": "Imperial Tabard",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "17",
+      "great": "",
+      "fame": "20",
+      "notoriety": "-10",
+      "weight": "M",
+      "native": "Guard",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

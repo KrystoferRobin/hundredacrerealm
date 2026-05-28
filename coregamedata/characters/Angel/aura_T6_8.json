@@ -1,0 +1,19 @@
+{
+  "id": "8",
+  "name": "aura T6**",
+  "attributeBlocks": {
+    "this": {
+      "action": "aura",
+      "strength": "T",
+      "speed": "6",
+      "character_chit": "",
+      "icon_type": "angel",
+      "icon_folder": "custom/characters",
+      "stage": "8",
+      "level": "3",
+      "effort": "2",
+      "facing": "dark",
+      "fight_alert": ""
+    }
+  }
+}

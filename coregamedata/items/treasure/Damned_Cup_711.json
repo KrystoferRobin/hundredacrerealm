@@ -1,0 +1,16 @@
+{
+  "id": "711",
+  "name": "Damned Cup",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "No value at all.  Does absolutely nothing.",
+      "rw_expansion_1": "",
+      "base_price": "0",
+      "facing": "face_dn",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

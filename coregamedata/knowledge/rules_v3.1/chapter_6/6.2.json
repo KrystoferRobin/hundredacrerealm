@@ -1,0 +1,128 @@
+{
+  "title": "BIRDSONG",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "During Birdsong, characters plan and record their activities for the day."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "6.2.1",
+      "title": "Each character gets one turn per day in which he can do activities",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "During Birdsong he records his activities, and when he takes his turn during Daylight he does the activities he recorded. He uses the Move activity to move around the map, the Search activity to search, the Trade activity to trade with natives, the Hide activity to hide, the Rest activity to recover from fatigue and wounds, the Alert activity to alert weapons or magic, the Hire activity to hire denizens, the Enchant activity to enchant tiles or magic chits, and the Follow activity to follow other characters or hired leaders. All of the activities are described in detail in Section 7."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. There are also special \"enhanced\" activities that are caused by certain Special Advantages, spells, and Treasure cards. A character can record and do an enhanced activity only if he has the appropriate Special Advantage, spell, or Treasure card."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. The enhanced activities are as follows: the Enhanced Peer activity is used to search on the Peer Table (sometimes in a remote clearing), the Fly activity is used to fly around the board, and the Remote Enchant activity can be used to enchant tiles other than the one the character is in. Note: The Caching optional rule (see Rule 10.A.4) introduces the Cache activity, which is used to store items and gold in a clearing for later retrieval."
+        }
+      ]
+    },
+    {
+      "id": "6.2.2",
+      "title": "Each character's turn is divided into \"phases\", and the number of phases varies from day to day",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He can do one activity per phase. Before recording his turn, he determines how many phases he is entitled to."
+        },
+        {
+          "type": "paragraph",
+          "text": "a. He always gets at least two phases – these are termed his Basic phases."
+        },
+        {
+          "type": "paragraph",
+          "text": "b. If he spends the whole day outside of the caves, he gets two additional Sunlight phases. If he starts the day in a cave clearing or records a Move into a cave clearing, he does not get these extra Sunlight phases. Thus, characters can normally do two activities per day in caves, four activities per day outside of the caves. Exception: The Dwarf cannot use Sunlight phases due to his Short Legs. He gets only the two Basic phases each day. Note: If playing with Seasons/Weather, the numbers and types of phases each day vary by Season and weather."
+        },
+        {
+          "type": "paragraph",
+          "text": "c. He also gets any \"extra\" phases caused by his Special Advantages, Treasure cards, spells, or horses. Example: The Amazon's extra Move phase means she can do four activities plus a Move (or two activities plus a Move in the caves)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "He can record an extra phase caused by a Treasure card or horse only if he has that Treasure card or horse active during Birdsong. He must have already activated it the previous day to record an extra phase due to the item. Clarification: A character cannot record any extra phases for a horse while he is in a cave during Sunrise, because a horse cannot be activated in a cave.",
+            "He can record an enhanced activity that is caused by a spell only if that spell is active during Birdsong. Special: He can record an activity caused by a Permanent spell even if the spell is inert during Birdsong. Once he records the activity he is committed to energizing the spell if he can.",
+            "Extra phases are cumulative. Example: When riding a workhorse, the Amazon gets two Basic phases plus two Sunlight phases plus her own extra Move plus an extra Move for the horse."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.2.3",
+      "title": "During Birdsong each character secretly chooses and records the activity he will do in each phase",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He can record only one activity per phase, but he can record any activity in any phase, repeating or switching activities as he wishes. When asked, he must reveal how many phases he is entitled to, but he must keep each activity secret until he does it during his turn. All of the characters record their activities secretly and simultaneously."
+        }
+      ]
+    },
+    {
+      "id": "6.2.4",
+      "title": "The character records his activities on his Turn Record, in the line for the current game day",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He records the activities from left to right in the order he plans to do them. He can leave phases blank and not use them. When he does his turn, he must do the activities in the order he records them."
+        },
+        {
+          "type": "list",
+          "items": [
+            "He can record any activity for each Basic or Sunlight phase. Each extra phase that specifies an activity must be used for that activity – it cannot be used for other activities. Example: The Magician's extra Alert phase can be used only to do the Alert activity.",
+            "He can record an extra phase that is restricted to specific clearings even if he is not in a clearing where he can use it. He must be in the proper clearing when he starts the activity, not when he records it. Example: A character can record an extra phase for the Shielded Lantern even if he is not in a cave clearing. He must be in a cave when he starts the extra phase, however.",
+            "Each extra Move phase caused by a pony must be preceded by a Move phase that was not caused by the pony. Move phases caused by the pony must alternate with other Move phases, and the pony cannot cause the first Move in the turn. The Move phases need not be consecutive – other activities can intervene. Example: The Amazon could record her own extra Move phase, then some other activity, then a Move phase caused by a pony. She could not record another Move for the pony until she recorded some other Move phase.",
+            "He must note each extra phase and enhanced activity he records, and the Special Advantage, Treasure card, spell, or horse that caused it. Important: If a character uses a Treasure card or horse to record an extra activity or an enhanced activity, he is committed to keeping that belonging and having it active when he does that activity. He cannot voluntarily abandon or transfer the belonging until he has finished the phase it caused. He can deactivate the belonging normally, but it must be active when he starts to do the extra phase.",
+            "A character can record an impossible activity in hopes that it will be possible when the time comes to do it. Example: He can record a Move through an undiscovered hidden path, in hopes that he will discover the path before he has to move.",
+            "If he is unable to do an activity, it is cancelled and the phase is treated as a blank phase. The rest of his turn is not affected. An activity is cancelled if it violates the rules governing that activity.",
+            "When he does a blank phase, he does no activity. The blank phase can still be used for trading, rearranging items, and blocking."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.2.5",
+      "title": "On each day, each hired leader and controlled monster gets a turn in which he can do activities like a character",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "During Birdsong the hiring or controlling character records the leader or monster's activities on an extra Turn Record, at Sunrise the leader or monster's attention chit is mixed in with the others, and when his chit is picked he does the activities recorded for him. He gets two Basic phases plus two Sunlight phases plus any extra phases due to his native horse (if he has one), and he can record any activities a character can. Note: He cannot use Alert or Rest phases, but he can record them for the benefit of characters who are following him. He cannot use Enchant phases, and neither can his followers. Controlled monsters also cannot do Trade or Hire phases; they can only trade with other characters, hired leaders, or controlled monsters. Hired underlings cannot record activities or take a turn; they can only follow other characters or hired leaders."
+        }
+      ]
+    },
+    {
+      "id": "6.2.6",
+      "title": "Players use the abbreviations listed in the Activities Table to record activities for their characters and hired leaders",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "For certain activities, the associated clearing, tile, or individual must be specified along with the activity abbreviation. Example: To record a Move activity, he records \"M\" and the clearing he is moving to. He identifies the clearing by its number and the tile it is in. To move to Nut Woods, Clearing 2, record \"M NW2\". Note: To avoid ambiguity, use \"CG\" to specify the Crag, \"CL\" for the Cliff, \"CS\" for the Caves, and \"CN\" for the Cavern."
+        }
+      ]
+    },
+    {
+      "id": "6.2.7",
+      "title": "To record the Follow activity, a character records \"F\" and the name of the character or hired leader he is following across the current day's row of his \"Activities\" section",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "He does not record any other activities. Note: Underlings cannot be followed."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Characters and hirelings can record the Follow activity only if they are in the same clearing with another character or hired leader during Birdsong. A follower can choose any character or hired leader in his clearing, whether they want to be followed or not, and even if the character or hired leader he plans to follow is hidden.",
+            "A character can record the Follow activity only if he is in a clearing. He cannot be on a roadway, \"walking the woods\", or flying (after running or flying away)."
+          ]
+        }
+      ]
+    }
+  ]
+} 

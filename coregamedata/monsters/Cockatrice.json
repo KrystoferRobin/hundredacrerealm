@@ -1,0 +1,41 @@
+{
+  "id": "775",
+  "name": "Cockatrice",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "T",
+      "fame": "8",
+      "notoriety": "8",
+      "icon_type": "cockatrice",
+      "setup_start": "Statue",
+      "monster_die": "5",
+      "base_price": "8",
+      "icon_folder": "monsters1",
+      "alt_monsters1_game": "",
+      "flying": "",
+      "setup_start_tilereq": "M",
+      "needs_init": "",
+      "denizen": "",
+      "icon_type_alt": "add-ons-Animals_Age-images-units-legendary-cockatrice",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "icon_size_alt": "1",
+      "icon_y_offset_alt": "5"
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "3",
+      "strength": "M",
+      "chit_color": "white",
+      "length": "3"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "strength": "RED",
+      "chit_color": "gray",
+      "length": "3"
+    }
+  },
+  "parts": []
+}

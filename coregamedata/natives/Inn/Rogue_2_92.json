@@ -1,0 +1,44 @@
+{
+  "id": "92",
+  "name": "Rogue 2",
+  "attributeBlocks": {
+    "this": {
+      "native": "Rogues",
+      "fame": "0",
+      "notoriety": "6",
+      "base_price": "4",
+      "vulnerability": "H",
+      "rank": "2",
+      "original_game": "",
+      "icon_type": "great_axeman",
+      "setup_start": "Inn",
+      "hire_type": "single",
+      "monster_die": "5",
+      "garrison": "",
+      "icon_folder": "natives",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "denizen": "",
+      "icon_folder_alt": "wesnoth/units/dunefolk",
+      "icon_type_alt": "explorer",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "5",
+      "strength": "H",
+      "length": "5",
+      "sharpness": "1",
+      "chit_color": "lightorange"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "3",
+      "strength": "T",
+      "length": "5",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

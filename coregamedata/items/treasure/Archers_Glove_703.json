@@ -1,0 +1,18 @@
+{
+  "id": "703",
+  "name": "Archer's Glove",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Subtract one on missile table when using bow or crossbow",
+      "rw_expansion_1": "",
+      "base_price": "8",
+      "notoriety": "5",
+      "fame": "5",
+      "facing": "face_dn",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

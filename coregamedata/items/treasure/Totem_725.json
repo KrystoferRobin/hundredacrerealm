@@ -1,0 +1,20 @@
+{
+  "id": "725",
+  "name": "Totem",
+  "attributeBlocks": {
+    "this": {
+      "base_price": "5",
+      "text": "Hire Dragonman at half cost",
+      "rw_expansion_1": "",
+      "weight": "M",
+      "treasure": "small",
+      "facing": "face_dn",
+      "half_price": "Dragonmen",
+      "fame": "20",
+      "native": "Dragonmen",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

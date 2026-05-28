@@ -1,0 +1,35 @@
+{
+  "title": "Advanced and Optional Rules",
+  "sections": [
+    {
+      "id": "10.0",
+      "title": "Advanced and Optional Rules",
+      "file": "chapter_10/10.0.json"
+    },
+    {
+      "id": "10.A",
+      "title": "Extended Character Capabilities",
+      "file": "chapter_10/10.A.json"
+    },
+    {
+      "id": "10.B",
+      "title": "Denizen Optional Rules",
+      "file": "chapter_10/10.B.json"
+    },
+    {
+      "id": "10.C",
+      "title": "Advanced Magic Rules",
+      "file": "chapter_10/10.C.json"
+    },
+    {
+      "id": "10.D",
+      "title": "Extended Game Systems",
+      "file": "chapter_10/10.D.json"
+    },
+    {
+      "id": "10.E",
+      "title": "Expanding the Realm",
+      "file": "chapter_10/10.E.json"
+    }
+  ]
+} 

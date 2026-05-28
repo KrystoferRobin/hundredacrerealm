@@ -1,0 +1,295 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Dark Elf",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn,Guard",
+      "pronoun": "he",
+      "creator": "Robin Warren",
+      "artcredit": "Casey Benn / Midjourney",
+      "meaning": "Eternal Flame",
+      "vulnerability": "M",
+      "icon_type": "dark elf",
+      "icon_folder": "custom/characters",
+      "extra_notes": "",
+      "magicuser": ""
+    },
+    "level_1": {
+      "name": "Youngling"
+    },
+    "level_2": {
+      "name": "Digger",
+      "badge_icon": "Dark_Elfbadge2",
+      "extra_cave_phase": "",
+      "advantages": {
+        "N0": "NIGHT VISION: Gains an extra phase in caves."
+      }
+    },
+    "level_3": {
+      "name": "Spirit Talker",
+      "armor": "Helmet",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "IV"
+      }
+    },
+    "level_4": {
+      "name": "Dark Elf",
+      "weapon": "Scimitar",
+      "armor": "Helmet",
+      "badge_icon": "Dark_Elfbadge4",
+      "spellcount": "1",
+      "advantages": {
+        "N0": "SHADOW SPIRITS: Only roll one die on READ RUNES in caves."
+      },
+      "diemod": {
+        "N0": "1d:readrunes:&gt;caves"
+      },
+      "spelltypes": {
+        "N0": "IV",
+        "N1": "V"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "gamerel": {
+      "lancers": "1",
+      "crone": "1",
+      "warlock": "1",
+      "order": "-1",
+      "woodfolk": "-2"
+    },
+    "relationship": {
+      "lancers": "1",
+      "crone": "1",
+      "warlock": "1",
+      "order": "-1",
+      "woodfolk": "-2"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "dark elf",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "dark elf"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "FIGHT M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "dark elf",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "5",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "dark elf"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "MOVE M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "dark elf",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "5",
+          "effort": "0",
+          "facing": "dark",
+          "icon_type": "dark elf"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "FIGHT M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "dark elf",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "dark elf"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "dark elf",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "dark elf"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "MAGIC IV5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "dark elf",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "action": "MAGIC",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "IV",
+          "icon_type": "dark elf"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "FIGHT M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "dark elf",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "icon_type": "dark elf"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "MAGIC IV2**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "dark elf",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "action": "MAGIC",
+          "speed": "2",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "IV",
+          "icon_type": "dark elf"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "MAGIC IV4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "dark elf",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "action": "MAGIC",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "IV",
+          "icon_type": "dark elf"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "FIGHT M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "dark elf",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "3",
+          "effort": "2",
+          "facing": "dark",
+          "icon_type": "dark elf"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "MAGIC V5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "dark elf",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "action": "MAGIC",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "V",
+          "icon_type": "dark elf"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "MAGIC V3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "dark elf",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "action": "MAGIC",
+          "speed": "3",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "V",
+          "icon_type": "dark elf"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

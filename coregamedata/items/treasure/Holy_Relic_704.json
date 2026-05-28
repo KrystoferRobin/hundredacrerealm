@@ -1,0 +1,20 @@
+{
+  "id": "704",
+  "name": "Holy Relic",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Prevents undead from spawning in clearing (Lich is unaffected)",
+      "rw_expansion_1": "",
+      "base_price": "2",
+      "facing": "face_dn",
+      "fame": "-5",
+      "weight": "L",
+      "notoriety": "5",
+      "author": "Expansion 1",
+      "no_undead": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

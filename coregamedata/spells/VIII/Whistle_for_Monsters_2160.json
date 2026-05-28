@@ -1,0 +1,19 @@
+{
+  "id": "2160",
+  "name": "Whistle for Monsters",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "instant",
+      "target": "sound",
+      "text": "Move sound chit to or from your hex",
+      "magic_color": "purple",
+      "move_sound": "",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

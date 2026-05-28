@@ -1,0 +1,25 @@
+{
+  "id": "218",
+  "name": "Lair",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "lair",
+      "clearing": "3",
+      "original_game": "",
+      "monster_die": "1",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "gold",
+      "icon_type": "dragon",
+      "icon_folder": "monsters",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_type_alt": "wildWyvern"
+    }
+  },
+  "parts": []
+}

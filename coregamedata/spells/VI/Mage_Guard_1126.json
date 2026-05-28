@@ -1,0 +1,20 @@
+{
+  "id": "1126",
+  "name": "Mage Guard",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "combat",
+      "target": "staff",
+      "text": "Staff blocks as an H shield",
+      "magic_color": "any",
+      "alt_monsters1_game": "",
+      "new_spells_1": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

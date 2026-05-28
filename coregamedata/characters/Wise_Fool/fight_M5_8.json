@@ -1,0 +1,18 @@
+{
+  "id": "8",
+  "name": "fight M5",
+  "attributeBlocks": {
+    "this": {
+      "action": "fight",
+      "strength": "M",
+      "speed": "5",
+      "character_chit": "",
+      "icon_type": "wise fool",
+      "icon_folder": "custom/characters",
+      "stage": "8",
+      "level": "3",
+      "effort": "0",
+      "facing": "dark"
+    }
+  }
+}

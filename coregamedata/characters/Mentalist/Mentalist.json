@@ -1,0 +1,300 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Mentalist",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn,Chapel",
+      "pronoun": "she",
+      "creator": "Kevin Shugars",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Psychic Sensitive",
+      "vulnerability": "L",
+      "icon_type": "mentalist",
+      "icon_folder": "custom/characters",
+      "magicuser": ""
+    },
+    "level_1": {
+      "name": "Palm Reader"
+    },
+    "level_2": {
+      "name": "Fortune Teller",
+      "badge_icon": "Mentalistbadge2",
+      "spellcount": "1",
+      "advantages": {
+        "N0": "CLOUDS MINDS: Rolls 1 die instead of 2 for all rolls on the HIDE table."
+      },
+      "diemod": {
+        "N0": "1d:hide:all"
+      },
+      "spelltypes": {
+        "N0": "II",
+        "N1": "III"
+      }
+    },
+    "level_3": {
+      "name": "Psychic",
+      "spellcount": "2",
+      "spelltypes": {
+        "N0": "II",
+        "N1": "III",
+        "N2": "VII"
+      }
+    },
+    "level_4": {
+      "name": "Mentalist",
+      "badge_icon": "Mentalistbadge4",
+      "spellcount": "3",
+      "advantages": {
+        "N0": "TELEPATHY: Can ENHANCED PEER into any clearing from anywhere."
+      },
+      "special_action": {
+        "N0": "ENHANCED_PEER"
+      },
+      "spelltypes": {
+        "N0": "II",
+        "N1": "III",
+        "N2": "VII",
+        "N3": "VIII"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "crone": "2",
+      "shaman": "2",
+      "lancers": "1",
+      "order": "-1"
+    },
+    "gamerel": {
+      "crone": "2",
+      "shaman": "2",
+      "lancers": "1",
+      "order": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "move L4",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "L",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "mentalist",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "mentalist",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight L3",
+      "attributeBlocks": {
+        "this": {
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "mentalist",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "FIGHT M3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "FIGHT",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "mentalist",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "magic II3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "mentalist",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "magic III4*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "4",
+          "character_chit": "",
+          "icon_type": "mentalist",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "move M3**",
+      "attributeBlocks": {
+        "this": {
+          "action": "move",
+          "strength": "M",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "mentalist",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "magic III3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "mentalist",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "III"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic VII2*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "2",
+          "character_chit": "",
+          "icon_type": "mentalist",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "magic VIII3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "mentalist",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VIII"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic II3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "mentalist",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "II"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic VII3*",
+      "attributeBlocks": {
+        "this": {
+          "action": "magic",
+          "speed": "3",
+          "character_chit": "",
+          "icon_type": "mentalist",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VII"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

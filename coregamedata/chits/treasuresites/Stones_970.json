@@ -1,0 +1,23 @@
+{
+  "id": "970",
+  "name": "Stones",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "stones",
+      "clearing": "6",
+      "monster_die": "1",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "gold",
+      "icon_type": "basilisk",
+      "icon_folder": "monsters2",
+      "rw_expansion_1": "",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "icon_type_alt": "Forgotten_Legends-images-frakcja3-dark-lizard"
+    }
+  },
+  "parts": []
+}

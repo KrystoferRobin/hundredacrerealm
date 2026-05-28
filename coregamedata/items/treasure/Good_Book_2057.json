@@ -1,0 +1,26 @@
+{
+  "id": "2057",
+  "name": "Good Book",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "10",
+      "notoriety": "5",
+      "weight": "L",
+      "magic": "I",
+      "fame": "5",
+      "book": "",
+      "print": "",
+      "scholar_price": "50",
+      "magic_other": "VII",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "item": "",
+      "super_realm": "",
+      "merchant_price": "20",
+      "priest_price": "50"
+    }
+  },
+  "parts": []
+}

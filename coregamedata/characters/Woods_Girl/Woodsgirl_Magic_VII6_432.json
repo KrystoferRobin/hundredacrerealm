@@ -1,0 +1,21 @@
+{
+  "id": "432",
+  "name": "Woodsgirl Magic VII6**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "6",
+      "character_level": "2",
+      "effort": "2",
+      "magic": "VII",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "6",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "woodsgirl",
+      "rw_expansion_1": ""
+    }
+  }
+}

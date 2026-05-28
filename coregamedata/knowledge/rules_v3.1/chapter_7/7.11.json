@@ -1,0 +1,37 @@
+{
+  "title": "The Follow Activity",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The Follow activity is a special activity that the characters can use to move as a group. It does not have a separate function of its own – it is used to do other activities. One character, native leader, or controlled monster (the 'guide') records his turn normally, and the other characters or hired or controlled denizens (the 'followers') use the Follow activity to share in his activities as he does them. (Also see Rule 6.2.7)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Doing the Follow activity changes the way an individual does his turn. If he uses the Follow activity he must use it throughout his turn; he cannot do any independent activities on the same day he uses the Follow activity."
+    },
+    {
+      "type": "paragraph",
+      "text": "Followers are assigned to follow their guides during Birdsong of each day. Important: Hirelings do not begin following as soon as they are hired. They must wait until Birdsong of the following day when they can be assigned to follow a character or hired leader."
+    },
+    {
+      "type": "paragraph",
+      "text": "When the guide's Attention chit is picked he and all of his followers become unhidden, and then he does his turn as he recorded it. Each time he does a phase of his turn, all of the individuals who are following him share in what he does."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each time the guide starts an activity, each follower has the option to stop following. If he stops following then he does not share in the activity or affect it in any way. His turn ends and he is put in the clearing on the map where the guide was when the phase began. When the guide finishes the phase the game pieces in the ex-follower's tile summon denizens in the normal manner, and the ex-follower can then block and be blocked normally. Note: This means a follower can end his turn and summon monsters in the middle of the guide's turn."
+    },
+    {
+      "type": "paragraph",
+      "text": "When the guide does an activity, each follower who is still following him shares in it as explained below: (a) When the guide does a Move activity, each follower who can do that activity moves along with him. If the follower is unable to do the move, he stops following and is left behind in the clearing that the guide is leaving. (b) When the guide does a Hide activity, the guide's result applies to all of his followers: if he hides they hide, if he fails they fail. They do not roll on the Hide Table themselves. (c) When the guide does a Search phase, all of his followers who are characters, native leaders, or controlled monsters look at any map chits he looks at, they cross off any discoveries that he crosses off, and if he finds hidden enemies then they do also. They do not share in other results – he is the sole owner of any treasures he draws. Hired non-leaders cannot do these activities. (d) The guide can use the strength of the underlings who are following him, whether the hiring character approves or not. He can use their move strength to carry items as he moves, and if their move strength or harm letter (on either side of the counter) is Tremendous, he can use them to open the Vault or the Crypt of the Knight. He cannot use them to loot the Pool or the Cairns. (e) Followers spy normally while following. Example: If the Elf is unhidden and loots the Altar while the Captain and his followers are in the clearing, the Captain and all his followers learn the location of the Altar. (f) When the guide does a Rest or Alert activity, each follower who is a character can do the activity or not, as he chooses. The followers do the activity secretly and simultaneously. Hired and controlled denizens cannot do these activities, but hired leaders who are guides can record Rest and Alert phases for the benefit of following characters. (g) When the guide does any other activities the followers do nothing. When he does a Trade or Hire activity, he is the only one who trades or hires. The followers meekly let him deal with the natives and visitors alone. When he does an Enchant activity, his followers do nothing."
+    },
+    {
+      "type": "paragraph",
+      "text": "By following a guide who has extra phases, followers can do more activities and can move farther than they could move on their own. Explanation: The members of the group are assumed to be aiding one another, with the guide blazing the trail. Example: Despite his short legs, the Dwarf can follow the Amazon for five phases a day (six if she is riding a workhorse!)."
+    },
+    {
+      "type": "paragraph",
+      "text": "When the guide's turn ends, the following stops and all of the followers are put back on the map in his clearing. Characters and hired leaders who are put back on the map cause monsters to move and summon denizens normally, and separately from the guide. Example: The Wizard and the Patrol HQ are following the Magician. The Magician ends his turn first, summoning a Dragon from the Appearance Chart to another clearing in their tile. Then, the Wizard and Patrol HQ end their turn simultaneously, summoning the Dragon to their clearing. The guide and followers do their evening activities and combat normally."
+    }
+  ]
+} 

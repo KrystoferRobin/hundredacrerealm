@@ -1,0 +1,18 @@
+{
+  "id": "2092",
+  "name": "Belt of Strength",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "16",
+      "notoriety": "6",
+      "fame": "3",
+      "text": "*'s determine force, **=T, *=H, zero=M",
+      "chit_strength": "M,H,T",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

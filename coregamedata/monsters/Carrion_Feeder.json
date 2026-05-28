@@ -1,0 +1,36 @@
+{
+  "id": "939",
+  "name": "Carrion Feeder",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "H",
+      "fame": "3",
+      "notoriety": "3",
+      "icon_type": "swampthing",
+      "setup_start": "Carrion Feeder Box",
+      "monster_die": "4",
+      "base_price": "3",
+      "icon_folder": "monsters2",
+      "rw_expansion_1": "",
+      "box_num": "1",
+      "denizen": "",
+      "icon_type_alt": "zombie-troll",
+      "icon_folder_alt": "wesnoth/units/undead",
+      "icon_size_alt": "1"
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "4",
+      "strength": "M",
+      "chit_color": "lightgreen"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "5",
+      "strength": "H",
+      "chit_color": "forestgreen"
+    }
+  },
+  "parts": []
+}

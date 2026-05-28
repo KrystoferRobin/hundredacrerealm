@@ -1,0 +1,41 @@
+{
+  "id": "2251",
+  "name": "Contorting Key",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Opens Chest, Crypt, Abbey, Library, Tomb and Vault, when energized.",
+      "base_price": "5",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "magic_color": "any",
+      "cast_spell_on_init": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "2252",
+      "name": "Enchant Key",
+      "attributeBlocks": {
+        "this": {
+          "duration": "permanent",
+          "target": "spells item",
+          "text": "Opens Chest, Crypt, Abbey, Library, Tomb and Vault",
+          "magic_color": "any",
+          "host_okay": "",
+          "spell": "*",
+          "awakened": "",
+          "no_cancel": "",
+          "benevolent": "",
+          "super_realm": "",
+          "no_expire": "",
+          "enchant_key": "",
+          "no_incantation_tie": "",
+          "super_realm_treasure": ""
+        }
+      }
+    }
+  ]
+}

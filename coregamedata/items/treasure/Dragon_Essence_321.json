@@ -1,0 +1,23 @@
+{
+  "id": "321",
+  "name": "Dragon Essence",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "fame": "-10",
+      "notoriety": "20",
+      "great": "",
+      "text": "Treat like SMOKE chit",
+      "warning": "smoke",
+      "base_price": "3",
+      "original_game": "",
+      "color_source": "purple",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "nosecret": "",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

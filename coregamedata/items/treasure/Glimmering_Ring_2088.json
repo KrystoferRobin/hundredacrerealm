@@ -1,0 +1,23 @@
+{
+  "id": "2088",
+  "name": "Glimmering Ring",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "15",
+      "notoriety": "10",
+      "magic": "III",
+      "artifact": "",
+      "print": "",
+      "scholar_price": "20",
+      "shaman_price": "20",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "item": "",
+      "super_realm": "",
+      "merchant_price": "20"
+    }
+  },
+  "parts": []
+}

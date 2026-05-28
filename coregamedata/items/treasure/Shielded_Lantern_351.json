@@ -1,0 +1,19 @@
+{
+  "id": "351",
+  "name": "Shielded Lantern",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "8",
+      "weight": "L",
+      "text": "Extra phase in caves",
+      "original_game": "",
+      "extra_cave_phase": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

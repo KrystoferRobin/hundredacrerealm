@@ -1,0 +1,28 @@
+{
+  "title": "Spoils of Combat",
+  "content": [
+    {
+      "type": "list",
+      "items": [
+        "When a character kills a monster, he immediately gains recorded Fame and Notoriety points. He gets the bounty points for the monster, multiplied by the number of monsters he has killed that day (including the monster he just killed).",
+        "If two or more characters kill the same monster simultaneously, they divide the bounty points equally, retaining fractions, and each character counts it as a kill: he gains his share of the bounty points multiplied by his number of kills (including the shared monster).",
+        "Characters share a kill only if their attacks are perfectly simultaneous, equal in attack time and length. If one character hits first, he gets all the points and the characters who hit later get nothing.",
+        "Each character or native that a character kills counts as a kill just like a monster. He adds it to his line of kills for the day, and it multiplies the Fame and Notoriety he gets when he kills a denizen.",
+        "When a character kills a native, he gains its Notoriety bounty, multiplied by the number of kills he made that day (including the native he just killed), and he gains the native’s Gold bounty, without multiplication. Natives do not have a Fame bounty.",
+        "When he kills another character, he takes the victim’s recorded Notoriety, without multiplication. (If his victim has negative Notoriety recorded, he loses Notoriety.) He does not get his victim’s Fame points – when a character is killed, his Fame just vanishes. The victim does count as a kill.",
+        "When a spell kills a character or denizen, the spellcaster counts it as his kill and gets the points for it. If he kills several individuals simultaneously, he calculates their points as if he had killed them one at a time, starting with the individual worth the most points (without multiplication) and ending with the one worth the least.",
+        "When a character kills a character or hired leader, he also takes any belongings and recorded gold the victim has with him. When a character is killed, his recorded spells vanish. The killer does not get them.",
+        "When a character kills a horse, he gets nothing. Horses do not count as kills except for the purpose of extending rounds of combat in a clearing (8.8.3).",
+        "When a hireling kills a victim, the hiring character instantly gets the Fame and Notoriety points for it, no matter where he is on the map. The character cannot count the victim as a kill; he can count a kill only if he kills it himself.",
+        "When any hireling kills a monster, the hiring character gets its basic Fame and Notoriety bounty, without multiplication. When a hireling kills a native, the hiring character gets its basic Notoriety bounty, without multiplication. When a hireling kills a character, the hiring character gets the victim’s recorded Notoriety, without multiplication.",
+        "In addition, when a hired leader or controlled monster kills a native, the leader adds its Gold bounty to his recorded gold. When he kills a character or hired leader, he also takes any recorded gold and belongings the victim has with him. He keeps the belongings and gold for the hiring character. When an underling or hired monster kills a victim, no one gets any gold and the victim’s belongings are abandoned in the clearing.",
+        "When a monster kills a character or hired leader, the victim’s gold vanishes and his belongings are abandoned in the clearing.",
+        "When any unhired native (whether he is a leader or not) kills a character or hired leader, the victim’s gold vanishes and his belongings are put in the native’s box on the Setup Card.",
+        "When a monster or native is killed, it is removed from play until it regenerates and returns to play at the end of a week. Visitors can never be killed.",
+        "When a hired native is killed, he instantly becomes unhired, and the hiring character loses Notoriety points equal to the native’s Notoriety bounty.",
+        "When an unhired leader is killed, his group’s belongings are abandoned in his clearing, in the same order they are stacked in the group’s box. When a hired leader is killed, his group’s belongings remain on the Setup Card, out of play, until he regenerates.",
+        "When a character is killed, his hired leaders keep the belongings they are carrying; these belongings are placed on the Setup Card with his group’s belongings."
+      ]
+    }
+  ]
+} 

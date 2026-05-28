@@ -1,0 +1,21 @@
+{
+  "id": "1123",
+  "name": "Summon Aid",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "day",
+      "target": "character",
+      "text": "Summon a member of a FRIENDLY native group to your aid, but don't get him killed",
+      "magic_color": "any",
+      "alt_monsters1_game": "",
+      "new_spells_1": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": "",
+      "summon": "natives"
+    }
+  },
+  "parts": []
+}

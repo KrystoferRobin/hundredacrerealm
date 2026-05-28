@@ -1,0 +1,18 @@
+{
+  "id": "6",
+  "name": "fight L3**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_type": "vizier",
+      "icon_folder": "custom/characters",
+      "stage": "6",
+      "level": "2",
+      "action": "fight",
+      "strength": "L",
+      "speed": "3",
+      "effort": "2",
+      "facing": "dark"
+    }
+  }
+}

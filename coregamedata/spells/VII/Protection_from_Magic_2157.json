@@ -1,0 +1,29 @@
+{
+  "id": "2157",
+  "name": "Protection from Magic",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "phase",
+      "target": "character",
+      "text": "Immune to spells for one phase",
+      "magic_color": "gold",
+      "host_okay": "",
+      "magic_protection": "",
+      "nullify": "",
+      "learnable": "",
+      "super_realm": ""
+    },
+    "phase_chit": {
+      "phase_chit": "",
+      "text": "Protection from Magic"
+    },
+    "phase_chit_effects": {
+      "nullify": "",
+      "magic_protection": "",
+      "magic_protection_extended": ""
+    }
+  },
+  "parts": []
+}

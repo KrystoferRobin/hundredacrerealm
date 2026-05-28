@@ -1,0 +1,22 @@
+{
+  "id": "300",
+  "name": "Hurricane Winds",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "spell": "IV",
+      "duration": "move",
+      "target": "individual + hex",
+      "text": "Must FLY T1 one hex (mountain only)",
+      "magic_color": "purple",
+      "original_game": "",
+      "clearing_req": "M",
+      "blows_target": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

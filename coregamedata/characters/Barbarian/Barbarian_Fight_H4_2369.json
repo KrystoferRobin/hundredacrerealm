@@ -1,0 +1,19 @@
+{
+  "id": "2369",
+  "name": "Barbarian Fight H4**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "strength": "H",
+      "speed": "4",
+      "character_level": "2",
+      "stage": "5",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "barbarian",
+      "super_realm": "",
+      "effort": "2"
+    }
+  }
+}

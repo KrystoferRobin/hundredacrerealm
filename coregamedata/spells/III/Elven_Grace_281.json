@@ -1,0 +1,27 @@
+{
+  "id": "281",
+  "name": "Elven Grace",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "combat",
+      "target": "individual",
+      "text": "Change MOVE L=1, M=2, H=3, T=4",
+      "magic_color": "gold",
+      "original_game": "",
+      "l": "1",
+      "m": "2",
+      "h": "3",
+      "t": "4",
+      "x": "5",
+      "move_speed_change": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

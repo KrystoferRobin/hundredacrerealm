@@ -1,0 +1,9 @@
+{
+  "title": "BEGINNING A NEW DAY",
+  "sections": [
+    { "id": "6.0", "title": "BEGINNING A NEW DAY", "file": "6.0.json" },
+    { "id": "6.1", "title": "DAY ADVANCEMENT", "file": "6.1.json" },
+    { "id": "6.2", "title": "BIRDSONG", "file": "6.2.json" },
+    { "id": "6.3", "title": "SUNRISE", "file": "6.3.json" }
+  ]
+} 

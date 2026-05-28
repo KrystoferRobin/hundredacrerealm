@@ -1,0 +1,19 @@
+{
+  "id": "2373",
+  "name": "Barbarian Fight T5*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "strength": "T",
+      "speed": "5",
+      "character_level": "3",
+      "stage": "8",
+      "level": "3",
+      "icon_folder": "characters",
+      "icon_type": "barbarian",
+      "super_realm": "",
+      "effort": "1"
+    }
+  }
+}

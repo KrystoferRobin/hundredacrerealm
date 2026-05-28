@@ -1,0 +1,29 @@
+{
+  "id": "2006",
+  "name": "Axe",
+  "attributeBlocks": {
+    "this": {
+      "weight": "M",
+      "length": "2",
+      "base_price": "4",
+      "throwable": "",
+      "weapon": "",
+      "icon_type": "axe",
+      "icon_folder": "weapons",
+      "item": "",
+      "super_realm": ""
+    },
+    "unalerted": {
+      "attack_speed": "5",
+      "strength": "M",
+      "sharpness": "1",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "strength": "M",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

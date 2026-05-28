@@ -1,0 +1,22 @@
+{
+  "id": "1226",
+  "name": "Cairns",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "cairns",
+      "clearing": "5",
+      "super_realm": "",
+      "monster_die": "5",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "search": "fatigue_asterisk",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "purple",
+      "icon_type": "spiderQueen",
+      "icon_folder": "wesnoth/units"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "277",
+  "name": "Exorcise",
+  "spellLevel": "I",
+  "attributeBlocks": {
+    "this": {
+      "spell": "I",
+      "duration": "instant",
+      "target": "clearing",
+      "text": "Remove all magic demons and imps",
+      "magic_color": "white",
+      "original_game": "",
+      "exorcise": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

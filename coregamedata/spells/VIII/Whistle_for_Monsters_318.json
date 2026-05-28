@@ -1,0 +1,22 @@
+{
+  "id": "318",
+  "name": "Whistle for Monsters",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "instant",
+      "target": "sound",
+      "text": "Move sound chit to or from your hex",
+      "magic_color": "purple",
+      "original_game": "",
+      "tile_req": "6",
+      "move_sound": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

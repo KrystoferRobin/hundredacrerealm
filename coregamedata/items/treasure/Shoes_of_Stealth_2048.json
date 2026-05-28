@@ -1,0 +1,19 @@
+{
+  "id": "2048",
+  "name": "Shoes of Stealth",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "MOVE L3, plus HIDE 1 die",
+      "base_price": "7",
+      "notoriety": "2",
+      "move_speed": "3",
+      "strength": "L",
+      "boots": "",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

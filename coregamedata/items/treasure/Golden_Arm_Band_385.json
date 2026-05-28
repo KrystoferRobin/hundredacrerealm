@@ -1,0 +1,27 @@
+{
+  "id": "385",
+  "name": "Golden Arm Band",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "15",
+      "weight": "L",
+      "fame": "3",
+      "native": "Lancers",
+      "text": "M armor versus SWING",
+      "original_game": "",
+      "armor": "special",
+      "armor_box": "2",
+      "vulnerability": "M",
+      "armor_row": "1",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "destroyed": {
+      "base_price": "11"
+    }
+  },
+  "parts": []
+}

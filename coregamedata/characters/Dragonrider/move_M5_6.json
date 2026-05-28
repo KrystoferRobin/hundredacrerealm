@@ -1,0 +1,22 @@
+{
+  "id": "6",
+  "name": "move M5",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "move",
+      "speed": "5",
+      "strength": "M",
+      "effort": "0",
+      "character_level": "2",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "6",
+      "level": "2",
+      "icon_folder": "custom/characters",
+      "icon_type": "dragonrider",
+      "rw_expansion_1": "",
+      "facing": "dark"
+    }
+  }
+}

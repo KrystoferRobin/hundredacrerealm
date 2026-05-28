@@ -1,0 +1,36 @@
+{
+  "id": "1532",
+  "name": "Giant Bat",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "H",
+      "fame": "3",
+      "notoriety": "3",
+      "icon_type": "dreadBat",
+      "setup_start": "Bats Box",
+      "box_num": "4",
+      "monster_die": "6",
+      "flying": "",
+      "base_price": "3",
+      "icon_folder": "wesnoth/units",
+      "denizen": "",
+      "super_realm": "",
+      "icon_size": "1.2",
+      "bat": ""
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "2",
+      "strength": "M",
+      "chit_color": "lightblue"
+    },
+    "dark": {
+      "move_speed": "2",
+      "attack_speed": "3",
+      "strength": "M",
+      "chit_color": "blue"
+    }
+  },
+  "parts": []
+}

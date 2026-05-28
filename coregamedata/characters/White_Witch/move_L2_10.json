@@ -1,0 +1,18 @@
+{
+  "id": "10",
+  "name": "move L2**",
+  "attributeBlocks": {
+    "this": {
+      "action": "move",
+      "strength": "L",
+      "speed": "2",
+      "character_chit": "",
+      "icon_type": "white witch",
+      "icon_folder": "custom/characters",
+      "stage": "10",
+      "level": "4",
+      "effort": "2",
+      "facing": "dark"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "1178",
+  "name": "Sleep",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "instant",
+      "target": "clearing",
+      "text": "End combat in clearing",
+      "magic_color": "gold",
+      "cease_combat": "",
+      "host_okay": "",
+      "new_spells_2": "",
+      "learnable": "",
+      "author": "Expansion 1"
+    }
+  },
+  "parts": []
+}

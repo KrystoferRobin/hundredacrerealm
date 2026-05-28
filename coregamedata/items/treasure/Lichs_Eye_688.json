@@ -1,0 +1,20 @@
+{
+  "id": "688",
+  "name": "Lich's Eye",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "5",
+      "text": "Gain an additional SP phase",
+      "rw_expansion_1": "",
+      "notoriety": "5",
+      "native": "Magic Guild",
+      "fame": "14",
+      "weight": "L",
+      "facing": "face_dn",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,295 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Vizier",
+  "attributeBlocks": {
+    "this": {
+      "custom_character": "",
+      "character": "",
+      "facing": "dark",
+      "start": "Inn,Chapel",
+      "pronoun": "he",
+      "creator": "Robin Warren",
+      "artcredit": "East Paladin Gallery / Midjourney",
+      "meaning": "Snake",
+      "vulnerability": "M",
+      "icon_type": "vizier",
+      "icon_folder": "custom/characters",
+      "extra_notes": "",
+      "magicuser": ""
+    },
+    "level_1": {
+      "name": "Brat"
+    },
+    "level_2": {
+      "name": "Bully",
+      "badge_icon": "Vizierbadge2",
+      "advantages": {
+        "N0": "SNAKE TONGUE: The Vizier learned the tongue of the snakes early in life, and thus knows how to talk his way out of trouble with these monsters.  As such, he cannot attack or be attacked by any Serpent or Viper."
+      },
+      "monster_immunity": {
+        "N0": "Viper",
+        "N1": "H Serpent",
+        "N2": "T Serpent"
+      }
+    },
+    "level_3": {
+      "name": "Adviser",
+      "spellcount": "1",
+      "spelltypes": {
+        "N0": "VI"
+      }
+    },
+    "level_4": {
+      "name": "Vizier",
+      "weapon": "Staff",
+      "spellcount": "2",
+      "badge_icon": "Vizierbadge4",
+      "spelltypes": {
+        "N0": "IV",
+        "N1": "VI"
+      },
+      "advantages": {
+        "N0": "SNAKE WHISPER: Has a Viper companion as a permanent hireling.  If the companion is killed, it is lost for the remainder of the game, or until you achieve a new level (development rules)."
+      },
+      "companion_name": {
+        "N0": "Viper"
+      }
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "relationship": {
+      "rogues": "-1",
+      "warlock": "1",
+      "lancers": "1",
+      "guard": "-1"
+    },
+    "gamerel": {
+      "rogues": "-1",
+      "warlock": "1",
+      "lancers": "1",
+      "guard": "-1"
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "MOVE M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_type": "vizier",
+          "icon_folder": "custom/characters",
+          "stage": "1",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "5",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_type": "vizier",
+          "icon_folder": "custom/characters",
+          "stage": "2",
+          "level": "1",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "fight L5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_type": "vizier",
+          "icon_folder": "custom/characters",
+          "stage": "3",
+          "level": "1",
+          "action": "fight",
+          "strength": "L",
+          "speed": "5",
+          "effort": "0",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "MOVE M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_type": "vizier",
+          "icon_folder": "custom/characters",
+          "stage": "4",
+          "level": "2",
+          "action": "MOVE",
+          "strength": "M",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "fight L4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_type": "vizier",
+          "icon_folder": "custom/characters",
+          "stage": "5",
+          "level": "2",
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "fight L3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_type": "vizier",
+          "icon_folder": "custom/characters",
+          "stage": "6",
+          "level": "2",
+          "action": "fight",
+          "strength": "L",
+          "speed": "3",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "magic VI5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_type": "vizier",
+          "icon_folder": "custom/characters",
+          "stage": "7",
+          "level": "3",
+          "action": "magic",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VI"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "magic VI4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_type": "vizier",
+          "icon_folder": "custom/characters",
+          "stage": "8",
+          "level": "3",
+          "action": "magic",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VI"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "magic VI5*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_type": "vizier",
+          "icon_folder": "custom/characters",
+          "stage": "9",
+          "level": "3",
+          "action": "magic",
+          "speed": "5",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "VI"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "fight M4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_type": "vizier",
+          "icon_folder": "custom/characters",
+          "stage": "10",
+          "level": "4",
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "effort": "2",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "magic IV4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_type": "vizier",
+          "icon_folder": "custom/characters",
+          "stage": "11",
+          "level": "4",
+          "action": "magic",
+          "speed": "4",
+          "effort": "1",
+          "facing": "dark",
+          "magic": "IV"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "magic VI3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "icon_type": "vizier",
+          "icon_folder": "custom/characters",
+          "stage": "12",
+          "level": "4",
+          "action": "magic",
+          "speed": "3",
+          "effort": "2",
+          "facing": "dark",
+          "magic": "VI"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

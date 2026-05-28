@@ -1,0 +1,42 @@
+{
+  "id": "1881",
+  "name": "Mercenary 1",
+  "attributeBlocks": {
+    "this": {
+      "native": "Mercenaries",
+      "fame": "0",
+      "notoriety": "6",
+      "base_price": "4",
+      "vulnerability": "H",
+      "rank": "1",
+      "icon_type": "Rashy_Era-human-chevalier-teuton",
+      "setup_start": "Mercenary Dwelling",
+      "hire_type": "group",
+      "icon_folder": "wesnoth/units/addons",
+      "denizen": "",
+      "super_realm": "",
+      "native_die": "1",
+      "clan": "4",
+      "armored": "",
+      "icon_size": "0.9",
+      "native_name": "Swordsman"
+    },
+    "light": {
+      "move_speed": "6",
+      "chit_color": "lightblue",
+      "attack_speed": "4",
+      "length": "8",
+      "strength": "T",
+      "sharpness": "1"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "5",
+      "strength": "H",
+      "length": "8",
+      "chit_color": "blue",
+      "sharpness": "1"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "1173",
+  "name": "Flame Sword",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "combat",
+      "target": "character",
+      "text": "Use conjured flame sword in combat (L**)",
+      "magic_color": "purple",
+      "host_okay": "",
+      "new_spells_2": "",
+      "learnable": "",
+      "author": "Expansion 1"
+    },
+    "magic_weapon": {
+      "weight": "L",
+      "length": "7",
+      "magic": "",
+      "icon_type": "broadsword",
+      "icon_folder": "weapons",
+      "name": "Flame Sword",
+      "strength": "L",
+      "sharpness": "2"
+    }
+  },
+  "parts": []
+}

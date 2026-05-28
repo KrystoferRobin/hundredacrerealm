@@ -1,0 +1,73 @@
+{
+  "id": "68",
+  "name": "Bashkar 5",
+  "attributeBlocks": {
+    "this": {
+      "native": "Bashkars",
+      "fame": "0",
+      "notoriety": "4",
+      "base_price": "2",
+      "vulnerability": "L",
+      "rank": "5",
+      "original_game": "",
+      "icon_type": "raider",
+      "monster_die": "5",
+      "setup_start": "Bashkar Dwelling",
+      "hire_type": "group",
+      "icon_folder": "natives",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "denizen": "",
+      "icon_folder_alt": "wesnoth/units/human-outlaws",
+      "icon_type_alt": "footpad+female",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "2",
+      "strength": "L",
+      "length": "3",
+      "sharpness": "1",
+      "chit_color": "lightorange"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "2",
+      "strength": "L",
+      "length": "3",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": [
+    {
+      "id": "110",
+      "name": "Bashkar Pony 5",
+      "attributeBlocks": {
+        "this": {
+          "native": "Bashkar",
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "original_game": "",
+          "activated": "",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "icon_folder_alt": "wesnoth/units/monsters",
+          "icon_type_alt": "horse",
+          "icon_size_alt": "1"
+        },
+        "trot": {
+          "move_speed": "5",
+          "strength": "L",
+          "chit_color": "pink"
+        },
+        "gallop": {
+          "move_speed": "2",
+          "strength": "M",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

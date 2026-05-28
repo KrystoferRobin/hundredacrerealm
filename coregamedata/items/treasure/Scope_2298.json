@@ -1,0 +1,19 @@
+{
+  "id": "2298",
+  "name": "Scope",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "text": "-1 to Missile Table rolls (excluding Spells)",
+      "base_price": "19",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "notoriety": "5",
+      "fame": "10",
+      "native": "Soldiers"
+    }
+  },
+  "parts": []
+}

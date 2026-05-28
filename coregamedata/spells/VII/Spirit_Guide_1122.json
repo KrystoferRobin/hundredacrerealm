@@ -1,0 +1,21 @@
+{
+  "id": "1122",
+  "name": "Spirit Guide",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "day",
+      "target": "character",
+      "text": "Travel along secret paths and passages, but learn none of them",
+      "magic_color": "any",
+      "spirit_guide": "",
+      "alt_monsters1_game": "",
+      "new_spells_1": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

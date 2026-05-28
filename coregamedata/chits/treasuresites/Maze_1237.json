@@ -1,0 +1,21 @@
+{
+  "id": "1237",
+  "name": "Maze",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "maze",
+      "clearing": "3",
+      "super_realm": "",
+      "monster_die": "6",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "brown",
+      "icon_type": "minotaurKing",
+      "icon_folder": "wesnoth/units"
+    }
+  },
+  "parts": []
+}

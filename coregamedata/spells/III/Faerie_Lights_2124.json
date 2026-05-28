@@ -1,0 +1,23 @@
+{
+  "id": "2124",
+  "name": "Faerie Lights",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "day",
+      "target": "magic(III,VII)",
+      "text": "Change MAGIC III to II and VII to VI",
+      "magic_color": "gold",
+      "iii": "II",
+      "vii": "VI",
+      "magic_change": "",
+      "host_okay": "",
+      "benevolent": "",
+      "learnable": "",
+      "super_realm": "",
+      "targets_non_magic_changed_chits": ""
+    }
+  },
+  "parts": []
+}

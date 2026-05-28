@@ -1,0 +1,33 @@
+{
+  "id": "1500",
+  "name": "Wolf",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "0",
+      "notoriety": "1",
+      "icon_type": "direwolf",
+      "setup_start": "Wolves Box",
+      "monster_die": "3",
+      "base_price": "1",
+      "icon_folder": "wesnoth/units/monsters",
+      "denizen": "",
+      "super_realm": "",
+      "icon_size": "0.9"
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "5",
+      "strength": "M",
+      "chit_color": "lightgreen"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "L",
+      "chit_color": "forestgreen"
+    }
+  },
+  "parts": []
+}

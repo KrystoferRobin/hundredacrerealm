@@ -1,0 +1,21 @@
+{
+  "title": "The Trade Activity",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "When a character or hired leader trades with native leaders and visitors, he can get recorded gold by selling belongings to them, and he can spend recorded gold to buy their belongings. Each native leader and visitor owns the belongings in his box on the Setup Card, and he always has these belongings with him, ready to trade (his methods for transporting these belongings are not represented in the game). Natives and visitors also have an unlimited amount of gold to spend (this gold is not recorded anywhere, it just appears when they buy something)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The leader of each native group is the only one who can trade, even when the group is scattered. When he is killed, no one in the group can trade."
+    },
+    {
+      "type": "paragraph",
+      "text": "Characters cannot trade with hired leaders using a Trade phase. When a leader is hired, his group's belongings become unavailable for trading and he has only the gold and items he has acquired since being hired, if any."
+    },
+    {
+      "type": "paragraph",
+      "text": "A hired leader can use the gold and belongings he has acquired to trade on behalf of the hiring character, using the character's trading relationships. Any belongings he obtains are put with the belongings he is carrying and any gold he obtains is recorded on his sheet, but they belong to the hiring character. Any boons he accepts or repays affect the character's trading relationships. Controlled monsters cannot trade with native leaders or visitors."
+    }
+  ]
+} 

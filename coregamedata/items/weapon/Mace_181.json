@@ -1,0 +1,28 @@
+{
+  "id": "181",
+  "name": "Mace",
+  "attributeBlocks": {
+    "this": {
+      "weight": "M",
+      "length": "1",
+      "base_price": "6",
+      "weapon": "",
+      "original_game": "",
+      "icon_type": "mace",
+      "alt_monsters1_game": "",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "unalerted": {
+      "strength": "M",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "attack_speed": "3",
+      "strength": "M",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

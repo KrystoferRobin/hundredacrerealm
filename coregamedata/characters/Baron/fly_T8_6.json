@@ -1,0 +1,18 @@
+{
+  "id": "6",
+  "name": "fly T8**",
+  "attributeBlocks": {
+    "this": {
+      "action": "fly",
+      "strength": "T",
+      "speed": "8",
+      "character_chit": "",
+      "icon_type": "baron",
+      "icon_folder": "custom/characters",
+      "stage": "6",
+      "level": "2",
+      "effort": "2",
+      "facing": "dark"
+    }
+  }
+}

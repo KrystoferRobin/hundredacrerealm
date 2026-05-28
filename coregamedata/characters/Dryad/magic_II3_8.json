@@ -1,0 +1,18 @@
+{
+  "id": "8",
+  "name": "magic II3**",
+  "attributeBlocks": {
+    "this": {
+      "action": "magic",
+      "speed": "3",
+      "character_chit": "",
+      "icon_type": "dryad",
+      "icon_folder": "custom/characters",
+      "stage": "8",
+      "level": "3",
+      "effort": "2",
+      "facing": "dark",
+      "magic": "II"
+    }
+  }
+}

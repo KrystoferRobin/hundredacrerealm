@@ -1,0 +1,21 @@
+{
+  "id": "540",
+  "name": "Dwarf Fight H4**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "speed": "4",
+      "strength": "H",
+      "effort": "2",
+      "character_level": "2",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "6",
+      "level": "2",
+      "icon_folder": "characters",
+      "icon_type": "dwarf",
+      "rw_expansion_1": ""
+    }
+  }
+}

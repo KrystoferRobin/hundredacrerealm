@@ -1,0 +1,21 @@
+{
+  "id": "1230",
+  "name": "Den",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "den",
+      "clearing": "2",
+      "super_realm": "",
+      "monster_die": "2",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "green",
+      "icon_type": "seaSerpent",
+      "icon_folder": "wesnoth/units"
+    }
+  },
+  "parts": []
+}

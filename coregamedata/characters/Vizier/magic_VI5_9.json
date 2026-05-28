@@ -1,0 +1,18 @@
+{
+  "id": "9",
+  "name": "magic VI5*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_type": "vizier",
+      "icon_folder": "custom/characters",
+      "stage": "9",
+      "level": "3",
+      "action": "magic",
+      "speed": "5",
+      "effort": "1",
+      "facing": "dark",
+      "magic": "VI"
+    }
+  }
+}

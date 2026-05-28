@@ -1,0 +1,22 @@
+{
+  "id": "2213",
+  "name": "Control Horse",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "permanent",
+      "target": "active horse",
+      "text": "Horse is placed as active item. Spell is broken when horse leaves active inventory.",
+      "magic_color": "gold",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "benevolent_hired": "",
+      "break_if_inert": "",
+      "control_horse": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,355 @@
+{
+  "id": "1287",
+  "name": "Settlement",
+  "attributeBlocks": {
+    "this": {
+      "dwelling": "settlement",
+      "warning": "smoke",
+      "tile_type": "H",
+      "super_realm": "",
+      "print": "",
+      "icon_type": "human-city4",
+      "ts_section": "dwellings",
+      "ts_color": "tan",
+      "icon_folder": "wesnoth/buildings",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1838",
+      "name": "Mage 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Mages",
+          "fame": "0",
+          "notoriety": "5",
+          "base_price": "4",
+          "vulnerability": "M",
+          "rank": "1",
+          "icon_type": "elementalist-idle-air3",
+          "setup_start": "Settlement",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/skykingdom-elementalists",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "3",
+          "clan": "4",
+          "armored": "",
+          "icon_size": "0.9",
+          "native_name": "Caster"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "2",
+          "length": "13",
+          "chit_color": "lightorange",
+          "magic_type": "IV",
+          "attack_spell": "Ice Bolt"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1839",
+      "name": "Mage 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Mages",
+          "fame": "0",
+          "notoriety": "5",
+          "base_price": "4",
+          "vulnerability": "M",
+          "rank": "2",
+          "icon_type": "elementalist-idle-water2",
+          "setup_start": "Settlement",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/skykingdom-elementalists",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "3",
+          "clan": "4",
+          "armored": "",
+          "icon_size": "0.9",
+          "native_name": "Caster"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "2",
+          "length": "13",
+          "chit_color": "lightorange",
+          "magic_type": "IV",
+          "attack_spell": "Ice Bolt"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1840",
+      "name": "Mage 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Mages",
+          "fame": "0",
+          "notoriety": "5",
+          "base_price": "4",
+          "vulnerability": "M",
+          "rank": "3",
+          "icon_type": "mage-of-water-attack-magic2",
+          "setup_start": "Settlement",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/skykingdom-elementalists",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "3",
+          "clan": "4",
+          "armored": "",
+          "icon_size": "0.9",
+          "native_name": "Caster"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "2",
+          "length": "13",
+          "chit_color": "lightorange",
+          "magic_type": "IV",
+          "attack_spell": "Ice Bolt"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1841",
+      "name": "Mage HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Mages",
+          "fame": "0",
+          "notoriety": "5",
+          "base_price": "4",
+          "vulnerability": "M",
+          "rank": "HQ",
+          "icon_type": "master-of-elements-magic3",
+          "setup_start": "Settlement",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/skykingdom-elementalists",
+          "commerce": "N",
+          "denizen": "",
+          "super_realm": "",
+          "native_die": "3",
+          "clan": "4",
+          "armored": "",
+          "icon_size": "0.9",
+          "native_name": "Caster"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "2",
+          "length": "13",
+          "chit_color": "lightorange",
+          "magic_type": "IV",
+          "attack_spell": "Ice Bolt"
+        },
+        "dark": {
+          "move_speed": "4",
+          "attack_speed": "3",
+          "strength": "M",
+          "length": "9",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1983",
+      "name": "Shield",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "shield": "",
+          "armor_choice": "",
+          "armor": "",
+          "icon_type": "shield",
+          "facing": "dark",
+          "armor_row": "1",
+          "ret_dw": "House",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": ""
+        },
+        "intact": {
+          "base_price": "7",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "5",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "1984",
+      "name": "Shield",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "shield": "",
+          "armor_choice": "",
+          "armor": "",
+          "icon_type": "shield",
+          "facing": "dark",
+          "armor_row": "1",
+          "ret_dw": "House",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": ""
+        },
+        "intact": {
+          "base_price": "7",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "5",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "1986",
+      "name": "Breastplate",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "armor_swing": "",
+          "armor_thrust": "",
+          "armor": "",
+          "icon_type": "breastplate",
+          "facing": "dark",
+          "armor_row": "2",
+          "ret_dw": "Guard",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "breastplate": ""
+        },
+        "intact": {
+          "base_price": "9",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "6",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "1987",
+      "name": "Breastplate",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "armor_swing": "",
+          "armor_thrust": "",
+          "armor": "",
+          "icon_type": "breastplate",
+          "facing": "dark",
+          "armor_row": "2",
+          "ret_dw": "Guard",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "breastplate": ""
+        },
+        "intact": {
+          "base_price": "9",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "6",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "1990",
+      "name": "Helmet",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "armor_smash": "",
+          "armor": "",
+          "icon_type": "helmet",
+          "facing": "dark",
+          "armor_row": "2",
+          "ret_dw": "House",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "helmet": ""
+        },
+        "intact": {
+          "base_price": "5",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "3",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "1991",
+      "name": "Helmet",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "M",
+          "weight": "M",
+          "armor_smash": "",
+          "armor": "",
+          "icon_type": "helmet",
+          "facing": "dark",
+          "armor_row": "2",
+          "ret_dw": "House",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "helmet": ""
+        },
+        "intact": {
+          "base_price": "5",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "3",
+          "chit_color": "white"
+        }
+      }
+    }
+  ]
+}

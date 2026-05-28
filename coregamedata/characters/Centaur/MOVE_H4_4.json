@@ -1,0 +1,18 @@
+{
+  "id": "4",
+  "name": "MOVE H4**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "centaur",
+      "icon_folder": "custom/characters",
+      "stage": "4",
+      "level": "2",
+      "action": "MOVE",
+      "strength": "H",
+      "speed": "4",
+      "effort": "2",
+      "facing": "dark",
+      "icon_type": "centaur"
+    }
+  }
+}

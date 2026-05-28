@@ -1,0 +1,29 @@
+{
+  "id": "1966",
+  "name": "Great Axe",
+  "attributeBlocks": {
+    "this": {
+      "weight": "H",
+      "length": "5",
+      "base_price": "8",
+      "two_handed": "",
+      "weapon": "",
+      "icon_type": "great_axe",
+      "icon_folder": "weapons",
+      "item": "",
+      "super_realm": ""
+    },
+    "unalerted": {
+      "strength": "H",
+      "sharpness": "1",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "attack_speed": "4",
+      "strength": "H",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

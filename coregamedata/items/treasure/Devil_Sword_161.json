@@ -1,0 +1,34 @@
+{
+  "id": "161",
+  "name": "Devil Sword",
+  "attributeBlocks": {
+    "this": {
+      "weight": "H",
+      "length": "7",
+      "fame": "0",
+      "notoriety": "15",
+      "base_price": "20",
+      "magic": "",
+      "weapon": "",
+      "original_game": "",
+      "icon_type": "broadsword",
+      "alt_monsters1_game": "",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "unalerted": {
+      "attack_speed": "4",
+      "strength": "H",
+      "sharpness": "1",
+      "chit_color": "yellow"
+    },
+    "alerted": {
+      "attack_speed": "3",
+      "strength": "H",
+      "sharpness": "1",
+      "chit_color": "gold"
+    }
+  },
+  "parts": []
+}

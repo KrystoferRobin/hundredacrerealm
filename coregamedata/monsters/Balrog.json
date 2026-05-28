@@ -1,0 +1,43 @@
+{
+  "id": "773",
+  "name": "Balrog",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "H",
+      "fame": "10",
+      "notoriety": "10",
+      "icon_type": "balrog",
+      "setup_start": "Shrine",
+      "monster_die": "2",
+      "base_price": "10",
+      "icon_folder": "monsters1",
+      "alt_monsters1_game": "",
+      "flying": "",
+      "setup_start_tilereq": "C",
+      "needs_init": "",
+      "armored": "",
+      "denizen": "",
+      "icon_type_alt": "Reign_of_the_Lords-drakes-apocalypse",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "icon_size_alt": "0.8",
+      "icon_y_offset_alt": "5"
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "2",
+      "chit_color": "white",
+      "magic_type": "V",
+      "length": "17",
+      "attack_spell": "powerofthepit"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "3",
+      "strength": "RED",
+      "chit_color": "red",
+      "pins": ""
+    }
+  },
+  "parts": []
+}

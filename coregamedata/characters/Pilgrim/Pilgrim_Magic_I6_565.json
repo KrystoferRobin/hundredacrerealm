@@ -1,0 +1,21 @@
+{
+  "id": "565",
+  "name": "Pilgrim Magic I6*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "magic",
+      "speed": "6",
+      "magic": "I",
+      "effort": "1",
+      "character_level": "3",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "7",
+      "level": "3",
+      "icon_folder": "characters",
+      "icon_type": "pilgrim",
+      "rw_expansion_1": ""
+    }
+  }
+}

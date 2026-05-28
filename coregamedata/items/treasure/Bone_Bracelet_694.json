@@ -1,0 +1,19 @@
+{
+  "id": "694",
+  "name": "Bone Bracelet",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Undead will not attack you",
+      "rw_expansion_1": "",
+      "base_price": "6",
+      "notoriety": "2",
+      "facing": "face_dn",
+      "fame": "-2",
+      "monster_immunity": "Skeleton,Skeletal Archer,Skeletal Swordsman,Zombie",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

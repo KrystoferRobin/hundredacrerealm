@@ -1,0 +1,35 @@
+{
+  "id": "1520",
+  "name": "H Spider",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "H",
+      "fame": "3",
+      "notoriety": "3",
+      "icon_type": "giantSpider",
+      "setup_start": "H Spider Box",
+      "box_num": "4",
+      "monster_die": "5",
+      "base_price": "3",
+      "icon_folder": "wesnoth/units",
+      "denizen": "",
+      "super_realm": "",
+      "icon_size": "0.9",
+      "spider": ""
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "strength": "L",
+      "chit_color": "gray"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "6",
+      "strength": "T",
+      "chit_color": "darkgray"
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "295",
+  "name": "Curse",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "instant",
+      "target": "character",
+      "text": "Gets one CURSE (roll)",
+      "magic_color": "gray",
+      "original_game": "",
+      "curse": "",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "table": "curse",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

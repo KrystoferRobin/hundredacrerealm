@@ -1,0 +1,22 @@
+{
+  "id": "8",
+  "name": "fight M3**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "speed": "3",
+      "effort": "2",
+      "character_level": "3",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "8",
+      "level": "3",
+      "icon_folder": "custom/characters",
+      "icon_type": "mercenary",
+      "rw_expansion_1": "",
+      "facing": "dark",
+      "strength": "M"
+    }
+  }
+}

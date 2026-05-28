@@ -1,0 +1,18 @@
+{
+  "id": "10",
+  "name": "FIGHT H6*",
+  "attributeBlocks": {
+    "this": {
+      "action": "FIGHT",
+      "strength": "H",
+      "speed": "6",
+      "character_chit": "",
+      "icon_type": "ranger",
+      "icon_folder": "custom/characters",
+      "stage": "10",
+      "level": "4",
+      "effort": "1",
+      "facing": "dark"
+    }
+  }
+}

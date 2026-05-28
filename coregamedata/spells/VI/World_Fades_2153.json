@@ -1,0 +1,19 @@
+{
+  "id": "2153",
+  "name": "World Fades",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "permanent",
+      "target": "character",
+      "text": "Roll HIDE each round - Use MAGIC SIGHT",
+      "magic_color": "black",
+      "combat_hide": "",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

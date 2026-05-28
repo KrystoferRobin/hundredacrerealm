@@ -1,0 +1,23 @@
+{
+  "id": "2185",
+  "name": "Summon Demon",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "instant",
+      "target": "caster",
+      "text": "Roll on Summon Demon table.",
+      "magic_color": "black",
+      "table": "summondemon",
+      "learnable": "",
+      "super_realm": "",
+      "summondemon": "",
+      "uneffect_at_midnight": "",
+      "super_realm_spell": "",
+      "host_okay": "",
+      "summon": "demon"
+    }
+  },
+  "parts": []
+}

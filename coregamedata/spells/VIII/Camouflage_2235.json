@@ -1,0 +1,21 @@
+{
+  "id": "2235",
+  "name": "Camouflage",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "day",
+      "target": "character, native leader, controlled monster",
+      "text": "Target cannot be followed or have hirelings assigned.",
+      "magic_color": "gold",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "benevolent": "",
+      "cannot_be_followed": ""
+    }
+  },
+  "parts": []
+}

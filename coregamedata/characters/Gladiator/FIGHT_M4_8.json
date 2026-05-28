@@ -1,0 +1,18 @@
+{
+  "id": "8",
+  "name": "FIGHT M4*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "8",
+      "level": "3",
+      "action": "FIGHT",
+      "strength": "M",
+      "speed": "4",
+      "effort": "1",
+      "facing": "dark",
+      "icon_type": "gladiator"
+    }
+  }
+}

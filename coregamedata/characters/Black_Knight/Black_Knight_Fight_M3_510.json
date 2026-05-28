@@ -1,0 +1,21 @@
+{
+  "id": "510",
+  "name": "Black Knight Fight M3**",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "speed": "3",
+      "character_level": "4",
+      "strength": "M",
+      "effort": "2",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "12",
+      "level": "4",
+      "icon_folder": "characters",
+      "icon_type": "black_knight",
+      "rw_expansion_1": ""
+    }
+  }
+}

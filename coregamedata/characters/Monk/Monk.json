@@ -1,0 +1,338 @@
+{
+  "ids": [
+    "0"
+  ],
+  "name": "Monk",
+  "attributeBlocks": {
+    "this": {
+      "icon_type": "monk",
+      "character": "",
+      "vulnerability": "M",
+      "start": "Inn,Chapel",
+      "original_game": "",
+      "facing": "dark",
+      "pronoun": "he",
+      "alt_monsters1_game": "",
+      "fighter": "",
+      "icon_folder": "custom/characters",
+      "meaning": "Strike and Block",
+      "creator": "Peck",
+      "artcredit": "East Paladin Gallery",
+      "rw_expansion_1": "",
+      "custom_character": "",
+      "extra_notes": ""
+    },
+    "level_1": {
+      "name": "Initiate",
+      "weapon": "Staff"
+    },
+    "level_2": {
+      "name": "Acolyte",
+      "armor": "",
+      "weapon": "Staff",
+      "badge_icon": "Monkbadge2",
+      "fight_no_weapon": "",
+      "advantages": {
+        "N0": "STRIKE AND BLOCK: Can strike with FIGHT counter's strength &amp; speed with Tooth/Claw length. Can block attacks using additional FIGHT counter with equal or greater strength by matching or undercutting but equal strengths wound."
+      }
+    },
+    "level_3": {
+      "name": "Adept",
+      "armor": "",
+      "weapon": "Staff"
+    },
+    "level_4": {
+      "name": "Monk",
+      "armor": "",
+      "badge_icon": "Monkbadge4",
+      "peace_with_nature": "",
+      "weapon": "Staff",
+      "advantages": {
+        "N0": "PEACE WITH NATURE: No monster summoning for sound/warning chits"
+      }
+    },
+    "relationship": {
+      "order": "1",
+      "scholar": "1",
+      "bashkars": "-1"
+    },
+    "gamerel": {
+      "order": "1",
+      "scholar": "1",
+      "bashkars": "-1"
+    },
+    "_RCB_": {
+      "owner_id": "0"
+    },
+    "level_2_1": {
+      "badge_icon": "custom/badges/two",
+      "block_no_weapon": "",
+      "advantages": {
+        "N0": "BLOCK: Can use additional FIGHT chit without a weapon for blocking attacks."
+      }
+    }
+  },
+  "parts": [
+    {
+      "id": "1",
+      "name": "Amazon Move M4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "monk",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "Amazon Move M3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "3",
+          "character_level": "1",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "2",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "monk",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Amazon Fight L4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "L",
+          "speed": "4",
+          "character_level": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "3",
+          "level": "1",
+          "icon_folder": "custom/characters",
+          "icon_type": "monk",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "Amazon Move M4",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "4",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "monk",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Amazon Fight M5",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "5",
+          "character_level": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "5",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "monk",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Amazon Fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "2",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "6",
+          "level": "2",
+          "icon_folder": "custom/characters",
+          "icon_type": "monk",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "Amazon Move M3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "3",
+          "character_level": "3",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "7",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "monk",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "Amazon Fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_level": "3",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "8",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "monk",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "name": "Amazon Fight H4**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "H",
+          "speed": "4",
+          "character_level": "3",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "9",
+          "level": "3",
+          "icon_folder": "custom/characters",
+          "icon_type": "monk",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "name": "Amazon Fight M4*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "4",
+          "character_level": "4",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "10",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "monk",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "name": "Amazon Fight M3**",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "fight",
+          "strength": "M",
+          "speed": "3",
+          "character_level": "4",
+          "effort": "2",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "11",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "monk",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "name": "Amazon Move M3*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "move",
+          "strength": "M",
+          "speed": "3",
+          "character_level": "4",
+          "effort": "1",
+          "original_game": "",
+          "alt_monsters1_game": "",
+          "stage": "12",
+          "level": "4",
+          "icon_folder": "custom/characters",
+          "icon_type": "monk",
+          "rw_expansion_1": "",
+          "facing": "dark"
+        }
+      }
+    }
+  ],
+  "source": "rschar"
+}

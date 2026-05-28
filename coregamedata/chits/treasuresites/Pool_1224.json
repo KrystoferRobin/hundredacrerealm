@@ -1,0 +1,22 @@
+{
+  "id": "1224",
+  "name": "Pool",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "pool",
+      "clearing": "6",
+      "super_realm": "",
+      "monster_die": "3",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "draw": "fatigue_asterisk",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "blue",
+      "icon_type": "kraken",
+      "icon_folder": "wesnoth/units"
+    }
+  },
+  "parts": []
+}

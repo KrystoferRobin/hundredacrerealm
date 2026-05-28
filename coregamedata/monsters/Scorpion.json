@@ -1,0 +1,39 @@
+{
+  "id": "757",
+  "name": "Scorpion",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "L",
+      "fame": "1",
+      "notoriety": "1",
+      "icon_type": "scorpion",
+      "setup_start": "Scorpion Box",
+      "monster_die": "5",
+      "base_price": "1",
+      "icon_folder": "monsters1",
+      "alt_monsters1_game": "",
+      "armored": "",
+      "denizen": "",
+      "scorpion": "",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "icon_type_alt": "rock-scorpion",
+      "icon_size_alt": "1",
+      "icon_y_offset_alt": "-5"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "3",
+      "strength": "L",
+      "chit_color": "white",
+      "sharpness": "2"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "strength": "M",
+      "chit_color": "gray"
+    }
+  },
+  "parts": []
+}

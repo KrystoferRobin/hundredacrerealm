@@ -1,0 +1,20 @@
+{
+  "id": "378",
+  "name": "Garb of Speed",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "16",
+      "notoriety": "6",
+      "fame": "2",
+      "text": "*'s determine speed, **=3, *=4, zero=5",
+      "original_game": "",
+      "chit_speed": "5,4,3",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

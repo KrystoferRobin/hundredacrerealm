@@ -1,0 +1,17 @@
+{
+  "id": "1285",
+  "name": "Large Campfire",
+  "attributeBlocks": {
+    "this": {
+      "dwelling": "l_fire",
+      "warning": "stink",
+      "tile_type": "W",
+      "super_realm": "",
+      "icon_type": "fire1",
+      "icon_folder": "wesnoth/buildings",
+      "general_dwelling": "",
+      "no_shelter": ""
+    }
+  },
+  "parts": []
+}

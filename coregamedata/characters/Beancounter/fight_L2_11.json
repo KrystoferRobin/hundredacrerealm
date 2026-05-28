@@ -1,0 +1,18 @@
+{
+  "id": "11",
+  "name": "fight L2**",
+  "attributeBlocks": {
+    "this": {
+      "action": "fight",
+      "strength": "L",
+      "speed": "2",
+      "character_chit": "",
+      "icon_type": "beancounter",
+      "icon_folder": "custom/characters",
+      "stage": "11",
+      "level": "4",
+      "effort": "2",
+      "facing": "dark"
+    }
+  }
+}

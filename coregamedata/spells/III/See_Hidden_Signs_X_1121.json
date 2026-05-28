@@ -1,0 +1,22 @@
+{
+  "id": "1121",
+  "name": "See Hidden Signs X",
+  "spellLevel": "III",
+  "attributeBlocks": {
+    "this": {
+      "spell": "III",
+      "duration": "permanent",
+      "target": "character",
+      "text": "Extra SEARCH phase until you discover a site, path, or loot a treasure card",
+      "magic_color": "gold",
+      "seeking": "",
+      "always_active": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "benevolent": "",
+      "upg_day_spells": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

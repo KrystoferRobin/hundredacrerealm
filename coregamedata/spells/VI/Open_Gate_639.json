@@ -1,0 +1,20 @@
+{
+  "id": "639",
+  "name": "Open Gate",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "instant",
+      "target": "character",
+      "text": "Travel to any discovered gate",
+      "magic_color": "any",
+      "rw_expansion_1": "",
+      "teleport": "KnownGate",
+      "author": "Expansion 1",
+      "learnable": "",
+      "gate_travel": ""
+    }
+  },
+  "parts": []
+}

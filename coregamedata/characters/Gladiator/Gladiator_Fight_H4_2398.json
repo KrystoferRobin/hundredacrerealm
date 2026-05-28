@@ -1,0 +1,19 @@
+{
+  "id": "2398",
+  "name": "Gladiator Fight H4*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "speed": "4",
+      "character_level": "3",
+      "stage": "7",
+      "level": "3",
+      "icon_folder": "characters",
+      "icon_type": "gladiator",
+      "super_realm": "",
+      "effort": "1",
+      "strength": "H"
+    }
+  }
+}

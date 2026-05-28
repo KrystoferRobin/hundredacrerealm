@@ -1,0 +1,27 @@
+{
+  "id": "2227",
+  "name": "Enchant Weapon",
+  "spellLevel": "VI",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VI",
+      "duration": "combat",
+      "target": "active weapon, denizen weapon",
+      "text": "Weapon is transformed.",
+      "magic_color": "purple",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "benevolent": "",
+      "enchant": ""
+    },
+    "enchanted_stats": {
+      "length": "5",
+      "strength": "H",
+      "sharpness": "1",
+      "speed": "5"
+    }
+  },
+  "parts": []
+}

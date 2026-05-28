@@ -1,0 +1,22 @@
+{
+  "id": "3",
+  "name": "fight M5",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "action": "fight",
+      "speed": "5",
+      "strength": "M",
+      "effort": "0",
+      "character_level": "1",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "stage": "3",
+      "level": "1",
+      "icon_folder": "custom/characters",
+      "icon_type": "mercenary",
+      "rw_expansion_1": "",
+      "facing": "dark"
+    }
+  }
+}

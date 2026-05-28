@@ -1,0 +1,40 @@
+{
+  "id": "1450",
+  "name": "Axe Goblin",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "1",
+      "notoriety": "1",
+      "icon_type": "bloodGoblinLord",
+      "setup_start": "Axe Goblins Box",
+      "monster_die": "3",
+      "base_price": "1",
+      "icon_folder": "wesnoth/units",
+      "denizen": "",
+      "super_realm": "",
+      "icon_size": "0.8",
+      "goblin": "",
+      "weapon_use": "",
+      "box_num": "1"
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "strength": "L",
+      "sharpness": "1",
+      "length": "2",
+      "chit_color": "pink"
+    },
+    "dark": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "M",
+      "sharpness": "1",
+      "length": "2",
+      "chit_color": "purple"
+    }
+  },
+  "parts": []
+}

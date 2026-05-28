@@ -1,0 +1,21 @@
+{
+  "id": "684",
+  "name": "Blade of Legend",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "60",
+      "text": "Combine with Hilt and Gem for Sword",
+      "rw_expansion_1": "",
+      "great": "",
+      "notoriety": "5",
+      "weight": "M",
+      "facing": "face_dn",
+      "combine": "Sword of Legend",
+      "combine_count": "3",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "2233",
+  "name": "Meditate",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "day",
+      "target": "character",
+      "text": "Target rolls on Meditate table and applies the result.",
+      "magic_color": "purple",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "meditate": ""
+    }
+  },
+  "parts": []
+}

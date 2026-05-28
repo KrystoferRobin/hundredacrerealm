@@ -1,0 +1,76 @@
+{
+  "id": "85",
+  "name": "Order 2",
+  "attributeBlocks": {
+    "this": {
+      "native": "Order",
+      "fame": "0",
+      "notoriety": "12",
+      "base_price": "8",
+      "vulnerability": "T",
+      "rank": "2",
+      "armored": "",
+      "original_game": "",
+      "icon_type": "knight",
+      "setup_start": "Chapel",
+      "hire_type": "single",
+      "monster_die": "6",
+      "garrison": "",
+      "icon_folder": "natives",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "denizen": "",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "icon_type_alt": "marshal",
+      "icon_size_alt": "0.9",
+      "icon_type_rider_alt": "knight"
+    },
+    "light": {
+      "move_speed": "5",
+      "attack_speed": "5",
+      "strength": "H",
+      "length": "7",
+      "sharpness": "1",
+      "chit_color": "gold"
+    },
+    "dark": {
+      "move_speed": "6",
+      "attack_speed": "5",
+      "strength": "T",
+      "length": "7",
+      "sharpness": "1",
+      "chit_color": "orange"
+    }
+  },
+  "parts": [
+    {
+      "id": "117",
+      "name": "Order Warhorse 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Order",
+          "horse": "warhorse",
+          "vulnerability": "T",
+          "armored": "",
+          "original_game": "",
+          "activated": "",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "icon_folder_alt": "wesnoth/units",
+          "icon_type_alt": "royalBeast",
+          "icon_size_alt": "1"
+        },
+        "trot": {
+          "move_speed": "7",
+          "strength": "T",
+          "chit_color": "lightorange"
+        },
+        "gallop": {
+          "move_speed": "5",
+          "strength": "T",
+          "chit_color": "orange"
+        }
+      }
+    }
+  ]
+}

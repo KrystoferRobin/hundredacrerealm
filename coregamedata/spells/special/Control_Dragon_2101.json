@@ -1,0 +1,22 @@
+{
+  "id": "2101",
+  "name": "Control Dragon",
+  "spellLevel": "*",
+  "attributeBlocks": {
+    "this": {
+      "duration": "day",
+      "target": "uncontrolled monster",
+      "targeted_monsters": "dragon, drake, wyrm",
+      "text": "Control ONE Dragon",
+      "magic_color": "purple",
+      "control": "",
+      "host_okay": "",
+      "spell": "*",
+      "awakened": "",
+      "no_cancel": "",
+      "benevolent": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

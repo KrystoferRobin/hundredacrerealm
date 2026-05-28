@@ -1,0 +1,20 @@
+{
+  "id": "339",
+  "name": "Draught of Speed",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "*'s set speed:  **=2, *=3,  =4 (discard to warlock)",
+      "base_price": "6",
+      "discard": "warlock",
+      "potion": "",
+      "original_game": "",
+      "chit_speed": "4,3,2",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

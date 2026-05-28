@@ -1,0 +1,18 @@
+{
+  "id": "3",
+  "name": "MOVE M5",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "dark elf",
+      "icon_folder": "custom/characters",
+      "stage": "3",
+      "level": "1",
+      "action": "MOVE",
+      "strength": "M",
+      "speed": "5",
+      "effort": "0",
+      "facing": "dark",
+      "icon_type": "dark elf"
+    }
+  }
+}

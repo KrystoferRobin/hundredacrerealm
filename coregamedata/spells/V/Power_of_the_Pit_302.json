@@ -1,0 +1,22 @@
+{
+  "id": "302",
+  "name": "Power of the Pit",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "instant",
+      "target": "individual",
+      "text": "Roll for Power of the Pit attack",
+      "magic_color": "black",
+      "original_game": "",
+      "length": "17",
+      "powerofthepit": "",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "table": "powerofthepit",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

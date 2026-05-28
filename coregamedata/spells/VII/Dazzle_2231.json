@@ -1,0 +1,27 @@
+{
+  "id": "2231",
+  "name": "Dazzle",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "phase",
+      "target": "character",
+      "text": "Improve trading relationship with a native or monster group in clearing by one level.",
+      "magic_color": "any",
+      "host_okay": "",
+      "learnable": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "improve_trading_rel": ""
+    },
+    "phase_chit": {
+      "phase_chit": "",
+      "text": "Dazzle"
+    },
+    "phase_chit_effect": {
+      "dazzle": ""
+    }
+  },
+  "parts": []
+}

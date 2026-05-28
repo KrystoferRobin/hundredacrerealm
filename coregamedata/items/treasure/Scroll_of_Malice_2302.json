@@ -1,0 +1,28 @@
+{
+  "id": "2302",
+  "name": "Scroll of Malice",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "5",
+      "notoriety": "10",
+      "magic": "V",
+      "book": "",
+      "print": "",
+      "scholar_price": "30",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "item": "",
+      "scroll": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "magic_other": "VIII",
+      "merchant_price": "20",
+      "fame": "-5",
+      "great": "",
+      "crone_price": "30"
+    }
+  },
+  "parts": []
+}

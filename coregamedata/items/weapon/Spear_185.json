@@ -1,0 +1,30 @@
+{
+  "id": "185",
+  "name": "Spear",
+  "attributeBlocks": {
+    "this": {
+      "weight": "M",
+      "length": "10",
+      "base_price": "6",
+      "two_handed": "",
+      "throwable": "",
+      "weapon": "",
+      "original_game": "",
+      "icon_type": "spear",
+      "alt_monsters1_game": "",
+      "icon_folder": "weapons",
+      "rw_expansion_1": "",
+      "item": ""
+    },
+    "unalerted": {
+      "attack_speed": "6",
+      "chit_color": "white"
+    },
+    "alerted": {
+      "strength": "M",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

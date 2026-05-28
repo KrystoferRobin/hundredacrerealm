@@ -1,0 +1,42 @@
+{
+  "id": "921",
+  "name": "Skeletal Swordsman",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "1",
+      "notoriety": "1",
+      "icon_type": "skullsword",
+      "setup_start": "Skeleton Box",
+      "monster_die": "2",
+      "base_price": "1",
+      "icon_folder": "monsters2",
+      "rw_expansion_1": "",
+      "box_num": "1",
+      "undead": "",
+      "denizen": "",
+      "weapon_use": "",
+      "skeleton": "",
+      "icon_type_alt": "core-images-units-undead-skeletal-deathblade",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "icon_size_alt": "0.9"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "4",
+      "strength": "L",
+      "chit_color": "white",
+      "sharpness": "1"
+    },
+    "dark": {
+      "move_speed": "6",
+      "attack_speed": "2",
+      "strength": "L",
+      "chit_color": "gray",
+      "sharpness": "1",
+      "length": "3"
+    }
+  },
+  "parts": []
+}

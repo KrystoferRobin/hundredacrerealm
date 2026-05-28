@@ -1,0 +1,18 @@
+{
+  "id": "332",
+  "name": "Toadstool Ring",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Extra SPELL",
+      "base_price": "9",
+      "notoriety": "3",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

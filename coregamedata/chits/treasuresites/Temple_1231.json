@@ -1,0 +1,22 @@
+{
+  "id": "1231",
+  "name": "Temple",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "temple",
+      "clearing": "5",
+      "super_realm": "",
+      "monster_die": "6",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "brown",
+      "icon_type": "vampireDuke",
+      "icon_folder": "wesnoth/units",
+      "spell_site": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "2096",
+  "name": "Bejeweled Dwarf Vest",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "27",
+      "notoriety": "5",
+      "weight": "M",
+      "fame": "10",
+      "native": "Soldiers",
+      "great": "",
+      "text": "H armor versus THRUST",
+      "armor": "special",
+      "armor_box": "1",
+      "vulnerability": "H",
+      "armor_row": "1",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    },
+    "destroyed": {
+      "base_price": "23"
+    }
+  },
+  "parts": []
+}

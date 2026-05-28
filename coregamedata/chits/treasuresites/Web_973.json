@@ -1,0 +1,23 @@
+{
+  "id": "973",
+  "name": "Web",
+  "attributeBlocks": {
+    "this": {
+      "treasure_location": "web",
+      "clearing": "5",
+      "monster_die": "5",
+      "print": "",
+      "chit": "",
+      "discovery": "",
+      "ts_section": "treasure locations",
+      "ts_size": "HCARD",
+      "ts_color": "gold",
+      "icon_type": "spider",
+      "icon_folder": "monsters",
+      "rw_expansion_1": "",
+      "icon_folder_alt": "wesnoth/units",
+      "icon_type_alt": "spiderQueen"
+    }
+  },
+  "parts": []
+}

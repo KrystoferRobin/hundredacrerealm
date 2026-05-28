@@ -1,0 +1,23 @@
+{
+  "id": "329",
+  "name": "Timeless Jewel",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "notoriety": "7",
+      "text": "Don't write move",
+      "base_price": "34",
+      "fame": "5",
+      "native": "Soldiers",
+      "weight": "L",
+      "original_game": "",
+      "daytime_actions": "",
+      "alt_monsters1_game": "",
+      "facing": "face_dn",
+      "must_deactivate": "",
+      "rw_expansion_1": "",
+      "item": ""
+    }
+  },
+  "parts": []
+}

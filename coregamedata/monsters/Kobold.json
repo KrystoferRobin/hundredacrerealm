@@ -1,0 +1,40 @@
+{
+  "id": "747",
+  "name": "Kobold",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "L",
+      "fame": "0",
+      "notoriety": "1",
+      "icon_type": "kobold",
+      "setup_start": "Kobold Box",
+      "monster_die": "6",
+      "base_price": "1",
+      "icon_folder": "monsters1",
+      "alt_monsters1_game": "",
+      "denizen": "",
+      "kobold": "",
+      "icon_type_alt": "Genesis_Resources-demons-red-red",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "icon_size_alt": "1"
+    },
+    "light": {
+      "move_speed": "4",
+      "chit_color": "white",
+      "attack_speed": "3",
+      "strength": "L",
+      "sharpness": "1",
+      "length": "3"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "strength": "L",
+      "sharpness": "1",
+      "length": "3",
+      "chit_color": "gray"
+    }
+  },
+  "parts": []
+}

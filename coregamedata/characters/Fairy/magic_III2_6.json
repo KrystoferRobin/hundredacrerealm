@@ -1,0 +1,18 @@
+{
+  "id": "6",
+  "name": "magic III2*",
+  "attributeBlocks": {
+    "this": {
+      "action": "magic",
+      "speed": "2",
+      "character_chit": "",
+      "icon_type": "fairy",
+      "icon_folder": "custom/characters",
+      "stage": "6",
+      "level": "2",
+      "effort": "1",
+      "facing": "dark",
+      "magic": "III"
+    }
+  }
+}

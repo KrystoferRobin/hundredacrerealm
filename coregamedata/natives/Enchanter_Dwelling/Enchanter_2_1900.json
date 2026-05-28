@@ -1,0 +1,74 @@
+{
+  "id": "1900",
+  "name": "Enchanter 2",
+  "attributeBlocks": {
+    "this": {
+      "native": "Enchanters",
+      "fame": "0",
+      "notoriety": "4",
+      "base_price": "3",
+      "vulnerability": "L",
+      "rank": "2",
+      "icon_type": "masterofdarkness-magic2",
+      "setup_start": "Enchanter Dwelling",
+      "hire_type": "group",
+      "icon_folder": "wesnoth/units/tharis-magi",
+      "denizen": "",
+      "super_realm": "",
+      "native_die": "6",
+      "clan": "4",
+      "armored": "",
+      "icon_size": "0.9",
+      "no_change_tactics": "",
+      "spell_targets_self": "",
+      "fast_caster": "",
+      "native_name": "Caster"
+    },
+    "light": {
+      "move_speed": "4",
+      "chit_color": "gold",
+      "attack_speed": "0",
+      "length": "9",
+      "magic_type": "VI",
+      "attack_spell": "melt into mist"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "strength": "M",
+      "length": "9",
+      "chit_color": "orange"
+    }
+  },
+  "parts": [
+    {
+      "id": "1903",
+      "name": "Pony 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Enchanters",
+          "horse": "pony",
+          "move_bonus": "double",
+          "vulnerability": "M",
+          "activated": "",
+          "super_realm": "",
+          "clan": "4",
+          "native_die": "6",
+          "icon_folder": "wesnoth/units/monsters",
+          "icon_size": "1",
+          "icon_type": "horse"
+        },
+        "trot": {
+          "move_speed": "5",
+          "strength": "M",
+          "chit_color": "peach"
+        },
+        "gallop": {
+          "move_speed": "3",
+          "strength": "L",
+          "chit_color": "brown"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "2082",
+  "name": "Map of Lost Castle",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "3",
+      "text": "-1 to LOCATE rolls in LOST CASTLE",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "10",
+  "name": "fly L2**",
+  "attributeBlocks": {
+    "this": {
+      "action": "fly",
+      "strength": "L",
+      "speed": "2",
+      "character_chit": "",
+      "icon_type": "fairy",
+      "icon_folder": "custom/characters",
+      "stage": "10",
+      "level": "4",
+      "effort": "2",
+      "facing": "dark"
+    }
+  }
+}

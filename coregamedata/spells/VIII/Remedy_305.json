@@ -1,0 +1,21 @@
+{
+  "id": "305",
+  "name": "Remedy",
+  "spellLevel": "VIII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VIII",
+      "duration": "instant",
+      "target": "spell,curse",
+      "text": "Cancels one spell or curse",
+      "magic_color": "gray",
+      "original_game": "",
+      "cancel": "",
+      "alt_monsters1_game": "",
+      "host_okay": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

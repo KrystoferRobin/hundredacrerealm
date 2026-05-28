@@ -1,0 +1,18 @@
+{
+  "id": "12",
+  "name": "magic VII2**",
+  "attributeBlocks": {
+    "this": {
+      "action": "magic",
+      "speed": "2",
+      "character_chit": "",
+      "icon_type": "blood druid",
+      "icon_folder": "custom/characters",
+      "stage": "12",
+      "level": "4",
+      "effort": "2",
+      "facing": "dark",
+      "magic": "VII"
+    }
+  }
+}

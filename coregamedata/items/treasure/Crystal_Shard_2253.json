@@ -1,0 +1,20 @@
+{
+  "id": "2253",
+  "name": "Crystal Shard",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "text": "Once each Day, you may cancel your current activity.",
+      "base_price": "23",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": "",
+      "super_realm_treasure": "",
+      "native": "Soldiers",
+      "fame": "5",
+      "notoriety": "8",
+      "change_recorded_action": ""
+    }
+  },
+  "parts": []
+}

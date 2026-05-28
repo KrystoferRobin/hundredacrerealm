@@ -1,0 +1,78 @@
+import { NextRequest, NextResponse } from 'next/server';
+import fs from 'fs';
+import path from 'path';
+import { getAuthUser } from '@/lib/admin-auth';
+
+const SESSIONS_DIR = path.join(process.cwd(), 'public', 'parsed_sessions');
+
+export const dynamic = "force-dynamic";
+
+export async function POST(request: NextRequest) {
+  const user = await getAuthUser();
+  
+  if (!user || !user.isAdmin) {
+    return NextResponse.json(
+      { error: 'Unauthorized' },
+      { status: 401 }
+    );
+  }
+
+  try {
+    const formData = await request.formData();
+    const file = formData.get('session') as File;
+
+    if (!file) {
+      return NextResponse.json(
+        { error: 'No file provided' },
+        { status: 400 }
+      );
+    }
+
+    // Validate file type
+    const allowedTypes = ['application/json', 'text/plain'];
+    if (!allowedTypes.includes(file.type)) {
+      return NextResponse.json(
+        { error: 'Invalid file type. Only JSON and TXT files are allowed.' },
+        { status: 400 }
+      );
+    }
+
+    // Read file content
+    const fileContent = await file.text();
+    
+    // Try to parse as JSON if it's a JSON file
+    let sessionData;
+    try {
+      sessionData = JSON.parse(fileContent);
+    } catch (error) {
+      // If it's not JSON, treat it as raw text
+      sessionData = { content: fileContent };
+    }
+
+    // Generate session ID (timestamp + random string)
+    const timestamp = Date.now();
+    const randomString = Math.random().toString(36).substring(2, 8);
+    const sessionId = `${timestamp}_${randomString}`;
+
+    // Create session directory
+    const sessionDir = path.join(SESSIONS_DIR, sessionId);
+    fs.mkdirSync(sessionDir, { recursive: true });
+
+    // Save the session file
+    const sessionFilePath = path.join(sessionDir, 'parsed_session.json');
+    fs.writeFileSync(sessionFilePath, JSON.stringify(sessionData, null, 2));
+
+    return NextResponse.json({
+      success: true,
+      sessionId,
+      message: 'Session uploaded successfully'
+    });
+
+  } catch (error) {
+    console.error('Upload error:', error);
+    return NextResponse.json(
+      { error: 'Failed to upload session' },
+      { status: 500 }
+    );
+  }
+} 

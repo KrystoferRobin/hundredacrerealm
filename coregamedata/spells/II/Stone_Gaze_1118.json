@@ -1,0 +1,30 @@
+{
+  "id": "1118",
+  "name": "Stone Gaze",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "combat",
+      "target": "individual",
+      "text": "Look away or turn into a statue",
+      "magic_color": "gray",
+      "transmorph": "statue",
+      "alt_monsters1_game": "",
+      "spell_strength": "2",
+      "new_spells_1": "",
+      "learnable": ""
+    },
+    "statue": {
+      "vulnerability": "T",
+      "move_speed": "6",
+      "light_color": "gray",
+      "dark_color": "darkgray",
+      "icon_type": "statue",
+      "mist_like": "",
+      "name": "Statue",
+      "icon_folder": "monsters"
+    }
+  },
+  "parts": []
+}

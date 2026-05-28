@@ -1,0 +1,19 @@
+{
+  "id": "721",
+  "name": "Liquid Metal",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "4",
+      "text": "Repairs any one piece of armor (discard to shaman)",
+      "rw_expansion_1": "",
+      "potion": "",
+      "discard": "shaman",
+      "facing": "face_dn",
+      "repair_one": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

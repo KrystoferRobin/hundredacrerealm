@@ -1,0 +1,16 @@
+{
+  "id": "2095",
+  "name": "Magic Spectacles",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "6",
+      "notoriety": "2",
+      "text": "extra SEARCH",
+      "facing": "face_dn",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

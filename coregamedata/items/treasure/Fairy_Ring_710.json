@@ -1,0 +1,47 @@
+{
+  "id": "710",
+  "name": "Fairy Ring",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "text": "Activate to summon Fairy (ring vanishes)",
+      "rw_expansion_1": "",
+      "base_price": "1",
+      "facing": "face_dn",
+      "great": "",
+      "author": "Roberto Ullfig",
+      "companion_from_hold": "",
+      "item": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1042",
+      "name": "Fairy",
+      "attributeBlocks": {
+        "this": {
+          "monster": "",
+          "rw_expansion_1": "",
+          "icon_folder": "monsters2",
+          "icon_type": "fairy",
+          "color_source": "gold",
+          "companion": "",
+          "flying": "",
+          "icon_folder_alt": "wesnoth/units/addons",
+          "icon_type_alt": "WarOfTheGods-elves-wood-faerie",
+          "icon_size_alt": "0.9"
+        },
+        "light": {
+          "move_speed": "6",
+          "chit_color": "yellow"
+        },
+        "dark": {
+          "move_speed": "1",
+          "attack_speed": "1",
+          "chit_color": "gold",
+          "strength": "neg"
+        }
+      }
+    }
+  ]
+}

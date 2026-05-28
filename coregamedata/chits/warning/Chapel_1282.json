@@ -1,0 +1,521 @@
+{
+  "id": "1282",
+  "name": "Chapel",
+  "attributeBlocks": {
+    "this": {
+      "dwelling": "chapel",
+      "warning": "dank",
+      "tile_type": "V",
+      "super_realm": "",
+      "print": "",
+      "icon_type": "elven2",
+      "color_source": "white",
+      "ts_section": "dwellings",
+      "ts_color": "tan",
+      "icon_folder": "wesnoth/buildings",
+      "remove_curses": "",
+      "quest_target": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1769",
+      "name": "Order 1",
+      "attributeBlocks": {
+        "this": {
+          "native": "Order",
+          "fame": "0",
+          "notoriety": "12",
+          "base_price": "8",
+          "vulnerability": "T",
+          "rank": "1",
+          "armored": "",
+          "icon_type": "marshal",
+          "setup_start": "Chapel",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/human-loyalists",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "1",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "icon_type_rider": "knight",
+          "native_name": "Knight"
+        },
+        "light": {
+          "move_speed": "6",
+          "attack_speed": "4",
+          "strength": "H",
+          "length": "7",
+          "sharpness": "1",
+          "chit_color": "gold"
+        },
+        "dark": {
+          "move_speed": "5",
+          "attack_speed": "5",
+          "strength": "T",
+          "length": "7",
+          "sharpness": "1",
+          "chit_color": "orange"
+        }
+      }
+    },
+    {
+      "id": "1770",
+      "name": "Order 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Order",
+          "fame": "0",
+          "notoriety": "12",
+          "base_price": "8",
+          "vulnerability": "T",
+          "rank": "2",
+          "armored": "",
+          "icon_type": "marshal",
+          "setup_start": "Chapel",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/human-loyalists",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "1",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "icon_type_rider": "knight",
+          "native_name": "Knight"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "5",
+          "strength": "H",
+          "length": "7",
+          "sharpness": "1",
+          "chit_color": "gold"
+        },
+        "dark": {
+          "move_speed": "6",
+          "attack_speed": "5",
+          "strength": "T",
+          "length": "7",
+          "sharpness": "1",
+          "chit_color": "orange"
+        }
+      }
+    },
+    {
+      "id": "1771",
+      "name": "Order 3",
+      "attributeBlocks": {
+        "this": {
+          "native": "Order",
+          "fame": "0",
+          "notoriety": "12",
+          "base_price": "8",
+          "vulnerability": "T",
+          "rank": "3",
+          "armored": "",
+          "icon_type": "marshal",
+          "setup_start": "Chapel",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/human-loyalists",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "1",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "icon_type_rider": "knight",
+          "native_name": "Knight"
+        },
+        "light": {
+          "move_speed": "6",
+          "attack_speed": "4",
+          "strength": "H",
+          "length": "7",
+          "sharpness": "1",
+          "chit_color": "gold"
+        },
+        "dark": {
+          "move_speed": "6",
+          "attack_speed": "5",
+          "strength": "T",
+          "length": "7",
+          "sharpness": "1",
+          "chit_color": "orange"
+        }
+      }
+    },
+    {
+      "id": "1772",
+      "name": "Order 4",
+      "attributeBlocks": {
+        "this": {
+          "native": "Order",
+          "fame": "0",
+          "notoriety": "12",
+          "base_price": "8",
+          "vulnerability": "T",
+          "rank": "4",
+          "armored": "",
+          "icon_type": "marshal",
+          "setup_start": "Chapel",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/human-loyalists",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "1",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "icon_type_rider": "knight",
+          "native_name": "Knight"
+        },
+        "light": {
+          "move_speed": "5",
+          "attack_speed": "5",
+          "strength": "H",
+          "length": "7",
+          "sharpness": "1",
+          "chit_color": "gold"
+        },
+        "dark": {
+          "move_speed": "6",
+          "attack_speed": "5",
+          "strength": "T",
+          "length": "7",
+          "sharpness": "1",
+          "chit_color": "orange"
+        }
+      }
+    },
+    {
+      "id": "1773",
+      "name": "Order HQ",
+      "attributeBlocks": {
+        "this": {
+          "native": "Order",
+          "fame": "0",
+          "notoriety": "12",
+          "base_price": "8",
+          "vulnerability": "T",
+          "rank": "HQ",
+          "armored": "",
+          "icon_type": "marshal-leading",
+          "setup_start": "Chapel",
+          "hire_type": "single",
+          "garrison": "",
+          "icon_folder": "wesnoth/units/human-loyalists",
+          "commerce": "F",
+          "denizen": "",
+          "super_realm": "",
+          "clan": "1",
+          "native_die": "6",
+          "icon_size": "0.9",
+          "icon_type_rider": "grand-knight",
+          "native_name": "Knight"
+        },
+        "light": {
+          "move_speed": "4",
+          "attack_speed": "6",
+          "strength": "H",
+          "length": "7",
+          "sharpness": "1",
+          "chit_color": "gold"
+        },
+        "dark": {
+          "move_speed": "6",
+          "attack_speed": "4",
+          "strength": "T",
+          "length": "7",
+          "sharpness": "1",
+          "chit_color": "orange"
+        }
+      }
+    },
+    {
+      "id": "1912",
+      "name": "Warhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "warhorse",
+          "vulnerability": "T",
+          "armored": "",
+          "base_price": "22",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "royalBeast",
+          "horse_holder": "Chapel"
+        },
+        "trot": {
+          "move_speed": "7",
+          "strength": "T",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "5",
+          "strength": "T",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1913",
+      "name": "Warhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "warhorse",
+          "vulnerability": "T",
+          "armored": "",
+          "base_price": "20",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "royalBeast",
+          "horse_holder": "Chapel"
+        },
+        "trot": {
+          "move_speed": "7",
+          "strength": "T",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "4",
+          "strength": "H",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1914",
+      "name": "Warhorse",
+      "attributeBlocks": {
+        "this": {
+          "horse": "warhorse",
+          "vulnerability": "T",
+          "armored": "",
+          "base_price": "18",
+          "item": "",
+          "super_realm": "",
+          "icon_folder": "wesnoth/units",
+          "icon_size": "1",
+          "icon_type": "royalBeast",
+          "horse_holder": "Chapel"
+        },
+        "trot": {
+          "move_speed": "6",
+          "strength": "H",
+          "chit_color": "tan"
+        },
+        "gallop": {
+          "move_speed": "4",
+          "strength": "H",
+          "chit_color": "tan"
+        }
+      }
+    },
+    {
+      "id": "1935",
+      "name": "Armor",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "H",
+          "weight": "H",
+          "armor_thrust": "",
+          "armor_swing": "",
+          "armor_smash": "",
+          "armor": "",
+          "icon_type": "suitofarmor",
+          "facing": "dark",
+          "armor_row": "3",
+          "ret_dw": "Chapel",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "suitofarmor": ""
+        },
+        "intact": {
+          "base_price": "17",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "12",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "1936",
+      "name": "Armor",
+      "attributeBlocks": {
+        "this": {
+          "vulnerability": "H",
+          "weight": "H",
+          "armor_thrust": "",
+          "armor_swing": "",
+          "armor_smash": "",
+          "armor": "",
+          "icon_type": "suitofarmor",
+          "facing": "dark",
+          "armor_row": "3",
+          "ret_dw": "Chapel",
+          "icon_folder": "armor",
+          "item": "",
+          "super_realm": "",
+          "suitofarmor": ""
+        },
+        "intact": {
+          "base_price": "17",
+          "chit_color": "gray"
+        },
+        "damaged": {
+          "base_price": "12",
+          "chit_color": "white"
+        }
+      }
+    },
+    {
+      "id": "1963",
+      "name": "Great Sword",
+      "attributeBlocks": {
+        "this": {
+          "weight": "H",
+          "length": "8",
+          "base_price": "10",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "great_sword",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "attack_speed": "6",
+          "strength": "H",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "strength": "H",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1965",
+      "name": "Morning Star",
+      "attributeBlocks": {
+        "this": {
+          "weight": "H",
+          "length": "6",
+          "base_price": "8",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "morning_star",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "strength": "H",
+          "chit_color": "white",
+          "attack_speed": "6"
+        },
+        "alerted": {
+          "attack_speed": "3",
+          "strength": "H",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1966",
+      "name": "Great Axe",
+      "attributeBlocks": {
+        "this": {
+          "weight": "H",
+          "length": "5",
+          "base_price": "8",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "great_axe",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "strength": "H",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "attack_speed": "4",
+          "strength": "H",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1967",
+      "name": "Great Axe",
+      "attributeBlocks": {
+        "this": {
+          "weight": "H",
+          "length": "5",
+          "base_price": "8",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "great_axe",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "strength": "H",
+          "sharpness": "1",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "attack_speed": "4",
+          "strength": "H",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    },
+    {
+      "id": "1960",
+      "name": "Crossbow",
+      "attributeBlocks": {
+        "this": {
+          "weight": "H",
+          "length": "12",
+          "base_price": "10",
+          "missile": "",
+          "two_handed": "",
+          "weapon": "",
+          "icon_type": "crossbow",
+          "icon_folder": "weapons",
+          "item": "",
+          "super_realm": ""
+        },
+        "unalerted": {
+          "strength": "H",
+          "chit_color": "white"
+        },
+        "alerted": {
+          "attack_speed": "1",
+          "strength": "H",
+          "sharpness": "1",
+          "chit_color": "red"
+        }
+      }
+    }
+  ]
+}

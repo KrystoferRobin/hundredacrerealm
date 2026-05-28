@@ -1,0 +1,39 @@
+{
+  "id": "1468",
+  "name": "Bow Goblin",
+  "attributeBlocks": {
+    "this": {
+      "monster": "",
+      "vulnerability": "M",
+      "fame": "1",
+      "notoriety": "1",
+      "icon_type": "goblinArcher",
+      "setup_start": "Sword Goblins Box",
+      "monster_die": "3",
+      "base_price": "1",
+      "icon_folder": "wesnoth/units",
+      "denizen": "",
+      "super_realm": "",
+      "icon_size": "1",
+      "goblin": "",
+      "archer": "",
+      "weapon_use": "",
+      "missile": "",
+      "box_num": "4"
+    },
+    "light": {
+      "move_speed": "3",
+      "chit_color": "pink"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "1",
+      "strength": "L",
+      "sharpness": "2",
+      "length": "14",
+      "chit_color": "purple",
+      "missile": ""
+    }
+  },
+  "parts": []
+}

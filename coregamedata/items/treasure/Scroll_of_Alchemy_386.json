@@ -1,0 +1,29 @@
+{
+  "id": "386",
+  "name": "Scroll of Alchemy",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "small",
+      "base_price": "10",
+      "weight": "L",
+      "fame": "-10",
+      "notoriety": "15",
+      "magic": "VI",
+      "great": "",
+      "original_game": "",
+      "book": "",
+      "print": "",
+      "alt_monsters1_game": "",
+      "scholar_price": "50",
+      "warlock_price": "50",
+      "facing": "face_dn",
+      "ts_section": "magic",
+      "ts_color": "lightgreen",
+      "rw_expansion_1": "",
+      "item": "",
+      "scroll": "",
+      "merchant_price": "20"
+    }
+  },
+  "parts": []
+}

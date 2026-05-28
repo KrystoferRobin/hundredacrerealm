@@ -1,0 +1,21 @@
+{
+  "id": "2079",
+  "name": "Sacred Grail",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "12",
+      "notoriety": "-25",
+      "great": "",
+      "fame": "50",
+      "native": "Order",
+      "weight": "M",
+      "color_source": "white",
+      "facing": "face_dn",
+      "nosecret": "",
+      "item": "",
+      "super_realm": ""
+    }
+  },
+  "parts": []
+}

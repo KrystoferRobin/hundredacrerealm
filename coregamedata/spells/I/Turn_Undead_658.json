@@ -1,0 +1,21 @@
+{
+  "id": "658",
+  "name": "Turn Undead",
+  "spellLevel": "I",
+  "attributeBlocks": {
+    "this": {
+      "spell": "I",
+      "duration": "attack",
+      "target": "undead",
+      "text": "Any undead hit with the spell are instantly killed",
+      "magic_color": "gray",
+      "rw_expansion_1": "",
+      "strength": "RED",
+      "length": "18",
+      "host_okay": "",
+      "author": "Expansion 1",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "294",
+  "name": "Pentangle",
+  "spellLevel": "V",
+  "attributeBlocks": {
+    "this": {
+      "spell": "V",
+      "duration": "combat",
+      "target": "individual",
+      "text": "Not affected by spells, curses, demons, or imp",
+      "magic_color": "black",
+      "original_game": "",
+      "magic_protection": "",
+      "alt_monsters1_game": "",
+      "nullify": "",
+      "host_okay": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

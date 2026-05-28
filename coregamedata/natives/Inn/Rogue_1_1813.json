@@ -1,0 +1,42 @@
+{
+  "id": "1813",
+  "name": "Rogue 1",
+  "attributeBlocks": {
+    "this": {
+      "native": "Rogues",
+      "fame": "0",
+      "notoriety": "6",
+      "base_price": "4",
+      "vulnerability": "H",
+      "rank": "1",
+      "icon_type": "explorer",
+      "setup_start": "Inn",
+      "hire_type": "single",
+      "garrison": "",
+      "icon_folder": "wesnoth/units/dunefolk",
+      "denizen": "",
+      "super_realm": "",
+      "clan": "3",
+      "native_die": "6",
+      "icon_size": "0.9",
+      "native_name": "G.Axeman"
+    },
+    "light": {
+      "move_speed": "4",
+      "attack_speed": "5",
+      "strength": "H",
+      "length": "5",
+      "sharpness": "1",
+      "chit_color": "lightorange"
+    },
+    "dark": {
+      "move_speed": "5",
+      "attack_speed": "3",
+      "strength": "T",
+      "length": "5",
+      "sharpness": "1",
+      "chit_color": "red"
+    }
+  },
+  "parts": []
+}

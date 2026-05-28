@@ -1,0 +1,17 @@
+{
+  "id": "726",
+  "name": "Journal",
+  "attributeBlocks": {
+    "this": {
+      "base_price": "5",
+      "text": "Extra CACHE",
+      "rw_expansion_1": "",
+      "weight": "L",
+      "treasure": "small",
+      "facing": "face_dn",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": []
+}

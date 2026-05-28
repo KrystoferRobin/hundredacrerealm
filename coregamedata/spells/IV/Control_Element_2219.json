@@ -1,0 +1,22 @@
+{
+  "id": "2219",
+  "name": "Control Element",
+  "spellLevel": "IV",
+  "attributeBlocks": {
+    "this": {
+      "duration": "day",
+      "target": "uncontrolled monster",
+      "targeted_monsters": "anomaly, elemental, golem",
+      "text": "Spellcaster controls an anomaly or golem.",
+      "magic_color": "any",
+      "control": "",
+      "host_okay": "",
+      "spell": "IV",
+      "benevolent": "",
+      "super_realm": "",
+      "super_realm_spell": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

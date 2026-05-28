@@ -1,0 +1,22 @@
+{
+  "id": "279",
+  "name": "Fog",
+  "spellLevel": "II",
+  "attributeBlocks": {
+    "this": {
+      "spell": "II",
+      "duration": "day",
+      "target": "tile",
+      "text": "Cannot PEER normally in hex",
+      "magic_color": "gray",
+      "original_game": "",
+      "alt_monsters1_game": "",
+      "sp_no_peer": "",
+      "host_okay": "",
+      "benevolent": "",
+      "rw_expansion_1": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

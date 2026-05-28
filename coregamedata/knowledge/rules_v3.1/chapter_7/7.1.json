@@ -1,0 +1,26 @@
+{
+  "title": "Determining Turn Order",
+  "content": [],
+  "subsections": [
+    {
+      "id": "7.1.1",
+      "title": "Turn Order Process",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "During Daylight the Attention chits that have been mixed together are picked one at a time, randomly, and when a character, hired leader, or controlled monster's chit is picked he takes his turn. He does his phases in the order he recorded them, and when he does each phase he does the activity he recorded for that phase."
+        }
+      ]
+    },
+    {
+      "id": "7.1.2",
+      "title": "Unhiding at Turn Start",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Even if hidden the previous day, each character, hired leader, and controlled monster is automatically unhidden when he starts to take his turn. When his attention chit is picked, his counter is turned tan or light side up. Note: All of the characters are hidden at the start of the game and become unhidden at the start of their turn on Day 1."
+        }
+      ]
+    }
+  ]
+} 

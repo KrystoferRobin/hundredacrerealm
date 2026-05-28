@@ -1,0 +1,13 @@
+{
+  "id": "1211",
+  "name": "Patter 5",
+  "attributeBlocks": {
+    "this": {
+      "super_realm": "",
+      "chit": "",
+      "sound": "patter",
+      "clearing": "5"
+    }
+  },
+  "parts": []
+}

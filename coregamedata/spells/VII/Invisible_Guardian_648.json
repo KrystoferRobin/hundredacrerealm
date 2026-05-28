@@ -1,0 +1,21 @@
+{
+  "id": "648",
+  "name": "Invisible Guardian",
+  "spellLevel": "VII",
+  "attributeBlocks": {
+    "this": {
+      "spell": "VII",
+      "duration": "combat",
+      "target": "character",
+      "text": "Cannot be undercut in combat",
+      "magic_color": "purple",
+      "rw_expansion_1": "",
+      "host_okay": "",
+      "author": "Expansion 1",
+      "stop_undercut": "",
+      "benevolent": "",
+      "learnable": ""
+    }
+  },
+  "parts": []
+}

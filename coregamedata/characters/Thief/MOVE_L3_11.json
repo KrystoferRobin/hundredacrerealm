@@ -1,0 +1,18 @@
+{
+  "id": "11",
+  "name": "MOVE L3*",
+  "attributeBlocks": {
+    "this": {
+      "character_chit": "",
+      "icon_folder": "custom/characters",
+      "stage": "11",
+      "level": "4",
+      "action": "MOVE",
+      "strength": "L",
+      "speed": "3",
+      "effort": "1",
+      "facing": "dark",
+      "icon_type": "thief"
+    }
+  }
+}

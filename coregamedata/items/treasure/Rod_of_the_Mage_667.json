@@ -1,0 +1,42 @@
+{
+  "id": "667",
+  "name": "Rod of the Mage",
+  "attributeBlocks": {
+    "this": {
+      "treasure": "large",
+      "base_price": "10",
+      "weight": "L",
+      "text": "Use as chit MAGIC IV2*",
+      "notoriety": "15",
+      "rw_expansion_1": "",
+      "facing": "face_dn",
+      "add_chit": "",
+      "author": "Expansion 1",
+      "item": ""
+    }
+  },
+  "parts": [
+    {
+      "id": "1017",
+      "name": "Magic IV2*",
+      "attributeBlocks": {
+        "this": {
+          "character_chit": "",
+          "action": "magic",
+          "speed": "2",
+          "magic": "IV",
+          "effort": "1",
+          "character_level": "1",
+          "stage": "1",
+          "level": "1",
+          "icon_folder": "monsters2",
+          "icon_type": "unknown",
+          "rw_expansion_1": "",
+          "add_chit": "Ring of the Mage",
+          "chitearned": "",
+          "treasure_chit": ""
+        }
+      }
+    }
+  ]
+}

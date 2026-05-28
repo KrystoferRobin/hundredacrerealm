@@ -1,0 +1,82 @@
+{
+  "title": "DENIZENS",
+  "subsections": [
+    {
+      "id": "2.2.1",
+      "title": "Overview",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The monster, native and visitor pieces represent the \"denizens\" who live in the Magic Realm."
+        }
+      ]
+    },
+    {
+      "id": "2.2.2",
+      "title": "Monster and Native Counters",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The monster and native counters represent the monsters and humans pictured on them. The numbers, letters, and stars on these counters are combat values."
+        },
+        {
+          "type": "list",
+          "items": [
+            "The letter on each counter defines the strength and harm inflicted by its attack, and any stars are \"sharpness stars\" that add to the damage it inflicts. The number with this letter defines his attack speed, and the other number on the counter defines his maneuver or move speed. These numbers show how much time it takes the denizen to complete an attack or a move. Lower numbers mean faster actions.",
+            "Each side of the counter shows different combat values (generally, the darker side is turned up when the monster or native is being more aggressive). Each monster or native always uses the values that are face up at the moment. Monsters and natives that are not hired or controlled are always light side up during Daylight. They flip over only during combat."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.2.3",
+      "title": "Monsters",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each monster counter represents the monster pictured on the counter. The size of each monster counter signifies the size and \"vulnerability\" of the monster – the largest counters are the largest, and toughest, monsters. The monster's \"vulnerability\" is the damage that must be inflicted on it to kill it, and is the same as its size and its move or flying strength. The largest counters are Tremendous monsters, the middle-sized counters are Heavy monsters and the smallest counters are Medium monsters."
+        },
+        {
+          "type": "list",
+          "items": [
+            "The List of Monsters identifies each monster and lists its size, weapon and weapon length, method of attack, Fame bounty, Notoriety bounty, and whether it is armored, and shows the combat values on both sides of each monster. The Fame bounty and Notoriety bounty are used to determine the points a character gets for killing the monster.",
+            "Most monsters have a weapon length of zero (\"tooth/claw\"), and attack by striking. If the monster has a weapon, head or club, its weapon and weapon length are listed. Demons and Imps attack using spells on their light side, but use tooth/claw on their red side.",
+            "The red side of the twelve Tremendous monster counters has a special meaning: it shows the monster's combat values when it picks up an enemy to rip him apart! Tremendous monster counters are normally turned red side down, and other monster counters (including club and head counters) are normally turned lighter side up. These counters turn over only during combat, and when combat ends they turn normal side up again.",
+            "The Dragons, Trolls and Serpents (including Vipers) are the only armored monsters. These monsters are protected by armor in all directions; every attack that hits one of them hits armor and loses one sharpness star. A monster's armor cannot be damaged or destroyed while the monster lives.",
+            "Five of the monsters have two counters: each Giant has an extra counter that pictures a club, and each Tremendous Dragon has an extra counter that pictures its head. Each extra counter moves with its monster, but it attacks separately, with its own combat values. The extra counters cannot be attacked; the only way to kill one of them is by killing the monster it belongs to.",
+            "Flying Values: Some monsters have \"flying values\" instead of move values (see the List of Monsters), and other denizens and characters can acquire flying values by magic. Flying values, like move values, consist of a strength letter and a move time. When a character or denizen has a flying strength that will carry him, he can use it to fly. Flying monsters always fly. They fly when they charge in combat, and when hired or controlled they fly when they move."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.2.4",
+      "title": "Natives",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Each native counter represents the native pictured on the counter. The List of Natives identifies each type of native and indicates his Gold bounty, Notoriety bounty, weapon length, method of attack, weight, move strength, vulnerability, whether he is armored, and the basic \"wage\" that determines how much recorded gold it costs to hire him. Each native has the weapon length, method of attack and armor implied by the picture on his counter. Except for the Knights, each native's move strength and vulnerability equal his weight. The Knights have Heavy weight but Tremendous move strength and vulnerability."
+        },
+        {
+          "type": "list",
+          "items": [
+            "The natives are divided into nine groups. Each native counter has an identity code (or \"ID code\") that identifies him and the group he belongs to. The Company (\"C\" ID code) are the blue counters, the Bashkars (\"B\") and Rogues (\"R\") are red, the Guard (\"G\") and Order (\"O\") are gold, the Lancers (\"L\") and Woodfolk (\"W\") are green, and the Patrol (\"P\") and Soldiers (\"S\") are brown.",
+            "The ID code on each native counter identifies the native and his group. The first letter identifies his group, and the rest of the code identifies him within the group: the leader of the group has the \"HQ\" code, and his underlings are identified by numbers.",
+            "The leader of a native group is special – he is the only one who trades, and he is the only one who summons visitor/mission chits, even when the group is scattered. When he is killed (or hired), no one in that native group can trade or summon visitor/mission chits. The leader also has greater capabilities than the other members of his native group when hired.",
+            "The other numbers, letters and symbols on each native are his combat values. The harm letter and sharpness stars define the harm he inflicts when he hits. The number with the harm letter defines his attack time and the other number is his move time. The Table of Natives lists all the natives in each native group and their combat values, including those of their horses."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.2.5",
+      "title": "Visitor/Mission Chits",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The visitor/mission chits have a variety of uses. When a name (Crone, Scholar, Shaman, Warlock) is face up, the chit represents a visitor – a sage or magician who is visiting the Magic Realm. When Escort Party or Food/Ale is face up, the chit represents a helpless group of people who are on a mission. When Conquest, Pillage, Quest, Raid, Revolt or War is face up, the chit represents a messenger or demagogue with the authority to start a campaign. Missions and campaigns are described in Rule 7.2.4."
+        }
+      ]
+    }
+  ]
+} 

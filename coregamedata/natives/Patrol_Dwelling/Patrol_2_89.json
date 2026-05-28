@@ -1,0 +1,75 @@
+{
+  "id": "89",
+  "name": "Patrol 2",
+  "attributeBlocks": {
+    "this": {
+      "native": "Patrol",
+      "fame": "0",
+      "notoriety": "3",
+      "base_price": "2",
+      "vulnerability": "M",
+      "rank": "2",
+      "armored": "",
+      "original_game": "",
+      "icon_type": "short_swordsman",
+      "monster_die": "3",
+      "setup_start": "Patrol Dwelling",
+      "hire_type": "group",
+      "icon_folder": "natives",
+      "alt_monsters1_game": "",
+      "rw_expansion_1": "",
+      "denizen": "",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "icon_type_alt": "swordsman-idle-4",
+      "icon_size_alt": "0.9",
+      "icon_type_rider_alt": "cavalryman"
+    },
+    "light": {
+      "move_speed": "3",
+      "attack_speed": "5",
+      "strength": "M",
+      "length": "3",
+      "sharpness": "1",
+      "chit_color": "peach"
+    },
+    "dark": {
+      "move_speed": "3",
+      "attack_speed": "4",
+      "strength": "L",
+      "length": "3",
+      "sharpness": "1",
+      "chit_color": "brown"
+    }
+  },
+  "parts": [
+    {
+      "id": "121",
+      "name": "Patrol Horse 2",
+      "attributeBlocks": {
+        "this": {
+          "native": "Patrol",
+          "horse": "horse",
+          "move_bonus": "extra",
+          "vulnerability": "H",
+          "original_game": "",
+          "activated": "",
+          "alt_monsters1_game": "",
+          "rw_expansion_1": "",
+          "icon_folder_alt": "wesnoth/units",
+          "icon_type_alt": "nobleBeast",
+          "icon_size_alt": "1"
+        },
+        "trot": {
+          "move_speed": "6",
+          "strength": "M",
+          "chit_color": "peach"
+        },
+        "gallop": {
+          "move_speed": "6",
+          "strength": "H",
+          "chit_color": "brown"
+        }
+      }
+    }
+  ]
+}
