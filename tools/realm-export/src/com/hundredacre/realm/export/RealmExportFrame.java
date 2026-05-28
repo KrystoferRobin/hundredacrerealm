@@ -31,7 +31,7 @@ public class RealmExportFrame extends JFrame {
 	private final JTextField apiKeyField = new JTextField(42);
 	private final JTextField outputField = new JTextField(42);
 	private final JCheckBox uploadCheck = new JCheckBox("Upload to site after export", true);
-	private final JCheckBox publicProfileCheck = new JCheckBox("Public profile (hide setup card & raw save)", true);
+	private final JCheckBox publicProfileCheck = new JCheckBox("Public profile (omit setup card only)", true);
 	private final JTextArea logArea = new JTextArea(16, 60);
 
 	public RealmExportFrame(RealmSpeakPaths paths) {

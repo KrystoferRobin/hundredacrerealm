@@ -4,8 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Runs the Node {@code extract_realmspeak_save.js} script to produce display JSON
- * (map_data, map_locations, game_state) after XML extraction.
+ * Runs Node session pipeline scripts (full display JSON after XML + log export).
  */
 public final class NodePipelineRunner {
 	private NodePipelineRunner() {}
@@ -28,19 +27,24 @@ public final class NodePipelineRunner {
 		return cwd;
 	}
 
-	public static void runDisplayExtraction(File workDir) throws IOException, InterruptedException {
+	public static void runFullSessionPipeline(File workDir) throws IOException, InterruptedException {
 		File projectRoot = resolveProjectRoot();
-		File script = new File(projectRoot, "scripts/extract_realmspeak_save.js");
+		File script = new File(projectRoot, "scripts/run-session-pipeline.js");
 		if (!script.isFile()) {
-			throw new IOException("Node script not found: " + script);
+			throw new IOException("Node pipeline script not found: " + script);
 		}
-		ProcessBuilder pb = new ProcessBuilder("node", script.getAbsolutePath());
-		pb.directory(workDir);
+		ProcessBuilder pb = new ProcessBuilder("node", script.getAbsolutePath(), workDir.getAbsolutePath());
+		pb.directory(projectRoot);
 		pb.redirectErrorStream(true);
 		Process process = pb.start();
 		int code = process.waitFor();
 		if (code != 0) {
-			throw new IOException("Node display extraction failed (exit " + code + ")");
+			throw new IOException("Node session pipeline failed (exit " + code + ")");
 		}
+	}
+
+	/** @deprecated use {@link #runFullSessionPipeline} */
+	public static void runDisplayExtraction(File workDir) throws IOException, InterruptedException {
+		runFullSessionPipeline(workDir);
 	}
 }

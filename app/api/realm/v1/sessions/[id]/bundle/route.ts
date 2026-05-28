@@ -1,7 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { requireRealmApiKey } from '@/lib/realm-api-request';
-import { extractBundleToSession } from '@/lib/realm-bundle';
-import { bumpRevision, findBySessionId } from '@/lib/session-registry';
+import { extractBundleToSession, getSessionDir } from '@/lib/realm-bundle';
+import { bumpRevision, findBySessionId, saveRegistry, loadRegistry } from '@/lib/session-registry';
+import { runSessionPipeline, sessionIsDisplayReady } from '@/lib/session-pipeline';
+import fs from 'fs';
+import path from 'path';
 
 export const dynamic = 'force-dynamic';
 
@@ -32,13 +35,47 @@ export async function PUT(
       );
     }
 
-    const { manifest, sessionDir } = extractBundleToSession(buffer, sessionId);
+    const { manifest } = extractBundleToSession(buffer, sessionId);
+    const sessionDir = getSessionDir(sessionId);
 
     if (manifest.realmKey && manifest.realmKey !== entry.realmKey) {
       return NextResponse.json(
         { error: 'Bundle realmKey does not match allocated session' },
         { status: 409 }
       );
+    }
+
+    // Client should ship a complete bundle; if log/save sources are present, finish pipeline on server.
+    const hasRslog = fs.readdirSync(sessionDir).some((f) => f.endsWith('.rslog'));
+    const hasRsgame = fs.readdirSync(sessionDir).some((f) => f.endsWith('.rsgame'));
+
+    if (!sessionIsDisplayReady(sessionDir) && (hasRslog || hasRsgame || fs.existsSync(path.join(sessionDir, 'extracted_game.xml')))) {
+      console.log(`Running session pipeline for ${sessionId}…`);
+      runSessionPipeline(sessionDir);
+    } else if (!sessionIsDisplayReady(sessionDir)) {
+      return NextResponse.json(
+        {
+          error:
+            'Bundle is not display-ready (missing parsed_session.json). Include .rslog in export or run full client pipeline.',
+        },
+        { status: 422 }
+      );
+    }
+
+    // Refresh registry title from parsed session when available
+    const parsedPath = path.join(sessionDir, 'parsed_session.json');
+    if (fs.existsSync(parsedPath)) {
+      try {
+        const parsed = JSON.parse(fs.readFileSync(parsedPath, 'utf8'));
+        const registry = loadRegistry();
+        const row = registry.find((r) => r.sessionId === sessionId);
+        if (row && parsed.sessionTitle) {
+          row.gameTitle = parsed.sessionTitle;
+          saveRegistry(registry);
+        }
+      } catch {
+        /* ignore */
+      }
     }
 
     const updated = bumpRevision(sessionId);
@@ -49,7 +86,8 @@ export async function PUT(
       sessionDir,
       revision: updated?.revision ?? entry.revision,
       profile: manifest.profile ?? 'public',
-      message: 'Bundle extracted for display',
+      displayReady: sessionIsDisplayReady(sessionDir),
+      message: 'Bundle imported and ready for display',
     });
   } catch (err) {
     const message = err instanceof Error ? err.message : 'Import failed';

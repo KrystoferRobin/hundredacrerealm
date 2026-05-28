@@ -42,7 +42,7 @@ public class SessionExporter {
 	}
 
 	/**
-	 * @param profile {@code public} omits secrets from the bundle; {@code admin} includes all artifacts
+	 * @param profile {@code public} omits setup card only; {@code admin} includes all artifacts
 	 */
 	public Map<String, Object> export(File rsgameFile, File outputDir, String profile)
 			throws IOException, InterruptedException {
@@ -77,7 +77,7 @@ public class SessionExporter {
 		File xmlOut = new File(outputDir, "extracted_game.xml");
 		writeGameXml(save, xmlOut);
 
-		NodePipelineRunner.runDisplayExtraction(outputDir);
+		NodePipelineRunner.runFullSessionPipeline(outputDir);
 
 		boolean adminProfile = "admin".equalsIgnoreCase(profile);
 		Map<String, Object> setupCard = null;

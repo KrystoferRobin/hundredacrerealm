@@ -122,14 +122,22 @@ async function generateCurrentSessionTitle() {
       battles: sessionName.battles
     };
     
-    const outputPath = path.join(currentDir, 'public', 'stats', 'session_titles.json');
+    const outputPath = path.join(currentDir, 'session_titles.json');
+    fs.mkdirSync(path.dirname(outputPath), { recursive: true });
     fs.writeFileSync(outputPath, JSON.stringify(sessionTitle, null, 2));
-    
+
+    if (sessionData && !sessionData.sessionTitle) {
+      sessionData.sessionTitle = sessionName.mainTitle;
+      fs.writeFileSync(sessionDataPath, JSON.stringify(sessionData, null, 2));
+    }
+
     console.log(`Generated: "${sessionName.mainTitle}" - "${sessionName.subtitle}"`);
     console.log(`Output written to: ${outputPath}`);
-    
-    // Also update the global session titles file
-    await generateAllSessionTitles();
+
+    // Refresh global index when run from project root
+    if (fs.existsSync(path.join(process.cwd(), 'public', 'parsed_sessions'))) {
+      await generateAllSessionTitles();
+    }
     
   } catch (error) {
     console.error('Error generating current session title:', error);

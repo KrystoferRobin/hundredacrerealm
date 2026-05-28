@@ -20,6 +20,19 @@ public final class SessionBundleBuilder {
 
 	private SessionBundleBuilder() {}
 
+	/** Public bundles still omit setup card (treasure layout); everything else ships for re-processing. */
+	private static final String[] PUBLIC_EXCLUDE = {
+			"setup_card.json",
+	};
+
+	private static boolean isPublicExcluded(String name, String profile) {
+		if (!"public".equalsIgnoreCase(profile)) return false;
+		for (String ex : PUBLIC_EXCLUDE) {
+			if (ex.equals(name)) return true;
+		}
+		return false;
+	}
+
 	public static File buildRealmSessionZip(
 			File workDir,
 			String sessionId,
@@ -27,16 +40,16 @@ public final class SessionBundleBuilder {
 			int revision,
 			String profile
 	) throws IOException {
+		File parsed = new File(workDir, "parsed_session.json");
+		if (!parsed.isFile()) {
+			throw new IOException(
+					"Export incomplete: parsed_session.json missing. Ensure .rslog is present and Node pipeline ran.");
+		}
+
 		List<String> files = new ArrayList<>();
 		for (File f : workDir.listFiles()) {
 			if (!f.isFile() || f.getName().endsWith(".zip")) continue;
-			if ("public".equalsIgnoreCase(profile)) {
-				String n = f.getName();
-				if (n.equals("extracted_game.xml") || n.equals("setup_card.json")
-						|| n.endsWith(".rsgame") || n.endsWith(".rslog")) {
-					continue;
-				}
-			}
+			if (isPublicExcluded(f.getName(), profile)) continue;
 			files.add(f.getName());
 		}
 
