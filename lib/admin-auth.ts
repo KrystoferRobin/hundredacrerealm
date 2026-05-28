@@ -22,7 +22,8 @@ export function getJwtSecret(): string {
 export function loadUsers(): AdminUser[] {
   try {
     if (fs.existsSync(USERS_FILE)) {
-      return JSON.parse(fs.readFileSync(USERS_FILE, 'utf8'));
+      const raw = fs.readFileSync(USERS_FILE, 'utf8').replace(/^\uFEFF/, '');
+      return JSON.parse(raw);
     }
   } catch (error) {
     console.error('Error loading users:', error);
