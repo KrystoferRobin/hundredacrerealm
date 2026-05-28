@@ -28,15 +28,11 @@ const extractRsgameXml = (rsgamePath, outputDir) => {
         // Read the .rsgame file (it's a ZIP)
         const zip = new AdmZip(rsgamePath);
         
-        // Find the main XML file (usually the largest one)
+        // RealmSpeak saves a single XML: GameData_CHEATER_.xml (see GameData.java)
         const zipEntries = zip.getEntries();
-        let xmlEntry = null;
-        
-        for (const entry of zipEntries) {
-            if (entry.entryName.endsWith('.xml') && !xmlEntry) {
-                xmlEntry = entry;
-            }
-        }
+        let xmlEntry =
+            zipEntries.find((e) => e.entryName.endsWith('GameData_CHEATER_.xml')) ||
+            zipEntries.find((e) => e.entryName.endsWith('.xml'));
         
         if (!xmlEntry) {
             throw new Error('No XML file found in .rsgame archive');
