@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import DiscordWebhookPanel from '../../components/DiscordWebhookPanel';
+import RealmApiKeysPanel from '../../components/RealmApiKeysPanel';
 import DataManagementPanel from '../../components/DataManagementPanel';
 import CharacterAssignmentPanel from '../../components/CharacterAssignmentPanel';
 
@@ -273,6 +274,16 @@ export default function AdminPage() {
               Parsers
             </button>
             <button
+              onClick={() => setActiveTab('apikeys')}
+              className={`py-2 px-1 border-b-2 font-medium text-sm ${
+                activeTab === 'apikeys'
+                  ? 'border-indigo-500 text-indigo-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+              }`}
+            >
+              API Keys
+            </button>
+            <button
               onClick={() => setActiveTab('discord')}
               className={`py-2 px-1 border-b-2 font-medium text-sm ${
                 activeTab === 'discord'
@@ -301,6 +312,7 @@ export default function AdminPage() {
           {activeTab === 'data' && <DataManagementPanel />}
           {activeTab === 'characters' && <CharacterAssignmentPanel />}
           {activeTab === 'parsers' && <ParsersTab />}
+          {activeTab === 'apikeys' && <RealmApiKeysPanel />}
           {activeTab === 'discord' && <DiscordWebhookPanel />}
         </div>
       </div>

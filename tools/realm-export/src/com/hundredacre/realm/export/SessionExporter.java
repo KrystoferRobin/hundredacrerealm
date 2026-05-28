@@ -32,7 +32,20 @@ public class SessionExporter {
 		this.paths = paths;
 	}
 
-	public Map<String, Object> export(File rsgameFile, File outputDir) throws IOException {
+	public RealmIdentity peekIdentity(File rsgameFile) throws IOException {
+		GameData save = new GameData();
+		if (!save.zipFromFile(rsgameFile)) {
+			throw new IOException("Failed to load save: " + rsgameFile);
+		}
+		HostPrefWrapper.HOST_PREF_ID = null;
+		return GameIdentityExtractor.extract(save);
+	}
+
+	/**
+	 * @param profile {@code public} omits secrets from the bundle; {@code admin} includes all artifacts
+	 */
+	public Map<String, Object> export(File rsgameFile, File outputDir, String profile)
+			throws IOException, InterruptedException {
 		paths.validate();
 		if (!rsgameFile.isFile()) {
 			throw new IOException("Save file not found: " + rsgameFile);
@@ -64,8 +77,14 @@ public class SessionExporter {
 		File xmlOut = new File(outputDir, "extracted_game.xml");
 		writeGameXml(save, xmlOut);
 
-		Map<String, Object> setupCard = buildSetupCardExport(save);
-		writeJson(new File(outputDir, "setup_card.json"), setupCard);
+		NodePipelineRunner.runDisplayExtraction(outputDir);
+
+		boolean adminProfile = "admin".equalsIgnoreCase(profile);
+		Map<String, Object> setupCard = null;
+		if (adminProfile) {
+			setupCard = buildSetupCardExport(save);
+			writeJson(new File(outputDir, "setup_card.json"), setupCard);
+		}
 
 		Map<String, Object> manifest = new LinkedHashMap<>();
 		manifest.put("exporter", "realm-export-1.0");
@@ -76,17 +95,28 @@ public class SessionExporter {
 		manifest.put("objectCount", save.getGameObjects().size());
 		manifest.put("masterGameDataPath", paths.getGameDataXml().getPath());
 		manifest.put("realmspeakHome", paths.getHome().getPath());
-		manifest.put("setupCard", setupCard);
+		if (setupCard != null) manifest.put("setupCard", setupCard);
 		List<String> files = new ArrayList<>();
-		files.add(copiedSave.getName());
-		if (rslog != null) files.add(baseName + ".rslog");
-		files.add("extracted_game.xml");
-		files.add("setup_card.json");
-		files.add("full_export.json");
+		if (adminProfile) {
+			files.add(copiedSave.getName());
+			if (rslog != null) files.add(baseName + ".rslog");
+			files.add("extracted_game.xml");
+			if (setupCard != null) files.add("setup_card.json");
+		}
+		for (File f : outputDir.listFiles()) {
+			if (f.isFile() && f.getName().endsWith(".json") && !files.contains(f.getName())) {
+				files.add(f.getName());
+			}
+		}
 		manifest.put("files", files);
+		manifest.put("profile", profile);
 
 		writeJson(new File(outputDir, "full_export.json"), manifest);
 		return manifest;
+	}
+
+	public Map<String, Object> export(File rsgameFile, File outputDir) throws IOException, InterruptedException {
+		return export(rsgameFile, outputDir, "admin");
 	}
 
 	private static String stripExtension(String name) {

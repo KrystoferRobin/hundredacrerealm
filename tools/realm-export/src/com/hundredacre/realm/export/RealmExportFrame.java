@@ -5,9 +5,9 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
 import java.io.File;
-import java.util.Map;
 
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -17,24 +17,29 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingWorker;
-import javax.swing.filechooser.FileNameExtensionFilter;
 
 import com.robin.magic_realm.components.utility.GameFileFilters;
 
 /**
- * Swing UI styled after RealmSpeak file choosers.
+ * Export completed saves: allocate session ID via API, build bundle, upload.
  */
 public class RealmExportFrame extends JFrame {
 	private final RealmSpeakPaths paths;
 	private final JTextField saveField = new JTextField(42);
 	private final JTextField realmspeakField = new JTextField(42);
+	private final JTextField siteUrlField = new JTextField(42);
+	private final JTextField apiKeyField = new JTextField(42);
 	private final JTextField outputField = new JTextField(42);
-	private final JTextArea logArea = new JTextArea(14, 60);
+	private final JCheckBox uploadCheck = new JCheckBox("Upload to site after export", true);
+	private final JCheckBox publicProfileCheck = new JCheckBox("Public profile (hide setup card & raw save)", true);
+	private final JTextArea logArea = new JTextArea(16, 60);
 
 	public RealmExportFrame(RealmSpeakPaths paths) {
 		super("Hundred Acre Realm — Session Export");
 		this.paths = paths;
 		realmspeakField.setText(paths.getHome().getPath());
+		siteUrlField.setText(ExportSettings.getSiteUrl());
+		apiKeyField.setText(ExportSettings.getApiKey());
 		outputField.setText(new File(System.getProperty("user.home"), "realm-export-out").getPath());
 		logArea.setEditable(false);
 		buildUi();
@@ -52,13 +57,21 @@ public class RealmExportFrame extends JFrame {
 		c.gridy = 0;
 
 		addRow(form, c, "RealmSpeak folder:", realmspeakField, this::browseRealmspeak);
+		addRow(form, c, "Site URL:", siteUrlField, null);
+		addRow(form, c, "API key:", apiKeyField, null);
 		addRow(form, c, "Save game (.rsgame):", saveField, this::browseSave);
-		addRow(form, c, "Output folder:", outputField, this::browseOutput);
+		addRow(form, c, "Local output folder:", outputField, this::browseOutput);
 
-		JButton exportBtn = new JButton("Export upload bundle");
+		c.gridx = 1;
+		c.gridwidth = 2;
+		form.add(uploadCheck, c);
+		c.gridy++;
+		form.add(publicProfileCheck, c);
+		c.gridy++;
+
+		JButton exportBtn = new JButton("Allocate ID → Export → Upload");
 		exportBtn.addActionListener(e -> runExport());
 		c.gridy++;
-		c.gridwidth = 2;
 		form.add(exportBtn, c);
 
 		JPanel root = new JPanel(new BorderLayout(8, 8));
@@ -73,32 +86,28 @@ public class RealmExportFrame extends JFrame {
 		form.add(new JLabel(label), c);
 		c.gridx = 1;
 		form.add(field, c);
-		JButton browseBtn = new JButton("Browse…");
-		browseBtn.addActionListener(e -> browse.run());
-		c.gridx = 2;
-		c.weightx = 0;
-		form.add(browseBtn, c);
-		c.weightx = 1;
+		if (browse != null) {
+			JButton browseBtn = new JButton("Browse…");
+			browseBtn.addActionListener(e -> browse.run());
+			c.gridx = 2;
+			c.weightx = 0;
+			form.add(browseBtn, c);
+			c.weightx = 1;
+		}
 		c.gridy++;
 	}
 
 	private void browseSave() {
 		JFileChooser chooser = new JFileChooser();
 		chooser.setFileFilter(GameFileFilters.createSaveGameFileFilter());
-		chooser.setDialogTitle("Select completed RealmSpeak save");
 		if (chooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
-			File f = chooser.getSelectedFile();
-			saveField.setText(f.getAbsolutePath());
-			if (outputField.getText().isBlank()) {
-				outputField.setText(new File(f.getParentFile(), "export-" + f.getName().replace(".rsgame", "")).getPath());
-			}
+			saveField.setText(chooser.getSelectedFile().getAbsolutePath());
 		}
 	}
 
 	private void browseRealmspeak() {
 		JFileChooser chooser = new JFileChooser();
 		chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-		chooser.setDialogTitle("RealmSpeak install folder");
 		if (chooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
 			realmspeakField.setText(chooser.getSelectedFile().getAbsolutePath());
 		}
@@ -107,7 +116,6 @@ public class RealmExportFrame extends JFrame {
 	private void browseOutput() {
 		JFileChooser chooser = new JFileChooser();
 		chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-		chooser.setDialogTitle("Export output folder");
 		if (chooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
 			outputField.setText(chooser.getSelectedFile().getAbsolutePath());
 		}
@@ -121,14 +129,13 @@ public class RealmExportFrame extends JFrame {
 	private void runExport() {
 		File save = new File(saveField.getText().trim());
 		File rsHome = new File(realmspeakField.getText().trim());
-		File out = new File(outputField.getText().trim());
+		File outRoot = new File(outputField.getText().trim());
+		String siteUrl = siteUrlField.getText().trim();
+		String apiKey = apiKeyField.getText().trim();
 
 		if (!save.isFile()) {
-			JOptionPane.showMessageDialog(this, "Select a valid .rsgame file.", "Missing save", JOptionPane.WARNING_MESSAGE);
-			return;
-		}
-		if (!out.isDirectory() && !out.mkdirs() && !out.isDirectory()) {
-			JOptionPane.showMessageDialog(this, "Could not create output folder.", "Output error", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(this, "Select a valid .rsgame file.", "Missing save",
+					JOptionPane.WARNING_MESSAGE);
 			return;
 		}
 
@@ -141,37 +148,74 @@ public class RealmExportFrame extends JFrame {
 			return;
 		}
 
-		logArea.setText("");
-		log("Exporting " + save.getName() + " …");
+		if (uploadCheck.isSelected() && (siteUrl.isEmpty() || apiKey.isEmpty())) {
+			JOptionPane.showMessageDialog(this, "Site URL and API key are required for upload.",
+					"API settings", JOptionPane.WARNING_MESSAGE);
+			return;
+		}
 
-		SwingWorker<Map<String, Object>, Void> worker = new SwingWorker<>() {
+		ExportSettings.save(siteUrl, apiKey);
+		logArea.setText("");
+
+		SwingWorker<Void, String> worker = new SwingWorker<>() {
 			@Override
-			protected Map<String, Object> doInBackground() throws Exception {
-				return new SessionExporter(activePaths).export(save, out);
+			protected Void doInBackground() throws Exception {
+				SessionExporter exporter = new SessionExporter(activePaths);
+				RealmIdentity identity = exporter.peekIdentity(save);
+				publish("Realm key (" + identity.realmKeySource + "): " + identity.realmKey.substring(0, 12) + "…");
+				if (identity.gamePort != null) publish("  game port (gp__): " + identity.gamePort);
+				if (identity.gameTitle != null) publish("  title: " + identity.gameTitle);
+
+				String sessionId;
+				int revision = 0;
+				boolean isNew = true;
+
+				if (uploadCheck.isSelected()) {
+					RealmApiClient client = new RealmApiClient(siteUrl, apiKey);
+					RealmApiClient.AllocateResponse alloc = client.allocate(identity);
+					sessionId = alloc.sessionId;
+					revision = alloc.revision;
+					isNew = alloc.isNew;
+					publish("Session ID: " + sessionId + (isNew ? " (new)" : " (existing table)"));
+				} else {
+					sessionId = java.util.UUID.randomUUID().toString();
+					publish("Local-only session ID: " + sessionId);
+				}
+
+				File workDir = new File(outRoot, sessionId);
+				workDir.mkdirs();
+				String profile = publicProfileCheck.isSelected() ? "public" : "admin";
+				publish("Exporting (" + profile + " profile)…");
+				exporter.export(save, workDir, profile);
+
+				File zip = SessionBundleBuilder.buildRealmSessionZip(workDir, sessionId, identity, revision, profile);
+				publish("Bundle: " + zip.getName() + " (" + zip.length() / 1024 + " KB)");
+
+				if (uploadCheck.isSelected()) {
+					publish("Uploading…");
+					RealmApiClient client = new RealmApiClient(siteUrl, apiKey);
+					client.uploadBundle(sessionId, zip);
+					publish("Upload complete. View: " + siteUrl + "/session/" + sessionId);
+				} else {
+					publish("Done. Output: " + workDir.getAbsolutePath());
+				}
+				return null;
+			}
+
+			@Override
+			protected void process(java.util.List<String> chunks) {
+				for (String line : chunks) log(line);
 			}
 
 			@Override
 			protected void done() {
 				try {
-					Map<String, Object> manifest = get();
-					@SuppressWarnings("unchecked")
-					Map<String, Object> summary = (Map<String, Object>) manifest.get("setupCard");
-					if (summary != null) {
-						@SuppressWarnings("unchecked")
-						Map<String, Object> s = (Map<String, Object>) summary.get("summary");
-						if (s != null) {
-							log("Setup card holders: " + s.get("holderCount")
-									+ " (treasure " + s.get("treasureHolderCount")
-									+ ", native " + s.get("nativeHolderCount") + ")");
-						}
-					}
-					log("Wrote bundle to: " + out.getAbsolutePath());
-					log("Ready for upload / Node pipeline.");
+					get();
 				} catch (Exception ex) {
 					log("ERROR: " + ex.getMessage());
 					ex.printStackTrace();
-					JOptionPane.showMessageDialog(RealmExportFrame.this,
-							ex.getMessage(), "Export failed", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(RealmExportFrame.this, ex.getMessage(), "Export failed",
+							JOptionPane.ERROR_MESSAGE);
 				}
 			}
 		};

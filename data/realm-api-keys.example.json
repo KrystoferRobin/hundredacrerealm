@@ -1,0 +1,10 @@
+[
+  {
+    "id": "example-id",
+    "label": "export-tool-example",
+    "keyHash": "replace-with-sha256-of-your-key",
+    "prefix": "har_example",
+    "createdAt": "2026-01-01T00:00:00.000Z",
+    "enabled": true
+  }
+]

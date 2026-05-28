@@ -49,6 +49,8 @@ prisma/dev.db
 .env.*.local
 /data/admin-users.json
 /data/discord_webhook_settings.json
+/data/realm-api-keys.json
+/data/realm-session-registry.json
 
 # RealmSpeak install/source trees (reference only — clone outside or below, never commit)
 /RealmSpeak-src/

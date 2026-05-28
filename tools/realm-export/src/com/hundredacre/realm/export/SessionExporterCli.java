@@ -17,7 +17,7 @@ public class SessionExporterCli {
 				? new RealmSpeakPaths(new File(args[2]))
 				: RealmSpeakPaths.resolve();
 		paths.validate();
-		new SessionExporter(paths).export(save, out);
+		new SessionExporter(paths).export(save, out, "admin");
 		System.out.println("Exported to " + out.getAbsolutePath());
 	}
 }
