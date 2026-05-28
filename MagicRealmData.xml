@@ -21,7 +21,6 @@
         <attribute icon_folder_alt="wesnoth/units" />
         <attribute icon_type_alt="fireDragon" />
         <attribute icon_size_alt="0.4" />
-        <attribute icon_y_offset_alt="4" />
       </AttributeBlock>
       <AttributeBlock blockName="light">
         <attribute move_speed="4" />
@@ -1230,6 +1229,7 @@
         <attribute icon_folder_alt="wesnoth/units" />
         <attribute icon_type_alt="ghost" />
         <attribute icon_size_alt="1.2" />
+        <attribute undead="" />
       </AttributeBlock>
       <AttributeBlock blockName="light">
         <attribute move_speed="4" />
@@ -1263,6 +1263,7 @@
         <attribute icon_folder_alt="wesnoth/units" />
         <attribute icon_type_alt="ghost" />
         <attribute icon_size_alt="1.2" />
+        <attribute undead="" />
       </AttributeBlock>
       <AttributeBlock blockName="light">
         <attribute move_speed="4" />
@@ -7507,6 +7508,7 @@
           <attributeVal N1="demons" />
           <attributeVal N2="spells" />
           <attributeVal N3="curses" />
+          <attributeVal N4="sites" />
         </attributeList>
       </AttributeBlock>
     </GameObject>
@@ -7731,6 +7733,7 @@
         <attribute host_okay="" />
         <attribute rw_expansion_1="" />
         <attribute learnable="" />
+        <attribute opens_treasure_locations="" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="291" name="Fiery Blast">
@@ -8012,6 +8015,7 @@
         <attribute host_okay="" />
         <attribute rw_expansion_1="" />
         <attribute learnable="" />
+        <attribute opens_treasure_locations="T" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="301" name="Absorb Essence">
@@ -8094,6 +8098,7 @@
         <attribute host_okay="" />
         <attribute rw_expansion_1="" />
         <attribute learnable="" />
+        <attribute targets_sites_freed_spell="" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="306" name="Persuade">
@@ -8162,6 +8167,7 @@
         <attribute host_okay="" />
         <attribute rw_expansion_1="" />
         <attribute learnable="" />
+        <attribute targets_sites_freed_spell="" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="310" name="Melt Into Mist">
@@ -8396,6 +8402,11 @@
         <attribute nosecret="" />
         <attribute rw_expansion_1="" />
         <attribute item="" />
+        <attribute tile_type_fallback="none" />
+        <attributeList keyName="tile_type_tile">
+          <attributeVal N0="C" />
+          <attributeVal N1="M" />
+        </attributeList>
       </AttributeBlock>
     </GameObject>
     <GameObject id="322" name="Cloven Hoof">
@@ -12224,6 +12235,19 @@
         <attribute scholar="1" />
         <attribute woodfolk="-1" />
         <attribute bashkars="-1" />
+      </AttributeBlock>
+      <AttributeBlock blockName="optional_2">
+        <attribute optkey="OptCharDwarf" />
+        <attributeList keyName="advantages">
+          <attributeVal N0="SHORT LEGS:  You can only record 2 MOVE actions per turn.  Each REST action is worth double." />
+        </attributeList>
+        <attributeList keyName="replace">
+          <attributeVal N0="advantages" />
+        </attributeList>
+        <attributeList keyName="extra_actions">
+          <attributeVal N0="!M" />
+          <attributeVal N1="!M" />
+        </attributeList>
       </AttributeBlock>
       <contains id="535" />
       <contains id="536" />
@@ -16620,6 +16644,7 @@
         <attribute author="Expansion 1" />
         <attribute benevolent="" />
         <attribute learnable="" />
+        <attribute non_treasure_weapon="" />
       </AttributeBlock>
       <AttributeBlock blockName="attribute_add">
         <attribute alerted_weapon="" />
@@ -16865,7 +16890,11 @@
         <attribute chit_color="lightblue" />
         <attribute icon_type="serpent" />
         <attribute icon_folder="monsters" />
+        <attribute icon_type_alt="add-ons-War_of_Legends-images-units-steelhive-steel_serpent" />
+        <attribute icon_folder_alt="wesnoth/units/addons" />
+        <attribute icon_size_alt="0.9" />
         <attribute length="0" />
+        <attribute serpent="" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="667" name="Rod of the Mage">
@@ -17864,7 +17893,6 @@
         <attribute icon_type_alt="fireDragon" />
         <attribute icon_folder_alt="wesnoth/units" />
         <attribute icon_size_alt="0.4" />
-        <attribute icon_y_offset_alt="4" />
       </AttributeBlock>
       <AttributeBlock blockName="light">
         <attribute move_speed="5" />
@@ -19490,7 +19518,6 @@
         <attribute icon_type_alt="fireDragon" />
         <attribute icon_folder_alt="wesnoth/units" />
         <attribute icon_size_alt="0.4" />
-        <attribute icon_y_offset_alt="4" />
       </AttributeBlock>
       <AttributeBlock blockName="light">
         <attribute move_speed="4" />
@@ -22228,6 +22255,8 @@
         <attribute sheltered="1" />
         <attribute name="Snowstorm" />
         <attribute frozen_water="" />
+        <attribute special="note7" />
+        <attribute description="If a character ends a move or fly phase in a non-frozen water clearing, he must fatigue one asterisk." />
       </AttributeBlock>
       <AttributeBlock blockName="special">
         <attribute days="5" />
@@ -22278,6 +22307,8 @@
         <attribute sheltered="1" />
         <attribute name="Snowstorm" />
         <attribute frozen_water="" />
+        <attribute special="note7" />
+        <attribute description="If a character ends a move or fly phase in a non-frozen water clearing, he must fatigue one asterisk." />
       </AttributeBlock>
       <AttributeBlock blockName="special">
         <attribute days="4" />
@@ -22328,6 +22359,8 @@
         <attribute sheltered="1" />
         <attribute name="Snowstorm" />
         <attribute frozen_water="" />
+        <attribute special="note7" />
+        <attribute description="If a character ends a move or fly phase in a non-frozen water clearing, he must fatigue one asterisk." />
       </AttributeBlock>
       <AttributeBlock blockName="special">
         <attribute days="2" />
@@ -22375,6 +22408,8 @@
         <attribute sheltered="1" />
         <attribute name="Snowstorm" />
         <attribute frozen_water="" />
+        <attribute special="note7" />
+        <attribute description="If a character ends a move or fly phase in a non-frozen water clearing, he must fatigue one asterisk." />
       </AttributeBlock>
       <AttributeBlock blockName="special">
         <attribute days="7" />
@@ -22415,13 +22450,15 @@
         <attribute days="5" />
         <attribute basic="2" />
         <attribute sunlight="3" />
-        <attribute name="flood" />
+        <attribute name="Showers" />
       </AttributeBlock>
       <AttributeBlock blockName="storm">
         <attribute days="4" />
         <attribute basic="2" />
         <attribute name="Rain" />
         <attribute sunlight="4" />
+        <attribute special="note7" />
+        <attribute description="If a character ends a move or fly phase in a non-frozen water clearing, he must fatigue one asterisk." />
       </AttributeBlock>
       <AttributeBlock blockName="special">
         <attribute days="3" />
@@ -22465,8 +22502,10 @@
       <AttributeBlock blockName="storm">
         <attribute days="6" />
         <attribute basic="2" />
-        <attribute name="flood" />
+        <attribute name="Rain" />
         <attribute sunlight="2" />
+        <attribute special="note7" />
+        <attribute description="If a character ends a move or fly phase in a non-frozen water clearing, he must fatigue one asterisk." />
       </AttributeBlock>
       <AttributeBlock blockName="special">
         <attribute days="7" />
@@ -22510,8 +22549,10 @@
       <AttributeBlock blockName="storm">
         <attribute days="7" />
         <attribute basic="2" />
-        <attribute name="flood" />
+        <attribute name="Soft Rain" />
         <attribute sunlight="2" />
+        <attribute special="note7" />
+        <attribute description="If a character ends a move or fly phase in a non-frozen water clearing, he must fatigue one asterisk." />
       </AttributeBlock>
       <AttributeBlock blockName="special">
         <attribute days="7" />
@@ -22550,13 +22591,15 @@
         <attribute days="7" />
         <attribute basic="2" />
         <attribute sunlight="2" />
-        <attribute name="flood" />
+        <attribute name="Showers" />
       </AttributeBlock>
       <AttributeBlock blockName="storm">
         <attribute days="5" />
         <attribute basic="2" />
         <attribute name="Rain" />
         <attribute sunlight="3" />
+        <attribute special="note7" />
+        <attribute description="If a character ends a move or fly phase in a non-frozen water clearing, he must fatigue one asterisk." />
       </AttributeBlock>
       <AttributeBlock blockName="special">
         <attribute days="5" />
@@ -22564,7 +22607,7 @@
         <attribute sunlight="3" />
         <attribute name="Heat Wave" />
         <attribute special="note4" />
-        <attribute description="If a character is not in a cave or mountain clearing during Birdsong, he must fatigue one asterisk" />
+        <attribute description="If a character is not in a cave, water or mountain clearing during Birdsong, he must fatigue one asterisk." />
       </AttributeBlock>
     </GameObject>
     <GameObject id="883" name="Swelter">
@@ -22602,8 +22645,10 @@
       <AttributeBlock blockName="storm">
         <attribute days="7" />
         <attribute basic="2" />
-        <attribute name="flood" />
+        <attribute name="Thunderstorm" />
         <attribute sunlight="1" />
+        <attribute special="note7" />
+        <attribute description="If a character ends a move or fly phase in a non-frozen water clearing, he must fatigue one asterisk." />
       </AttributeBlock>
       <AttributeBlock blockName="special">
         <attribute days="4" />
@@ -22649,8 +22694,10 @@
       <AttributeBlock blockName="storm">
         <attribute days="7" />
         <attribute basic="2" />
-        <attribute name="flood" />
+        <attribute name="Rain" />
         <attribute sunlight="1" />
+        <attribute special="note7" />
+        <attribute description="If a character ends a move or fly phase in a non-frozen water clearing, he must fatigue one asterisk." />
       </AttributeBlock>
       <AttributeBlock blockName="special">
         <attribute days="7" />
@@ -22694,8 +22741,10 @@
       <AttributeBlock blockName="storm">
         <attribute days="7" />
         <attribute basic="2" />
-        <attribute name="flood" />
+        <attribute name="Cold Rain" />
         <attribute sunlight="1" />
+        <attribute special="note7" />
+        <attribute description="If a character ends a move or fly phase in a non-frozen water clearing, he must fatigue one asterisk." />
       </AttributeBlock>
       <AttributeBlock blockName="special">
         <attribute days="7" />
@@ -22740,8 +22789,10 @@
       <AttributeBlock blockName="storm">
         <attribute days="7" />
         <attribute basic="2" />
-        <attribute name="flood" />
+        <attribute name="Cold Rain" />
         <attribute sunlight="1" />
+        <attribute special="note7" />
+        <attribute description="If a character ends a move or fly phase in a non-frozen water clearing, he must fatigue one asterisk." />
       </AttributeBlock>
       <AttributeBlock blockName="special">
         <attribute days="7" />
@@ -22792,6 +22843,8 @@
         <attribute name="Freezing Rain" />
         <attribute sunlight="1" />
         <attribute frozen_water="" />
+        <attribute special="note7" />
+        <attribute description="If a character ends a move or fly phase in a non-frozen water clearing, he must fatigue one asterisk." />
       </AttributeBlock>
       <AttributeBlock blockName="special">
         <attribute days="7" />
@@ -26118,7 +26171,6 @@
         <attribute discover_to_leave="" />
         <attribute icon_type_alt="minotaurKing" />
         <attribute icon_folder_alt="wesnoth/units" />
-        <attribute maze="" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="972" name="Tree">
@@ -33011,6 +33063,7 @@
         <attribute code="GT" />
         <attribute folder="sr_tiles_legendary" />
         <attribute stile="" />
+        <attribute water="" />
       </AttributeBlock>
       <AttributeBlock blockName="normal">
         <attribute offroad_xy="63.7,84.6" />
@@ -33262,6 +33315,7 @@
         <attribute code="LA" />
         <attribute folder="sr_tiles_legendary" />
         <attribute stile="" />
+        <attribute water="" />
       </AttributeBlock>
       <AttributeBlock blockName="normal">
         <attribute offroad_xy="62.9,87.1" />
@@ -33968,6 +34022,10 @@
         <attribute path_6_to="SW" />
         <attribute path_6_type="normal" />
         <attribute path_6_arc="20.3,65.9" />
+        <attribute path_7_from="clearing_4" />
+        <attribute path_7_to="N" />
+        <attribute path_7_type="normal" />
+        <attribute path_7_arc="49.1,6.7" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="1189" name="Jolly Hills">
@@ -34076,6 +34134,7 @@
         <attribute stile="" />
         <attribute water_source_clearing="1" />
         <attribute anchor_tile="" />
+        <attribute water="" />
       </AttributeBlock>
       <AttributeBlock blockName="normal">
         <attribute offroad_xy="69.5,88.3" />
@@ -34201,6 +34260,7 @@
         <attribute code="RR" />
         <attribute folder="sr_tiles_legendary" />
         <attribute stile="" />
+        <attribute water="" />
       </AttributeBlock>
       <AttributeBlock blockName="normal">
         <attribute offroad_xy="40.7,82.5" />
@@ -34294,6 +34354,7 @@
         <attribute code="RS" />
         <attribute folder="sr_tiles_legendary" />
         <attribute stile="" />
+        <attribute water="" />
       </AttributeBlock>
       <AttributeBlock blockName="normal">
         <attribute offroad_xy="32.6,84.3" />
@@ -34389,6 +34450,7 @@
         <attribute code="RT" />
         <attribute folder="sr_tiles_legendary" />
         <attribute stile="" />
+        <attribute water="" />
       </AttributeBlock>
       <AttributeBlock blockName="normal">
         <attribute offroad_xy="50.4,83.6" />
@@ -34478,6 +34540,7 @@
         <attribute code="RU" />
         <attribute folder="sr_tiles_legendary" />
         <attribute stile="" />
+        <attribute water="" />
       </AttributeBlock>
       <AttributeBlock blockName="normal">
         <attribute offroad_xy="48.1,83.9" />
@@ -34568,6 +34631,7 @@
         <attribute code="RV" />
         <attribute folder="sr_tiles_legendary" />
         <attribute stile="" />
+        <attribute water="" />
       </AttributeBlock>
       <AttributeBlock blockName="normal">
         <attribute offroad_xy="45.9,85.7" />
@@ -34775,6 +34839,7 @@
         <attribute code="SR" />
         <attribute folder="sr_tiles_legendary" />
         <attribute stile="" />
+        <attribute water="" />
       </AttributeBlock>
       <AttributeBlock blockName="normal">
         <attribute offroad_xy="67.9,91.8" />
@@ -35308,6 +35373,7 @@
         <attribute icon_type="fireDragon" />
         <attribute icon_folder="wesnoth/units" />
         <attribute icon_size="0.4" />
+        <attribute icon_size_override="0.5" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="1221" name="Lair">
@@ -35580,6 +35646,7 @@
         <attribute ts_color="brown" />
         <attribute icon_type="minotaurKing" />
         <attribute icon_folder="wesnoth/units" />
+        <attribute maze="" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="1238" name="Lost Palace">
@@ -36354,7 +36421,7 @@
         <attribute needs_init="" />
         <attribute denizen="" />
         <attribute icon_size="0.4" />
-        <attribute icon_y_offset="4" />
+        <attribute icon_size_override="0.5" />
         <attribute dragon="" />
       </AttributeBlock>
       <AttributeBlock blockName="light">
@@ -36776,6 +36843,8 @@
         <attribute undead="" />
         <attribute skeleton="" />
         <attribute transmorph_immunity="" />
+        <attribute cannot_be_abandoned="" />
+        <attribute regenerates_immediately="" />
       </AttributeBlock>
       <AttributeBlock blockName="trot">
         <attribute move_speed="6" />
@@ -37064,25 +37133,26 @@
         <attribute needs_init="" />
         <attribute icon_size="0.9" />
         <attribute no_change_tactics="" />
-        <attribute change_tactics_after_casting="" />
-        <attribute fast_caster="" />
         <attribute native_name="Caster" />
         <attribute roving_native="" />
+        <attribute cast_only_in_first_round="" />
+        <attribute fast_caster="" />
       </AttributeBlock>
       <AttributeBlock blockName="light">
         <attribute move_speed="5" />
         <attribute attack_speed="3" />
         <attribute length="9" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute magic_type="V" />
         <attribute attack_spell="Summon Demon" />
+        <attribute change_tactics_for_non_spell_attack="" />
       </AttributeBlock>
       <AttributeBlock blockName="dark">
         <attribute move_speed="4" />
         <attribute attack_speed="4" />
         <attribute strength="M" />
         <attribute length="9" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
       </AttributeBlock>
       <contains id="2186" />
     </GameObject>
@@ -37104,25 +37174,26 @@
         <attribute denizen="" />
         <attribute icon_size="0.9" />
         <attribute no_change_tactics="" />
-        <attribute change_tactics_after_casting="" />
-        <attribute fast_caster="" />
         <attribute native_name="Caster" />
         <attribute roving_native="" />
+        <attribute cast_only_in_first_round="" />
+        <attribute fast_caster="" />
       </AttributeBlock>
       <AttributeBlock blockName="light">
         <attribute move_speed="5" />
         <attribute attack_speed="3" />
         <attribute length="9" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute magic_type="V" />
         <attribute attack_spell="Summon Demon" />
+        <attribute change_tactics_for_non_spell_attack="" />
       </AttributeBlock>
       <AttributeBlock blockName="dark">
         <attribute move_speed="4" />
         <attribute attack_speed="4" />
         <attribute strength="M" />
         <attribute length="9" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
       </AttributeBlock>
       <contains id="2187" />
     </GameObject>
@@ -37144,25 +37215,26 @@
         <attribute denizen="" />
         <attribute icon_size="0.9" />
         <attribute no_change_tactics="" />
-        <attribute change_tactics_after_casting="" />
-        <attribute fast_caster="" />
         <attribute native_name="Caster" />
         <attribute roving_native="" />
+        <attribute cast_only_in_first_round="" />
+        <attribute fast_caster="" />
       </AttributeBlock>
       <AttributeBlock blockName="light">
         <attribute move_speed="5" />
         <attribute attack_speed="3" />
         <attribute length="9" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute magic_type="V" />
         <attribute attack_spell="Summon Demon" />
+        <attribute change_tactics_for_non_spell_attack="" />
       </AttributeBlock>
       <AttributeBlock blockName="dark">
         <attribute move_speed="4" />
         <attribute attack_speed="4" />
         <attribute strength="M" />
         <attribute length="9" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
       </AttributeBlock>
       <contains id="2188" />
     </GameObject>
@@ -37185,10 +37257,10 @@
         <attribute denizen="" />
         <attribute icon_size="0.9" />
         <attribute no_change_tactics="" />
-        <attribute change_tactics_after_casting="" />
-        <attribute fast_caster="" />
         <attribute native_name="Caster" />
         <attribute roving_native="" />
+        <attribute cast_only_in_first_round="" />
+        <attribute fast_caster="" />
         <attributeList keyName="extra_actions">
           <attributeVal N0="SP" />
         </attributeList>
@@ -37197,16 +37269,17 @@
         <attribute move_speed="5" />
         <attribute attack_speed="2" />
         <attribute length="9" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute magic_type="V" />
         <attribute attack_spell="Summon Demon" />
+        <attribute change_tactics_for_non_spell_attack="" />
       </AttributeBlock>
       <AttributeBlock blockName="dark">
         <attribute move_speed="4" />
         <attribute attack_speed="4" />
         <attribute strength="M" />
         <attribute length="9" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
       </AttributeBlock>
       <contains id="2189" />
     </GameObject>
@@ -39148,6 +39221,7 @@
         <attribute icon_size="1.1" />
         <attribute wraith="" />
         <attribute box_num="1" />
+        <attribute undead="" />
       </AttributeBlock>
       <AttributeBlock blockName="light">
         <attribute move_speed="3" />
@@ -39179,6 +39253,7 @@
         <attribute icon_size="1.1" />
         <attribute wraith="" />
         <attribute box_num="2" />
+        <attribute undead="" />
       </AttributeBlock>
       <AttributeBlock blockName="light">
         <attribute move_speed="3" />
@@ -39210,6 +39285,7 @@
         <attribute icon_size="1.1" />
         <attribute wraith="" />
         <attribute box_num="3" />
+        <attribute undead="" />
       </AttributeBlock>
       <AttributeBlock blockName="light">
         <attribute move_speed="3" />
@@ -39241,6 +39317,7 @@
         <attribute icon_size="1.1" />
         <attribute wraith="" />
         <attribute box_num="4" />
+        <attribute undead="" />
       </AttributeBlock>
       <AttributeBlock blockName="light">
         <attribute move_speed="3" />
@@ -39605,7 +39682,7 @@
       <AttributeBlock blockName="light">
         <attribute move_speed="2" />
         <attribute attack_speed="0" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute magic_type="VII" />
       </AttributeBlock>
       <AttributeBlock blockName="dark">
@@ -39613,7 +39690,7 @@
         <attribute attack_speed="1" />
         <attribute strength="L" />
         <attribute length="14" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="2" />
         <attribute missile="" />
       </AttributeBlock>
@@ -39644,7 +39721,7 @@
       <AttributeBlock blockName="light">
         <attribute move_speed="2" />
         <attribute attack_speed="0" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute magic_type="VII" />
       </AttributeBlock>
       <AttributeBlock blockName="dark">
@@ -39652,7 +39729,7 @@
         <attribute attack_speed="1" />
         <attribute strength="L" />
         <attribute length="14" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="2" />
         <attribute missile="" />
       </AttributeBlock>
@@ -39683,7 +39760,7 @@
       <AttributeBlock blockName="light">
         <attribute move_speed="2" />
         <attribute attack_speed="0" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute magic_type="VII" />
       </AttributeBlock>
       <AttributeBlock blockName="dark">
@@ -39691,7 +39768,7 @@
         <attribute attack_speed="1" />
         <attribute strength="L" />
         <attribute length="14" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="2" />
         <attribute missile="" />
       </AttributeBlock>
@@ -39722,7 +39799,7 @@
       <AttributeBlock blockName="light">
         <attribute move_speed="2" />
         <attribute attack_speed="0" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute magic_type="VII" />
       </AttributeBlock>
       <AttributeBlock blockName="dark">
@@ -39730,7 +39807,7 @@
         <attribute attack_speed="1" />
         <attribute strength="L" />
         <attribute length="14" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="2" />
         <attribute missile="" />
       </AttributeBlock>
@@ -39761,7 +39838,7 @@
       <AttributeBlock blockName="light">
         <attribute move_speed="2" />
         <attribute attack_speed="0" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute magic_type="VII" />
       </AttributeBlock>
       <AttributeBlock blockName="dark">
@@ -39769,7 +39846,7 @@
         <attribute attack_speed="1" />
         <attribute strength="L" />
         <attribute length="14" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="2" />
         <attribute missile="" />
       </AttributeBlock>
@@ -39804,7 +39881,7 @@
       <AttributeBlock blockName="light">
         <attribute move_speed="2" />
         <attribute attack_speed="0" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute magic_type="VII" />
       </AttributeBlock>
       <AttributeBlock blockName="dark">
@@ -39812,7 +39889,7 @@
         <attribute attack_speed="1" />
         <attribute strength="M" />
         <attribute length="16" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="2" />
         <attribute missile="" />
       </AttributeBlock>
@@ -41751,7 +41828,7 @@
         <attribute move_speed="6" />
         <attribute attack_speed="4" />
         <attribute strength="H" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute sharpness="1" />
         <attribute length="5" />
       </AttributeBlock>
@@ -41760,7 +41837,7 @@
         <attribute attack_speed="6" />
         <attribute strength="T" />
         <attribute length="5" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="1" />
         <attribute move_speed_bonus_combat_box3="1" />
       </AttributeBlock>
@@ -41791,7 +41868,7 @@
         <attribute move_speed="5" />
         <attribute attack_speed="6" />
         <attribute strength="T" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute sharpness="1" />
         <attribute length="5" />
       </AttributeBlock>
@@ -41800,7 +41877,7 @@
         <attribute attack_speed="5" />
         <attribute strength="H" />
         <attribute length="5" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="1" />
         <attribute move_speed_bonus_combat_box3="1" />
       </AttributeBlock>
@@ -41831,7 +41908,7 @@
         <attribute move_speed="6" />
         <attribute attack_speed="5" />
         <attribute strength="T" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute sharpness="1" />
         <attribute length="5" />
       </AttributeBlock>
@@ -41840,7 +41917,7 @@
         <attribute attack_speed="4" />
         <attribute strength="H" />
         <attribute length="5" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="1" />
         <attribute move_speed_bonus_combat_box3="1" />
       </AttributeBlock>
@@ -41871,7 +41948,7 @@
         <attribute move_speed="5" />
         <attribute attack_speed="6" />
         <attribute strength="H" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute sharpness="1" />
         <attribute length="5" />
       </AttributeBlock>
@@ -41880,7 +41957,7 @@
         <attribute attack_speed="6" />
         <attribute strength="T" />
         <attribute length="5" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="1" />
         <attribute move_speed_bonus_combat_box3="1" />
       </AttributeBlock>
@@ -41911,7 +41988,7 @@
         <attribute move_speed="6" />
         <attribute attack_speed="4" />
         <attribute strength="H" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute sharpness="1" />
         <attribute length="5" />
       </AttributeBlock>
@@ -41920,7 +41997,7 @@
         <attribute attack_speed="5" />
         <attribute strength="H" />
         <attribute length="5" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="1" />
         <attribute move_speed_bonus_combat_box3="1" />
       </AttributeBlock>
@@ -41956,7 +42033,7 @@
         <attribute move_speed="5" />
         <attribute attack_speed="6" />
         <attribute strength="T" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute sharpness="1" />
         <attribute length="5" />
       </AttributeBlock>
@@ -41965,7 +42042,7 @@
         <attribute attack_speed="6" />
         <attribute strength="T" />
         <attribute length="5" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="1" />
         <attribute move_speed_bonus_combat_box3="1" />
       </AttributeBlock>
@@ -42013,6 +42090,7 @@
         <attribute icon_folder="wesnoth/units" />
         <attribute super_realm="" />
         <attribute icon_size="0.4" />
+        <attribute icon_size_override="0.5" />
         <attribute box_num="3" />
       </AttributeBlock>
       <contains id="1489" />
@@ -42133,7 +42211,7 @@
         <attribute denizen="" />
         <attribute super_realm="" />
         <attribute icon_size="0.4" />
-        <attribute icon_y_offset="4" />
+        <attribute icon_size_override="0.5" />
         <attribute dragon="" />
         <attribute box_num="3" />
       </AttributeBlock>
@@ -43237,7 +43315,7 @@
         <attribute fighter="" />
         <attribute icon_folder="characters" />
         <attribute creator="Richard Hamblen" />
-        <attribute artcredit="Ralph King" />
+        <attribute artcredit="East Paladin Gallery / Gemini" />
         <attribute meaning="Erosia: Love and Earth" />
         <attribute super_realm="" />
         <attribute potrait_folder="characterdetail_sr" />
@@ -43330,7 +43408,7 @@
         <attribute magicuser="" />
         <attribute icon_folder="characters" />
         <attribute creator="Richard Hamblen" />
-        <attribute artcredit="Michael Brown" />
+        <attribute artcredit="East Paladin Gallery / Gemini" />
         <attribute meaning="Chaotic Intellect" />
         <attribute super_realm="" />
         <attribute potrait_folder="characterdetail_sr" />
@@ -43420,7 +43498,7 @@
         <attribute fighter="" />
         <attribute icon_folder="characters" />
         <attribute creator="Richard Hamblen" />
-        <attribute artcredit="Chris White" />
+        <attribute artcredit="Aethmud / DALL-E" />
         <attribute meaning="Letophoro: Death and Destruction" />
         <attribute super_realm="" />
         <attribute potrait_folder="characterdetail_sr" />
@@ -43492,7 +43570,7 @@
         <attribute icon_folder="characters" />
         <attribute knight="" />
         <attribute creator="Richard Hamblen" />
-        <attribute artcredit="Kim Gromoll" />
+        <attribute artcredit="East Paladin Gallery / Gemini" />
         <attribute meaning="Cross Pommee: Potent Cross" />
         <attribute super_realm="" />
         <attribute potrait_folder="characterdetail_sr" />
@@ -43575,7 +43653,7 @@
         <attribute magicuser="" />
         <attribute icon_folder="characters" />
         <attribute creator="Richard Hamblen" />
-        <attribute artcredit="Steve Bickel" />
+        <attribute artcredit="Aethmud / DALL-E" />
         <attribute meaning="wood" />
         <attribute super_realm="" />
         <attribute potrait_folder="characterdetail_sr" />
@@ -43664,7 +43742,7 @@
         <attribute magicuser="" />
         <attribute icon_folder="characters" />
         <attribute creator="Richard Hamblen" />
-        <attribute artcredit="Kim Gromoll" />
+        <attribute artcredit="Aethmud / DALL-E" />
         <attribute meaning="Crozier: Shepherd's staff" />
         <attribute super_realm="" />
         <attribute potrait_folder="characterdetail_sr" />
@@ -43748,7 +43826,7 @@
         <attribute magicuser="" />
         <attribute icon_folder="characters" />
         <attribute creator="Richard Hamblen" />
-        <attribute artcredit="Kelly Glancy" />
+        <attribute artcredit="East Paladin Gallery / Gemini" />
         <attribute meaning="Vitriole: Poison" />
         <attribute super_realm="" />
         <attribute potrait_folder="characterdetail_sr" />
@@ -43833,7 +43911,7 @@
         <attribute fighter="" />
         <attribute icon_folder="characters" />
         <attribute creator="Richard Hamblen" />
-        <attribute artcredit="Chris White" />
+        <attribute artcredit="Aethmud / DALL-E" />
         <attribute meaning="Opposition" />
         <attribute super_realm="" />
         <attribute potrait_folder="characterdetail_sr" />
@@ -43882,6 +43960,19 @@
         <attribute elves="-2" />
         <attribute cultists="-2" />
       </AttributeBlock>
+      <AttributeBlock blockName="optional_2">
+        <attribute optkey="OptCharDwarf" />
+        <attributeList keyName="advantages">
+          <attributeVal N0="SHORT LEGS:  You can only record 2 MOVE actions per turn.  Each REST action is worth double." />
+        </attributeList>
+        <attributeList keyName="replace">
+          <attributeVal N0="advantages" />
+        </attributeList>
+        <attributeList keyName="extra_actions">
+          <attributeVal N0="!M" />
+          <attributeVal N1="!M" />
+        </attributeList>
+      </AttributeBlock>
       <contains id="1657" />
       <contains id="1658" />
       <contains id="1659" />
@@ -43907,7 +43998,7 @@
         <attribute light_great="" />
         <attribute icon_folder="characters" />
         <attribute creator="Richard Hamblen" />
-        <attribute artcredit="Steve Bickel" />
+        <attribute artcredit="Aethmud / DALL-E" />
         <attribute meaning="Sextile: Half-human" />
         <attribute super_realm="" />
         <attribute potrait_folder="characterdetail_sr" />
@@ -43997,7 +44088,7 @@
         <attribute magicuser="" />
         <attribute icon_folder="characters" />
         <attribute creator="Richard Hamblen" />
-        <attribute artcredit="Steve Bickel" />
+        <attribute artcredit="East Paladin Gallery / Gemini" />
         <attribute meaning="Controlled Intellect" />
         <attribute super_realm="" />
         <attribute potrait_folder="characterdetail_sr" />
@@ -44081,7 +44172,7 @@
         <attribute icon_folder="characters" />
         <attribute knight="" />
         <attribute creator="Richard Hamblen" />
-        <attribute artcredit="Kim Gromoll" />
+        <attribute artcredit="Aethmud / DALL-E" />
         <attribute meaning="Mars: God of War" />
         <attribute super_realm="" />
         <attribute potrait_folder="characterdetail_sr" />
@@ -44155,7 +44246,7 @@
         <attribute magicuser="" />
         <attribute icon_folder="characters" />
         <attribute creator="Richard Hamblen" />
-        <attribute artcredit="Chris White" />
+        <attribute artcredit="East Paladin Gallery / Gemini" />
         <attribute meaning="Ginner: Divine and Demonic" />
         <attribute super_realm="" />
         <attribute potrait_folder="characterdetail_sr" />
@@ -44250,7 +44341,7 @@
         <attribute magicuser="" />
         <attribute icon_folder="characters" />
         <attribute creator="Richard Hamblen" />
-        <attribute artcredit="Chris White" />
+        <attribute artcredit="East Paladin Gallery / Gemini" />
         <attribute meaning="Celestial Power" />
         <attribute super_realm="" />
         <attribute potrait_folder="characterdetail_sr" />
@@ -44346,7 +44437,7 @@
         <attribute fighter="" />
         <attribute icon_folder="characters" />
         <attribute creator="Richard Hamblen" />
-        <attribute artcredit="Chris White" />
+        <attribute artcredit="East Paladin Gallery / Gemini" />
         <attribute meaning="Chevron: Military Leadership" />
         <attribute super_realm="" />
         <attribute potrait_folder="characterdetail_sr" />
@@ -44430,7 +44521,7 @@
         <attribute icon_folder="characters" />
         <attribute meaning="Sword and Shield" />
         <attribute creator="Richard Hamblen" />
-        <attribute artcredit="Ralph King" />
+        <attribute artcredit="Aethmud / DALL-E" />
         <attribute super_realm="" />
         <attribute potrait_folder="characterdetail_sr" />
         <attribute potrait_file="amazon_sr" />
@@ -44503,7 +44594,7 @@
         <attribute fighter="" />
         <attribute icon_folder="characters" />
         <attribute creator="Richard Hamblen" />
-        <attribute artcredit="Kim Gromoll" />
+        <attribute artcredit="East Paladin Gallery / Gemini" />
         <attribute meaning="Wolf's Hook" />
         <attribute super_realm="" />
         <attribute potrait_folder="characterdetail_sr" />
@@ -47479,7 +47570,7 @@
         <attribute move_speed="4" />
         <attribute attack_speed="3" />
         <attribute strength="M" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute sharpness="1" />
         <attribute length="3" />
       </AttributeBlock>
@@ -47488,7 +47579,7 @@
         <attribute attack_speed="4" />
         <attribute strength="L" />
         <attribute length="3" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="1" />
       </AttributeBlock>
     </GameObject>
@@ -47517,7 +47608,7 @@
         <attribute move_speed="4" />
         <attribute attack_speed="3" />
         <attribute strength="M" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute sharpness="1" />
         <attribute length="3" />
       </AttributeBlock>
@@ -47526,7 +47617,7 @@
         <attribute attack_speed="4" />
         <attribute strength="L" />
         <attribute length="3" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="1" />
       </AttributeBlock>
     </GameObject>
@@ -47555,7 +47646,7 @@
         <attribute move_speed="5" />
         <attribute attack_speed="3" />
         <attribute strength="M" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute sharpness="1" />
         <attribute length="4" />
       </AttributeBlock>
@@ -47564,7 +47655,7 @@
         <attribute attack_speed="3" />
         <attribute strength="L" />
         <attribute length="4" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="1" />
       </AttributeBlock>
     </GameObject>
@@ -47593,7 +47684,7 @@
         <attribute move_speed="5" />
         <attribute attack_speed="3" />
         <attribute strength="M" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute sharpness="1" />
         <attribute length="4" />
       </AttributeBlock>
@@ -47602,7 +47693,7 @@
         <attribute attack_speed="3" />
         <attribute strength="L" />
         <attribute length="4" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="1" />
       </AttributeBlock>
     </GameObject>
@@ -47631,7 +47722,7 @@
         <attribute move_speed="5" />
         <attribute attack_speed="3" />
         <attribute strength="M" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute sharpness="1" />
         <attribute length="4" />
       </AttributeBlock>
@@ -47640,7 +47731,7 @@
         <attribute attack_speed="3" />
         <attribute strength="L" />
         <attribute length="4" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="1" />
       </AttributeBlock>
     </GameObject>
@@ -47673,7 +47764,7 @@
         <attribute move_speed="4" />
         <attribute attack_speed="3" />
         <attribute strength="M" />
-        <attribute chit_color="paleyellow" />
+        <attribute chit_color="yellow" />
         <attribute sharpness="1" />
         <attribute length="3" />
       </AttributeBlock>
@@ -47682,7 +47773,7 @@
         <attribute attack_speed="4" />
         <attribute strength="L" />
         <attribute length="3" />
-        <attribute chit_color="yellow" />
+        <attribute chit_color="darkyellow" />
         <attribute sharpness="1" />
       </AttributeBlock>
     </GameObject>
@@ -52572,7 +52663,7 @@
         <attribute rank="1" />
         <attribute icon_type="masterofdarkness-magic1" />
         <attribute setup_start="Enchanter Dwelling" />
-        <attribute hire_type="group" />
+        <attribute hire_type="single" />
         <attribute icon_folder="wesnoth/units/tharis-magi" />
         <attribute denizen="" />
         <attribute super_realm="" />
@@ -52613,7 +52704,7 @@
         <attribute rank="2" />
         <attribute icon_type="masterofdarkness-magic2" />
         <attribute setup_start="Enchanter Dwelling" />
-        <attribute hire_type="group" />
+        <attribute hire_type="single" />
         <attribute icon_folder="wesnoth/units/tharis-magi" />
         <attribute denizen="" />
         <attribute super_realm="" />
@@ -52654,7 +52745,7 @@
         <attribute rank="HQ" />
         <attribute icon_type="shadowmatriarch" />
         <attribute setup_start="Enchanter Dwelling" />
-        <attribute hire_type="group" />
+        <attribute hire_type="single" />
         <attribute icon_folder="wesnoth/units/tharis-magi" />
         <attribute commerce="F,N" />
         <attribute denizen="" />
@@ -52918,6 +53009,7 @@
         <attribute icon_size="1" />
         <attribute icon_type="horse" />
         <attribute horse_holder="Bashkar Dwelling" />
+        <attribute steed_survives_caves="" />
       </AttributeBlock>
       <AttributeBlock blockName="trot">
         <attribute move_speed="4" />
@@ -53015,6 +53107,7 @@
         <attribute icon_size="1" />
         <attribute icon_type="royalBeast" />
         <attribute horse_holder="Chapel" />
+        <attribute steed_survives_caves="" />
       </AttributeBlock>
       <AttributeBlock blockName="trot">
         <attribute move_speed="5" />
@@ -53447,6 +53540,7 @@
         <attribute icon_size="1" />
         <attribute icon_type="nobleBeast" />
         <attribute horse_holder="Inn" />
+        <attribute steed_survives_caves="" />
       </AttributeBlock>
       <AttributeBlock blockName="trot">
         <attribute move_speed="6" />
@@ -55937,6 +56031,8 @@
         <attribute nosecret="" />
         <attribute item="" />
         <attribute super_realm="" />
+        <attribute tile_type_clearing_watercave="" />
+        <attribute tile_type_fallback="M" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="2035" name="Cloven Hoof">
@@ -57175,6 +57271,7 @@
         <attribute native="Enchanters" />
         <attribute book="" />
         <attribute scroll="" />
+        <attribute magic_other="IV" />
         <attribute scholar_price="30" />
         <attribute warlock_price="30" />
         <attribute merchant_price="20" />
@@ -57271,6 +57368,7 @@
           <attributeVal N5="succubi" />
           <attributeVal N6="vampires" />
           <attributeVal N7="devils" />
+          <attributeVal N8="sites" />
         </attributeList>
       </AttributeBlock>
     </GameObject>
@@ -57473,6 +57571,7 @@
         <attribute host_okay="" />
         <attribute learnable="" />
         <attribute super_realm="" />
+        <attribute opens_treasure_locations="" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="2133" name="Fiery Blast">
@@ -57728,6 +57827,7 @@
         <attribute host_okay="" />
         <attribute learnable="" />
         <attribute super_realm="" />
+        <attribute opens_treasure_locations="T" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="2143" name="Absorb Essence">
@@ -57800,6 +57900,7 @@
         <attribute host_okay="" />
         <attribute learnable="" />
         <attribute super_realm="" />
+        <attribute targets_sites_freed_spell="" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="2148" name="Persuade">
@@ -57861,6 +57962,7 @@
         <attribute host_okay="" />
         <attribute learnable="" />
         <attribute super_realm="" />
+        <attribute targets_sites_freed_spell="" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="2152" name="Melt Into Mist">
@@ -57868,7 +57970,7 @@
         <attribute spell="VI" />
         <attribute duration="permanent" />
         <attribute target="individual" />
-        <attribute text="Can only MOVE T4 (no fight)" />
+        <attribute text="Can only MOVE T4, even paths and passages (no fight, T vulnerable non-armored)" />
         <attribute magic_color="purple" />
         <attribute transmorph="mist" />
         <attribute disengage="ALL" />
@@ -57880,6 +57982,7 @@
         <attribute benevolent_for_leaders="" />
         <attribute benevolent_for_monsters="" />
         <attribute only_move="" />
+        <attribute keep_inventory="" />
       </AttributeBlock>
       <AttributeBlock blockName="mist">
         <attribute vulnerability="T" />
@@ -58035,8 +58138,7 @@
       <AttributeBlock blockName="this">
         <attribute mission="escort_party_sr" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
-        <attribute time_limit="14" />
+        <attribute time_limit="month" />
         <attribute notoriety_cost="10" />
         <attribute item="" />
         <attribute super_realm="" />
@@ -58048,8 +58150,7 @@
       <AttributeBlock blockName="this">
         <attribute mission="food_ale_sr" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
-        <attribute time_limit="14" />
+        <attribute time_limit="month" />
         <attribute notoriety_cost="10" />
         <attribute item="" />
         <attribute super_realm="" />
@@ -58061,8 +58162,7 @@
       <AttributeBlock blockName="this">
         <attribute mission="books_art" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
-        <attribute time_limit="14" />
+        <attribute time_limit="month" />
         <attribute notoriety_cost="10" />
         <attribute item="" />
         <attribute super_realm="" />
@@ -58074,8 +58174,7 @@
       <AttributeBlock blockName="this">
         <attribute mission="tour_guide" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
-        <attribute time_limit="14" />
+        <attribute time_limit="month" />
         <attribute notoriety_cost="10" />
         <attribute item="" />
         <attribute super_realm="" />
@@ -58087,7 +58186,6 @@
       <AttributeBlock blockName="this">
         <attribute gold_special="" />
         <attribute campaign="pillage" />
-        <attribute monster_die="6" />
         <attribute time_limit="month" />
         <attribute notoriety_cost="10" />
         <attribute partner="bashkars" />
@@ -58102,7 +58200,6 @@
       <AttributeBlock blockName="this">
         <attribute gold_special="" />
         <attribute campaign="raid" />
-        <attribute monster_die="6" />
         <attribute time_limit="month" />
         <attribute fame_cost="8" />
         <attribute partner="lancers,woodfolk" />
@@ -58117,7 +58214,6 @@
       <AttributeBlock blockName="this">
         <attribute campaign="conquer" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute time_limit="month" />
         <attribute notoriety_cost="40" />
         <attribute partner="soldiers,guard,patrol,company" />
@@ -58132,7 +58228,6 @@
       <AttributeBlock blockName="this">
         <attribute campaign="war" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute time_limit="month" />
         <attribute notoriety_cost="15" />
         <attribute fame_cost="10" />
@@ -58148,7 +58243,6 @@
       <AttributeBlock blockName="this">
         <attribute campaign="revolt" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute time_limit="month" />
         <attribute notoriety_cost="35" />
         <attribute partner="lancers,woodfolk,bashkars,rogues" />
@@ -58163,7 +58257,6 @@
       <AttributeBlock blockName="this">
         <attribute campaign="quest" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute time_limit="month" />
         <attribute notoriety_cost="20" />
         <attribute foe="dragon,dragon_flying,wyrm,firedrake" />
@@ -58179,7 +58272,6 @@
       <AttributeBlock blockName="this">
         <attribute gold_special="" />
         <attribute campaign="challenge" />
-        <attribute monster_die="6" />
         <attribute time_limit="month" />
         <attribute notoriety_cost="30" />
         <attribute partner="aborigines,lancers,woodfolk" />
@@ -58194,7 +58286,6 @@
       <AttributeBlock blockName="this">
         <attribute gold_special="" />
         <attribute campaign="confront" />
-        <attribute monster_die="6" />
         <attribute time_limit="month" />
         <attribute partner="bashkars,company,hunters" />
         <attribute foe="aborigines,lancers,woodfolk" />
@@ -58209,7 +58300,6 @@
       <AttributeBlock blockName="this">
         <attribute campaign="dominate" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute time_limit="month" />
         <attribute notoriety_cost="15" />
         <attribute partner="company,woodfolk" />
@@ -58224,7 +58314,6 @@
       <AttributeBlock blockName="this">
         <attribute campaign="hunt" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute time_limit="month" />
         <attribute partner="mages" />
         <attribute foe="colossus,titan" />
@@ -58240,7 +58329,6 @@
       <AttributeBlock blockName="this">
         <attribute campaign="skirmish" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute time_limit="month" />
         <attribute notoriety_cost="20" />
         <attribute partner="guard,hunters,patrol,soldiers" />
@@ -58256,7 +58344,6 @@
       <AttributeBlock blockName="this">
         <attribute campaign="liberate" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute time_limit="month" />
         <attribute foe="coven,cultists" />
         <attribute partner="zealots" />
@@ -59208,9 +59295,8 @@
         <attribute magic_color="white" />
         <attribute host_okay="" />
         <attribute learnable="" />
-        <attribute super_realm="" />
-        <attribute super_realm_spell="" />
         <attribute spell_extra_action="R" />
+        <attribute rw_expansion_1="" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="2210" name="Barkskin">
@@ -59609,7 +59695,7 @@
         <attribute phase_chit="" />
         <attribute text="Dazzle" />
       </AttributeBlock>
-      <AttributeBlock blockName="phase_chit_effect">
+      <AttributeBlock blockName="phase_chit_effects">
         <attribute dazzle="" />
       </AttributeBlock>
     </GameObject>
@@ -59670,47 +59756,40 @@
         <attribute cannot_be_followed="" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2236" name="Staff to Snake">
+    <GameObject id="2236" name="Luck">
+      <AttributeBlock blockName="this">
+        <attribute spell="VII" />
+        <attribute duration="phase" />
+        <attribute target="character" />
+        <attribute text="You may re-roll a table result you just made." />
+        <attribute magic_color="white" />
+        <attribute host_okay="" />
+        <attribute benevolent="" />
+        <attribute super_realm="" />
+        <attribute super_realm_spell="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="phase_chit">
+        <attribute phase_chit="" />
+        <attribute text="Luck" />
+        <attribute cannot_be_activated="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="phase_chit_effects">
+        <attribute luck="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2237" name="Free Spell">
       <AttributeBlock blockName="this">
         <attribute spell="VII" />
         <attribute duration="combat" />
-        <attribute target="staff" />
-        <attribute text="Change staff into Snake with M4**/4" />
-        <attribute magic_color="white" />
-        <attribute host_okay="" />
-        <attribute ch2companion="House" />
-        <attribute benevolent="" />
-        <attribute learnable="" />
-        <attribute super_realm="" />
-      </AttributeBlock>
-      <AttributeBlock blockName="ch2companion">
-        <attribute vulnerability="M" />
-        <attribute armored="" />
-        <attribute strength="M" />
-        <attribute attack_speed="4" />
-        <attribute move_speed="4" />
-        <attribute sharpness="2" />
-        <attribute name="Snake" />
-        <attribute chit_color="lightblue" />
-        <attribute icon_type="add-ons-War_of_Legends-images-units-steelhive-steel_serpent" />
-        <attribute icon_folder="wesnoth/units/addons" />
-        <attribute length="0" />
-        <attribute icon_size="0.9" />
-        <attribute serpent="" />
-      </AttributeBlock>
-    </GameObject>
-    <GameObject id="2237" name="Spirit Guide">
-      <AttributeBlock blockName="this">
-        <attribute spell="VII" />
-        <attribute duration="day" />
-        <attribute target="character" />
-        <attribute text="Travel along secret paths and passages, but learn none of them" />
+        <attribute target="site with spell" />
+        <attribute text="You may cast the top spell from the target as it were an awakened artifact in your inventory." />
         <attribute magic_color="black" />
-        <attribute spirit_guide="" />
+        <attribute free_spell="" />
         <attribute host_okay="" />
         <attribute benevolent="" />
         <attribute learnable="" />
         <attribute super_realm="" />
+        <attribute super_realm_spell="" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="2238" name="Adventure Guide">
@@ -60182,8 +60261,8 @@
         <attribute speed="0" />
         <attribute action="magic" />
         <attribute scholar_price="20" />
-        <attribute schaman_price="20" />
         <attribute merchant_price="20" />
+        <attribute shaman_price="20" />
       </AttributeBlock>
     </GameObject>
     <GameObject id="2264" name="Elven Scroll">
@@ -60191,7 +60270,7 @@
         <attribute treasure="small" />
         <attribute base_price="5" />
         <attribute notoriety="5" />
-        <attribute magic="II" />
+        <attribute magic="III" />
         <attribute book="" />
         <attribute print="" />
         <attribute scholar_price="30" />
@@ -60202,7 +60281,7 @@
         <attribute scroll="" />
         <attribute super_realm="" />
         <attribute super_realm_treasure="" />
-        <attribute magic_other="III" />
+        <attribute magic_other="II" />
         <attribute shaman_price="30" />
         <attribute merchant_price="20" />
       </AttributeBlock>
@@ -60855,7 +60934,7 @@
         <attribute native="Guard" />
         <attribute weight="L" />
         <attributeList keyName="diemod">
-          <attributeVal N0="-1:loot:all" />
+          <attributeVal N0="-1:loot,twt:all" />
         </attributeList>
       </AttributeBlock>
     </GameObject>
@@ -60864,7 +60943,7 @@
         <attribute treasure="small" />
         <attribute base_price="5" />
         <attribute notoriety="5" />
-        <attribute magic="I" />
+        <attribute magic="VII" />
         <attribute book="" />
         <attribute print="" />
         <attribute scholar_price="30" />
@@ -60875,7 +60954,7 @@
         <attribute scroll="" />
         <attribute super_realm="" />
         <attribute super_realm_treasure="" />
-        <attribute magic_other="VII" />
+        <attribute magic_other="I" />
         <attribute merchant_price="20" />
         <attribute fame="5" />
         <attribute priest_price="30" />
@@ -60907,7 +60986,7 @@
         <attribute treasure="small" />
         <attribute base_price="5" />
         <attribute notoriety="10" />
-        <attribute magic="V" />
+        <attribute magic="VIII" />
         <attribute book="" />
         <attribute print="" />
         <attribute scholar_price="30" />
@@ -60918,7 +60997,7 @@
         <attribute scroll="" />
         <attribute super_realm="" />
         <attribute super_realm_treasure="" />
-        <attribute magic_other="VIII" />
+        <attribute magic_other="V" />
         <attribute merchant_price="20" />
         <attribute fame="-5" />
         <attribute great="" />
@@ -61030,7 +61109,6 @@
         <attribute visitor="scholar" />
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61045,7 +61123,6 @@
         <attribute visitor="shaman" />
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61060,7 +61137,6 @@
         <attribute visitor="warlock" />
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61075,7 +61151,6 @@
         <attribute visitor="crone" />
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61090,7 +61165,6 @@
         <attribute visitor="priest" />
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61105,7 +61179,6 @@
         <attribute visitor="merchant" />
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61120,7 +61193,6 @@
         <attribute visitor="blacksmith" />
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61136,7 +61208,6 @@
         <attribute visitor="cleric" />
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61534,7 +61605,6 @@
       <AttributeBlock blockName="this">
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61552,7 +61622,6 @@
       <AttributeBlock blockName="this">
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61570,7 +61639,6 @@
       <AttributeBlock blockName="this">
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61588,7 +61656,6 @@
       <AttributeBlock blockName="this">
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61604,7 +61671,6 @@
       <AttributeBlock blockName="this">
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61623,7 +61689,6 @@
       <AttributeBlock blockName="this">
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61639,7 +61704,6 @@
       <AttributeBlock blockName="this">
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61657,7 +61721,6 @@
       <AttributeBlock blockName="this">
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61673,7 +61736,6 @@
       <AttributeBlock blockName="this">
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61691,7 +61753,6 @@
       <AttributeBlock blockName="this">
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61707,7 +61768,6 @@
       <AttributeBlock blockName="this">
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61723,7 +61783,6 @@
       <AttributeBlock blockName="this">
         <attribute print="" />
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute ts_section="visitors" />
         <attribute ts_color="gold" />
         <attribute ts_sidebar="" />
@@ -61740,7 +61799,6 @@
     <GameObject id="2357" name="Journey">
       <AttributeBlock blockName="this">
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute time_limit="month" />
         <attribute item="" />
         <attribute super_realm="" />
@@ -61759,7 +61817,6 @@
     <GameObject id="2358" name="Odyssey">
       <AttributeBlock blockName="this">
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute time_limit="month" />
         <attribute item="" />
         <attribute super_realm="" />
@@ -61778,7 +61835,6 @@
     <GameObject id="2359" name="Seek">
       <AttributeBlock blockName="this">
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute time_limit="month" />
         <attribute item="" />
         <attribute super_realm="" />
@@ -61797,7 +61853,6 @@
     <GameObject id="2360" name="Explore">
       <AttributeBlock blockName="this">
         <attribute gold_special="" />
-        <attribute monster_die="6" />
         <attribute time_limit="month" />
         <attribute item="" />
         <attribute super_realm="" />
@@ -61824,10 +61879,10 @@
         <attribute fighter="" />
         <attribute icon_folder="characters" />
         <attribute creator="Anomalous Host" />
-        <attribute artcredit="" />
+        <attribute artcredit="East Paladin Gallery / Gemini" />
         <attribute super_realm="" />
-        <attribute potrait_folder="" />
-        <attribute potrait_file="" />
+        <attribute potrait_folder="characterdetail_sr" />
+        <attribute potrait_file="barbarian_sr" />
       </AttributeBlock>
       <AttributeBlock blockName="level_1">
         <attribute name="Nomad" />
@@ -61877,15 +61932,15 @@
       <contains id="2362" />
       <contains id="2363" />
       <contains id="2364" />
+      <contains id="2365" />
+      <contains id="2366" />
+      <contains id="2367" />
       <contains id="2368" />
       <contains id="2369" />
+      <contains id="2370" />
       <contains id="2371" />
       <contains id="2372" />
       <contains id="2373" />
-      <contains id="2374" />
-      <contains id="2375" />
-      <contains id="2376" />
-      <contains id="2377" />
     </GameObject>
     <GameObject id="2362" name="Barbarian Fight H5*">
       <AttributeBlock blockName="this">
@@ -61931,7 +61986,7 @@
         <attribute effort="1" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2368" name="Barbarian Fight H6">
+    <GameObject id="2365" name="Barbarian Fight H6">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="fight" />
@@ -61945,7 +62000,7 @@
         <attribute super_realm="" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2369" name="Barbarian Fight H4**">
+    <GameObject id="2366" name="Barbarian Fight H4**">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="fight" />
@@ -61960,7 +62015,7 @@
         <attribute effort="2" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2371" name="Barbarian Move T6*">
+    <GameObject id="2367" name="Barbarian Move T6*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="move" />
@@ -61975,7 +62030,7 @@
         <attribute effort="1" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2372" name="Barbarian Fight H5*">
+    <GameObject id="2368" name="Barbarian Fight H5*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="fight" />
@@ -61990,7 +62045,7 @@
         <attribute effort="1" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2373" name="Barbarian Fight T5*">
+    <GameObject id="2369" name="Barbarian Fight T5*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="fight" />
@@ -62005,7 +62060,7 @@
         <attribute effort="1" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2374" name="Barbarian Move T5**">
+    <GameObject id="2370" name="Barbarian Move T5**">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="move" />
@@ -62020,7 +62075,7 @@
         <attribute effort="2" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2375" name="Barbarian Fight T5**">
+    <GameObject id="2371" name="Barbarian Fight T5**">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="fight" />
@@ -62035,7 +62090,7 @@
         <attribute effort="2" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2376" name="Barbarian Fight T5**">
+    <GameObject id="2372" name="Barbarian Fight T5**">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="fight" />
@@ -62050,7 +62105,7 @@
         <attribute effort="2" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2377" name="Barbarian Move H5**">
+    <GameObject id="2373" name="Barbarian Move H5**">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="move" />
@@ -62065,7 +62120,7 @@
         <attribute effort="2" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2378" name="Bard">
+    <GameObject id="2374" name="Bard">
       <AttributeBlock blockName="this">
         <attribute icon_type="bard" />
         <attribute character="" />
@@ -62075,10 +62130,10 @@
         <attribute pronoun="he" />
         <attribute icon_folder="characters" />
         <attribute creator="Anomalous Host" />
-        <attribute artcredit="" />
+        <attribute artcredit="East Paladin Gallery / Gemini" />
         <attribute super_realm="" />
-        <attribute potrait_folder="" />
-        <attribute potrait_file="" />
+        <attribute potrait_folder="characterdetail_sr" />
+        <attribute potrait_file="bard_sr" />
         <attribute magicuser="" />
       </AttributeBlock>
       <AttributeBlock blockName="level_1">
@@ -62135,6 +62190,10 @@
         <attribute elves="-2" />
         <attribute cultists="-2" />
       </AttributeBlock>
+      <contains id="2375" />
+      <contains id="2376" />
+      <contains id="2377" />
+      <contains id="2378" />
       <contains id="2379" />
       <contains id="2380" />
       <contains id="2381" />
@@ -62143,12 +62202,8 @@
       <contains id="2384" />
       <contains id="2385" />
       <contains id="2386" />
-      <contains id="2387" />
-      <contains id="2388" />
-      <contains id="2389" />
-      <contains id="2390" />
     </GameObject>
-    <GameObject id="2379" name="Bard Fight L4">
+    <GameObject id="2375" name="Bard Fight L4">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="fight" />
@@ -62162,7 +62217,7 @@
         <attribute super_realm="" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2380" name="Bard Move L3*">
+    <GameObject id="2376" name="Bard Move L3*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="move" />
@@ -62177,7 +62232,7 @@
         <attribute effort="1" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2381" name="Bard Move L3">
+    <GameObject id="2377" name="Bard Move L3">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="move" />
@@ -62191,7 +62246,7 @@
         <attribute super_realm="" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2382" name="Bard Magic VII3*">
+    <GameObject id="2378" name="Bard Magic VII3*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="magic" />
@@ -62206,7 +62261,7 @@
         <attribute effort="1" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2383" name="Bard Move L2**">
+    <GameObject id="2379" name="Bard Move L2**">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="move" />
@@ -62221,7 +62276,7 @@
         <attribute effort="2" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2384" name="Bard Fight L3*">
+    <GameObject id="2380" name="Bard Fight L3*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="fight" />
@@ -62236,7 +62291,7 @@
         <attribute effort="1" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2385" name="Bard Magic III3*">
+    <GameObject id="2381" name="Bard Magic III3*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="magic" />
@@ -62251,7 +62306,7 @@
         <attribute magic="III" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2386" name="Bard Magic II4*">
+    <GameObject id="2382" name="Bard Magic II4*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="magic" />
@@ -62266,7 +62321,7 @@
         <attribute magic="II" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2387" name="Bard Fight L3*">
+    <GameObject id="2383" name="Bard Fight L3*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="fight" />
@@ -62281,7 +62336,7 @@
         <attribute effort="1" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2388" name="Bard Magic III2*">
+    <GameObject id="2384" name="Bard Magic III2*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="magic" />
@@ -62296,7 +62351,7 @@
         <attribute magic="III" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2389" name="Bard Magic II3*">
+    <GameObject id="2385" name="Bard Magic II3*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="magic" />
@@ -62311,7 +62366,7 @@
         <attribute magic="II" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2390" name="Bard Magic VIII2**">
+    <GameObject id="2386" name="Bard Magic VIII2**">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="magic" />
@@ -62326,7 +62381,7 @@
         <attribute magic="VIII" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2391" name="Gladiator">
+    <GameObject id="2387" name="Gladiator">
       <AttributeBlock blockName="this">
         <attribute icon_type="gladiator" />
         <attribute character="" />
@@ -62336,10 +62391,10 @@
         <attribute pronoun="he" />
         <attribute icon_folder="characters" />
         <attribute creator="Anomalous Host" />
-        <attribute artcredit="" />
+        <attribute artcredit="Stephan Valkyser" />
         <attribute super_realm="" />
-        <attribute potrait_folder="" />
-        <attribute potrait_file="" />
+        <attribute potrait_folder="characterdetail_sr" />
+        <attribute potrait_file="gladiator_sr" />
         <attribute fighter="" />
       </AttributeBlock>
       <AttributeBlock blockName="level_1">
@@ -62384,6 +62439,10 @@
         <attribute elves="-2" />
         <attribute cultists="-2" />
       </AttributeBlock>
+      <contains id="2388" />
+      <contains id="2389" />
+      <contains id="2390" />
+      <contains id="2391" />
       <contains id="2392" />
       <contains id="2393" />
       <contains id="2394" />
@@ -62392,12 +62451,8 @@
       <contains id="2397" />
       <contains id="2398" />
       <contains id="2399" />
-      <contains id="2400" />
-      <contains id="2401" />
-      <contains id="2402" />
-      <contains id="2403" />
     </GameObject>
-    <GameObject id="2392" name="Gladiator Move H6">
+    <GameObject id="2388" name="Gladiator Move H6">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="move" />
@@ -62411,7 +62466,7 @@
         <attribute super_realm="" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2393" name="Gladiator Move H4*">
+    <GameObject id="2389" name="Gladiator Move H4*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="move" />
@@ -62426,7 +62481,7 @@
         <attribute effort="1" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2394" name="Gladiator Fight H5*">
+    <GameObject id="2390" name="Gladiator Fight H5*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="fight" />
@@ -62441,7 +62496,7 @@
         <attribute effort="1" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2395" name="Gladiator Move T5*">
+    <GameObject id="2391" name="Gladiator Move T5*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="move" />
@@ -62456,7 +62511,7 @@
         <attribute strength="T" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2396" name="Gladiator Reflex H3**">
+    <GameObject id="2392" name="Gladiator Reflex H3**">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="reflex" />
@@ -62471,7 +62526,7 @@
         <attribute effort="2" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2397" name="Gladiator Fight H6">
+    <GameObject id="2393" name="Gladiator Fight H6">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="fight" />
@@ -62485,7 +62540,7 @@
         <attribute super_realm="" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2398" name="Gladiator Fight H4*">
+    <GameObject id="2394" name="Gladiator Fight H4*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="fight" />
@@ -62500,7 +62555,7 @@
         <attribute strength="H" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2399" name="Gladiator Fight H5*">
+    <GameObject id="2395" name="Gladiator Fight H5*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="fight" />
@@ -62515,7 +62570,7 @@
         <attribute strength="H" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2400" name="Gladiator Move T4**">
+    <GameObject id="2396" name="Gladiator Move T4**">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="move" />
@@ -62530,7 +62585,7 @@
         <attribute effort="2" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2401" name="Gladiator Move T4**">
+    <GameObject id="2397" name="Gladiator Move T4**">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="move" />
@@ -62545,7 +62600,7 @@
         <attribute strength="T" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2402" name="Gladiator Fight H4**">
+    <GameObject id="2398" name="Gladiator Fight H4**">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="fight" />
@@ -62560,7 +62615,7 @@
         <attribute strength="H" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2403" name="Gladiator Fight H5**">
+    <GameObject id="2399" name="Gladiator Fight H5**">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="fight" />
@@ -62575,7 +62630,7 @@
         <attribute strength="H" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2404" name="Necromancer">
+    <GameObject id="2400" name="Necromancer">
       <AttributeBlock blockName="this">
         <attribute icon_type="necromancer" />
         <attribute character="" />
@@ -62585,10 +62640,10 @@
         <attribute pronoun="he" />
         <attribute icon_folder="characters" />
         <attribute creator="Anomalous Host" />
-        <attribute artcredit="" />
+        <attribute artcredit="East Paladin Gallery / Gemini" />
         <attribute super_realm="" />
-        <attribute potrait_folder="" />
-        <attribute potrait_file="" />
+        <attribute potrait_folder="characterdetail_sr" />
+        <attribute potrait_file="necromancer_sr" />
         <attribute weight="M" />
         <attribute magicuser="" />
       </AttributeBlock>
@@ -62651,6 +62706,10 @@
         <attribute dwarves="-2" />
         <attribute elves="-2" />
       </AttributeBlock>
+      <contains id="2401" />
+      <contains id="2402" />
+      <contains id="2403" />
+      <contains id="2404" />
       <contains id="2405" />
       <contains id="2406" />
       <contains id="2407" />
@@ -62659,12 +62718,8 @@
       <contains id="2410" />
       <contains id="2411" />
       <contains id="2412" />
-      <contains id="2413" />
-      <contains id="2414" />
-      <contains id="2415" />
-      <contains id="2416" />
     </GameObject>
-    <GameObject id="2405" name="Necromancer Magic V4*">
+    <GameObject id="2401" name="Necromancer Magic V4*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="magic" />
@@ -62679,7 +62734,7 @@
         <attribute effort="1" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2406" name="Necromancer Move M5">
+    <GameObject id="2402" name="Necromancer Move M5">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="move" />
@@ -62693,7 +62748,7 @@
         <attribute super_realm="" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2407" name="Necromancer Fight M4*">
+    <GameObject id="2403" name="Necromancer Fight M4*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="fight" />
@@ -62708,7 +62763,7 @@
         <attribute effort="1" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2408" name="Necromancer Magic V3*">
+    <GameObject id="2404" name="Necromancer Magic V3*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="magic" />
@@ -62723,7 +62778,7 @@
         <attribute magic="V" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2409" name="Necromancer Magic V2**">
+    <GameObject id="2405" name="Necromancer Magic V2**">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="magic" />
@@ -62738,7 +62793,7 @@
         <attribute magic="V" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2410" name="Necromancer Magic VIII3**">
+    <GameObject id="2406" name="Necromancer Magic VIII3**">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="magic" />
@@ -62753,7 +62808,7 @@
         <attribute effort="2" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2411" name="Necromancer Magic VI5**">
+    <GameObject id="2407" name="Necromancer Magic VI5**">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="magic" />
@@ -62768,7 +62823,7 @@
         <attribute magic="VI" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2412" name="Necromancer Black">
+    <GameObject id="2408" name="Necromancer Black">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="color" />
@@ -62782,7 +62837,7 @@
         <attribute chit_state="CB" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2413" name="Necromancer Purple">
+    <GameObject id="2409" name="Necromancer Purple">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="color" />
@@ -62796,7 +62851,7 @@
         <attribute chit_state="CP" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2414" name="Necromancer Magic VI6*">
+    <GameObject id="2410" name="Necromancer Magic VI6*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="magic" />
@@ -62811,7 +62866,7 @@
         <attribute magic="VI" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2415" name="Necromancer Magic VI6*">
+    <GameObject id="2411" name="Necromancer Magic VI6*">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="magic" />
@@ -62826,7 +62881,7 @@
         <attribute magic="VI" />
       </AttributeBlock>
     </GameObject>
-    <GameObject id="2416" name="Necromancer Grey">
+    <GameObject id="2412" name="Necromancer Grey">
       <AttributeBlock blockName="this">
         <attribute character_chit="" />
         <attribute action="color" />
@@ -62838,6 +62893,1466 @@
         <attribute super_realm="" />
         <attribute magic="II" />
         <attribute chit_state="CY" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2413" name="Paladin">
+      <AttributeBlock blockName="this">
+        <attribute icon_type="paladin" />
+        <attribute character="" />
+        <attribute vulnerability="M" />
+        <attribute start="Inn,Chapel,Hamlet" />
+        <attribute facing="dark" />
+        <attribute pronoun="he" />
+        <attribute icon_folder="characters" />
+        <attribute creator="Anomalous Host" />
+        <attribute artcredit="East Paladin Gallery / Gemini" />
+        <attribute super_realm="" />
+        <attribute potrait_folder="characterdetail_sr" />
+        <attribute potrait_file="paladin_sr" />
+        <attribute magicuser="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="level_1">
+        <attribute name="Scholar" />
+        <attribute armor="Helmet,Breastplate" />
+      </AttributeBlock>
+      <AttributeBlock blockName="level_2">
+        <attribute name="Zealot" />
+        <attribute weapon="Short Sword" />
+        <attribute armor="Breastplate,Shield" />
+        <attribute spellcount="1" />
+        <attributeList keyName="advantages">
+          <attributeVal N0="EXPLORER:  Rolls one die when making a Treasures Within Treasures table roll." />
+        </attributeList>
+        <attributeList keyName="spelltypes">
+          <attributeVal N0="I" />
+        </attributeList>
+        <attributeList keyName="diemod">
+          <attributeVal N0="1d:twt:all" />
+        </attributeList>
+      </AttributeBlock>
+      <AttributeBlock blockName="level_3">
+        <attribute name="Adventurer" />
+        <attribute weapon="Short Sword" />
+        <attribute armor="Helmet,Breastplate,Shield" />
+        <attribute spellcount="1" />
+        <attributeList keyName="spelltypes">
+          <attributeVal N0="I" />
+          <attributeVal N1="VII" />
+        </attributeList>
+      </AttributeBlock>
+      <AttributeBlock blockName="level_4">
+        <attribute name="Paladin" />
+        <attribute weapon="Mace" />
+        <attribute armor="Helmet,Breastplate,Shield" />
+        <attribute spellcount="2" />
+        <attribute comrade="" />
+        <attributeList keyName="advantages">
+          <attributeVal N0="COMRADE:  Can record an extra phase if a character or hired leader is following." />
+        </attributeList>
+        <attributeList keyName="spelltypes">
+          <attributeVal N0="I" />
+          <attributeVal N1="IV" />
+          <attributeVal N2="VII" />
+        </attributeList>
+      </AttributeBlock>
+      <AttributeBlock blockName="relationship">
+        <attribute zealots="2" />
+        <attribute order="1" />
+        <attribute peasants="1" />
+        <attribute priest="1" />
+        <attribute aborigines="-1" />
+        <attribute coven="-1" />
+        <attribute pagans="-1" />
+        <attribute woodfolk="-1" />
+        <attribute bandits="-2" />
+        <attribute dwarves="-2" />
+        <attribute elves="-2" />
+        <attribute cultists="-2" />
+      </AttributeBlock>
+      <AttributeBlock blockName="optional_4">
+        <attribute optkey="OptCharPaladin" />
+        <attributeList keyName="extra_actions">
+          <attributeVal N0="R" />
+        </attributeList>
+        <attributeList keyName="advantages">
+          <attributeVal N0="COMRADE:  Get one extra REST phase every day." />
+        </attributeList>
+        <attributeList keyName="replace">
+          <attributeVal N0="advantages" />
+          <attributeVal N1="comrade" />
+        </attributeList>
+      </AttributeBlock>
+      <contains id="2414" />
+      <contains id="2415" />
+      <contains id="2416" />
+      <contains id="2417" />
+      <contains id="2418" />
+      <contains id="2419" />
+      <contains id="2420" />
+      <contains id="2421" />
+      <contains id="2422" />
+      <contains id="2423" />
+      <contains id="2424" />
+      <contains id="2425" />
+    </GameObject>
+    <GameObject id="2414" name="Paladin Move M5">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute strength="M" />
+        <attribute speed="5" />
+        <attribute character_level="1" />
+        <attribute stage="1" />
+        <attribute level="1" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="paladin" />
+        <attribute super_realm="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2415" name="Paladin Move M4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute strength="M" />
+        <attribute speed="4" />
+        <attribute character_level="1" />
+        <attribute stage="2" />
+        <attribute level="1" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="paladin" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2416" name="Paladin Fight M4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute strength="M" />
+        <attribute speed="4" />
+        <attribute character_level="1" />
+        <attribute stage="3" />
+        <attribute level="1" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="paladin" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2417" name="Paladin Magic I4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="magic" />
+        <attribute speed="4" />
+        <attribute character_level="2" />
+        <attribute stage="4" />
+        <attribute level="2" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="paladin" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+        <attribute magic="I" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2418" name="Paladin Fight M5">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute strength="M" />
+        <attribute speed="5" />
+        <attribute character_level="2" />
+        <attribute stage="5" />
+        <attribute level="2" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="paladin" />
+        <attribute super_realm="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2419" name="Paladin Fight M3**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute strength="M" />
+        <attribute speed="3" />
+        <attribute character_level="2" />
+        <attribute stage="6" />
+        <attribute level="2" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="paladin" />
+        <attribute super_realm="" />
+        <attribute effort="2" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2420" name="Paladin Magic VII6*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="magic" />
+        <attribute speed="6" />
+        <attribute character_level="3" />
+        <attribute stage="7" />
+        <attribute level="3" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="paladin" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+        <attribute magic="VII" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2421" name="Paladin Move M3**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute speed="3" />
+        <attribute character_level="3" />
+        <attribute stage="8" />
+        <attribute level="3" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="paladin" />
+        <attribute super_realm="" />
+        <attribute effort="2" />
+        <attribute strength="M" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2422" name="Paladin Move H6">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute strength="H" />
+        <attribute speed="6" />
+        <attribute character_level="3" />
+        <attribute stage="9" />
+        <attribute level="3" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="paladin" />
+        <attribute super_realm="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2423" name="Paladin Magic I2**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="magic" />
+        <attribute speed="2" />
+        <attribute character_level="4" />
+        <attribute stage="10" />
+        <attribute level="4" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="paladin" />
+        <attribute super_realm="" />
+        <attribute effort="2" />
+        <attribute magic="I" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2424" name="Paladin Magic IV4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="magic" />
+        <attribute speed="4" />
+        <attribute character_level="4" />
+        <attribute stage="11" />
+        <attribute level="4" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="paladin" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+        <attribute magic="IV" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2425" name="Paladin Fight H6">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute speed="6" />
+        <attribute character_level="4" />
+        <attribute stage="12" />
+        <attribute level="4" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="paladin" />
+        <attribute super_realm="" />
+        <attribute strength="H" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2426" name="Psychic">
+      <AttributeBlock blockName="this">
+        <attribute icon_type="psychic" />
+        <attribute character="" />
+        <attribute vulnerability="M" />
+        <attribute start="Inn,Hamlet,Settlement" />
+        <attribute facing="dark" />
+        <attribute pronoun="she" />
+        <attribute icon_folder="characters" />
+        <attribute creator="Anomalous Host" />
+        <attribute artcredit="East Paladin Gallery / Gemini" />
+        <attribute super_realm="" />
+        <attribute potrait_folder="characterdetail_sr" />
+        <attribute potrait_file="psychic_sr" />
+        <attribute magicuser="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="level_1">
+        <attribute name="Apprentice" />
+        <attribute weapon="Staff" />
+      </AttributeBlock>
+      <AttributeBlock blockName="level_2">
+        <attribute name="Intellectual" />
+        <attribute weapon="Staff" />
+        <attribute spellcount="1" />
+        <attribute foresight="" />
+        <attributeList keyName="advantages">
+          <attributeVal N0="FORESIGHT:  After making a table roll, you may cancel your current Daylight activity." />
+        </attributeList>
+        <attributeList keyName="spelltypes">
+          <attributeVal N0="II" />
+          <attributeVal N1="IV" />
+        </attributeList>
+      </AttributeBlock>
+      <AttributeBlock blockName="level_3">
+        <attribute name="Oracle" />
+        <attribute weapon="Staff" />
+        <attribute spellcount="2" />
+        <attributeList keyName="spelltypes">
+          <attributeVal N0="II" />
+          <attributeVal N1="IV" />
+          <attributeVal N2="VII" />
+        </attributeList>
+      </AttributeBlock>
+      <AttributeBlock blockName="level_4">
+        <attribute name="Psychic" />
+        <attribute weapon="Mace" />
+        <attribute spellcount="2" />
+        <attributeList keyName="advantages">
+          <attributeVal N0="VISION:  Get one extra SARCH phase every day" />
+        </attributeList>
+        <attributeList keyName="spelltypes">
+          <attributeVal N0="I" />
+          <attributeVal N1="IV" />
+          <attributeVal N2="VII" />
+        </attributeList>
+        <attributeList keyName="extra_actions">
+          <attributeVal N0="S" />
+        </attributeList>
+      </AttributeBlock>
+      <AttributeBlock blockName="relationship">
+        <attribute conjurors="2" />
+        <attribute coven="1" />
+        <attribute enchanters="1" />
+        <attribute peasants="1" />
+        <attribute mages="-1" />
+        <attribute shaman="-1" />
+        <attribute pagans="-2" />
+        <attribute summoners="-2" />
+        <attribute bandits="-2" />
+        <attribute dwarves="-2" />
+        <attribute elves="-2" />
+        <attribute cultists="-2" />
+      </AttributeBlock>
+      <contains id="2427" />
+      <contains id="2428" />
+      <contains id="2429" />
+      <contains id="2430" />
+      <contains id="2431" />
+      <contains id="2432" />
+      <contains id="2433" />
+      <contains id="2434" />
+      <contains id="2435" />
+      <contains id="2436" />
+      <contains id="2437" />
+      <contains id="2438" />
+    </GameObject>
+    <GameObject id="2427" name="Psychic Move M5">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute strength="M" />
+        <attribute speed="5" />
+        <attribute character_level="1" />
+        <attribute stage="1" />
+        <attribute level="1" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="psychic" />
+        <attribute super_realm="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2428" name="Psychic Move M4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute strength="M" />
+        <attribute speed="4" />
+        <attribute character_level="1" />
+        <attribute stage="2" />
+        <attribute level="1" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="psychic" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2429" name="Psychic Fight L4">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute strength="L" />
+        <attribute speed="4" />
+        <attribute character_level="1" />
+        <attribute stage="3" />
+        <attribute level="1" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="psychic" />
+        <attribute super_realm="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2430" name="Psychic Figth M5">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute speed="5" />
+        <attribute character_level="2" />
+        <attribute stage="4" />
+        <attribute level="2" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="psychic" />
+        <attribute super_realm="" />
+        <attribute strength="M" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2431" name="Psychic Magic IV4**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="magic" />
+        <attribute speed="4" />
+        <attribute character_level="2" />
+        <attribute stage="5" />
+        <attribute level="2" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="psychic" />
+        <attribute super_realm="" />
+        <attribute effort="2" />
+        <attribute magic="IV" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2432" name="Psychic Magic II4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="magic" />
+        <attribute speed="3" />
+        <attribute character_level="2" />
+        <attribute stage="6" />
+        <attribute level="2" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="psychic" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+        <attribute magic="II" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2433" name="Psychic Magic VII4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="magic" />
+        <attribute speed="4" />
+        <attribute character_level="3" />
+        <attribute stage="7" />
+        <attribute level="3" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="psychic" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+        <attribute magic="VII" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2434" name="Psychic Magic II3*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="magic" />
+        <attribute speed="3" />
+        <attribute character_level="3" />
+        <attribute stage="8" />
+        <attribute level="3" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="psychic" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+        <attribute magic="II" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2435" name="Psychic Move M5">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute strength="M" />
+        <attribute speed="5" />
+        <attribute character_level="3" />
+        <attribute stage="9" />
+        <attribute level="3" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="psychic" />
+        <attribute super_realm="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2436" name="Psychic Fight M4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute speed="4" />
+        <attribute character_level="4" />
+        <attribute stage="10" />
+        <attribute level="4" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="psychic" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+        <attribute strength="M" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2437" name="Psychic Magic VII2*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="magic" />
+        <attribute speed="2" />
+        <attribute character_level="4" />
+        <attribute stage="11" />
+        <attribute level="4" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="psychic" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+        <attribute magic="VII" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2438" name="Psychic Magic II2**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="magic" />
+        <attribute speed="2" />
+        <attribute character_level="4" />
+        <attribute stage="12" />
+        <attribute level="4" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="psychic" />
+        <attribute super_realm="" />
+        <attribute effort="2" />
+        <attribute magic="II" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2439" name="Trawler">
+      <AttributeBlock blockName="this">
+        <attribute icon_type="trawler" />
+        <attribute character="" />
+        <attribute vulnerability="L" />
+        <attribute start="Inn,Cottage,Hut" />
+        <attribute facing="dark" />
+        <attribute pronoun="he" />
+        <attribute icon_folder="characters" />
+        <attribute creator="Anomalous Host" />
+        <attribute artcredit="East Paladin Gallery / Gemini" />
+        <attribute super_realm="" />
+        <attribute potrait_folder="characterdetail_sr" />
+        <attribute potrait_file="trawler_sr" />
+        <attribute fighter="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="level_1">
+        <attribute name="Fisherman" />
+        <attribute weapon="Short Sword" />
+      </AttributeBlock>
+      <AttributeBlock blockName="level_2">
+        <attribute name="Sailor" />
+        <attribute weapon="Short Sword" />
+        <attribute seafaring="" />
+        <attributeList keyName="advantages">
+          <attributeVal N0="SEAFARING:  Advantages in river hex tiles and water clearings." />
+        </attributeList>
+        <attributeList keyName="diemod">
+          <attributeVal N0="1d:meeting,commerce:'water" />
+        </attributeList>
+      </AttributeBlock>
+      <AttributeBlock blockName="level_3">
+        <attribute name="Pirate" />
+        <attribute weapon="Thrusting Sword" />
+      </AttributeBlock>
+      <AttributeBlock blockName="level_4">
+        <attribute name="Trawler" />
+        <attribute weapon="Thrusting Sword" />
+        <attributeList keyName="fit">
+          <attributeVal N0="1" />
+        </attributeList>
+        <attributeList keyName="advantages">
+          <attributeVal N0="FIT:  When playing a FIGHT chit in the 'Thrust' attack during the Melee step, it forces increases one leve. Thid does apply to treasures that act as FIGHT chits (Deft Gloves). Does not allow to wield a weapon with a weight greater than the FIGHT chit itself." />
+        </attributeList>
+      </AttributeBlock>
+      <AttributeBlock blockName="relationship">
+        <attribute lancers="2" />
+        <attribute bashkars="1" />
+        <attribute hunters="1" />
+        <attribute mercenaries="1" />
+        <attribute merchant="1" />
+        <attribute aborigines="-1" />
+        <attribute pagans="-1" />
+        <attribute summoners="-1" />
+        <attribute soldiers="-2" />
+        <attribute bandits="-2" />
+        <attribute dwarves="-2" />
+        <attribute elves="-2" />
+        <attribute cultists="-2" />
+      </AttributeBlock>
+      <contains id="2440" />
+      <contains id="2441" />
+      <contains id="2442" />
+      <contains id="2443" />
+      <contains id="2444" />
+      <contains id="2445" />
+      <contains id="2446" />
+      <contains id="2447" />
+      <contains id="2448" />
+      <contains id="2449" />
+      <contains id="2450" />
+      <contains id="2451" />
+    </GameObject>
+    <GameObject id="2440" name="Trawler Move L3*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute strength="L" />
+        <attribute speed="3" />
+        <attribute character_level="1" />
+        <attribute stage="1" />
+        <attribute level="1" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="trawler" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2441" name="Trawler Move L4">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute strength="L" />
+        <attribute speed="4" />
+        <attribute character_level="1" />
+        <attribute stage="2" />
+        <attribute level="1" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="trawler" />
+        <attribute super_realm="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2442" name="Trawler Fight L3*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute strength="L" />
+        <attribute speed="3" />
+        <attribute character_level="1" />
+        <attribute stage="3" />
+        <attribute level="1" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="trawler" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2443" name="Trawler Move L2**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute speed="2" />
+        <attribute character_level="2" />
+        <attribute stage="4" />
+        <attribute level="2" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="trawler" />
+        <attribute super_realm="" />
+        <attribute strength="L" />
+        <attribute effort="2" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2444" name="Trawler Move M4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute speed="4" />
+        <attribute character_level="2" />
+        <attribute stage="5" />
+        <attribute level="2" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="trawler" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+        <attribute strength="M" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2445" name="Trawler Fight M3**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute speed="3" />
+        <attribute character_level="2" />
+        <attribute stage="6" />
+        <attribute level="2" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="trawler" />
+        <attribute super_realm="" />
+        <attribute effort="2" />
+        <attribute strength="M" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2446" name="Trawler Move M3**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute speed="3" />
+        <attribute character_level="3" />
+        <attribute stage="7" />
+        <attribute level="3" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="trawler" />
+        <attribute super_realm="" />
+        <attribute effort="2" />
+        <attribute strength="M" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2447" name="Trawler Fight M4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute speed="4" />
+        <attribute character_level="3" />
+        <attribute stage="8" />
+        <attribute level="3" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="trawler" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+        <attribute strength="M" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2448" name="Trawler Fight L3*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute strength="M" />
+        <attribute speed="3" />
+        <attribute character_level="3" />
+        <attribute stage="9" />
+        <attribute level="3" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="trawler" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2449" name="Trawler Fight M5">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute speed="5" />
+        <attribute character_level="4" />
+        <attribute stage="10" />
+        <attribute level="4" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="trawler" />
+        <attribute super_realm="" />
+        <attribute strength="M" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2450" name="Trawler Fight M3**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute speed="3" />
+        <attribute character_level="4" />
+        <attribute stage="11" />
+        <attribute level="4" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="trawler" />
+        <attribute super_realm="" />
+        <attribute effort="2" />
+        <attribute strength="M" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2451" name="Trawler Fight L4">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute speed="4" />
+        <attribute character_level="4" />
+        <attribute stage="12" />
+        <attribute level="4" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="trawler" />
+        <attribute super_realm="" />
+        <attribute strength="L" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2452" name="Wanderer">
+      <AttributeBlock blockName="this">
+        <attribute icon_type="wanderer" />
+        <attribute character="" />
+        <attribute vulnerability="M" />
+        <attribute start="Inn,Cottage" />
+        <attribute facing="dark" />
+        <attribute pronoun="he" />
+        <attribute icon_folder="characters" />
+        <attribute creator="Anomalous Host" />
+        <attribute artcredit="East Paladin Gallery / Gemini" />
+        <attribute super_realm="" />
+        <attribute potrait_folder="characterdetail_sr" />
+        <attribute potrait_file="wanderer_sr" />
+        <attribute magicuser="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="level_1">
+        <attribute name="Orphan" />
+        <attribute weapon="Spear" />
+        <attribute armor="Breastplate" />
+      </AttributeBlock>
+      <AttributeBlock blockName="level_2">
+        <attribute name="Animalist" />
+        <attribute weapon="Short Sword" />
+        <attribute cragsman="" />
+        <attribute armor="Helmet,Breastplate,Shield" />
+        <attribute spellcount="1" />
+        <attributeList keyName="advantages">
+          <attributeVal N0="CRAGSMAN:  Can 'walk the woods' when moving to or from a mountain clearing." />
+        </attributeList>
+        <attributeList keyName="spelltypes">
+          <attributeVal N0="II" />
+        </attributeList>
+      </AttributeBlock>
+      <AttributeBlock blockName="level_3">
+        <attribute name="Traveler" />
+        <attribute weapon="Thrusting Sword" />
+        <attribute armor="Helmet,Breastplate,Shield" />
+        <attribute spellcount="1" />
+        <attributeList keyName="spelltypes">
+          <attributeVal N0="II" />
+        </attributeList>
+      </AttributeBlock>
+      <AttributeBlock blockName="level_4">
+        <attribute name="Wanderer" />
+        <attribute weapon="Broadsword" />
+        <attribute armor="Helmet,Breastplate,Shield" />
+        <attribute spellcount="1" />
+        <attributeList keyName="advantages">
+          <attributeVal N0="FRONTIERSMAN:  Roll one die instead of two while in a mountain clearing on the Meeting Table, the Hide table, and any Search table." />
+        </attributeList>
+        <attributeList keyName="diemod">
+          <attributeVal N0="1d:meeting,commerce,hide,locate,loot,peer:&gt;mountain" />
+        </attributeList>
+        <attributeList keyName="spelltypes">
+          <attributeVal N0="II" />
+        </attributeList>
+      </AttributeBlock>
+      <AttributeBlock blockName="relationship">
+        <attribute summoners="2" />
+        <attribute aborigines="1" />
+        <attribute conjurors="1" />
+        <attribute patrols="1" />
+        <attribute company="-1" />
+        <attribute mercenaries="-1" />
+        <attribute pagans="-1" />
+        <attribute crone="-1" />
+        <attribute hunters="-2" />
+        <attribute bandits="-2" />
+        <attribute dwarves="-2" />
+        <attribute elves="-2" />
+        <attribute cultists="-2" />
+      </AttributeBlock>
+      <contains id="2453" />
+      <contains id="2454" />
+      <contains id="2455" />
+      <contains id="2456" />
+      <contains id="2457" />
+      <contains id="2458" />
+      <contains id="2459" />
+      <contains id="2460" />
+      <contains id="2461" />
+      <contains id="2462" />
+      <contains id="2463" />
+      <contains id="2464" />
+    </GameObject>
+    <GameObject id="2453" name="Wanderer Move M4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute strength="M" />
+        <attribute speed="4" />
+        <attribute character_level="1" />
+        <attribute stage="1" />
+        <attribute level="1" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="wanderer" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2454" name="Wanderer Move M5">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute strength="M" />
+        <attribute speed="5" />
+        <attribute character_level="1" />
+        <attribute stage="2" />
+        <attribute level="1" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="wanderer" />
+        <attribute super_realm="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2455" name="Wanderer Fight M4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute strength="M" />
+        <attribute speed="4" />
+        <attribute character_level="1" />
+        <attribute stage="3" />
+        <attribute level="1" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="wanderer" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2456" name="Wanderer Magic II3*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="magic" />
+        <attribute speed="3" />
+        <attribute character_level="2" />
+        <attribute stage="4" />
+        <attribute level="2" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="wanderer" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+        <attribute magic="II" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2457" name="Wanderer Move M3**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute speed="3" />
+        <attribute character_level="2" />
+        <attribute stage="5" />
+        <attribute level="2" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="wanderer" />
+        <attribute super_realm="" />
+        <attribute effort="2" />
+        <attribute strength="M" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2458" name="Wanderer Fight M5">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute speed="5" />
+        <attribute character_level="2" />
+        <attribute stage="6" />
+        <attribute level="2" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="wanderer" />
+        <attribute super_realm="" />
+        <attribute strength="M" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2459" name="Wanderer Fight M3**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute speed="3" />
+        <attribute character_level="3" />
+        <attribute stage="7" />
+        <attribute level="3" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="wanderer" />
+        <attribute super_realm="" />
+        <attribute effort="2" />
+        <attribute strength="M" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2460" name="Wanderer Move M4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute speed="4" />
+        <attribute character_level="3" />
+        <attribute stage="8" />
+        <attribute level="3" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="wanderer" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+        <attribute strength="M" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2461" name="Wanderer Fight H5*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute strength="H" />
+        <attribute speed="5" />
+        <attribute character_level="3" />
+        <attribute stage="9" />
+        <attribute level="3" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="wanderer" />
+        <attribute super_realm="" />
+        <attribute effort="1" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2462" name="Wanderer Fight M4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute speed="4" />
+        <attribute character_level="4" />
+        <attribute stage="10" />
+        <attribute level="4" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="wanderer" />
+        <attribute super_realm="" />
+        <attribute strength="M" />
+        <attribute effort="1" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2463" name="Wanderer Fight M3**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute speed="3" />
+        <attribute character_level="4" />
+        <attribute stage="11" />
+        <attribute level="4" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="wanderer" />
+        <attribute super_realm="" />
+        <attribute effort="2" />
+        <attribute strength="M" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2464" name="Trawler Fight H6">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute speed="6" />
+        <attribute character_level="4" />
+        <attribute stage="12" />
+        <attribute level="4" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="wanderer" />
+        <attribute super_realm="" />
+        <attribute strength="H" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2465" name="Pathfinder">
+      <AttributeBlock blockName="this">
+        <attribute base_price="4" />
+        <attribute icon_type="t1" />
+        <attribute icon_folder="traveler" />
+        <attribute rw_expansion_1="" />
+        <attribute traveler_template="" />
+        <attribute text="Knows ALL hidden paths (not passages)." />
+        <attribute icon_type_alt="noble+female" />
+        <attribute icon_folder_alt="wesnoth/units/addons" />
+        <attribute icon_size_alt="0.9" />
+        <attribute pathfinder="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2466" name="Gate Master">
+      <AttributeBlock blockName="this">
+        <attribute base_price="5" />
+        <attribute icon_type="t1" />
+        <attribute icon_folder="traveler" />
+        <attribute rw_expansion_1="" />
+        <attribute traveler_template="" />
+        <attribute text="As gates are discovered by other players, so do you." />
+        <attribute icon_type_alt="orcish-shaman" />
+        <attribute icon_folder_alt="wesnoth/units/addons" />
+        <attribute icon_size_alt="0.9" />
+        <attribute gate_master="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2467" name="Dark Sword">
+      <AttributeBlock blockName="this">
+        <attribute treasure="large" />
+        <attribute base_price="12" />
+        <attribute text="Monsters are killed permanently." />
+        <attribute rw_expansion_1="" />
+        <attribute strength="M" />
+        <attribute sharpness="1" />
+        <attribute length="7" />
+        <attribute facing="face_dn" />
+        <attribute attack="" />
+        <attribute author="Expansion 1" />
+        <attribute item="" />
+        <attribute fame="-60" />
+        <attribute notoriety="20" />
+        <attribute great="" />
+        <attribute weight="H" />
+        <attribute kill_monsters_permanently="" />
+        <attribute weapon="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2468" name="Demon Leash">
+      <AttributeBlock blockName="this">
+        <attribute treasure="small" />
+        <attribute base_price="18" />
+        <attribute text="Hit demon with this item (speed 2) to control - fatigue one magic chit/turn" />
+        <attribute rw_expansion_1="" />
+        <attribute strength="N" />
+        <attribute length="11" />
+        <attribute facing="face_dn" />
+        <attribute attack="" />
+        <attribute author="Expansion 1" />
+        <attribute item="" />
+        <attribute fame="-8" />
+        <attribute notoriety="12" />
+        <attribute weight="L" />
+        <attribute demon_control="" />
+        <attribute demon_control_speed="2" />
+        <attribute weapon="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2469" name="Extra Hitpoint">
+      <AttributeBlock blockName="this">
+        <attribute treasure="small" />
+        <attribute base_price="14" />
+        <attribute text="Fatigue, wound and rest as if it was a chit." />
+        <attribute rw_expansion_1="" />
+        <attribute facing="face_dn" />
+        <attribute author="Expansion 1" />
+        <attribute item="" />
+        <attribute add_chit="" />
+      </AttributeBlock>
+      <contains id="2470" />
+    </GameObject>
+    <GameObject id="2470" name="Extra Hitpoint">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="hitpoint" />
+        <attribute effort="1" />
+        <attribute character_level="1" />
+        <attribute stage="1" />
+        <attribute level="1" />
+        <attribute icon_folder="monsters2" />
+        <attribute icon_type="unknown" />
+        <attribute rw_expansion_1="" />
+        <attribute add_chit="Extra Hitpoint" />
+        <attribute chitearned="" />
+        <attribute treasure_chit="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2471" name="Fools Gold">
+      <AttributeBlock blockName="this">
+        <attribute treasure="small" />
+        <attribute base_price="50" />
+        <attribute text="Once sold, roll versus running to see if caught." />
+        <attribute rw_expansion_1="" />
+        <attribute facing="face_dn" />
+        <attribute author="Expansion 1" />
+        <attribute item="" />
+        <attribute weight="L" />
+        <attribute notoriety="1" />
+        <attribute fools_gold="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2472" name="Body Double">
+      <AttributeBlock blockName="this">
+        <attribute spell="VI" />
+        <attribute duration="combat" />
+        <attribute target="character" />
+        <attribute text="Character is hit wiht only a 50% chance." />
+        <attribute magic_color="gray" />
+        <attribute rw_expansion_1="" />
+        <attribute author="Expansion 1" />
+        <attribute learnable="" />
+        <attribute body_double="" />
+        <attribute host_okay="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2473" name="Spider Web">
+      <AttributeBlock blockName="this">
+        <attribute spell="III" />
+        <attribute duration="attack" />
+        <attribute target="individual" />
+        <attribute text="Opponent remains tied in combat box for entire evening." />
+        <attribute magic_color="gold" />
+        <attribute rw_expansion_1="" />
+        <attribute author="Expansion 1" />
+        <attribute learnable="" />
+        <attribute spider_web="" />
+        <attribute length="18" />
+        <attribute strength="N" />
+        <attribute host_okay="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2475" name="Redirect">
+      <AttributeBlock blockName="this">
+        <attribute spell="I" />
+        <attribute duration="instant" />
+        <attribute target="bewitched" />
+        <attribute text="Target is no longer bewitched by a spell instead the spell now bewitches the second target." />
+        <attribute magic_color="purple" />
+        <attribute host_okay="" />
+        <attribute learnable="" />
+        <attribute super_realm="" />
+        <attribute redirect="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2476" name="Thief">
+      <AttributeBlock blockName="this">
+        <attribute icon_type="druid" />
+        <attribute character="" />
+        <attribute vulnerability="L" />
+        <attribute start="Inn" />
+        <attribute facing="dark" />
+        <attribute pronoun="he" />
+        <attribute magicuser="" />
+        <attribute icon_folder="characters" />
+        <attribute creator="" />
+        <attribute artcredit="Aethmud / DALL-E" />
+        <attribute potrait_folder="characterdetail_exp1" />
+        <attribute potrait_file="thief" />
+        <attribute rw_expansion_1="" />
+        <attribute rw_expansion_1_character="" />
+      </AttributeBlock>
+      <AttributeBlock blockName="level_1">
+        <attribute name="Stray" />
+      </AttributeBlock>
+      <AttributeBlock blockName="level_2">
+        <attribute name="Robber" />
+        <attributeList keyName="advantages">
+          <attributeVal N0="FURTIVENESS:  Get one extra HIDE phase every day." />
+        </attributeList>
+        <attributeList keyName="extra_actions">
+          <attributeVal N0="H" />
+        </attributeList>
+      </AttributeBlock>
+      <AttributeBlock blockName="level_3">
+        <attribute name="Rogue" />
+        <attribute spellcount="1" />
+        <attributeList keyName="spelltypes">
+          <attributeVal N0="II" />
+          <attributeVal N1="VIII" />
+        </attributeList>
+      </AttributeBlock>
+      <AttributeBlock blockName="level_4">
+        <attribute name="Thief" />
+        <attribute spellcount="1" />
+        <attributeList keyName="spelltypes">
+          <attributeVal N0="II" />
+          <attributeVal N1="VIII" />
+        </attributeList>
+        <attributeList keyName="advantages">
+          <attributeVal N0="STEALING:  Substract 1 from all all stealing die rolls." />
+        </attributeList>
+        <attributeList keyName="diemod">
+          <attributeVal N0="-1:stealing:all" />
+        </attributeList>
+      </AttributeBlock>
+      <AttributeBlock blockName="relationship">
+        <attribute bashkars="2" />
+        <attribute lancers="1" />
+        <attribute order="-1" />
+        <attribute shaman="-1" />
+        <attribute woodfolk="-2" />
+        <attribute pagans="1" />
+        <attribute hunters="-1" />
+        <attribute bandits="-2" />
+        <attribute dwarves="-2" />
+        <attribute elves="-2" />
+        <attribute cultists="-2" />
+      </AttributeBlock>
+      <contains id="2477" />
+      <contains id="2478" />
+      <contains id="2479" />
+      <contains id="2480" />
+      <contains id="2481" />
+      <contains id="2482" />
+      <contains id="2483" />
+      <contains id="2484" />
+      <contains id="2485" />
+      <contains id="2486" />
+      <contains id="2487" />
+      <contains id="2488" />
+    </GameObject>
+    <GameObject id="2477" name="Thief Move L3*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute speed="3" />
+        <attribute strength="L" />
+        <attribute effort="1" />
+        <attribute character_level="1" />
+        <attribute stage="1" />
+        <attribute level="1" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="druid" />
+        <attribute rw_expansion_1="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2478" name="Thief Move L4">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute speed="4" />
+        <attribute strength="L" />
+        <attribute character_level="1" />
+        <attribute stage="2" />
+        <attribute level="1" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="druid" />
+        <attribute rw_expansion_1="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2479" name="Thief Fight L3*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute speed="3" />
+        <attribute strength="L" />
+        <attribute effort="1" />
+        <attribute character_level="1" />
+        <attribute stage="3" />
+        <attribute level="1" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="druid" />
+        <attribute rw_expansion_1="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2480" name="Thief Fight L4">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute speed="4" />
+        <attribute strength="L" />
+        <attribute character_level="2" />
+        <attribute stage="4" />
+        <attribute level="2" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="druid" />
+        <attribute rw_expansion_1="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2481" name="Thief Move L2**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="move" />
+        <attribute speed="2" />
+        <attribute strength="L" />
+        <attribute effort="2" />
+        <attribute character_level="2" />
+        <attribute stage="5" />
+        <attribute level="2" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="druid" />
+        <attribute rw_expansion_1="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2482" name="Thief Fight L2**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute speed="2" />
+        <attribute strength="L" />
+        <attribute effort="2" />
+        <attribute character_level="2" />
+        <attribute stage="6" />
+        <attribute level="2" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="druid" />
+        <attribute rw_expansion_1="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2483" name="Thief Magic II3*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="magic" />
+        <attribute speed="3" />
+        <attribute magic="II" />
+        <attribute effort="1" />
+        <attribute character_level="3" />
+        <attribute stage="7" />
+        <attribute level="3" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="druid" />
+        <attribute rw_expansion_1="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2484" name="Thief Magic VIII4*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="magic" />
+        <attribute speed="4" />
+        <attribute magic="VIII" />
+        <attribute effort="1" />
+        <attribute character_level="3" />
+        <attribute stage="8" />
+        <attribute level="3" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="druid" />
+        <attribute rw_expansion_1="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2485" name="Thief Magic VIII3*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="magic" />
+        <attribute speed="3" />
+        <attribute magic="VIII" />
+        <attribute effort="1" />
+        <attribute character_level="3" />
+        <attribute stage="9" />
+        <attribute level="3" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="druid" />
+        <attribute rw_expansion_1="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2486" name="Thief Stab T2**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="fight" />
+        <attribute speed="2" />
+        <attribute effort="2" />
+        <attribute character_level="4" />
+        <attribute stage="10" />
+        <attribute level="4" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="druid" />
+        <attribute rw_expansion_1="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2487" name="Thief Magic II3*">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="magic" />
+        <attribute speed="3" />
+        <attribute magic="II" />
+        <attribute effort="1" />
+        <attribute character_level="4" />
+        <attribute stage="11" />
+        <attribute level="4" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="druid" />
+        <attribute rw_expansion_1="" />
+      </AttributeBlock>
+    </GameObject>
+    <GameObject id="2488" name="Thief Magic VIII2**">
+      <AttributeBlock blockName="this">
+        <attribute character_chit="" />
+        <attribute action="magic" />
+        <attribute speed="2" />
+        <attribute magic="VIII" />
+        <attribute effort="2" />
+        <attribute character_level="4" />
+        <attribute stage="12" />
+        <attribute level="4" />
+        <attribute icon_folder="characters" />
+        <attribute icon_type="druid" />
+        <attribute rw_expansion_1="" />
       </AttributeBlock>
     </GameObject>
   </objects>
@@ -63307,7 +64822,6 @@
       <Add from="SPELL_VI" targetObjectID="2113" count="2" transferType="Random" />
       <Add from="SPELL_III" targetObjectID="2264" count="1" transferType="Random" />
       <Add from="SPELL_II" targetObjectID="2264" count="1" transferType="Random" />
-      <Add from="SPELL_VIII" targetObjectID="2295" count="1" transferType="Random" />
       <Add from="SPELL_VII" targetObjectID="2300" count="1" transferType="Random" />
       <Add from="SPELL_I" targetObjectID="2300" count="1" transferType="Random" />
       <Add from="SPELL_IV" targetObjectID="2301" count="2" transferType="Random" />
