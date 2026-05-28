@@ -75,10 +75,11 @@ function getMapPlacement(obj, objectsById) {
 
 function classifyChit(obj) {
   const t = getThis(obj);
+  // Dwelling chits also carry a warning type (smoke/stink); prefer dwelling.
+  if (t[KEY.DWELLING]) return 'dwelling';
   if (t[KEY.WARNING]) return 'warning';
   if (t[KEY.SOUND]) return 'sound';
   if (t[KEY.TREASURE_LOCATION]) return 'treasure';
-  if (t[KEY.DWELLING]) return 'dwelling';
   if (t[KEY.MONSTER]) return 'monster';
   if (t[KEY.NATIVE]) return 'native';
   if (t[KEY.CHARACTER]) return 'character';

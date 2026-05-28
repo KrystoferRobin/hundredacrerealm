@@ -2,6 +2,17 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { getTileImageUrl } from '@/lib/tile-image';
+import {
+  computeMapBounds,
+  findTileByName,
+  getChitPixelOnMap,
+  getTilePixelDimensions,
+  gridToPixel,
+  parseMapPosition,
+  tileRotationDegrees,
+} from '@/lib/map-geometry';
+
+const MAP_DIMS = getTilePixelDimensions();
 
 interface Tile {
   position: string;
@@ -205,19 +216,15 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
             const clearingY = (yPercent / 100) * hexHeight - hexHeight / 2;
             
             // Get tile position
-            const [tileX, tileY] = parsePosition(tile.position);
-            const hexPos = getHexPosition(tileX, tileY);
-            
-            // Apply tile rotation
-            const rotation = getTileRotation(tile.rotation);
+            const { x: tileX, y: tileY } = parseMapPosition(tile.position);
+            const hexPos = gridToPixel(tileX, tileY, MAP_DIMS);
+            const rotation = tileRotationDegrees(tile.rotation);
             const rad = (rotation * Math.PI) / 180;
             const rotatedX = clearingX * Math.cos(rad) - clearingY * Math.sin(rad);
             const rotatedY = clearingX * Math.sin(rad) + clearingY * Math.cos(rad);
-            
-            // Add to collection
             allClearingPositions.push({
               x: hexPos.x + rotatedX,
-              y: hexPos.y + rotatedY
+              y: hexPos.y + rotatedY,
             });
           }
         }
@@ -233,51 +240,30 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
     
     // Fallback to tile centers if no clearing data
     const tilePixelPositions = actualTiles.map((tile: Tile) => {
-      const [x, y] = parsePosition(tile.position);
-      return getHexPosition(x, y);
+      const { x, y } = parseMapPosition(tile.position);
+      return gridToPixel(x, y, MAP_DIMS);
     });
-    
+
     if (tilePixelPositions.length > 0) {
       const avgX = tilePixelPositions.reduce((sum, pos) => sum + pos.x, 0) / tilePixelPositions.length;
       const avgY = tilePixelPositions.reduce((sum, pos) => sum + pos.y, 0) / tilePixelPositions.length;
       return { x: avgX, y: avgY };
     }
-    
+
     return { x: 0, y: 0 };
   };
 
-  // Calculate optimal zoom to fit map in display area
   const calculateOptimalZoom = () => {
     if (!mapData || containerSize.width === 0 || containerSize.height === 0) return 1;
-    
-    // Only consider tiles that are actually in play (not void spaces)
-    const actualTiles = mapData.tiles.filter((tile: Tile) => tile.objectName && tile.objectName !== 'undefined');
-    
+
+    const actualTiles = mapData.tiles.filter(
+      (tile: Tile) => tile.objectName && tile.objectName !== 'undefined'
+    );
     if (actualTiles.length === 0) return 1;
-    
-    const positions = actualTiles.map((tile: Tile) => parsePosition(tile.position));
-    const minX = Math.min(...positions.map(([x, y]: [number, number]) => x));
-    const maxX = Math.max(...positions.map(([x, y]: [number, number]) => x));
-    const minY = Math.min(...positions.map(([x, y]: [number, number]) => y));
-    const maxY = Math.max(...positions.map(([x, y]: [number, number]) => y));
-    
-    const hexSize = 60;
-    const hexWidth = hexSize * 2;
-    const hexHeight = hexSize * Math.sqrt(3);
-    const tilePixelPositions = actualTiles.map((tile: Tile) => {
-      const [x, y] = parsePosition(tile.position);
-      return getHexPosition(x, y);
-    });
-    
-    const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
-    const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
-    const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
-    const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
-    
-    const PAD_X = hexWidth / 2;
-    const PAD_Y = hexHeight / 2;
-    const mapWidth = (maxPixelX - minPixelX) + hexWidth + 2 * PAD_X;
-    const mapHeight = (maxPixelY - minPixelY) + hexHeight + 2 * PAD_Y;
+
+    const bounds = computeMapBounds(actualTiles, MAP_DIMS);
+    const mapWidth = bounds.maxPixelX - bounds.minPixelX;
+    const mapHeight = bounds.maxPixelY - bounds.minPixelY;
     
     // Calculate zoom to fit with some padding
     const padding = 0.1; // 10% padding
@@ -327,96 +313,8 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
     }
   }, [mapData, containerSize, tileDataCache]);
 
-  // Convert position string to coordinates
-  const parsePosition = (position: string): [number, number] => {
-    const [x, y] = position.split(',').map(Number);
-    return [x, y];
-  };
-
-  // Calculate hex grid position using standard axial hex grid formula
-  const getHexPosition = (q: number, r: number) => {
-    const hexSize = 60;
-    const hexWidth = hexSize * 2;
-    const hexHeight = hexSize * Math.sqrt(3);
-    return {
-      x: hexWidth * (3/4) * q,
-      y: hexHeight * (r + q/2)
-    };
-  };
-
-  // Calculate SVG dimensions dynamically based on actual tiles
-  const calculateDynamicSVGDimensions = () => {
-    if (!mapData || !mapData.tiles) {
-      return {
-        width: 120, // Single hex width
-        height: 104, // Single hex height
-        viewBox: '0 0 120 104',
-        minPixelX: 0,
-        minPixelY: 0,
-        maxPixelX: 120,
-        maxPixelY: 104
-      };
-    }
-
-    const hexSize = 60;
-    const hexWidth = hexSize * 2;
-    const hexHeight = hexSize * Math.sqrt(3);
-    const PAD_X = hexWidth / 2;
-    const PAD_Y = hexHeight / 2;
-
-    // Only consider tiles that are actually in play (not void spaces)
-    const actualTiles = mapData.tiles.filter((tile: Tile) => {
-      const isValid = tile.objectName && tile.objectName !== 'undefined' && tile.objectName.trim() !== '';
-      return isValid;
-    });
-
-    if (actualTiles.length === 0) {
-      return {
-        width: hexWidth,
-        height: hexHeight,
-        viewBox: `${-PAD_X} ${-PAD_Y} ${hexWidth + 2 * PAD_X} ${hexHeight + 2 * PAD_Y}`,
-        minPixelX: -PAD_X,
-        minPixelY: -PAD_Y,
-        maxPixelX: hexWidth + PAD_X,
-        maxPixelY: hexHeight + PAD_Y
-      };
-    }
-
-    // Calculate pixel positions for actual tiles only
-    const tilePixelPositions = actualTiles.map((tile: Tile) => {
-      const [x, y] = parsePosition(tile.position);
-      return getHexPosition(x, y);
-    });
-
-    const minPixelX = Math.min(...tilePixelPositions.map(pos => pos.x));
-    const minPixelY = Math.min(...tilePixelPositions.map(pos => pos.y));
-    const maxPixelX = Math.max(...tilePixelPositions.map(pos => pos.x));
-    const maxPixelY = Math.max(...tilePixelPositions.map(pos => pos.y));
-
-    const svgWidth = (maxPixelX - minPixelX) + hexWidth + 2 * PAD_X;
-    const svgHeight = (maxPixelY - minPixelY) + hexHeight + 2 * PAD_Y;
-    const viewBox = `${minPixelX - PAD_X} ${minPixelY - PAD_Y} ${svgWidth} ${svgHeight}`;
-
-    return {
-      width: svgWidth,
-      height: svgHeight,
-      viewBox,
-      minPixelX: minPixelX - PAD_X,
-      minPixelY: minPixelY - PAD_Y,
-      maxPixelX: maxPixelX + PAD_X,
-      maxPixelY: maxPixelY + PAD_Y
-    };
-  };
-
   const getTileImage = (tile: Tile): string =>
     getTileImageUrl(tile, tileDataCache);
-
-  // Apply rotation to tile
-  const getTileRotation = (rotation: number): number => {
-    // Convert game rotation (0-5) to CSS rotation degrees
-    // Each rotation step is 60 degrees
-    return rotation * 60;
-  };
 
   // Mouse event handlers for panning
   const handleMouseDown = (e: React.MouseEvent) => {
@@ -458,34 +356,6 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
     };
   };
 
-  const getClearingPosition = (tile: Tile, clearing: string): { x: number, y: number } | null => {
-    const tileData = tileDataCache[tile.objectName];
-    if (!tileData) return null;
-    
-    // Get the appropriate attribute block (normal or enchanted)
-    const block = tile.isEnchanted ? tileData.attributeBlocks.enchanted : tileData.attributeBlocks.normal;
-    if (!block) return null;
-    
-    // Get clearing coordinates (e.g., "clearing_4_xy": "33.0,84.3")
-    const clearingKey = `clearing_${clearing}_xy`;
-    const coords = block[clearingKey];
-    if (!coords) return null;
-    
-    // Parse coordinates (percentage of 100x100 tile)
-    const [xPercent, yPercent] = coords.split(',').map(Number);
-    
-    // Convert to pixel coordinates within the hex
-    const hexSize = 60;
-    const hexWidth = hexSize * 2;
-    const hexHeight = hexSize * Math.sqrt(3);
-    
-    // Scale from 100x100 to hex dimensions
-    const x = (xPercent / 100) * hexWidth - hexWidth / 2;
-    const y = (yPercent / 100) * hexHeight - hexHeight / 2;
-    
-    return { x, y };
-  };
-
   if (loading) {
     return <div className="text-center p-4">Loading map...</div>;
   }
@@ -498,13 +368,8 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
     return <div className="text-center p-4">No map data available</div>;
   }
 
-  // Calculate dynamic SVG dimensions
-  const svgDimensions = calculateDynamicSVGDimensions();
-  
-  // Define hex dimensions for rendering
-  const hexSize = 60;
-  const hexWidth = hexSize * 2;
-  const hexHeight = hexSize * Math.sqrt(3);
+  const svgDimensions = computeMapBounds(mapData.tiles, MAP_DIMS);
+  const { width: hexWidth, height: hexHeight } = MAP_DIMS;
 
   // Center the SVG in the panel
   let initialPanX, initialPanY;
@@ -566,49 +431,36 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
         >
         {/* Render tiles */}
         {(dynamicMapState ? dynamicMapState.tiles : mapData.tiles).map((tile: Tile, index: number) => {
-          const [x, y] = parsePosition(tile.position);
-          const hexPos = getHexPosition(x, y);
+          const { x, y } = parseMapPosition(tile.position);
+          const hexPos = gridToPixel(x, y, MAP_DIMS);
           const imageUrl = getTileImage(tile);
-          const rotation = getTileRotation(tile.rotation);
+          const rotation = tileRotationDegrees(tile.rotation);
 
           return (
             <g key={index}>
-                              {/* Tile image */}
-                <image
-                  href={imageUrl}
-                  x={hexPos.x - hexWidth / 2}
-                  y={hexPos.y - hexHeight / 2}
-                  width={hexWidth}
-                  height={hexHeight}
-                  transform={`rotate(${rotation} ${hexPos.x} ${hexPos.y})`}
-                  style={{ imageRendering: 'pixelated' }}
-                  onError={(e) => {
-                    console.warn(`Missing tile image: ${imageUrl} for tile: ${tile.objectName}`);
-                    const target = e.target as SVGImageElement;
-                    target.style.display = 'none';
-                  }}
-                  onLoad={() => {
-                    console.log(`Successfully loaded image: ${imageUrl}`);
-                  }}
-                />
+              <image
+                href={imageUrl}
+                x={hexPos.x - hexWidth / 2}
+                y={hexPos.y - hexHeight / 2}
+                width={hexWidth}
+                height={hexHeight}
+                transform={`rotate(${rotation} ${hexPos.x} ${hexPos.y})`}
+                style={{ imageRendering: 'pixelated' }}
+                onError={(e) => {
+                  const target = e.target as SVGImageElement;
+                  target.style.display = 'none';
+                }}
+              />
             </g>
           );
         })}
         {/* Dwellings Overlay */}
         {showDwellings && mapLocations && mapLocations.dwellings.map((item: any, idx: number) => {
-          const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === item.tile);
-          if (tileIdx === -1) return null;
-          const tile = mapData.tiles[tileIdx];
-          const [x, y] = parsePosition(tile.position);
-          const hexPos = getHexPosition(x, y);
-          const clearingPos = item.clearing ? getClearingPosition(tile, item.clearing) : { x: 0, y: 0 };
-          if (!clearingPos) return null;
-          const rotation = getTileRotation(tile.rotation);
-          const rad = (rotation * Math.PI) / 180;
-          const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
-          const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
-          const px = hexPos.x + rotatedX;
-          const py = hexPos.y + rotatedY;
+          const tile = findTileByName(mapData.tiles, item.tile);
+          if (!tile) return null;
+          const pos = getChitPixelOnMap(tile, item, tileDataCache, MAP_DIMS);
+          if (!pos) return null;
+          const { x: px, y: py } = pos;
           return (
             <g key={idx} className="dwelling-overlay">
               <rect x={px-10} y={py-10} width={20} height={20} fill="#ffe4b5" stroke="#b8860b" strokeWidth={2} rx={4} />
@@ -619,19 +471,11 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
         })}
         {/* Sound Overlay */}
         {showSound && mapLocations && mapLocations.sound.map((item: any, idx: number) => {
-          const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === item.tile);
-          if (tileIdx === -1) return null;
-          const tile = mapData.tiles[tileIdx];
-          const [x, y] = parsePosition(tile.position);
-          const hexPos = getHexPosition(x, y);
-          const clearingPos = item.clearing ? getClearingPosition(tile, item.clearing) : { x: 0, y: 0 };
-          if (!clearingPos) return null;
-          const rotation = getTileRotation(tile.rotation);
-          const rad = (rotation * Math.PI) / 180;
-          const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
-          const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
-          const px = hexPos.x + rotatedX;
-          const py = hexPos.y + rotatedY;
+          const tile = findTileByName(mapData.tiles, item.tile);
+          if (!tile) return null;
+          const pos = getChitPixelOnMap(tile, item, tileDataCache, MAP_DIMS);
+          if (!pos) return null;
+          const { x: px, y: py } = pos;
           return (
             <g key={idx} className="sound-overlay">
               <circle cx={px} cy={py} r={10} fill="#e0f7fa" stroke="#00796b" strokeWidth={2} />
@@ -641,45 +485,14 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
           );
         })}
         {/* Warning Overlay */}
-        {showWarning && mapLocations && mapLocations.warning.map((item: any, idx: number) => {
-          const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === item.tile);
-          if (tileIdx === -1) return null;
-          const tile = mapData.tiles[tileIdx];
-          const [x, y] = parsePosition(tile.position);
-          const hexPos = getHexPosition(x, y);
-          
-          // Get tile data to find clear areas
-          const tileData = tileDataCache[tile.objectName];
-          let px = hexPos.x;
-          let py = hexPos.y;
-          
-          if (tileData) {
-            const block = tile.isEnchanted ? tileData.attributeBlocks.enchanted : tileData.attributeBlocks.normal;
-            if (block && block.offroad_xy) {
-              // Use offroad coordinates as a reference point for clear areas
-              const [offroadXPercent, offroadYPercent] = block.offroad_xy.split(',').map(Number);
-              
-              // Convert to pixel coordinates within the hex
-              const hexSize = 60;
-              const hexWidth = hexSize * 2;
-              const hexHeight = hexSize * Math.sqrt(3);
-              
-              // Scale from 100x100 to hex dimensions
-              const offroadX = (offroadXPercent / 100) * hexWidth - hexWidth / 2;
-              const offroadY = (offroadYPercent / 100) * hexHeight - hexHeight / 2;
-              
-              // Apply tile rotation
-              const rotation = getTileRotation(tile.rotation);
-              const rad = (rotation * Math.PI) / 180;
-              const rotatedX = offroadX * Math.cos(rad) - offroadY * Math.sin(rad);
-              const rotatedY = offroadX * Math.sin(rad) + offroadY * Math.cos(rad);
-              
-              px = hexPos.x + rotatedX;
-              py = hexPos.y + rotatedY;
-            }
-          }
-          
-          // Make warning chits 40% smaller (12 * 0.6 = 7.2, rounded to 7)
+        {showWarning && mapLocations && mapLocations.warning
+          .filter((item: any) => !item.dwelling)
+          .map((item: any, idx: number) => {
+          const tile = findTileByName(mapData.tiles, item.tile);
+          if (!tile) return null;
+          const pos = getChitPixelOnMap(tile, item, tileDataCache, MAP_DIMS);
+          if (!pos) return null;
+          const { x: px, y: py } = pos;
           const size = 7;
           const fontSize = 8; // Reduced from 14
           
@@ -693,19 +506,11 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
         })}
         {/* Treasure/Other Overlay */}
         {showTreasure && mapLocations && [...mapLocations.treasure, ...mapLocations.other].map((item: any, idx: number) => {
-          const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === item.tile);
-          if (tileIdx === -1) return null;
-          const tile = mapData.tiles[tileIdx];
-          const [x, y] = parsePosition(tile.position);
-          const hexPos = getHexPosition(x, y);
-          const clearingPos = item.clearing ? getClearingPosition(tile, item.clearing) : { x: 0, y: 0 };
-          if (!clearingPos) return null;
-          const rotation = getTileRotation(tile.rotation);
-          const rad = (rotation * Math.PI) / 180;
-          const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
-          const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
-          const px = hexPos.x + rotatedX;
-          const py = hexPos.y + rotatedY;
+          const tile = findTileByName(mapData.tiles, item.tile);
+          if (!tile) return null;
+          const pos = getChitPixelOnMap(tile, item, tileDataCache, MAP_DIMS);
+          if (!pos) return null;
+          const { x: px, y: py } = pos;
           return (
             <g key={idx} className="treasure-overlay">
               <circle cx={px} cy={py} r={9} fill="#fffde7" stroke="#ffd600" strokeWidth={2} />
@@ -717,21 +522,12 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
         {/* Combat Indicators */}
         {dynamicMapState && dynamicMapState.battles && dynamicMapState.battles.map((battle: any, idx: number) => {
           const { tileName, clearing } = parseLocation(battle.location);
-          const tileIdx = (dynamicMapState.tiles || mapData.tiles).findIndex((t: Tile) => t.objectName === tileName);
-          if (tileIdx === -1) return null;
-          const tile = (dynamicMapState.tiles || mapData.tiles)[tileIdx];
-          const [x, y] = parsePosition(tile.position);
-          const hexPos = getHexPosition(x, y);
-          const clearingPos = clearing ? getClearingPosition(tile, clearing) : { x: 0, y: 0 };
-          if (!clearingPos) return null;
-          
-          const rotation = getTileRotation(tile.rotation);
-          const rad = (rotation * Math.PI) / 180;
-          const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
-          const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
-          const px = hexPos.x + rotatedX;
-          const py = hexPos.y + rotatedY;
-          
+          const tile = findTileByName(dynamicMapState.tiles || mapData.tiles, tileName);
+          if (!tile) return null;
+          const pos = getChitPixelOnMap(tile, { clearing }, tileDataCache, MAP_DIMS);
+          if (!pos) return null;
+          const { x: px, y: py } = pos;
+
           return (
             <g key={`battle-${idx}`} className="combat-indicator">
               <circle cx={px} cy={py} r={12} fill="#ffebee" stroke="#d32f2f" strokeWidth={2} />
@@ -744,21 +540,12 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
         {/* Dynamic Character Positions */}
         {dynamicMapState && dynamicMapState.characterPositions && Object.entries(dynamicMapState.characterPositions).map(([character, position]: [string, any]) => {
           const { tileName, clearing } = parseLocation(position.endLocation);
-          const tileIdx = (dynamicMapState.tiles || mapData.tiles).findIndex((t: Tile) => t.objectName === tileName);
-          if (tileIdx === -1) return null;
-          const tile = (dynamicMapState.tiles || mapData.tiles)[tileIdx];
-          const [x, y] = parsePosition(tile.position);
-          const hexPos = getHexPosition(x, y);
-          const clearingPos = clearing ? getClearingPosition(tile, clearing) : { x: 0, y: 0 };
-          if (!clearingPos) return null;
-          
-          const rotation = getTileRotation(tile.rotation);
-          const rad = (rotation * Math.PI) / 180;
-          const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
-          const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
-          const px = hexPos.x + rotatedX;
-          const py = hexPos.y + rotatedY;
-          
+          const tile = findTileByName(dynamicMapState.tiles || mapData.tiles, tileName);
+          if (!tile) return null;
+          const pos = getChitPixelOnMap(tile, { clearing }, tileDataCache, MAP_DIMS);
+          if (!pos) return null;
+          const { x: px, y: py } = pos;
+
           const iconUrl = `/images/charsymbol/${character}_symbol.png`;
           const iconSize = 13;
           
@@ -805,23 +592,17 @@ const SessionMap: React.FC<SessionMapProps> = ({ sessionId, characterIcons = [],
               });
               return Object.entries(locationGroups).map(([locationKey, icons]) => {
                 const firstIcon = icons[0];
-                const tileIdx = mapData.tiles.findIndex((t: Tile) => t.objectName === firstIcon.tile);
-                if (tileIdx === -1) return null;
-                const tile = mapData.tiles[tileIdx];
-                const [x, y] = parsePosition(tile.position);
-                const hexPos = getHexPosition(x, y);
-                const clearingPos = getClearingPosition(tile, firstIcon.clearing);
-                if (!clearingPos) return null;
-                
-                // Apply tile rotation to clearing position
-                const rotation = getTileRotation(tile.rotation);
-                const rad = (rotation * Math.PI) / 180;
-                const rotatedX = clearingPos.x * Math.cos(rad) - clearingPos.y * Math.sin(rad);
-                const rotatedY = clearingPos.x * Math.sin(rad) + clearingPos.y * Math.cos(rad);
-                
-                // Base position: tile center + rotated clearing offset
-                const baseX = hexPos.x + rotatedX;
-                const baseY = hexPos.y + rotatedY;
+                const tile = findTileByName(mapData.tiles, firstIcon.tile);
+                if (!tile) return null;
+                const basePos = getChitPixelOnMap(
+                  tile,
+                  { clearing: firstIcon.clearing },
+                  tileDataCache,
+                  MAP_DIMS
+                );
+                if (!basePos) return null;
+                const baseX = basePos.x;
+                const baseY = basePos.y;
                 
                 // Arrange multiple icons in a circle around the clearing
                 const iconSize = 13; // Half size (26 * 0.5)
