@@ -18,13 +18,8 @@ public final class RealmSpeakPaths {
 	}
 
 	public static RealmSpeakPaths resolve() {
-		String env = System.getenv("REALMSPEAK_HOME");
-		if (env != null && !env.isBlank()) {
-			return new RealmSpeakPaths(new File(env.trim()));
-		}
-		// tools/realm-export -> ../../../RealmSpeak
-		File guessed = new File("../../../RealmSpeak").getAbsoluteFile();
-		return new RealmSpeakPaths(guessed);
+		InstallSettings settings = InstallSettings.load().normalize();
+		return settings.toPaths();
 	}
 
 	public File getHome() {

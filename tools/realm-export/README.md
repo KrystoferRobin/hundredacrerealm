@@ -1,30 +1,49 @@
-# Realm Export Utility
+# Hundred Acre Realm Hub
 
-Small Java/Swing tool (same stack as RealmSpeak) to pick a completed `.rsgame` save and produce an **upload bundle** with the save, log, extracted XML, and full treasure-setup-card data.
+Java/Swing companion for [RealmSpeak](https://github.com/sch4fchen/RealmSpeak): launch the game and utilities, export completed saves, and upload session bundles to the Hundred Acre Realm site.
 
 ## Requirements
 
 - **JDK 15+** (same as RealmSpeak)
 - A local **RealmSpeak** install with `RealmSpeakFull.jar`, `mail.jar`, `activation.jar`, and `gameData/MagicRealmData.xml`
 
-## Setup
+## Build and run (development)
 
-Set `REALMSPEAK_HOME` to your RealmSpeak folder, or rely on the default relative path (`../../../RealmSpeak` from this directory).
-
-Example:
-
-```bat
-set REALMSPEAK_HOME=C:\Users\chris\Documents\e-Sword\RealmSpeak
-```
-
-## Build and run
+From `tools/realm-export`:
 
 ```bat
 build.bat
 run.bat
 ```
 
-## What it exports
+On macOS:
+
+```bash
+chmod +x run-mac.sh
+./run-mac.sh
+```
+
+Set `REALMSPEAK_HOME` to your install folder, or rely on the default dev path (`RealmSpeak-src/build/RealmSpeak1258`).
+
+## Ship with a RealmSpeak build
+
+```bat
+deploy-to-realmspeak.bat ..\..\RealmSpeak-src\build\RealmSpeak1258
+```
+
+This copies `HundredAcreRealm.jar` and `run-hundred-acre.bat` into the install folder. Players double-click `run-hundred-acre.bat` to open the hub.
+
+## Tabs
+
+| Tab | Purpose |
+|-----|---------|
+| **Launcher** | Start RealmSpeak and bundled tools (Battle Builder, Character Builder, etc.) |
+| **Upload** | Pick a `.rsgame`, export, and optionally upload to the site |
+| **Settings** | RealmSpeak folder, site URL, API key, default export folder |
+
+Settings persist as `hundred-acre-realm.json` in the RealmSpeak install directory (ideal for installers to pre-fill).
+
+## What upload exports
 
 For each selected save, choose an output folder. The tool writes:
 

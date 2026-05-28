@@ -20,9 +20,8 @@ public final class SessionBundleBuilder {
 
 	private SessionBundleBuilder() {}
 
-	/** Public bundles still omit setup card (treasure layout); everything else ships for re-processing. */
+	/** Files omitted from public upload bundles (setup card is included for session display). */
 	private static final String[] PUBLIC_EXCLUDE = {
-			"setup_card.json",
 	};
 
 	private static boolean isPublicExcluded(String name, String profile) {

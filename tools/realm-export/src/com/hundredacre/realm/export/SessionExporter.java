@@ -80,11 +80,8 @@ public class SessionExporter {
 		NodePipelineRunner.runFullSessionPipeline(outputDir);
 
 		boolean adminProfile = "admin".equalsIgnoreCase(profile);
-		Map<String, Object> setupCard = null;
-		if (adminProfile) {
-			setupCard = buildSetupCardExport(save);
-			writeJson(new File(outputDir, "setup_card.json"), setupCard);
-		}
+		Map<String, Object> setupCard = buildSetupCardExport(save);
+		writeJson(new File(outputDir, "setup_card.json"), setupCard);
 
 		Map<String, Object> manifest = new LinkedHashMap<>();
 		manifest.put("exporter", "realm-export-1.0");
@@ -101,7 +98,9 @@ public class SessionExporter {
 			files.add(copiedSave.getName());
 			if (rslog != null) files.add(baseName + ".rslog");
 			files.add("extracted_game.xml");
-			if (setupCard != null) files.add("setup_card.json");
+		}
+		if (setupCard != null && !files.contains("setup_card.json")) {
+			files.add("setup_card.json");
 		}
 		for (File f : outputDir.listFiles()) {
 			if (f.isFile() && f.getName().endsWith(".json") && !files.contains(f.getName())) {

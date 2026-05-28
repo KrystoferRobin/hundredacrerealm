@@ -1,0 +1,122 @@
+name: Build installers
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "installer-v*"
+
+jobs:
+  build-macos:
+    strategy:
+      matrix:
+        include:
+          - runner: macos-14
+            target: mac-aarch64
+          - runner: macos-13
+            target: mac-x64
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build hub jar
+        run: |
+          export REALMSPEAK_HOME="$GITHUB_WORKSPACE/RealmSpeak-src/build/RealmSpeak1258"
+          if [[ ! -f "$REALMSPEAK_HOME/RealmSpeakFull.jar" ]]; then
+            echo "RealmSpeak1258 payload must be present in the repo or supplied as a CI artifact."
+            exit 1
+          fi
+          cd tools/realm-export
+          mkdir -p build
+          CP="$REALMSPEAK_HOME/mail.jar:$REALMSPEAK_HOME/activation.jar:$REALMSPEAK_HOME/RealmSpeakFull.jar"
+          javac -encoding UTF-8 -cp "$CP" -d build src/com/hundredacre/realm/export/*.java
+          printf 'Main-Class: com.hundredacre.realm.export.RealmExportApp\n' > build/manifest.txt
+          jar cfm HundredAcreRealm.jar build/manifest.txt -C build com
+      - name: Build installer
+        run: |
+          chmod +x tools/installer/build.sh tools/installer/scripts/*.sh
+          cd tools/installer
+          ./build.sh "${{ matrix.target }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.target }}
+          path: tools/installer/output/*.run
+
+  build-linux:
+    strategy:
+      matrix:
+        include:
+          - runner: ubuntu-latest
+            target: linux-x64
+          - runner: ubuntu-24.04-arm
+            target: linux-aarch64
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - name: Build hub jar
+        run: |
+          export REALMSPEAK_HOME="$GITHUB_WORKSPACE/RealmSpeak-src/build/RealmSpeak1258"
+          if [[ ! -f "$REALMSPEAK_HOME/RealmSpeakFull.jar" ]]; then
+            echo "RealmSpeak1258 payload must be present in the repo or supplied as a CI artifact."
+            exit 1
+          fi
+          cd tools/realm-export
+          mkdir -p build
+          CP="$REALMSPEAK_HOME/mail.jar:$REALMSPEAK_HOME/activation.jar:$REALMSPEAK_HOME/RealmSpeakFull.jar"
+          javac -encoding UTF-8 -cp "$CP" -d build src/com/hundredacre/realm/export/*.java
+          printf 'Main-Class: com.hundredacre.realm.export.RealmExportApp\n' > build/manifest.txt
+          jar cfm HundredAcreRealm.jar build/manifest.txt -C build com
+      - name: Build installer
+        run: |
+          chmod +x tools/installer/build.sh tools/installer/scripts/*.sh
+          cd tools/installer
+          ./build.sh "${{ matrix.target }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.target }}
+          path: tools/installer/output/*.run
+
+  build-windows:
+    strategy:
+      matrix:
+        include:
+          - arch: x64
+            runner: windows-latest
+          - arch: aarch64
+            runner: windows-11-arm
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - name: Install Inno Setup
+        run: choco install innosetup -y
+      - name: Build hub jar
+        shell: pwsh
+        run: |
+          $env:REALMSPEAK_HOME = "$env:GITHUB_WORKSPACE/RealmSpeak-src/build/RealmSpeak1258"
+          if (-not (Test-Path "$env:REALMSPEAK_HOME/RealmSpeakFull.jar")) {
+            throw "RealmSpeak1258 payload must be present in the repo or supplied as a CI artifact."
+          }
+          cd tools/realm-export
+          New-Item -ItemType Directory -Force -Path build | Out-Null
+          $cp = "$env:REALMSPEAK_HOME/mail.jar;$env:REALMSPEAK_HOME/activation.jar;$env:REALMSPEAK_HOME/RealmSpeakFull.jar"
+          javac -encoding UTF-8 -cp $cp -d build src/com/hundredacre/realm/export/*.java
+          "Main-Class: com.hundredacre.realm.export.RealmExportApp" | Out-File -Encoding ascii build/manifest.txt
+          jar cfm HundredAcreRealm.jar build/manifest.txt -C build com
+      - name: Build installer
+        shell: pwsh
+        run: |
+          cd tools/installer/windows
+          ./build-windows.ps1 -Arch ${{ matrix.arch }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-${{ matrix.arch }}
+          path: |
+            tools/installer/output/*.exe
+            tools/installer/output/*.zip

@@ -24,7 +24,7 @@ public class RealmApiClient {
 	private final String apiKey;
 
 	public RealmApiClient(String baseUrl, String apiKey) {
-		this.baseUrl = baseUrl.endsWith("/") ? baseUrl.substring(0, baseUrl.length() - 1) : baseUrl;
+		this.baseUrl = InstallSettings.normalizeSiteUrl(baseUrl);
 		this.apiKey = apiKey;
 	}
 

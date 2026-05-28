@@ -62,4 +62,9 @@ prisma/dev.db
 # realm-export tool build artifacts
 /tools/realm-export/build/
 /tools/realm-export/test-out/
-../realmspeak/
+/tools/realm-export/HundredAcreRealm.jar
+
+# installer staging, cache, and release output
+/tools/installer/staging/
+/tools/installer/cache/
+/tools/installer/output/

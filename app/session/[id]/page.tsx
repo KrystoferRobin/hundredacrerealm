@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { useParams } from 'next/navigation';
 import SessionMap from '../../../components/SessionMap';
 import EnhancedSessionMap from '../../../components/EnhancedSessionMap';
+import SetupCardModal from '../../../components/SetupCardModal';
 import Image from 'next/image';
 
 interface Action {
@@ -124,6 +125,7 @@ export default function Page({ params }: { params: { id: string } }) {
   const [hoveredCharacter, setHoveredCharacter] = useState<string | null>(null);
   const [hoveredCharacterData, setHoveredCharacterData] = useState<any>(null);
   const [hoveredCharacterStats, setHoveredCharacterStats] = useState<any>(null);
+  const [showSetupCard, setShowSetupCard] = useState(false);
 
   useEffect(() => {
     const fetchSessionData = async () => {
@@ -1641,7 +1643,16 @@ export default function Page({ params }: { params: { id: string } }) {
           </h2>
           {/* Character Boxes */}
           <div className="mb-6 w-full">
-            <h3 className="text-xl font-bold text-amber-700 mb-4">👥 Characters</h3>
+            <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
+              <h3 className="text-xl font-bold text-amber-700">👥 Characters</h3>
+              <button
+                type="button"
+                onClick={() => setShowSetupCard(true)}
+                className="rounded-lg border-2 border-[#bfa76a] bg-[#fff8e1] px-4 py-2 text-sm font-serif font-semibold text-[#6b3e26] shadow hover:bg-[#f3e3b2] transition-colors"
+              >
+                🎴 Setup Card
+              </button>
+            </div>
             {(!characterStats || !characterInventories) ? (
               <div className="text-center text-[#4b3a1e] font-serif italic">Loading character data...</div>
             ) : (
@@ -1731,6 +1742,11 @@ export default function Page({ params }: { params: { id: string } }) {
           {renderCalendar()}
         </div>
       </div>
+      <SetupCardModal
+        sessionId={sessionId}
+        open={showSetupCard}
+        onClose={() => setShowSetupCard(false)}
+      />
     </div>
   );
 } 

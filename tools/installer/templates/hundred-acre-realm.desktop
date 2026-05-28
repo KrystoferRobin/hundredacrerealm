@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Hundred Acre Realm
+Comment=Launch RealmSpeak and the Hundred Acre Realm hub
+Exec=@INSTALL_DIR@/run-hundred-acre.sh
+Path=@INSTALL_DIR@
+Icon=@INSTALL_DIR@/app-icon.jpg
+Terminal=false
+Categories=Game;
