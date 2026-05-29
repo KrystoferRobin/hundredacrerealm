@@ -4,6 +4,7 @@ export interface ItemRecord {
   id?: string;
   name: string;
   attributeBlocks: Record<string, Record<string, string>>;
+  parts?: ItemRecord[];
 }
 
 export type ItemChitKind = 'armor' | 'weapon' | 'horse' | 'treasure' | 'spell';

@@ -25,35 +25,40 @@ export async function GET(
       );
     }
 
-    // Search in all item categories
     const categories = ['armor', 'weapon', 'treasure'];
-    let item: Item | null = null;
+    const matches: Item[] = [];
 
-    // First search in items directory
     for (const category of categories) {
       const categoryDir = path.join(itemsDir, category);
       if (!fs.existsSync(categoryDir)) continue;
 
       const files = fs.readdirSync(categoryDir);
-      
+
       for (const file of files) {
         if (!file.endsWith('.json')) continue;
-        
+
         const itemPath = path.join(categoryDir, file);
         const itemData = JSON.parse(fs.readFileSync(itemPath, 'utf8'));
-        
+
         if (itemData.name === itemName) {
-          item = {
+          matches.push({
             id: itemData.id,
             name: itemData.name,
             attributeBlocks: itemData.attributeBlocks || {},
-            parts: itemData.parts || []
-          };
-          break;
+            parts: itemData.parts || [],
+          });
         }
       }
-      
-      if (item) break;
+    }
+
+    let item: Item | null = null;
+    if (matches.length > 0) {
+      item = matches.sort((a, b) => {
+        const aParts = a.parts?.length ?? 0;
+        const bParts = b.parts?.length ?? 0;
+        if (bParts !== aParts) return bParts - aParts;
+        return Number(a.id) - Number(b.id);
+      })[0];
     }
 
     // If not found in items, search in spells directory

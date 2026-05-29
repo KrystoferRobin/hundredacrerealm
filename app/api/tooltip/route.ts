@@ -70,51 +70,75 @@ export async function POST(request: Request) {
   }
 }
 
-async function findItemInCategory(
+function itemJsonToRecord(
+  itemData: { id?: string; name: string; description?: string; image?: string; attributeBlocks?: any; parts?: any[] },
+  category: string,
+  filename: string
+) {
+  return {
+    id: itemData.id || filename.replace('.json', ''),
+    name: itemData.name,
+    type: category,
+    description: itemData.description,
+    image: itemData.image,
+    attributeBlocks: itemData.attributeBlocks || {},
+    parts: itemData.parts || [],
+  };
+}
+
+async function findItemsInCategory(
   name: string,
   category: string,
   coreDataDir: string
-): Promise<any | null> {
+): Promise<any[]> {
   const itemsDir = path.join(coreDataDir, 'items', category);
-  if (!fs.existsSync(itemsDir)) return null;
+  if (!fs.existsSync(itemsDir)) return [];
 
   const files = fs.readdirSync(itemsDir, { withFileTypes: true })
     .filter((dirent) => dirent.isFile() && dirent.name.endsWith('.json'))
     .map((dirent) => dirent.name);
 
+  const matches: any[] = [];
   for (const filename of files) {
     try {
       const filePath = path.join(itemsDir, filename);
       const itemData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
       if (itemData.name === name) {
-        return {
-          id: itemData.id || filename.replace('.json', ''),
-          name: itemData.name,
-          type: category,
-          description: itemData.description,
-          image: itemData.image,
-          attributeBlocks: itemData.attributeBlocks || {},
-          parts: itemData.parts || [],
-        };
+        matches.push(itemJsonToRecord(itemData, category, filename));
       }
     } catch (error) {
       console.error(`Error reading item file ${filename}:`, error);
     }
   }
-  return null;
+  return matches;
+}
+
+function pickPreferredItemRecord(matches: Array<{ id: string; name: string; type: string; attributeBlocks: any; parts: any[] }>) {
+  if (matches.length === 0) return null;
+  return matches.sort((a, b) => {
+    const aParts = a.parts?.length ?? 0;
+    const bParts = b.parts?.length ?? 0;
+    if (bParts !== aParts) return bParts - aParts;
+    return Number(b.id) - Number(a.id);
+  })[0];
 }
 
 async function findItem(name: string, category: string, coreDataDir: string): Promise<any> {
-  const primary = await findItemInCategory(name, category, coreDataDir);
-  if (primary) return primary;
+  const matches: Array<{
+    id: string;
+    name: string;
+    type: string;
+    attributeBlocks: any;
+    parts: any[];
+  }> = [];
 
   for (const cat of ['armor', 'weapon', 'treasure']) {
-    if (cat === category) continue;
-    const found = await findItemInCategory(name, cat, coreDataDir);
-    if (found) return found;
+    const found = await findItemsInCategory(name, cat, coreDataDir);
+    matches.push(...found);
   }
-  return null;
+
+  return pickPreferredItemRecord(matches);
 }
 
 async function findSpell(name: string, level: string, coreDataDir: string): Promise<any> {

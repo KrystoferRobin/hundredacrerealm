@@ -2,7 +2,12 @@
 import { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { CounterTooltipPanel } from '@/components/CounterTooltipPanel';
-import { isMonsterRecord, isNativeRecord, type ItemLikeRecord } from '@/lib/denizen-detect';
+import {
+  isGameItemRecord,
+  isMonsterRecord,
+  isNativeRecord,
+  type ItemLikeRecord,
+} from '@/lib/denizen-detect';
 
 interface TooltipProps {
   type: 'item' | 'spell' | 'character' | 'monster' | 'native';
@@ -108,6 +113,7 @@ export default function UniversalTooltip({
     if (
       type === 'item' ||
       type === 'spell' ||
+      isGameItemRecord(tooltipData as ItemLikeRecord) ||
       type === 'native' ||
       type === 'monster' ||
       isNativeRecord(tooltipData) ||
