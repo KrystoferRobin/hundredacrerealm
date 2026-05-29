@@ -70,19 +70,23 @@ export async function POST(request: Request) {
   }
 }
 
-async function findItem(name: string, category: string, coreDataDir: string): Promise<any> {
+async function findItemInCategory(
+  name: string,
+  category: string,
+  coreDataDir: string
+): Promise<any | null> {
   const itemsDir = path.join(coreDataDir, 'items', category);
   if (!fs.existsSync(itemsDir)) return null;
 
   const files = fs.readdirSync(itemsDir, { withFileTypes: true })
-    .filter(dirent => dirent.isFile() && dirent.name.endsWith('.json'))
-    .map(dirent => dirent.name);
+    .filter((dirent) => dirent.isFile() && dirent.name.endsWith('.json'))
+    .map((dirent) => dirent.name);
 
   for (const filename of files) {
     try {
       const filePath = path.join(itemsDir, filename);
       const itemData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-      
+
       if (itemData.name === name) {
         return {
           id: itemData.id || filename.replace('.json', ''),
@@ -90,12 +94,25 @@ async function findItem(name: string, category: string, coreDataDir: string): Pr
           type: category,
           description: itemData.description,
           image: itemData.image,
-          attributeBlocks: itemData.attributeBlocks || {}
+          attributeBlocks: itemData.attributeBlocks || {},
+          parts: itemData.parts || [],
         };
       }
     } catch (error) {
       console.error(`Error reading item file ${filename}:`, error);
     }
+  }
+  return null;
+}
+
+async function findItem(name: string, category: string, coreDataDir: string): Promise<any> {
+  const primary = await findItemInCategory(name, category, coreDataDir);
+  if (primary) return primary;
+
+  for (const cat of ['armor', 'weapon', 'treasure']) {
+    if (cat === category) continue;
+    const found = await findItemInCategory(name, cat, coreDataDir);
+    if (found) return found;
   }
   return null;
 }

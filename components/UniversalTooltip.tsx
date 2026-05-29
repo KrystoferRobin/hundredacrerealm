@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import { DenizenTooltipPanel } from '@/components/DenizenTooltipPanel';
+import { CounterTooltipPanel } from '@/components/CounterTooltipPanel';
 import { isMonsterRecord, isNativeRecord, type ItemLikeRecord } from '@/lib/denizen-detect';
 
 interface TooltipProps {
@@ -106,58 +106,20 @@ export default function UniversalTooltip({
     }
 
     if (
+      type === 'item' ||
+      type === 'spell' ||
       type === 'native' ||
       type === 'monster' ||
       isNativeRecord(tooltipData) ||
-      isMonsterRecord(tooltipData)
+      isMonsterRecord(tooltipData) ||
+      tooltipData.attributeBlocks
     ) {
-      return <DenizenTooltipPanel record={tooltipData as ItemLikeRecord} />;
+      return <CounterTooltipPanel item={tooltipData as ItemLikeRecord} />;
     }
 
     return (
-      <div className="p-3 max-w-sm">
-        <h3 className="font-bold text-[#6b3e26] font-serif mb-2">{tooltipData.name}</h3>
-        
-        {tooltipData.level && (
-          <div className="text-xs text-[#6b3e26] font-serif mb-2">
-            Level {tooltipData.level}
-          </div>
-        )}
-        
-        {tooltipData.type && (
-          <div className="text-xs text-[#6b3e26] font-serif mb-2">
-            Type: {tooltipData.type}
-          </div>
-        )}
-        
-        {tooltipData.description && (
-          <p className="text-sm text-[#4b3a1e] font-serif mb-2">{tooltipData.description}</p>
-        )}
-        
-        {tooltipData.image && (
-          <div className="flex justify-center mb-2">
-            <img 
-              src={tooltipData.image} 
-              alt={tooltipData.name}
-              className="w-16 h-16 object-contain"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.style.display = 'none';
-              }}
-            />
-          </div>
-        )}
-        
-        {tooltipData.attributeBlocks.this && (
-          <div className="text-xs text-[#6b3e26] font-serif">
-            {Object.entries(tooltipData.attributeBlocks.this).map(([key, value]) => (
-              <div key={key} className="flex justify-between">
-                <span className="font-semibold">{key}:</span>
-                <span>{String(value)}</span>
-              </div>
-            ))}
-          </div>
-        )}
+      <div className="p-2 text-sm text-[#6b3e26] font-serif">
+        No data available
       </div>
     );
   };
@@ -176,7 +138,7 @@ export default function UniversalTooltip({
           style={{
             left: Math.min(position.x + 10, window.innerWidth - 320),
             top: Math.min(position.y + 10, window.innerHeight - 200),
-            maxWidth: '300px',
+            maxWidth: '360px',
             pointerEvents: 'none'
           }}
         >

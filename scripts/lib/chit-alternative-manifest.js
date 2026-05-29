@@ -203,6 +203,66 @@ function syncMonsterAlternativeIcons({ rsImages, outAlternativeDir, monstersRoot
   return { copied, missing };
 }
 
+/** Copy armor/weapon/treasure chit art from RealmSpeak into map/alternative/{folder}/. */
+function syncItemAlternativeIcons({ rsImages, outAlternativeDir, itemsRoot }) {
+  let copied = 0;
+  let missing = 0;
+  const seen = new Set();
+
+  for (const filePath of walkJsonFiles(itemsRoot)) {
+    let data;
+    try {
+      data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    } catch {
+      continue;
+    }
+    const t = data.attributeBlocks?.this;
+    if (!t?.icon_type) continue;
+
+    const destType = t.icon_type_alt || t.icon_type;
+    let destFolder = normalizeFolder(t.icon_folder || 'treasure');
+    if (destFolder.startsWith('wesnoth')) destFolder = 'steed';
+
+    const destKey = `${destFolder}/${destType}`;
+    if (seen.has(destKey)) continue;
+
+    const srcCandidates = [];
+    if (t.icon_folder_alt && t.icon_type_alt) {
+      srcCandidates.push({ folder: t.icon_folder_alt, type: t.icon_type_alt });
+    }
+    if (t.icon_folder?.startsWith('wesnoth')) {
+      srcCandidates.push({ folder: t.icon_folder, type: t.icon_type_alt || t.icon_type });
+    }
+    srcCandidates.push({ folder: destFolder, type: t.icon_type });
+    if (t.icon_folder && !t.icon_folder.startsWith('wesnoth')) {
+      srcCandidates.push({ folder: t.icon_folder, type: t.icon_type });
+    }
+
+    let src = null;
+    for (const { folder, type } of srcCandidates) {
+      src = resolveAltSourcePath(rsImages, folder, type);
+      if (src) break;
+    }
+
+    if (!src) {
+      missing++;
+      continue;
+    }
+
+    const ext = path.extname(src);
+    const destDir = path.join(outAlternativeDir, destFolder);
+    const dest = path.join(destDir, destType + ext);
+    fs.mkdirSync(destDir, { recursive: true });
+    if (!fs.existsSync(dest)) {
+      fs.copyFileSync(src, dest);
+      copied++;
+    }
+    seen.add(destKey);
+  }
+
+  return { copied, missing };
+}
+
 function writeManifest(manifest, outPath) {
   const payload = {
     byKey: manifest.byKey,
@@ -219,6 +279,7 @@ module.exports = {
   syncAlternativeImages,
   syncNativeAlternativeIcons,
   syncMonsterAlternativeIcons,
+  syncItemAlternativeIcons,
   writeManifest,
   normalizeFolder,
 };

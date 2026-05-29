@@ -43,6 +43,10 @@ const CHIT_SYNCS = [
   { src: 'monsters2_c', set: 'color', dest: 'monsters2' },
   { src: 'steed', set: 'classic', dest: 'steed' },
   { src: 'steed_c', set: 'color', dest: 'steed' },
+  { src: 'armor', set: 'classic', dest: 'armor' },
+  { src: 'armor_c', set: 'color', dest: 'armor' },
+  { src: 'weapons', set: 'classic', dest: 'weapons' },
+  { src: 'weapons_c', set: 'color', dest: 'weapons' },
 ];
 
 const CHARACTER_SYNCS = [
@@ -143,6 +147,7 @@ async function main() {
     syncAlternativeImages,
     syncNativeAlternativeIcons,
     syncMonsterAlternativeIcons,
+    syncItemAlternativeIcons,
     writeManifest,
   } = require('./lib/chit-alternative-manifest');
   const coregamedataRoot = path.join(REPO_ROOT, 'coregamedata');
@@ -182,6 +187,17 @@ async function main() {
     `map/alternative/monsters*: +${mCopied} monster icons from Wesnoth paths (${mMissing} missing)`
   );
   total += mCopied;
+
+  const itemsRoot = path.join(coregamedataRoot, 'items');
+  const { copied: iCopied, missing: iMissing } = syncItemAlternativeIcons({
+    rsImages: RS_IMAGES,
+    outAlternativeDir: altOut,
+    itemsRoot,
+  });
+  console.log(
+    `map/alternative/{armor,weapons,...}: +${iCopied} item icons (${iMissing} missing)`
+  );
+  total += iCopied;
 
   console.log(`\nDone. ${total} asset files synced.`);
   console.log('Tiles:  /images/tiles/{classic|legendary|legendary-icons}/');
