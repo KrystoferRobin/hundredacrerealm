@@ -141,6 +141,8 @@ async function main() {
 
   const {
     syncAlternativeImages,
+    syncNativeAlternativeIcons,
+    syncMonsterAlternativeIcons,
     writeManifest,
   } = require('./lib/chit-alternative-manifest');
   const coregamedataRoot = path.join(REPO_ROOT, 'coregamedata');
@@ -158,6 +160,28 @@ async function main() {
   );
   console.log(`manifest: ${path.relative(REPO_ROOT, manifestPath)}`);
   total += copied;
+
+  const nativesRoot = path.join(coregamedataRoot, 'natives');
+  const { copied: nCopied, missing: nMissing } = syncNativeAlternativeIcons({
+    rsImages: RS_IMAGES,
+    outAlternativeDir: altOut,
+    nativesRoot,
+  });
+  console.log(
+    `map/alternative/natives*: +${nCopied} native icons from Wesnoth paths (${nMissing} missing)`
+  );
+  total += nCopied;
+
+  const monstersRoot = path.join(coregamedataRoot, 'monsters');
+  const { copied: mCopied, missing: mMissing } = syncMonsterAlternativeIcons({
+    rsImages: RS_IMAGES,
+    outAlternativeDir: altOut,
+    monstersRoot,
+  });
+  console.log(
+    `map/alternative/monsters*: +${mCopied} monster icons from Wesnoth paths (${mMissing} missing)`
+  );
+  total += mCopied;
 
   console.log(`\nDone. ${total} asset files synced.`);
   console.log('Tiles:  /images/tiles/{classic|legendary|legendary-icons}/');

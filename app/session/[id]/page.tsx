@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import SessionMap from '../../../components/SessionMap';
 import EnhancedSessionMap from '../../../components/EnhancedSessionMap';
 import SetupCardModal from '../../../components/SetupCardModal';
+import { CounterTooltipPanel } from '../../../components/CounterTooltipPanel';
 import Image from 'next/image';
 
 interface Action {
@@ -76,6 +77,7 @@ interface SessionData {
 interface Item {
   id: string;
   name: string;
+  denizenKind?: 'native' | 'monster';
   attributeBlocks: Record<string, any>;
   parts: any[];
 }
@@ -463,70 +465,11 @@ export default function Page({ params }: { params: { id: string } }) {
     );
   };
 
-  // Function to render equipment tooltip
+  // Function to render equipment / denizen tooltip
   const renderEquipmentTooltip = (itemName: string) => {
     const item = itemCache[itemName];
     if (!item) return null;
-
-    const isArmor = item.attributeBlocks.intact && item.attributeBlocks.damaged;
-    const isWeapon = item.attributeBlocks.unalerted && item.attributeBlocks.alerted;
-    const isSpell = item.attributeBlocks.this?.spell;
-    const isTreasure = !isArmor && !isWeapon && !isSpell;
-    
-
-
-    return (
-      <div className="absolute z-50 bg-[#fff8e1] border-2 border-[#bfa76a] rounded-lg p-3 shadow-lg min-w-48">
-        <div className="text-sm font-semibold text-[#6b3e26] font-serif mb-2 text-center">{item.name}</div>
-        
-        {isSpell && (
-          <div className="space-y-2">
-            <div className="flex justify-between items-center text-xs">
-              <span className="text-[#6b3e26] font-serif font-semibold">Type {item.attributeBlocks.this.spell}</span>
-              <span className="text-[#6b3e26] font-serif capitalize">{item.attributeBlocks.this.duration}</span>
-            </div>
-            <div className="flex justify-between items-center text-xs">
-              <span className="text-[#6b3e26] font-serif capitalize">{item.attributeBlocks.this.magic_color || 'Any'}</span>
-              <span className="text-[#6b3e26] font-serif capitalize">{item.attributeBlocks.this.target || 'Self'}</span>
-            </div>
-            <div className="border-t border-[#bfa76a] pt-2 mt-2">
-              <div className="text-xs text-[#6b3e26] font-serif italic leading-relaxed">
-                {item.attributeBlocks.this.text || 'No description available'}
-              </div>
-            </div>
-          </div>
-        )}
-        
-        {isArmor && (
-          <div className="space-y-2">
-            <div className="text-xs text-[#6b3e26] font-serif">Armor Sides:</div>
-            <div className="flex justify-center space-x-2">
-              {renderArmorChit(item, 'intact')}
-              {renderArmorChit(item, 'damaged')}
-            </div>
-          </div>
-        )}
-        
-        {isWeapon && (
-          <div className="space-y-2">
-            <div className="text-xs text-[#6b3e26] font-serif">Weapon Sides:</div>
-            <div className="flex justify-center space-x-2">
-              {renderWeaponChit(item, 'unalerted')}
-              {renderWeaponChit(item, 'alerted')}
-            </div>
-          </div>
-        )}
-        
-        {isTreasure && (
-          <div className="space-y-2">
-            <div className="text-xs text-[#6b3e26] font-serif">Treasure:</div>
-            <div className="flex justify-center">
-              {renderTreasureChit(item)}
-            </div>
-          </div>
-        )}
-      </div>
-    );
+    return <CounterTooltipPanel item={item} />;
   };
 
   // Function to render text with item tooltips
@@ -1354,6 +1297,8 @@ export default function Page({ params }: { params: { id: string } }) {
     const getItemCategory = (item) => {
       const cached = itemCache[item.name];
       if (cached) {
+        if (cached.denizenKind === 'native') return 'native';
+        if (cached.denizenKind === 'monster') return 'monster';
         // Use attributeBlocks to determine type
         if (cached.attributeBlocks.intact && cached.attributeBlocks.damaged) return 'armor';
         if (cached.attributeBlocks.unalerted && cached.attributeBlocks.alerted) return 'weapon';
@@ -1388,6 +1333,8 @@ export default function Page({ params }: { params: { id: string } }) {
     const largeTreasureItems = allItems.filter(item => isLargeTreasure(item));
     const greatTreasureItems = allItems.filter(item => getItemCategory(item) === 'great_treasure' || (getItemCategory(item) === 'treasure' && item.name.toLowerCase().includes('great')));
     const spellItems = allItems.filter(item => getItemCategory(item) === 'spell');
+    const nativeItems = allItems.filter(item => getItemCategory(item) === 'native');
+    const monsterItems = allItems.filter(item => getItemCategory(item) === 'monster');
 
     // Render helpers for each line
     const renderItemLine = (items: any[], icon: React.ReactNode = null, extraClass = '') => (
@@ -1517,6 +1464,8 @@ export default function Page({ params }: { params: { id: string } }) {
               {treasureItems.length > 0 && renderItemLine(treasureItems, renderTreasureBagIcon())}
               {largeTreasureItems.length > 0 && renderItemLine(largeTreasureItems, renderTreasureBagIcon())}
               {greatTreasureItems.length > 0 && renderItemLine(greatTreasureItems, greatTreasureIcon)}
+              {nativeItems.length > 0 && renderItemLine(nativeItems)}
+              {monsterItems.length > 0 && renderItemLine(monsterItems)}
             </div>
             {/* Spells section */}
             {renderSpells()}

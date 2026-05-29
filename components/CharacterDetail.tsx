@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import React from 'react';
+import { CounterTooltipPanel } from '@/components/CounterTooltipPanel';
 
 interface CharacterPart {
   id: string;
@@ -326,68 +327,11 @@ export default function CharacterDetail({ characterName, setSelectedCharacter, s
     );
   };
 
-  // Function to render equipment tooltip
+  // Function to render equipment / denizen tooltip
   const renderEquipmentTooltip = (itemName: string) => {
     const item = itemCache[itemName];
     if (!item) return null;
-
-    const isArmor = item.attributeBlocks.intact && item.attributeBlocks.damaged;
-    const isWeapon = item.attributeBlocks.unalerted && item.attributeBlocks.alerted;
-    const isSpell = item.attributeBlocks.this?.spell;
-    const isTreasure = !isArmor && !isWeapon && !isSpell;
-
-    return (
-      <div className="absolute z-50 bg-[#fff8e1] border-2 border-[#bfa76a] rounded-lg p-3 shadow-lg min-w-48">
-        <div className="text-sm font-semibold text-[#6b3e26] font-serif mb-2 text-center">{item.name}</div>
-        
-        {isSpell && (
-          <div className="space-y-2">
-            <div className="flex justify-between items-center text-xs">
-              <span className="text-[#6b3e26] font-serif font-semibold">Type {item.attributeBlocks.this.spell}</span>
-              <span className="text-[#6b3e26] font-serif capitalize">{item.attributeBlocks.this.duration}</span>
-            </div>
-            <div className="flex justify-between items-center text-xs">
-              <span className="text-[#6b3e26] font-serif capitalize">{item.attributeBlocks.this.magic_color || 'Any'}</span>
-              <span className="text-[#6b3e26] font-serif capitalize">{item.attributeBlocks.this.target || 'Self'}</span>
-            </div>
-            <div className="border-t border-[#bfa76a] pt-2 mt-2">
-              <div className="text-xs text-[#6b3e26] font-serif italic leading-relaxed">
-                {item.attributeBlocks.this.text || 'No description available'}
-              </div>
-            </div>
-          </div>
-        )}
-        
-        {isArmor && (
-          <div className="space-y-2">
-            <div className="text-xs text-[#6b3e26] font-serif">Armor Sides:</div>
-            <div className="flex justify-center space-x-2">
-              {renderArmorChit(item, 'intact')}
-              {renderArmorChit(item, 'damaged')}
-            </div>
-          </div>
-        )}
-        
-        {isWeapon && (
-          <div className="space-y-2">
-            <div className="text-xs text-[#6b3e26] font-serif">Weapon Sides:</div>
-            <div className="flex justify-center space-x-2">
-              {renderWeaponChit(item, 'unalerted')}
-              {renderWeaponChit(item, 'alerted')}
-            </div>
-          </div>
-        )}
-        
-        {isTreasure && (
-          <div className="space-y-2">
-            <div className="text-xs text-[#6b3e26] font-serif">Treasure:</div>
-            <div className="flex justify-center">
-              {renderTreasureChit(item)}
-            </div>
-          </div>
-        )}
-      </div>
-    );
+    return <CounterTooltipPanel item={item} />;
   };
 
   // Function to render item with tooltip

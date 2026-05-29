@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { findDenizenByName } from '@/lib/coregamedata-lookup';
 
 export async function POST(request: Request) {
   try {
@@ -40,6 +41,23 @@ export async function POST(request: Request) {
               return { name: itemName, item: spellData };
             }
             
+            const denizen = findDenizenByName(
+              itemName,
+              path.join(process.cwd(), 'coregamedata')
+            );
+            if (denizen) {
+              return {
+                name: itemName,
+                item: {
+                  id: denizen.id,
+                  name: denizen.name,
+                  denizenKind: denizen.denizenKind,
+                  attributeBlocks: denizen.attributeBlocks,
+                  parts: denizen.parts || [],
+                },
+              };
+            }
+
             errors.push(`Item not found: ${itemName}`);
             return { name: itemName, item: null };
           }

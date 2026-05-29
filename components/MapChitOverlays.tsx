@@ -19,6 +19,8 @@ import {
   type MapChitLocation,
 } from '@/lib/map-assets';
 import type { CounterGraphicsStyle } from '@/lib/map-graphics-styles';
+import { DenizenTooltipPanel } from '@/components/DenizenTooltipPanel';
+import type { ItemLikeRecord } from '@/lib/denizen-detect';
 
 const CHIT_SIZE = 36;
 const SOUND_WARNING_CHIT_SIZE = Math.round(CHIT_SIZE / 2);
@@ -281,7 +283,7 @@ export function MapChitClearingPopup({
     >
       <div
         className="rounded-lg border border-gray-500 bg-white/98 shadow-2xl px-3 py-3"
-        style={{ maxWidth: Math.min(440, Math.max(140, popup.items.length * 76)) }}
+        style={{ maxWidth: Math.min(520, Math.max(168, popup.items.length * 168)) }}
       >
         <div className="flex flex-wrap justify-center gap-3">
           {popup.items.map((item) => (
@@ -295,6 +297,76 @@ export function MapChitClearingPopup({
 }
 
 function PopupChitCard({
+  item,
+  counterStyle,
+}: {
+  item: MapChitLocation;
+  counterStyle: CounterGraphicsStyle;
+}) {
+  if (item.type === 'native' || item.type === 'monster') {
+    return <DenizenPopupChitCard item={item} counterStyle={counterStyle} />;
+  }
+
+  return <PopupChitImageCard item={item} counterStyle={counterStyle} />;
+}
+
+function DenizenPopupChitCard({
+  item,
+  counterStyle,
+}: {
+  item: MapChitLocation;
+  counterStyle: CounterGraphicsStyle;
+}) {
+  const [record, setRecord] = React.useState<ItemLikeRecord | null>(null);
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
+    setRecord(null);
+
+    const denizenType = item.type === 'native' ? 'native' : 'monster';
+    fetch('/api/tooltip', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ type: denizenType, name: item.name }),
+    })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((payload) => {
+        if (!cancelled) setRecord(payload?.data ?? null);
+      })
+      .catch(() => {
+        if (!cancelled) setRecord(null);
+      })
+      .finally(() => {
+        if (!cancelled) setLoading(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [item.id, item.name, item.type]);
+
+  if (record) {
+    return (
+      <div className="shrink-0">
+        <DenizenTooltipPanel record={record} />
+      </div>
+    );
+  }
+
+  if (loading) {
+    return (
+      <div className="w-[168px] shrink-0 text-center text-[10px] text-gray-600 py-6">
+        Loading…
+      </div>
+    );
+  }
+
+  return <PopupChitImageCard item={item} counterStyle={counterStyle} />;
+}
+
+function PopupChitImageCard({
   item,
   counterStyle,
 }: {

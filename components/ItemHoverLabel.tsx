@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { ItemTooltipPanel } from './ItemTooltipPanel';
+import { CounterTooltipPanel } from './CounterTooltipPanel';
 
 interface ItemHoverLabelProps {
   name: string;
@@ -36,7 +36,7 @@ export function ItemHoverLabel({ name, className = '' }: ItemHoverLabelProps) {
       {name}
       <span className="absolute left-0 top-full mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-[120] whitespace-normal">
         {item ? (
-          <ItemTooltipPanel item={item} />
+          <CounterTooltipPanel item={item} />
         ) : loading ? (
           <span className="block bg-[#fff8e1] border border-[#bfa76a] rounded px-2 py-1 text-[10px] font-serif text-[#6b3e26] shadow-lg">
             Loading…

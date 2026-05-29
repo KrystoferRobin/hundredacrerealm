@@ -1,6 +1,8 @@
 "use client";
 import { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
+import { DenizenTooltipPanel } from '@/components/DenizenTooltipPanel';
+import { isMonsterRecord, isNativeRecord, type ItemLikeRecord } from '@/lib/denizen-detect';
 
 interface TooltipProps {
   type: 'item' | 'spell' | 'character' | 'monster' | 'native';
@@ -18,6 +20,8 @@ interface TooltipData {
   level?: string;
   description?: string;
   image?: string;
+  denizenKind?: 'native' | 'monster';
+  parts?: TooltipData[];
   attributeBlocks: Record<string, any>;
 }
 
@@ -99,6 +103,15 @@ export default function UniversalTooltip({
           No data available
         </div>
       );
+    }
+
+    if (
+      type === 'native' ||
+      type === 'monster' ||
+      isNativeRecord(tooltipData) ||
+      isMonsterRecord(tooltipData)
+    ) {
+      return <DenizenTooltipPanel record={tooltipData as ItemLikeRecord} />;
     }
 
     return (

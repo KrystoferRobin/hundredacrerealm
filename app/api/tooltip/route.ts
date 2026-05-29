@@ -1,6 +1,10 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import {
+  findMonsterByName,
+  findNativeByName,
+} from '@/lib/coregamedata-lookup';
 
 export const dynamic = "force-dynamic";
 
@@ -156,55 +160,9 @@ async function findCharacter(name: string, coreDataDir: string): Promise<any> {
 }
 
 async function findMonster(name: string, coreDataDir: string): Promise<any> {
-  const monstersDir = path.join(coreDataDir, 'monsters');
-  if (!fs.existsSync(monstersDir)) return null;
-
-  const files = fs.readdirSync(monstersDir, { withFileTypes: true })
-    .filter(dirent => dirent.isFile() && dirent.name.endsWith('.json'))
-    .map(dirent => dirent.name);
-
-  for (const filename of files) {
-    try {
-      const filePath = path.join(monstersDir, filename);
-      const monsterData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-      
-      if (monsterData.name === name) {
-        return {
-          id: monsterData.id || filename.replace('.json', ''),
-          name: monsterData.name,
-          attributeBlocks: monsterData.attributeBlocks || {}
-        };
-      }
-    } catch (error) {
-      console.error(`Error reading monster file ${filename}:`, error);
-    }
-  }
-  return null;
+  return findMonsterByName(name, coreDataDir);
 }
 
 async function findNative(name: string, coreDataDir: string): Promise<any> {
-  const nativesDir = path.join(coreDataDir, 'natives');
-  if (!fs.existsSync(nativesDir)) return null;
-
-  const files = fs.readdirSync(nativesDir, { withFileTypes: true })
-    .filter(dirent => dirent.isFile() && dirent.name.endsWith('.json'))
-    .map(dirent => dirent.name);
-
-  for (const filename of files) {
-    try {
-      const filePath = path.join(nativesDir, filename);
-      const nativeData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-      
-      if (nativeData.name === name) {
-        return {
-          id: nativeData.id || filename.replace('.json', ''),
-          name: nativeData.name,
-          attributeBlocks: nativeData.attributeBlocks || {}
-        };
-      }
-    } catch (error) {
-      console.error(`Error reading native file ${filename}:`, error);
-    }
-  }
-  return null;
+  return findNativeByName(name, coreDataDir);
 } 

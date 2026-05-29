@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { findDenizenByName } from '@/lib/coregamedata-lookup';
 
 interface Item {
   id: string;
@@ -91,6 +92,22 @@ export async function GET(
     }
 
     if (!item) {
+      const denizen = findDenizenByName(
+        itemName,
+        path.join(process.cwd(), 'coregamedata')
+      );
+      if (denizen) {
+        return NextResponse.json({
+          item: {
+            id: denizen.id,
+            name: denizen.name,
+            denizenKind: denizen.denizenKind,
+            attributeBlocks: denizen.attributeBlocks,
+            parts: denizen.parts || [],
+          },
+        });
+      }
+
       return NextResponse.json(
         { error: 'Item not found' },
         { status: 404 }

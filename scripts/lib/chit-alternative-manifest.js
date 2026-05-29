@@ -97,6 +97,112 @@ function syncAlternativeImages({ rsImages, outAlternativeDir, coregamedataRoot }
   return { manifest, copied, missing };
 }
 
+/**
+ * Natives exported from RealmSpeak often put Wesnoth paths in icon_folder directly.
+ * Copy those (and icon_type_alt pairs) into alternative/natives|natives2/.
+ */
+function syncNativeAlternativeIcons({ rsImages, outAlternativeDir, nativesRoot }) {
+  let copied = 0;
+  let missing = 0;
+  const seen = new Set();
+
+  for (const filePath of walkJsonFiles(nativesRoot)) {
+    let data;
+    try {
+      data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    } catch {
+      continue;
+    }
+    const t = data.attributeBlocks?.this;
+    if (!t?.icon_type) continue;
+
+    const srcFolder = t.icon_folder_alt || (t.icon_folder?.startsWith('wesnoth') ? t.icon_folder : null);
+    const srcType = t.icon_type_alt || t.icon_type;
+    if (!srcFolder || !srcType) continue;
+
+    let destFolder = 'natives';
+    if (t.icon_folder && !t.icon_folder.startsWith('wesnoth')) {
+      destFolder = normalizeFolder(t.icon_folder);
+    }
+
+    const destKey = `${destFolder}/${srcType}`;
+    if (seen.has(destKey)) continue;
+
+    const src = resolveAltSourcePath(rsImages, srcFolder, srcType);
+    if (!src) {
+      missing++;
+      continue;
+    }
+
+    const ext = path.extname(src);
+    const destDir = path.join(outAlternativeDir, destFolder);
+    const dest = path.join(destDir, srcType + ext);
+    fs.mkdirSync(destDir, { recursive: true });
+    if (!fs.existsSync(dest)) {
+      fs.copyFileSync(src, dest);
+      copied++;
+    }
+    seen.add(destKey);
+  }
+
+  return { copied, missing };
+}
+
+function monsterDestFolder(t) {
+  const f = normalizeFolder(t.icon_folder || 'monsters');
+  if (f.startsWith('wesnoth')) return 'monsters';
+  if (f === 'monsters' || f === 'monsters1' || f === 'monsters2') return f;
+  return 'monsters';
+}
+
+/** Copy alternative monster/part art from coregamedata/monsters into map/alternative/{monsters*}/. */
+function syncMonsterAlternativeIcons({ rsImages, outAlternativeDir, monstersRoot }) {
+  let copied = 0;
+  let missing = 0;
+  const seen = new Set();
+
+  for (const filePath of walkJsonFiles(monstersRoot)) {
+    let data;
+    try {
+      data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    } catch {
+      continue;
+    }
+
+    const records = [data, ...(data.parts || [])];
+    for (const rec of records) {
+      const t = rec.attributeBlocks?.this;
+      if (!t?.icon_type) continue;
+
+      const srcFolder = t.icon_folder_alt || (t.icon_folder?.startsWith('wesnoth') ? t.icon_folder : null);
+      const srcType = t.icon_type_alt || t.icon_type;
+      if (!srcFolder || !srcType) continue;
+
+      const destFolder = monsterDestFolder(t);
+      const destKey = `${destFolder}/${srcType}`;
+      if (seen.has(destKey)) continue;
+
+      const src = resolveAltSourcePath(rsImages, srcFolder, srcType);
+      if (!src) {
+        missing++;
+        continue;
+      }
+
+      const ext = path.extname(src);
+      const destDir = path.join(outAlternativeDir, destFolder);
+      const dest = path.join(destDir, srcType + ext);
+      fs.mkdirSync(destDir, { recursive: true });
+      if (!fs.existsSync(dest)) {
+        fs.copyFileSync(src, dest);
+        copied++;
+      }
+      seen.add(destKey);
+    }
+  }
+
+  return { copied, missing };
+}
+
 function writeManifest(manifest, outPath) {
   const payload = {
     byKey: manifest.byKey,
@@ -111,6 +217,8 @@ module.exports = {
   buildAlternativeManifest,
   resolveAltSourcePath,
   syncAlternativeImages,
+  syncNativeAlternativeIcons,
+  syncMonsterAlternativeIcons,
   writeManifest,
   normalizeFolder,
 };
