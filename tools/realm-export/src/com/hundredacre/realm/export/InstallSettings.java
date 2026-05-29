@@ -98,7 +98,11 @@ public final class InstallSettings {
 		return this;
 	}
 
-	/** Ensures a scheme is present (defaults to http:// for localhost-style hosts). */
+	/**
+	 * Ensures a scheme is present. Local/dev hosts use http; public hostnames use https
+	 * so nginx TLS redirects do not break API POSTs (HttpURLConnection does not follow
+	 * POST redirects reliably).
+	 */
 	public static String normalizeSiteUrl(String url) {
 		if (url == null || url.isBlank()) {
 			return DEFAULT_SITE_URL;
@@ -107,11 +111,67 @@ public final class InstallSettings {
 		while (trimmed.endsWith("/")) {
 			trimmed = trimmed.substring(0, trimmed.length() - 1);
 		}
-		if (trimmed.regionMatches(true, 0, "http://", 0, 7)
-				|| trimmed.regionMatches(true, 0, "https://", 0, 8)) {
-			return trimmed;
+
+		String withScheme;
+		if (hasScheme(trimmed)) {
+			withScheme = trimmed;
+		} else if (isLocalHostName(trimmed)) {
+			withScheme = "http://" + trimmed;
+		} else {
+			withScheme = "https://" + trimmed;
 		}
-		return "http://" + trimmed;
+
+		try {
+			java.net.URL parsed = new java.net.URL(withScheme);
+			String host = parsed.getHost();
+			if ("http".equalsIgnoreCase(parsed.getProtocol()) && !isLocalHostName(host)) {
+				int port = parsed.getPort();
+				int httpsPort = (port == 80 || port == -1) ? -1 : port;
+				String path = parsed.getFile() == null ? "" : parsed.getFile();
+				parsed = new java.net.URL("https", host, httpsPort, path);
+				withScheme = parsed.toString();
+			}
+			while (withScheme.endsWith("/")) {
+				withScheme = withScheme.substring(0, withScheme.length() - 1);
+			}
+			return withScheme;
+		} catch (java.net.MalformedURLException e) {
+			return withScheme;
+		}
+	}
+
+	private static boolean hasScheme(String url) {
+		return url.regionMatches(true, 0, "http://", 0, 7)
+				|| url.regionMatches(true, 0, "https://", 0, 8);
+	}
+
+	static boolean isLocalHostName(String hostOrUrl) {
+		if (hostOrUrl == null || hostOrUrl.isBlank()) {
+			return false;
+		}
+		String host = hostOrUrl.trim().toLowerCase();
+		if (host.startsWith("http://")) {
+			host = host.substring(7);
+		} else if (host.startsWith("https://")) {
+			host = host.substring(8);
+		}
+		int slash = host.indexOf('/');
+		if (slash >= 0) {
+			host = host.substring(0, slash);
+		}
+		int colon = host.indexOf(':');
+		if (colon >= 0) {
+			host = host.substring(0, colon);
+		}
+		if (host.equals("localhost") || host.equals("127.0.0.1") || host.equals("::1")) {
+			return true;
+		}
+		if (host.endsWith(".local")) {
+			return true;
+		}
+		return host.startsWith("192.168.")
+				|| host.startsWith("10.")
+				|| host.matches("172\\.(1[6-9]|2\\d|3[01])\\..*");
 	}
 
 	public RealmSpeakPaths toPaths() {
