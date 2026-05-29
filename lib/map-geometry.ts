@@ -155,7 +155,7 @@ export function getChitPixelOnMap(
   return { x: hexPos.x + rotated.x, y: hexPos.y + rotated.y };
 }
 
-export function findTileByName<T extends { objectName: string }>(
+export function findTileByName<T extends MapTileLike>(
   tiles: T[],
   tileName: string
 ): T | undefined {

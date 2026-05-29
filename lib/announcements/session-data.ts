@@ -47,7 +47,7 @@ export function getAllSessions(): SessionSummary[] {
     .map((dirent) => dirent.name);
 
   return sessionFolders
-    .map((sessionId) => {
+    .map((sessionId): SessionSummary | null => {
       const sessionBundle = getSessionData(sessionId);
       if (!sessionBundle?.sessionData) return null;
 
@@ -107,7 +107,7 @@ export function getAllSessions(): SessionSummary[] {
         highestScore,
         finalScores,
         createdAt: metadata?.processedAt,
-      } satisfies SessionSummary;
+      };
     })
     .filter((session): session is SessionSummary => session !== null);
 }
