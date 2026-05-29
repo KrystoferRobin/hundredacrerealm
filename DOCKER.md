@@ -46,6 +46,24 @@ realm-data/
 
 Core game data (`coregamedata/`) and static assets ship inside the image.
 
+On first start, config templates are copied from `/app/config-seed` into the mounted `realm-data/data/` directory (admin users, API keys, session registry). Change the default admin password immediately — the seeded file uses `CHANGE_ME`.
+
+## First-time admin login
+
+After the container starts, open `/admin`. Default credentials from the seeded file:
+
+- Username: `admin`
+- Password: `CHANGE_ME` (change this in Admin → Users or by editing `realm-data/data/admin-users.json`)
+
+If logs show `Example file missing, skipping seed`, the data volume hid the old image templates. Either upgrade to the latest image (uses `config-seed`) or copy templates manually from the clone:
+
+```bash
+cp data/admin-users.example.json realm-data/data/admin-users.json
+cp data/realm-api-keys.example.json realm-data/data/realm-api-keys.json
+cp data/realm-session-registry.example.json realm-data/data/realm-session-registry.json
+docker compose restart
+```
+
 ## Operations
 
 ```bash

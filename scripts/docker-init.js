@@ -10,17 +10,21 @@ const PERSIST_DIRS = [
   '/app/data',
 ];
 
+// Templates are in /app/config-seed (not /app/data) because compose mounts
+// realm-data/data over /app/data and would hide files baked into the image.
+const SEED_DIR = '/app/config-seed';
+
 const SEED_FILES = [
   {
-    example: '/app/data/admin-users.example.json',
+    example: path.join(SEED_DIR, 'admin-users.example.json'),
     target: '/app/data/admin-users.json',
   },
   {
-    example: '/app/data/realm-api-keys.example.json',
+    example: path.join(SEED_DIR, 'realm-api-keys.example.json'),
     target: '/app/data/realm-api-keys.json',
   },
   {
-    example: '/app/data/realm-session-registry.example.json',
+    example: path.join(SEED_DIR, 'realm-session-registry.example.json'),
     target: '/app/data/realm-session-registry.json',
   },
 ];

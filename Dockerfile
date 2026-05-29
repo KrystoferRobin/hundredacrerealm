@@ -28,7 +28,8 @@ RUN addgroup --system --gid 1001 nodejs \
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/coregamedata ./coregamedata
 COPY --from=builder /app/scripts ./scripts
-COPY --from=builder /app/data ./data
+# Seed templates live outside /app/data so the data volume mount does not hide them
+COPY --from=builder /app/data/*.example.json ./config-seed/
 COPY --from=deps /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/next.config.js ./next.config.js
