@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const { buildAlternativeManifest } = require('../lib/chit-alternative-manifest');
 const { BLOCK, KEY } = require('./constants');
 const { parseGameXml, extractXmlFromRsgame } = require('./parseXml');
 const {
@@ -7,9 +8,9 @@ const {
   getThis,
   isTile,
   isCharacter,
-  findMapTile,
   getMapPlacement,
   classifyChit,
+  isPlacedOnMapChit,
   isSetupCardHolder,
 } = require('./objectGraph');
 
@@ -42,6 +43,13 @@ function toUiLocationEntry(entry) {
     ...(attrs.treasure_location ? { treasure_location: attrs.treasure_location } : {}),
     ...(attrs.monster ? { monster: attrs.monster } : {}),
     ...(attrs.native ? { native: attrs.native } : {}),
+    ...(attrs.horse ? { horse: attrs.horse } : {}),
+    ...(attrs.icon_type ? { icon_type: attrs.icon_type } : {}),
+    ...(attrs.icon_folder ? { icon_folder: attrs.icon_folder } : {}),
+    ...(attrs.icon_type_chit ? { icon_type_chit: attrs.icon_type_chit } : {}),
+    ...(attrs.icon_folder_chit ? { icon_folder_chit: attrs.icon_folder_chit } : {}),
+    ...(attrs.icon_type_alt ? { icon_type_alt: attrs.icon_type_alt } : {}),
+    ...(attrs.icon_folder_alt ? { icon_folder_alt: attrs.icon_folder_alt } : {}),
   };
 }
 
@@ -91,8 +99,30 @@ function extractMapData(game) {
   };
 }
 
+/**
+ * Map chits that are physically on the board (own clearing, or campfire-style dwelling).
+ * Excludes setup-card pools (monster die, native boxes, unplaced treasure/items).
+ */
+function enrichLocationWithAlt(entry, altManifest) {
+  if (entry.icon_type_alt) return entry;
+  const folder = (entry.icon_folder || entry.icon_folder_chit || '').replace(/_c$/, '');
+  const iconType = entry.icon_type_chit || entry.icon_type;
+  const byKey = folder && iconType ? altManifest.byKey[`${folder}:${iconType}`] : null;
+  const alt = byKey || altManifest.byName[entry.name];
+  if (!alt) return entry;
+  return {
+    ...entry,
+    icon_type_alt: alt.icon_type_alt,
+    icon_folder: entry.icon_folder || alt.icon_folder,
+  };
+}
+
 function extractMapLocations(game) {
   const { objects, objectsById } = game;
+  const coregamedataRoot = path.join(__dirname, '../../coregamedata');
+  const altManifest = fs.existsSync(coregamedataRoot)
+    ? buildAlternativeManifest(coregamedataRoot)
+    : { byKey: {}, byName: {} };
   const locations = {
     dwellings: [],
     sound: [],
@@ -106,7 +136,7 @@ function extractMapLocations(game) {
 
   for (const obj of objects) {
     if (isTile(obj)) continue;
-    if (!findMapTile(obj, objectsById)) continue;
+    if (!isPlacedOnMapChit(obj, objectsById)) continue;
 
     const type = classifyChit(obj);
     const placement = getMapPlacement(obj, objectsById);
@@ -126,7 +156,7 @@ function extractMapLocations(game) {
       isEnchanted: placement.isEnchanted,
       attributes: getThis(obj),
     };
-    const entry = toUiLocationEntry(rawEntry);
+    const entry = enrichLocationWithAlt(toUiLocationEntry(rawEntry), altManifest);
 
     const bucket =
       type === 'dwelling'

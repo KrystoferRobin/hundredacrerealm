@@ -1,0 +1,1074 @@
+{
+  "byKey": {
+    "natives:raider": {
+      "icon_type_alt": "neutral-outlaw-princess",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-outlaws",
+      "name": "Bashkar HQ"
+    },
+    "natives:pikeman": {
+      "icon_type_alt": "halberdier",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Soldier 2"
+    },
+    "natives2:dragonman": {
+      "icon_type_alt": "flameheart",
+      "icon_folder": "natives2",
+      "icon_folder_alt": "wesnoth/units/drakes",
+      "name": "Dragonman HQ"
+    },
+    "natives:lancer": {
+      "icon_type_alt": "goldenwarrior",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/kharos-sun",
+      "name": "Murker 4"
+    },
+    "natives2:blowdarter": {
+      "icon_type_alt": "goldenwarrior",
+      "icon_folder": "natives2",
+      "icon_folder_alt": "wesnoth/units/kharos-sun",
+      "name": "Murker 5"
+    },
+    "natives:short_swordsman": {
+      "icon_type_alt": "lieutenant",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Patrol HQ"
+    },
+    "natives:archer": {
+      "icon_type_alt": "bowman",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Woodsfolk HQ"
+    },
+    "monsters:demon": {
+      "icon_type_alt": "yuureDreamweaver",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Altar"
+    },
+    "monsters:spider": {
+      "icon_type_alt": "Rashy_Era-elves-dark-spider",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Gargrath"
+    },
+    "monsters2:wasp": {
+      "icon_type_alt": "wasp",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Wasp Queen"
+    },
+    "monsters:dragon_flying": {
+      "icon_type_alt": "fireDragon",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Hoard"
+    },
+    "monsters:dragon": {
+      "icon_type_alt": "wildWyvern",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Lair"
+    },
+    "monsters2:minotaur": {
+      "icon_type_alt": "minotaurKing",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Maze"
+    },
+    "monsters2:blob": {
+      "icon_type_alt": "mudcrawler",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "name": "Pond"
+    },
+    "monsters:octopus": {
+      "icon_type_alt": "kraken",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Pool"
+    },
+    "monsters:demon_flying": {
+      "icon_type_alt": "galerunner",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Shrine"
+    },
+    "monsters:imp": {
+      "icon_type_alt": "brazierImp",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Statue"
+    },
+    "monsters2:basilisk": {
+      "icon_type_alt": "WarOfTheGods-drakes-blue_lizard",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Basilisk"
+    },
+    "monsters2:zombie1": {
+      "icon_type_alt": "zombie",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/undead",
+      "name": "Tomb"
+    },
+    "monsters2:harpy": {
+      "icon_type_alt": "harpy",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Harpy"
+    },
+    "monsters:troll": {
+      "icon_type_alt": "trollWarrior",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Vault"
+    },
+    "dwellings:chapel": {
+      "icon_type_alt": "elven2",
+      "icon_folder": "dwellings",
+      "icon_folder_alt": "wesnoth/buildings",
+      "name": "Chapel"
+    },
+    "dwellings:guard": {
+      "icon_type_alt": "drake5",
+      "icon_folder": "dwellings",
+      "icon_folder_alt": "wesnoth/buildings",
+      "name": "Guard"
+    },
+    "dwellings:house": {
+      "icon_type_alt": "log-cabin4",
+      "icon_folder": "dwellings",
+      "icon_folder_alt": "wesnoth/buildings",
+      "name": "House"
+    },
+    "dwellings:hut": {
+      "icon_type_alt": "hut",
+      "icon_folder": "dwellings",
+      "icon_folder_alt": "wesnoth/buildings",
+      "name": "Hut"
+    },
+    "dwellings:inn": {
+      "icon_type_alt": "log-cabin3",
+      "icon_folder": "dwellings",
+      "icon_folder_alt": "wesnoth/buildings",
+      "name": "Inn"
+    },
+    "dwellings:large_fire": {
+      "icon_type_alt": "fire1",
+      "icon_folder": "dwellings",
+      "icon_folder_alt": "wesnoth/buildings",
+      "name": "Large Campfire"
+    },
+    "dwellings:small_fire": {
+      "icon_type_alt": "fire3",
+      "icon_folder": "dwellings",
+      "icon_folder_alt": "wesnoth/buildings",
+      "name": "Small Campfire"
+    },
+    "monsters1:balrog": {
+      "icon_type_alt": "Reign_of_the_Lords-drakes-apocalypse",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Balrog"
+    },
+    "monsters1:behemoth": {
+      "icon_type_alt": "WarOfTheGods-monsters-big_hell_hound",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Behemoth"
+    },
+    "monsters2:carnoplant": {
+      "icon_type_alt": "carnivorePlant",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Carnoplant"
+    },
+    "monsters2:swampthing": {
+      "icon_type_alt": "giant-mudcrawler",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "name": "Swamp Thing"
+    },
+    "monsters1:cockatrice": {
+      "icon_type_alt": "add-ons-Animals_Age-images-units-legendary-cockatrice",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Cockatrice"
+    },
+    "monsters1:crow": {
+      "icon_type_alt": "crow",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Crow"
+    },
+    "monsters2:fairy": {
+      "icon_type_alt": "WarOfTheGods-elves-wood-faerie",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Fairy"
+    },
+    "monsters1:firedrake": {
+      "icon_type_alt": "fireDragon",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Firedrake"
+    },
+    "monsters1:frostgiant": {
+      "icon_type_alt": "yeti",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "name": "Frost Giant"
+    },
+    "monsters2:gator": {
+      "icon_type_alt": "WarOfTheGods-monsters-Alligator",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Gator"
+    },
+    "monsters1:griffon": {
+      "icon_type_alt": "gryphon",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "name": "Griffon"
+    },
+    "monsters1:kobold": {
+      "icon_type_alt": "Genesis_Resources-demons-red-red",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Kobold"
+    },
+    "monsters2:lich": {
+      "icon_type_alt": "ancient-lich",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/undead-necromancers",
+      "name": "Lich"
+    },
+    "monsters1:lizardman": {
+      "icon_type_alt": "skirmisher",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/saurians",
+      "name": "Lizardman"
+    },
+    "monsters1:orc_archer": {
+      "icon_type_alt": "orcishArcher",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Orc Archer"
+    },
+    "monsters2:ratman": {
+      "icon_type_alt": "soulless-rat",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/undead",
+      "name": "Rat Man"
+    },
+    "monsters1:sabertooth": {
+      "icon_type_alt": "add-ons-Animals_Age-images-units-legendary-bagira",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Sabertooth"
+    },
+    "monsters1:scorpion": {
+      "icon_type_alt": "rock-scorpion",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "name": "Scorpion"
+    },
+    "monsters2:shade": {
+      "icon_type_alt": "Era_of_Magic_Resources-destroyers-maras",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Shade"
+    },
+    "monsters2:skullbow": {
+      "icon_type_alt": "core-images-units-undead-skeletal-archer-archer",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Skeletal Archer"
+    },
+    "monsters2:skullsword": {
+      "icon_type_alt": "core-images-units-undead-skeletal-deathblade",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Skeletal Swordsman"
+    },
+    "monsters2:skull": {
+      "icon_type_alt": "skeleton",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Skeleton"
+    },
+    "monsters1:swamphaunt": {
+      "icon_type_alt": "giant-mudcrawler",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "name": "Swamp Haunt"
+    },
+    "monsters1:orc_sword": {
+      "icon_type_alt": "orcishGrunt",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Sword Orc"
+    },
+    "monsters1:tombguard": {
+      "icon_type_alt": "spectre",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/undead",
+      "name": "Tomb Guard"
+    },
+    "monsters2:wardog": {
+      "icon_type_alt": "Archaic_Era-ukians-dog-attack-dog",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "War Dog"
+    },
+    "monsters1:wyrm": {
+      "icon_type_alt": "wildWyvern",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Wyrm"
+    },
+    "natives:knight": {
+      "icon_type_alt": "marshal-leading",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Order HQ"
+    },
+    "natives:great_swordsman": {
+      "icon_type_alt": "goldenwarrior",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/kharos-sun",
+      "name": "Murker HQ"
+    },
+    "natives:crossbowman": {
+      "icon_type_alt": "marshal-crossbow",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Soldier 3"
+    },
+    "natives:great_axeman": {
+      "icon_type_alt": "explorer",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/dunefolk",
+      "name": "Rogue 2"
+    },
+    "natives:assassin": {
+      "icon_type_alt": "goldenwarrior",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/kharos-sun",
+      "name": "Murker 1"
+    },
+    "natives:swordsman": {
+      "icon_type_alt": "paragon",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/dunefolk",
+      "name": "Rogue 7"
+    }
+  },
+  "byName": {
+    "Bashkar Dwelling": {
+      "icon_type_alt": "bandit",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-outlaws",
+      "name": "Bashkar Dwelling"
+    },
+    "Company Dwelling": {
+      "icon_type_alt": "sergeant",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Company Dwelling"
+    },
+    "Dragonmen Dwelling": {
+      "icon_type_alt": "slasher",
+      "icon_folder": "natives2",
+      "icon_folder_alt": "wesnoth/units/drakes",
+      "name": "Dragonmen Dwelling"
+    },
+    "Lancer Dwelling": {
+      "icon_type_alt": "horseman",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Lancer Dwelling"
+    },
+    "Murker Dwelling": {
+      "icon_type_alt": "goldenwarrior",
+      "icon_folder": "natives2",
+      "icon_folder_alt": "wesnoth/units/kharos-sun",
+      "name": "Murker Dwelling"
+    },
+    "Patrol Dwelling": {
+      "icon_type_alt": "cavalryman",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Patrol Dwelling"
+    },
+    "Woodfolk Dwelling": {
+      "icon_type_alt": "bowman",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Woodfolk Dwelling"
+    },
+    "Altar": {
+      "icon_type_alt": "yuureDreamweaver",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Altar"
+    },
+    "Cairns": {
+      "icon_type_alt": "spiderQueen",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Cairns"
+    },
+    "Hive": {
+      "icon_type_alt": "creepers",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Hive"
+    },
+    "Hoard": {
+      "icon_type_alt": "fireDragon",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Hoard"
+    },
+    "Lair": {
+      "icon_type_alt": "wildWyvern",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Lair"
+    },
+    "Maze": {
+      "icon_type_alt": "minotaurKing",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Maze"
+    },
+    "Pond": {
+      "icon_type_alt": "mudcrawler",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "name": "Pond"
+    },
+    "Pool": {
+      "icon_type_alt": "kraken",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Pool"
+    },
+    "Shrine": {
+      "icon_type_alt": "galerunner",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Shrine"
+    },
+    "Statue": {
+      "icon_type_alt": "brazierImp",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Statue"
+    },
+    "Stones": {
+      "icon_type_alt": "Forgotten_Legends-images-frakcja3-dark-lizard",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Stones"
+    },
+    "Tomb": {
+      "icon_type_alt": "zombie",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/undead",
+      "name": "Tomb"
+    },
+    "Tree": {
+      "icon_type_alt": "harpy",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Tree"
+    },
+    "Vault": {
+      "icon_type_alt": "trollWarrior",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Vault"
+    },
+    "Web": {
+      "icon_type_alt": "spiderQueen",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Web"
+    },
+    "Chapel": {
+      "icon_type_alt": "elven2",
+      "icon_folder": "dwellings",
+      "icon_folder_alt": "wesnoth/buildings",
+      "name": "Chapel"
+    },
+    "Guard": {
+      "icon_type_alt": "drake5",
+      "icon_folder": "dwellings",
+      "icon_folder_alt": "wesnoth/buildings",
+      "name": "Guard"
+    },
+    "House": {
+      "icon_type_alt": "log-cabin4",
+      "icon_folder": "dwellings",
+      "icon_folder_alt": "wesnoth/buildings",
+      "name": "House"
+    },
+    "Hut": {
+      "icon_type_alt": "hut",
+      "icon_folder": "dwellings",
+      "icon_folder_alt": "wesnoth/buildings",
+      "name": "Hut"
+    },
+    "Inn": {
+      "icon_type_alt": "log-cabin3",
+      "icon_folder": "dwellings",
+      "icon_folder_alt": "wesnoth/buildings",
+      "name": "Inn"
+    },
+    "Large Campfire": {
+      "icon_type_alt": "fire1",
+      "icon_folder": "dwellings",
+      "icon_folder_alt": "wesnoth/buildings",
+      "name": "Large Campfire"
+    },
+    "Small Campfire": {
+      "icon_type_alt": "fire3",
+      "icon_folder": "dwellings",
+      "icon_folder_alt": "wesnoth/buildings",
+      "name": "Small Campfire"
+    },
+    "Pony": {
+      "icon_type_alt": "horse",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "name": "Pony"
+    },
+    "Warhorse": {
+      "icon_type_alt": "royalBeast",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Warhorse"
+    },
+    "Balrog": {
+      "icon_type_alt": "Reign_of_the_Lords-drakes-apocalypse",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Balrog"
+    },
+    "Basilisk": {
+      "icon_type_alt": "WarOfTheGods-drakes-blue_lizard",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Basilisk"
+    },
+    "Behemoth": {
+      "icon_type_alt": "WarOfTheGods-monsters-big_hell_hound",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Behemoth"
+    },
+    "Carnoplant": {
+      "icon_type_alt": "carnivorePlant",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Carnoplant"
+    },
+    "Carrion Feeder": {
+      "icon_type_alt": "zombie-troll",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/undead",
+      "name": "Carrion Feeder"
+    },
+    "Cockatrice": {
+      "icon_type_alt": "add-ons-Animals_Age-images-units-legendary-cockatrice",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Cockatrice"
+    },
+    "Crow": {
+      "icon_type_alt": "crow",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Crow"
+    },
+    "Fairy": {
+      "icon_type_alt": "WarOfTheGods-elves-wood-faerie",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Fairy"
+    },
+    "Firedrake": {
+      "icon_type_alt": "fireDragon",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Firedrake"
+    },
+    "Frost Giant": {
+      "icon_type_alt": "yeti",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "name": "Frost Giant"
+    },
+    "Gargrath": {
+      "icon_type_alt": "Rashy_Era-elves-dark-spider",
+      "icon_folder": "monsters",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Gargrath"
+    },
+    "Gator": {
+      "icon_type_alt": "WarOfTheGods-monsters-Alligator",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Gator"
+    },
+    "Griffon": {
+      "icon_type_alt": "gryphon",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "name": "Griffon"
+    },
+    "H Harpy": {
+      "icon_type_alt": "Forgotten_Legends-images-frakcja4-black-harpie",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "H Harpy"
+    },
+    "Harpy": {
+      "icon_type_alt": "harpy",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Harpy"
+    },
+    "Kobold": {
+      "icon_type_alt": "Genesis_Resources-demons-red-red",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Kobold"
+    },
+    "Lich": {
+      "icon_type_alt": "ancient-lich",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/undead-necromancers",
+      "name": "Lich"
+    },
+    "Lizardman": {
+      "icon_type_alt": "skirmisher",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/saurians",
+      "name": "Lizardman"
+    },
+    "Orc Archer": {
+      "icon_type_alt": "orcishArcher",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Orc Archer"
+    },
+    "Rat Man": {
+      "icon_type_alt": "soulless-rat",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/undead",
+      "name": "Rat Man"
+    },
+    "Sabertooth": {
+      "icon_type_alt": "add-ons-Animals_Age-images-units-legendary-bagira",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Sabertooth"
+    },
+    "Scorpion": {
+      "icon_type_alt": "rock-scorpion",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "name": "Scorpion"
+    },
+    "Shade": {
+      "icon_type_alt": "Era_of_Magic_Resources-destroyers-maras",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Shade"
+    },
+    "Skeletal Archer": {
+      "icon_type_alt": "core-images-units-undead-skeletal-archer-archer",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Skeletal Archer"
+    },
+    "Skeletal Swordsman": {
+      "icon_type_alt": "core-images-units-undead-skeletal-deathblade",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "Skeletal Swordsman"
+    },
+    "Skeleton": {
+      "icon_type_alt": "skeleton",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Skeleton"
+    },
+    "Swamp Haunt": {
+      "icon_type_alt": "giant-mudcrawler",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "name": "Swamp Haunt"
+    },
+    "Swamp Thing": {
+      "icon_type_alt": "giant-mudcrawler",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/monsters",
+      "name": "Swamp Thing"
+    },
+    "Sword Orc": {
+      "icon_type_alt": "orcishGrunt",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Sword Orc"
+    },
+    "Tomb Guard": {
+      "icon_type_alt": "spectre",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units/undead",
+      "name": "Tomb Guard"
+    },
+    "War Dog": {
+      "icon_type_alt": "Archaic_Era-ukians-dog-attack-dog",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units/addons",
+      "name": "War Dog"
+    },
+    "Wasp Queen": {
+      "icon_type_alt": "wasp",
+      "icon_folder": "monsters2",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Wasp Queen"
+    },
+    "Wyrm": {
+      "icon_type_alt": "wildWyvern",
+      "icon_folder": "monsters1",
+      "icon_folder_alt": "wesnoth/units",
+      "name": "Wyrm"
+    },
+    "Bashkar 1": {
+      "icon_type_alt": "bandit",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-outlaws",
+      "name": "Bashkar 1"
+    },
+    "Bashkar 2": {
+      "icon_type_alt": "delinquent",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-outlaws",
+      "name": "Bashkar 2"
+    },
+    "Bashkar 3": {
+      "icon_type_alt": "footpad",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-outlaws",
+      "name": "Bashkar 3"
+    },
+    "Bashkar 4": {
+      "icon_type_alt": "thug",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-outlaws",
+      "name": "Bashkar 4"
+    },
+    "Bashkar 5": {
+      "icon_type_alt": "footpad+female",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-outlaws",
+      "name": "Bashkar 5"
+    },
+    "Bashkar HQ": {
+      "icon_type_alt": "neutral-outlaw-princess",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-outlaws",
+      "name": "Bashkar HQ"
+    },
+    "Order 1": {
+      "icon_type_alt": "marshal",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Order 1"
+    },
+    "Order 2": {
+      "icon_type_alt": "marshal",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Order 2"
+    },
+    "Order 3": {
+      "icon_type_alt": "marshal",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Order 3"
+    },
+    "Order HQ": {
+      "icon_type_alt": "marshal-leading",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Order HQ"
+    },
+    "Company 1": {
+      "icon_type_alt": "sergeant-idle-10",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Company 1"
+    },
+    "Company 2": {
+      "icon_type_alt": "pikeman",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Company 2"
+    },
+    "Company 3": {
+      "icon_type_alt": "pikeman",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Company 3"
+    },
+    "Company 4": {
+      "icon_type_alt": "pikeman",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Company 4"
+    },
+    "Company 5": {
+      "icon_type_alt": "sergeant-idle-4",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Company 5"
+    },
+    "Company 6": {
+      "icon_type_alt": "sergeant-crossbow",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Company 6"
+    },
+    "Company HQ": {
+      "icon_type_alt": "general",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Company HQ"
+    },
+    "Dragonman 1": {
+      "icon_type_alt": "slasher",
+      "icon_folder": "natives2",
+      "icon_folder_alt": "wesnoth/units/drakes",
+      "name": "Dragonman 1"
+    },
+    "Dragonman 2": {
+      "icon_type_alt": "arbiter",
+      "icon_folder": "natives2",
+      "icon_folder_alt": "wesnoth/units/drakes",
+      "name": "Dragonman 2"
+    },
+    "Dragonman 3": {
+      "icon_type_alt": "enforcer",
+      "icon_folder": "natives2",
+      "icon_folder_alt": "wesnoth/units/drakes",
+      "name": "Dragonman 3"
+    },
+    "Dragonman 4": {
+      "icon_type_alt": "warden",
+      "icon_folder": "natives2",
+      "icon_folder_alt": "wesnoth/units/drakes",
+      "name": "Dragonman 4"
+    },
+    "Dragonman HQ": {
+      "icon_type_alt": "flameheart",
+      "icon_folder": "natives2",
+      "icon_folder_alt": "wesnoth/units/drakes",
+      "name": "Dragonman HQ"
+    },
+    "Guard 1": {
+      "icon_type_alt": "royalguard",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Guard 1"
+    },
+    "Guard 2": {
+      "icon_type_alt": "royalguard",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Guard 2"
+    },
+    "Guard HQ": {
+      "icon_type_alt": "royal-warrior",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Guard HQ"
+    },
+    "Soldier 1": {
+      "icon_type_alt": "halberdier",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Soldier 1"
+    },
+    "Soldier 2": {
+      "icon_type_alt": "halberdier",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Soldier 2"
+    },
+    "Soldier 3": {
+      "icon_type_alt": "marshal-crossbow",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Soldier 3"
+    },
+    "Soldier HQ": {
+      "icon_type_alt": "royalguard",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Soldier HQ"
+    },
+    "Rogue 1": {
+      "icon_type_alt": "explorer",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/dunefolk",
+      "name": "Rogue 1"
+    },
+    "Rogue 2": {
+      "icon_type_alt": "explorer",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/dunefolk",
+      "name": "Rogue 2"
+    },
+    "Rogue 3": {
+      "icon_type_alt": "captain",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/dunefolk",
+      "name": "Rogue 3"
+    },
+    "Rogue 4": {
+      "icon_type_alt": "firetrooper",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/dunefolk",
+      "name": "Rogue 4"
+    },
+    "Rogue 5": {
+      "icon_type_alt": "scorcher",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/dunefolk",
+      "name": "Rogue 5"
+    },
+    "Rogue 6": {
+      "icon_type_alt": "blademaster",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/dunefolk",
+      "name": "Rogue 6"
+    },
+    "Rogue 7": {
+      "icon_type_alt": "paragon",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/dunefolk",
+      "name": "Rogue 7"
+    },
+    "Rogue HQ": {
+      "icon_type_alt": "scorcher",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/dunefolk",
+      "name": "Rogue HQ"
+    },
+    "Lancer 1": {
+      "icon_type_alt": "spearman",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Lancer 1"
+    },
+    "Lancer 2": {
+      "icon_type_alt": "spearman",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Lancer 2"
+    },
+    "Lancer 3": {
+      "icon_type_alt": "spearman",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Lancer 3"
+    },
+    "Lancer HQ": {
+      "icon_type_alt": "javelineer",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Lancer HQ"
+    },
+    "Murker 1": {
+      "icon_type_alt": "goldenwarrior",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/kharos-sun",
+      "name": "Murker 1"
+    },
+    "Murker 2": {
+      "icon_type_alt": "goldenwarrior",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/kharos-sun",
+      "name": "Murker 2"
+    },
+    "Murker 3": {
+      "icon_type_alt": "goldenwarrior",
+      "icon_folder": "natives2",
+      "icon_folder_alt": "wesnoth/units/kharos-sun",
+      "name": "Murker 3"
+    },
+    "Murker 4": {
+      "icon_type_alt": "goldenwarrior",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/kharos-sun",
+      "name": "Murker 4"
+    },
+    "Murker 5": {
+      "icon_type_alt": "goldenwarrior",
+      "icon_folder": "natives2",
+      "icon_folder_alt": "wesnoth/units/kharos-sun",
+      "name": "Murker 5"
+    },
+    "Murker HQ": {
+      "icon_type_alt": "goldenwarrior",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/kharos-sun",
+      "name": "Murker HQ"
+    },
+    "Patrol 1": {
+      "icon_type_alt": "swordsman",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Patrol 1"
+    },
+    "Patrol 2": {
+      "icon_type_alt": "swordsman-idle-4",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Patrol 2"
+    },
+    "Patrol HQ": {
+      "icon_type_alt": "lieutenant",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Patrol HQ"
+    },
+    "Woodsfolk 1": {
+      "icon_type_alt": "bowman",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Woodsfolk 1"
+    },
+    "Woodsfolk 2": {
+      "icon_type_alt": "bowman-bow",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Woodsfolk 2"
+    },
+    "Woodsfolk HQ": {
+      "icon_type_alt": "bowman",
+      "icon_folder": "natives",
+      "icon_folder_alt": "wesnoth/units/human-loyalists",
+      "name": "Woodsfolk HQ"
+    }
+  }
+}

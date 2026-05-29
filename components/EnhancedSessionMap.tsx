@@ -2,12 +2,24 @@
 
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { getTileImageUrl } from '@/lib/tile-image';
+import { getCharacterMapIconUrl } from '@/lib/character-map-icon';
+import {
+  COUNTER_GRAPHICS_STYLE_LABELS,
+  DEFAULT_COUNTER_GRAPHICS_STYLE,
+  DEFAULT_TILE_GRAPHICS_STYLE,
+  TILE_GRAPHICS_STYLE_LABELS,
+  type CounterGraphicsStyle,
+  type TileGraphicsStyle,
+} from '@/lib/map-graphics-styles';
+import {
+  MapChitMarkers,
+  MapChitClearingPopup,
+  type ClearingPopupState,
+} from '@/components/MapChitOverlays';
 import {
   buildMapContentTransform,
   computeMapBounds,
   filterInPlayTiles,
-  findTileByName,
-  getChitPixelOnMap,
   getClearingOffsetInTile,
   getTilePixelDimensions,
   gridToPixel,
@@ -84,13 +96,19 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
   const [characterPaths, setCharacterPaths] = useState<CharacterMovementPath[]>([]);
   
   // Overlay toggles
+  const [tileStyle, setTileStyle] = useState<TileGraphicsStyle>(DEFAULT_TILE_GRAPHICS_STYLE);
+  const [counterStyle, setCounterStyle] = useState<CounterGraphicsStyle>(DEFAULT_COUNTER_GRAPHICS_STYLE);
   const [showDwellings, setShowDwellings] = useState(true);
   const [showSound, setShowSound] = useState(true);
   const [showWarning, setShowWarning] = useState(true);
-  const [showTreasure, setShowTreasure] = useState(true);
+  const [showTreasure, setShowTreasure] = useState(false);
+  const [showNatives, setShowNatives] = useState(true);
+  const [showMonsters, setShowMonsters] = useState(true);
+  const [showOtherChits, setShowOtherChits] = useState(false);
   const [showLivingCharacters, setShowLivingCharacters] = useState(true);
   const [showDeadCharacters, setShowDeadCharacters] = useState(true);
   const [mapLocations, setMapLocations] = useState<any>(null);
+  const [chitPopup, setChitPopup] = useState<ClearingPopupState | null>(null);
 
   // Parse enhanced actions to extract movement paths
   const parseCharacterPaths = (dayData: any) => {
@@ -501,7 +519,7 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
   const getHexPosition = (q: number, r: number) => gridToPixel(q, r, MAP_DIMS);
 
   const getTileImage = (tile: Tile): string =>
-    getTileImageUrl(tile, tileDataCache);
+    getTileImageUrl(tile, tileDataCache, tileStyle);
 
   const getTileRotation = (rotation: number): number => tileRotationDegrees(rotation);
 
@@ -592,10 +610,41 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
       {/* Zoom Controls & Overlay Toggles */}
       <div className="absolute top-4 right-4 z-10 bg-white rounded-lg shadow-lg p-2 min-w-[180px]">
         <div className="mb-2 font-bold">Map Overlays</div>
+        <label className="block text-xs mb-1">
+          Tile style
+          <select
+            className="block w-full mt-0.5 border rounded text-xs"
+            value={tileStyle}
+            onChange={(e) => setTileStyle(e.target.value as TileGraphicsStyle)}
+          >
+            {(Object.keys(TILE_GRAPHICS_STYLE_LABELS) as TileGraphicsStyle[]).map((key) => (
+              <option key={key} value={key}>
+                {TILE_GRAPHICS_STYLE_LABELS[key]}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label className="block text-xs mb-2">
+          Counter style
+          <select
+            className="block w-full mt-0.5 border rounded text-xs"
+            value={counterStyle}
+            onChange={(e) => setCounterStyle(e.target.value as CounterGraphicsStyle)}
+          >
+            {(Object.keys(COUNTER_GRAPHICS_STYLE_LABELS) as CounterGraphicsStyle[]).map((key) => (
+              <option key={key} value={key}>
+                {COUNTER_GRAPHICS_STYLE_LABELS[key]}
+              </option>
+            ))}
+          </select>
+        </label>
         <label className="block text-xs mb-1"><input type="checkbox" checked={showDwellings} onChange={e => setShowDwellings(e.target.checked)} /> Dwellings</label>
+        <label className="block text-xs mb-1"><input type="checkbox" checked={showNatives} onChange={e => setShowNatives(e.target.checked)} /> Natives</label>
+        <label className="block text-xs mb-1"><input type="checkbox" checked={showMonsters} onChange={e => setShowMonsters(e.target.checked)} /> Monsters</label>
         <label className="block text-xs mb-1"><input type="checkbox" checked={showSound} onChange={e => setShowSound(e.target.checked)} /> Sound</label>
         <label className="block text-xs mb-1"><input type="checkbox" checked={showWarning} onChange={e => setShowWarning(e.target.checked)} /> Warning</label>
-        <label className="block text-xs mb-1"><input type="checkbox" checked={showTreasure} onChange={e => setShowTreasure(e.target.checked)} /> Treasure/Other</label>
+        <label className="block text-xs mb-1"><input type="checkbox" checked={showTreasure} onChange={e => setShowTreasure(e.target.checked)} /> Treasure</label>
+        <label className="block text-xs mb-1"><input type="checkbox" checked={showOtherChits} onChange={e => setShowOtherChits(e.target.checked)} /> Other chits</label>
         <label className="block text-xs mb-1"><input type="checkbox" checked={showLivingCharacters} onChange={e => setShowLivingCharacters(e.target.checked)} /> Living Characters</label>
         <label className="block text-xs mb-2"><input type="checkbox" checked={showDeadCharacters} onChange={e => setShowDeadCharacters(e.target.checked)} /> Dead Characters</label>
         {/* Zoom controls */}
@@ -652,76 +701,7 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
             );
           })}
 
-          {/* Dwellings Overlay */}
-          {showDwellings && mapLocations && mapLocations.dwellings.map((item: any, idx: number) => {
-            const tile = findTileByName(mapData.tiles, item.tile);
-            if (!tile) return null;
-            const pos = getChitPixelOnMap(tile, item, tileDataCache, MAP_DIMS);
-            if (!pos) return null;
-            const { x: px, y: py } = pos;
-            return (
-              <g key={idx} className="dwelling-overlay">
-                <rect x={px-10} y={py-10} width={20} height={20} fill="#ffe4b5" stroke="#b8860b" strokeWidth={2} rx={4} />
-                <text x={px} y={py+5} textAnchor="middle" fontSize={12} fill="#b8860b" fontWeight="bold">🏠</text>
-                <title>{item.name} ({item.tile}{item.clearing ? ` clearing ${item.clearing}` : ''})</title>
-              </g>
-            );
-          })}
-
-          {/* Sound Overlay */}
-          {showSound && mapLocations && mapLocations.sound.map((item: any, idx: number) => {
-            const tile = findTileByName(mapData.tiles, item.tile);
-            if (!tile) return null;
-            const pos = getChitPixelOnMap(tile, item, tileDataCache, MAP_DIMS);
-            if (!pos) return null;
-            const { x: px, y: py } = pos;
-            return (
-              <g key={idx} className="sound-overlay">
-                <circle cx={px} cy={py} r={10} fill="#e0f7fa" stroke="#00796b" strokeWidth={2} />
-                <text x={px} y={py+5} textAnchor="middle" fontSize={12} fill="#00796b" fontWeight="bold">🔊</text>
-                <title>{item.name} ({item.tile}{item.clearing ? ` clearing ${item.clearing}` : ''})</title>
-              </g>
-            );
-          })}
-
-          {/* Warning Overlay */}
-          {showWarning && mapLocations && mapLocations.warning
-            .filter((item: any) => !item.dwelling)
-            .map((item: any, idx: number) => {
-            const tile = findTileByName(mapData.tiles, item.tile);
-            if (!tile) return null;
-            const pos = getChitPixelOnMap(tile, item, tileDataCache, MAP_DIMS);
-            if (!pos) return null;
-            const { x: px, y: py } = pos;
-            const radius = 9;
-            const fontSize = 8; // Reduced from 14
-            
-            return (
-              <g key={idx} className="warning-overlay">
-                <circle cx={px} cy={py} r={radius} fill="#fff3e0" stroke="#f57c00" strokeWidth={2} />
-                <text x={px} y={py+3} textAnchor="middle" fontSize={fontSize} fill="#f57c00" fontWeight="bold">⚠️</text>
-                <title>{item.name} ({item.tile})</title>
-              </g>
-            );
-          })}
-
-          {/* Treasure Overlay */}
-          {showTreasure && mapLocations && [...mapLocations.treasure, ...(mapLocations.other || [])].map((item: any, idx: number) => {
-            const tile = findTileByName(mapData.tiles, item.tile);
-            if (!tile) return null;
-            const pos = getChitPixelOnMap(tile, item, tileDataCache, MAP_DIMS);
-            if (!pos) return null;
-            const { x: px, y: py } = pos;
-            return (
-              <g key={idx} className="treasure-overlay">
-                <circle cx={px} cy={py} r={10} fill="#fff3e0" stroke="#ff8f00" strokeWidth={2} />
-                <text x={px} y={py+5} textAnchor="middle" fontSize={12} fill="#ff8f00" fontWeight="bold">💰</text>
-                <title>{item.name} ({item.tile}{item.clearing ? ` clearing ${item.clearing}` : ''})</title>
-              </g>
-            );
-          })}
-
-          {/* Character movement paths and icons - rendered last so they're on top */}
+          {/* Character movement paths and icons */}
           {characterPaths.map((path, pathIndex) => {
             // Always show all positions and lines (no stepping)
             const visiblePositions = path.positions;
@@ -780,7 +760,6 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
                   const px = hexPos.x + rotatedX;
                   const py = hexPos.y + rotatedY;
 
-                  const iconUrl = `/images/charsymbol/${path.character}_symbol.png`;
                   const iconSize = 13;
 
                   // Check if character is in combat at this position
@@ -816,6 +795,10 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
                     
                     return isLastPosition && isLastAction;
                   })();
+
+                  const iconUrl = getCharacterMapIconUrl(path.character, counterStyle, {
+                    hidden: isHidden,
+                  });
 
                   return (
                     <g key={`pos-${posIndex}`}>
@@ -913,8 +896,6 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
                       py = baseY + Math.sin(angle) * radius;
                     }
                     
-                    const iconUrl = `/images/charsymbol/${icon.character}_symbol.png`;
-                    
                     // Check if character is in combat at this position
                     const isInCombat = dynamicMapState?.battles?.some((battle: any) => {
                       const { tileName, clearing } = parseLocation(battle.location);
@@ -942,6 +923,10 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
                       // since static icons represent the final position
                       return true;
                     })();
+
+                    const iconUrl = getCharacterMapIconUrl(icon.character, counterStyle, {
+                      hidden: isHidden,
+                    });
                     
                     return (
                       <g key={icon.character}>
@@ -1034,7 +1019,6 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
             const px = hexPos.x + rotatedX;
             const py = hexPos.y + rotatedY;
             
-            const iconUrl = `/images/charsymbol/${character}_symbol.png`;
             const iconSize = 13;
             
             // Check if character is in combat at this position
@@ -1064,6 +1048,8 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
               // since dynamic positions represent the final position
               return true;
             })();
+
+            const iconUrl = getCharacterMapIconUrl(character, counterStyle, { hidden: isHidden });
             
             return (
               <g key={`dynamic-${character}`} className="dynamic-character">
@@ -1095,9 +1081,35 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
               </g>
             );
           })}
+
+          {mapLocations && (
+            <MapChitMarkers
+              mapLocations={mapLocations}
+              mapData={mapData}
+              tileDataCache={tileDataCache}
+              dims={MAP_DIMS}
+              counterStyle={counterStyle}
+              showDwellings={showDwellings}
+              showSound={showSound}
+              showWarning={showWarning}
+              showTreasure={showTreasure}
+              showNatives={showNatives}
+              showMonsters={showMonsters}
+              showOther={showOtherChits}
+              onClearingPopup={setChitPopup}
+            />
+          )}
           </g>
         </svg>
       </div>
+
+      {mapLocations && (
+        <MapChitClearingPopup
+          popup={chitPopup}
+          overlayRootRef={containerRef}
+          counterStyle={counterStyle}
+        />
+      )}
       
       {/* Zoom Slider at the bottom */}
       <div className="absolute bottom-4 left-4 right-4 z-10">

@@ -52,6 +52,78 @@ function findMapTile(obj, objectsById) {
   return null;
 }
 
+function hasOwnClearing(obj) {
+  const c = getThis(obj)[KEY.CLEARING];
+  return c != null && c !== '';
+}
+
+/** Clearing on this chit only (not inherited from dwelling / native group). */
+function getOwnClearing(obj) {
+  if (!hasOwnClearing(obj)) return null;
+  return String(getThis(obj)[KEY.CLEARING]);
+}
+
+/** Warning/sound counter placed on tile during setup (e.g. Bones V), not in a clearing. */
+function isTileLevelSetupChit(obj, objectsById) {
+  const t = getThis(obj);
+  if (!t.chit) return false;
+  const parent = obj.parentId ? objectsById[obj.parentId] : null;
+  return parent != null && isTile(parent);
+}
+
+function isDwellingOnMap(obj, objectsById) {
+  if (!hasThisKey(obj, KEY.DWELLING)) return false;
+  if (!findMapTile(obj, objectsById)) return false;
+  if (hasOwnClearing(obj)) return true;
+  const parent = obj.parentId ? objectsById[obj.parentId] : null;
+  if (!parent) return false;
+  const pt = getThis(parent);
+  if (pt[KEY.WARNING] || pt[KEY.SOUND]) {
+    return findMapTile(parent, objectsById) != null;
+  }
+  return false;
+}
+
+/**
+ * True when the chit is physically on the map (clearing or campfire-style dwelling),
+ * not in a setup-card pool (monster die, native box, unplaced treasure, etc.).
+ */
+function isPlacedOnMapChit(obj, objectsById) {
+  const tile = findMapTile(obj, objectsById);
+  if (!tile) return false;
+
+  const type = classifyChit(obj);
+  const t = getThis(obj);
+
+  if (t.part) return false;
+
+  if (type === 'dwelling') {
+    return isDwellingOnMap(obj, objectsById);
+  }
+
+  if (type === 'warning') {
+    return isTileLevelSetupChit(obj, objectsById) || hasOwnClearing(obj);
+  }
+
+  if (type === 'sound') {
+    return hasOwnClearing(obj);
+  }
+
+  if (type === 'monster' || type === 'native' || type === 'character' || type === 'player') {
+    return hasOwnClearing(obj);
+  }
+
+  if (type === 'treasure') {
+    return Boolean(t[KEY.TREASURE_LOCATION]) && hasOwnClearing(obj);
+  }
+
+  if (type === 'other') {
+    return hasOwnClearing(obj);
+  }
+
+  return false;
+}
+
 function getMapPlacement(obj, objectsById) {
   const tile = findMapTile(obj, objectsById);
   if (!tile) return null;
@@ -67,7 +139,7 @@ function getMapPlacement(obj, objectsById) {
     tileType: tileAttrs[KEY.TILE_TYPE] || null,
     position: mapGrid[KEY.MAP_POSITION] || null,
     rotation: mapGrid[KEY.MAP_ROTATION] || '0',
-    clearing: thisAttrs[KEY.CLEARING] ?? null,
+    clearing: getOwnClearing(obj),
     facing: thisAttrs[KEY.FACING] ?? getThis(tile)[KEY.FACING] ?? null,
     isEnchanted: (getThis(tile)[KEY.FACING] || 'light') === 'dark',
   };
@@ -103,5 +175,10 @@ module.exports = {
   getMapPlacement,
   classifyChit,
   isSetupCardHolder,
+  isPlacedOnMapChit,
+  isDwellingOnMap,
+  isTileLevelSetupChit,
+  hasOwnClearing,
+  getOwnClearing,
   walkAncestors,
 };

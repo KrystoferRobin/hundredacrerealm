@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sync-map-images": "node scripts/sync-realmspeak-map-images.js --migrate-tiles",
+    "verify-map-graphics": "npx tsx scripts/verify-map-graphics.ts",
+    "process-modern-tiles": "node -e \"require('./scripts/lib/tile-transparency').processModernTileDirectory('public/images/tiles/modern').then(n=>console.log('Transparent:',n))\""
   },
   "prisma": {
     "seed": "node ./scripts/seedNativesFromTestingXml.js"
