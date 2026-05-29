@@ -1,7 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
-// const { getWebhook } = require('./discord_webhook'); // DISCORD WEBHOOKS DISABLED - Use admin panel instead
+const {
+  dispatchBatchSummary,
+  dispatchProcessingError,
+  dispatchProcessingStart,
+  dispatchSessionComplete,
+  hasEnabledDestination,
+  loadAnnouncementSettings,
+} = require('./announce_dispatch');
 
 function resolveAppPath(subPath) {
   return path.join(__dirname, '..', subPath);
@@ -118,8 +125,9 @@ function extractSessionData(sessionFolder, sessionFolderName) {
 async function processAllSessions() {
   console.log('🎮 Magic Realm - Process All Sessions');
   console.log('=====================================');
-  
-  // const webhook = getWebhook(); // DISCORD WEBHOOKS DISABLED - Use admin panel instead
+
+  const announcementSettings = loadAnnouncementSettings();
+  const announcementsEnabled = hasEnabledDestination(announcementSettings);
   const results = [];
   
   // Check uploads directory location
@@ -156,10 +164,9 @@ async function processAllSessions() {
     return;
   }
   
-  // Send batch processing start notification
-  // if (sessionBaseNames.size > 1) {
-  //   await webhook.sendMessage(`🔄 Starting batch processing of ${sessionBaseNames.size} sessions...`);
-  // } // DISCORD WEBHOOKS DISABLED - Use admin panel instead
+  if (announcementsEnabled && sessionBaseNames.size > 1) {
+    await dispatchProcessingStart(`${sessionBaseNames.size} sessions`, announcementSettings);
+  }
   
   for (const baseName of sessionBaseNames) {
     let originalCwd = process.cwd();
@@ -170,8 +177,9 @@ async function processAllSessions() {
     };
     
     try {
-      // Send processing start notification
-      // await webhook.sendProcessingStart(baseName); // DISCORD WEBHOOKS DISABLED - Use admin panel instead
+      if (announcementsEnabled) {
+        await dispatchProcessingStart(baseName, announcementSettings);
+      }
       
       // 1. Create unique session folder
       const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
@@ -297,12 +305,11 @@ async function processAllSessions() {
       };
       fs.writeFileSync('metadata.json', JSON.stringify(metadata, null, 2));
       
-      // Extract session data for Discord notification
-      // const sessionData = extractSessionData(sessionFolder, sessionFolderName);
-      
-      // Send completion notification
-      // const baseUrl = process.env.BASE_URL || 'http://localhost:3000';
-      // await webhook.sendSessionComplete(sessionData, sessionFolderName, baseUrl); // DISCORD WEBHOOKS DISABLED - Use admin panel instead
+      const sessionData = extractSessionData(sessionFolder, sessionFolderName);
+
+      if (announcementsEnabled) {
+        await dispatchSessionComplete(sessionData, sessionFolderName, announcementSettings);
+      }
       
       console.log(`\n✅ ${sessionFolderName} processed successfully!`);
       sessionResult.success = true;
@@ -312,8 +319,9 @@ async function processAllSessions() {
       console.error(`❌ Error preparing session folder for ${baseName}: ${error.message}`);
       console.error(`   Stack trace: ${error.stack}`);
       
-      // Send error notification
-      // await webhook.sendProcessingError(baseName, error); // DISCORD WEBHOOKS DISABLED - Use admin panel instead
+      if (announcementsEnabled) {
+        await dispatchProcessingError(baseName, error, announcementSettings);
+      }
       
       sessionResult.success = false;
       sessionResult.error = error.message;
@@ -358,10 +366,9 @@ async function processAllSessions() {
     console.error(`❌ Error cleaning uploads directory: ${error.message}`);
   }
   
-  // Send batch processing summary
-  // if (results.length > 1) {
-  //   await webhook.sendBatchSummary(results);
-  // } // DISCORD WEBHOOKS DISABLED - Use admin panel instead
+  if (announcementsEnabled && results.length > 1) {
+    await dispatchBatchSummary(results, announcementSettings);
+  }
   
   console.log('\n🎉 All sessions processed!');
   console.log(`Results: ${results.filter(r => r.success).length} successful, ${results.filter(r => !r.success).length} failed`);

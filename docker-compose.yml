@@ -1,0 +1,43 @@
+# Hundred Acre Realm — homelab deployment
+#
+# 1. Copy .env.docker.example to .env and set JWT_SECRET + BASE_URL
+# 2. mkdir -p realm-data/{parsed_sessions,stats,uploads,data}
+# 3. docker compose pull && docker compose up -d
+#
+# All mutable site data lives under ./realm-data (single host folder).
+
+services:
+  hundred-acre-realm:
+    image: ghcr.io/krystoferrobin/hundredacrerealm:${REALM_IMAGE_TAG:-latest}
+    container_name: hundred-acre-realm
+    restart: unless-stopped
+    ports:
+      - "${HOST_PORT:-3000}:3000"
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+      NEXT_TELEMETRY_DISABLED: "1"
+      HOSTNAME: "0.0.0.0"
+      PORT: "3000"
+      JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET in .env}
+      BASE_URL: ${BASE_URL:-http://localhost:3000}
+      DISCORD_WEBHOOK_URL: ${DISCORD_WEBHOOK_URL:-}
+      HAVEN_WEBHOOK_URL: ${HAVEN_WEBHOOK_URL:-}
+    volumes:
+      - ${REALM_DATA_DIR:-./realm-data}/parsed_sessions:/app/public/parsed_sessions
+      - ${REALM_DATA_DIR:-./realm-data}/stats:/app/public/stats
+      - ${REALM_DATA_DIR:-./realm-data}/uploads:/app/public/uploads
+      - ${REALM_DATA_DIR:-./realm-data}/data:/app/data
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:3000/api/health').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 90s

@@ -49,6 +49,7 @@ prisma/dev.db
 .env.*.local
 /data/admin-users.json
 /data/discord_webhook_settings.json
+/data/haven_webhook_settings.json
 /data/realm-api-keys.json
 /data/realm-session-registry.json
 
@@ -68,3 +69,6 @@ prisma/dev.db
 /tools/installer/staging/
 /tools/installer/cache/
 /tools/installer/output/
+
+# Local Docker volume data
+/realm-data/
