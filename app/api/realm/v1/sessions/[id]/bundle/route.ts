@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { requireRealmApiKey } from '@/lib/realm-api-request';
 import { extractBundleToSession, getSessionDir } from '@/lib/realm-bundle';
 import { bumpRevision, findBySessionId, saveRegistry, loadRegistry } from '@/lib/session-registry';
+import { rebuildMasterStats } from '@/lib/rebuild-master-stats';
 import { runSessionPipeline, sessionIsDisplayReady } from '@/lib/session-pipeline';
 import fs from 'fs';
 import path from 'path';
@@ -49,9 +50,11 @@ export async function PUT(
     const hasRslog = fs.readdirSync(sessionDir).some((f) => f.endsWith('.rslog'));
     const hasRsgame = fs.readdirSync(sessionDir).some((f) => f.endsWith('.rsgame'));
 
+    let pipelineRan = false;
     if (!sessionIsDisplayReady(sessionDir) && (hasRslog || hasRsgame || fs.existsSync(path.join(sessionDir, 'extracted_game.xml')))) {
       console.log(`Running session pipeline for ${sessionId}…`);
       runSessionPipeline(sessionDir);
+      pipelineRan = true;
     } else if (!sessionIsDisplayReady(sessionDir)) {
       return NextResponse.json(
         {
@@ -79,6 +82,14 @@ export async function PUT(
     }
 
     const updated = bumpRevision(sessionId);
+
+    if (sessionIsDisplayReady(sessionDir) && !pipelineRan) {
+      try {
+        rebuildMasterStats();
+      } catch (statsErr) {
+        console.warn(`Hall of Fame stats rebuild failed for ${sessionId}:`, statsErr);
+      }
+    }
 
     return NextResponse.json({
       success: true,

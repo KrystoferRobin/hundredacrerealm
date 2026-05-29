@@ -1,6 +1,7 @@
 import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
+import { rebuildMasterStats } from '@/lib/rebuild-master-stats';
 
 const DISPLAY_ARTIFACTS = [
   'parsed_session.json',
@@ -39,6 +40,12 @@ export function runSessionPipeline(sessionDir: string): void {
     stdio: 'inherit',
     env: process.env,
   });
+
+  try {
+    rebuildMasterStats();
+  } catch (error) {
+    console.warn('Master stats rebuild failed after session pipeline:', error);
+  }
 }
 
 export function sessionIsDisplayReady(sessionDir: string): boolean {

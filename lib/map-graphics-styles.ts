@@ -7,7 +7,7 @@ export const TILE_GRAPHICS_STYLE_LABELS: Record<TileGraphicsStyle, string> = {
   'legendary-icons': 'Legendary Realm (With Icons)',
 };
 
-export const DEFAULT_TILE_GRAPHICS_STYLE: TileGraphicsStyle = 'classic';
+export const DEFAULT_TILE_GRAPHICS_STYLE: TileGraphicsStyle = 'legendary-icons';
 
 /** RealmSpeak character chit display (CharacterChitComponent.displayStyle). */
 export type CounterGraphicsStyle =
@@ -23,7 +23,7 @@ export const COUNTER_GRAPHICS_STYLE_LABELS: Record<CounterGraphicsStyle, string>
   alternative: 'Alternative',
 };
 
-export const DEFAULT_COUNTER_GRAPHICS_STYLE: CounterGraphicsStyle = 'legendary';
+export const DEFAULT_COUNTER_GRAPHICS_STYLE: CounterGraphicsStyle = 'alternative';
 
 /**
  * Map denizen/setup chit asset set (RealmComponent.displayStyle).
