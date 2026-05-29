@@ -922,22 +922,36 @@ export default function Home() {
 
   // Fetch fancy session titles for Hall of Fame sessions
   useEffect(() => {
-    if (!hallOfFame || !hallOfFame.highestScoringCharacter?.characters) return;
-    const sessionIds = Array.from(new Set(hallOfFame.highestScoringCharacter.characters.map((c: any) => String(c.bestSessionId))));
+    if (!hallOfFame) return;
+
+    const sessionIds = new Set<string>();
+    hallOfFame.highestScoringCharacter?.characters?.forEach((c: { bestSessionId: string }) => {
+      if (c.bestSessionId) sessionIds.add(String(c.bestSessionId));
+    });
+    hallOfFame.highestScoringPlayer?.players?.forEach((p: { sessionId: string }) => {
+      if (p.sessionId) sessionIds.add(String(p.sessionId));
+    });
+
+    if (sessionIds.size === 0) return;
+
     Promise.all(
-      sessionIds.map(async (id) => {
+      Array.from(sessionIds).map(async (id) => {
         try {
-          const res = await fetch(`/api/session/${id}/session-titles`);
+          const res = await fetch(`/api/session/${encodeURIComponent(id)}/session-titles`);
           if (res.ok) {
             const data = await res.json();
-            return [id, { mainTitle: data.mainTitle, subtitle: data.subtitle }];
+            return [id, { mainTitle: data.mainTitle, subtitle: data.subtitle }] as const;
           }
-        } catch {}
-        return [id, null];
+        } catch {
+          /* ignore */
+        }
+        return [id, null] as const;
       })
-    ).then(results => {
-      const titles: any = {};
-      results.forEach(([id, data]: [string, any]) => { if (data) titles[id] = data; });
+    ).then((results) => {
+      const titles: Record<string, { mainTitle: string; subtitle: string }> = {};
+      results.forEach(([id, data]) => {
+        if (data) titles[id] = data;
+      });
       setHofSessionTitles(titles);
     });
   }, [hallOfFame]);
@@ -1456,7 +1470,7 @@ export default function Home() {
                                   </div>
                                 </div>
                               </div>
-                              {String(char.bestSessionId) in hofSessionTitles && (
+                              {(hofSessionTitles[String(char.bestSessionId)]?.mainTitle || char.bestSessionTitle) && (
                                 <div className="ml-11">
                                   <button
                                     onClick={async () => {
@@ -1476,7 +1490,7 @@ export default function Home() {
                                     }}
                                     className="text-xs text-[#6b3e26] hover:text-[#bfa76a] hover:underline cursor-pointer font-serif transition-colors duration-200"
                                   >
-                                    View Game: {hofSessionTitles[String(char.bestSessionId)]?.mainTitle}
+                                    View Game: {hofSessionTitles[String(char.bestSessionId)]?.mainTitle || char.bestSessionTitle}
                                   </button>
                                 </div>
                               )}
@@ -1531,7 +1545,7 @@ export default function Home() {
                       </h3>
                       {hallOfFame.highestScoringPlayer.players.length > 0 ? (
                         <div>
-                          {hallOfFame.highestScoringPlayer.players.map((player: { player: string; characterSlug: string; sessionId: string; bestScore: number; mostPlayedCharacter: { character: string; characterSlug: string; count: number }; }, index) => (
+                          {hallOfFame.highestScoringPlayer.players.map((player: { player: string; characterSlug: string; sessionId: string; sessionTitle?: string; bestScore: number; mostPlayedCharacter: { character: string; characterSlug: string; count: number }; }, index) => (
                             <div key={index} className="mb-3">
                               <div className="flex items-center space-x-3 mb-2">
                                 <div className="w-8 h-8 bg-[#bfa76a] rounded-full flex items-center justify-center text-[#6b3e26] font-bold text-sm">
@@ -1566,7 +1580,7 @@ export default function Home() {
                                         setSelectedPage('session');
                                       }}
                                       className="hover:text-[#bfa76a] hover:underline cursor-pointer transition-colors duration-200"
-                                    >{hofSessionTitles[String(player.sessionId)]?.mainTitle || player.sessionId}</button>
+                                    >{hofSessionTitles[String(player.sessionId)]?.mainTitle || player.sessionTitle || player.sessionId}</button>
                                   </div>
                                   <div className="text-xs text-[#6b3e26] font-serif">
                                     Score: <span className={
