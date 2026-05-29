@@ -22,7 +22,8 @@ ENV NEXT_TELEMETRY_DISABLED=1
 ENV HOSTNAME=0.0.0.0
 ENV PORT=3000
 
-RUN addgroup --system --gid 1001 nodejs \
+RUN apk add --no-cache su-exec \
+  && addgroup --system --gid 1001 nodejs \
   && adduser --system --uid 1001 nextjs
 
 COPY --from=builder /app/public ./public
@@ -39,7 +40,7 @@ COPY docker-entrypoint.sh /app/docker-entrypoint.sh
 RUN chmod +x /app/docker-entrypoint.sh \
   && chown -R nextjs:nodejs /app
 
-USER nextjs
+# Entrypoint runs as root to fix volume permissions, then drops to nextjs via su-exec
 EXPOSE 3000
 
 ENTRYPOINT ["/app/docker-entrypoint.sh"]

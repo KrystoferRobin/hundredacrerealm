@@ -55,6 +55,13 @@ After the container starts, open `/admin`. Default credentials from the seeded f
 - Username: `admin`
 - Password: `CHANGE_ME` (change this in Admin → Users or by editing `realm-data/data/admin-users.json`)
 
+If saving admin settings fails with `EACCES` on `/app/data/admin-users.json`, the mounted `realm-data` files are owned by your host user, not the container user. Either upgrade to the latest image (entrypoint fixes ownership on start) or run once:
+
+```bash
+sudo chown -R 1001:1001 realm-data
+docker compose restart
+```
+
 If logs show `Example file missing, skipping seed`, the data volume hid the old image templates. Either upgrade to the latest image (uses `config-seed`) or copy templates manually from the clone:
 
 ```bash
