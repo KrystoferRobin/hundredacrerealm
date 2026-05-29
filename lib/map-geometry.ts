@@ -172,49 +172,97 @@ export interface MapBounds {
   maxPixelY: number;
 }
 
+const MAP_BOUNDS_MARGIN = 8;
+
+export function filterInPlayTiles<T extends MapTileLike>(tiles: T[]): T[] {
+  return tiles.filter(
+    (t) => t.objectName && t.objectName !== 'undefined' && t.objectName.trim() !== ''
+  );
+}
+
+/** Corners of a tile image (hex) after rotation, in map pixel space. */
+function tileCornerPoints(
+  tile: MapTileLike,
+  dims: TilePixelDimensions
+): Array<{ x: number; y: number }> {
+  const { x: gx, y: gy } = parseMapPosition(tile.position);
+  const center = gridToPixel(gx, gy, dims);
+  const rotation = tileRotationDegrees(tile.rotation);
+  const halfW = dims.width / 2;
+  const halfH = dims.height / 2;
+  const localCorners = [
+    { x: -halfW, y: -halfH },
+    { x: halfW, y: -halfH },
+    { x: halfW, y: halfH },
+    { x: -halfW, y: halfH },
+  ];
+
+  return localCorners.map((corner) => {
+    const rotated = rotatePoint(corner.x, corner.y, rotation);
+    return { x: center.x + rotated.x, y: center.y + rotated.y };
+  });
+}
+
+/**
+ * Tight axis-aligned bounds around in-play tiles (RealmSpeak-style layout).
+ * Uses rotated tile corners so the viewBox matches the real map footprint.
+ */
 export function computeMapBounds(
   tiles: MapTileLike[],
   dims: TilePixelDimensions = getTilePixelDimensions()
 ): MapBounds {
-  const padX = dims.width / 2;
-  const padY = dims.height / 2;
-
-  const inPlay = tiles.filter(
-    (t) => t.objectName && t.objectName !== 'undefined' && t.objectName.trim() !== ''
-  );
+  const inPlay = filterInPlayTiles(tiles);
+  const halfW = dims.width / 2;
+  const halfH = dims.height / 2;
 
   if (inPlay.length === 0) {
+    const svgWidth = dims.width + MAP_BOUNDS_MARGIN * 2;
+    const svgHeight = dims.height + MAP_BOUNDS_MARGIN * 2;
     return {
-      width: dims.width,
-      height: dims.height,
-      viewBox: `${-padX} ${-padY} ${dims.width + 2 * padX} ${dims.height + 2 * padY}`,
-      minPixelX: -padX,
-      minPixelY: -padY,
-      maxPixelX: dims.width + padX,
-      maxPixelY: dims.height + padY,
+      width: svgWidth,
+      height: svgHeight,
+      viewBox: `${-halfW - MAP_BOUNDS_MARGIN} ${-halfH - MAP_BOUNDS_MARGIN} ${svgWidth} ${svgHeight}`,
+      minPixelX: -halfW - MAP_BOUNDS_MARGIN,
+      minPixelY: -halfH - MAP_BOUNDS_MARGIN,
+      maxPixelX: halfW + MAP_BOUNDS_MARGIN,
+      maxPixelY: halfH + MAP_BOUNDS_MARGIN,
     };
   }
 
-  const positions = inPlay.map((tile) => {
-    const { x, y } = parseMapPosition(tile.position);
-    return gridToPixel(x, y, dims);
-  });
+  const points = inPlay.flatMap((tile) => tileCornerPoints(tile, dims));
 
-  const minPixelX = Math.min(...positions.map((p) => p.x));
-  const minPixelY = Math.min(...positions.map((p) => p.y));
-  const maxPixelX = Math.max(...positions.map((p) => p.x));
-  const maxPixelY = Math.max(...positions.map((p) => p.y));
+  const minPixelX = Math.min(...points.map((p) => p.x)) - MAP_BOUNDS_MARGIN;
+  const minPixelY = Math.min(...points.map((p) => p.y)) - MAP_BOUNDS_MARGIN;
+  const maxPixelX = Math.max(...points.map((p) => p.x)) + MAP_BOUNDS_MARGIN;
+  const maxPixelY = Math.max(...points.map((p) => p.y)) + MAP_BOUNDS_MARGIN;
 
-  const svgWidth = maxPixelX - minPixelX + dims.width + 2 * padX;
-  const svgHeight = maxPixelY - minPixelY + dims.height + 2 * padY;
+  const svgWidth = maxPixelX - minPixelX;
+  const svgHeight = maxPixelY - minPixelY;
 
   return {
     width: svgWidth,
     height: svgHeight,
-    viewBox: `${minPixelX - padX} ${minPixelY - padY} ${svgWidth} ${svgHeight}`,
-    minPixelX: minPixelX - padX,
-    minPixelY: minPixelY - padY,
-    maxPixelX: maxPixelX + padX,
-    maxPixelY: maxPixelY + padY,
+    viewBox: `${minPixelX} ${minPixelY} ${svgWidth} ${svgHeight}`,
+    minPixelX,
+    minPixelY,
+    maxPixelX,
+    maxPixelY,
   };
+}
+
+export function mapBoundsCenter(bounds: MapBounds): { x: number; y: number } {
+  return {
+    x: (bounds.minPixelX + bounds.maxPixelX) / 2,
+    y: (bounds.minPixelY + bounds.maxPixelY) / 2,
+  };
+}
+
+/** Pan/zoom around map content center (SVG user space). */
+export function buildMapContentTransform(
+  bounds: MapBounds,
+  zoom: number,
+  pan: { x: number; y: number }
+): string {
+  const { x: cx, y: cy } = mapBoundsCenter(bounds);
+  return `translate(${pan.x} ${pan.y}) translate(${cx} ${cy}) scale(${zoom}) translate(${-cx} ${-cy})`;
 }

@@ -1,9 +1,11 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { getTileImageUrl } from '@/lib/tile-image';
 import {
+  buildMapContentTransform,
   computeMapBounds,
+  filterInPlayTiles,
   findTileByName,
   getChitPixelOnMap,
   getClearingOffsetInTile,
@@ -474,139 +476,10 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
     }
   }, []);
 
-  // Calculate the true center of the map using all clearing positions
-  const calculateMapCenter = () => {
-    if (!mapData || !tileDataCache) return { x: 0, y: 0 };
-    
-    const allClearingPositions: { x: number; y: number }[] = [];
-    
-    // Only consider tiles that are actually in play (not void spaces)
-    const actualTiles = mapData.tiles.filter((tile: Tile) => tile.objectName && tile.objectName !== 'undefined');
-    
-    // Collect all clearing positions from actual tiles
-    actualTiles.forEach((tile: Tile) => {
-      const tileData = tileDataCache[tile.objectName];
-      if (!tileData) {
-        return;
-      }
-      
-      const block = tile.isEnchanted ? tileData.attributeBlocks.enchanted : tileData.attributeBlocks.normal;
-      if (!block) {
-        return;
-      }
-      
-      // Get all clearing coordinates for this tile
-      Object.keys(block).forEach(key => {
-        if (key.startsWith('clearing_') && key.endsWith('_xy')) {
-          const coords = block[key];
-          if (coords) {
-            const [xPercent, yPercent] = coords.split(',').map(Number);
-            
-            // Convert to pixel coordinates within the hex
-            const hexSize = 60;
-            const hexWidth = hexSize * 2;
-            const hexHeight = hexSize * Math.sqrt(3);
-            
-            // Scale from 100x100 to hex dimensions
-            const clearingX = (xPercent / 100) * hexWidth - hexWidth / 2;
-            const clearingY = (yPercent / 100) * hexHeight - hexHeight / 2;
-            
-            // Get tile position
-            const [tileX, tileY] = parsePosition(tile.position);
-            const hexPos = getHexPosition(tileX, tileY);
-            
-            // Apply tile rotation
-            const rotation = getTileRotation(tile.rotation);
-            const rad = (rotation * Math.PI) / 180;
-            const rotatedX = clearingX * Math.cos(rad) - clearingY * Math.sin(rad);
-            const rotatedY = clearingX * Math.sin(rad) + clearingY * Math.cos(rad);
-            
-            // Add to collection
-            allClearingPositions.push({
-              x: hexPos.x + rotatedX,
-              y: hexPos.y + rotatedY
-            });
-          }
-        }
-      });
-    });
-    
-    // Calculate center of all clearing positions
-    if (allClearingPositions.length > 0) {
-      const avgX = allClearingPositions.reduce((sum, pos) => sum + pos.x, 0) / allClearingPositions.length;
-      const avgY = allClearingPositions.reduce((sum, pos) => sum + pos.y, 0) / allClearingPositions.length;
-      return { x: avgX, y: avgY };
-    }
-    
-    // Fallback to tile centers if no clearing data
-    const tilePixelPositions = actualTiles.map((tile: Tile) => {
-      const [x, y] = parsePosition(tile.position);
-      return getHexPosition(x, y);
-    });
-    
-    if (tilePixelPositions.length > 0) {
-      const avgX = tilePixelPositions.reduce((sum, pos) => sum + pos.x, 0) / tilePixelPositions.length;
-      const avgY = tilePixelPositions.reduce((sum, pos) => sum + pos.y, 0) / tilePixelPositions.length;
-      return { x: avgX, y: avgY };
-    }
-    
-    return { x: 0, y: 0 };
+  const fitMapToDisplay = () => {
+    setZoom(1);
+    setPan({ x: 0, y: 0 });
   };
-
-  const calculateDynamicSVGDimensions = () =>
-    mapData?.tiles ? computeMapBounds(mapData.tiles, MAP_DIMS) : computeMapBounds([], MAP_DIMS);
-
-  // Calculate optimal zoom to fit map in display area
-  const calculateOptimalZoom = () => {
-    if (!mapData || containerSize.width === 0 || containerSize.height === 0) return 1;
-    
-    const dimensions = calculateDynamicSVGDimensions();
-    const mapWidth = dimensions.width;
-    const mapHeight = dimensions.height;
-    
-    // Calculate zoom to fit with less padding
-    const padding = 0.02; // 2% padding
-    const zoomX = (containerSize.width * (1 - padding)) / mapWidth;
-    const zoomY = (containerSize.height * (1 - padding)) / mapHeight;
-    
-    // Use the maximum zoom that fits either width or height
-    const optimalZoom = Math.max(Math.min(zoomX, 3), Math.min(zoomY, 3), 0.8);
-    
-    console.log('Dynamic map dimensions:', {
-      mapWidth,
-      mapHeight,
-      containerSize,
-      zoomX,
-      zoomY,
-      optimalZoom
-    });
-    
-    return optimalZoom;
-  };
-
-      // Auto-fit map to display area
-    const fitMapToDisplay = () => {
-      const optimalZoom = calculateOptimalZoom();
-      
-      if (optimalZoom > 0) {
-        setZoom(optimalZoom);
-      }
-      
-      // Calculate pan to center the map properly
-      if (mapData) {
-        const dimensions = calculateDynamicSVGDimensions();
-        const minPixelX = dimensions.minPixelX;
-        const maxPixelX = dimensions.maxPixelX;
-        const minPixelY = dimensions.minPixelY;
-        const maxPixelY = dimensions.maxPixelY;
-        const centerX = (minPixelX + maxPixelX) / 2;
-        const centerY = (minPixelY + maxPixelY) / 2;
-        setPan({
-          x: containerSize.width / 2 - centerX * optimalZoom,
-          y: containerSize.height / 2 - centerY * optimalZoom
-        });
-      }
-    };
 
   // Handle zoom slider change
   const handleZoomChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -614,28 +487,11 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
     setZoom(newZoom);
   };
 
-  // Effect to center map on initial load with improved centering
   useEffect(() => {
-    if (
-      mapData &&
-      containerSize.width > 0 &&
-      containerSize.height > 0 &&
-      Object.keys(tileDataCache).length > 0
-    ) {
-      const optimalZoom = calculateOptimalZoom();
-      setZoom(optimalZoom);
-
-      const dimensions = calculateDynamicSVGDimensions();
-      // Center of the map in SVG coordinates
-      const centerX = (dimensions.minPixelX + dimensions.maxPixelX) / 2;
-      const centerY = (dimensions.minPixelY + dimensions.maxPixelY) / 2;
-      // Center the map in the container
-      setPan({
-        x: containerSize.width / 2 - centerX * optimalZoom,
-        y: containerSize.height / 2 - centerY * optimalZoom
-      });
+    if (mapData && Object.keys(tileDataCache).length > 0) {
+      fitMapToDisplay();
     }
-  }, [mapData, containerSize, tileDataCache]);
+  }, [mapData, tileDataCache, dynamicMapState]);
 
   const parsePosition = (position: string): [number, number] => {
     const { x, y } = parseMapPosition(position);
@@ -691,6 +547,19 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
     return getClearingOffsetInTile(clearing, tileData, tile.isEnchanted, MAP_DIMS);
   };
 
+  const activeTiles = useMemo(() => {
+    if (!mapData?.tiles) return [] as Tile[];
+    const tiles = (dynamicMapState?.tiles ?? mapData.tiles) as Tile[];
+    return filterInPlayTiles(tiles);
+  }, [dynamicMapState, mapData]);
+
+  const mapBounds = useMemo(
+    () => computeMapBounds(activeTiles, MAP_DIMS),
+    [activeTiles]
+  );
+
+  const contentTransform = buildMapContentTransform(mapBounds, zoom, pan);
+
   if (loading) {
     return <div className="w-full h-full flex items-center justify-center">Loading map...</div>;
   }
@@ -703,8 +572,6 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
     return <div className="w-full h-full flex items-center justify-center">No map data available</div>;
   }
 
-  // Calculate dynamic SVG dimensions
-  const svgDimensions = calculateDynamicSVGDimensions();
   const { width: hexWidth, height: hexHeight } = MAP_DIMS;
 
   return (
@@ -747,21 +614,18 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
       {/* SVG container with proper overflow handling */}
       <div className="w-full h-full overflow-hidden">
         <svg
-          width={svgDimensions.width}
-          height={svgDimensions.height}
-          viewBox={svgDimensions.viewBox}
-          style={{
-            display: 'block',
-            background: 'none',
-            transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
-            transformOrigin: 'top left',
-            transition: 'transform 0.1s',
-            maxWidth: 'none',
-            maxHeight: 'none',
-          }}
+          width="100%"
+          height="100%"
+          viewBox={mapBounds.viewBox}
+          preserveAspectRatio="xMidYMid meet"
+          style={{ display: 'block', background: 'none' }}
         >
+          <g
+            transform={contentTransform}
+            style={{ transition: zoom === 1 && pan.x === 0 && pan.y === 0 ? undefined : 'transform 0.1s' }}
+          >
           {/* Render tiles */}
-          {(dynamicMapState ? dynamicMapState.tiles : mapData.tiles).map((tile: Tile, index: number) => {
+          {activeTiles.map((tile: Tile, index: number) => {
             const [x, y] = parsePosition(tile.position);
             const hexPos = getHexPosition(x, y);
             const imageUrl = getTileImage(tile);
@@ -1231,6 +1095,7 @@ const EnhancedSessionMap: React.FC<SessionMapProps> = ({
               </g>
             );
           })}
+          </g>
         </svg>
       </div>
       
