@@ -13,19 +13,26 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const identityInput = (body.identity ?? {}) as RealmIdentityInput;
 
+    const identityFields: RealmIdentityInput = {
+      gamePort: identityInput.gamePort ?? body.gamePort,
+      rseed: identityInput.rseed ?? body.rseed,
+      gameTitle: identityInput.gameTitle ?? body.gameTitle,
+      gamePass: identityInput.gamePass ?? body.gamePass,
+      gameName: identityInput.gameName ?? body.gameName,
+      characterKeyFingerprint:
+        identityInput.characterKeyFingerprint ?? body.characterKeyFingerprint,
+    };
+
+    const hasIdentityFields = Object.values(identityFields).some(
+      (v) => typeof v === 'string' && v.trim()
+    );
+
     let realmKey = typeof body.realmKey === 'string' ? body.realmKey.trim() : '';
     let realmKeySource = typeof body.realmKeySource === 'string' ? body.realmKeySource : '';
 
-    if (!realmKey) {
-      const resolved = resolveRealmIdentity({
-        gamePort: identityInput.gamePort ?? body.gamePort,
-        rseed: identityInput.rseed ?? body.rseed,
-        gameTitle: identityInput.gameTitle ?? body.gameTitle,
-        gamePass: identityInput.gamePass ?? body.gamePass,
-        gameName: identityInput.gameName ?? body.gameName,
-        characterKeyFingerprint:
-          identityInput.characterKeyFingerprint ?? body.characterKeyFingerprint,
-      });
+    // Prefer server-side identity resolution when save metadata is present.
+    if (hasIdentityFields) {
+      const resolved = resolveRealmIdentity(identityFields);
       realmKey = resolved.realmKey;
       realmKeySource = resolved.realmKeySource;
     }

@@ -170,6 +170,7 @@ public class UploadPanel extends JPanel {
 				RealmIdentity identity = exporter.peekIdentity(save);
 				publish("Realm key (" + identity.realmKeySource + "): " + identity.realmKey.substring(0, 12) + "…");
 				if (identity.gamePort != null) publish("  game port (gp__): " + identity.gamePort);
+				if (identity.rseed != null) publish("  random seed (_rseed): " + identity.rseed);
 				if (identity.gameTitle != null) publish("  title: " + identity.gameTitle);
 
 				String sessionId;

@@ -41,7 +41,17 @@ export function resolveRealmIdentity(input: RealmIdentityInput): ResolvedRealmId
     parts.characterKeys = input.characterKeyFingerprint.trim();
   }
 
-  // Hosted online games: gp__ is shared by all players on the same table.
+  // Hosted online games: gp__ alone is only unique per host account (e.g. always 47474
+  // on RealmSpeak Online). Combine with _rseed so each game instance gets its own session
+  // while all players at the same table still share port + rseed.
+  if (parts.gamePort && parts.rseed) {
+    return {
+      realmKey: sha256(`port-seed:${parts.gamePort}|${parts.rseed}`),
+      realmKeySource: 'host_port_and_rseed',
+      parts,
+    };
+  }
+
   if (parts.gamePort) {
     return {
       realmKey: sha256(`port:${parts.gamePort}`),

@@ -14,7 +14,8 @@ import com.robin.magic_realm.components.wrapper.HostPrefWrapper;
 
 /**
  * Derives a stable realmKey shared by all players at the same table.
- * Hosted games use HostPref {@code gp__} (game port).
+ * Hosted games combine HostPref {@code gp__} with save {@code _rseed} so each game
+ * instance is distinct (RealmSpeak Online reuses the same port across games).
  */
 public final class GameIdentityExtractor {
 	private GameIdentityExtractor() {}
@@ -49,6 +50,11 @@ public final class GameIdentityExtractor {
 	}
 
 	static String computeRealmKey(RealmIdentity id) {
+		if (id.gamePort != null && !id.gamePort.isBlank()
+				&& id.rseed != null && !id.rseed.isBlank()) {
+			id.realmKeySourceComputed = "host_port_and_rseed";
+			return sha256("port-seed:" + id.gamePort.trim() + "|" + id.rseed.trim());
+		}
 		if (id.gamePort != null && !id.gamePort.isBlank()) {
 			id.realmKeySourceComputed = "host_game_port";
 			return sha256("port:" + id.gamePort.trim());

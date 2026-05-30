@@ -75,11 +75,13 @@ If a bundle arrives without `parsed_session.json` but includes `.rslog` or `.rsg
 
 | Priority | Source | Shared by all players? |
 |----------|--------|-------------------------|
-| 1 | Host Preferences `gp__` (game port) | Yes — hosted online games |
-| 2 | `_rseed` + host `g_title` / `g_pass` | Usually same table |
-| 3 | Sorted `character_keys` roster | Same campaign setup |
+| 1 | Host Preferences `gp__` + save `_rseed` | Yes — same hosted game instance |
+| 2 | Host Preferences `gp__` only (no `_rseed`) | Legacy fallback — one session per port |
+| 3 | `_rseed` + host `g_title` / `g_pass` | Usually same table |
+| 4 | Sorted `character_keys` roster | Same campaign setup |
+| 5 | `_rseed` + save `name` | Solo / local games |
 
-Any player at the same table can upload; the server returns the **same sessionId** for the same realmKey.
+Any player at the same table can upload; the server returns the **same sessionId** for the same realmKey. Re-uploading the same save (same port + seed) updates that session; a **new game** gets a new `_rseed` and therefore a new session.
 
 ### Public vs admin profile
 
